@@ -18,13 +18,13 @@
 | ---- | ------ | ------- |
 |      |        |         |
 
-### Marketing (X)
+### Marketing
 
 | Date | Status | Content |
 | ---- | ------ | ------- |
 |      |        |         |
 
-### OS (XX)
+### OS
 
 | Date | Status | Content |
 | ---- | ------ | ------- |
