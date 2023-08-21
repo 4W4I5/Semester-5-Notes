@@ -1,7 +1,5 @@
 #### Notes Status
 
-.
-
 ### Algo
 
 | Date | Status | Content |
