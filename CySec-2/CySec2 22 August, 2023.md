@@ -16,5 +16,5 @@
 - Availability and simplicity of attack tools
 	- A lot of the heavy work is handled by the tools themselves therefore aiding the complexity of the attacks
 #### Next-Gen attacks
-Look at case study of DynDNS (Mirai malware)
+`Look at case study of DynDNS (Mirai malware)`
 - Botnet? It is a prog hidden within the device and running in the background, provides resources to the attacker using other people's devices
