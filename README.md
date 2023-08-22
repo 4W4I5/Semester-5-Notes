@@ -26,6 +26,6 @@
 
 ### OS
 
-| Date | Status | Content |
-| ---- | ------ | ------- |
-|      |        |         |
+| Date   | Status   | Content |
+| ------ | -------- | ------- |
+| 22 Aug | Refactor |         |
