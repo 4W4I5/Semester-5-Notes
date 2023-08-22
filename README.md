@@ -14,9 +14,9 @@
 
 ### DB
 
-| Date | Status | Content |
-| ---- | ------ | ------- |
-|      |        |         |
+| Date   | Status   | Content |
+| ------ | -------- | ------- |
+| 22 Aug | Refactor | Introduction & Evolution        |
 
 ### Marketing
 
