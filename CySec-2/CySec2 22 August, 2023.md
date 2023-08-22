@@ -45,6 +45,17 @@
 				- Physical and Technical
 	- Integrity
 		- Ensuring the data is `Add a meaning to this`
+		- Depends on confidientiality
+		- Breach
+			- Intentional
+				- Deleting files
+				- Invalid data
+				- Altered configs
+			- Unintentional
+		- Countermeasure
+			- 
 	- Availability
 		- On-Time
 		- DDOS is meant to take down the availibity of data/network
+		- Breach
+		- Countermesaure
