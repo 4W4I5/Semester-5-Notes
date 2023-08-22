@@ -34,7 +34,15 @@
 		- In Detail
 			- `Add details from slides`
 			- Can be breached intentionally and unintentionally i.e something done by you that opens up confidential data to unauthorized users
-		- Enforced via encryption
+		- Enforced via encryption however encryption is meant for integrity as the sender is revealed through their private key decrypted via a signature (NOTE:: got confused at this)
+		- Countermeasures
+			- Encryption
+				- Data at rest
+					- Whole Disk, Database
+				- Data in transit
+					- IPSec, TSL, PPTP, SSH
+			- Access control
+				- Physical and Technical
 	- Integrity
 		- Ensuring the data is `Add a meaning to this`
 	- Availability
