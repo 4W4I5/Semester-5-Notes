@@ -23,4 +23,18 @@
 - Used mostly in mobile and embedded devices
 
 ### Opcodes & Operands
-- To load a instruction bigger than the buswidth, a opcode exists to decode one half and then fetch the next half of the instruction
+- To load a instruction bigger than the buswidth, a opcode exists to decode one half and then fetch the next half of the instruction 
+
+#### Interrupts
+- Classes of interrupts
+	- Program
+		- Caused by instruction execution
+	- Timer
+		- Time based
+	- I/O
+		- Memory polling
+		- Peripherals
+	- Hardware Failure
+		- Unscheduled Disconnection or failure
+- Flow of Control without Interrupts
+	- 
