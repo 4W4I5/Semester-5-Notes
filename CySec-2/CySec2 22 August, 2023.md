@@ -64,4 +64,5 @@
 #### Identificaiton and 3 A's
 - Identiy is given to a user but verifying them requires authentication
 - Authorization gives access rights to the authenticated user
-- Accountability/Auditing is monitoring and logging user activity
+- Auditing/Accountability is monitoring and logging user activity and accounting is holding subjcets accountable for malicious activity
+- Nonrepudition is 
