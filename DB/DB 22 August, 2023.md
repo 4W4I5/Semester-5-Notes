@@ -6,4 +6,4 @@ problems faced by ppl who used files for storage 30 years ago
 - Data redudancy
 	- slow update times
 	- inconsistency
-	- 
+`zoned out, use rec`
