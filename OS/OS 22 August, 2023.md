@@ -23,4 +23,4 @@
 - Used mostly in mobile and embedded devices
 
 ### Opcodes & Operands
-- To load a 
+- To load a instruction bigger than the buswidth, a opcode exists to decode one half and then fetch the next half of the instruction
