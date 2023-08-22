@@ -59,3 +59,7 @@
 		- DDOS is meant to take down the availibity of data/network
 		- Breach
 		- Countermesaure
+
+
+#### Identificaiton and Authentication
+- Identiy is given to a user but verifying them requires authentication
