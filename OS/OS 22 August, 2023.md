@@ -21,3 +21,6 @@
 #### SoC (System-On-a-Chip)
 - Combines CPU, GPU, RAM onto a single chip
 - Used mostly in mobile and embedded devices
+
+### Opcodes & Operands
+- To load a 
