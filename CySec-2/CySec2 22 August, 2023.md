@@ -29,5 +29,14 @@
 #### Defining Information Security 
 - Types of information protection
 	- Confidentiality
+		- Only authorized ppl have access to the data
+		- Breached confidentiality means unauthorized access
+		- In Detail
+			- `Add details from slides`
+			- Can be breached intentionally and unintentionally i.e something done by you that opens up confidential data to unauthorized users
+		- Enforced via encryption
 	- Integrity
+		- Ensuring the data is `Add a meaning to this`
 	- Availability
+		- On-Time
+		- DDOS is meant to take down the availibity of data/network
