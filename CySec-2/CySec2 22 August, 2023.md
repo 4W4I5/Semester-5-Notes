@@ -65,4 +65,4 @@
 - Identiy is given to a user but verifying them requires authentication
 - Authorization gives access rights to the authenticated user
 - Auditing/Accountability is monitoring and logging user activity and accounting is holding subjcets accountable for malicious activity
-- Nonrepudition is 
+- Nonrepudition is essential part of accountability, made possible thru the 3 A;s

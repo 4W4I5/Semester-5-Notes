@@ -10,7 +10,7 @@
 
 | Date | Status | Content |
 | ---- | ------ | ------- |
-| 22 Aug   |        |         |
+| 22 Aug   |  Refactor      | Introduction / Authenticate, Authorize / Audit        |
 
 ### DB
 
