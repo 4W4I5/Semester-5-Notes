@@ -1,0 +1,18 @@
+# Information Security Terminology
+- Asset
+	- Item of value
+- Threat
+	- Actions or events that have potential to cause harm
+- Threat Agent
+	- Person/Element with the power to carry out a threat
+		- Can also be natrual disasters
+- Asset Types
+	- Information
+	- Customized Business Software
+	- System Software
+	- Physical Items
+	- Services
+- Vulnerability
+- Threat Likelihood
+- Risk
+	- Dealing with Risk 
