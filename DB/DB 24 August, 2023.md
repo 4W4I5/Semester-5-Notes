@@ -15,5 +15,6 @@ Discussed software dev lifecycle
 			- Multi-Valued: Entity can take on multiple values for an attribute
 			- Derived: Value assigned from previously assigned attribute
 			- Key: unique attribute
+			- Descriptive:
 	- Constraints
 	- Relationships
