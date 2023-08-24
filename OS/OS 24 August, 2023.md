@@ -19,5 +19,6 @@ Recap:
 #### Multiple Interrupt
 - Check two things
 	- Priority of the interrupt
-		- If so, save state of the interrupt and go to the new interrupt
+		- If higher, save state of the interrupt and go to the new interrupt
+		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isnt used 
 	- 
