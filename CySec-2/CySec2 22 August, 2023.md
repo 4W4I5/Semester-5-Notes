@@ -64,37 +64,39 @@
 ## Defining Information Security
 
 - Types of information protection
-	- Confidentiality
+	- **Confidentiality**
 		- Only authorized ppl have access to the data
-		- Breached confidentiality means unauthorized access
 		- In Detail
 			- `Add details from slides`
 			- Can be breached intentionally and unintentionally i.e something done by you that opens up confidential data to unauthorized users
 		- Enforced via encryption however encryption is meant for integrity as the sender is revealed through their private key decrypted via a signature (NOTE:: got confused at this)
+		- Breaches
+			- **Unauthorized Access:** Hackers or insiders gain unauthorized access to sensitive data.
+			- **Data Leaks:** Sensitive information is disclosed to unauthorized parties.
 		- Countermeasures
-			- Encryption
-				- Data at rest
-					- Whole Disk, Database
-				- Data in transit
-					- IPSec, TSL, PPTP, SSH
-			- Access control
-				- Physical and Technical
-	- Integrity
+			- **Encryption:** Converts information into a coded format that can only be deciphered by authorized parties.
+			- **Access Control:** Restricts access to information based on user roles and permissions.
+			- **Data Classification:** Categorizes information based on sensitivity and applies different security controls accordingly.
+	- **Integrity**
 		- Ensuring the data is `Add a meaning to this`
 		- Depends on confidentiality
-		- Breach
-			- Intentional
-				- Deleting files
-				- Invalid data
-				- Altered configs
-			- Unintentional
-		- Countermeasure
-			-
-	- Availability
+		- Breaches
+			- **Data Tampering:** Unauthorized changes to data, which could result in misleading or incorrect information.
+			- **Data Corruption:** Unintended alterations to data that render it unusable or inaccurate.
+		- Countermeasures
+			- **Data Validation:** Checks data inputs for accuracy and validity.
+			- **Checksums and Hashing:** Generates checksums or hashes to verify data integrity.
+			- **Version Control:** Tracks changes to data and maintains a history of modifications.
+	- **Availability**
 		- On-Time
 		- DDOS is meant to take down the viability of data/network
-		- Breach
+		- Breaches
+			- **Denial of Service (DoS) Attacks:** Overwhelms systems with traffic, rendering them inaccessible.
+			- **Distributed DoS (DDoS) Attacks:** Coordinated DoS attacks from multiple sources, magnifying the impact.
 		- Countermeasure
+			- **Redundancy:** Duplication of critical systems and data to ensure availability even in the event of failures.
+			- **Load Balancing:** Distributes traffic across multiple servers to prevent overloading.
+			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
 #### Identification and 3 A's
 
