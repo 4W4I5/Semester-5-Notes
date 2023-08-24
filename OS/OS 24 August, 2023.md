@@ -29,3 +29,8 @@ Recap:
 	- Capacity
 	- Access times
 	- Cost
+- Cache, Memory, Storage
+	- In order
+		- Processor: L1, L2 and L3
+		- Memory
+		- Storage
