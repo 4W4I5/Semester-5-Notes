@@ -33,4 +33,3 @@
 - Almost always uses a 0-Day
 - Persistent asf
 - Difficult to detect (Take the example of stuxnet)
-- 

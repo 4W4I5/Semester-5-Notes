@@ -8,10 +8,10 @@
 
 ### Cysec-2
 
-| Date   | Status   | Content                                                            |
-| ------ | -------- | ------------------------------------------------------------------ |
-| 22 Aug | Complete | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
-| 24 Aug       |          | Risk & Case Studies (2) & APTs                                                                   |
+| Date   | Status     | Content                                                            |
+| ------ | ---------- | ------------------------------------------------------------------ |
+| 22 Aug | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
+| 24 Aug | Incomplete | Risk & Case Studies (2) & APTs                                     |
 
 ### DB
 
