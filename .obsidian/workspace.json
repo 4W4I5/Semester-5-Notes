@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 22 August, 2023.md",
+                "file": "CySec-2/CySec2 22 August, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -58,7 +58,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 22 August, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 22 August, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 22 August, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -177,12 +176,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af16dc51352658d4",
+  "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
-    "DB/DB 22 August, 2023.md",
-    "README.md",
-    "OS/OS 22 August, 2023.md",
     "CySec-2/CySec2 22 August, 2023.md",
+    "OS/OS 24 August, 2023.md",
+    "README.md",
+    "Marketing/DM 24 August, 2023.md",
+    "DB/DB 24 August, 2023.md",
+    "CySec-2/CySec2 24 August, 2023.md",
+    "OS/OS 22 August, 2023.md",
+    "DB/DB 22 August, 2023.md",
     "OS",
     "Marketing",
     "DB",
