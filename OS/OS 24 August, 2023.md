@@ -17,4 +17,7 @@ Recap:
 - Restore PC & PSW
 
 #### Multiple Interrupt
-- 
+- Check two things
+	- Priority of the interrupt
+		- If so, save state of the interrupt and go to the new interrupt
+	- 
