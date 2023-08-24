@@ -26,3 +26,5 @@
 `Case Study: Pegasus notes needed here` 
 
 ## Advanced Persistent Threats (APT)
+
+`APT, Cyber Kill Chain`
