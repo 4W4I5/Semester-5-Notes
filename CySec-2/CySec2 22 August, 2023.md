@@ -98,7 +98,12 @@
 			- **Load Balancing:** Distributes traffic across multiple servers to prevent overloading.
 			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
-#### Identification and 3 A's
+## Protections to secure information
+- ##### Identification
+- ##### Authentication
+- ##### Authorization
+- ##### Auditing
+- ##### Accounting
 
 - Identify is given to a user but verifying them requires authentication
 - Authorization gives access rights to the authenticated user
