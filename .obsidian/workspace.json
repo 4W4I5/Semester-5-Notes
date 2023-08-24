@@ -6,7 +6,7 @@
       {
         "id": "09be0f2f0e0aa394",
         "type": "tabs",
-        "dimension": 74.80964467005076,
+        "dimension": 58.49220103986135,
         "children": [
           {
             "id": "af16dc51352658d4",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 22 August, 2023.md",
+                "file": "OS/OS 22 August, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
       {
         "id": "59950568398a0e43",
         "type": "tabs",
-        "dimension": 25.190355329949238,
+        "dimension": 41.50779896013865,
         "children": [
           {
             "id": "0e5c32f4557ff963",
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 22 August, 2023.md",
+                "file": "OS/OS 22 August, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 22 August, 2023.md",
+                "file": "OS/OS 22 August, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 22 August, 2023.md"
+                "file": "OS/OS 22 August, 2023.md"
               }
             }
           },
@@ -163,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,12 +177,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8844992288ed34f3",
+  "active": "af16dc51352658d4",
   "lastOpenFiles": [
-    "README.md",
-    "CySec-2/CySec2 22 August, 2023.md",
-    "OS/OS 22 August, 2023.md",
     "DB/DB 22 August, 2023.md",
+    "README.md",
+    "OS/OS 22 August, 2023.md",
+    "CySec-2/CySec2 22 August, 2023.md",
     "OS",
     "Marketing",
     "DB",

@@ -16,7 +16,7 @@
 
 | Date   | Status   | Content |
 | ------ | -------- | ------- |
-| 22 Aug | Refactor | Introduction & Evolution        |
+| 22 Aug | Incomplete | Introduction & Evolution        |
 
 ### Marketing
 
