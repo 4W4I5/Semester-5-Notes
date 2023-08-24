@@ -2,9 +2,10 @@
 
 ### Algo
 
-| Date | Status | Content |
-| ---- | ------ | ------- |
-|      |        |         |
+| Date   | Status | Content     |
+| ------ | ------ | ----------- |
+| 22 Aug | N/A    | Maam Absent |
+| 24 Aug | N/A    | Maam Absent |
 
 ### CySec-2
 
@@ -22,15 +23,16 @@
 
 ### Marketing
 
-| Date   | Status | Content |
-| ------ | ------ | ------- |
-| 24 Aug |        |         |
+| Date   | Status | Content    |
+| ------ | ------ | ---------- |
+| 22 Aug | N/A    | Sir Absent |
+| 24 Aug | N/A    | Sir Absent           |
 
 ### OS
 
 NOTE:: Refer to the book for main content
 
-| Date   | Status   | Content                                       |
-| ------ | -------- | --------------------------------------------- |
-| 22 Aug | Refactor | Intro, FDE Cycle, OpCodes/OpRands, Interrupts |
-| 24 Aug |          |                                               |
+| Date   | Status     | Content                                       |
+| ------ | ---------- | --------------------------------------------- |
+| 22 Aug | Refactor   | Intro, FDE Cycle, OpCodes/OpRands, Interrupts |
+| 24 Aug | Incomplete |                                               |
