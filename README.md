@@ -10,7 +10,7 @@
 
 | Date | Status | Content |
 | ---- | ------ | ------- |
-| 22 Aug   |  Refactor      | Introduction / Authenticate, Authorize / Audit        |
+| 22 Aug   |  Complete      | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study      |
 
 ### DB
 

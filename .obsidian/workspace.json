@@ -149,13 +149,21 @@
                 "file": "CySec-2/CySec2 22 August, 2023.md"
               }
             }
+          },
+          {
+            "id": "8844992288ed34f3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,7 +176,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af16dc51352658d4",
+  "active": "8844992288ed34f3",
   "lastOpenFiles": [
     "README.md",
     "CySec-2/CySec2 22 August, 2023.md",
