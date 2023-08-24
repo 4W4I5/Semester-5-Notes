@@ -17,8 +17,10 @@ Recap:
 - Restore PC & PSW
 
 #### Multiple Interrupt
-- Check two things
+- Check and do two things
 	- Priority of the interrupt
 		- If higher, save state of the interrupt and go to the new interrupt
 		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isnt used 
-	- 
+	- Interrupt Blocking
+		- Just block any and all new interrupts until the current interrupt is resolved
+- 
