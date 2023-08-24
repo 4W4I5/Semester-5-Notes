@@ -110,5 +110,6 @@
 	- The process of monitoring and recording activities on a system to detect and investigate security breaches or policy violations.
 - ##### **Accounting** 
 	- This involves tracking and managing resource usage, often for billing, auditing, or security purposes.
+- ##### **Non-Repudiation**
 
 
