@@ -23,4 +23,9 @@ Recap:
 		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isnt used 
 	- Interrupt Blocking
 		- Just block any and all new interrupts until the current interrupt is resolved
-- 
+
+#### Memory Hierarchy 
+- Constraints
+	- Capacity
+	- Access times
+	- Cost
