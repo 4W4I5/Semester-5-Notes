@@ -18,7 +18,7 @@
 | Date   | Status     | Content                  |
 | ------ | ---------- | ------------------------ |
 | 22 Aug | Incomplete | Introduction & Evolution |
-| 24 Aug |            |                          |
+| 24 Aug | Incomplete | Data Modelling           |
 
 ### Marketing
 
