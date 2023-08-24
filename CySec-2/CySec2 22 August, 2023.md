@@ -95,6 +95,7 @@
 			- **Distributed DoS (DDoS) Attacks:** Coordinated DoS attacks from multiple sources, magnifying the impact.
 		- Countermeasure
 			- **Redundancy:** Duplication of critical systems and data to ensure availability even in the event of failures.
+				- Example: RAID Array, Redundant data and power lines, software and data backups, Roll-Back/Failover.
 			- **Load Balancing:** Distributes traffic across multiple servers to prevent overloading.
 			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
