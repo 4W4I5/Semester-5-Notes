@@ -30,4 +30,4 @@ NOTE:: Refer to the book for main content
 
 | Date   | Status   | Content |
 | ------ | -------- | ------- |
-| 22 Aug | Refactor |         |
+| 22 Aug | Refactor |  Intro, FDE Cycle, OpCodes/OpRands, Interrupts       |
