@@ -66,7 +66,7 @@
 - Types of information protection
 	- **Confidentiality**
 		- Definition
-			- 
+			- Protect information from unauthorized access
 		- Breaches
 			- **Unauthorized Access:** Hackers or insiders gain unauthorized access to sensitive data.
 			- **Data Leaks:** Sensitive information is disclosed to unauthorized parties.
@@ -76,7 +76,7 @@
 			- **Data Classification:** Categorizes information based on sensitivity and applies different security controls accordingly.
 	- **Integrity**
 		- Definition
-			- 
+			- Ensure Data Accuracy & Prevent unauthorized access (Dependent on Confidentiality)
 		- Breaches
 			- **Data Tampering:** Unauthorized changes to data, which could result in misleading or incorrect information.
 			- **Data Corruption:** Unintended alterations to data that render it unusable or inaccurate.
