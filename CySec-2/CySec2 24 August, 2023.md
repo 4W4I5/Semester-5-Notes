@@ -22,3 +22,4 @@
 		- Risk mitigation: Address the risks to reduce the severity of the risks
 		- Deterrence: Understanding the attacker and then informing them of the consequences
 		- Transference: Transfer the risk to a 3rd party
+`Case Study: HeartBleed notes needed here` 
