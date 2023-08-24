@@ -34,3 +34,5 @@ Recap:
 		- Processor: L1, L2 and L3
 		- Memory
 		- Storage
+	- As we go down the hierarchy, access times and storage times increase however the capacity increases
+	- 
