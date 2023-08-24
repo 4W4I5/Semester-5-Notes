@@ -11,4 +11,10 @@ Recap:
 - Device inits Interrupt
 - Processor completes current execution
 	- ACK's interrupt to be processed
+- Saves PC and then the PSW (Program-Status-Word: Saves ACU(A register in 8086) and FlagsRegister)
+- Load in Interrupt init block into PC
+- F-D-E Cycle on the Interrupt
+- Restore PC & PSW
+
+#### Multiple Interrupt
 - 
