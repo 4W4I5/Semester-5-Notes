@@ -65,11 +65,8 @@
 
 - Types of information protection
 	- **Confidentiality**
-		- Only authorized ppl have access to the data
-		- In Detail
-			- `Add details from slides`
-			- Can be breached intentionally and unintentionally i.e something done by you that opens up confidential data to unauthorized users
-		- Enforced via encryption however encryption is meant for integrity as the sender is revealed through their private key decrypted via a signature (NOTE:: got confused at this)
+		- Definition
+			- 
 		- Breaches
 			- **Unauthorized Access:** Hackers or insiders gain unauthorized access to sensitive data.
 			- **Data Leaks:** Sensitive information is disclosed to unauthorized parties.
@@ -78,8 +75,8 @@
 			- **Access Control:** Restricts access to information based on user roles and permissions.
 			- **Data Classification:** Categorizes information based on sensitivity and applies different security controls accordingly.
 	- **Integrity**
-		- Ensuring the data is `Add a meaning to this`
-		- Depends on confidentiality
+		- Definition
+			- 
 		- Breaches
 			- **Data Tampering:** Unauthorized changes to data, which could result in misleading or incorrect information.
 			- **Data Corruption:** Unintended alterations to data that render it unusable or inaccurate.
@@ -88,8 +85,8 @@
 			- **Checksums and Hashing:** Generates checksums or hashes to verify data integrity.
 			- **Version Control:** Tracks changes to data and maintains a history of modifications.
 	- **Availability**
-		- On-Time
-		- DDOS is meant to take down the viability of data/network
+		- Definition
+			- 
 		- Breaches
 			- **Denial of Service (DoS) Attacks:** Overwhelms systems with traffic, rendering them inaccessible.
 			- **Distributed DoS (DDoS) Attacks:** Coordinated DoS attacks from multiple sources, magnifying the impact.
