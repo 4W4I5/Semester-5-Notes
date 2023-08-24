@@ -23,3 +23,4 @@
 		- Deterrence: Understanding the attacker and then informing them of the consequences
 		- Transference: Transfer the risk to a 3rd party
 `Case Study: HeartBleed notes needed here` 
+`Case Study: Pegasus notes needed here` 
