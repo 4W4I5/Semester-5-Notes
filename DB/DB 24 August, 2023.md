@@ -10,6 +10,6 @@ Discussed software dev lifecycle
 	- Attributes
 		- Types of attributes
 			- Simple
-			- 
+			-  Composite 
 	- Constraints
 	- Relationships
