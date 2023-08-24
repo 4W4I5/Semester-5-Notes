@@ -27,6 +27,10 @@
 
 ## Advanced Persistent Threats (APT)
 
-`APT, Cyber Kill Chain`
+`APT, Cyber Kill Chain notes needed here`
 - National Level. is it always a spyware tho?
 - State-Sponsored
+- Almost always uses a 0-Day
+- Persistent asf
+- Difficult to detect (Take the example of stuxnet)
+- 
