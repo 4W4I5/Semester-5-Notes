@@ -1,8 +1,9 @@
 ## Information Security
 
-- Task of securing info that is digital
-	- Transferred on a storage device
-	- Transmitted over a network
+- Task of securing info that is digital. 
+	- Such as data that is: 
+		- Transferred on a storage device
+		- Transmitted over a network
 	- Ensure that protective measures are properly implemented to ward off attack and prevent the total collapse of the system when a successful attack occurs
 	- Protect data in transit is the aspect covered in this course
 
