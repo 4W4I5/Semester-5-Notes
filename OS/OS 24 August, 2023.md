@@ -31,8 +31,9 @@ Recap:
 	- Cost
 - Cache, Memory, Storage
 	- In order
-		- Processor: L1, L2 and L3
-		- Memory
-		- Storage
-	- As we go down the hierarchy, access times and storage times increase however the capacity increases
-	- 
+		- Processor: L1, L2 and L3 (Not managed by the OS)
+		- Memory (Managed by the OS)
+		- Storage (Managed by the OS)
+	- As we go down the hierarchy, access times and storage times increase however the capacity increases. Known as the principle of locality as processors are forced to use lower level memory more efficiently
+
+
