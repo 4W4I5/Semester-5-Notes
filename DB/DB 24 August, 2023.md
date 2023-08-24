@@ -10,6 +10,7 @@ Discussed software dev lifecycle
 	- Attributes
 		- Types of attributes
 			- Simple
-			-  Composite 
+			-  Composite: Think of a macro attribute
+			- SingleValued
 	- Constraints
 	- Relationships
