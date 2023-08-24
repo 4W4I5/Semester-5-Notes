@@ -28,3 +28,5 @@
 ## Advanced Persistent Threats (APT)
 
 `APT, Cyber Kill Chain`
+- National Level. is it always a spyware tho?
+- State-Sponsored
