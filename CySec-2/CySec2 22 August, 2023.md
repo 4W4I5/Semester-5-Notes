@@ -100,13 +100,15 @@
 			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
 ## Protections to secure information
-- ##### Identification
-- ##### Authentication
-- ##### Authorization
-- ##### Auditing
-- ##### Accounting
+- ##### **Identification**
+	- This involves uniquely recognizing users or entities accessing a system or resource.
+- ##### **Authentication**
+	- This verifies the identity of users or entities through credentials (like passwords, biometrics, tokens) before granting access.
+- ##### **Authorization** 
+	- Once authenticated, users or entities are granted appropriate permissions to access specific resources or perform certain actions.
+- ##### **Auditing** 
+	- The process of monitoring and recording activities on a system to detect and investigate security breaches or policy violations.
+- ##### **Accounting** 
+	- This involves tracking and managing resource usage, often for billing, auditing, or security purposes.
 
-- Identify is given to a user but verifying them requires authentication
-- Authorization gives access rights to the authenticated user
-- Auditing/Accountability is monitoring and logging user activity and accounting is holding subjcets accountable for malicious activity
-- Nonrepudition is essential part of accountability, made possible thru the 3 A;s
+
