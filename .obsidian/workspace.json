@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -176,7 +177,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "af16dc51352658d4",
+  "active": "b8b68edca48e5359",
   "lastOpenFiles": [
     "CySec-2/CySec2 22 August, 2023.md",
     "CySec-2/CySec2 24 August, 2023.md",
