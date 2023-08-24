@@ -64,14 +64,17 @@
 ## Defining Information Security
 
 - Types of information protection
-	- **Confidentiality**
+	- **Confidentiality** `How is this dependent on Integrity though`
 		- Definition
 			- Protect information from unauthorized access
 		- Breaches
 			- **Unauthorized Access:** Hackers or insiders gain unauthorized access to sensitive data.
 			- **Data Leaks:** Sensitive information is disclosed to unauthorized parties.
+			- **Unintentional Disclosure**: Can be done so by sending a print of confidential data and someone else reads it, not encrypting data in transit, falling pray to a SE attack.
 		- Countermeasures
 			- **Encryption:** Converts information into a coded format that can only be deciphered by authorized parties.
+				- Data in transit using IPSec, TLS, PPTP, SSH
+				- Data at rest using whole disk and/or database encryption
 			- **Access Control:** Restricts access to information based on user roles and permissions.
 			- **Data Classification:** Categorizes information based on sensitivity and applies different security controls accordingly.
 	- **Integrity**
@@ -86,7 +89,7 @@
 			- **Version Control:** Tracks changes to data and maintains a history of modifications.
 	- **Availability**
 		- Definition
-			- 
+			- Ensure authorized access to resources without disruptions
 		- Breaches
 			- **Denial of Service (DoS) Attacks:** Overwhelms systems with traffic, rendering them inaccessible.
 			- **Distributed DoS (DDoS) Attacks:** Coordinated DoS attacks from multiple sources, magnifying the impact.
