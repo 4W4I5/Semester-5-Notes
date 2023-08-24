@@ -7,5 +7,6 @@ Discussed software dev lifecycle
 		- Person, Place, Object, Event, Concept
 		- Can be tangible/intangible
 	- Attributes
+		- 
 	- Constraints
 	- Relationships
