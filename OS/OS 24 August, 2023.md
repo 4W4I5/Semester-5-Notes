@@ -20,7 +20,7 @@ Recap:
 - Check and do two things
 	- Priority of the interrupt
 		- If higher, save state of the interrupt and go to the new interrupt
-		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isnt used 
+		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isn't used 
 	- Interrupt Blocking
 		- Just block any and all new interrupts until the current interrupt is resolved
 
