@@ -17,3 +17,8 @@
 - Risk
 	- Situation that involves exposure to any sort of danger
 	- Dealing with Risk 
+		- Risk Avoidance: Identifying the risk and not engaging in the activity to create that particular risk
+		- Acceptance: Risk is acknowledging the risk exists but no steps are taken to address it
+		- Risk mitigation: Address the risks to reduce the severity of the risks
+		- Deterrence: Understanding the attacker and then informing them of the consequences
+		- Transference: Transfer the risk to a 3rd party
