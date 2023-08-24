@@ -11,7 +11,7 @@
 | Date   | Status   | Content                                                            |
 | ------ | -------- | ------------------------------------------------------------------ |
 | 22 Aug | Complete | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
-| 24 Aug       |          |                                                                    |
+| 24 Aug       |          | Risk & Case Studies (2)                                                                   |
 
 ### DB
 
