@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -180,6 +179,7 @@
   "active": "af16dc51352658d4",
   "lastOpenFiles": [
     "README.md",
+    "CySec2.md",
     "DB/DB 22 August, 2023.md",
     "OS/OS 24 August, 2023.md",
     "OS/OS 22 August, 2023.md",
