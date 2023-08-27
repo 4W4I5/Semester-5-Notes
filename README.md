@@ -17,18 +17,18 @@
 
 ### CySec-2
 
-| Date    | Status     | Content                                                            |
-| ------- | ---------- | ------------------------------------------------------------------ |
-| [22 August](CySec-2/CySec2%2022%20August,%202023.md)  | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
-| 24 Aug  | Incomplete | Risk & Case Studies (2) & APTs                                     |
-| 29 Aug  |            |                                                                    |
-| 31 Aug  |            |                                                                    |
-| 5 Sept  |            |                                                                    |
-| 7 Sept  |            |                                                                    |
-| 12 Sept |            |                                                                    |
-| 14 Sept |            |                                                                    |
-| 19 Sept |            |                                                                    |
-| 21 Sept |            |                                                                    |
+| Date                                                  | Status     | Content                                                            |
+| ----------------------------------------------------- | ---------- | ------------------------------------------------------------------ |
+| [22 Aug](CySec-2/CySec2%2022%20August,%202023.md)     | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
+| [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)     | Incomplete | Risk & Case Studies (2) & APTs                                     |
+| [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)     |            |                                                                    |
+| [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)     |            |                                                                    |
+| [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   |            |                                                                    |
+| [7 Sept](CySec-2/CySec2%207%20September,%202023.md)   |            |                                                                    |
+| [12 Sept](CySec-2/CySec2%2012%20September,%202023.md) |            |                                                                    |
+| [14 Sept](CySec-2/CySec2%2014%20September,%202023.md) |            |                                                                    |
+| [19 Sept](CySec-2/CySec2%2019%20September,%202023.md) |            |                                                                    |
+| [21 Sept](CySec-2/CySec2%2021%20September,%202023.md) |            |                                                                    |
 
 ### DB
 
