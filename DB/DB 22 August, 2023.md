@@ -10,7 +10,7 @@ problems faced by ppl who used files for storage 30 years ago
 
 # Introduction
 ## Data:
-Known facts with specific meaning or interpolation
+Known facts with specific meaning or interpolation while **information** is a precise, understandable and specific representation of data
 - ### Terminology
 	- Volume == amount
 	- Velocity == speed
@@ -53,3 +53,8 @@ Known facts with specific meaning or interpolation
 			- May not capture the full complexity of real-world scenarios.
 			- Limited in representing unstructured or loosely structured information.
 			- Changes to the schema can be challenging and require careful migration.
+
+
+## Filing system:
+Still used as the traditional way to handle data generated through paperwork
+- 
