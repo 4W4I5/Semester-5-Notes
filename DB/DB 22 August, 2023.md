@@ -7,3 +7,14 @@ problems faced by ppl who used files for storage 30 years ago
 	- slow update times
 	- inconsistency
 `zoned out, use rec`
+
+# Introduction
+Data:
+- Terminology
+	- Volume == amount
+	- Velocity == speed
+	- Variety == range of types and sources
+- Types
+	- Unstructured
+	- Semi-Structured
+	- Structured
