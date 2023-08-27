@@ -6,7 +6,7 @@
       {
         "id": "09be0f2f0e0aa394",
         "type": "tabs",
-        "dimension": 77.91878172588832,
+        "dimension": 61.69844020797227,
         "children": [
           {
             "id": "af16dc51352658d4",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 24 August, 2023.md",
+                "file": "DB/DB 22 August, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
       {
         "id": "59950568398a0e43",
         "type": "tabs",
-        "dimension": 22.081218274111674,
+        "dimension": 38.30155979202773,
         "children": [
           {
             "id": "0e5c32f4557ff963",
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 24 August, 2023.md",
+                "file": "DB/DB 22 August, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 24 August, 2023.md",
+                "file": "DB/DB 22 August, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 24 August, 2023.md"
+                "file": "DB/DB 22 August, 2023.md"
               }
             }
           },
@@ -177,10 +177,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "af16dc51352658d4",
   "lastOpenFiles": [
-    "OS/OS 22 August, 2023.md",
     "OS/OS 24 August, 2023.md",
+    "OS/OS 22 August, 2023.md",
     "DB/DB 24 August, 2023.md",
     "README.md",
     "DB/DB 22 August, 2023.md",
