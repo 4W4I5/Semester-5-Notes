@@ -68,8 +68,10 @@ Still used as the traditional way to handle data generated through paperwork. Us
 ## Database Management System (DBMS)
 A digitized system where data is collected and queried
 - ### Stages of Creating a DB Model
-	- **Design**
-	- **Construct**
-	- **Manipulation of data**
-	- **Query**
-	- **Create Reports**
+	- **Design**: Define Structure and what type of data to take in 
+		- Process: Create an ERD (Entity-Relationship-Diagram) to define the database's blueprint
+	- **Construct**: Create Structure and ingest data
+		- Process: Use SQL to create the database that will hold the data it is tailored to
+	- **Manipulation of data**: Create, Read, Write, Update and Delete entries
+	- **Query**: Request Data
+	- **Create Reports**: Present queried Data in a table 
