@@ -34,8 +34,8 @@
 
 | Date   | Status     | Content                  |
 | ------ | ---------- | ------------------------ |
-| 22 Aug | Incomplete | Introduction & Evolution of a DMBS |
-| 24 Aug | Incomplete | Data Modelling           |
+| [22 Aug](DB/DB%2022%20August,%202023.md) | Incomplete | Introduction & Evolution of a DMBS |
+| [24 Aug](DB/DB%2024%20August,%202023.md) | Incomplete | Data Modelling           |
 | 29 Aug  |            |                                                                    |
 | 31 Aug  |            |                                                                    |
 | 5 Sept  |            |                                                                    |
