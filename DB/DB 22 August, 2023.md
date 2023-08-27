@@ -1,13 +1,3 @@
-data = raw facts
-data + context is information
-e.g: 18 is data, adding a unit to this such as km/h or cm then it is information 
-
-problems faced by ppl who used files for storage 30 years ago
-- Data redundancy
-	- slow update times
-	- inconsistency
-`zoned out, use rec`
-
 # Introduction
 ## Data:
 Known facts with specific meaning or interpolation while **information** is a precise, understandable and specific representation of data
@@ -59,11 +49,13 @@ Known facts with specific meaning or interpolation while **information** is a pr
 Still used as the traditional way to handle data generated through paperwork. Used only if a system to handle data in a precise way is still in use and transitioning to a digital means is hard
 - ### Issues:
 	- **Data Integrity**
-		- Definition: Inaccurate/altered documents
+		- Definition: Inaccurate/altered documents, issues with maintaining a file.
+		- Causes limited querying and response time
 	- **Data inconsistency**
-		- Definition: Occurs when two or more copies of the same data have conflicting changes
+		- Definition: Occurs when two or more copies of the same data have conflicting changes and were updated by two people without communication
 	- **Data redundancy**
-		- Definition: Duplicate instances of the same record within a system
+		- Definition: Duplicate instances of the same record within a system usually caused by 
+		- Cause
 	- **Data Isolation**
 		- Definition: 
 	- **Data Atomicity**

@@ -173,14 +173,15 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obisidian-note-linker:Note Linker": false
     }
   },
   "active": "af16dc51352658d4",
   "lastOpenFiles": [
     "README.md",
-    "DB/DB 24 August, 2023.md",
     "DB/DB 22 August, 2023.md",
+    "DB/DB 24 August, 2023.md",
     "CySec-2/CySec2 22 August, 2023.md",
     "CySec2.md",
     "OS/OS 24 August, 2023.md",
