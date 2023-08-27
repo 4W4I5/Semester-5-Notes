@@ -56,5 +56,24 @@ Known facts with specific meaning or interpolation while **information** is a pr
 
 
 ## Filing system:
-Still used as the traditional way to handle data generated through paperwork
-- 
+Still used as the traditional way to handle data generated through paperwork. Used only if a system to handle data in a precise way is still in use and transitioning to a digital means is hard
+- ### Issues:
+	- **Data Integrity**
+		- Definition: Inaccurate/altered documents
+	- **Data inconsistency**
+		- Definition: Occurs when two or more copies of the same data have conflicting changes
+	- **Data redundancy**
+		- Definition: Duplicate instances of the same record within a system
+	- **Data Isolation**
+		- Definition: 
+	- **Data Atomicity**
+		- Definition: Incomplete/Partial changes made to the data, a write fail can cause the database to 
+
+## Database Management System (DBMS)
+A digitized system where data is collected and queried
+- ### Stages of Creating a DB Model
+	- **Design**
+	- **Construct**
+	- **Manipulation of data**
+	- **Query**
+	- **Create Reports**
