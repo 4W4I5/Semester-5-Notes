@@ -15,6 +15,6 @@ Data:
 	- Velocity == speed
 	- Variety == range of types and sources
 - Types
-	- Unstructured
+	- Unstructured: No defined structure or organization
 	- Semi-Structured
 	- Structured
