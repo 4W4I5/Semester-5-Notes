@@ -48,18 +48,22 @@ Known facts with specific meaning or interpolation while **information** is a pr
 ## Filing system:
 Still used as the traditional way to handle data generated through paperwork. Used only if a system to handle data in a precise way is still in use and transitioning to a digital means is hard
 - ### Issues:
+- `Note: These issues also translate over to an actual DBMS as well`
 	- **Data Integrity**
 		- Definition: Inaccurate/altered documents, issues with maintaining a file.
 		- Causes limited querying and response time
 	- **Data inconsistency**
 		- Definition: Occurs when two or more copies of the same data have conflicting changes and were updated by two people without communication
+		- Causes issues with tracking the latest file and also wastes space
 	- **Data redundancy**
-		- Definition: Duplicate instances of the same record within a system usually caused by 
-		- Cause
+		- Definition: Duplicate instances of the same record within a system usually caused by saving copies of a file with small differences
+		- Causes retrieval of files to be more difficult and also wastes space
 	- **Data Isolation**
-		- Definition: 
+		- Definition: Same file, scattered between two points with no relationship. In a DMBS this would be due to two users being able to write to a file 
+		- Causes confusion, loss of information and inefficiency 
 	- **Data Atomicity**
 		- Definition: Incomplete/Partial changes made to the data, a write fail can cause the database to 
+		- Causes data inaccuracies and compromises reliability of the system
 
 ## Database Management System (DBMS)
 A digitized system where data is collected and queried
