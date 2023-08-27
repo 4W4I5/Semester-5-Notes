@@ -9,7 +9,8 @@ problems faced by ppl who used files for storage 30 years ago
 `zoned out, use rec`
 
 # Introduction
-## Data: Known facts with specific meaning or interpolation
+## Data:
+Known facts with specific meaning or interpolation
 - ### Terminology
 	- Volume == amount
 	- Velocity == speed
