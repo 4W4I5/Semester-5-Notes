@@ -19,7 +19,7 @@
 
 | Date    | Status     | Content                                                            |
 | ------- | ---------- | ------------------------------------------------------------------ |
-| [22 Aug](CySec2 22 August, 2023.md)  | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
+| [22 August](CySec2%2022%20August,%202023.md)  | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
 | 24 Aug  | Incomplete | Risk & Case Studies (2) & APTs                                     |
 | 29 Aug  |            |                                                                    |
 | 31 Aug  |            |                                                                    |
