@@ -4,7 +4,7 @@
 
 | Date    | Status | Content     |
 | ------- | ------ | ----------- |
-| 21 Aug  | N/A    | Maam Absent |
+| [21 Aug]()  | N/A    | Maam Absent |
 | 23 Aug  | N/A    | Maam Absent |
 | 28 Aug  |        |             |
 | 30 Aug  |        |             |
