@@ -6,14 +6,14 @@
 | ------- | ------ | ----------- |
 | 21 Aug  | N/A    | Maam Absent |
 | 23 Aug  | N/A    | Maam Absent |
-| 28 Aug  |        |             |
+| 28 Aug  | N/A    | Maam Absent | 
 | 30 Aug  |        |             |
 | 4 Sept  |        |             |
 | 6 Sept  |        |             |
 | 11 Sept |        |             |
 | 13 Sept |        |             |
 | 18 Sept |        |             |
-| 20 Sept        |        |             |
+| 20 Sept |        |             |
 
 ### CySec-2
 
