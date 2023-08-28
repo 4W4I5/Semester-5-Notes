@@ -90,17 +90,26 @@ A digitized system where data is collected and queried
 <!-- 
 Review Questions:
 1) Define the following terms
-- Data: 
-- Database:
-- DBMS:
-- Database Catalog
-- Program-Data independence
-- User view
-- DBA
-- End user
-- Canned transaction
-- Deductive Database System
-- Persistent Object
-- Meta-data
-- Transaction-Processing Application
+- Data: Information in its raw and unorganized form, typically consisting of facts, figures, or statistics.
+- Database: A structured collection of data that is organized, stored, and managed for efficient retrieval and manipulation.
+- DBMS (Database Management System): Software that provides an interface for users and applications to interact with databases, managing tasks like data storage, retrieval, and security.
+- Database Catalog: A repository within a DBMS that stores metadata, which includes information about the structure, organization, and relationships within the database.
+- Program-Data Independence: The ability to modify programs without affecting the structure or organization of the data they use.
+- User View: A subset of the database that a specific user or application is authorized to access, showing only the relevant data.
+- DBA (Database Administrator): A professional responsible for managing and maintaining the database, ensuring its availability, security, performance, and integrity.
+- End User: The individuals or entities who interact directly with the database to perform specific tasks or obtain information.
+- Canned Transaction: A pre-defined sequence of operations or transactions that are packaged together for execution, often used for routine tasks.
+- Deductive Database System: A type of database system that incorporates logic-based reasoning and supports deductive queries.
+- Persistent Object: An object in object-oriented programming that retains its state even after the program has terminated.
+- Meta-data: Data that describes other data, providing information about the structure, attributes, and relationships of the data.
+- Transaction-Processing Application: Software applications designed to handle transactions, which are discrete units of work, often involving the modification of data in a database.
+
+1) What four main types of actions involve databases? Briefly discuss each. 
+	
+2) Discuss the main characteristics of the database approach and how it differs from traditional file systems. 
+3) What are the responsibilities of the DBA and the database designers? 
+4) What are the different types of database end users? Discuss the main activities of each. 
+5) Discuss the capabilities that should be provided by a DBMS. 
+6) Discuss the differences between database systems and information retrieval systems.
+
 -->
