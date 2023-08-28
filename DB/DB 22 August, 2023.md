@@ -104,8 +104,11 @@ Review Questions:
 - Meta-data: Data that describes other data, providing information about the structure, attributes, and relationships of the data.
 - Transaction-Processing Application: Software applications designed to handle transactions, which are discrete units of work, often involving the modification of data in a database.
 
-1) What four main types of actions involve databases? Briefly discuss each. 
-	
+1) What four main types of actions involve databases? Briefly discuss each.
+	- Data Definition
+	- Data Manipulation
+	- Data Retrieval
+	- Data administration
 2) Discuss the main characteristics of the database approach and how it differs from traditional file systems. 
 3) What are the responsibilities of the DBA and the database designers? 
 4) What are the different types of database end users? Discuss the main activities of each. 
