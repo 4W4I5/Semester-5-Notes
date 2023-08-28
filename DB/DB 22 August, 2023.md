@@ -84,3 +84,23 @@ A digitized system where data is collected and queried
 	- **Multiple User interfaces**
 	- **Represent Complex Relationships among data**
 	- **Enforce Integrity Constraints**
+
+
+
+<!-- 
+Review Questions:
+1) Define the following terms
+- Data: 
+- Database:
+- DBMS:
+- Database Catalog
+- Program-Data independence
+- User view
+- DBA
+- End user
+- Canned transaction
+- Deductive Database System
+- Persistent Object
+- Meta-data
+- Transaction-Processing Application
+-->
