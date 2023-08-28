@@ -75,3 +75,12 @@ A digitized system where data is collected and queried
 	- **Manipulation of data**: Create, Read, Write, Update and Delete entries
 	- **Query**: Request Data
 	- **Create Reports**: Present queried Data in a table 
+- ### Advantages of using a DBMS
+	- **Controlling Redundancy**
+	- **Controlled Access**
+	- **Persistent Storage for programs**
+	- **Efficient Query Processing**
+	- **Backup and Recovery**
+	- **Multiple User interfaces**
+	- **Represent Complex Relationships among data**
+	- **Enforce Integrity Constraints**
