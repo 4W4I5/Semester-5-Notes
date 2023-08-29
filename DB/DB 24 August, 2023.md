@@ -20,12 +20,9 @@
 			-  **Complex Attribute:** An attribute that has both simple and composite attributes as components. This type of attribute can have its own set of attributes. For instance, an attribute "Education" might have sub-attributes like "Degree" and "University."
 			- **Stored Attribute:** An attribute that is permanently stored in the database. This is in contrast to derived attributes, which are calculated when needed.
 			- **Multivalued Dependency:** A type of dependency between attributes in which an attribute depends on another attribute through a third, multivalued attribute.
-    
-10. **Key Dependency:** An attribute that is functionally dependent on part of the primary key.
-    
-11. **Partial Dependency:** A situation in which an attribute depends on only part of a composite primary key.
-    
-12. **Transitive Dependency:** A dependency in which an attribute depends on another non-key attribute, which in turn depends on the primary key.
+			- **Key Dependency:** An attribute that is functionally dependent on part of the primary key.
+			- **Partial Dependency:** A situation in which an attribute depends on only part of a composite primary key.
+			- **Transitive Dependency:** A dependency in which an attribute depends on another non-key attribute, which in turn depends on the primary key.
 	- ### Constraints
 		- **Primary Key Constraint:** 
 			- Ensures that each row in a table is uniquely identifiable. Often corresponds to a unique identifier for an entity (e.g., Customer ID).
