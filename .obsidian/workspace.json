@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "DB/DB 24 August, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "DB/DB 24 August, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "DB/DB 24 August, 2023.md"
               }
             }
           },
@@ -174,11 +175,11 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "059c8125ba1af346",
+  "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
+    "README.md",
     "DB/DB 24 August, 2023.md",
     "CySec-2/CySec2 29 August, 2023.md",
-    "README.md",
     "OS/OS 22 August, 2023.md",
     "CySec-2/CySec2 24 August, 2023.md",
     "CySec-2/CySec2 22 August, 2023.md",

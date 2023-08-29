@@ -19,8 +19,22 @@
 			- Key: unique attribute
 			- Descriptive:
 	- ### Constraints
-		- Restrictions applied on attributes i.e names should be alphabets only and a phone number should just be digits
+		- **Primary Key Constraint:** 
+			- Ensures that each row in a table is uniquely identifiable. Often corresponds to a unique identifier for an entity (e.g., Customer ID).
+		- **Foreign Key Constraint:** 
+			- Establishes relationships between tables by referencing the primary key of another table. Ensures referential integrity.
+		- **Unique Constraint:** 
+			- Ensures that the values in a specific column or set of columns are unique across the table.
+		- **Not Null Constraint:** 
+			- Ensures that a column cannot have a null (empty) value.
+		- **Check Constraint:** 
+			- Defines a condition that values must satisfy (e.g., age > 18) for insertion or update.
+		- **Default Constraint:** 
+			- Provides a default value for a column if no value is specified during insertion.
+		- **Entity Integrity Constraint:** 
+			- Requires that a primary key value is not null, ensuring the uniqueness and identification of records.
 	- ### Relationships
-		- One-One
-		- One-Many
-		- Many-Many
+		- **One-to-One Relationship:** One record in the first table is related to at most one record in the second table, and vice versa.
+		- **One-to-Many Relationship:** One record in the first table is related to one or more records in the second table, but each record in the second table is related to only one record in the first table.
+		- **Many-to-Many Relationship:** Multiple records in the first table are related to multiple records in the second table. This type of relationship requires a junction table.
+		- **Self-Referential Relationship:** A relationship where entities in the same table are related to each other. For example, an employee may have a manager who is also an employee.
