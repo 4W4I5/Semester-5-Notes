@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 24 August, 2023.md",
+                "file": "Case Study - HeartBleed Exploit.md",
                 "mode": "source",
                 "source": false
               }
@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 24 August, 2023.md",
+                "file": "Case Study - HeartBleed Exploit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 24 August, 2023.md",
+                "file": "Case Study - HeartBleed Exploit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 24 August, 2023.md"
+                "file": "Case Study - HeartBleed Exploit.md"
               }
             }
           },
@@ -178,6 +178,8 @@
   },
   "active": "af16dc51352658d4",
   "lastOpenFiles": [
+    "CySec-2/CySec2 24 August, 2023.md",
+    "Case Study - HeartBleed Exploit.md",
     "CySec-2/CySec2 22 August, 2023.md",
     "README.md",
     "CySec-2/Case Studies/Case Study - Mirai Malware.md",
@@ -186,7 +188,6 @@
     "OS/OS 24 August, 2023.md",
     "DB/DB 24 August, 2023.md",
     "DB/DB 22 August, 2023.md",
-    "CySec-2/CySec2 24 August, 2023.md",
     "CySec2.md",
     "Marketing/DM 24 August, 2023.md",
     "OS",
