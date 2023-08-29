@@ -7,13 +7,13 @@
 | 21 Aug  | N/A    | Maam Absent |
 | 23 Aug  | N/A    | Maam Absent |
 | 28 Aug  | N/A    | Maam Absent |
-| [30 Aug]  |        |             |
-| [4 Sept]  |        |             |
-| [6 Sept]  |        |             |
-| [11 Sept] |        |             |
-| [13 Sept] |        |             |
-| [18 Sept] |        |             |
-| [20 Sept] |        |             |
+| [30 Aug](Algo/Algo%2030%20August,%202023.md)  |        |             |
+| [4 Sept](Marketing/Marketing%204%20September,%202023.md)  |        |             |
+| [6 Sept](Marketing/Marketing%206%20September,%202023.md)  |        |             |
+| [11 Sept](Marketing/Marketing%2011%20September,%202023.md) |        |             |
+| [13 Sept](Marketing/Marketing%2013%20September,%202023.md) |        |             |
+| [18 Sept](Marketing/Marketing%2018%20September,%202023.md) |        |             |
+| [20 Sept](Marketing/Marketing%2020%20September,%202023.md) |        |             |
 
 ### CySec-2
 
