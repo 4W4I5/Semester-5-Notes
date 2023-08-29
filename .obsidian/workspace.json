@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/Case Studies/Case Study - Mirai Malware.md",
+                "file": "CySec-2/CySec2 29 August, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c132e5aeedf4ee15",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/CySec2 24 August, 2023.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "0c7752a19eb98064",
@@ -103,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/Case Studies/Case Study - Mirai Malware.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/Case Studies/Case Study - Mirai Malware.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +156,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/Case Studies/Case Study - Mirai Malware.md"
+                "file": "README.md"
               }
             }
           },
@@ -174,13 +187,15 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "059c8125ba1af346",
   "lastOpenFiles": [
+    "CySec-2/CySec2 24 August, 2023.md",
+    "CySec-2/CySec2 29 August, 2023.md",
     "README.md",
+    "CySec-2/Case Studies/Case Study - Carbanak APT.md",
+    "CySec-2/Case Studies/Case Study - HeartBleed Exploit.md",
     "CySec-2/Case Studies/Case Study - Mirai Malware.md",
     "CySec-2/Case Studies/Case Study - Pegasus Spyware.md",
-    "CySec-2/CySec2 24 August, 2023.md",
-    "CySec-2/Case Studies/Case Study - HeartBleed Exploit.md",
     "OS/OS 22 August, 2023.md",
     "OS/OS 24 August, 2023.md",
     "DB/DB 22 August, 2023.md",
