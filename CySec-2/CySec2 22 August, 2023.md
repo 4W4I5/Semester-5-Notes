@@ -20,7 +20,6 @@
 	- A lot of the heavy work is handled by the tools themselves therefore aiding the complexity of the attacks
 
 # Next-Gen attacks
-
 [Case Study - Mirai Malware](CySec-2/Case%20Studies/Case%20Study%20-%20Mirai%20Malware.md)
 
 ## Defining Information Security
