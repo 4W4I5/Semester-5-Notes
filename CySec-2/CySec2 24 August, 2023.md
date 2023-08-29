@@ -29,7 +29,7 @@
 ## Advanced Persistent Threats (APT) 
 `Note these were made using chatGPT so bear w some inaccuraices for now`
 ## Sophistication
-- **Advanced Techniques:** APTs utilize cutting-edge attack methods that are beyond typical cybercriminal capabilities. They might employ zero-day exploits, custom malware, and complex attack chains.
+- **Advanced Techniques:** APTs utilize cutting-edge attack methods that are beyond typical cybercriminal capabilities. They might employ zero-day exploits, persistence, custom malware, and complex attack chains.
 - **Custom Malware:** Attackers create tailored malware specifically designed to evade detection by traditional security measures. This makes it difficult for antivirus software to identify and mitigate the threat.
 - **Precision Planning:** APTs are meticulously planned and executed. Attackers invest significant time in reconnaissance to gather intelligence about the target, its systems, and its vulnerabilities.
 ## Persistence
