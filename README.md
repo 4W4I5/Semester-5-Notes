@@ -32,18 +32,18 @@
 
 ### DB
 
-| Date                                         | Status   | Content                            |
-| -------------------------------------------- | -------- | ---------------------------------- |
-| [22 Aug](DB/DB%2022%20August,%202023.md)     | Complete | Introduction & Evolution of a DMBS |
+| Date                                         | Status                        | Content                            |
+| -------------------------------------------- | ----------------------------- | ---------------------------------- |
+| [22 Aug](DB/DB%2022%20August,%202023.md)     | Complete                      | Introduction & Evolution of a DMBS |
 | [24 Aug](DB/DB%2024%20August,%202023.md)     | Refactor (Need to use Slides) | Data Modelling                     |
-| [29 Aug](DB/DB%2029%20August,%202023.md)     |          |                                    |
-| [31 Aug](DB/DB%2031%20August,%202023.md)     |          |                                    |
-| [5 Sept](DB/DB%205%20September,%202023.md)   |          |                                    |
-| [7 Sept](DB/DB%207%20September,%202023.md)   |          |                                    |
-| [12 Sept](DB/DB%2012%20September,%202023.md) |          |                                    |
-| [14 Sept](DB/DB%2014%20September,%202023.md) |          |                                    |
-| [19 Sept](DB/DB%2019%20September,%202023.md) |          |                                    |
-| [21 Sept](DB/DB%2021%20September,%202023.md) |          |                                    |
+| [29 Aug](DB/DB%2029%20August,%202023.md)     | Incomplete                    | Data Modelling PT2                 |
+| [31 Aug](DB/DB%2031%20August,%202023.md)     |                               |                                    |
+| [5 Sept](DB/DB%205%20September,%202023.md)   |                               |                                    |
+| [7 Sept](DB/DB%207%20September,%202023.md)   |                               |                                    |
+| [12 Sept](DB/DB%2012%20September,%202023.md) |                               |                                    |
+| [14 Sept](DB/DB%2014%20September,%202023.md) |                               |                                    |
+| [19 Sept](DB/DB%2019%20September,%202023.md) |                               |                                    |
+| [21 Sept](DB/DB%2021%20September,%202023.md) |                               |                                    |
 
 ### Marketing
 
