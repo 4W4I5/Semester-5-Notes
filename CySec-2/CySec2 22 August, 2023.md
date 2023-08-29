@@ -1,7 +1,7 @@
 ## Information Security
 
-- Task of securing info that is digital. 
-	- Such as data that is: 
+- Task of securing info that is digital.
+	- Such as data that is:
 		- Transferred on a storage device
 		- Transmitted over a network
 	- Ensure that protective measures are properly implemented to ward off attack and prevent the total collapse of the system when a successful attack occurs
@@ -20,6 +20,7 @@
 	- A lot of the heavy work is handled by the tools themselves therefore aiding the complexity of the attacks
 
 # Next-Gen attacks
+
 [Case Study - Mirai Malware](CySec-2/Case%20Studies/Case%20Study%20-%20Mirai%20Malware.md)
 
 ## Defining Information Security
@@ -61,17 +62,16 @@
 			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
 ## Protections to secure information
+
 - ##### **Identification**
 	- This involves uniquely recognizing users or entities accessing a system or resource.
 - ##### **Authentication**
 	- This verifies the identity of users or entities through credentials (like passwords, biometrics, tokens) before granting access.
-- ##### **Authorization** 
+- ##### **Authorization**
 	- Once authenticated, users or entities are granted appropriate permissions to access specific resources or perform certain actions.
-- ##### **Auditing** 
+- ##### **Auditing**
 	- The process of monitoring and recording activities on a system to detect and investigate security breaches or policy violations.
-- ##### **Accounting** 
+- ##### **Accounting**
 	- This involves tracking and managing resource usage, often for billing, auditing, or security purposes.
 	- **Non-Repudiation**
 		- Ensure that the suspect of an event/activity cannot deny that the event occurred. It is essential to accounting and made possible through Identification, Authentication, Accountability, Authorization and Auditing
-
-

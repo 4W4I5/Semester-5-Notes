@@ -6,8 +6,8 @@ Recap:
 		- Long I/O wait
 			- After a set time limit, stops I/O routine and continues normal operation
 
-
 #### Inner working of an interrupt
+
 - Device inits Interrupt
 - Processor completes current execution
 	- ACK's interrupt to be processed
@@ -17,14 +17,16 @@ Recap:
 - Restore PC & PSW
 
 #### Multiple Interrupt
+
 - Check and do two things
 	- Priority of the interrupt
 		- If higher, save state of the interrupt and go to the new interrupt
-		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isn't used 
+		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isn't used
 	- Interrupt Blocking
 		- Just block any and all new interrupts until the current interrupt is resolved
 
-#### Memory Hierarchy 
+#### Memory Hierarchy
+
 - Constraints
 	- Capacity
 	- Access times
@@ -35,5 +37,3 @@ Recap:
 		- Memory (Managed by the OS)
 		- Storage (Managed by the OS)
 	- As we go down the hierarchy, access times and storage times increase however the capacity increases. Known as the principle of locality as processors are forced to use lower level memory more efficiently
-
-

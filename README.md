@@ -6,7 +6,7 @@
 | ------- | ------ | ----------- |
 | 21 Aug  | N/A    | Maam Absent |
 | 23 Aug  | N/A    | Maam Absent |
-| 28 Aug  | N/A    | Maam Absent | 
+| 28 Aug  | N/A    | Maam Absent |
 | 30 Aug  |        |             |
 | 4 Sept  |        |             |
 | 6 Sept  |        |             |
