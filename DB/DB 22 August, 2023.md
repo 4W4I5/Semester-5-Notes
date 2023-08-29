@@ -90,7 +90,7 @@ A digitized system where data is collected and queried
 
 
 
-<!--
+<!-- 
 Review Questions:
 1) Define the following terms
 - Data: Information in its raw and unorganized form, typically consisting of facts, figures, or statistics.
@@ -114,15 +114,15 @@ Review Questions:
 	- Data administration
 2) Discuss the main characteristics of the database approach and how it differs from traditional file systems.
 	- The database approach offers several advantages over traditional file systems, including data integrity, data sharing, reduced data redundancy, improved data security, and centralized data management. Unlike file systems, databases use a structured and organized approach to data storage, allowing for efficient querying and manipulation.
-3) What are the responsibilities of the DBA and the database designers?
+3) What are the responsibilities of the DBA and the database designers? 
 	- DBA Responsibilities: DBAs are responsible for database design, security, performance tuning, backup and recovery, user management, and ensuring data integrity and availability.
 	- Database Designers: They design the database schema, define relationships between tables, choose appropriate data types, and ensure efficient data storage and retrieval.
-4) What are the different types of database end users? Discuss the main activities of each.
+4) What are the different types of database end users? Discuss the main activities of each. 
 	- Casual End Users: Occasionally access the database to retrieve specific information.
 	- Naive End Users: Interact with the database through predefined forms and canned transactions.
 	- Sophisticated End Users: Formulate ad hoc queries and generate reports.
 	- Stand-Alone Users: Maintain personal databases using desktop tools.
-5) Discuss the capabilities that should be provided by a DBMS.
+5) Discuss the capabilities that should be provided by a DBMS. 
 	- Data Storage and Retrieval: Efficiently store and retrieve large volumes of data.
 	- Data Security: Implement user authentication, authorization, and data encryption.
 	- Data Integrity: Enforce data integrity constraints to ensure accurate and consistent data.
