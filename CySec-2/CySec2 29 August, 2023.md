@@ -11,14 +11,22 @@
 	- Crafting malware, creating exploit documents, preparing malicious links.
 
 #### 3. **Delivery**
-- Attackers deliver the weaponized payload to the target's systems.
+- Attackers decide on the delivery method. There are plenty of options to choose from.
 - **Activities:** 
-	- Sending malicious emails, exploiting vulnerabilities, using compromised websites.
+	- Sending malicious emails, exploiting vulnerabilities, using compromised websites, Distributing Infected USB drives, Watering Hole Attack to compromise a website people are locally using and drive-by download.
 
 #### 4. **Exploitation**
 - Attackers leverage vulnerabilities to execute the malicious code on the target system.
 - **Activities:** 
-	- Gaining unauthorized access, privilege escalation, executing code.
+	- Gaining unauthorized access, bad configs, privilege escalation, executing malicious code, Letting users click on a link that leads to website that downloads and executes said code.
+	- Examples:
+		- 0-Day
+		- Drive-By Download
+		- Phishing and Social Engineering
+		- Software Vulnerabilities
+		- Malicious Code Execution
+		- SQL Injection
+		- Remote Code Execution
 
 #### 5. **Installation**
 - Attackers install persistent mechanisms to maintain control over the compromised system.
