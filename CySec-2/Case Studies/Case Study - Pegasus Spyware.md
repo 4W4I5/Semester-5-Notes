@@ -7,8 +7,13 @@
 #### **Spyware Capabilities:**
 
 - Pegasus can exploit vulnerabilities in popular mobile operating systems like iOS and Android.
+	- For android, no 0-day were required as a well known rooting method known as Framaroot was used
+	- For IOS, if the jailbreak attempt is unsuccessful the attack is considered as a failed attempt however on android it just asks user for the permissions to exfil the data it gathered
 - It can gain complete control over a targeted device, including access to messages, calls, emails, camera, microphone, and more.
 - Pegasus operates in a stealthy manner, often leaving no trace of its presence.
+	- It could capture plaintext before encryption
+	- In case it cannot contact CoC, it will self destruct within for more than 60 Days
+	- If the spyware is installed on a target not specified by the CoC it will will self destruct
 
 #### **Targeting and Deployment:**
 
