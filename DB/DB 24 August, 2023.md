@@ -11,15 +11,15 @@
 			- Represented by a rectangle
 	- ### Attributes
 		- **Types of attributes**
-			1. **Simple Attribute:** A single, indivisible value that cannot be further divided. For example, the "Name" attribute of a customer entity.
-			1. **Composite Attribute:** An attribute composed of multiple sub-attributes with independent meanings. For instance, the "Address" attribute might have sub-attributes like "Street," "City," "State," and "Zip Code."
-			2. **Derived Attribute:** An attribute that can be derived or calculated from other attributes in the database. For example, the "Age" attribute can be derived from the "Date of Birth" attribute.
-			1. **Key Attribute:** An attribute that is part of the primary key of an entity, used to uniquely identify records within the entity.
-			2. **Multi-valued Attribute:** An attribute that can hold multiple values for a single entity. For example, the "Phone Numbers" attribute of a person entity could hold multiple phone numbers.
-			3. **Null Attribute:** An attribute that can have a null or missing value, indicating that the data is not applicable or unknown for that entity.
-			4. **Complex Attribute:** An attribute that has both simple and composite attributes as components. This type of attribute can have its own set of attributes. For instance, an attribute "Education" might have sub-attributes like "Degree" and "University."
-			1. **Stored Attribute:** An attribute that is permanently stored in the database. This is in contrast to derived attributes, which are calculated when needed.
-			2. **Multivalued Dependency:** A type of dependency between attributes in which an attribute depends on another attribute through a third, multivalued attribute.
+			- **Simple Attribute:** A single, indivisible value that cannot be further divided. For example, the "Name" attribute of a customer entity.
+			- **Composite Attribute:** An attribute composed of multiple sub-attributes with independent meanings. For instance, the "Address" attribute might have sub-attributes like "Street," "City," "State," and "Zip Code."
+			- **Derived Attribute:** An attribute that can be derived or calculated from other attributes in the database. For example, the "Age" attribute can be derived from the "Date of Birth" attribute.
+			- **Key Attribute:** An attribute that is part of the primary key of an entity, used to uniquely identify records within the entity.
+			- **Multi-valued Attribute:** An attribute that can hold multiple values for a single entity. For example, the "Phone Numbers" attribute of a person entity could hold multiple phone numbers.
+			- **Null Attribute:** An attribute that can have a null or missing value, indicating that the data is not applicable or unknown for that entity.
+			-  **Complex Attribute:** An attribute that has both simple and composite attributes as components. This type of attribute can have its own set of attributes. For instance, an attribute "Education" might have sub-attributes like "Degree" and "University."
+			- **Stored Attribute:** An attribute that is permanently stored in the database. This is in contrast to derived attributes, which are calculated when needed.
+			- **Multivalued Dependency:** A type of dependency between attributes in which an attribute depends on another attribute through a third, multivalued attribute.
     
 10. **Key Dependency:** An attribute that is functionally dependent on part of the primary key.
     
