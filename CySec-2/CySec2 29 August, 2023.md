@@ -41,46 +41,37 @@
 #### 7. **Execution**
 - Attackers perform malicious actions on the compromised system.
 - **Activities:** 
-	- Data exfiltration, lateral movement, privilege escalation, credential theft.
-
-#### 8. **Persistence**
-- Attackers ensure their access to the system remains even after reboots.
-- **Activities:** 
-	- Modifying startup scripts, creating scheduled tasks, hiding in system components.
-
-#### 9. **Privilege Escalation**
-- Attackers increase their level of control and access within the target environment.
-- **Activities:** 
-	- Exploiting misconfigurations, leveraging software vulnerabilities, manipulating access controls.
-
-#### 10. **Defense Evasion**
-- Attackers employ techniques to avoid detection by security measures.
-- **Activities:** 
-	- Anti-virus evasion, using encrypted communication, disguising malicious files.
-
-#### 11. **Credential Theft**
-- Attackers gather authentication credentials to gain unauthorized access.
-- **Activities:** 
-	- Keylogging, pass-the-hash attacks, brute-forcing passwords.
-
-#### 12. **Discovery**
-- Attackers explore the target environment to identify critical assets and data.
-- **Activities:** 
-	- Network scanning, system enumeration, identifying valuable data repositories.
-
-#### 13. **Lateral Movement**
-- Attackers move laterally within the network to access different systems.
-- **Activities:** 
-	- Exploiting trust relationships, using stolen credentials, leveraging lateral vulnerabilities.
-
-#### 14. **Data Exfiltration**
-- Attackers steal sensitive data from the target environment.
-- **Activities:** 
-	- Transferring files, compressing data, disguising data within legitimate traffic.
-
-#### 15. **Impact**
-- Attackers execute their primary objectives, causing damage to the target organization.
-- **Activities:** 
-	- Destroying data, disrupting services, deploying ransomware, causing financial losses.
+	- **Persistence**
+		- Attackers ensure their access to the system remains even after reboots.
+		- **Activities:** 
+			- Modifying startup scripts, creating scheduled tasks, hiding in system components.
+	- **Privilege Escalation**
+		- Attackers increase their level of control and access within the target environment.
+		- **Activities:** 
+			- Exploiting misconfigurations, leveraging software vulnerabilities, manipulating access controls.
+	- **Defense Evasion**
+		- Attackers employ techniques to avoid detection by security measures.
+		- **Activities:** 
+			- Anti-virus evasion, using encrypted communication, disguising malicious files.
+	- **Credential Theft**
+		- Attackers gather authentication credentials to gain unauthorized access.
+		- **Activities:** 
+			- Keylogging, pass-the-hash attacks, brute-forcing passwords.
+	- **Discovery**
+		- Attackers explore the target environment to identify critical assets and data.
+		- **Activities:** 
+			- Network scanning, system enumeration, identifying valuable data repositories.
+	- **Lateral Movement**
+		- Attackers move laterally within the network to access different systems.
+		- **Activities:** 
+			- Exploiting trust relationships, using stolen credentials, leveraging lateral vulnerabilities.
+	- **Data Exfiltration**
+		- Attackers steal sensitive data from the target environment.
+		- **Activities:** 
+			- Transferring files, compressing data, disguising data within legitimate traffic.
+	- **Impact**
+		- Attackers execute their primary objectives, causing damage to the target organization.
+		- **Activities:** 
+			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
 
 [Case Study - Carbanak APT](Case%20Study%20-%20Carbanak%20APT.md)

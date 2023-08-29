@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 29 August, 2023.md",
+                "file": "CySec-2/Case Studies/Case Study - Carbanak APT.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 29 August, 2023.md",
+                "file": "CySec-2/Case Studies/Case Study - Carbanak APT.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 29 August, 2023.md",
+                "file": "CySec-2/Case Studies/Case Study - Carbanak APT.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 29 August, 2023.md"
+                "file": "CySec-2/Case Studies/Case Study - Carbanak APT.md"
               }
             }
           },
@@ -178,9 +178,9 @@
   },
   "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
+    "CySec-2/CySec2 29 August, 2023.md",
     "README.md",
     "CySec-2/CySec2 24 August, 2023.md",
-    "CySec-2/CySec2 29 August, 2023.md",
     "DB/DB 24 August, 2023.md",
     "DB/DB 22 August, 2023.md",
     "OS/OS 24 August, 2023.md",
