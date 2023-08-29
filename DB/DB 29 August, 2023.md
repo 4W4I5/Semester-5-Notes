@@ -1,0 +1,1 @@
+12 min into the lec: going thru relationships
