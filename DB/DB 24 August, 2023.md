@@ -1,11 +1,16 @@
 # Data modelling: Designing a Database
 
-- Database model
-	- Entities (Always a singular noun: Student not students as the col header})
+- ## Database model
+	- ### Entities 
+	- Always a singular noun: Student not students as the col header
 		- Person, Place, Object, Event, Concept
 		- Can be tangible/intangible
-	- Attributes
-		- Types of attributes
+			- Examples
+				- Tangible: Person, Place & Object
+				- Intangible: Event(Verbs) & Concept(Account, Course, Patient's Health History, Budget)
+			- Represented by a rectangle
+	- ### Attributes
+		- **Types of attributes**
 			- Simple
 			- Composite: Think of a macro attribute
 			- Single-Valued: Can only have one value for e.g a name, FirstName would be single-valued however your full name will be Composite-Single-Valued
@@ -13,5 +18,9 @@
 			- Derived: Value assigned from previously assigned attribute
 			- Key: unique attribute
 			- Descriptive:
-	- Constraints
-	- Relationships
+	- ### Constraints
+		- Restrictions applied on attributes i.e names should be alphabets only and a phone number should just be digits
+	- ### Relationships
+		- One-One
+		- One-Many
+		- Many-Many
