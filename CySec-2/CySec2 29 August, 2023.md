@@ -6,7 +6,7 @@
 	- Domain scanning, OSINT collection, social engineering such as Email Harvesting.
 
 #### 2. **Weaponization**
-- Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism.
+- Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
 - **Activities:** 
 	- Crafting malware, creating exploit documents, preparing malicious links.
 
