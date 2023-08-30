@@ -1,3 +1,5 @@
  - Def
 	- Algo is a well-defined, finite and effective sequence of computation steps that takes some value, or a set of values to as input and gives the output either as some value or set of values
-- 
+- Algo vs Program
+	- Algo is the design of a concept in code
+	- Program is the execution of the design
