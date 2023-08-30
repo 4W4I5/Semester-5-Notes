@@ -10,9 +10,7 @@
 	    - Position
 	    - Skill Level
 	    - Injury Record
-3. Injury Record
-	    - Date
-	    - Description
+
 4. Game
 	    - Date
 	    - Score
