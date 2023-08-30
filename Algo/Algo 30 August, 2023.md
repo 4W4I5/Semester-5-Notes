@@ -3,3 +3,9 @@
 - Algo vs Program
 	- Algo is the design of a concept in code
 	- Program is the execution of the design
+- Correctness of an algo
+	- Algo is said to be correct if, for every input instance, it halts with the correct output
+	- An incorrect algo
+		- Might not halt at all for some inputs
+		- Might halt with an answer other than desired one
+	- 
