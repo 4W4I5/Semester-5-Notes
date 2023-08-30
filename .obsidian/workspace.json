@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5738cbb05c129980",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "0c7752a19eb98064",
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 30 August, 2023.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 30 August, 2023.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +157,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 30 August, 2023.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -176,11 +189,12 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "5738cbb05c129980",
   "lastOpenFiles": [
+    "Algo/Algo 30 August, 2023.md",
+    "Untitled.md",
     "OS/OS 29 August, 2023.md",
     "README.md",
-    "Algo/Algo 30 August, 2023.md",
     "OS/OS 31 August, 2023.md",
     "DB/DB 29 August, 2023.md",
     "CySec-2/CySec2 29 August, 2023.md",
