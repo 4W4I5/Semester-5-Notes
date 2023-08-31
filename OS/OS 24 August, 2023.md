@@ -70,7 +70,9 @@ Recap:
 	- Improves processor utilization
 	- It is a mechanism through which I/O and Memory may interrupt normal sequencing of the processor
 
-- ### 1.5 How are multiple interrupts dealt with by settings priority
+- ### 1.5 How are multiple interrupts dealt with
+	- Priority
+		- 
 - ### 1.6 What characteristics are observed while going up the memory hierarchy
 - ### 1.7 What are the trade-off that determine the size of the cache memory
 - ### 1.8 What is the difference b/w a multiprocessor & a multicore system
