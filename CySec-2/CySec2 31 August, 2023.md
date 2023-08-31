@@ -6,3 +6,19 @@
 		- Also provides Next-Hop router, DNS ,gateway and host IP addresses
 - ### DHCP
 	- Setting IP address
+	- PORTS USED:
+		- 67 for server
+		- 68 for client
+	- Working (all are broadcasts)
+		- DHCP discover
+			- source IP = 0.0.0.0
+			- destination IP = 255.255.255.255
+		- DHCP offer
+			- source IP = 1.1.1.254/24
+			- destination IP = 255.255.255.255 (offer is also broadcast to all)
+			- Server sends available IP addresses and options
+		- DHCP request 
+			- Requests IP from server after selecting from options
+			- Basically check if the network has that IP already assigned by using the offered IP and ARP broadcasting
+		- DHCP ACK
+			- DHCP agrees final comms and ack the IP request
