@@ -52,8 +52,10 @@ Recap:
 	- I/O
 	- Memory
 	- System Bus
+
 - ### 1.2 Define the 2 main categories of processor registers
 	- General Purpose & Special Purpose
+
 - ### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
 	- Processor-Memory
 		- Data transfer from processor to memory and vice-versa
@@ -63,9 +65,11 @@ Recap:
 		- Processor perform some arithmetic or logic operation on data
 	- Control
 		- Special instructions that might specify what the processor to do next, just as jump to a new instruction number
+
 - ### 1.4 What is an interrupt
-	- Improve processor utilization
+	- Improves processor utilization
 	- It is a mechanism through which I/O and Memory may interrupt normal sequencing of the processor
+
 - ### 1.5 How are multiple interrupts dealt with by settings priority
 - ### 1.6 What characteristics are observed while going up the memory hierarchy
 - ### 1.7 What are the trade-off that determine the size of the cache memory
