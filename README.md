@@ -66,7 +66,7 @@ NOTE:: Refer to the book for main content
 
 | Date                                         | Status     | Content                                               |
 | -------------------------------------------- | ---------- | ----------------------------------------------------- |
-| [22 Aug](OS/OS%2022%20August,%202023.md)     | Refactor   | Intro, FDE Cycle, OpCodes/OpRands, Interrupts         |
+| [22 Aug](OS/OS%2022%20August,%202023.md)     | Complete   | Intro, FDE Cycle, OpCodes/OpRands, Interrupts         |
 | [24 Aug](OS/OS%2024%20August,%202023.md)     | Complete | Review Questions Chapter #1                                                      |
 | [29 Aug](OS/OS%2029%20August,%202023.md)     | Incomplete | I/O technique, SMP + MCC, Chapter 2: Operating System | 
 | [31 Aug](OS/OS%2031%20August,%202023.md)     |            |                                                       |
