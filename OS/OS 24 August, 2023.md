@@ -59,3 +59,5 @@ Recap:
 ### 1.7 What is a cache memory
 
 ### 1.8 What is the difference b/w a multiprocessor & a multicore system
+
+
