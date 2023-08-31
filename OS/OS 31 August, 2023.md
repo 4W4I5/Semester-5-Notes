@@ -7,3 +7,14 @@
 	- Executable
 	- Associated data
 	- Execution Context(Process State)
+		- Register values
+		- OS Process control data
+		- Priority
+		- I/O Status
+- Process implementation
+- Memory Management
+	- Process Isolation
+	- Automatic Allocation and Management
+	- Support of modular programming
+	- Protection and access control
+	- Long-term storage
