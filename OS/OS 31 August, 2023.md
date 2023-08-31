@@ -28,7 +28,7 @@
 				- Program
 - Virtual Memory
 	- Allows programs to work with virtual addresses that refer to the real addresses
-		- Allows OS to just manage addresses logically and delegate the real placement of the pages upto the ram
+		- Allows OS to just manage addresses logically and delegate the real placement of the pages up to the ram
 	- All pages are maintained on disk
 <!--
 	- Memory Management
