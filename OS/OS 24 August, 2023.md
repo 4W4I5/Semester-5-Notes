@@ -73,7 +73,8 @@ Recap:
 - ### 1.5 How are multiple interrupts dealt with
 		- Priority
 			- Higher priority takes over first, if an interrupt is already in progress then the higher priority one takes over 
-	- 
+	- Blocking
+		- Block other interrupts from being processed while one is in process
 - ### 1.6 What characteristics are observed while going up the memory hierarchy
 - ### 1.7 What are the trade-off that determine the size of the cache memory
 - ### 1.8 What is the difference b/w a multiprocessor & a multicore system
