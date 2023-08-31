@@ -76,7 +76,11 @@ Recap:
 	- Blocking
 		- Block other interrupts from being processed while one is in process
 - ### 1.6 What characteristics are observed while going up the memory hierarchy
-	- More frequent Accesses, Higher speed but low capacity near the processor
-	- Less frequent Accesses, Lower speed but higher capacity the further we are from the processor
+	- More frequent Accesses, Higher speed but low capacity near the processor (Also higher cost per bit)
+	- Less frequent Accesses, Lower speed but higher capacity the further we are from the processor (Also lower cost per bit)
 - ### 1.7 What are the trade-off that determine the size of the cache memory
+	- The main trade-offs for determining the cache size are speed and cost of cache
 - ### 1.8 What is the difference b/w a multiprocessor & a multicore system
+	- MultiCore
+		- Special case of MultiProcessor, in which all of the processors are on a single chip
+	- 
