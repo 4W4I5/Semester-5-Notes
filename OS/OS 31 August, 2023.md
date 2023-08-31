@@ -1,4 +1,5 @@
 - What error can cause the OS to crash?
-	- Invalid Access
 	- Improper Synchronization
 	- Failed Mutual Exclusion
+	- Nondeterminate Program Operation
+	- Deadlocks
