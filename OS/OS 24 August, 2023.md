@@ -53,10 +53,21 @@ Recap:
 	- Memory
 	- System Bus
 - ### 1.2 Define the 2 main categories of processor registers
+	- General Purpose & Special Purpose
 
 - ### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
+	- Processor-Memory
+		- Data transfer from processor to memory and vice-versa
+	- Processor-I/O
+		- Data transfer from processor to I/O and vice-versa
+	- Data Processing
+		- Processor perform some arithmetic or logic operation on data
+	- Control
+		- Special instructions that might specify what the processor to do next, just as jump to a new instruction number
 
 - ### 1.4 What is an interrupt
+	- Improve processor utilization
+	- 
 
 - ### 1.5 How are multiple interrupts dealt with by settings priority
 
