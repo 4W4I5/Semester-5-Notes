@@ -3,15 +3,14 @@
 - When an I/O Instruction is executed, a command is issued to the appropriate I/O Module
 	- #### Programmed I/O
 		- **Polling:** 
-		- `Refactor`
-			- The CPU continually checks the status or flag of the I/O device to determine if it is ready for data transfer. Once the device is ready, the CPU transfers data between the device and memory.
+			- CPU checks whenever Status/Flag of an I/O device is ready
 		- **Simple and straightforward:** 
-			- Programmed I/O is easy to implement and understand. However, it can be inefficient as it ties up the CPU while waiting for I/O operations to complete.
+			- Programmed I/O is easy to implement and understand. 
+			- However, it can be inefficient as it ties up the CPU while waiting for I/O operations to complete.
 		- **CPU-intensive:** 
-			- Since the CPU is actively involved in managing I/O, it can become a bottleneck when multiple I/O devices are present.
+			- CPU is actively involved in managing I/O, it can become a bottleneck when multiple I/O devices are present.
 	- #### Interrupt-Driven I/O
 		- **Interrupts:** 
-		- `Refactor`
 			- When an I/O device is ready, it sends an interrupt signal to the CPU, which temporarily stops its current operation and services the interrupt. The CPU then transfers data between the device and memory.
 			- `What is the priority level though?`
 		- **Efficiency:** 
@@ -29,12 +28,16 @@
 			- Setting up DMA requires careful configuration and coordination to ensure data integrity and prevent conflicts.
 
 ## Symmetric Multiprocessor (SMP)
-`Add later`
+- A system with 2+ processors
+	- Share the same memory, system bus and I/O
+- Increased throughput, more reliable as failure of one processor will not ruin others
+- Coordinating processors is complex, large memory pool is required as all processors share the same memory
 ## MultiCore Computer (MCC)
 - Definition
 	- Also known as chip multiprocessor
-	- Combines multiple cores on a single piece of silicion(die)
-	- L3 Cache seems shared `Confirm this`
+	- Combines multiple cores on a single piece of silicon(die)
+	- L3 Cache seems shared between cores
 - Advantages
+	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a unicore, multicore can tolerate more faults
 
 ## Chapter 2: Operating System 
