@@ -72,4 +72,4 @@
 	    - Other processes or tasks cannot proceed until the blocking operation completes.
 	    - Inefficient use of CPU resources.
 - Flow of Control With Interrupts
-	- Understood it but need to see the slides/book again to write down stuff here
+	- Look at [I/O Techniques](OS/OS%2029%20August,%202023.md) 
