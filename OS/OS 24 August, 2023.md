@@ -37,3 +37,16 @@ Recap:
 		- Memory (Managed by the OS)
 		- Storage (Managed by the OS)
 	- As we go down the hierarchy, access times and storage times increase however the capacity increases. Known as the principle of locality as processors are forced to use lower level memory more efficiently
+
+# Review Questions
+<!-- Taken from the book -->
+### 1.1 List and briefly define the 4 main elements of a computer
+### 1.2 Define the 2 main categories of processor registers
+### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
+### 1.4 What is an interrupt
+### 1.5 
+### 1.6
+### 1.7
+### 1.8
+### 1.9
+### 1.10
