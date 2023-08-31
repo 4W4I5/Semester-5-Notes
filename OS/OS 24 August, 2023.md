@@ -83,4 +83,9 @@ Recap:
 - ### 1.8 What is the difference b/w a multiprocessor & a multicore system
 	- MultiCore
 		- Special case of MultiProcessor, in which all of the processors are on a single chip
-	- 
+		- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a unicore, multicore can tolerate more faults
+	- MultiProcessor
+		- A system with 2+ processors
+			- Share the same memory, system bus and I/O
+		- Increased throughput, more reliable as failure of one processor will not ruin others
+		- Coordinating processors is complex, large memory pool is required as all processors share the same memory
