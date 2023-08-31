@@ -23,5 +23,11 @@
 		- DHCP ACK
 			- DHCP agrees final comms and ack the IP request
 	- VULN
-		- Malicious user can offer a IP to the requesting device `Research more into this`
-		- 
+		- Malicious user can offer a IP to the requesting device 
+		- `Research more into this`
+	- Best security practices
+		- DHCP Trusted Switches
+		- DHCP Fingerprinting
+		- Network Monitoring
+
+## URL (Uniform Resource Locator)
