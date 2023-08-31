@@ -3,3 +3,7 @@
 	- Failed Mutual Exclusion
 	- Nondeterminate Program Operation
 	- Deadlocks
+- Process consists of:
+	- Executable
+	- Associated data
+	- Execution Context(Process State)
