@@ -44,20 +44,25 @@ Recap:
 
 <!-- Taken from the book -->
 
-### 1.1 List and briefly define the 4 main elements of a computer
-- 
+- ### 1.1 List and briefly define the 4 main elements of a computer
+	- Processor
+		- ALU
+		- CU
+		- Registers (General purpose & special purpose)
+	- I/O
+	- Memory
+	- System Bus
+- ### 1.2 Define the 2 main categories of processor registers
 
-### 1.2 Define the 2 main categories of processor registers
+- ### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
 
-### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
+- ### 1.4 What is an interrupt
 
-### 1.4 What is an interrupt
+- ### 1.5 How are multiple interrupts dealt with by settings priority
 
-### 1.5 How are multiple interrupts dealt with by settings priority
+- ### 1.6 What characteristics are observed while going up the memory hierarchy
+- ### 1.7 What are the trade-off that determine the size of the cache memory
 
-### 1.6 What characteristics are observed while going up the memory hierarchy
-### 1.7 What are the trade-off that determine the size of the cache memory
-
-### 1.8 What is the difference b/w a multiprocessor & a multicore system
+- ### 1.8 What is the difference b/w a multiprocessor & a multicore system
 
 
