@@ -54,7 +54,9 @@ Recap:
 	- System Bus
 
 - ### 1.2 Define the 2 main categories of processor registers
-	- General Purpose & Special Purpose
+	- Address Registers and Buffer(Data) Registers
+	- Also can be General Purpose & Special Purpose
+
 
 - ### 1.3 In general, what are the 4 distinct actions that machine instruction can specify
 	- Processor-Memory
