@@ -22,3 +22,5 @@
 			- Basically check if the network has that IP already assigned by using the offered IP and ARP broadcasting
 		- DHCP ACK
 			- DHCP agrees final comms and ack the IP request
+	- VULN
+		- Malicious user can offer a IP to the requesting device and
