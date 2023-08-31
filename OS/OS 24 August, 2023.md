@@ -45,6 +45,7 @@ Recap:
 <!-- Taken from the book -->
 
 ### 1.1 List and briefly define the 4 main elements of a computer
+- 
 
 ### 1.2 Define the 2 main categories of processor registers
 
@@ -52,11 +53,10 @@ Recap:
 
 ### 1.4 What is an interrupt
 
-### 1.5 How are multiple interrupts dealt with
+### 1.5 How are multiple interrupts dealt with by settings priority
 
-### 1.6 What characteristics distinguish the various elements of a memory hierarchy
-
-### 1.7 What is a cache memory
+### 1.6 What characteristics are observed while going up the memory hierarchy
+### 1.7 What are the trade-off that determine the size of the cache memory
 
 ### 1.8 What is the difference b/w a multiprocessor & a multicore system
 
