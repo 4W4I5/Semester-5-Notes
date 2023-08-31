@@ -47,18 +47,18 @@
 
 ### Marketing
 
-| Date                                                       | Status | Content    |
-| ---------------------------------------------------------- | ------ | ---------- |
-| 22 Aug                                                     | N/A    | Sir Absent |
-| 24 Aug                                                     | N/A    | Sir Absent |
-| [29 Aug](Marketing/Marketing%2029%20August,%202023.md)     |        |            |
-| [31 Aug](Marketing/Marketing%2031%20August,%202023.md)     |        |            |
-| [5 Sept](Marketing/Marketing%205%20September,%202023.md)   |        |            |
-| [7 Sept](Marketing/Marketing%207%20September,%202023.md)   |        |            |
-| [12 Sept](Marketing/Marketing%2012%20September,%202023.md) |        |            |
-| [14 Sept](Marketing/Marketing%2014%20September,%202023.md) |        |            |
-| [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |        |            |
-| [21 Sept](Marketing/Marketing%2021%20September,%202023.md) |        |            |
+| Date                                                       | Status                         | Content    |
+| ---------------------------------------------------------- | ------------------------------ | ---------- |
+| 22 Aug                                                     | N/A                            | Sir Absent |
+| 24 Aug                                                     | N/A                            | Sir Absent |
+| 29 Aug                                                     |                                |            |
+| [31 Aug](Marketing/Marketing%2031%20August,%202023.md)     | Introductory, Didnt take notes |            | 
+| [5 Sept](Marketing/Marketing%205%20September,%202023.md)   |                                |            |
+| [7 Sept](Marketing/Marketing%207%20September,%202023.md)   |                                |            |
+| [12 Sept](Marketing/Marketing%2012%20September,%202023.md) |                                |            |
+| [14 Sept](Marketing/Marketing%2014%20September,%202023.md) |                                |            |
+| [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |                                |            |
+| [21 Sept](Marketing/Marketing%2021%20September,%202023.md) |                                |            |
 
 ### OS
 
