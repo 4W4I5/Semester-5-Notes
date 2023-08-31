@@ -11,17 +11,21 @@
 			- CPU is actively involved in managing I/O, it can become a bottleneck when multiple I/O devices are present.
 	- #### Interrupt-Driven I/O
 		- **Interrupts:** 
-			- When an I/O device is ready, it sends an interrupt signal to the CPU, which temporarily stops its current operation and services the interrupt. The CPU then transfers data between the device and memory.
+			- When an I/O device is ready, it sends an interrupt signal to the CPU
+			- This temporarily stops its current operation. The CPU then transfers data between the device and memory.
 			- `What is the priority level though?`
 		- **Efficiency:** 
-			- This approach allows the CPU to perform other tasks while waiting for I/O operations to complete. Compared to Programmed I/O, the CPU usage with this technique is reduced
+			- This approach allows the CPU to perform other tasks while waiting for I/O operations to complete.
+			- Compared to Programmed I/O, the CPU usage with this technique is reduced
 		- **Complexity:** 
 			- Implementing interrupt-driven I/O requires more complex hardware and software coordination to handle interrupts and context switching.
-			- Interrupt I/O requires more complex hardware and predefined software to handle interrupts and context switching. This increases chances of missing an interrupt if the processor is busy with a higher level interrupt
+			- Increases chances of missing an interrupt if the processor is busy with a higher level interrupt
 	- #### Direct Memory Access (DMA)
 		- Uses a DMA Controller
 		- **Reduced CPU involvement:** 
-			- The DMA controller takes over, allowing the CPU to focus on other tasks.
+			- The DMA controller takes over, allowing the CPU to focus on other tasks. 
+			- It directly transfers data to memory without involving the CPU
+			- However the CPU cannot access the memory bus at the same time as a DMA is fetching or writing data
 		- **High-speed data transfer:** 
 			- DMA is particularly useful for high-speed data transfers, such as large file copying or video streaming.
 		- **Complex setup:** 
@@ -38,6 +42,6 @@
 	- Combines multiple cores on a single piece of silicon(die)
 	- L3 Cache seems shared between cores
 - Advantages
-	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a unicore, multicore can tolerate more faults
+	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a uni-core, multicore can tolerate more faults
 
 ## Chapter 2: Operating System 
