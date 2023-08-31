@@ -8,13 +8,32 @@
 	- Associated data
 	- Execution Context(Process State)
 		- Register values
-		- OS Process control data
+		- OS Process control data (pid is stored here, if halted)
 		- Priority
 		- I/O Status
-- Process implementation
-- Memory Management
+- Process implementation (Not complete)
+	- Some defs
+		- Process registers
+			- PC
+				- Program counter
+			- Base
+				- Holds the address for the start of the program
+			- Limit
+				- Number of words occupied by the process
+		- Process
+			- Page
+				- Context
+					- Base points to the start of context
+				- Data
+				- Program
+- Virtual Memory
+	- Allows programs to address memory from a 
+	- 
+<!--
+	- Memory Management
 	- Process Isolation
 	- Automatic Allocation and Management
 	- Support of modular programming
 	- Protection and access control
 	- Long-term storage
+-->
