@@ -64,7 +64,7 @@ Recap:
 	- Data Processing
 		- Processor perform some arithmetic or logic operation on data
 	- Control
-		- Special instructions that might specify what the processor to do next, just as jump to a new instruction number
+		- Instruction that specifies that the sequence of execution to be altered
 
 - ### 1.4 What is an interrupt
 	- Improves processor utilization
