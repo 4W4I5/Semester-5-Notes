@@ -45,3 +45,12 @@
 	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a uni-core, multicore can tolerate more faults
 
 ## Chapter 2: Operating System 
+### Operating Systems;
+- Interface b/w application & hardware
+- Resource Manager?
+- **Instruction Set Architecture**
+	- Interface of OS and execution hardware
+- **Application Binary Interface**
+	- Interface b/w OS and libraries
+- **Application Programming Interface**
+	- Interface b/w Application and libraries
