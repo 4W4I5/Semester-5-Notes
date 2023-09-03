@@ -98,6 +98,12 @@
 		- Job Control Language (JCL) in its early days allowed for access to the Batch OS's memory as well and therefore the concept of Memory Protection was introduced where the user program was executed in user mode and a kernel mode was also provided in which privileged instructions were executed
 		- A certain job in the batch could use up all system resources therefore a timer was started at program startup after which its expiry would mean the control would be returned back to the Monitor
 			- The time limit was a poll of 0.2s
+		- Processor was often left idle if a program was waiting for I/O
+			- This lead to the development of two multiprogram modes
+				- Time Sharing aka MultiProgrammed systems
+					- Each program was alloted a certain number of instructions to execute after which the monitor passed control onto the next program
+				- Time Slicing
+					- Each program was alloted a certain slice of the processors time to execute after which control was passed onto the next program
 - **Multi-programmed Systems**
 	- **Definition:** 
 		- A system that can manage and execute multiple programs concurrently.
