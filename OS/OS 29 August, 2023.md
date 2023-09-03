@@ -83,14 +83,17 @@
 		- Execution of a batch of similar tasks or jobs in a sequence.
 	- **Characteristics:**
 	    - Jobs are collected, processed together, and results are obtained at the end.
+	    - Fixed the wasted time cause by scheduling and job setup time
 	    - Common in early mainframe systems.
 	    - Limited interactivity.
-	    - Used a Monitor which managed
-		    - Interrupt Processor
-		    - Device Driver
-		    - Job Sequencing
-		    - Control language Interpretation
-		    - 
+	    - Used a Monitor 
+		    - Which Managed
+			    - Interrupt Processing
+			    - Device Driver
+			    - Job Sequencing
+			    - Control language Interpretation
+		    - A part of monitor was always stored in memory aka the Resident Monitor
+			    - The RM would have a branching instruction that would branch out the processor execution to the given job and after job completion/error would branch back into the RM
 	
 - **Multi-programmed Systems**
 	- **Definition:** 
