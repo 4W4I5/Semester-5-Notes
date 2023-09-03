@@ -47,9 +47,11 @@
 ## Chapter 2: Operating System 
 ### Operating Systems;
 - Interface b/w application & hardware
-- Resource Manager?
+- **Resource Management**
+	- 
 - **Instruction Set Architecture**
 	- Interface of OS and execution hardware
+	- Defines the set of instructions a computer's CPU can execute, enabled program execution on the CPU
 - **Application Binary Interface**
 	- Interface b/w OS and libraries
 - **Application Programming Interface**
