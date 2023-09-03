@@ -73,6 +73,3 @@
 #### Modes of Operation
 - Kernel
 - User
-
-#### CTSS
-#### Time Sharing
