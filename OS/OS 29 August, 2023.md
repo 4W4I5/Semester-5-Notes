@@ -85,6 +85,12 @@
 	    - Jobs are collected, processed together, and results are obtained at the end.
 	    - Common in early mainframe systems.
 	    - Limited interactivity.
+	    - Used a Monitor which managed
+		    - Interrupt Processor
+		    - Device Driver
+		    - Job Sequencing
+		    - Control language Interpretation
+		    - 
 	
 - **Multi-programmed Systems**
 	- **Definition:** 
