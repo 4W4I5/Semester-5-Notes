@@ -86,7 +86,7 @@
 	    - Fixed the wasted time cause by scheduling and job setup time
 	    - Common in early mainframe systems.
 	    - Limited interactivity.
-	    - Used a Monitor 
+	    - Used a Monitor (BatchOS)
 		    - Which Managed
 			    - Interrupt Processing
 			    - Device Driver
@@ -94,7 +94,10 @@
 			    - Control language Interpretation
 		    - A part of monitor was always stored in memory aka the Resident Monitor
 			    - The RM would have a branching instruction that would branch out the processor execution to the given job and after job completion/error would branch back into the RM
-	
+	- **Problems:**
+		- Job Control Language (JCL) in its early days allowed for access to the Batch OS's memory as well and therefore the concept of Memory Protection was introduced where the user program was executed in user mode and a kernel mode was also provided in which privileged instructions were executed
+		- A certain job in the batch could use up all system resources therefore a timer was started at program startup after which its expiry would mean the control would be returned back to the Monitor
+			- The time limit was a poll of 0.2s
 - **Multi-programmed Systems**
 	- **Definition:** 
 		- A system that can manage and execute multiple programs concurrently.
@@ -109,6 +112,3 @@
 	    - Rapid switching between tasks (time slices).
 	    - Supports interactive computing.
 	    - Provides the illusion of dedicated resources for each user/process.
-#### Modes of Operation
-- Kernel
-- User

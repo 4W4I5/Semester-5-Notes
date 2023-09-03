@@ -1,4 +1,5 @@
 # Notes Status
+`These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to create a pull request to add your own changes if needed to this repo or fork to have your own copy of the entire repo and make changes as needed`
 
 ### Algo
 
