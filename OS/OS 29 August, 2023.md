@@ -52,9 +52,11 @@
 		- CPU
 		- Processor Execution time
 		- I/O 
+			- Managed by the I/O controller linked to the OS
 		- Main Memory
-			- 
+			- Holds the loaded OS and system software alongside loaded programs and data
 		- Secondary Memory
+			- Stores the OS, Programs and Data
 - **Instruction Set Architecture**
 	- Interface of OS and execution hardware
 	- Defines the set of instructions a computer's CPU can execute, enabled program execution on the CPU
