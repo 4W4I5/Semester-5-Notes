@@ -66,10 +66,40 @@
 	- Interface b/w Application and libraries
 #### Stages/Level of evolution of OS
 - **Serial Processing**
+	- **Definition:** 
+		- Execution of tasks or instructions one after the other, sequentially.
+	- **Characteristics:**
+	    - Only one task is processed at a time.
+	    - Direct access to the CPU
+	    - No parallelism or multitasking.
+	    - Common in early computing.
+	- **Problems:**
+		- Scheduling
+			- Hard copy of a sign-up sheet was used to reserve timeslots in multiples of half an hour where a 45 min job will waste 15 mins of system run time or the user might not have enough time to resolve errors and run out of time
+		- Setup Time
+			- Setup sequences were long and slow, costing valuable processing time where if an error were to occur the user was forced to start again
 - **Simple Batch Processing**
+	- **Definition:** 
+		- Execution of a batch of similar tasks or jobs in a sequence.
+	- **Characteristics:**
+	    - Jobs are collected, processed together, and results are obtained at the end.
+	    - Common in early mainframe systems.
+	    - Limited interactivity.
+	
 - **Multi-programmed Systems**
+	- **Definition:** 
+		- A system that can manage and execute multiple programs concurrently.
+	- **Characteristics:**
+	    - Allows for better CPU utilization.
+	    - Several programs can be in memory at once.
+	    - Operating system handles program scheduling.
 - **Time Sharing Systems**
-
+	- **Definition:** 
+		- Multiple users or processes share a single computer's resources simultaneously.
+	- **Characteristics:**
+	    - Rapid switching between tasks (time slices).
+	    - Supports interactive computing.
+	    - Provides the illusion of dedicated resources for each user/process.
 #### Modes of Operation
 - Kernel
 - User
