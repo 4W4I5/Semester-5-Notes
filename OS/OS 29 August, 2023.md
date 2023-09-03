@@ -48,7 +48,7 @@
 ### Operating Systems;
 - Interface b/w application & hardware
 - **Resource Management**
-	- 
+	- Responsible for Controlling the Use of CPU, Processor Execution time, I/O, main and secondary memory
 - **Instruction Set Architecture**
 	- Interface of OS and execution hardware
 	- Defines the set of instructions a computer's CPU can execute, enabled program execution on the CPU
