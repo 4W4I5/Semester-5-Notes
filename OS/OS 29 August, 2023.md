@@ -54,3 +54,15 @@
 	- Interface b/w OS and libraries
 - **Application Programming Interface**
 	- Interface b/w Application and libraries
+#### Stages/Level of evolution of OS
+- **Serial Processing**
+- **Simple Batch Processing**
+- **Multi-programmed Systems**
+- **Time Sharing Systems**
+
+#### Modes of Operation
+- Kernel
+- User
+
+#### CTSS
+#### Time Sharing
