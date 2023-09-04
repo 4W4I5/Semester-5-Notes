@@ -19,7 +19,8 @@
 #### Complexity Analysis
 - **Platform Independence**
 	- Ideal Algo has an elementary operation that takes 1 step and an instance that takes 1 unit of time
-#### Analysing an Algo
+#### Analysing an Algo staments
+> Fill with code and analyze for practice
 - Simple Statement
 	- Basic step = 1
 		- as long as number of statements are constant
