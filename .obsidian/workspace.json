@@ -6,7 +6,7 @@
       {
         "id": "59950568398a0e43",
         "type": "tabs",
-        "dimension": 61.46496815286624,
+        "dimension": 48.851590106007066,
         "children": [
           {
             "id": "0e5c32f4557ff963",
@@ -25,7 +25,7 @@
       {
         "id": "0c7752a19eb98064",
         "type": "tabs",
-        "dimension": 38.53503184713376,
+        "dimension": 51.14840989399293,
         "children": [
           {
             "id": "059c8125ba1af346",
@@ -89,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -106,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 29 August, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 29 August, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 29 August, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -178,8 +177,9 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "059c8125ba1af346",
   "lastOpenFiles": [
+    "Marketing/Marketing 4 September, 2023.md",
     "README.md",
     "OS/OS 29 August, 2023.md",
     "OS/OS 31 August, 2023.md",
