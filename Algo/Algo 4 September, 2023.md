@@ -27,4 +27,7 @@
 	- Basic step = N x 1
 - Nested Loops
 	- Basic step = i x j
-- 
+	- Where i and j increment by one only
+- Inner Loop depends on Outer Loop
+	- Where Outer loop goes till N and inner loop goes till outer loop index
+	- 
