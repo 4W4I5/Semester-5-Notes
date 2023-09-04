@@ -26,6 +26,8 @@
 		- as long as number of statements are constant
 - Simple Loop
 	- Basic step = N x 1
+	- How many iterations are performed
+	- How many steps per iteration
 - Nested Loops
 	- Basic step = i x j
 	- Where i and j increment by one only
@@ -35,4 +37,10 @@
 	- Pick the highest order `This went over my head`
 - Array
 	- Loop where a Sum of all elements is calculated
-		- 
+- Constant Time Statements
+	- O(1)
+	- Assignment statements of simple data types
+	- `Fill in with the rest`
+
+
+#### Analyzing Loops
