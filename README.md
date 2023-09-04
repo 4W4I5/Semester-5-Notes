@@ -3,13 +3,13 @@
 
 ### Algo
 
-| Week # | Date                                                       | Status   | Content       |
-| ------ | ---------------------------------------------------------- | -------- |:------------- |
-| Week 1 | 21 Aug                                                     | N/A      | Maam Absent   |
-| Week 1 | 23 Aug                                                     | N/A      | Maam Absent   |
-| Week 2 | 28 Aug                                                     | N/A      | Maam Absent   |
-| Week 2 | [30 Aug](Algo/Algo%2030%20August,%202023.md)               | Refactor | Intro to Algo |
-| Week 3 | [4 Sept](Algo/Algo%204%20September,%202023.md)   |          |               |
+| Week # | Date                                             | Status   | Content       |
+| ------ | ------------------------------------------------ | -------- |:------------- |
+| Week 1 | 21 Aug                                           | N/A      | Maam Absent   |
+| Week 1 | 23 Aug                                           | N/A      | Maam Absent   |
+| Week 2 | 28 Aug                                           | N/A      | Maam Absent   |
+| Week 2 | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Refactor | Intro to Algo |
+| Week 3 | [4 Sept](Algo/Algo%204%20September,%202023.md)   | Refactor | Algo Charecteristics              |
 | Week 3 | [6 Sept](Algo/Algo%206%20September,%202023.md)   |          |               |
 | Week 4 | [11 Sept](Algo/Algo%2011%20September,%202023.md) |          |               |
 | Week 5 | [13 Sept](Algo/Algo%2013%20September,%202023.md) |          |               |
