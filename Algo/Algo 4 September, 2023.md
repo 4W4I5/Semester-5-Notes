@@ -17,4 +17,14 @@
 		- Takes less time & memory to run
 
 #### Complexity Analysis
-
+- **Platform Independence**
+	- Ideal Algo has an elementary operation that takes 1 step and an instance that takes 1 unit of time
+#### Analysing an Algo
+- Simple Statement
+	- Basic step = 1
+		- as long as number of statements are constant
+- Simple Loop
+	- Basic step = N x 1
+- Nested Loops
+	- Basic step = i x j
+- 
