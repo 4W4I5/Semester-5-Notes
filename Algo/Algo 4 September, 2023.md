@@ -30,4 +30,8 @@
 	- Where i and j increment by one only
 - Inner Loop depends on Outer Loop
 	- Where Outer loop goes till N and inner loop goes till outer loop index
-	- 
+		- Inner loop is executed N time while the outer loop is 
+	- Pick the highest order `This went over my head`
+- Array
+	- Loop where a Sum of all elements is calculated
+		- 
