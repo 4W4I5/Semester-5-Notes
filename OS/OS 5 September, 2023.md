@@ -22,3 +22,13 @@
 		- A collection of one or more thread and associated system resources
 		- Consists of at least a single thread
 		- Programmer has greater control over the modularity of the application and the timing of application related events
+- ## OS Design
+	- Distributed OS
+		- Provides the illusion of 
+			- a single main/secondary memory space
+			- a unified access facilities
+		- State of the art for distributed OS lags that of uniprocessor and SMP OS.
+	- Object-Oriented Design
+		- Used for adding modular extensions to a small kernel
+		- Enables programmers to customize an OS without disrupting system integrity
+		- Eases the development of distributed tools and full-blown distributed operating systems
