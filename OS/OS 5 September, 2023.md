@@ -75,3 +75,7 @@
 - GCD helps a dev by identifying a task that can be split off into a separate task
 - Thread pool mechanism
 - allows anon functions as a way of specifying tasks
+
+## Virtual Machine Approach
+
+## Windows Architecture

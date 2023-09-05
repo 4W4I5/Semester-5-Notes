@@ -71,7 +71,7 @@ NOTE:: Refer to the book for main content
 | [24 Aug](OS/OS%2024%20August,%202023.md)     | Complete                   | Review Questions Chapter #1                           |
 | [29 Aug](OS/OS%2029%20August,%202023.md)     | Complete,Chapter 2 missing | I/O technique, SMP + MCC, Chapter 2: Operating System |
 | [31 Aug](OS/OS%2031%20August,%202023.md)     | Refactor                   | Chapter 2 completed till 2.3                          |
-| [5 Sept](OS/OS%205%20September,%202023.md)   |                            |                                                       |
+| [5 Sept](OS/OS%205%20September,%202023.md)   | Wrapping up Chapter 2      | A whole lot of stuff to fill in                                                      |
 | [7 Sept](OS/OS%207%20September,%202023.md)   |                            |                                                       |
 | [12 Sept](OS/OS%2012%20September,%202023.md) |                            |                                                       |
 | [14 Sept](OS/OS%2014%20September,%202023.md) |                            |                                                       |
