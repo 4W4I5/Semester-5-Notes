@@ -32,3 +32,22 @@
 		- Used for adding modular extensions to a small kernel
 		- Enables programmers to customize an OS without disrupting system integrity
 		- Eases the development of distributed tools and full-blown distributed operating systems
+- ## Fault Tolerance
+	- Refers to the ability of a system or component
+	- Fundamental Concepts
+		- Basic measures are
+			- Reliability: R(t)
+				- Probability of its correct operation up to time t given that the system was operating correctly at time=0
+			- Mean time to failure (MTTF)
+				- Time it takes to fail (Uptime)
+			- Mean time to repair (MTTR)
+				- Time it takes to get the system back up and running
+				- The avg time it takes to repair/replace a faulty element
+			- Availability
+				- Classes
+					- Continuous
+						- `Fill in later`
+					- Fault Tolerant
+					- Fault Resilient
+					- High Availability
+					- Normal Availability
