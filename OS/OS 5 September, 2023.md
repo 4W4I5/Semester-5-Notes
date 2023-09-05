@@ -65,4 +65,13 @@
 				- Virtual Machines
 				- Checkpoints and rollbacks
 					- Saved state at a certain point in time to rollback to that state
+## Multiprocessor OS Considerations
+- Design Issues
+	- Simultaneous concur`Fill in later` 
+## MultiCore OS Considerations
 
+## Grand Central Dispatch
+- Usually Dev specifies what pieces can or should be executed simultaneously or in 
+- GCD helps a dev by identifying a task that can be split off into a separate task
+- Thread pool mechanism
+- allows anon functions as a way of specifying tasks
