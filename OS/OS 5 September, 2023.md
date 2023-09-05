@@ -10,3 +10,12 @@
 		- Provides flexibility
 		- Well suited to a distributed environment
 	- `NOTE:: Filesystem types are deployed within the kernel`
+- ## Multithreading
+	- A process is which executes an application is divided into threads that can run concurrently
+	- Thread
+		- Dispatchable unit of work 
+		- Includes a process context and its own data area to enable subroutine branching
+		- Executes sequentially and is interruptible
+	- Process
+		- A collection of one or more thread and associated system resources
+		- Programmer has greater control over the modularity of the application and the timing of application related events
