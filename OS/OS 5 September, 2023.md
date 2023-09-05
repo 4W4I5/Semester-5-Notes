@@ -18,4 +18,5 @@
 		- Executes sequentially and is interruptible
 	- Process
 		- A collection of one or more thread and associated system resources
+		- Consists of at least a single thread
 		- Programmer has greater control over the modularity of the application and the timing of application related events
