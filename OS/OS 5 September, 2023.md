@@ -10,6 +10,7 @@
 		- Provides flexibility
 		- Well suited to a distributed environment
 	- `NOTE:: Filesystem types are deployed within the kernel`
+	- `Add in differences from monolilthic kernel`
 - ## Multithreading
 	- A process is which executes an application is divided into threads that can run concurrently
 	- Thread
