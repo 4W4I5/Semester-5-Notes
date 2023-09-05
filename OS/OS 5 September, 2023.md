@@ -56,6 +56,13 @@
 				- Temporary
 			- Fault Categories of redundancy
 				- Physical(Spatial)
-					- 
+					- `Fil in later`
 				- Temporal
 				- Data
+			- Operating System Mechanisms
+				- Process isolation
+				- Concurrency
+				- Virtual Machines
+				- Checkpoints and rollbacks
+					- Saved state at a certain point in time to rollback to that state
+
