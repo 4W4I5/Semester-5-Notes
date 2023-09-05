@@ -51,3 +51,11 @@
 					- Fault Resilient
 					- High Availability
 					- Normal Availability
+			- Fault Types
+				- Permanent
+				- Temporary
+			- Fault Categories of redundancy
+				- Physical(Spatial)
+					- 
+				- Temporal
+				- Data
