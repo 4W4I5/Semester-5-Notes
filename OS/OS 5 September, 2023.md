@@ -13,6 +13,7 @@
 	- `Add in differences from monolilthic kernel`
 - ## Multithreading
 	- A process is which executes an application is divided into threads that can run concurrently
+	- Most beneficial to an SMP (Symmetric Multiprocessor)
 	- Thread
 		- Dispatchable unit of work 
 		- Includes a process context and its own data area to enable subroutine branching
