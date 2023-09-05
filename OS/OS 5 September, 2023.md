@@ -79,3 +79,5 @@
 ## Virtual Machine Approach
 
 ## Windows Architecture
+
+## Client/Server model
