@@ -25,7 +25,7 @@
 - Use the simplest expression of the class
 `Fill in from slides`
 
-
+`This was just for my sanity, believe its supposed to be o(sqrt(1/2))`
 > p = 0
 > for(i=0; p<n; i++){
 >    p = p+i
@@ -48,3 +48,4 @@
 - $$p^{2}+ p >= 2n$$
 - $$p^{2}+ p - 2n >= 0$$
 - $$p^{2}+ p - 2n >= 0$$
+- 
