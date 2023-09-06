@@ -42,6 +42,7 @@
 		- p = 3 + 3 = 6
 	- i = 4 
 		- p = 6 + 4 = 10
-- Equiv equation can be (p(p+1))/2
+- Equiv equation can be $$\frac{p(p+1)}{2}$$ 
 - this should be greater or equal to N for the loop to stop
-- therefore 
+- therefore $$\frac{p(p+1)}{2}>=n $$
+- $$p^{2}+ p >= 2n$$
