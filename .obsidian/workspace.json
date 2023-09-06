@@ -6,7 +6,7 @@
       {
         "id": "59950568398a0e43",
         "type": "tabs",
-        "dimension": 48.851590106007066,
+        "dimension": 48.85159010600707,
         "children": [
           {
             "id": "0e5c32f4557ff963",
@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "OS/OS 7 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "OS/OS 7 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "OS/OS 7 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 5 September, 2023.md"
+                "file": "OS/OS 7 September, 2023.md"
               }
             }
           },
@@ -181,6 +181,7 @@
   "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
     "README.md",
+    "OS/OS 7 September, 2023.md",
     "OS/OS 5 September, 2023.md",
     "DB/DB 5 September, 2023.md",
     "CySec-2/CySec2 5 September, 2023.md",
