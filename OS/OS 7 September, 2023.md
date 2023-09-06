@@ -23,3 +23,4 @@
 - Use the smallest possible class of functions
 	- 
 - Use the simplest expression of the class
+`Fill in from slides`
