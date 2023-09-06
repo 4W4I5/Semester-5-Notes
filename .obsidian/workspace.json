@@ -105,7 +105,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 6 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,7 +122,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 6 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 6 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -177,11 +177,11 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "059c8125ba1af346",
   "lastOpenFiles": [
+    "Algo/Algo 6 September, 2023.md",
     "OS/OS 31 August, 2023.md",
     "OS/OS 5 September, 2023.md",
-    "Algo/Algo 6 September, 2023.md",
     "README.md",
     "OS/OS 7 September, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png",
