@@ -51,3 +51,4 @@
 - $$p^{2}+ p - 2n >= 0$$
 - $$p = \frac{-1+\sqrt{(1^{2}- 4(1)(-2n)))}}{2}$$
 - $$p = \frac{-1+\sqrt{(1+8n)}}{2}$$
+- nvm gradient is constant so its O(n)![](Algo/Images/Pasted%20image%2020230906093822.png)
