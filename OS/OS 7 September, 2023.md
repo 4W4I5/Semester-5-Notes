@@ -24,3 +24,24 @@
 	- 
 - Use the simplest expression of the class
 `Fill in from slides`
+
+
+> p = 0
+> for(i=0; p<n; i++){
+>    p = p+i
+> }
+
+- Dry runs
+	- i =0
+		- p = 0
+	- i = 1
+		- p = 0 + 1 = 1
+	- i = 2
+		- p = 1 + 2 = 3
+	- i = 3
+		- p = 3 + 3 = 6
+	- i = 4 
+		- p = 6 + 4 = 10
+- Equiv equation can be (p(p+1))/2
+- this should be greater or equal to N for the loop to stop
+- therefore 
