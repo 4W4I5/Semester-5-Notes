@@ -25,6 +25,9 @@
 - Use the simplest expression of the class
 `Fill in from slides`
 
+
+
+## Home task working
 `This was just for my sanity, believe its supposed to be o(sqrt(1/2))`
 > p = 0
 > for(i=0; p<n; i++){
@@ -43,9 +46,8 @@
 	- i = 4 
 		- p = 6 + 4 = 10
 - Equiv equation can be $$\frac{p(p+1)}{2}$$ 
-- this should be greater or equal to N for the loop to stop
-- therefore $$\frac{p(p+1)}{2}>=n $$
+- this should be greater or equal to N for the loop to stop therefore $$\frac{p(p+1)}{2}>=n $$
 - $$p^{2}+ p >= 2n$$
 - $$p^{2}+ p - 2n >= 0$$
-- $$p^{2}+ p - 2n >= 0$$
-- 
+- $$p = \frac{-1+\sqrt{(1^{2}- 4(1)(-2n)))}}{2}$$
+- $$p = \frac{-1+\sqrt{(1+8n)}}{2}$$
