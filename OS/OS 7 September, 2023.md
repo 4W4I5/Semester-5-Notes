@@ -46,3 +46,5 @@
 - this should be greater or equal to N for the loop to stop
 - therefore $$\frac{p(p+1)}{2}>=n $$
 - $$p^{2}+ p >= 2n$$
+- $$p^{2}+ p - 2n >= 0$$
+- $$p^{2}+ p - 2n >= 0$$
