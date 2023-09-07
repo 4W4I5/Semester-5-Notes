@@ -7,3 +7,4 @@
 - #### Social Media Analytics
 	- Important of data
 	- Tools for measuring performance
+	- Key performance Indicators (KPI)
