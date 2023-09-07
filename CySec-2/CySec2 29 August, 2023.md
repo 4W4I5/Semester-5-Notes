@@ -6,9 +6,9 @@
 	- Domain scanning
 	- OSINT collection
 	- Social engineering such as Email Harvesting.
-		- theHarvester
-		- Hunter.io
-		- OSINT Framework
+		- theHarvester - capable of gathering names, subdomain IPs and URL besides email
+		- Hunter.io - email hunting tool
+		- OSINT Framework - collection of OSINT Tools
 
 #### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
