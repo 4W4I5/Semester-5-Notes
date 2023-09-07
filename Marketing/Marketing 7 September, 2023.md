@@ -12,3 +12,5 @@
 - #### Failed and Successful Social Media Campaigns 
 	- Failed
 		- Reebok
+		- Sony - PSP white is coming
+		- De beers: A diamond is forever (1999)
