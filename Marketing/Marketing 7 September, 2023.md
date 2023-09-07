@@ -14,4 +14,9 @@
 		- Reebok
 		- Sony - PSP white is coming
 		- De beers: A diamond is forever (1999)
+	- Successful
+		- Nike - Just do it
 		- Wendy's: where is the beef (1984)
+		- Procter & Gamble: Thhank u mom (2012)
+- #### FMCGs 
+	- Fast Moving Consumer Goods
