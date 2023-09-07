@@ -11,4 +11,4 @@
 - DOS/DDOS
 - Hijacking DNS
 	- Threat Model and Attacker Goals 
-	- Doesnt work now due to Bailiwick Checking
+	- Doesnt work now due to Bailiwick Checking, contextual updates only
