@@ -57,7 +57,7 @@
 		    - **Port**: Optional, specifies the port number to use for the connection (e.g., :80 for HTTP).
 		    - **Path**: The specific location of the resource on the server's file system.
 		    - **Query**: Optional, contains parameters for the resource (e.g., ?id=123).
-		    - **Fragment**: Optional, specifies a specific section of the resource (e.g., #section1).
+		    - **Fragment**: Optional, specifies a specific section of the resource (e.g., '#section1').
 	- **Example**: Here's a breakdown of a URL:
 		- **URL**: [https://www.example.com:8080/path/to/resource?param=value#section](https://www.example.com:8080/path/to/resource?param=value#section)
 		- **Protocol**: https
@@ -65,7 +65,7 @@
 		- **Port**: 8080
 		- **Path**: /path/to/resource
 		- **Query**: ?param=value
-		- **Fragment**: #section
+		- **Fragment**:  '#section'
 	- **Purpose**: 
 		- URLs are used to uniquely identify and locate web resources, including web pages, images, documents, and more.
 	- **Format Rules**:
