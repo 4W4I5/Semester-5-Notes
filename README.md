@@ -17,6 +17,7 @@
 | Week 6 | [20 Sept](Algo/Algo%2020%20September,%202023.md) |            |                      |
 
 ### CySec-2
+Notes sponsored by chatGPT ;)
 
 | Date                                                  | Status     | Content                                                            |
 | ----------------------------------------------------- | ---------- | ------------------------------------------------------------------ |
@@ -24,7 +25,7 @@
 | [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)     | Refactor   | IS Terminology, 2 Case Studies & APT Overview                      |
 | [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)     | Complete   | APT Cyber Killchain and Carbanak Case Study                        |
 | [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)     | Complete | Revising DNS & DHCP & URL                                          | 
-| [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   | Incomplete | Dns stuff & Wireshark Lab                                          |
+| [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   | Complete | Dns stuff & Wireshark Lab                                          |
 | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)   |            |                                                                    |
 | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md) |            |                                                                    |
 | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md) |            |                                                                    |
@@ -53,7 +54,7 @@
 | 22 Aug                                                     | N/A    | Sir Absent                       |
 | 24 Aug                                                     | N/A    | Sir Absent                       |
 | 29 Aug                                                     | N/A    | Sir Absent                       |
-| 31 Aug                                                     | N/A    | Introductory, Did not take notes |
+| 31 Aug                                                     | -----    | Introductory, Did not take notes |
 | 5 Sept                                                     | N/A    | Maam Absent                      |
 | [7 Sept](Marketing/Marketing%207%20September,%202023.md)   |        |                                  |
 | [12 Sept](Marketing/Marketing%2012%20September,%202023.md) |        |                                  |
