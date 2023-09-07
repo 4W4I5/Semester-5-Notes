@@ -20,7 +20,8 @@
 		- Wendy's: where is the beef (1984)
 		- Procter & Gamble: Thhank u mom (2012)
 - #### FMCGs 
-	- Fast Moving Consumer Goods
+	- Fast Moving Consumer Goods 
 - #### Positive Impact of Social Media
 	- For individuals
+	- For brands
 - #### Negative Impact of Social Media 

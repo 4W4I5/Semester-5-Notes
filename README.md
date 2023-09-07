@@ -49,18 +49,18 @@ Notes sponsored by chatGPT ;)
 
 ### Marketing
 
-| Date                                                       | Status | Content                          |
-| ---------------------------------------------------------- | ------ | -------------------------------- |
-| 22 Aug                                                     | N/A    | Sir Absent                       |
-| 24 Aug                                                     | N/A    | Sir Absent                       |
-| 29 Aug                                                     | N/A    | Sir Absent                       |
-| 31 Aug                                                     | -----    | Introductory, Did not take notes |
-| 5 Sept                                                     | N/A    | Maam Absent                      |
-| [7 Sept](Marketing/Marketing%207%20September,%202023.md)   |        |                                  |
-| [12 Sept](Marketing/Marketing%2012%20September,%202023.md) |        |                                  |
-| [14 Sept](Marketing/Marketing%2014%20September,%202023.md) |        |                                  |
-| [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |        |                                  |
-| [21 Sept](Marketing/Marketing%2021%20September,%202023.md) |        |                                  |
+| Date                                                       | Status     | Content                          |
+| ---------------------------------------------------------- | ---------- | -------------------------------- |
+| 22 Aug                                                     | N/A        | Sir Absent                       |
+| 24 Aug                                                     | N/A        | Sir Absent                       |
+| 29 Aug                                                     | N/A        | Sir Absent                       |
+| 31 Aug                                                     | -----      | Introductory, Did not take notes |
+| 5 Sept                                                     | N/A        | Maam Absent                      |
+| [7 Sept](Marketing/Marketing%207%20September,%202023.md)   | Incomplete | Social Media Marketing           |
+| [12 Sept](Marketing/Marketing%2012%20September,%202023.md) |            |                                  |
+| [14 Sept](Marketing/Marketing%2014%20September,%202023.md) |            |                                  |
+| [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |            |                                  |
+| [21 Sept](Marketing/Marketing%2021%20September,%202023.md) |            |                                  |
 
 ### OS
 
