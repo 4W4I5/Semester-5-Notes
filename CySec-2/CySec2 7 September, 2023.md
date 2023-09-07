@@ -3,3 +3,4 @@
 	- Exhaustively Iterates through all the DNS servers horizontally and then goes down a level
 - Recursive
 	- Server that is queried then takes the responsibility to get a response for the query back to the sender
+### Aliasing & Load Balancing
