@@ -22,7 +22,7 @@
 | ----------------------------------------------------- | ---------- | ------------------------------------------------------------------ |
 | [22 Aug](CySec-2/CySec2%2022%20August,%202023.md)     | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
 | [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)     | Refactor   | IS Terminology, 2 Case Studies & APT Overview                      |
-| [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)     | Incomplete | APT Cyber Killchain and Carbanak Case Study                        |
+| [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)     | Complete | APT Cyber Killchain and Carbanak Case Study                        |
 | [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)     | Incomplete | Revising DNS & DHCP                                                |
 | [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   | Incomplete | Dns stuff & Wireshark Lab                                          |
 | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)   |            |                                                                    |
