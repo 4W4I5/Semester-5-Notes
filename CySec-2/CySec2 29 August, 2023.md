@@ -3,7 +3,12 @@
 #### 1. **Reconnaissance**
 - Probe for information about the target system: type of hardware or software used, harvest public information, conduct in-depth research, and search for weak points in a company’s network.
 - **Activities:** 
-	- Domain scanning, OSINT collection, social engineering such as Email Harvesting.
+	- Domain scanning
+	- OSINT collection
+	- Social engineering such as Email Harvesting.
+		- theHarvester
+		- Hunter.io
+		- OSINT Framework
 
 #### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
