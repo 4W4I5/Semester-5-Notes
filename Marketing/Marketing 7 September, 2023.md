@@ -2,7 +2,7 @@
 - Social media is an internet-based form of communication
 	- Allows
 		- Conversations online
-		- shaere info
+		- share info
 		- `fill in from slides`
 - #### Social Media Analytics
 	- Important of data
