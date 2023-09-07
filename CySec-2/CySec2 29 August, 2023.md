@@ -1,5 +1,6 @@
 ## Cyber APT Kill Chain
 `Look into THM for more indepth info on killchain`
+> [Cyber Kill Chain TryHackMe. Reconnaissance | by Avataris12 | Medium](https://medium.com/@WriteupsTHM_HTB_CTF/cyber-kill-chain-tryhackme-7025c0662696)
 #### 1. **Reconnaissance**
 - Probe for information about the target system: type of hardware or software used, harvest public information, conduct in-depth research, and search for weak points in a company’s network.
 - **Activities:** 
@@ -84,4 +85,5 @@
 		- **Activities:** 
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
 
+# Carbanak APT Case Study
 [Case Study - Carbanak APT](Case%20Study%20-%20Carbanak%20APT.md)
