@@ -18,7 +18,7 @@
 	- Successful
 		- Nike - Just do it
 		- Wendy's: where is the beef (1984)
-		- Procter & Gamble: Thhank u mom (2012)
+		- Procter & Gamble: Thank u mom (2012)
 - #### FMCGs 
 	- Fast Moving Consumer Goods 
 - #### Positive Impact of Social Media
@@ -26,5 +26,8 @@
 	- For brands
 	- For students
 - #### Negative Impact of Social Media 
-	- Inadequacy about your life/apperance
-	-  Fear Of Missing Out & Social Media Addiction
+	- Inadequacy about your life/appearance
+	- Fear Of Missing Out & Social Media Addiction
+	- Isolation
+	- Depression & Anxiety
+	- Cyberbullying
