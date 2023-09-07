@@ -21,3 +21,6 @@
 		- Procter & Gamble: Thhank u mom (2012)
 - #### FMCGs 
 	- Fast Moving Consumer Goods
+- #### Positive Impact of Social Media
+	- For individuals
+- #### Negative Impact of Social Media 
