@@ -36,3 +36,9 @@
 		- The code of the process
 	- Dispatcher
 		- A process itself responsible for 
+- Process State Models
+	- 3 states in total
+		- Running
+		- Waiting
+		- Error
+	- 
