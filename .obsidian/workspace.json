@@ -14,8 +14,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Algo 6 September, 2023.md",
-                "mode": "preview",
+                "file": "OS/OS 5 September, 2023.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -89,7 +89,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -179,10 +180,10 @@
   },
   "active": "059c8125ba1af346",
   "lastOpenFiles": [
-    "Algo/Algo 6 September, 2023.md",
-    "README.md",
-    "OS/OS 31 August, 2023.md",
     "OS/OS 5 September, 2023.md",
+    "README.md",
+    "Algo/Algo 6 September, 2023.md",
+    "OS/OS 31 August, 2023.md",
     "OS/OS 7 September, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png",
     "Algo/Algo 4 September, 2023.md",
