@@ -23,8 +23,22 @@
 		- DHCP ACK
 			- DHCP agrees final comms and ack the IP request
 	- VULN
-		- Malicious user can offer a IP to the requesting device 
-		- `Research more into this`
+		- **Unauthorized Access**:
+			- Attackers can gain unauthorized access to the DHCP server, leading to various security risks and network disruptions.
+		- **IP Configuration Manipulation**:
+			- Attackers can manipulate DHCP to distribute incorrect or malicious IP configurations to clients, potentially disrupting network services and compromising security.
+		- **Resource Exhaustion**:
+			 - DHCP servers may run out of available IP addresses, causing connectivity issues, or face resource exhaustion due to DoS attacks.
+		- **Network Traffic Interception**:
+			 - DHCP can be exploited for man-in-the-middle attacks, enabling attackers to intercept and manipulate network traffic.
+		- **Information Disclosure**:
+			 - Poorly configured DHCP servers may leak sensitive information, potentially aiding attackers in exploiting network vulnerabilities.
+		- **Option Injection**:
+			 - Attackers can inject malicious options into DHCP responses, leading to DNS hijacking and traffic redirection.
+		- **DHCP Snooping Bypass**:
+			 - Failure to secure switches against rogue DHCP servers can allow attackers to deploy unauthorized DHCP services.
+		- **Lease Time Manipulation**:
+			- Attackers can manipulate DHCP lease times to maintain control over IP addresses for extended periods, facilitating persistent attacks.
 	- Best security practices
 		- DHCP Trusted Switches
 		- DHCP Fingerprinting
