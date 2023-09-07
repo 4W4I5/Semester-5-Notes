@@ -12,3 +12,5 @@
 - Hijacking DNS
 	- Threat Model and Attacker Goals 
 	- Doesnt work now due to Bailiwick Checking, contextual updates only
+- Kaminisky Exploit
+	- 
