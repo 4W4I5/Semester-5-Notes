@@ -13,12 +13,15 @@
 #### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
 - **Activities:** 
-	- The attacker would create a 
+	- The attacker would create a payload, a malicious code that they would run on the system or use an exploit, a program/code that takes advantage of a vulnerability/flaw in the system
+	- They would also choose C2 (Command & Control techniques)
+	- They would also possibly implant a backdoor, a mechanism to achieve persistence should they lose access
 
 #### 3. **Delivery**
 - Attackers decide on the delivery method. There are plenty of options to choose from.
 - **Activities:** 
-	- Sending malicious emails, exploiting vulnerabilities, using compromised websites, Distributing Infected USB drives, Watering Hole Attack to compromise a website people are locally using and drive-by download.
+	- Sending malicious emails, exploiting vulnerabilities, using compromised websites, Distributing Infected USB drives, 
+	- Watering Hole Attack to compromise a website people are locally using and drive-by download.
 
 #### 4. **Exploitation**
 - Attackers leverage vulnerabilities to execute the malicious code on the target system.
