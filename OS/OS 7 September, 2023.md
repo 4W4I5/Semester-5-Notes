@@ -37,8 +37,5 @@
 	- Dispatcher
 		- A process itself responsible for 
 - Process State Models
-	- 3 states in total
-		- Running
-		- Waiting
-		- Error
-	- 
+	- 2 State model
+	- 5 State model
