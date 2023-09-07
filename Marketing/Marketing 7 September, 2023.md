@@ -24,4 +24,7 @@
 - #### Positive Impact of Social Media
 	- For individuals
 	- For brands
+	- For students
 - #### Negative Impact of Social Media 
+	- Inadequacy about your life/apperance
+	- 
