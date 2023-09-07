@@ -4,3 +4,10 @@
 - Recursive
 	- Server that is queried then takes the responsibility to get a response for the query back to the sender
 ### Aliasing & Load Balancing
+
+### DNS Caching
+
+### DNS Security
+- DOS/DDOS
+- Hijacking DNS
+	- Threat Model and Attacker Goals
