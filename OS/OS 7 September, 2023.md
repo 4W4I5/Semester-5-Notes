@@ -13,12 +13,26 @@
 
 # Chapter 3: Process Description and Control
 - Process is an instance of a program or a program in execution
-- Process elemetns
+- Process elements
 	- Program code
 	- Process data
 	- Process State PSW
 - Process control block
-	- Contains th eprocess elements
-	- Craeted and managed by the OS
+	- Contains the process elements
+	- Created and managed by the OS
 	- Key tool that allowed for support for multiple process
 	- When a process is removed from the running state to allow another process to run values important to correct execution of the process must be saved. The PCB is where such information is saved
+	- PCB lifetime is only for the duration of the process
+- Reasons for process creation
+	- New batch job
+	- Interactive logon
+	- Created by OS to provide a service
+	- Spawned by the existing process
+- Process Creation
+- Process Termination
+	- Reasons for process termination
+- Process States
+	- Trace
+		- The code of the process
+	- Dispatcher
+		- A process itself responsible for 
