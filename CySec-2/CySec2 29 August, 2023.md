@@ -20,8 +20,10 @@
 #### 3. **Delivery**
 - Attackers decide on the delivery method. There are plenty of options to choose from.
 - **Activities:** 
-	- Sending malicious emails, exploiting vulnerabilities, using compromised websites, Distributing Infected USB drives, 
-	- Watering Hole Attack to compromise a website people are locally using and drive-by download.
+	- Sending malicious emails
+	- Exploiting vulnerabilities
+	- Distributing Infected USB drives, 
+	- Watering Hole Attack, an attack designed to compromise a group of users by infecting websites they typically visit and luring them to a malicious site
 
 #### 4. **Exploitation**
 - Attackers leverage vulnerabilities to execute the malicious code on the target system.
