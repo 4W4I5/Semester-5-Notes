@@ -25,7 +25,7 @@ Notes sponsored by chatGPT ;)
 | [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)     | Refactor   | IS Terminology, 2 Case Studies & APT Overview                      |
 | [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)     | Complete   | APT Cyber Killchain and Carbanak Case Study                        |
 | [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)     | Complete | Revising DNS & DHCP & URL                                          | 
-| [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   | Complete | Dns stuff & Wireshark Lab                                          |
+| [5 Sept](CySec-2/CySec2%205%20September,%202023.md)   | Complete | Wireshark DNS Lab                                          |
 | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)   |            |                                                                    |
 | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md) |            |                                                                    |
 | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md) |            |                                                                    |
