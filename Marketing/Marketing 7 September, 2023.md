@@ -7,4 +7,6 @@
 - #### Social Media Analytics
 	- Important of data
 	- Tools for measuring performance
-	- Key performance Indicators (KPI)
+- #### Key performance Indicators (KPI)
+- #### Types of Social Media Platforms
+- #### Failed and Successful Social Media Campaigns
