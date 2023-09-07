@@ -13,7 +13,7 @@
 #### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
 - **Activities:** 
-	- Crafting malware, creating exploit documents, preparing malicious links.
+	- The attacker would create a 
 
 #### 3. **Delivery**
 - Attackers decide on the delivery method. There are plenty of options to choose from.
