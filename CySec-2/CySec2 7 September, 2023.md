@@ -10,4 +10,5 @@
 ### DNS Security
 - DOS/DDOS
 - Hijacking DNS
-	- Threat Model and Attacker Goals
+	- Threat Model and Attacker Goals 
+	- Doesnt work now due to Bailiwick Checking
