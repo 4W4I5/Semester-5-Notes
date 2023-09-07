@@ -32,4 +32,48 @@
 
 ## URL (Uniform Resource Locator)
 `Used ChatGPT for this`
- 
+ - ### **Definition**: 
+	 - A URI (Uniform Resource Identifier) is a string of characters that uniquely identifies a particular resource, either on the internet or in other contexts.
+- ### **Types of URIs**:
+    - #### **URL (Uniform Resource Locator)**: 
+	    - A specific type of URI that provides the means to locate a resource on the web. URLs include the protocol (e.g., http://), domain, and path.
+	    - **Components**:
+		    - **Protocol**: Specifies how the resource should be accessed, such as HTTP, HTTPS, FTP, etc.
+		    - **Domain**: The web address of the server where the resource is hosted (e.g., [www.example.com](http://www.example.com/)).
+		    - **Port**: Optional, specifies the port number to use for the connection (e.g., :80 for HTTP).
+		    - **Path**: The specific location of the resource on the server's file system.
+		    - **Query**: Optional, contains parameters for the resource (e.g., ?id=123).
+		    - **Fragment**: Optional, specifies a specific section of the resource (e.g., #section1).
+	- **Example**: Here's a breakdown of a URL:
+		- **URL**: [https://www.example.com:8080/path/to/resource?param=value#section](https://www.example.com:8080/path/to/resource?param=value#section)
+		- **Protocol**: https
+		- **Domain**: [www.example.com](http://www.example.com/)
+		- **Port**: 8080
+		- **Path**: /path/to/resource
+		- **Query**: ?param=value
+		- **Fragment**: #section
+	- **Purpose**: 
+		- URLs are used to uniquely identify and locate web resources, including web pages, images, documents, and more.
+	- **Format Rules**:
+	    - Should not contain spaces or special characters (use URL encoding).
+	    - Use lowercase letters for protocol and domain (although it's case-insensitive).
+	- **Encoding**: 
+		- Special characters in URLs are encoded using percent-encoding (e.g., space becomes %20).
+	- **Security**: 
+		- URLs with "https" are secure, as they use SSL/TLS encryption for data transmission.
+	- **Relative vs. Absolute URLs**: 
+		- Relative URLs are based on the current page's URL, while absolute URLs specify the full path.
+    - #### **URN (Uniform Resource Name)**: 
+	    - Another type of URI that is used to identify resources by name in a particular namespace. URNs are intended to be persistent and location-independent.
+- ### **Examples**:
+    - **URL**: [https://www.example.com/resource/page.html](https://www.example.com/resource/page.html)
+    - **URN**: urn:isbn:0451450523 (identifying a book by ISBN)
+- ### **Purpose**: 
+	- URIs are used to uniquely identify and access resources, whether they are web pages, documents, or other entities.
+- ### **Components**: 
+	- URIs typically consist of:
+		- **Scheme**: Specifies the type of URI (e.g., http, urn).
+		- **Authority**: Often includes domain or address information.
+		- **Path**: Identifies the specific resource within the scheme's context.
+- ### **URI vs. URL**: 
+	- While URIs are a broader concept that includes both URLs and URNs, URLs are a specific type of URI that provides both identification and location information.
