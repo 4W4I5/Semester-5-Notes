@@ -4,4 +4,6 @@
 		- Conversations online
 		- shaere info
 		- `fill in from slides`
-- 
+- #### Social Media Analytics
+	- Important of data
+	- Tools for measuring performance
