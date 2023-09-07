@@ -27,4 +27,4 @@
 	- For students
 - #### Negative Impact of Social Media 
 	- Inadequacy about your life/apperance
-	- 
+	-  Fear Of Missing Out & Social Media Addiction
