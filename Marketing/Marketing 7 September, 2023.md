@@ -1,5 +1,6 @@
 ### Social Media
 - Social media is an internet-based form of communication
+- Used to Boost sales or bash competition
 	- Allows
 		- Conversations online
 		- share info
