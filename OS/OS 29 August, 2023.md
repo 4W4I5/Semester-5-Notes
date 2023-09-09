@@ -32,10 +32,12 @@
 			- Setting up DMA requires careful configuration and coordination to ensure data integrity and prevent conflicts.
 
 ## Symmetric Multiprocessor (SMP)
-- A system with 2+ processors
-	- Share the same memory, system bus and I/O
-- Increased throughput, more reliable as failure of one processor will not ruin others
-- Coordinating processors is complex, large memory pool is required as all processors share the same memory
+- Definition
+	- A system with 2+ processors
+		- Share the same memory, system bus and I/O
+- Advantages 
+	- Increased throughput, more reliable as failure of one processor will not ruin others
+	- Coordinating processors is complex, large memory pool is required as all processors share the same memory
 ## MultiCore Computer (MCC)
 - Definition
 	- Also known as chip multiprocessor
