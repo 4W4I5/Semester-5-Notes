@@ -19,6 +19,35 @@
 	- Process State PSW
 - Process control block
 	- Contains the process elements
+		- **Process ID (PID)**: A unique identifier assigned to each process in the system, enabling the OS to distinguish between processes.
+			- **Program Counter (PC)**: 
+				- Keeps track of the address of the next instruction to be executed by the process.
+			- **CPU Registers**: '
+				- Stores the values of CPU registers when the process is preempted or interrupted. This allows the process to resume execution seamlessly.
+			- **Scheduling Information**:
+				- Contains details about the process's scheduling priority, state (e.g., running, waiting, or ready), and other scheduling-related data.
+			- **Memory Management Information**: 
+				- Includes information about the process's memory allocation, such as the base and limit registers, page tables, or segment descriptors.
+			- **I/O Status Information**: 
+				- Keeps track of I/O devices the process is using or waiting on, such as open files, pending I/O requests, and their status.
+			- **Accounting Information**: 
+				- Tracks resource usage statistics like CPU time, wall-clock time, and other resource-related data.
+			- **Parent Process Pointer**: 
+				- Points to the PCB of the parent process if the process is created by another process (e.g., in fork() operations).
+			- **Child Process Pointers**: 
+				- Contains pointers to PCBs of child processes if any exist.
+			- **Inter-Process Communication (IPC) Information**: 
+				- Includes data related to message queues, semaphores, and shared memory segments used for IPC.
+			- **Signal Handling Information**: 
+				- Records how the process handles signals or interrupts, such as signal handlers and signal masks.
+			- **File Descriptors**: 
+				- Stores references to open files and their associated file control blocks.
+			- **Priority and Scheduling Information**: 
+				- Contains information about the process's priority, scheduling algorithm, and any time-related data for scheduling.
+			- **Security Information**: 
+				- May include information related to process permissions, access control, and security attributes.
+			- **Exit Status**: 
+				- Records the exit status or exit code of the process when it terminates
 	- Created and managed by the OS
 	- Key tool that allowed for support for multiple process
 	- When a process is removed from the running state to allow another process to run values important to correct execution of the process must be saved. The PCB is where such information is saved
