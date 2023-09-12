@@ -24,10 +24,14 @@
 	- When a process is removed from the running state to allow another process to run values important to correct execution of the process must be saved. The PCB is where such information is saved
 	- PCB lifetime is only for the duration of the process
 - Reasons for process creation
-	- New batch job
-	- Interactive logon
-	- Created by OS to provide a service
-	- Spawned by the existing process
+	- **New batch job**: 
+		- Processes are created to execute a new batch job or task in batch processing systems, where multiple jobs are run sequentially.
+	- **Interactive logon**: 
+		- When a user logs into a computer system, an interactive process is created to facilitate user interaction and run user-specific tasks.
+	- **Created by OS to provide a service**: 
+		- The operating system creates processes to offer various services like printing, network services, or background tasks (daemons) that serve system-level functions.
+	- **Spawned by the existing process**: 
+		- Existing processes can create child processes or spawn new processes to perform parallel or related tasks, enabling multitasking and efficient resource utilization.
 - Process Creation
 - Process Termination
 	- **Normal Termination**:
