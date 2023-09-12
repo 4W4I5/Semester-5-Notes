@@ -38,5 +38,11 @@
 		- A process itself responsible for 
 - Process State Models
 	- 2 State model
+		- ![](Pasted%20image%2020230912151828.png)
+		- 
 	- 5 State model 
+		- ![](Pasted%20image%2020230912151924.png)
+		- 
 	- 6 State model
+		- ![](Pasted%20image%2020230912152003.png)
+	- 
