@@ -9,3 +9,4 @@
 		- One process leaves the running state and the other enters the running state
 
 ### Mode Switching
+### System Interrupt, Call, Trap
