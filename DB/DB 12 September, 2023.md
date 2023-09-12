@@ -186,3 +186,23 @@
     - You need to ensure that the "Age" attribute is updated whenever new records are added or when the current date changes (typically once a year). You can use database triggers, scheduled tasks, or application logic to keep the "Age" attribute up-to-date.
 
 #### Mapping of a Binary 1:m Relationship:
+1. **Author Table**:
+    - Contains information about authors.
+
+| AuthorID | AuthorName  |
+| -------- | ----------- |
+| 1        | John Smith  |
+| 2        | Emily Brown |
+| 3        | Sarah Lee   |
+2. **Book Table**:
+    - Contains information about books, including a foreign key linking each book to its author.
+
+| BookID | Title              | ISBN        | AuthorID |
+| ------ | ------------------ | ----------- | -------- |
+| 1      | Introduction to DB | 978-1234567 | 1        |
+| 2      | Data Modeling      | 978-9876543 | 2        |
+| 3      | Database Systems   | 978-3456789 | 1        |
+| 4      | SQL Fundamentals   | 978-5678901 | 3        |
+    
+3. **Foreign Key Relationship**:
+    - The "AuthorID" column in the "Book" table serves as a foreign key that links each book to its respective author in the "Author" table. This establishes the one-to-many relationship.
