@@ -16,7 +16,7 @@
 - Process elements
 	- Program code
 	- Process data
-	- Process State PSW
+	- Process State Word (PSW)
 - Process control block
 	- Contains the process elements
 		- **Process ID (PID)**: A unique identifier assigned to each process in the system, enabling the OS to distinguish between processes.
