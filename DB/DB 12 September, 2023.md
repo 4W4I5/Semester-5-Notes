@@ -145,25 +145,22 @@
 - In this mapping, the composite attribute "StreetAddress" has been broken down into its sub-components, each with its own column.
 - This approach allows for more granular storage and retrieval of data while maintaining the integrity of the composite attribute's structure.
 
-### Mapping of a Regular Entity with MultiValued Attributes:
+#### Mapping of a Regular Entity with MultiValued Attributes:
 
-When dealing with multi-valued attributes in a regular entity, you need to create a separate table to represent these attributes. Each row in the new table corresponds to one value of the multi-valued attribute and includes a reference to the main entity. For example:
-- Entity: **Book**
-- MultiValued Attribute: **Authors** (can have multiple authors)
-Relational Table Mapping:
+- Create a separate table to represent the multi-valued attribute.
+- Each row in the new table corresponds to one value of the multi-valued attribute, and it includes a foreign key that links it to the primary key of the original entity.
+- For instance, consider an entity "Book" with a multi-valued attribute "Authors." In this case, you might create a separate "Authors" table and use a foreign key to connect it to the "Book" table:
 **Book Table:**
 
-|Book_ID|Title|ISBN|
+|BookID|Title|ISBN|
 |---|---|---|
-|1|"Book A"|123-456-789|
-|2|"Book B"|987-654-321|
+|1|Introduction to DB|978-1234567|
+|2|Data Modeling|978-9876543|
 
 **Authors Table:**
 
-|Author_ID|Author_Name|Book_ID|
+|AuthorID|BookID|AuthorName|
 |---|---|---|
-|101|Author X|1|
-|102|Author Y|1|
-|103|Author Z|2|
-
-In this case, the "Authors" attribute is represented as a separate table, and the "Book" table references it using the "Book_ID" as a foreign key. This allows multiple authors to be associated with each book.
+|101|1|John Smith|
+|102|1|Emily Brown|
+|103|2|Sarah Lee|
