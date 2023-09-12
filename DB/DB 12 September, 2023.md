@@ -85,12 +85,36 @@
 - NOTE: A DATABASE includes ALL relations. So Database Schema and Snapshot will include ALL relations
 
 ### Characteristics of a Relation
-- Each relation has a distinct name
-- Each value in a tuple is atomic
-- Each Attribute in a relation has a distinct name
-- Values of an attribute are all from the same domain
-- Order doesnt matter
-- missed
-- missed
+- **Rows (Tuples)**:
+    - Each row in a relation represents a unique record or entity.
+    - All rows have the same structure, meaning they contain the same attributes (columns).
+- **Columns (Attributes)**:
+    - Columns represent specific properties or attributes of the entities in the relation.
+    - Each column has a name and a data type that defines the kind of data it can store.
+- **Uniqueness of Rows**:
+    - Each row in a relation must be unique, meaning there are no duplicate rows.
+    - This uniqueness is enforced by the primary key constraint.
+- **Ordering of Rows**:
+    - The rows in a relation are not inherently ordered.
+    - The order in which rows are retrieved is typically determined by the query or indexing.
+- **Atomic Values**:
+    - Each cell (intersection of a row and column) in a relation contains a single, indivisible value.
+    - This ensures that data is stored at the most granular level.
+- **No Duplicate Columns**:
+    - In a relation, each column must have a distinct name.
+    - Columns with the same name are not allowed.
+- **Null Values**:
+    - Relations can contain null values, which represent missing or unknown data.
+    - Nulls are different from empty or zero values.
+- **Fixed Schema**:
+    - The structure of a relation, including the names and data types of its columns, is fixed and defined when the table is created.
+    - Changing the schema requires altering the table.
+- **No Duplicate Rows**:
+    - Each row is uniquely identified by its values in the primary key columns.
+    - Duplicate rows are not allowed in a relation.
+- **No Specific Order of Columns**:
+    - The order of columns in a relation's definition does not affect the data stored.
+    - Column order is specified when creating the table but is not significant when querying the data.
 
 ### Mapping of a regular entity with simple attributes
+### Mapping of a regular entity with composite attributes
