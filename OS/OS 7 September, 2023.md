@@ -30,7 +30,33 @@
 	- Spawned by the existing process
 - Process Creation
 - Process Termination
-	- Reasons for process termination
+	- **Normal Termination**:
+	    - The process has completed its execution and exits gracefully.
+	    - The program reaches the end of its main function.
+	- **Abnormal Termination**:
+	    - **Error**: The process encounters an unrecoverable error or exception.
+	    - **Illegal Instruction**: Attempting to execute an invalid or privileged instruction.
+	    - **Segmentation Fault**: Accessing memory that the process doesn't have permission to access.
+	    - **Stack Overflow**: The process's call stack exceeds its allocated memory.
+	    - **Arithmetic Error**: Dividing by zero or other illegal arithmetic operations.
+	- **External Termination**:
+	    - **Killed by User**: A user or administrator terminates the process manually.
+	    - **Resource Exhaustion**: The system runs out of resources (e.g., memory) and terminates processes to free up resources.
+	    - **Parent Termination**: If a parent process terminates, its child processes might also terminate.
+	- **Interrupts and Signals**:
+	    - Processes can be terminated due to receiving specific signals or interrupts from the operating system or other processes. For example:
+	        - SIGTERM: Termination signal.
+	        - SIGKILL: Unconditionally kill a process.
+	- **System Shutdown**:
+	    - When the entire system shuts down or restarts, all processes are terminated.
+	- **Time Limits**:
+	    - Some systems or batch processing environments may impose time limits on processes. When exceeded, the process is terminated.
+	- **Resource Constraints**:
+	    - Running out of allocated resources, such as file handles or network connections, can lead to termination.
+	- **Security Policies**:
+	    - Security mechanisms or policies may force termination if a process violates security rules or access controls.
+	- **Deadlock Resolution**:
+	    - In multi-process systems, processes might be terminated to resolve deadlocks where processes are waiting for resources indefinitely.
 - Process States
 	- Trace
 		- The code of the process
