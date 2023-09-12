@@ -1,0 +1,2 @@
+- revised attack version 1 for dns cache poision
+- started version2 after quiz
