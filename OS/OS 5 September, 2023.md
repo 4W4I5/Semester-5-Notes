@@ -5,6 +5,7 @@
 		- Address Spaces
 		- Inter Process communication
 		- Basic Scheduling
+	- Microkernel vs Monolithic Kernel
 	- Allows 
 		- Simplifies implementation
 		- Provides flexibility
