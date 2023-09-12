@@ -59,7 +59,7 @@
 			- A key that consists of two or more attributes, but it may not be minimal like a composite key.
 			- It's used to enforce uniqueness based on a combination of attributes.
 			- ADV:
-				-  Offers a way to ensure uniqueness based on a combination of attributes.
+				- Offers a way to ensure uniqueness based on a combination of attributes.
 				- Useful for scenarios where no single attribute is sufficient for unique identification.
 		- **Partial Key**:
 			- An attribute that is part of a candidate key but not a super key by itself.
@@ -68,8 +68,8 @@
 				- Contributes to uniqueness when combined with other attributes.
 				- Can be part of a candidate key to ensure data integrity.
 
-
 ## Terminology
+
 - A **Relation** is a table with attributes
 	- Has Attributes as Cols
 		- A degree of a table is the number of attributes it might have
@@ -85,6 +85,7 @@
 - NOTE: A DATABASE includes ALL relations. So Database Schema and Snapshot will include ALL relations
 
 ### Characteristics of a Relation
+
 - **Rows (Tuples)**:
     - Each row in a relation represents a unique record or entity.
     - All rows have the same structure, meaning they contain the same attributes (columns).
@@ -116,5 +117,32 @@
     - The order of columns in a relation's definition does not affect the data stored.
     - Column order is specified when creating the table but is not significant when querying the data.
 
-### Mapping of a regular entity with simple attributes
-### Mapping of a regular entity with composite attributes
+### Mapping of a Regular Entity with Simple Attributes:
+
+- In a relational database, a regular entity with simple attributes is typically represented as a single table.
+- Each simple attribute corresponds to a single column in the table.
+- The primary key of the table uniquely identifies each row, ensuring that there are no duplicates.
+- For example, consider an entity "Student" with simple attributes "StudentID," "FirstName," "LastName," and "Age." This entity can be mapped to a table like this:
+
+| StudentID | FirstName | LastName | Age |
+| --------- | --------- | -------- | --- |
+| 1 | John | Smith | 21 |
+| 2 | Mary | Johnson | 20 |
+| 3 | David | Lee | 22 |
+- In this mapping, each row represents a student entity, and each column stores a specific attribute of the student.
+
+### Mapping of a Regular Entity with Composite Attributes:
+
+- When an entity has composite attributes, which are attributes made up of sub-components, a different approach is taken.
+- Composite attributes are typically represented by breaking them down into individual simple attributes in the table.
+- Each sub-component of the composite attribute corresponds to a separate column.
+- For example, consider an entity "Address" with a composite attribute "StreetAddress" consisting of "StreetName," "StreetNumber," and "ZipCode." This entity can be mapped to a table like this:
+
+| StreetName | StreetNumber | ZipCode |
+| ---------- | ------------ | ------- |
+| Elm Street | 123 | 12345 |
+| Oak Avenue | 456 | 67890 |
+- In this mapping, the composite attribute "StreetAddress" has been broken down into its sub-components, each with its own column.
+- This approach allows for more granular storage and retrieval of data while maintaining the integrity of the composite attribute's structure.
+
+### Mapping of a Regular Entity with MultiValued Attributes:
