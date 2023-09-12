@@ -210,7 +210,9 @@
 2. **Establish the Relationship**:
     - In the "Employee" table, the "DepartmentID" column serves as a foreign key that references the "Department" table's primary key, "DepartmentID."
     - This foreign key establishes the one-to-many relationship. Each employee is associated with one department, while each department can have multiple employees.
-3. **Querying the Relationship**:
+	    - However note that in a partial particiaption situation
+		    - The foreign key can be NULL
+1. **Querying the Relationship**:
     - To retrieve employees for a specific department, you can use SQL queries with JOIN clauses. For example, to get all employees in the HR department:
-4. **Maintaining Referential Integrity**:
+2. **Maintaining Referential Integrity**:
     - Ensure that foreign key constraints are properly defined to maintain referential integrity. This prevents the creation of orphaned records or records with invalid references.
