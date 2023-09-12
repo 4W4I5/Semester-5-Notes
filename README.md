@@ -74,7 +74,7 @@ NOTE:: Refer to the book for main content
 | [31 Aug](OS/OS%2031%20August,%202023.md)     | Refactor   | Chapter 2 completed till 2.3                           |
 | [5 Sept](OS/OS%205%20September,%202023.md)   | Incomplete | Continuing Chapter 2 + A whole lot of stuff to fill in |
 | [7 Sept](OS/OS%207%20September,%202023.md)   | Incomplete | Wrapping up Chapter 2 + Did till chapter 3.2           |
-| [12 Sept](OS/OS%2012%20September,%202023.md) |            |                                                        |
+| [12 Sept](OS/OS%2012%20September,%202023.md) | Incomplete | 3.3 and onwards                                                       |
 | [14 Sept](OS/OS%2014%20September,%202023.md) |            |                                                        |
 | [19 Sept](OS/OS%2019%20September,%202023.md) |            |                                                        |
 | [21 Sept](OS/OS%2021%20September,%202023.md) |            |                                                        |
