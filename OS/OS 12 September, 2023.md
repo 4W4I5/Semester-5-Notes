@@ -10,3 +10,7 @@
 
 ### Mode Switching
 ### System Interrupt, Call, Trap
+
+### Process Switching
+
+### System Data Structures
