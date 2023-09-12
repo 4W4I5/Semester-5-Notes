@@ -42,7 +42,7 @@ Notes sponsored by chatGPT ;)
 | 31 Aug                                       | N/A                           | Class Cancelled                    |
 | [5 Sept](DB/DB%205%20September,%202023.md)   | Incomplete                    | Some more DB stuff                 |
 | [7 Sept](DB/DB%207%20September,%202023.md)   | Incomplete                    | idk man                            |
-| [12 Sept](DB/DB%2012%20September,%202023.md) | Incomplete                    | idk man pt2                        | 
+| [12 Sept](DB/DB%2012%20September,%202023.md) | Complete                    | idk man pt2                        | 
 | [14 Sept](DB/DB%2014%20September,%202023.md) |                               |                                    |
 | [19 Sept](DB/DB%2019%20September,%202023.md) |                               |                                    |
 | [21 Sept](DB/DB%2021%20September,%202023.md) |                               |                                    |
