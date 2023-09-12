@@ -10,4 +10,6 @@
 		- Super key
 			- Primary key which can consist of other keys that might be used as a primary key themselves
 		- Candidate key
+			- Makes searching more efficient
+			- Can extract primary key from this key as well
 		- 
