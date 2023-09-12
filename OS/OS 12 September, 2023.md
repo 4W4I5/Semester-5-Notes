@@ -7,3 +7,5 @@
 		- Switches execution from user mode and kernel mode
 	- Process/Context switch
 		- One process leaves the running state and the other enters the running state
+
+### Mode Switching
