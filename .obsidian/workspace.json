@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "CySec-2/CySec2 12 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "CySec-2/CySec2 12 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 5 September, 2023.md",
+                "file": "CySec-2/CySec2 12 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 5 September, 2023.md"
+                "file": "CySec-2/CySec2 12 September, 2023.md"
               }
             }
           },
@@ -181,6 +181,8 @@
   "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
     "README.md",
+    "CySec-2/CySec2 12 September, 2023.md",
+    "OS/OS 5 September, 2023.md",
     "OS/OS 7 September, 2023.md",
     "OS/OS 31 August, 2023.md",
     "OS/OS 29 August, 2023.md",
@@ -191,7 +193,6 @@
     "CySec-2/CySec2 5 September, 2023.md",
     "CySec-2/CySec2 29 August, 2023.md",
     "CySec-2/Case Studies/Case Study - Carbanak APT.md",
-    "OS/OS 5 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png",
     "Algo/Algo 4 September, 2023.md",
@@ -207,7 +208,6 @@
     "DB/DB 24 August, 2023.md",
     "DB/DB 22 August, 2023.md",
     "CySec-2/CySec2 22 August, 2023.md",
-    "CySec-2/Case Studies/Case Study - HeartBleed Exploit.md",
     "CySec-2/Case Studies",
     "OS",
     "Marketing",
