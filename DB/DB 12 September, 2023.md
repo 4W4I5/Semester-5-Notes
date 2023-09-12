@@ -164,3 +164,25 @@
 |101|1|John Smith|
 |102|1|Emily Brown|
 |103|2|Sarah Lee|
+
+#### Mapping of a Regular Entity with Derived Attributes:
+
+1. **Source Data**:
+    - The source data for calculating the "Age" (a derived attribute based on DOB) is the "Date of Birth" itself.
+2. **Calculate the Derived Attribute**:
+    - To calculate "Age" from "Date of Birth," you subtract the DOB from the current date or a reference date (e.g., the current year). The result is the person's age.
+3. **Include the Derived Attribute in the Table**:
+    - Add a column for "Age" in the table representing the regular entity, in this case, let's say it's a table for "Persons."
+
+**Persons Table:**
+
+|PersonID|FirstName|LastName|DOB|Age|
+|---|---|---|---|---|
+|1|John|Smith|1990-05-15|33|
+|2|Emily|Johnson|1992-09-23|31|
+|3|Michael|Davis|1991-03-10|32|
+
+4. **Update the Derived Attribute**:
+    - You need to ensure that the "Age" attribute is updated whenever new records are added or when the current date changes (typically once a year). You can use database triggers, scheduled tasks, or application logic to keep the "Age" attribute up-to-date.
+
+#### Mapping of a Binary 1:m Relationship:
