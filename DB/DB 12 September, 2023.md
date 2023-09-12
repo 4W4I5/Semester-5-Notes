@@ -186,23 +186,31 @@
     - You need to ensure that the "Age" attribute is updated whenever new records are added or when the current date changes (typically once a year). You can use database triggers, scheduled tasks, or application logic to keep the "Age" attribute up-to-date.
 
 #### Mapping of a Binary 1:m Relationship:
-1. **Author Table**:
-    - Contains information about authors.
 
-| AuthorID | AuthorName  |
-| -------- | ----------- |
-| 1        | John Smith  |
-| 2        | Emily Brown |
-| 3        | Sarah Lee   |
-2. **Book Table**:
-    - Contains information about books, including a foreign key linking each book to its author.
+1. **Create Tables for Entities**:
+    - Create two tables: one for the "Department" entity and another for the "Employee" entity.
 
-| BookID | Title              | ISBN        | AuthorID |
-| ------ | ------------------ | ----------- | -------- |
-| 1      | Introduction to DB | 978-1234567 | 1        |
-| 2      | Data Modeling      | 978-9876543 | 2        |
-| 3      | Database Systems   | 978-3456789 | 1        |
-| 4      | SQL Fundamentals   | 978-5678901 | 3        |
-    
-3. **Foreign Key Relationship**:
-    - The "AuthorID" column in the "Book" table serves as a foreign key that links each book to its respective author in the "Author" table. This establishes the one-to-many relationship.
+**Department Table:**
+
+|DepartmentID|DepartmentName|
+|---|---|
+|1|HR|
+|2|IT|
+|3|Sales|
+
+**Employee Table:**
+
+|EmployeeID|FirstName|LastName|DepartmentID|
+|---|---|---|---|
+|101|John|Smith|1|
+|102|Emily|Johnson|2|
+|103|Michael|Davis|1|
+|104|Sarah|Lee|3|
+
+2. **Establish the Relationship**:
+    - In the "Employee" table, the "DepartmentID" column serves as a foreign key that references the "Department" table's primary key, "DepartmentID."
+    - This foreign key establishes the one-to-many relationship. Each employee is associated with one department, while each department can have multiple employees.
+3. **Querying the Relationship**:
+    - To retrieve employees for a specific department, you can use SQL queries with JOIN clauses. For example, to get all employees in the HR department:
+4. **Maintaining Referential Integrity**:
+    - Ensure that foreign key constraints are properly defined to maintain referential integrity. This prevents the creation of orphaned records or records with invalid references.
