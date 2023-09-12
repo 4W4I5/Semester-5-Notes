@@ -14,3 +14,5 @@
 ### Process Switching
 
 ### System Data Structures
+process tables
+memory tables
