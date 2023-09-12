@@ -67,3 +67,30 @@
 			- ADV:
 				- Contributes to uniqueness when combined with other attributes.
 				- Can be part of a candidate key to ensure data integrity.
+
+
+## Terminology
+- A **Relation** is a table with attributes
+	- Has Attributes as Cols
+		- A degree of a table is the number of attributes it might have
+	- Tuples as Rows aka entries
+- Relational Model Notation aka Schema
+	- R(A1,A2,A3,A4,AN)
+		- R = Relation Name
+		- AN = Attribute name
+	- Schema = Table Definition
+		- Just write the RMN (Relational Model Notation) for that relation/table
+	- Snapshot = Table State
+		- Data stored within the table
+- NOTE: A DATABASE includes ALL relations. So Database Schema and Snapshot will include ALL relations
+
+### Characteristics of a Relation
+- Each relation has a distinct name
+- Each value in a tuple is atomic
+- Each Attribute in a relation has a distinct name
+- Values of an attribute are all from the same domain
+- Order doesnt matter
+- missed
+- missed
+
+### Mapping of a regular entity with simple attributes
