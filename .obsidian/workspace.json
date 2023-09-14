@@ -6,7 +6,6 @@
       {
         "id": "59950568398a0e43",
         "type": "tabs",
-        "dimension": 59.40409683426443,
         "children": [
           {
             "id": "0e5c32f4557ff963",
@@ -15,25 +14,6 @@
               "type": "markdown",
               "state": {
                 "file": "OS/OS 14 September, 2023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "0c7752a19eb98064",
-        "type": "tabs",
-        "dimension": 40.59590316573557,
-        "children": [
-          {
-            "id": "059c8125ba1af346",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -188,12 +168,12 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "b8b68edca48e5359",
   "lastOpenFiles": [
+    "DB/DB 12 September, 2023.md",
     "README.md",
     "OS/OS 14 September, 2023.md",
     "DB/DB 14 September, 2023.md",
-    "DB/DB 12 September, 2023.md",
     "CySec-2/CySec2 14 September, 2023.md",
     "Marketing/Marketing 13 September, 2023.md",
     "Untitled.md",
