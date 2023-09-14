@@ -13,4 +13,8 @@ To show the relations in notation form
 	- Entity-Entitty
 		- A weak entity will always be fully dependent on the strong entity
 M-N
-- 
+- Same as 1-M but create a table for the relation R as well, R(r1, a1, b1)
+	- Example
+		- Author(AName, AID)
+		- Book(BID, BName)
+		- Writes()
