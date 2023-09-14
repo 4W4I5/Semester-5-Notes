@@ -150,4 +150,3 @@ play w fork
 - I/O Scheduling: 
 	- It manages the input/output requests from processes. 
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
-<!--pg428 ask sir-->
