@@ -128,3 +128,6 @@ This needs a lot of work, too much info
 ## Unix U (User) Area. ignore this
 
 ## Process Control
+## Process Creationg
+play w fork
+## Uniprocessor Scheduling
