@@ -20,3 +20,10 @@ Started lecture 3 slides
 	- Server sends SYN-ACK
 	- Client sends ACK
 ### TCP SEQ & ACK numbers
+
+### TCP Flags
+
+### TCP Attacks
+- Syn flooding
+	- sending too many SYN packets for the server to handle
+	- Denial of service attack
