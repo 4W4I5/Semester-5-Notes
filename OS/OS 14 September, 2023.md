@@ -137,12 +137,15 @@ play w fork
 - Long-term Scheduling:
 	- It selects processes from the job queue and loads them into the ready queue for execution. 
 	- These are processes that are ready to be executed and are waiting for the CPU.
+	- A **New** Process is transitioned to **Ready** or **Ready/Suspend** here
 - Medium-term Scheduling: 
 	- It involves swapping processes in and out of main memory (RAM) and secondary storage (like a hard disk). 
 	- This is often done to manage memory efficiently.
+	- Transition from **Running/Suspend** or **Blocked/Suspend** to **Running/Blocked** is done by medium
 - Short-term Scheduling: 
 	- Also known as CPU scheduling, it selects the next process from the ready queue and assigns the CPU to that process for a short time slice (time-sharing). 
 	- It determines which process gets CPU time.
+	- Transitions a process from **Ready** to **Running**
 - I/O Scheduling: 
 	- It manages the input/output requests from processes. 
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
