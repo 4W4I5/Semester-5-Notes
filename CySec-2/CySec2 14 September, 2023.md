@@ -29,3 +29,7 @@ Started lecture 3 slides
 	- Denial of service attack usually through sending SYN via multiple different IP
 	- Prevention
 		- Only create state after ACK is received 
+	- Issue if spoofed ip is used
+		- Person through which the spoofing is done, might delete their local state
+			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
+		- 
