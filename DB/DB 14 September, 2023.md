@@ -8,5 +8,5 @@ To show the relations in notation form
 		- B will hold a part of A
 		- A = Dept, B = Employee then B will also have the DeptID of where the employee is working
 	- Participation
-		- 
+		- just write a phrase ez
 - 
