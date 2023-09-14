@@ -10,5 +10,7 @@ To show the relations in notation form
 	- Participation
 		- just write a phrase ez
 
-Entity-Entitty
-- A weak entity will always be fully dependent on the strong entity
+	- Entity-Entitty
+		- A weak entity will always be fully dependent on the strong entity
+M-N
+- 
