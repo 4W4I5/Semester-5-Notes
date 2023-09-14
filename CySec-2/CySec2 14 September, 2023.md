@@ -23,7 +23,7 @@ Started lecture 3 slides
 
 ### TCP Flags
 
-### TCP Attacks
+### TCP Attacksp
 - Syn flooding
 	- sending too many SYN packets for the server to handle
 	- Denial of service attack usually through sending SYN via multiple different IP
