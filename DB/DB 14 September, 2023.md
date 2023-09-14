@@ -17,4 +17,4 @@ M-N
 	- Example
 		- Author(AName, AID)
 		- Book(BID, BName)
-		- Writes()
+		- Writes(CompletionDate, AID, BID) where AID + BID is the primary key
