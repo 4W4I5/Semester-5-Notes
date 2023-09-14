@@ -1,5 +1,5 @@
 After CH3 move to CH9
-
+This needs a lot of work, too much info
 ## UNIX SVR4 Process management 3.6
 
 ## Process states
