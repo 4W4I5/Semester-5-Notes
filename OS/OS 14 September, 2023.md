@@ -146,6 +146,7 @@ play w fork
 	- Also known as CPU scheduling, it selects the next process from the ready queue and assigns the CPU to that process for a short time slice (time-sharing). 
 	- It determines which process gets CPU time.
 	- Transitions a process from **Ready** to **Running**
+		- **Blocked** does not count as it is just an I/O wait
 - I/O Scheduling: 
 	- It manages the input/output requests from processes. 
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
