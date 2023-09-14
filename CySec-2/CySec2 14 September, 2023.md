@@ -26,4 +26,4 @@ Started lecture 3 slides
 ### TCP Attacks
 - Syn flooding
 	- sending too many SYN packets for the server to handle
-	- Denial of service attack
+	- Denial of service attack usually through sending SYN via multiple different IP
