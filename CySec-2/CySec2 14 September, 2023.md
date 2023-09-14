@@ -19,3 +19,4 @@ Started lecture 3 slides
 	- Client sends SYN
 	- Server sends SYN-ACK
 	- Client sends ACK
+### TCP SEQ & ACK numbers
