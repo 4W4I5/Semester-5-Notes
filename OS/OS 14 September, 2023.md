@@ -130,4 +130,19 @@ This needs a lot of work, too much info
 ## Process Control
 ## Process Creationg
 play w fork
-## Uniprocessor Scheduling
+
+
+# Uniprocessor Scheduling Chapter 9
+### Types of Scheduling
+- Long-term Scheduling:
+	- It selects processes from the job queue and loads them into the ready queue for execution. 
+	- These are processes that are ready to be executed and are waiting for the CPU.
+- Medium-term Scheduling: 
+	- It involves swapping processes in and out of main memory (RAM) and secondary storage (like a hard disk). 
+	- This is often done to manage memory efficiently.
+- Short-term Scheduling: 
+	- Also known as CPU scheduling, it selects the next process from the ready queue and assigns the CPU to that process for a short time slice (time-sharing). 
+	- It determines which process gets CPU time.
+- I/O Scheduling: 
+	- It manages the input/output requests from processes. 
+	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
