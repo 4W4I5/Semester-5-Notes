@@ -30,11 +30,13 @@ After CH3 move to CH9
         - Blocked (B) when it needs to wait for an event, such as I/O, to complete.
         - Ready (S) when it's preempted by the scheduler or its time slice expires.
 2. **Ready (S):**
-    - The process is ready to run but waiting for CPU time.
+    - The process is ready to run but waiting for CPU time. 
+    - It is also known as **Ready To Run, in Memory**
     - Transition to:
         - Running (R) when the scheduler selects it for execution.
 3. **Blocked (B):**
     - The process cannot proceed and is waiting for an event.
+    - It is also known as **Asleep in memory**
     - Transition to:
         - Ready (S) when the event it's waiting for occurs, and it's ready to run.
         - Running (R) when it's chosen by the scheduler if the event occurs and it becomes ready.
