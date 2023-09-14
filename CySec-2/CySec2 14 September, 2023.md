@@ -27,3 +27,5 @@ Started lecture 3 slides
 - Syn flooding
 	- sending too many SYN packets for the server to handle
 	- Denial of service attack usually through sending SYN via multiple different IP
+	- Prevention
+		- Only create state after ACK is received
