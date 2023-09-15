@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OS/OS 14 September, 2023.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 14 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 14 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 14 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -167,15 +167,15 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "0e5c32f4557ff963",
   "lastOpenFiles": [
-    "DB/DB 12 September, 2023.md",
+    "Untitled.md",
     "README.md",
     "OS/OS 14 September, 2023.md",
+    "DB/DB 12 September, 2023.md",
     "DB/DB 14 September, 2023.md",
     "CySec-2/CySec2 14 September, 2023.md",
     "Marketing/Marketing 13 September, 2023.md",
-    "Untitled.md",
     "Algo/Algo 13 September, 2023.md",
     "Algo/Algo 11 September, 2023.md",
     "OS/OS 12 September, 2023.md",
