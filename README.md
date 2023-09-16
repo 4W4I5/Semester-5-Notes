@@ -8,7 +8,7 @@
 | Week 1 | 21 Aug                                           | N/A        | Maam Absent          |
 | Week 1 | 23 Aug                                           | N/A        | Maam Absent          |
 | Week 2 | 28 Aug                                           | N/A        | Maam Absent          |
-| Week 2 | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Refactor   | Intro to Algo        |
+| Week 2 | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Complete   | Intro to Algo        |
 | Week 3 | [4 Sept](Algo/Algo%204%20September,%202023.md)   | Refactor   | Algo Characteristics |
 | Week 3 | [6 Sept](Algo/Algo%206%20September,%202023.md)   | Incomplete | Big-O                |
 | Week 4 | 11 Sept                                          | N/A        | Quiz                 |
