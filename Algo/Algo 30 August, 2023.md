@@ -8,6 +8,7 @@
 	- An incorrect algo
 		- Might not halt at all for some inputs
 		- Might halt with an answer other than desired one
+- Problems solved by Algos
 - Why study algo/performance of algo
 	- Helps understand scalability
 	- Performance often draws the line b/w what is feasible and what is impossible
