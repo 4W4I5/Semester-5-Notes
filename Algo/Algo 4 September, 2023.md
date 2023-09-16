@@ -25,7 +25,7 @@
 		- Each elementary operation takes 1 step of time
 		- Each elementary instance occupies 1 unit of memory
 
-#### Analysing an Algo staments
+#### Analyzing an Algo statements
 
 - Simple Statement 
 	- Order of O(1)
