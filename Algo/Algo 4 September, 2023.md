@@ -34,7 +34,7 @@
 	- Quiz Note:: For a reminder on how a for loop works
 		- int i = 0. This is the starting point for the loop
 		- i < n. This is a condition thats checked at the end of every iteration
-		- i++. 
+		- i++.  
 ```
 for(int i =0; i < n; i++){
 	s      //Statement that does stuff
