@@ -42,9 +42,26 @@
 		- i < n. This is a condition thats checked at the end of every iteration
 		- i++.  
 ```
-for(int i =0; i < n; i++){
-	s      //Statement that does stuff
-}
+//Here even if the loop increments by N it will still be N times and therefore the complexity is O(n)
+	for(int i =0; i < n; i++){
+		s      //Statement that does stuff
+	}
+
+//However for factors i.e the iterator being multiplied or divided the time complexity is O(log(n))
+	for(int i =0; i < n; i*n){
+		s      //Statement that does stuff
+	}
+
+//For the iterator going up in order of power i.e from i^2 to i^3 or from i^2 to sqrt(i) the complexity is O(log(log(n)))
+	for(int i =0; i < n; i=pow(i,c)){
+		s      //Statement that does stuff
+	}
+
+> 2^(c^i) = n      //Take log of base 2 on both sides
+> log2(2^(c^i)) = log2(n)
+> c^i = log(n)     //Take log of base c on both sides
+> logc(c^i) = logc(log(n)
+> i = log(c(log(n)))
 ```
 
 - Nested Loops
@@ -69,6 +86,8 @@ for(int i =0; i < n; i++){
 		s      //Statement that does stuff
 	}
 }
+
+
 ```
 - Array
 	- Loop where a Sum of all elements is calculated
