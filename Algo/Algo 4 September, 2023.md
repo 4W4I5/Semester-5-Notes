@@ -92,6 +92,7 @@ for(int i =0; i < n; i++){
 - Array
 	- Loop where a Sum of all elements is calculated
 #### Analyzing Loops
+- Already covered above, however for practice check out Lecture 2 page 12+ slides that maam uploaded
 
 #### Analyzing sequence of statements
 - Generally observe the time complexity of each statement line-by-line and sum it all up. 
