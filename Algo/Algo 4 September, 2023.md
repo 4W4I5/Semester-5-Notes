@@ -27,8 +27,14 @@
 
 #### Analysing an Algo staments
 
-- Simple Statement
+- Simple Statement 
+	- Order of O(1)
 	- Basic step = 1, as long as number of statements are constant
+	- Examples
+		- Assignments: int x = y;
+		- Arithmetic Operations: x += i;
+		- Array Referencing: A\[j\] = 5;
+		- Conditionals (Most): if(x<12){};
 - Simple Loop
 	- Basic step = N x 1
 	- Quiz Note:: For a reminder on how a for loop works
@@ -44,10 +50,26 @@ for(int i =0; i < n; i++){
 - Nested Loops
 	- Basic step = i x j
 	- Where i and j increment by one only
+	- order of O(n2)
+```
+for(int i =0; i < n; i++){
+	for(int j =0; j < n; j++){
+		s      //Statement that does stuff
+	}
+}
+```
 - Inner Loop depends on Outer Loop
 	- Where Outer loop goes till N and inner loop goes till outer loop index
 		- Inner loop is executed N time while the outer loop is
 	- Pick the highest order `This went over my head`
+	- order of O(n2) thru n(n+1)/2
+```
+for(int i =0; i < n; i++){
+	for(int j =0; j < i; j++){
+		s      //Statement that does stuff
+	}
+}
+```
 - Array
 	- Loop where a Sum of all elements is calculated
 - Constant Time Statements
