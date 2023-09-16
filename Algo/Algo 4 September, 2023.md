@@ -31,10 +31,10 @@
 	- Order of O(1)
 	- Basic step = 1, as long as number of statements are constant
 	- Examples
-		- Assignments: int x = y;
-		- Arithmetic Operations: x += i;
-		- Array Referencing: A\[j\] = 5;
-		- Conditionals (Most): if(x<12){};
+		- Assignments: `int x = y;`
+		- Arithmetic Operations: `x += i;`
+		- Array Referencing: `A\[j\] = 5;`
+		- Conditionals (Most): `if(x<12){};`
 - Simple Loop
 	- Basic step = N x 1
 	- Quiz Note:: For a reminder on how a for loop works
