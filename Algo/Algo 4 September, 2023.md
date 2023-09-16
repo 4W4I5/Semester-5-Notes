@@ -28,12 +28,14 @@
 #### Analysing an Algo staments
 
 - Simple Statement
-	- Basic step = 1
-		- as long as number of statements are constant
+	- Basic step = 1, as long as number of statements are constant
 - Simple Loop
 	- Basic step = N x 1
-	- How many iterations are performed
-	- How many steps per iteration
+> for (int i = 0; i<n; i++){
+> 	s     //Where s is any statement
+> }
+
+
 - Nested Loops
 	- Basic step = i x j
 	- Where i and j increment by one only
