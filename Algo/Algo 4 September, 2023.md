@@ -31,7 +31,12 @@
 	- Basic step = 1, as long as number of statements are constant
 - Simple Loop
 	- Basic step = N x 1
-	- 
+	- Note:: 
+```
+for(int i =0; i < n; i++){
+	s      //Statement that does stuff
+}
+```
 
 - Nested Loops
 	- Basic step = i x j
