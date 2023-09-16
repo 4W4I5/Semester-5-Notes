@@ -1,4 +1,5 @@
 ### Algo characteristics
+
 - Definiteness
 	- Steps must be precisely define
 - Effectiveness
@@ -11,16 +12,21 @@
 	- Input
 		- Info/Data that comes in
 	- Correctness
+		- Output relates correctly to inputs
 	- Generality
 		- Works for many possible inputs
 	- Efficiency
 		- Takes less time & memory to run
 
-#### Complexity Analysis
+## Complexity Analysis
+
 - **Platform Independence**
-	- Ideal Algo has an elementary operation that takes 1 step and an instance that takes 1 unit of time
+	- Ideal Algo
+		- Each elementary operation takes 1 step of time
+		- Each elementary instance occupies 1 unit of memory
+
 #### Analysing an Algo staments
-> Fill with code and analyze for practice
+
 - Simple Statement
 	- Basic step = 1
 		- as long as number of statements are constant
@@ -33,7 +39,7 @@
 	- Where i and j increment by one only
 - Inner Loop depends on Outer Loop
 	- Where Outer loop goes till N and inner loop goes till outer loop index
-		- Inner loop is executed N time while the outer loop is 
+		- Inner loop is executed N time while the outer loop is
 	- Pick the highest order `This went over my head`
 - Array
 	- Loop where a Sum of all elements is calculated
@@ -42,6 +48,6 @@
 	- Assignment statements of simple data types
 	- `Fill in with the rest`
 
-
 #### Analyzing Loops
+
 #### Analyzing sequence of statementsn
