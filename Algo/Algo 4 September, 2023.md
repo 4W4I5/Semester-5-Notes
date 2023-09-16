@@ -91,11 +91,11 @@ for(int i =0; i < n; i++){
 ```
 - Array
 	- Loop where a Sum of all elements is calculated
-- Constant Time Statements
-	- O(1)
-	- Assignment statements of simple data types
-	- `Fill in with the rest`
-
 #### Analyzing Loops
 
-#### Analyzing sequence of statementsn
+#### Analyzing sequence of statements
+- Generally observe the time complexity of each statement line-by-line and sum it all up. 
+	- The sum is the final answer with the coefficients and low order factors discarded
+- If-Statements
+	- These statements themselves are always o(1)
+	- However, Big-Oh assumes the worst case/Upper limit therefore we pick whatever higher order value for O() we can get
