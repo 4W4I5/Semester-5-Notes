@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "77e698f5b984b581",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.13"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "e4faafdced29493b",
@@ -186,7 +197,7 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "0e5c32f4557ff963",
+  "active": "77e698f5b984b581",
   "lastOpenFiles": [
     "README.md",
     "Algo/Algo 4 September, 2023.md",
