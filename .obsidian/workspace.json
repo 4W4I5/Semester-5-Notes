@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Algo 4 September, 2023.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 4 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 4 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 4 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -188,9 +188,9 @@
   },
   "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
+    "Algo/Algo 4 September, 2023.md",
     "README.md",
     "Algo/Algo 6 September, 2023.md",
-    "Algo/Algo 4 September, 2023.md",
     "Untitled 1.md",
     "Algo/Algo 30 August, 2023.md",
     "OS/OS 12 September, 2023.md",

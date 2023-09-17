@@ -27,8 +27,14 @@
 
 #### Analyzing an Algo statements
 - Order of O's
-	- Goes in order of Worst to Best
-		- 
+	- Goes in order of Best to Worst
+		- O(1)
+		- O(log(N))
+		- O(N)
+		- O(n\*log(n))
+		- O(n^m), where m is any number > 0
+		- O(2^n)
+		- O(!n)
 - Simple Statement 
 	- Order of O(1)
 	- Basic step = 1, as long as number of statements are constant
