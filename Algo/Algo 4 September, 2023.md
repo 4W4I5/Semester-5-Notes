@@ -26,7 +26,9 @@
 		- Each elementary instance occupies 1 unit of memory
 
 #### Analyzing an Algo statements
-
+- Order of O's
+	- Goes in order of Worst to Best
+		- 
 - Simple Statement 
 	- Order of O(1)
 	- Basic step = 1, as long as number of statements are constant
