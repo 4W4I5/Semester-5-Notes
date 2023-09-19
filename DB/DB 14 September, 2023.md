@@ -11,6 +11,9 @@ To show the ER-relations in RM notation form
 		- just write a phrase ez
 	- Entity-Entitty
 		- A weak entity will always be fully dependent on the strong entity
+	- RM Notation
+		- DEPT(**dID**, dName)
+		- EMP(**empID**, empName, *dID*)
 M-N
 - Same as 1-M but create a table for the relation R as well, R(r1, a1, b1)
 	- Example
