@@ -100,6 +100,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 
 **SRT (Shortest Remaining Time):**
 - Selection Function: SRT is a preemptive version of SPN, selecting the process with the shortest remaining time to complete.
+	- Calculates on arrival however
 - Decision Mode: It dynamically reevaluates and selects the process with the shortest remaining time whenever a new process arrives or a running process finishes.
 - Throughput: SRT aims for high throughput by always choosing the shortest remaining task.
 - Response Time: Response time is generally excellent, as the shortest remaining task is immediately given priority.
