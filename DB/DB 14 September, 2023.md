@@ -1,4 +1,4 @@
-To show the relations in notation form
+To show the ER-relations in RM notation form
 
 1-M
 - suppose A is one to many of B
