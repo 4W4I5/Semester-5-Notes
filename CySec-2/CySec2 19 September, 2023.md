@@ -21,4 +21,5 @@ TCP attacks continued
 ### Firewall Characteristics
 - Traffic Overload
 	- If a firewall is unable to examine and filter a packet, it is dropped. 
+		- Can be caused by complex rules that take up more processing time per packet
 	- This is good for security however this results in a self-inflicted DOS
