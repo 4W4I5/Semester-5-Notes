@@ -29,3 +29,20 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 ### Priority Queues
 - Ready queues are now made in order of priority
 	- Dispatcher goes up in order of highest priority to lower queues until all processes from current queue processes are running
+- Limitation
+	- Lower priority processes are starved of processor time as the higher priority processes will take it all up
+
+#### Alternative Scheduling Policies
+- FCFS
+	- Selection Function
+	- Decision Mode
+	- Throughput
+	- Response Time
+	- Overhead
+	- Effect on Processes
+	- Starvation
+- Round Robin
+- SPN
+- SRT
+- HRRN
+- Feedback
