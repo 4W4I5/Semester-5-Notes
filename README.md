@@ -13,7 +13,7 @@
 | Week 3 | [6 Sept](Algo/Algo%206%20September,%202023.md)   | Incomplete | Big-O                |
 | Week 4 | 11 Sept                                          | N/A        | Quiz                 |
 | Week 5 | [13 Sept](Algo/Algo%2013%20September,%202023.md) | Incomplete | Chapter 3 of book                     |
-| Week 5 | [18 Sept](Algo/Algo%2018%20September,%202023.md) |            |                      |
+| Week 5 | [18 Sept](Algo/Algo%2018%20September,%202023.md) | Incomplete           |                      |
 | Week 6 | [20 Sept](Algo/Algo%2020%20September,%202023.md) |            |                      |
 
 ### CySec-2
