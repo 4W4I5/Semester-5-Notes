@@ -82,6 +82,9 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Selection Function: 
 	- Non-Preemptive
 	- SPN selects the process with the shortest expected processing time next.
+		- Guesses a process expected time and uses it later on as well, does so by computing via a method known as **Exponential averaging**
+		- However a simpler way is to use this
+		- `Add in equation 9.2 from book`
 - Decision Mode:
 	- It uses a non-preemptive approach and selects the process with the shortest expected runtime.
 - Throughput: 
