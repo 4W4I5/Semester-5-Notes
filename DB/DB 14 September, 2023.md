@@ -1,9 +1,16 @@
 To show the ER-relations in RM notation form
+- Make lots of tables instead of pretty drawings
 
 
 Entity with MVA
 - Represent with 2 relations
 	- One will be keyed to the other relation table which shows the simple attributes (Does not fix the duplication problem however)
+- Example: EMP -> **eID**, eName, city
+	- EMP entry
+		- key of 
+			- table 1
+				- eID, eName
+				- eID, eCity
 
 1-M
 - suppose A is one to many of B
