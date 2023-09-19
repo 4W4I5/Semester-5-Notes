@@ -37,7 +37,8 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- Preemptive
 		- Can be interrupted
 	- Non-Preemptive
-		- C
+		- C `Fill in from slides`
+
 
 #### Alternative Scheduling Policies
 **FCFS (First-Come-First-Serve):**
