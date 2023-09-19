@@ -16,4 +16,9 @@ TCP attacks continued
 	- Allows/Blocks traffic In/Out of a specified single/range of ports
 - Provable attack packets
 	- Packet that met a firewall rule and got dropped after logging
-- 
+
+
+### Firewall Characteristics
+- Traffic Overload
+	- If a firewall is unable to examine and filter a packet, it is dropped. 
+	- This is good for security however this results in a self-inflicted DOS
