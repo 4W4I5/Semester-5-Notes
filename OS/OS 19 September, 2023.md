@@ -40,14 +40,15 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 		- C `Fill in from slides`
 
 
-#### Alternative Scheduling Policies
+## Alternative Scheduling Policies
 **FCFS (First-Come-First-Serve):**
 - Selection Function: 
+	- Non-Preemptive 
 	- FCFS selects processes in the order they arrive in the ready queue. It uses a simple queuing mechanism.
 - Decision Mode: 
 	- In FCFS, the decision mode is deterministic as it follows a fixed order of execution based on arrival time.
 - Throughput: 
-	FCFS has relatively low throughput because it may lead to process waiting times if a long process arrives first.
+	- FCFS has relatively low throughput because it may lead to process waiting times if a long process arrives first.
 - Response Time: 
 	- Response time can be high for processes that arrive later as they have to wait for earlier processes to complete.
 - Overhead: 
@@ -59,6 +60,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 
 **Round Robin (RR):**
 - Selection Function: 
+	- Preemptive
 	- Round Robin uses a circular queue and selects processes in a cyclical order, allocating a fixed time quantum to each.
 - Decision Mode: 
 	- RR is time-sliced, and processes are scheduled based on time slices.
