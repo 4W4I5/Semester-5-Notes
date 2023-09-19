@@ -9,3 +9,5 @@ TCP attacks continued
 ---
 # Chapter 6: Firewall
 
+- Provable attack packets
+	- Packet that met a firewall rule and got dropped after logging
