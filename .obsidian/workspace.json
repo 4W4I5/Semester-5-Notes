@@ -11,11 +11,9 @@
             "id": "c2c5fcfadb04e061",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "DB/DB 14 September, 2023.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20230912152003.png"
               }
             }
           }
@@ -69,8 +67,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -86,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB/DB 14 September, 2023.md",
+                "file": "Pasted image 20230912152003.png",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +100,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB/DB 14 September, 2023.md",
+                "file": "Pasted image 20230912152003.png",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +123,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB/DB 14 September, 2023.md"
+                "file": "Pasted image 20230912152003.png"
               }
             }
           },
@@ -170,6 +167,12 @@
   },
   "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
+    "Untitled 1.md",
+    "Pasted image 20230912152003.png",
+    "DB/DB 12 September, 2023.md",
+    "Untitled.md",
+    "README.md",
+    "DB/DB 14 September, 2023.md",
     "Books/OS Book.pdf",
     "Books/DB Book.pdf",
     "Books/William Stallings-Operating Systems 7th Edition.pdf",
@@ -180,24 +183,17 @@
     "Books/Books/Books/Randall J. Boyle-Corporate Computer Security 3rd Edition.pdf",
     "Books/Books/Books/Mark Ciampa-CompTIA Security+ Guide to Network Security Fundamentals 5th Edition.pdf",
     "Books/Books/Books/Elmasri-Fundamental of Database Systems 7th Edition.pdf",
-    "Books/Books/Books",
-    "README.md",
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
     "Algo/Algo 4 September, 2023.md",
-    "Untitled 1.md",
     "Algo/Algo 30 August, 2023.md",
     "OS/OS 12 September, 2023.md",
-    "Untitled.md",
     "OS/OS 14 September, 2023.md",
-    "DB/DB 12 September, 2023.md",
-    "DB/DB 14 September, 2023.md",
     "CySec-2/CySec2 14 September, 2023.md",
     "Marketing/Marketing 13 September, 2023.md",
     "Algo/Algo 13 September, 2023.md",
     "Algo/Algo 11 September, 2023.md",
     "OS/OS 7 September, 2023.md",
-    "Pasted image 20230912152003.png",
     "Pasted image 20230912151924.png",
     "Pasted image 20230912151828.png",
     "DB/DB 7 September, 2023.md",
