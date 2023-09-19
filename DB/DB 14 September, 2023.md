@@ -1,5 +1,10 @@
 To show the ER-relations in RM notation form
 
+
+Entity with MVA
+- Represent with 2 relations
+	- One will be keyed to the other relation table which shows the simple attributes (Does not fix the duplication problem however)
+
 1-M
 - suppose A is one to many of B
 	- A(a1,a2)
