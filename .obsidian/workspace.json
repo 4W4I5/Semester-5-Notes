@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 19 September, 2023.md",
+                "file": "DB/DB 19 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 19 September, 2023.md",
+                "file": "DB/DB 19 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 19 September, 2023.md",
+                "file": "DB/DB 19 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 19 September, 2023.md"
+                "file": "DB/DB 19 September, 2023.md"
               }
             }
           },
@@ -188,9 +188,10 @@
   },
   "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
-    "Books/CYSEC Book.pdf",
     "README.md",
+    "DB/DB 19 September, 2023.md",
     "CySec-2/CySec2 19 September, 2023.md",
+    "Books/CYSEC Book.pdf",
     "Pasted image 20230912152003.png",
     "Untitled 1.md",
     "DB/DB 12 September, 2023.md",
@@ -205,7 +206,6 @@
     "Books/Books/Books/William Stallings-Operating Systems 7th Edition.pdf",
     "Books/Books/Books/Randall J. Boyle-Corporate Computer Security 3rd Edition.pdf",
     "Books/Books/Books/Mark Ciampa-CompTIA Security+ Guide to Network Security Fundamentals 5th Edition.pdf",
-    "Books/Books/Books/Elmasri-Fundamental of Database Systems 7th Edition.pdf",
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
     "Algo/Algo 4 September, 2023.md",
