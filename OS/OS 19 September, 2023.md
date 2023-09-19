@@ -36,6 +36,9 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Two Types
 	- Preemptive
 		- Can be interrupted
+		- Time based uses Quantum(q) 
+			- Time quantum greater than typical interaction
+			- Time quantum less than typical interaction
 	- Non-Preemptive
 		- C `Fill in from slides`
 
@@ -77,6 +80,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 
 **SPN (Shortest Process Next):**
 - Selection Function: 
+	- Non-Preemptive
 	- SPN selects the process with the shortest expected processing time next.
 - Decision Mode:
 	- It uses a non-preemptive approach and selects the process with the shortest expected runtime.
