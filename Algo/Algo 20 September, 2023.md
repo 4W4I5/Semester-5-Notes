@@ -10,3 +10,8 @@
 	- Base/Termination Case
 	- General Case
 	- Smallest Case
+
+### Solving recursive recurrences
+- Iteration Method
+	- 
+- Master Method
