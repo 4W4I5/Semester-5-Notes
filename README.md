@@ -76,5 +76,5 @@ NOTE:: Refer to the book for main content
 |        | [7 Sept](OS/OS%207%20September,%202023.md)   | Incomplete | Wrapping up Chapter 2 + Did till chapter 3.2           |
 |        | [12 Sept](OS/OS%2012%20September,%202023.md) | Incomplete | 3.3 and onwards                                        |
 |        | [14 Sept](OS/OS%2014%20September,%202023.md) | Incomplete | UNIX SVR4                                              |
-|        | [19 Sept](OS/OS%2019%20September,%202023.md) |            |                                                        |
+|        | [19 Sept](OS/OS%2019%20September,%202023.md) | Incomplete |                                                        |
 |        | [21 Sept](OS/OS%2021%20September,%202023.md) |            |                                                        |
