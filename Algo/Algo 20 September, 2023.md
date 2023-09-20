@@ -6,3 +6,4 @@
 ### Recurrences
 - Describes a function in terms of its value on smaller arguments (usually)
 	- Mathematical way to divide and conquer
+- If a recurrence is stated without a base case, assume its algorithmic
