@@ -1,0 +1,7 @@
+## Divide & Conquer
+- Divide the problem into a number of sub problems that smaller instances of the same problem
+- Conquer the subproblems by solving them recursively. if the subproblem size is 
+- Combine the subproblem solutions to form a solution to the original problem
+
+### Recurrences
+
