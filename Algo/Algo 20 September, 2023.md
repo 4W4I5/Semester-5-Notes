@@ -4,4 +4,5 @@
 - Combine the subproblem solutions to form a solution to the original problem
 
 ### Recurrences
-
+- Describes a function in terms of its value on smaller arguments (usually)
+	- Mathematical way to divide and conquer
