@@ -6,4 +6,7 @@
 ### Recurrences
 - Describes a function in terms of its value on smaller arguments (usually)
 	- Mathematical way to divide and conquer
-- If a recurrence is stated without a base case, assume its algorithmic
+- If a recurrence is stated without a base case, assume its algorithmic. To check if its recursive check for
+	- Base/Termination Case
+	- General Case
+	- Smallest Case
