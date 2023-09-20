@@ -43,9 +43,9 @@ Use a formula to determine the time complexity based on the recurrence relation'
 **Iteration Method**:
 Use a formula to determine the time complexity based on the recurrence relation's form.
 
-1. **Start with the Recurrence Relation**: You begin with the given recurrence relation. This relation represents the time complexity of an algorithm or function in terms of itself with smaller inputs. It typically looks like this: T(n) = aT(n/b) + f(n).
+1. **Start with the Recurrence Relation**: You begin with the given recurrence relation. This relation represents the time complexity of an algorithm or function in terms of itself with smaller inputs. It typically looks like this: $$T(n) = aT(n/b) + f(n)$$.
 2. **Expand the Recurrence Iteratively**:
-    - You replace T(n) with its recursive form, aT(n/b) + f(n).
+    - You replace T(n) with its recursive form, $$aT(n/b) + f(n)$$.
     - Continue to expand T(n) until you reach the base case(s).
 3. **Express T(n) as a Summation**:
     - As you expand the recurrence relation, you'll have terms representing the work done at different levels of recursion. Express T(n) as a summation of these terms.
@@ -54,7 +54,7 @@ Use a formula to determine the time complexity based on the recurrence relation'
     - Often, you'll need to manipulate the summation using mathematical techniques to make it easier to work with.
 5. **Obtain the Final Time Complexity**:
     - After simplifying the summation, you'll have an expression that represents the time complexity of the algorithm in terms of n (the problem size).
-    - This expression is typically in the form of a function of n, such as T(n) = O(f(n)), where f(n) is the final time complexity.
+    - This expression is typically in the form of a function of n, such as $$T(n) = O(f(n))$$, where f(n) is the final time complexity.
 
 **Example**:
 Let's say you have the recurrence relation T(n) = 2T(n/2) + n. You would expand this iteratively:
