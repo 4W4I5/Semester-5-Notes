@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Algo 20 September, 2023.md",
+                "file": "CySec-2/CySec2 21 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 20 September, 2023.md",
+                "file": "CySec-2/CySec2 21 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 20 September, 2023.md",
+                "file": "CySec-2/CySec2 21 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 20 September, 2023.md"
+                "file": "CySec-2/CySec2 21 September, 2023.md"
               }
             }
           },
@@ -189,7 +189,9 @@
   "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
     "README.md",
+    "CySec-2/CySec2 21 September, 2023.md",
     "Algo/Algo 20 September, 2023.md",
+    "Algo/Algo 4 September, 2023.md",
     "OS/OS 19 September, 2023.md",
     "DB/DB 19 September, 2023.md",
     "CySec-2/CySec2 19 September, 2023.md",
@@ -210,7 +212,6 @@
     "Books/Books/Books/Mark Ciampa-CompTIA Security+ Guide to Network Security Fundamentals 5th Edition.pdf",
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
-    "Algo/Algo 4 September, 2023.md",
     "Algo/Algo 30 August, 2023.md",
     "OS/OS 12 September, 2023.md",
     "OS/OS 14 September, 2023.md",
@@ -226,7 +227,6 @@
     "OS/OS 5 September, 2023.md",
     "OS/OS 31 August, 2023.md",
     "OS/OS 29 August, 2023.md",
-    "CySec-2/CySec2 31 August, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png"
   ]
 }
