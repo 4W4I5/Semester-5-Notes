@@ -1,3 +1,3 @@
 - Round robin
 	- Configured for quantum >= 1
-	- 
+	- `Add in process for filling a timing diagram with round robin enabled`
