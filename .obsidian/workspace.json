@@ -11,12 +11,8 @@
             "id": "c2c5fcfadb04e061",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CySec-2/CySec2 21 September, 2023.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -87,8 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -190,6 +185,7 @@
   "lastOpenFiles": [
     "CySec-2/CySec2 21 September, 2023.md",
     "README.md",
+    "OS/OS 21 September, 2023.md",
     "Algo/Algo 20 September, 2023.md",
     "Algo/Algo 4 September, 2023.md",
     "OS/OS 19 September, 2023.md",
@@ -226,7 +222,6 @@
     "CySec-2/CySec2 12 September, 2023.md",
     "OS/OS 5 September, 2023.md",
     "OS/OS 31 August, 2023.md",
-    "OS/OS 29 August, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png"
   ]
 }
