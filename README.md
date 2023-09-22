@@ -60,7 +60,7 @@ Notes sponsored by chatGPT ;)
 |     | 12 Sept                                                    | N/A        | Presentations                    |
 |     | [13 Sept](Marketing/Marketing%2013%20September,%202023.md) | Incomplete | Content Marketing                |
 |     | [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |            |                                  |
-|     | [21 Sept](Marketing/Marketing%2021%20September,%202023.md) |            |                                  |
+|     | [20 Sept](Marketing/Marketing%2021%20September,%202023.md) |            |                                  |
 
 ### OS
 

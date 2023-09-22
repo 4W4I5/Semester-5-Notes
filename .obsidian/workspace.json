@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 21 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 21 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 21 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -186,10 +186,10 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "c2c5fcfadb04e061",
+  "active": "d085009bbc463321",
   "lastOpenFiles": [
-    "README.md",
     "CySec-2/CySec2 21 September, 2023.md",
+    "README.md",
     "Algo/Algo 20 September, 2023.md",
     "Algo/Algo 4 September, 2023.md",
     "OS/OS 19 September, 2023.md",
