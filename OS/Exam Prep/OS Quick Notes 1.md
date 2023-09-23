@@ -169,8 +169,6 @@
 
 # Review Questions Chapter 1
 
-`Taken from the book `
-
 - ### 1.1 List and briefly define the 4 main elements of a computer
 	- Processor
 		- ALU
@@ -196,7 +194,7 @@
 	- It is a mechanism through which I/O and Memory may interrupt normal sequencing of the processor
 - ### 1.5 How are multiple interrupts dealt with
 	- Priority
-		- Higher priority takes over first, if an interrupt is already in progress then the higher priority one takes over 
+		- Higher priority takes over first, if an interrupt is already in progress then the higher priority one takes over
 	- Blocking
 		- Block other interrupts from being processed while one is in process
 - ### 1.6 What characteristics are observed while going up the memory hierarchy
