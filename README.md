@@ -63,7 +63,7 @@ Notes sponsored by chatGPT ;)
 | Week 5 | [20 Sept](Marketing/Marketing%2021%20September,%202023.md) |            |                                  |
 
 ### OS
-
+ 
 NOTE:: Refer to the book for main content
 
 | Week # | Date                                         | Status     | Content                                                |
