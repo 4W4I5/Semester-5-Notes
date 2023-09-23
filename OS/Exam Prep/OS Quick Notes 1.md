@@ -212,6 +212,7 @@
 # Chapter 2: Operating System
 
 ### Operating Systems
+
 - Interface b/w application & hardware
 - **Resource Management**
 	- Responsible for Controlling the Use of
