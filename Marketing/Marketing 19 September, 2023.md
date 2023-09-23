@@ -42,8 +42,6 @@
 	- **Purpose**: To facilitate discussions and interactions among users on various topics.
 	- **Primary Features**: Discussion boards, user profiles, topic categories.
 	- **Examples**: Reddit, Stack Overflow, and other online forums.
-
-Each type of website serves a distinct purpose and has specific features tailored to its intended audience and objectives, Sir.
 ### Importance of Website Marketing
 
 - **Online Presence**: A website serves as your digital storefront, providing a 24/7 online presence where potential customers can find information about your business.
