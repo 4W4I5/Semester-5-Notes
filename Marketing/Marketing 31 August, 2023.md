@@ -59,14 +59,14 @@
 
 #### Types of Digital Marketing channels
 
-- Website
-- Pay-Per-Click
-- Content
-- Email
-- Social media
-- Affilliate
-- Video
-- SMS
+- **Website**
+- **Pay-Per-Click**
+- **Content**
+- **Email**
+- **Social media**
+- **Affiliate**
+- **Video**
+- **SMS**
 
 
 ---
