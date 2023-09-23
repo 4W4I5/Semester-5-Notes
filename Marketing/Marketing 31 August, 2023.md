@@ -59,17 +59,37 @@
 
 #### Types of Digital Marketing channels
 
-- **Website**
-	- Represents a brand, product or service on a website in a clear and memorable way
-- **Pay-Per-Click**
-	- Encourages marketers to reach users through paid aids
-	- Usually done through to show products that the user might like based on their previous ad tracking history
-- **Content**
-- **Email**
-- **Social media**
-- **Affiliate**
-- **Video**
-- **SMS**
+- **Website:**
+	- A website serves as a fundamental marketing channel for most businesses.
+	- It is an online platform where companies can provide information about their products or services, engage with their audience, and facilitate online transactions.
+	- Websites are essential for establishing an online presence and can incorporate various marketing strategies, such as search engine optimization (SEO), content marketing, and e-commerce functionality, to attract and convert visitors into customers.
+- **Pay-Per-Click (PPC):**
+	- This is a digital advertising model where advertisers pay a fee each time a user clicks on their ad.
+	- PPC ads are commonly seen on search engines (e.g., Google Ads) and various social media platforms.
+	- Advertisers bid on specific keywords, and their ads are displayed when users search for those keywords.
+	- It's a highly targeted and cost-effective way to drive traffic to websites and promote products or services.
+- **Content Marketing:**
+	- Content marketing is a strategy that involves creating and sharing valuable, relevant content to attract and engage a specific target audience.
+	- Content can take various forms, including blog posts, articles, videos, infographics, and more.
+	- The primary goal of content marketing is to build trust, establish authority in an industry, and ultimately drive customer engagement and conversions.
+- **Email Marketing:**
+	- Email marketing is the practice of sending targeted emails to a list of subscribers or customers.
+	- It is used for various purposes, such as promoting products, delivering updates, and nurturing customer relationships. Effective email marketing involves segmenting the audience, personalizing content, and analyzing data to improve campaign performance.
+- **Social Media Marketing:**
+	- Social media marketing leverages social media platforms like Facebook, Twitter, Instagram, and LinkedIn to connect with and engage an audience.
+	- It encompasses activities such as creating and sharing content, running paid advertisements, and interacting with followers.
+	- The primary objectives are to build brand awareness, foster customer loyalty, and drive conversions.
+- **Affiliate Marketing:**
+	- Affiliate marketing is a performance-based marketing model where businesses partner with affiliates (individuals or other companies) to promote their products or services.
+	- Affiliates earn a commission for each sale, lead, or action they generate through their marketing efforts.
+	- It's a cost-effective way to expand reach and increase sales.
+- **Video Marketing:**
+	- Video marketing involves creating and sharing video content to promote products, services, or messages.
+	- Popular platforms for video marketing include YouTube, TikTok, and Vimeo.
+	- Videos can be engaging and informative, making them an effective medium for storytelling and connecting with an audience.
+- **SMS Marketing:**
+	- SMS marketing, also known as text message marketing, is a channel where businesses send promotional messages, alerts, and updates to a list of subscribers' mobile phones.
+	- It is a direct and immediate communication method, making it suitable for time-sensitive promotions and engaging with customers on a personal level.
 
 
 ---
