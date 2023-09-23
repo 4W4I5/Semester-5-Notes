@@ -1,9 +1,10 @@
 ==NOTE!==
+
 ==Keep in mind this is all content that was covered in class, however the paper will have a more practical oriented approach==
 
 # Chapter 1
 
-### Internals & Designs Principals
+## Internals & Designs Principals
 
  If an OS doesn't exist, then the application would need to
 
@@ -12,7 +13,7 @@
 - Have its hardware-specific drivers
 - Resource management
 
-#### Fetch-Decode-Execute Cycle
+### Fetch-Decode-Execute Cycle
 
 - Steps
 	- PC-> Has value of next instruction stored here (Not current)
@@ -21,7 +22,7 @@
 		- Instruction stored in IR is decoded into opcode + operand
 	- PC increments
 
-#### SISD, SIMD, MISD, MIMD
+### SISD, SIMD, MISD, MIMD
 
 1. SISD (Single Instruction, Single Data):
     - One instruction processes one piece of data at a time.
@@ -36,7 +37,7 @@
     - Multiple instructions process multiple data streams concurrently.
     - Most versatile, used in clusters and supercomputers.
 
-#### SoC (System-On-a-Chip)
+### SoC (System-On-a-Chip)
 
 - Combines entire electronic systems on a single chip.
 - Includes processor, memory, interfaces.
@@ -211,7 +212,7 @@
 
 # Chapter 2: Operating System
 
-### Operating Systems
+## Operating Systems
 
 - Interface b/w application & hardware
 - **Resource Management**
@@ -232,7 +233,7 @@
 - **Application Programming Interface**
 	- Interface b/w Application and libraries
 
-#### Stages/Level of evolution of OS
+### Stages/Level of evolution of OS
 
 - **Serial Processing**
 	- **Definition:**
@@ -542,7 +543,7 @@
 
 <!--most of the rec is just revision-->
 
-### Process - OS Interaction
+## Process - OS Interaction
 
 - At any processor is executing instructions from application/OS
 - CPU knows when to switch
@@ -551,16 +552,18 @@
 	- Process/Context switch
 		- One process leaves the running state and the other enters the running state
 
-### Mode Switching
+## Mode Switching
 
-### System Interrupt, Call, Trap
+## System Interrupt, Call, Trap
 
-### Process Switching
+## Process Switching
 
-### System Data Structures
+## System Data Structures
 
 process tables
+
 memory tables
+
 i/o tables
 
 ---
@@ -636,7 +639,7 @@ i/o tables
 
 ## UNIX Process Image
 
-#### **User-Level Context:**
+### **User-Level Context:**
 
 - **Process Text:**
 	- This refers to the code or program instructions of a running process.
@@ -647,7 +650,7 @@ i/o tables
 - **Shared Memory:**
 	- This is a segment of memory that multiple processes can access and share, allowing them to exchange data.
 
-#### **Register Context:**
+### **Register Context:**
 
 - **Program Counter:**
 	- It holds the memory address of the next instruction to be executed.
@@ -658,7 +661,7 @@ i/o tables
 - **General-Purpose Registers:**
 	- These registers are used for various purposes, such as holding data and performing arithmetic operations.
 
-#### **System-Level Context:**
+### **System-Level Context:**
 
 - **Process Table Entry:**
 	- An entry in the process table that contains information about a specific process.
@@ -702,7 +705,7 @@ play w fork
 
 # Uniprocessor Scheduling Chapter 9
 
-### Types of Scheduling
+## Types of Scheduling
 
 - Long-term Scheduling:
 	- It selects processes from the job queue and loads them into the ready queue for execution.
@@ -724,7 +727,7 @@ play w fork
 
 # Chapter 9: Uniprocessor Scheduling cont.
 
-### Short term Scheduling Criteria
+## Short term Scheduling Criteria
 
 Main objective is to allocate processor time to optimize certain aspects of system behaviors
 
