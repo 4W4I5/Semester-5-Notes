@@ -9,6 +9,17 @@
 	- Important of data
 	- Tools for measuring performance
 - #### Key performance Indicators (KPI)
+	- **Definition**: KPIs are measurable values used to evaluate the effectiveness of an organization or a specific activity in achieving its objectives.
+	- **Purpose**: They provide a clear, quantifiable way to track progress toward goals and make informed decisions.
+	- **Types**: KPIs can vary widely based on the industry and goals but often include financial, customer, operational, and employee-related metrics.
+	- **Relevance**: KPIs should be directly aligned with an organization's strategic objectives and critical success factors.
+	- **SMART Criteria**: Effective KPIs are Specific, Measurable, Achievable, Relevant, and Time-bound.
+	- **Data Sources**: KPI data can be gathered from various sources, including internal databases, surveys, and third-party tools.
+	- **Visualization**: They are often visualized through charts, graphs, or dashboards for easy monitoring and analysis.
+	- **Benchmarking**: Comparing KPIs to industry benchmarks or historical data helps in assessing performance.
+	- **Responsibility**: Each KPI should have an owner or department responsible for its measurement and improvement.
+	- **Periodic Review**: KPIs should be reviewed regularly to ensure they remain relevant and aligned with organizational goals.
+	- **Adaptation**: Organizations may need to adjust KPIs based on changing circumstances or strategic shifts.
 - #### Types of Social Media Platforms
 	- FB, YT, Whatsapp, Instagram, Snapchat and etc
 - #### Failed and Successful Social Media Campaigns 
