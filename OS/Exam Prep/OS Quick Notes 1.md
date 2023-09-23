@@ -1,12 +1,12 @@
 > [!WARNING]
 > Keep in mind this is all content that was covered in class **BEFORE ** sessional 1, however the paper will have a more practical oriented approach
 
-| Chapter                                 |
-| --------------------------------------- |
-| [Chapter 1 System Overview](#Chapter-1-System-Overview)               |
-| [Chapter 2 OS Overview](#Chapter-2:-Operating-System)                   |
-| [Chapter 3 Process Description & Control](#Chapter-3:-Process-Description-and-Control) |
-| [Chapter 9 UniProcessor Scheduling](Chapter-9:-Uniprocessor-Scheduling)       | 
+| Chapter                                                                                | Status                  |
+| -------------------------------------------------------------------------------------- | ----------------------- |
+| [Chapter 1 System Overview](#Chapter-1-System-Overview)                                | :ballot_box_with_check: |
+| [Chapter 2 OS Overview](#Chapter-2:-Operating-System)                                  | :ballot_box_with_check: |
+| [Chapter 3 Process Description & Control](#Chapter-3:-Process-Description-and-Control) | :x:                     |
+| [Chapter 9 UniProcessor Scheduling](Chapter-9:-Uniprocessor-Scheduling)                | :x:                     |
 # Chapter 1 System Overview
 
 ## Internals & Designs Principals
