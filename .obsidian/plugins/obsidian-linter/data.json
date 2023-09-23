@@ -98,7 +98,7 @@
       "Removes two or more consecutive spaces. Ignores spaces at the beginning and ending of the line. ": false
     },
     "Strong Style": {
-      "Makes sure the strong style is consistent.": true,
+      "Makes sure the strong style is consistent.": false,
       "Style": "consistent"
     },
     "Two Spaces Between Lines with Content": {

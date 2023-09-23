@@ -11,16 +11,13 @@
 # Chapter 1 System Overview
 
 ## Internals & Designs Principals
-
- If an OS doesn't exist, then the application would need to
-
-- Schedule processes
-- Manage I/o
-- Have its hardware-specific drivers
-- Resource management
+- If an OS doesn't exist, then the application would need to
+	- Schedule processes
+	- Manage I/o
+	- Have its hardware-specific drivers
+	- Resource management
 
 ### Fetch-Decode-Execute Cycle
-
 - Steps
 	- PC-> Has value of next instruction stored here (Not current)
 		- MAR stores value of PC (NOTE:: MAR stores value of address to fetch from)
@@ -29,7 +26,6 @@
 	- PC increments
 
 ### SISD, SIMD, MISD, MIMD
-
 1. SISD (Single Instruction, Single Data):
     - One instruction processes one piece of data at a time.
     - Basic sequential processing.
@@ -44,7 +40,6 @@
     - Most versatile, used in clusters and supercomputers.
 
 ### SoC (System-On-a-Chip)
-
 - Combines entire electronic systems on a single chip.
 - Includes processor, memory, interfaces.
 - Used in mobile devices, IoT, and more.
@@ -52,7 +47,6 @@
 - Used mostly in mobile and embedded devices
 
 ### Opcodes & Operands
-
 - OpCode (Operation Code):
 	- OpCode is a fundamental part of a machine language instruction.
 	- It represents the specific operation or instruction to be executed by the CPU.
@@ -64,7 +58,6 @@
 - To load a instruction bigger than the buswidth, a opcode exists to decode one half and then fetch the next half of the instruction
 
 ## Interrupts
-
 - #### **Inner working of an interrupt**
 	- Device inits Interrupt
 	- Processor completes current execution
@@ -138,7 +131,6 @@
 			- Setting up DMA requires careful configuration and coordination to ensure data integrity and prevent conflicts.
 
 ## Memory Hierarchy
-
 - Constraints
 	- Capacity
 	- Access times
@@ -151,7 +143,6 @@
 	- As we go down the hierarchy, access times and storage times increase however the capacity increases. Known as the principle of locality as processors are forced to use lower level memory more efficiently
 
 ## Symmetric Multiprocessor (SMP)
-
 - Definition
 	- A system with 2+ processors
 		- Share the same memory, system bus and I/O
@@ -160,7 +151,6 @@
 	- Coordinating processors is complex, large memory pool is required as all processors share the same memory
 
 ## MultiCore Computer (MCC)
-
 - Definition
 	- Also known as chip multiprocessor
 	- Combines multiple cores on a single piece of silicon(die)
@@ -169,7 +159,6 @@
 	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a uni-core, multicore can tolerate more faults
 
 # Review Questions Chapter 1
-
 - ### 1.1 List and briefly define the 4 main elements of a computer
 	- Processor
 		- ALU
@@ -218,7 +207,6 @@
 # Chapter 2: Operating System
 
 ## Operating Systems
-
 - Interface b/w application & hardware
 - **Resource Management**
 	- Responsible for Controlling the Use of
@@ -239,7 +227,6 @@
 	- Interface b/w Application and libraries
 
 ### Stages/Level of evolution of OS
-
 - **Serial Processing**
 	- **Definition:**
 		- Execution of tasks or instructions one after the other, sequentially.
@@ -295,11 +282,19 @@
 	    - Provides the illusion of dedicated resources for each user/process.
 
 ---
-- What error can cause the OS to crash? `Fill in`
-	- Improper Synchronization
-	- Failed Mutual Exclusion
-	- Nondeterminate Program Operation
-	- Deadlocks
+- #### What error can cause the OS to crash?
+	- **Improper Synchronization**:
+	    - This error occurs when multiple processes or threads access shared resources without proper coordination.
+	    - It can lead to race conditions and data corruption, potentially causing the OS to crash.
+	- **Failed Mutual Exclusion**:
+	    - Mutual exclusion is a key synchronization mechanism to ensure that only one process accesses a resource at a time.
+	    - If mutual exclusion fails, multiple processes might access a resource concurrently, leading to data inconsistency or system instability.
+	- **Nondeterminate Program Operation**:
+	    - Nondeterminate behavior happens when the outcome of a program becomes unpredictable.
+	    - It can occur due to bugs, unexpected inputs, or unhandled exceptions, which can eventually crash the OS if not properly managed.
+	- **Deadlocks**:
+	    - Deadlocks happen when two or more processes are unable to proceed because each is waiting for a resource held by another.
+	    - If not resolved, deadlocks can lead to system resource depletion and system crashes.
 - Process consists of:
 	- Executable
 	- Associated data
@@ -421,15 +416,29 @@
 - GCD helps a dev by identifying a task that can be split off into a separate task
 - Thread pool mechanism
 - allows anon functions as a way of specifying tasks
+### Virtual Machine Approach:
+- **Isolation**: Virtual machines (VMs) provide isolation between different operating systems and applications running on the same physical hardware.
+- **Hypervisor**: VMs are managed by a hypervisor, which is responsible for allocating resources and managing the VMs.
+- **Snapshotting**: VMs allow the creation of snapshots, enabling you to save the state of a VM at a specific point in time for backup or testing.
+- **Hardware Independence**: VMs abstract hardware, making it possible to run multiple OS types on the same physical hardware.
+- **Resource Allocation**: VMs can have allocated CPU, memory, and storage resources, ensuring predictable performance.
+- **Security**: VMs enhance security by isolating potentially vulnerable applications or OS instances from each other.
 
-## Virtual Machine Approach
+### Windows Architecture:
+- **Kernel**: Windows operating systems have a kernel at their core, which manages memory, processes, and hardware interactions.
+- **User Mode vs. Kernel Mode**: Windows employs a separation between user mode and kernel mode, with critical OS functions residing in the kernel.
+- **Hardware Abstraction Layer (HAL)**: HAL provides an abstraction layer for hardware, allowing Windows to run on various hardware platforms.
+- **Graphical User Interface (GUI)**: Windows is known for its GUI, which includes the desktop environment, windows, and graphical applications.
+- **Registry**: Windows uses a centralized registry to store configuration settings and system information.
+- **Device Drivers**: Windows relies on device drivers to communicate with hardware devices.
 
-## Windows Architecture
-
-## Client/Server model
-
----
-
+### Client/Server Model:
+- **Client**: In this model, a client is a program or device that requests services or resources from a server.
+- **Server**: A server is a program or device that provides services or resources to clients over a network.
+- **Communication**: Clients and servers communicate over a network, typically using protocols such as HTTP, FTP, or SMTP.
+- **Distributed Processing**: The client/server model enables distributed processing, where tasks can be offloaded to server resources.
+- **Scalability**: It allows for scalability, as additional servers can be added to handle increased client demand.
+- **Examples**: Common examples include web servers (like Apache or Nginx) serving web pages to web browsers (clients) and email servers (like Microsoft Exchange) handling email delivery to email clients.
 ## Android
 
 - Based on Linux
