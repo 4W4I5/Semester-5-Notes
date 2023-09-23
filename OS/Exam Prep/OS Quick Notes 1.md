@@ -1,7 +1,13 @@
 > [!WARNING]
-> Keep in mind this is all content that was covered in class, however the paper will have a more practical oriented approach
+> Keep in mind this is all content that was covered in class **BEFORE ** sessional 1, however the paper will have a more practical oriented approach
 
-# Chapter 1
+| Chapter                                 |
+| --------------------------------------- |
+| [Chapter 1 System Overview](#Chapter-1-System-Overview)               |
+| Chapter 2 OS Overview                   |
+| Chapter 3 Process Description & Control |
+| Chapter 9 UniProcessor Scheduling       | 
+# Chapter 1 System Overview
 
 ## Internals & Designs Principals
 

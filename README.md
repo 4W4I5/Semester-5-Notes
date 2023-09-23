@@ -67,9 +67,8 @@ Notes sponsored by chatGPT ;)
 
 ## OS
 
-NOTE:: Refer to the book for main content
-
-NOTE:: look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not have any content that was missed during class
+> [!NOTE]
+> look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not have any content that was missed during class
 
 | Week #      | Date                                                | Status      | Content                                                |
 | ----------- | --------------------------------------------------- | ----------- | ------------------------------------------------------ |
