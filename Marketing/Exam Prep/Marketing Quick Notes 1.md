@@ -91,7 +91,6 @@
 	- SMS marketing, also known as text message marketing, is a channel where businesses send promotional messages, alerts, and updates to a list of subscribers' mobile phones.
 	- It is a direct and immediate communication method, making it suitable for time-sensitive promotions and engaging with customers on a personal level.
 
-
 ---
 
 # Social Media Marketing

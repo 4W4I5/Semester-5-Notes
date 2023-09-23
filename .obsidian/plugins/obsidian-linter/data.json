@@ -109,7 +109,7 @@
       "Inner New Lines": false
     },
     "Consecutive blank lines": {
-      "There should be at most one consecutive blank line.": false
+      "There should be at most one consecutive blank line.": true
     },
     "Convert Spaces to Tabs": {
       "Converts leading spaces to tabs.": false,
@@ -130,7 +130,7 @@
       "Ensures that there is exactly one line break at the end of a document.": true
     },
     "Paragraph blank lines": {
-      "All paragraphs should have exactly one blank line both before and after.": false
+      "All paragraphs should have exactly one blank line both before and after.": true
     },
     "Remove Empty Lines Between List Markers and Checklists": {
       "There should not be any empty lines between list markers and checklists.": true
