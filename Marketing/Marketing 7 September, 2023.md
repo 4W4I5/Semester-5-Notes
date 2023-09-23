@@ -10,6 +10,7 @@
 	- Tools for measuring performance
 - #### Key performance Indicators (KPI)
 - #### Types of Social Media Platforms
+	- FB, YT, Whatsapp, Instagram, Snapchat and etc
 - #### Failed and Successful Social Media Campaigns 
 	- Failed
 		- Reebok
@@ -19,8 +20,14 @@
 		- Nike - Just do it
 		- Wendy's: where is the beef (1984)
 		- Procter & Gamble: Thank u mom (2012)
-- #### FMCGs 
-	- Fast Moving Consumer Goods 
+- #### FMCGs (Fast Moving Consumer Goods)
+	- FMCGs refer to consumer products that are sold quickly and at a relatively low cost.
+	- They have a short shelf life and are consumed or replaced frequently.
+	- Common examples include food and beverages, toiletries, cleaning products, and personal care items.
+	- FMCG companies often focus on mass production and distribution to reach a wide consumer base.
+	- Branding and marketing play a crucial role in the success of FMCG products.
+	- These products are typically available in both online and offline retail channels.
+	- FMCGs are known for their stable demand, making them attractive to investors.
 - #### Positive Impact of Social Media
 	- For individuals
 		- Building Relationships and Staying Connected
