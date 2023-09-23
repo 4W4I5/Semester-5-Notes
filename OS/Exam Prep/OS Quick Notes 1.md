@@ -4,9 +4,10 @@
 | Chapter                                                                                | Status                  |
 | -------------------------------------------------------------------------------------- | ----------------------- |
 | [Chapter 1 System Overview](#Chapter-1-System-Overview)                                | :white_check_mark: |
-| [Chapter 2 OS Overview](#Chapter-2:-Operating-System)                                  | :white_check_mark: |
-| [Chapter 3 Process Description & Control](#Chapter-3:-Process-Description-and-Control) | :negative_squared_cross_mark:                     |
-| [Chapter 9 UniProcessor Scheduling](Chapter-9:-Uniprocessor-Scheduling)                | :negative_squared_cross_mark:                     |
+| [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: |
+| [Chapter 3 Process Description & Control](#Chapter-3-:-Process-Description-and-Control) | :x:                     |
+| [Chapter 9 UniProcessor Scheduling](Chapter-9:-Uniprocessor-Scheduling)                | :x:                     |
+
 # Chapter 1 System Overview
 
 ## Internals & Designs Principals
@@ -708,7 +709,7 @@ play w fork
 
 ---
 
-# Chapter 9: Uniprocessor Scheduling 
+# Chapter 9: Uniprocessor Scheduling
 
 ## Types of Scheduling
 
