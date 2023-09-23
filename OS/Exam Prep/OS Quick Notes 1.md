@@ -4,7 +4,7 @@
 | Chapter                                                                                | Status                  |
 | -------------------------------------------------------------------------------------- | ----------------------- |
 | [Chapter 1 System Overview](#Chapter-1-System-Overview)                                | :white_check_mark: |
-| [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: |
+| [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: (Some refactoring left but rest is good) |
 | [Chapter 3 Process Description & Control](#Chapter-3-Process-Description-and-Control) | :x:                     |
 | [Chapter 9 UniProcessor Scheduling](#Chapter-9-Uniprocessor-Scheduling)                | :x:                     |
 
@@ -392,11 +392,26 @@
 				- Permanent
 				- Temporary
 			- Fault Categories of redundancy
-				- Physical(Spatial)
-					- `Fil in later`
-				- Temporal
-				- Data
-			- Operating System Mechanisms
+				- **Physical (Spatial)**:
+					- Physical redundancy involves duplicating hardware components to provide fault tolerance.
+				- Examples include:
+					- **Redundant Power Supplies**: Multiple power supplies in a server to ensure continued operation if one fails.
+					- **RAID (Redundant Array of Independent Disks)**: Storing data on multiple hard drives to prevent data loss in case of a disk failure.
+					- **Clustering**: Creating clusters of servers with identical configurations, where one can take over if another fails.
+				- Physical redundancy is about having backup hardware components ready to take over in case of failure.
+				- **Temporal**:
+					- Temporal redundancy addresses faults by executing the same task or operation multiple times.
+					- Examples include:
+						- **Error-Correcting Codes**: Encoding data with additional bits to detect and correct errors when it's read.
+						- **Retry Mechanisms**: Reattempting an operation if it fails, often with a timeout.
+					- Temporal redundancy aims to mitigate faults through repetition and error detection/correction.
+				- **Data**:
+					- Data redundancy involves storing the same data in multiple locations or formats.
+					- Examples include:
+						- **Backup Systems**: Regularly backing up data to separate storage to recover from data loss or corruption.
+						- **Mirroring**: Creating identical copies of data on different disks or servers.
+					- Data redundancy safeguards against data loss due to hardware failures or data corruption.
+				- Operating System Mechanisms
 				- Process isolation
 				- Concurrency
 				- Virtual Machines
