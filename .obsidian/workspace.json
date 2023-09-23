@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Marketing/Marketing 7 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Marketing/Marketing 7 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Marketing/Marketing 7 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -186,8 +186,9 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "c2c5fcfadb04e061",
+  "active": "d085009bbc463321",
   "lastOpenFiles": [
+    "Marketing/Marketing 7 September, 2023.md",
     "README.md",
     "Marketing/Marketing 31 August, 2023.md",
     "CySec-2/CySec2 21 September, 2023.md",
@@ -226,7 +227,6 @@
     "Pasted image 20230912151828.png",
     "DB/DB 7 September, 2023.md",
     "CySec-2/CySec2 12 September, 2023.md",
-    "OS/OS 5 September, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png"
   ]
 }

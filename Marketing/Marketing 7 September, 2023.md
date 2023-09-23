@@ -6,8 +6,23 @@
 		- share info
 		- `fill in from slides`
 - #### Social Media Analytics
-	- Important of data
-	- Tools for measuring performance
+	- ##### Importance of Data in Social Media Analytics:
+		- **Informed Decision-Making**: Social media data provides insights that help businesses make informed decisions about their online presence.
+		- **Audience Understanding**: It helps in understanding the demographics, preferences, and behaviors of the target audience.
+		- **Content Optimization**: Data allows for the optimization of content strategy by identifying what resonates with the audience.
+		- **Competitive Analysis**: Analyzing social media data can reveal insights into competitors' strategies and audience engagement.
+		- **ROI Measurement**: It enables the calculation of Return on Investment (ROI) for social media marketing efforts.
+		- **Crisis Management**: Social media analytics can be crucial for managing and mitigating PR crises.
+	- ##### Tools for Measuring Performance in Social Media Analytics:
+		- **Google Analytics**: Provides website traffic data, including social media referrals and user behavior.
+		- **Social Media Insights**: Each platform (e.g., Facebook Insights, Twitter Analytics) offers native analytics tools.
+		- **Hootsuite**: A social media management platform that includes analytics features.
+		- **Buffer**: Offers analytics for scheduling and tracking social media posts.
+		- **Sprout Social**: Provides in-depth analytics, engagement tracking, and reporting.
+		- **Brandwatch**: Focuses on social listening and sentiment analysis.
+		- **Mention**: Monitors social media mentions and provides analytics on brand reputation.
+		- **Keyhole**: Specializes in tracking hashtags and keyword analytics on social platforms.
+		- **Crimson Hexagon**: Offers advanced social media data analysis for insights into audience sentiment.
 - #### Key performance Indicators (KPI)
 	- **Definition**: KPIs are measurable values used to evaluate the effectiveness of an organization or a specific activity in achieving its objectives.
 	- **Purpose**: They provide a clear, quantifiable way to track progress toward goals and make informed decisions.
