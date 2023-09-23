@@ -118,7 +118,8 @@
 		- **Interrupts:**
 			- When an I/O device is ready, it sends an interrupt signal to the CPU
 			- This temporarily stops its current operation. The CPU then transfers data between the device and memory.
-			- `What is the priority level though?`
+			- What is an interrupt priority?
+				- A integer assigned, in UNIX 1 is highest
 		- **Efficiency:**
 			- This approach allows the CPU to perform other tasks while waiting for I/O operations to complete.
 			- Compared to Programmed I/O, the CPU usage with this technique is reduced
