@@ -1,6 +1,5 @@
-==NOTE!==
-
-===Keep in mind this is all content that was covered in class, however the paper will have a more practical oriented approach===
+> [!WARNING]
+> Keep in mind this is all content that was covered in class, however the paper will have a more practical oriented approach
 
 # Chapter 1
 
