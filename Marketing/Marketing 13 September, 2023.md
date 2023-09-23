@@ -1,3 +1,7 @@
+
+### Content Marketing
+- 
+
 ### Branded Content
 - Directly related to your brand and shares your values in a way that evokes an emotional response in your audiences and allows them to undesrand what you stand for
 	- Can in be in the form of a blog, yt video, news article. can help you build brand awareness, increase loyalty and leave and impression on your audience beyound the products and services you sell
@@ -9,3 +13,5 @@
 	- Hit a nerve
 	- Introduce characters who personify your brand's core values
 	- Create stories that highlight the benefits of your product or service
+
+---

@@ -58,7 +58,7 @@ Notes sponsored by chatGPT ;)
 | Week 3 | 5 Sept                                                     | N/A        | Maam Absent                      |
 | Week 3 | [7 Sept](Marketing/Marketing%207%20September,%202023.md)   | Complete | Social Media Marketing           |
 | Week 4 | 12 Sept                                                    | N/A        | Presentations                    |
-| Week 4 | [13 Sept](Marketing/Marketing%2013%20September,%202023.md) | Incomplete | Content Marketing                |
+| Week 4 | [13 Sept](Marketing/Marketing%2013%20September,%202023.md) | Complete | Content Marketing                |
 | Week 5 | [19 Sept](Marketing/Marketing%2019%20September,%202023.md) |            |                                  |
 | Week 5 | [20 Sept](Marketing/Marketing%2021%20September,%202023.md) |            |                                  |
 
