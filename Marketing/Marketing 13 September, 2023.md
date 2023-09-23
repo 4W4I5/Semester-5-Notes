@@ -1,4 +1,4 @@
-### Content Marketing
+# Content Marketing
 
 - A strategic marketing approach that focuses creating and distributed valuable, relevant and consistent content to attract and engage a target audience
 - Primary goal: Build and nurture a relationship with potential customers
