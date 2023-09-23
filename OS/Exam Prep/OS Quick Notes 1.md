@@ -4,9 +4,9 @@
 | Chapter                                 |
 | --------------------------------------- |
 | [Chapter 1 System Overview](#Chapter-1-System-Overview)               |
-| Chapter 2 OS Overview                   |
-| Chapter 3 Process Description & Control |
-| Chapter 9 UniProcessor Scheduling       | 
+| [Chapter 2 OS Overview](#Chapter-2:-Operating-System)                   |
+| [Chapter 3 Process Description & Control](#Chapter-3:-Process-Description-and-Control) |
+| [Chapter 9 UniProcessor Scheduling](Chapter-9:-Uniprocessor-Scheduling)       | 
 # Chapter 1 System Overview
 
 ## Internals & Designs Principals
@@ -708,7 +708,7 @@ play w fork
 
 ---
 
-# Uniprocessor Scheduling Chapter 9
+# Chapter 9: Uniprocessor Scheduling 
 
 ## Types of Scheduling
 
