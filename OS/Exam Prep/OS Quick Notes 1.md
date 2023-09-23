@@ -3,7 +3,7 @@
 # Chapter 1
 
 
-# Internals & Designs Principals
+### Internals & Designs Principals
 
  If an OS doesn't exist, then the application would need to
 - Schedule processes
@@ -76,6 +76,8 @@
 	    - Inefficient use of CPU resources.
 - Flow of Control With Interrupts
 	- Look at [I/O Techniques](OS/OS%2029%20August,%202023.md) 
+
+---
 Recap:
 - Interrupt reasons to halt
 	- I/O
@@ -164,6 +166,7 @@ Recap:
 			- Share the same memory, system bus and I/O
 		- Increased throughput, more reliable as failure of one processor will not ruin others
 		- Coordinating processors is complex, large memory pool is required as all processors share the same memory
+---
 # I/O Techniques
 
 - When an I/O Instruction is executed, a command is issued to the appropriate I/O Module
@@ -294,7 +297,7 @@ Recap:
 	    - Provides the illusion of dedicated resources for each user/process.
 
 
-
+---
 - What error can cause the OS to crash?
 	- Improper Synchronization
 	- Failed Mutual Exclusion
@@ -336,7 +339,7 @@ Recap:
 	- Long-term storage
 -->
 
-
+---
 
 
 # Differential Architecture
@@ -425,7 +428,7 @@ Recap:
 ## Client/Server model
 
 
-
+---
 ## Android
 - Based on Linux
 - Android Runtime
@@ -559,7 +562,7 @@ memory tables
 i/o tables
 
 
-
+---
 ## UNIX SVR4 Process management 3.6
 
 ## Process states
@@ -845,7 +848,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Effect on Processes: Feedback scheduling promotes fairness by preventing any single process from monopolizing the CPU. It ensures that long-waiting processes eventually get a turn to execute.
 - Starvation: Feedback scheduling minimizes the risk of starvation for low-priority processes by allowing them to move to higher-priority queues based on their wait time.
 
-
+---
 - Round robin
 	- Configured for quantum >= 1
 	- `Add in process for filling a timing diagram with round robin enabled`
