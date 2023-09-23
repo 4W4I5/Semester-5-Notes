@@ -3,8 +3,7 @@
 - Used to Boost sales or bash competition
 	- Allows
 		- Conversations online
-		- share info
-		- `fill in from slides`
+		- Users to share information
 - #### Social Media Analytics
 	- ##### Importance of Data in Social Media Analytics:
 		- **Informed Decision-Making**: Social media data provides insights that help businesses make informed decisions about their online presence.
