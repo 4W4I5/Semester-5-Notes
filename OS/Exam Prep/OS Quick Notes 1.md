@@ -402,16 +402,29 @@
 				- Virtual Machines
 				- Checkpoints and rollbacks
 					- Saved state at a certain point in time to rollback to that state
+`UnGPT-fy this`
+## Multiprocessor OS Considerations:
+- **Design Issues**:
+    - Simultaneous execution of multiple processes or threads on multiple processors requires careful design to ensure efficient resource utilization and avoid conflicts.
+    - Key design considerations include process synchronization, load balancing, and efficient inter-processor communication.
 
-## Multiprocessor OS Considerations
-
-- Design Issues
-	- Simultaneous concur`Fill in later`
-
-## MultiCore OS Considerations
+## MultiCore OS Considerations:
+- **Parallelism**:
+    - Multicore systems have multiple CPU cores on a single chip.
+    - Operating systems must efficiently utilize these cores for parallel processing.
+- **Thread Management**:
+    - Support for multithreading is essential to fully utilize multicore CPUs.
+    - Thread creation, scheduling, and synchronization must be optimized for multicore environments.
+- **Resource Allocation**:
+    - Effective resource allocation is necessary to ensure each core gets a fair share of CPU time and access to memory and I/O resources.
+- **Cache Coherency**:
+    - Cache coherence protocols are crucial to maintaining data consistency across multiple cores' caches.
+    - Managing cache coherency is a complex aspect of multicore OS design.
+- **Power Management**:
+    - Multicore systems can dynamically adjust the number of active cores to save power when full performance isn't required.
+    - Power management strategies should be implemented to optimize energy efficiency.
 
 ## Grand Central Dispatch
-
 - Usually Dev specifies what pieces can or should be executed simultaneously or in
 - GCD helps a dev by identifying a task that can be split off into a separate task
 - Thread pool mechanism
@@ -439,22 +452,23 @@
 - **Distributed Processing**: The client/server model enables distributed processing, where tasks can be offloaded to server resources.
 - **Scalability**: It allows for scalability, as additional servers can be added to handle increased client demand.
 - **Examples**: Common examples include web servers (like Apache or Nginx) serving web pages to web browsers (clients) and email servers (like Microsoft Exchange) handling email delivery to email clients.
-## Android
+## Android:
+- Android is based on the Linux kernel, which forms the core of the operating system.
+- Android Runtime (ART) replaced the Dalvik Virtual Machine (DVM) with Android 5.0 (Lollipop).
+- ART uses Ahead-of-Time (AOT) compilation, while DVM used Just-in-Time (JIT) compilation.
+- Android app code is compiled into bytecode (.dex files) and executed by ART.
 
-- Based on Linux
-- Android Runtime
-	- Every android application runs in its own process of the Dalvik Virtual Machine (DVM)
-	- DVM executes in the .dvx format
+### System Libraries:
+- Android's system libraries are crucial components of the Android system.
+- These libraries are primarily written in C/C++ to provide low-level system functionality.
+- They are called by the Android application framework and applications through Application Programming Interfaces (APIs).
 
-### System Libraries
-
-- Collection of useful system functions written in C/C++ and used by various parts of the andriod system
-- Called from the application framework and applications through
-
-### Power Management
-
-- Alarms
-- Wakelocks
+### Power Management:
+- Power management in Android is vital for optimizing battery life on mobile devices.
+- **Alarms** 
+	- Allow applications to schedule tasks at specific times or intervals, even when the device is in a low-power state, helping conserve power.
+- **Wakelocks**
+	- Mechanisms that prevent the device from entering deep sleep when certain tasks need to be executed, such as maintaining a network connection or playing music.
 
 ---
 
