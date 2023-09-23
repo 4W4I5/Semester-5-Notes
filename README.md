@@ -1,7 +1,8 @@
 # Notes Status
+
 `These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
 
-### Algo
+## Algo
 
 | Week # | Date                                             | Status     | Content                           |
 | ------ | ------------------------------------------------ | ---------- |:--------------------------------- |
@@ -16,7 +17,8 @@
 | Week 5 | [18 Sept](Algo/Algo%2018%20September,%202023.md) | Incomplete |                                   |
 | Week 5 | [20 Sept](Algo/Algo%2020%20September,%202023.md) | Incomplete | Recursion                                  |
 
-### CySec-2
+## CySec-2
+
 Notes sponsored by chatGPT ;)
 
 | Week # | Date                                                  | Status     | Content                                                            |
@@ -30,9 +32,9 @@ Notes sponsored by chatGPT ;)
 | Week 4 | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md) | Incomplete | DNS Cache poisoning version 2                                      |
 | Week 4 | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md) | Incomplete | TCP stuff                                                          |
 | Week 5 | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md) | Incomplete |                                                                    |
-| Week 5 | 21 Sept                                               | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 | 
+| Week 5 | 21 Sept                                               | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 |
 
-### DB
+## DB
 
 | Week # | Date                                         | Status                        | Content                            |
 | ------ | -------------------------------------------- | ----------------------------- | ---------------------------------- |
@@ -46,8 +48,8 @@ Notes sponsored by chatGPT ;)
 | Week 4       | [14 Sept](DB/DB%2014%20September,%202023.md) | Incomplete                    | Relations in notation form         |
 | Week 5       | [19 Sept](DB/DB%2019%20September,%202023.md) | Incomplete                    |                                    |
 | Week 5      | [21 Sept](DB/DB%2021%20September,%202023.md) |                               |                                    |
- 
-### Marketing
+
+## Marketing
 
 | Week #      | Date                                                              | Status   | Content                          |
 | ----------- | ----------------------------------------------------------------- | -------- | -------------------------------- |
@@ -63,9 +65,10 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [20 Sept](Marketing/Marketing%2021%20September,%202023.md)        | Complete | Blogging                         |
 | Sessional-1 | [23 Sept](Marketing/Exam%20Prep/Marketing%20Quick%20Notes%201.md) | Complete | Prep material for sessional 1                                 |
 
-### OS
- 
+## OS
+
 NOTE:: Refer to the book for main content
+
 NOTE:: look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not have any content that was missed during class
 
 | Week #      | Date                                                | Status      | Content                                                |
@@ -81,4 +84,3 @@ NOTE:: look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not 
 | Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)        | Incomplete  | Scheduling routines                                    |
 | Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
 | Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
-
