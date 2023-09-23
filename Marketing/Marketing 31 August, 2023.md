@@ -65,7 +65,6 @@
 	- Encourages marketers to reach users through paid aids
 	- Usually done through to show products that the user might like based on their previous ad tracking history
 - **Content**
-	- 
 - **Email**
 - **Social media**
 - **Affiliate**
