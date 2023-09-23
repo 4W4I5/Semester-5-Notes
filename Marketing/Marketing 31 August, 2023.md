@@ -60,8 +60,12 @@
 #### Types of Digital Marketing channels
 
 - **Website**
+	- Represents a brand, product or service on a website in a clear and memorable way
 - **Pay-Per-Click**
+	- Encourages marketers to reach users through paid aids
+	- Usually done through to show products that the user might like based on their previous ad tracking history
 - **Content**
+	- 
 - **Email**
 - **Social media**
 - **Affiliate**
