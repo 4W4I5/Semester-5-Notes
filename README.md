@@ -54,7 +54,7 @@ Notes sponsored by chatGPT ;)
 | Week 1 | 22 Aug                                                     | N/A        | Sir Absent                       |
 | Week 1 | 24 Aug                                                     | N/A        | Sir Absent                       |
 | Week 2 | 29 Aug                                                     | N/A        | Sir Absent                       |
-| Week 2 | 31 Aug                                                     | -----      | Introductory, Did not take notes |
+| Week 2 | [31 Aug](Marketing/Marketing%2031%20August,%202023.md)     | -----      | Introductory, Did not take notes |
 | Week 3 | 5 Sept                                                     | N/A        | Maam Absent                      |
 | Week 3 | [7 Sept](Marketing/Marketing%207%20September,%202023.md)   | Incomplete | Social Media Marketing           |
 | Week 4 | 12 Sept                                                    | N/A        | Presentations                    |

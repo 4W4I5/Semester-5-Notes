@@ -83,7 +83,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -99,7 +100,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,9 +137,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "README.md"
-              }
+              "state": {}
             }
           },
           {
@@ -181,10 +178,10 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "d085009bbc463321",
+  "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
-    "CySec-2/CySec2 21 September, 2023.md",
     "README.md",
+    "CySec-2/CySec2 21 September, 2023.md",
     "OS/OS 21 September, 2023.md",
     "Algo/Algo 20 September, 2023.md",
     "Algo/Algo 4 September, 2023.md",
