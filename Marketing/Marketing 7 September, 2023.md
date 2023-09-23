@@ -69,10 +69,24 @@
 		- Motivation young people
 		- Creativity 
 - #### Negative Impact of Social Media 
-	- Inadequacy about your life/appearance
-	- Fear Of Missing Out & Social Media Addiction
-	- Isolation
-	- Depression & Anxiety
-	- Cyberbullying
-	- Security Blanket
-	- Masks underlying problems
+- Inadequacy about Your Life/Appearance:
+	- Constant exposure to curated, idealized content can lead to feelings of inadequacy and comparison with others.
+	- People may feel pressure to present an unrealistically perfect image of their lives, causing stress and anxiety.
+- Fear of Missing Out & Social Media Addiction:
+	- The fear of missing out (FOMO) can lead to excessive use of social media to stay constantly connected.
+	- Social media addiction can disrupt daily life, impacting productivity and relationships.
+- Isolation:
+	- Paradoxically, excessive social media use can lead to feelings of isolation as real-world interactions decrease.
+	- People may substitute online connections for in-person relationships, which can lead to loneliness.
+- Depression & Anxiety:
+	- Negative experiences like cyberbullying or comparison can contribute to depression and anxiety.
+	- Constant exposure to negative news and online conflicts can worsen mental health.
+- Cyberbullying:
+	- Social media platforms can be breeding grounds for cyberbullying, which can cause severe emotional distress.
+	- Victims of cyberbullying may suffer in silence, fearing retaliation.
+- Security Blanket:
+	- Some individuals use social media as a coping mechanism, seeking validation and support through likes and comments.
+	- Overreliance on social media for emotional support may hinder real-world coping skills.
+- Masks Underlying Problems:
+	- People often use social media to distract themselves from underlying issues or emotional pain.
+	- Instead of addressing problems, they may suppress them by focusing on online activities.
