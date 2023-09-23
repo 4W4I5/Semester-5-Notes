@@ -23,8 +23,19 @@
 	- Fast Moving Consumer Goods 
 - #### Positive Impact of Social Media
 	- For individuals
+		- Building Relationships and Staying Connected
+		- Finding Your voice (Help individuals build confidence, gain new communication skills, quickly spread positive and important messages)
+		- Showing Empathy and kindness
+		- Better Communication
 	- For brands
+		- Building a business
+		- Establishing Authority
+		- Driving Traffic to your website
+		- Enhancing the customer experience
 	- For students
+		- Learning and education
+		- Motivation young people
+		- Creativity 
 - #### Negative Impact of Social Media 
 	- Inadequacy about your life/appearance
 	- Fear Of Missing Out & Social Media Addiction
