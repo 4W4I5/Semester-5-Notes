@@ -66,16 +66,19 @@ Notes sponsored by chatGPT ;)
 ### OS
  
 NOTE:: Refer to the book for main content
+NOTE:: look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not have any content that was missed during class
 
-| Week # | Date                                         | Status     | Content                                                |
-| ------ | -------------------------------------------- | ---------- | ------------------------------------------------------ |
-| Week 1 | [22 Aug](OS/OS%2022%20August,%202023.md)     | Complete   | Intro, FDE Cycle, OpCodes/OpRands, Interrupts          |
-| Week 1 | [24 Aug](OS/OS%2024%20August,%202023.md)     | Complete   | Review Questions Chapter #1                            |
-| Week 2 | [29 Aug](OS/OS%2029%20August,%202023.md)     | Complete   | I/O technique, SMP + MCC, Chapter 2: Operating System  |
-| Week 2 | [31 Aug](OS/OS%2031%20August,%202023.md)     | Refactor   | Chapter 2 completed till 2.3                           |
-| Week 3 | [5 Sept](OS/OS%205%20September,%202023.md)   | Incomplete | Continuing Chapter 2 + A whole lot of stuff to fill in |
-| Week 3 | [7 Sept](OS/OS%207%20September,%202023.md)   | Incomplete | Wrapping up Chapter 2 + Did till chapter 3.2           |
-| Week 4 | [12 Sept](OS/OS%2012%20September,%202023.md) | Incomplete | 3.3 and onwards                                        |
-| Week 4 | [14 Sept](OS/OS%2014%20September,%202023.md) | Incomplete | UNIX SVR4                                              |
-| Week 5 | [19 Sept](OS/OS%2019%20September,%202023.md) | Incomplete |                                                        |
-| Week 5 | [21 Sept](OS/OS%2021%20September,%202023.md) |            |                                                        |
+| Week #      | Date                                                | Status      | Content                                                |
+| ----------- | --------------------------------------------------- | ----------- | ------------------------------------------------------ |
+| Week 1      | [22 Aug](OS/OS%2022%20August,%202023.md)            | Complete    | Intro, FDE Cycle, OpCodes/OpRands, Interrupts          |
+| Week 1      | [24 Aug](OS/OS%2024%20August,%202023.md)            | Complete    | Review Questions Chapter #1                            |
+| Week 2      | [29 Aug](OS/OS%2029%20August,%202023.md)            | Complete    | I/O technique, SMP + MCC, Chapter 2: Operating System  |
+| Week 2      | [31 Aug](OS/OS%2031%20August,%202023.md)            | Refactor    | Chapter 2 completed till 2.3                           |
+| Week 3      | [5 Sept](OS/OS%205%20September,%202023.md)          | Incomplete  | Continuing Chapter 2 + A whole lot of stuff to fill in |
+| Week 3      | [7 Sept](OS/OS%207%20September,%202023.md)          | Incomplete  | Wrapping up Chapter 2 + Did till chapter 3.2           |
+| Week 4      | [12 Sept](OS/OS%2012%20September,%202023.md)        | Incomplete  | 3.3 and onwards                                        |
+| Week 4      | [14 Sept](OS/OS%2014%20September,%202023.md)        | Incomplete  | UNIX SVR4                                              |
+| Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)        | Incomplete  | Scheduling routines                                    |
+| Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
+| Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
+
