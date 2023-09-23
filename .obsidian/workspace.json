@@ -6,6 +6,7 @@
       {
         "id": "e4faafdced29493b",
         "type": "tabs",
+        "dimension": 48.16326530612245,
         "children": [
           {
             "id": "c2c5fcfadb04e061",
@@ -13,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Marketing/Marketing 19 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -24,6 +25,7 @@
       {
         "id": "3622d8eb1d24f51d",
         "type": "tabs",
+        "dimension": 51.83673469387755,
         "children": [
           {
             "id": "d085009bbc463321",
@@ -104,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Marketing/Marketing 19 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Marketing/Marketing 19 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Marketing/Marketing 19 September, 2023.md"
               }
             }
           },
@@ -186,10 +188,13 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
-    "Marketing/Marketing 13 September, 2023.md",
     "README.md",
+    "Marketing/Marketing 19 September, 2023.md",
+    "Marketing/Exam Prep/Marketing Quick Notes 1.md",
+    "Marketing/Exam Prep",
+    "Marketing/Marketing 13 September, 2023.md",
     "Marketing/Marketing 7 September, 2023.md",
     "Marketing/Marketing 31 August, 2023.md",
     "CySec-2/CySec2 21 September, 2023.md",
@@ -213,7 +218,6 @@
     "Books/Elmasri-Fundamental of Database Systems 7th Edition.pdf",
     "Books/Books/Books/William Stallings-Operating Systems 7th Edition.pdf",
     "Books/Books/Books/Randall J. Boyle-Corporate Computer Security 3rd Edition.pdf",
-    "Books/Books/Books/Mark Ciampa-CompTIA Security+ Guide to Network Security Fundamentals 5th Edition.pdf",
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
     "Algo/Algo 30 August, 2023.md",
@@ -225,8 +229,6 @@
     "OS/OS 7 September, 2023.md",
     "Pasted image 20230912151924.png",
     "Pasted image 20230912151828.png",
-    "DB/DB 7 September, 2023.md",
-    "CySec-2/CySec2 12 September, 2023.md",
     "Algo/Images/Pasted image 20230906093822.png"
   ]
 }
