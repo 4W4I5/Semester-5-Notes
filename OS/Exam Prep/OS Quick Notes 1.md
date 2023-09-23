@@ -1,17 +1,19 @@
 ==NOTE!==
 ==Keep in mind this is all content that was covered in class, however the paper will have a more practical oriented approach==
-# Chapter 1
 
+# Chapter 1
 
 ### Internals & Designs Principals
 
  If an OS doesn't exist, then the application would need to
+
 - Schedule processes
 - Manage I/o
 - Have its hardware-specific drivers
 - Resource management
 
 #### Fetch-Decode-Execute Cycle
+
 - Steps
 	- PC-> Has value of next instruction stored here (Not current)
 		- MAR stores value of PC (NOTE:: MAR stores value of address to fetch from)
@@ -20,6 +22,7 @@
 	- PC increments
 
 #### SISD, SIMD, MISD, MIMD
+
 1. SISD (Single Instruction, Single Data):
     - One instruction processes one piece of data at a time.
     - Basic sequential processing.
@@ -53,9 +56,23 @@
 	- The number and type of operands depend on the OpCode.
 - To load a instruction bigger than the buswidth, a opcode exists to decode one half and then fetch the next half of the instruction
 
-#### Interrupts
+## Interrupts
 
-- Classes of interrupts
+- #### **Inner working of an interrupt**
+	- Device inits Interrupt
+	- Processor completes current execution
+		- ACK's interrupt to be processed
+	- Saves PC and then the PSW (Program-Status-Word: Saves ACU(A register in 8086) and FlagsRegister)
+	- Load in Interrupt init block into PC
+	- F-D-E Cycle on the Interrupt
+	- Restore PC & PSW
+- #### **Interrupt reasons to halt**
+	- I/O
+		- Short I/O wait
+			- Continues with I/O routine
+		- Long I/O wait
+			- After a set time limit, stops I/O routine and continues normal operation
+- #### **Classes of interrupts**
 	- Program
 		- Caused by instruction execution
 	- Timer
@@ -65,7 +82,7 @@
 		- Peripherals
 	- Hardware Failure
 		- Unscheduled Disconnection or failure
-- Flow of Control without Interrupts
+- ### **Flow of Control without Interrupts**
 	- **Sequential Execution**:
 	    - Instructions are executed one after another in a linear sequence.
 	    - The CPU fetches an instruction, decodes it, executes it, and then moves to the next instruction.
@@ -74,38 +91,45 @@
 	    - During operations like input/output or waiting for a resource, the CPU is idle.
 	    - Other processes or tasks cannot proceed until the blocking operation completes.
 	    - Inefficient use of CPU resources.
-- Flow of Control With Interrupts
-	- Look at [I/O Techniques](OS/OS%2029%20August,%202023.md) 
+- ### Flow of Control With Interrupts
+	- #### Multiple Interrupts
+		- Check and do two things
+			- Priority of the interrupt
+				- If higher, save state of the interrupt and go to the new interrupt
+				- If equal or lower, finish the current interrupt then start the new interrupt. Stack isn't used
+			- Interrupt Blocking
+				- Just block any and all new interrupts until the current interrupt is resolved
+	- #### Programmed I/O
+		- **Polling:**
+			- CPU checks whenever Status/Flag of an I/O device is ready
+		- **Simple and straightforward:**
+			- Programmed I/O is easy to implement and understand.
+			- However, it can be inefficient as it ties up the CPU while waiting for I/O operations to complete.
+		- **CPU-intensive:**
+			- CPU is actively involved in managing I/O, it can become a bottleneck when multiple I/O devices are present.
+	- #### Interrupt-Driven I/O
+		- **Interrupts:**
+			- When an I/O device is ready, it sends an interrupt signal to the CPU
+			- This temporarily stops its current operation. The CPU then transfers data between the device and memory.
+			- `What is the priority level though?`
+		- **Efficiency:**
+			- This approach allows the CPU to perform other tasks while waiting for I/O operations to complete.
+			- Compared to Programmed I/O, the CPU usage with this technique is reduced
+		- **Complexity:**
+			- Implementing interrupt-driven I/O requires more complex hardware and software coordination to handle interrupts and context switching.
+			- Increases chances of missing an interrupt if the processor is busy with a higher level interrupt
+	- #### Direct Memory Access (DMA)
+		- Uses a DMA Controller
+		- **Reduced CPU involvement:**
+			- The DMA controller takes over, allowing the CPU to focus on other tasks.
+			- It directly transfers data to memory without involving the CPU
+			- However the CPU cannot access the memory bus at the same time as a DMA is fetching or writing data
+		- **High-speed data transfer:**
+			- DMA is particularly useful for high-speed data transfers, such as large file copying or video streaming.
+		- **Complex setup:**
+			- Setting up DMA requires careful configuration and coordination to ensure data integrity and prevent conflicts.
 
----
-Recap:
-- Interrupt reasons to halt
-	- I/O
-		- Short I/O wait
-			- Continues with I/O routine
-		- Long I/O wait
-			- After a set time limit, stops I/O routine and continues normal operation
-
-#### Inner working of an interrupt
-
-- Device inits Interrupt
-- Processor completes current execution
-	- ACK's interrupt to be processed
-- Saves PC and then the PSW (Program-Status-Word: Saves ACU(A register in 8086) and FlagsRegister)
-- Load in Interrupt init block into PC
-- F-D-E Cycle on the Interrupt
-- Restore PC & PSW
-
-#### Multiple Interrupt
-
-- Check and do two things
-	- Priority of the interrupt
-		- If higher, save state of the interrupt and go to the new interrupt
-		- If equal or lower, finish the current interrupt then start the new interrupt. Stack isn't used
-	- Interrupt Blocking
-		- Just block any and all new interrupts until the current interrupt is resolved
-
-#### Memory Hierarchy
+## Memory Hierarchy
 
 - Constraints
 	- Capacity
@@ -118,9 +142,25 @@ Recap:
 		- Storage (Managed by the OS)
 	- As we go down the hierarchy, access times and storage times increase however the capacity increases. Known as the principle of locality as processors are forced to use lower level memory more efficiently
 
----
+## Symmetric Multiprocessor (SMP)
 
-# Review Questions
+- Definition
+	- A system with 2+ processors
+		- Share the same memory, system bus and I/O
+- Advantages
+	- Increased throughput, more reliable as failure of one processor will not ruin others
+	- Coordinating processors is complex, large memory pool is required as all processors share the same memory
+
+## MultiCore Computer (MCC)
+
+- Definition
+	- Also known as chip multiprocessor
+	- Combines multiple cores on a single piece of silicon(die)
+	- L3 Cache seems shared between cores
+- Advantages
+	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a uni-core, multicore can tolerate more faults
+
+# Review Questions Chapter 1
 
 `Taken from the book `
 
@@ -158,77 +198,26 @@ Recap:
 - ### 1.7 What are the trade-off that determine the size of the cache memory
 	- The main trade-offs for determining the cache size are speed and cost of cache
 - ### 1.8 What is the difference b/w a multiprocessor & a multicore system
-	- MultiCore
+	- **MultiCore**
 		- Special case of MultiProcessor, in which all of the processors are on a single chip
 		- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a unicore, multicore can tolerate more faults
-	- MultiProcessor
+	- **MultiProcessor**
 		- A system with 2+ processors
 			- Share the same memory, system bus and I/O
 		- Increased throughput, more reliable as failure of one processor will not ruin others
 		- Coordinating processors is complex, large memory pool is required as all processors share the same memory
----
-# I/O Techniques
-
-- When an I/O Instruction is executed, a command is issued to the appropriate I/O Module
-	- #### Programmed I/O
-		- **Polling:** 
-			- CPU checks whenever Status/Flag of an I/O device is ready
-		- **Simple and straightforward:** 
-			- Programmed I/O is easy to implement and understand. 
-			- However, it can be inefficient as it ties up the CPU while waiting for I/O operations to complete.
-		- **CPU-intensive:** 
-			- CPU is actively involved in managing I/O, it can become a bottleneck when multiple I/O devices are present.
-	- #### Interrupt-Driven I/O
-		- **Interrupts:** 
-			- When an I/O device is ready, it sends an interrupt signal to the CPU
-			- This temporarily stops its current operation. The CPU then transfers data between the device and memory.
-			- `What is the priority level though?`
-		- **Efficiency:** 
-			- This approach allows the CPU to perform other tasks while waiting for I/O operations to complete.
-			- Compared to Programmed I/O, the CPU usage with this technique is reduced
-		- **Complexity:** 
-			- Implementing interrupt-driven I/O requires more complex hardware and software coordination to handle interrupts and context switching.
-			- Increases chances of missing an interrupt if the processor is busy with a higher level interrupt
-	- #### Direct Memory Access (DMA)
-		- Uses a DMA Controller
-		- **Reduced CPU involvement:** 
-			- The DMA controller takes over, allowing the CPU to focus on other tasks. 
-			- It directly transfers data to memory without involving the CPU
-			- However the CPU cannot access the memory bus at the same time as a DMA is fetching or writing data
-		- **High-speed data transfer:** 
-			- DMA is particularly useful for high-speed data transfers, such as large file copying or video streaming.
-		- **Complex setup:** 
-			- Setting up DMA requires careful configuration and coordination to ensure data integrity and prevent conflicts.
-
-## Symmetric Multiprocessor (SMP)
-- Definition
-	- A system with 2+ processors
-		- Share the same memory, system bus and I/O
-- Advantages 
-	- Increased throughput, more reliable as failure of one processor will not ruin others
-	- Coordinating processors is complex, large memory pool is required as all processors share the same memory
-## MultiCore Computer (MCC)
-- Definition
-	- Also known as chip multiprocessor
-	- Combines multiple cores on a single piece of silicon(die)
-	- L3 Cache seems shared between cores
-- Advantages
-	- Higher Clock speeds, Greater efficiency and less traffic. In comparison to a uni-core, multicore can tolerate more faults
-
-
 
 ---
-# Chapter 2
 
+# Chapter 2: Operating System
 
-## Chapter 2: Operating System 
-### Operating Systems;
+### Operating Systems
 - Interface b/w application & hardware
 - **Resource Management**
-	- Responsible for Controlling the Use of 
+	- Responsible for Controlling the Use of
 		- CPU
 		- Processor Execution time
-		- I/O 
+		- I/O
 			- Managed by the I/O controller linked to the OS
 		- Main Memory
 			- Holds the loaded OS and system software alongside loaded programs and data
@@ -241,9 +230,11 @@ Recap:
 	- Interface b/w OS and libraries
 - **Application Programming Interface**
 	- Interface b/w Application and libraries
+
 #### Stages/Level of evolution of OS
+
 - **Serial Processing**
-	- **Definition:** 
+	- **Definition:**
 		- Execution of tasks or instructions one after the other, sequentially.
 	- **Characteristics:**
 	    - Only one task is processed at a time.
@@ -256,7 +247,7 @@ Recap:
 		- Setup Time
 			- Setup sequences were long and slow, costing valuable processing time where if an error were to occur the user was forced to start again
 - **Simple Batch Processing**
-	- **Definition:** 
+	- **Definition:**
 		- Execution of a batch of similar tasks or jobs in a sequence.
 	- **Characteristics:**
 	    - Jobs are collected, processed together, and results are obtained at the end.
@@ -282,23 +273,22 @@ Recap:
 				- Time Slicing
 					- Each program was alloted a certain slice of the processors time to execute after which control was passed onto the next program
 - **Multi-programmed Systems**
-	- **Definition:** 
+	- **Definition:**
 		- A system that can manage and execute multiple programs concurrently.
 	- **Characteristics:**
 	    - Allows for better CPU utilization.
 	    - Several programs can be in memory at once.
 	    - Operating system handles program scheduling.
 - **Time Sharing Systems**
-	- **Definition:** 
+	- **Definition:**
 		- Multiple users or processes share a single computer's resources simultaneously.
 	- **Characteristics:**
 	    - Rapid switching between tasks (time slices).
 	    - Supports interactive computing.
 	    - Provides the illusion of dedicated resources for each user/process.
 
-
 ---
-- What error can cause the OS to crash?
+- What error can cause the OS to crash? `Fill in`
 	- Improper Synchronization
 	- Failed Mutual Exclusion
 	- Nondeterminate Program Operation
@@ -330,6 +320,7 @@ Recap:
 	- Allows programs to work with virtual addresses that refer to the real addresses
 		- Allows OS to just manage addresses logically and delegate the real placement of the pages up to the ram
 	- All pages are maintained on disk
+`Figure out smth to do w this`
 <!--
 	- Memory Management
 	- Process Isolation
@@ -341,7 +332,6 @@ Recap:
 
 ---
 
-
 # Differential Architecture
 
 - ## Microkernel Architecture
@@ -350,7 +340,7 @@ Recap:
 		- Inter Process communication
 		- Basic Scheduling
 	- Microkernel vs Monolithic Kernel
-	- Allows 
+	- Allows
 		- Simplifies implementation
 		- Provides flexibility
 		- Well suited to a distributed environment
@@ -360,7 +350,7 @@ Recap:
 	- A process is which executes an application is divided into threads that can run concurrently
 	- Most beneficial to an SMP (Symmetric Multiprocessor)
 	- Thread
-		- Dispatchable unit of work 
+		- Dispatchable unit of work
 		- Includes a process context and its own data area to enable subroutine branching
 		- Executes sequentially and is interruptible
 	- Process
@@ -369,7 +359,7 @@ Recap:
 		- Programmer has greater control over the modularity of the application and the timing of application related events
 - ## OS Design
 	- Distributed OS
-		- Provides the illusion of 
+		- Provides the illusion of
 			- a single main/secondary memory space
 			- a unified access facilities
 		- State of the art for distributed OS lags that of uniprocessor and SMP OS.
@@ -410,13 +400,17 @@ Recap:
 				- Virtual Machines
 				- Checkpoints and rollbacks
 					- Saved state at a certain point in time to rollback to that state
+
 ## Multiprocessor OS Considerations
+
 - Design Issues
-	- Simultaneous concur`Fill in later` 
+	- Simultaneous concur`Fill in later`
+
 ## MultiCore OS Considerations
 
 ## Grand Central Dispatch
-- Usually Dev specifies what pieces can or should be executed simultaneously or in 
+
+- Usually Dev specifies what pieces can or should be executed simultaneously or in
 - GCD helps a dev by identifying a task that can be split off into a separate task
 - Thread pool mechanism
 - allows anon functions as a way of specifying tasks
@@ -427,26 +421,29 @@ Recap:
 
 ## Client/Server model
 
-
 ---
+
 ## Android
+
 - Based on Linux
 - Android Runtime
 	- Every android application runs in its own process of the Dalvik Virtual Machine (DVM)
 	- DVM executes in the .dvx format
-### System Libraries 
+
+### System Libraries
+
 - Collection of useful system functions written in C/C++ and used by various parts of the andriod system
-- Called from the application framework and applications through 
+- Called from the application framework and applications through
 
 ### Power Management
+
 - Alarms
 - Wakelocks
 
-
-
-
 ---
+
 # Chapter 3: Process Description and Control
+
 - Process is an instance of a program or a program in execution
 - Process elements
 	- Program code
@@ -454,49 +451,51 @@ Recap:
 	- Process State Word (PSW)
 - Process control block
 	- Contains the process elements
-		- **Process ID (PID)**: A unique identifier assigned to each process in the system, enabling the OS to distinguish between processes.
-			- **Program Counter (PC)**: 
-				- Keeps track of the address of the next instruction to be executed by the process.
-			- **CPU Registers**: '
-				- Stores the values of CPU registers when the process is preempted or interrupted. This allows the process to resume execution seamlessly.
-			- **Scheduling Information**:
-				- Contains details about the process's scheduling priority, state (e.g., running, waiting, or ready), and other scheduling-related data.
-			- **Memory Management Information**: 
-				- Includes information about the process's memory allocation, such as the base and limit registers, page tables, or segment descriptors.
-			- **I/O Status Information**: 
-				- Keeps track of I/O devices the process is using or waiting on, such as open files, pending I/O requests, and their status.
-			- **Accounting Information**: 
-				- Tracks resource usage statistics like CPU time, wall-clock time, and other resource-related data.
-			- **Parent Process Pointer**: 
-				- Points to the PCB of the parent process if the process is created by another process (e.g., in fork() operations).
-			- **Child Process Pointers**: 
-				- Contains pointers to PCBs of child processes if any exist.
-			- **Inter-Process Communication (IPC) Information**: 
-				- Includes data related to message queues, semaphores, and shared memory segments used for IPC.
-			- **Signal Handling Information**: 
-				- Records how the process handles signals or interrupts, such as signal handlers and signal masks.
-			- **File Descriptors**: 
-				- Stores references to open files and their associated file control blocks.
-			- **Priority and Scheduling Information**: 
-				- Contains information about the process's priority, scheduling algorithm, and any time-related data for scheduling.
-			- **Security Information**: 
-				- May include information related to process permissions, access control, and security attributes.
-			- **Exit Status**: 
-				- Records the exit status or exit code of the process when it terminates
-	- Created and managed by the OS
-	- Key tool that allowed for support for multiple process
-	- When a process is removed from the running state to allow another process to run values important to correct execution of the process must be saved. The PCB is where such information is saved
-	- PCB lifetime is only for the duration of the process
+		- Created and managed by the OS
+		- Key tool that allowed for support for multiple process
+		- When a process is removed from the running state to allow another process to run values important to correct execution of the process must be saved. The PCB is where such information is saved
+		- PCB lifetime is only for the duration of the process
+		- ###### **Contents**
+			- **Process ID (PID)**: A unique identifier assigned to each process in the system, enabling the OS to distinguish between processes.
+				- **Program Counter (PC)**:
+					- Keeps track of the address of the next instruction to be executed by the process.
+				- **CPU Registers**: '
+					- Stores the values of CPU registers when the process is preempted or interrupted. This allows the process to resume execution seamlessly.
+				- **Scheduling Information**:
+					- Contains details about the process's scheduling priority, state (e.g., running, waiting, or ready), and other scheduling-related data.
+				- **Memory Management Information**:
+					- Includes information about the process's memory allocation, such as the base and limit registers, page tables, or segment descriptors.
+				- **I/O Status Information**:
+					- Keeps track of I/O devices the process is using or waiting on, such as open files, pending I/O requests, and their status.
+				- **Accounting Information**:
+					- Tracks resource usage statistics like CPU time, wall-clock time, and other resource-related data.
+				- **Parent Process Pointer**:
+					- Points to the PCB of the parent process if the process is created by another process (e.g., in fork() operations).
+				- **Child Process Pointers**:
+					- Contains pointers to PCBs of child processes if any exist.
+				- **Inter-Process Communication (IPC) Information**:
+					- Includes data related to message queues, semaphores, and shared memory segments used for IPC.
+				- **Signal Handling Information**:
+					- Records how the process handles signals or interrupts, such as signal handlers and signal masks.
+				- **File Descriptors**:
+					- Stores references to open files and their associated file control blocks.
+				- **Priority and Scheduling Information**:
+					- Contains information about the process's priority, scheduling algorithm, and any time-related data for scheduling.
+				- **Security Information**:
+					- May include information related to process permissions, access control, and security attributes.
+				- **Exit Status**:
+					- Records the exit status or exit code of the process when it terminates
 - Reasons for process creation
-	- **New batch job**: 
+	- **New batch job**:
 		- Processes are created to execute a new batch job or task in batch processing systems, where multiple jobs are run sequentially.
-	- **Interactive logon**: 
+	- **Interactive logon**:
 		- When a user logs into a computer system, an interactive process is created to facilitate user interaction and run user-specific tasks.
-	- **Created by OS to provide a service**: 
+	- **Created by OS to provide a service**:
 		- The operating system creates processes to offer various services like printing, network services, or background tasks (daemons) that serve system-level functions.
-	- **Spawned by the existing process**: 
+	- **Spawned by the existing process**:
 		- Existing processes can create child processes or spawn new processes to perform parallel or related tasks, enabling multitasking and efficient resource utilization.
 - Process Creation
+	- `Investigate why i left this open like this`
 - Process Termination
 	- **Normal Termination**:
 	    - The process has completed its execution and exits gracefully.
@@ -529,21 +528,21 @@ Recap:
 	- Trace
 		- The code of the process
 	- Dispatcher
-		- A process itself responsible for 
+		- A process itself responsible for
 - Process State Models
 	- 2 State model
 		- ![](Pasted%20image%2020230912151828.png)
-		- 
-	- 5 State model 
+		-
+	- 5 State model
 		- ![](Pasted%20image%2020230912151924.png)
-		- 
+		-
 	- 6 State model
 		- ![](Pasted%20image%2020230912152003.png)
-
 
 <!--most of the rec is just revision-->
 
 ### Process - OS Interaction
+
 - At any processor is executing instructions from application/OS
 - CPU knows when to switch
 	- Mode Switch
@@ -552,17 +551,19 @@ Recap:
 		- One process leaves the running state and the other enters the running state
 
 ### Mode Switching
+
 ### System Interrupt, Call, Trap
 
 ### Process Switching
 
 ### System Data Structures
+
 process tables
 memory tables
 i/o tables
 
-
 ---
+
 ## UNIX SVR4 Process management 3.6
 
 ## Process states
@@ -587,13 +588,13 @@ i/o tables
 ### State Transitions
 
 1. **Running (R):**
-    - A process is actively executing on the CPU. 
-    - Can be Kernel Running/User Running 
+    - A process is actively executing on the CPU.
+    - Can be Kernel Running/User Running
     - Transition to:
         - Blocked (B) when it needs to wait for an event, such as I/O, to complete.
         - Ready (S) when it's preempted by the scheduler or its time slice expires.
 2. **Ready (S):**
-    - The process is ready to run but waiting for CPU time. 
+    - The process is ready to run but waiting for CPU time.
     - It is also known as **Ready To Run, in Memory**
     - Transition to:
         - Running (R) when the scheduler selects it for execution.
@@ -691,39 +692,41 @@ i/o tables
 ## Unix U (User) Area. ignore this
 
 ## Process Control
+
 ## Process Creation
+
 play w fork
 
-
-
 ---
-# Chapter 4
----
+
 # Uniprocessor Scheduling Chapter 9
+
 ### Types of Scheduling
+
 - Long-term Scheduling:
-	- It selects processes from the job queue and loads them into the ready queue for execution. 
+	- It selects processes from the job queue and loads them into the ready queue for execution.
 	- These are processes that are ready to be executed and are waiting for the CPU.
 	- A **New** Process is transitioned to **Ready** or **Ready/Suspend** here
-- Medium-term Scheduling: 
-	- It involves swapping processes in and out of main memory (RAM) and secondary storage (like a hard disk). 
+- Medium-term Scheduling:
+	- It involves swapping processes in and out of main memory (RAM) and secondary storage (like a hard disk).
 	- This is often done to manage memory efficiently.
 	- Transition from **Running/Suspend** or **Blocked/Suspend** to **Running/Blocked** is done by medium
-- Short-term Scheduling: 
-	- Also known as CPU scheduling, it selects the next process from the ready queue and assigns the CPU to that process for a short time slice (time-sharing). 
+- Short-term Scheduling:
+	- Also known as CPU scheduling, it selects the next process from the ready queue and assigns the CPU to that process for a short time slice (time-sharing).
 	- It determines which process gets CPU time.
 	- Transitions a process from **Ready** to **Running**
 		- **Blocked** does not count as it is just an I/O wait
-- I/O Scheduling: 
-	- It manages the input/output requests from processes. 
+- I/O Scheduling:
+	- It manages the input/output requests from processes.
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
 <!--Use rec-->
-
 
 # Chapter 9: Uniprocessor Scheduling cont.
 
 ### Short term Scheduling Criteria
+
 Main objective is to allocate processor time to optimize certain aspects of system behaviors
+
 - User Oriented Criteria
     - Performance-Related
         - Turnaround time: The time it takes for a system to process a user's request and provide a response.
@@ -739,69 +742,76 @@ Main objective is to allocate processor time to optimize certain aspects of syst
         - Fairness: Ensuring that system resources are allocated fairly among users or processes.
         - Enforcing Priorities: Managing the priority of tasks or processes to ensure critical operations are completed first.
         - Balancing Resources: Distributing system resources effectively to prevent bottlenecks and maximize overall performance.
+
 ## Priorities
+
 - Level assigned to an individual process/task running within a computer system
 	- Determines the order in which processes are run within the system
 - Unix and Windows handle priorities differently
 	- Unix (Default used unless mentioned)
 		- 1->N with 1 being the highest priority
 	- Windows
-		- N->1 with N being the highest priority 
+		- N->1 with N being the highest priority
 
 ### Priority Queues
+
 - Ready queues are now made in order of priority
 	- Dispatcher goes up in order of highest priority to lower queues until all processes from current queue processes are running
 - Limitation
 	- Lower priority processes are starved of processor time as the higher priority processes will take it all up
 
 #### Selection Functions
+
 - Two Types
 	- Preemptive
 		- Can be interrupted
-		- Time based uses Quantum(q) 
+		- Time based uses Quantum(q)
 			- Time quantum greater than typical interaction
 			- Time quantum less than typical interaction
 	- Non-Preemptive
 		- C `Fill in from slides`
 
-
 ## Alternative Scheduling Policies
+
 **FCFS (First-Come-First-Serve):**
-- Selection Function: 
-	- Non-Preemptive 
+
+- Selection Function:
+	- Non-Preemptive
 	- FCFS selects processes in the order they arrive in the ready queue. It uses a simple queuing mechanism.
-- Decision Mode: 
+- Decision Mode:
 	- In FCFS, the decision mode is deterministic as it follows a fixed order of execution based on arrival time.
-- Throughput: 
+- Throughput:
 	- FCFS has relatively low throughput because it may lead to process waiting times if a long process arrives first.
-- Response Time: 
+- Response Time:
 	- Response time can be high for processes that arrive later as they have to wait for earlier processes to complete.
-- Overhead: 
+- Overhead:
 	- FCFS has minimal overhead as it doesn't require complex decision-making or priority calculations.
-- Effect on Processes: 
+- Effect on Processes:
 	- FCFS can result in process waiting times, especially if a long process arrives first, potentially impacting overall efficiency.
-- Starvation: 
+- Starvation:
 	- FCFS is susceptible to starvation, where a low-priority process might wait indefinitely behind high-priority processes.
 
 **Round Robin (RR):**
-- Selection Function: 
+
+- Selection Function:
 	- Preemptive
 	- Round Robin uses a circular queue and selects processes in a cyclical order, allocating a fixed time quantum to each.
-- Decision Mode: 
+- Decision Mode:
 	- RR is time-sliced, and processes are scheduled based on time slices.
-- Throughput: 
+- Throughput:
 	- RR offers better throughput compared to FCFS, as it ensures fairness and prevents long waiting times.
-- Response Time: 
+- Response Time:
 	- Response time is generally good for short processes as they get frequent chances to execute.
-- Overhead: 
+- Overhead:
 	- RR has a moderate overhead due to context switching when the time quantum expires.
-- Effect on Processes: 
+- Effect on Processes:
 	- RR is fair to all processes and prevents any process from monopolizing the CPU.
-- Starvation: 
+- Starvation:
 	RR minimizes the risk of starvation as each process gets a turn.
 
 **SPN (Shortest Process Next):**
-- Selection Function: 
+
+- Selection Function:
 	- Non-Preemptive
 	- SPN selects the process with the shortest expected processing time next.
 		- Guesses a process expected time and uses it later on as well, does so by computing via a method known as **Exponential averaging**
@@ -809,18 +819,19 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 		- `Add in equation 9.2 from book`
 - Decision Mode:
 	- It uses a non-preemptive approach and selects the process with the shortest expected runtime.
-- Throughput: 
+- Throughput:
 	- SPN aims for high throughput by prioritizing short tasks first.
-- Response Time: 
+- Response Time:
 	- Response time is good for short tasks, but longer tasks might wait a long time.
-- Overhead: 
+- Overhead:
 	- SPN has a low overhead as it requires minimal context switching.
-- Effect on Processes: 
+- Effect on Processes:
 	- Short processes are favored, and long processes may experience significant waiting times.
-- Starvation: 
+- Starvation:
 	- SPN can lead to starvation for longer processes if many short tasks keep arriving.
 
 **SRT (Shortest Remaining Time):**
+
 - Selection Function: SRT is a preemptive version of SPN, selecting the process with the shortest remaining time to complete.
 	- Calculates on arrival however
 - Decision Mode: It dynamically reevaluates and selects the process with the shortest remaining time whenever a new process arrives or a running process finishes.
@@ -831,6 +842,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: SRT can lead to starvation for longer processes if many short tasks keep arriving frequently.
 
 **HRRN (Highest Response Ratio Next):**
+
 - Selection Function: HRRN calculates the response ratio for each process and selects the one with the highest ratio.
 - Decision Mode: It uses a non-preemptive approach based on response ratios.
 - Throughput: HRRN aims for high throughput by considering both waiting time and estimated remaining time.
@@ -840,6 +852,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: HRRN minimizes the risk of starvation by considering waiting times.
 
 **Feedback:**
+
 - Selection Function: Feedback scheduling uses multiple queues with different priorities, and processes are selected based on their current priority level. Lower priority queues are checked before higher priority ones.
 - Decision Mode: It employs a dynamic priority scheme where processes can move between different priority queues based on their behavior and execution history. Processes that haven't received CPU time for a while are promoted to higher-priority queues.
 - Throughput: Feedback scheduling aims to balance both fairness and responsiveness. It ensures that processes waiting for a long time get a chance to execute, improving overall throughput.
