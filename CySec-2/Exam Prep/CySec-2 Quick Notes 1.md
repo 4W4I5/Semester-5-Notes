@@ -425,7 +425,11 @@ Started lecture 3 slides
 ### TCP SEQ & ACK numbers
 
 ### TCP Flags
-
+Small overview on what flag does what
+- SYN
+- ACK
+- FIN
+- RST
 ### TCP Attacks
 - Syn flooding
 	- sending too many SYN packets for the server to handle
