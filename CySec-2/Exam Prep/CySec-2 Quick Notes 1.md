@@ -1,9 +1,9 @@
-
 | Chapter                                                                                | Status                  |
 | -------------------------------------------------------------------------------------- | ----------------------- |
 | [Lecture 1: Introduction To Security](#Lecture-1-Introduction-To-Security)                                | :x: |
 | [Lecture 2: DNS Attacks](#Lecture-2-DNS-Attacks)                                  | :x: |
 | [Lecture 3: TCP Attacks](#Lecture-3-TCP-Attacks) | :x:                     |
+
 <!--
 :white_check_mark:
 :x:
@@ -19,7 +19,7 @@
 	- Ensure that protective measures are properly implemented to ward off attack and prevent the total collapse of the system when a successful attack occurs
 	- Protect data in transit is the aspect covered in this course
 
-#### Difficulties in defending against attacks
+### Difficulties in defending against attacks
 
 - Universally connected devices
 	- Expansion in IoT
@@ -116,10 +116,12 @@
 		- Deterrence: Understanding the attacker and then informing them of the consequences
 		- Transference: Transfer the risk to a 3rd party
 [Case Study - HeartBleed Exploit](/CySec-2/Case%20Studies/Case%20Study%20-%20HeartBleed%20Exploit.md)
-[Case Study - Pegasus Spyware](/CySec-2/Case%20Studies/Case%20Study%20-%20Pegasus%20Spyware.md)
+[Case Study - Pegasus Spyware](Case%20Study%20-%20Pegasus%20Spyware.md)
 
-## Advanced Persistent Threats (APT) 
+## Advanced Persistent Threats (APT)
+
 `Note these were made using chatGPT so bear w some inaccuraices for now`
+
 ## Sophistication
 - **Advanced Techniques:** APTs utilize cutting-edge attack methods that are beyond typical cybercriminal capabilities. They might employ zero-day exploits, persistence, custom malware, and complex attack chains.
 - **Custom Malware:** Attackers create tailored malware specifically designed to evade detection by traditional security measures. This makes it difficult for antivirus software to identify and mitigate the threat.
@@ -141,11 +143,13 @@
 ---
 
 ## Cyber APT Kill Chain
+
 `Look into THM for more indepth info on killchain`
+
 > [Cyber Kill Chain TryHackMe. Reconnaissance | by Avataris12 | Medium](https://medium.com/@WriteupsTHM_HTB_CTF/cyber-kill-chain-tryhackme-7025c0662696)
-#### 1. **Reconnaissance**
+### 1. **Reconnaissance**
 - Probe for information about the target system: type of hardware or software used, harvest public information, conduct in-depth research, and search for weak points in a company’s network.
-- **Activities:** 
+- **Activities:**
 	- Domain scanning
 	- OSINT collection
 	- Social engineering such as Email Harvesting.
@@ -153,24 +157,24 @@
 		- Hunter.io - email hunting tool
 		- OSINT Framework - collection of OSINT Tools
 
-#### 2. **Weaponization**
+### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
-- **Activities:** 
+- **Activities:**
 	- The attacker would create a payload, a malicious code that they would run on the system or use an exploit, a program/code that takes advantage of a vulnerability/flaw in the system
 	- They would also choose C2 (Command & Control techniques)
 	- They would also possibly implant a backdoor, a mechanism to achieve persistence should they lose access
 
-#### 3. **Delivery**
+### 3. **Delivery**
 - Attackers decide on the delivery method. There are plenty of options to choose from.
-- **Activities:** 
+- **Activities:**
 	- Sending malicious emails
 	- Exploiting vulnerabilities
-	- Distributing Infected USB drives, 
+	- Distributing Infected USB drives,
 	- Watering Hole Attack, an attack designed to compromise a group of users by infecting websites they typically visit and luring them to a malicious site
 
-#### 4. **Exploitation**
+### 4. **Exploitation**
 - Attackers leverage vulnerabilities to execute the malicious code on the target system.
-- **Activities:** 
+- **Activities:**
 	- Gaining unauthorized access, bad configs, privilege escalation, executing malicious code, Letting users click on a link that leads to website that downloads and executes said code.
 	- Examples:
 		- 0-Day
@@ -181,55 +185,55 @@
 		- SQL Injection
 		- Remote Code Execution
 
-#### 5. **Installation**
+### 5. **Installation**
 - Attackers install persistent mechanisms to maintain control over the compromised system.
-- **Activities:** 
+- **Activities:**
 	- Installing backdoors, creating user accounts, establishing command and control channels.
 
-#### 6. **Command and Control (C2)**
+### 6. **Command and Control (C2)**
 - Attackers establish a communication channel to control the compromised system.
-- **Activities:** 
+- **Activities:**
 	- Setting up remote access, using encrypted communication, establishing communication protocols.
 
-#### 7. **Execution**
+### 7. **Execution**
 - Attackers perform malicious actions on the compromised system.
-- **Activities:** 
+- **Activities:**
 	- **Persistence**
 		- Attackers ensure their access to the system remains even after reboots.
-		- **Activities:** 
+		- **Activities:**
 			- Modifying startup scripts, creating scheduled tasks, hiding in system components.
 	- **Privilege Escalation**
 		- Attackers increase their level of control and access within the target environment.
-		- **Activities:** 
+		- **Activities:**
 			- Exploiting misconfigurations, leveraging software vulnerabilities, manipulating access controls.
 	- **Defense Evasion**
 		- Attackers employ techniques to avoid detection by security measures.
-		- **Activities:** 
+		- **Activities:**
 			- Anti-virus evasion, using encrypted communication, disguising malicious files.
 	- **Credential Theft**
 		- Attackers gather authentication credentials to gain unauthorized access.
-		- **Activities:** 
+		- **Activities:**
 			- Keylogging, pass-the-hash attacks, brute-forcing passwords.
 	- **Discovery**
 		- Attackers explore the target environment to identify critical assets and data.
-		- **Activities:** 
+		- **Activities:**
 			- Network scanning, system enumeration, identifying valuable data repositories.
 	- **Lateral Movement**
 		- Attackers move laterally within the network to access different systems.
-		- **Activities:** 
+		- **Activities:**
 			- Exploiting trust relationships, using stolen credentials, leveraging lateral vulnerabilities.
 	- **Data Exfiltration**
 		- Attackers steal sensitive data from the target environment.
-		- **Activities:** 
+		- **Activities:**
 			- Transferring files, compressing data, disguising data within legitimate traffic.
 	- **Impact**
 		- Attackers execute their primary objectives, causing damage to the target organization.
-		- **Activities:** 
+		- **Activities:**
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
 
 # Carbanak APT Case Study
-[Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
 
+[Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
 
 ---
 # Lecture 2: DNS Attacks
@@ -253,7 +257,7 @@
 			- source IP = 1.1.1.254/24
 			- destination IP = 255.255.255.255 (offer is also broadcast to all)
 			- Server sends available IP addresses and options
-		- DHCP request 
+		- DHCP request
 			- Requests IP from server after selecting from options
 			- Basically check if the network has that IP already assigned by using the offered IP and ARP broadcasting
 		- DHCP ACK
@@ -281,11 +285,13 @@
 		- Network Monitoring
 
 ## URL (Uniform Resource Locator)
+
 `Used ChatGPT for this`
- - ### **Definition**: 
+
+ - ### **Definition**:
 	 - A URI (Uniform Resource Identifier) is a string of characters that uniquely identifies a particular resource, either on the internet or in other contexts.
 - ### **Types of URIs**:
-    - #### **URL (Uniform Resource Locator)**: 
+    - #### **URL (Uniform Resource Locator)**:
 	    - A specific type of URI that provides the means to locate a resource on the web. URLs include the protocol (e.g., http://), domain, and path.
 	    - **Components**:
 		    - **Protocol**: Specifies how the resource should be accessed, such as HTTP, HTTPS, FTP, etc.
@@ -302,33 +308,35 @@
 		- **Path**: /path/to/resource
 		- **Query**: ?param=value
 		- **Fragment**:  '#section'
-	- **Purpose**: 
+	- **Purpose**:
 		- URLs are used to uniquely identify and locate web resources, including web pages, images, documents, and more.
 	- **Format Rules**:
 	    - Should not contain spaces or special characters (use URL encoding).
 	    - Use lowercase letters for protocol and domain (although it's case-insensitive).
-	- **Encoding**: 
+	- **Encoding**:
 		- Special characters in URLs are encoded using percent-encoding (e.g., space becomes %20).
-	- **Security**: 
+	- **Security**:
 		- URLs with "https" are secure, as they use SSL/TLS encryption for data transmission.
-	- **Relative vs. Absolute URLs**: 
+	- **Relative vs. Absolute URLs**:
 		- Relative URLs are based on the current page's URL, while absolute URLs specify the full path.
-    - #### **URN (Uniform Resource Name)**: 
+    - #### **URN (Uniform Resource Name)**:
 	    - Another type of URI that is used to identify resources by name in a particular namespace. URNs are intended to be persistent and location-independent.
 - ### **Examples**:
     - **URL**: [https://www.example.com/resource/page.html](https://www.example.com/resource/page.html)
     - **URN**: urn:isbn:0451450523 (identifying a book by ISBN)
-- ### **Purpose**: 
+- ### **Purpose**:
 	- URIs are used to uniquely identify and access resources, whether they are web pages, documents, or other entities.
-- ### **Components**: 
+- ### **Components**:
 	- URIs typically consist of:
 		- **Scheme**: Specifies the type of URI (e.g., http, urn).
 		- **Authority**: Often includes domain or address information.
 		- **Path**: Identifies the specific resource within the scheme's context.
-- ### **URI vs. URL**: 
+- ### **URI vs. URL**:
 	- While URIs are a broader concept that includes both URLs and URNs, URLs are a specific type of URI that provides both identification and location information.
 ---
+
 `add in stuff about a pathway after setting  up a fresh dns server w no cahce loaded`
+
 >NOTE:: Labwork took most of the time this is just extra info
 
 1. **Basic Configuration**:
@@ -376,25 +384,26 @@
 ### DNS Security
 - DOS/DDOS
 - Hijacking DNS
-	- Threat Model and Attacker Goals 
+	- Threat Model and Attacker Goals
 	- Doesnt work now due to Bailiwick Checking, contextual updates only
 - Kaminisky Exploit
 	- PreReq is that local nameserver must not have the original website cached
 ---
+
 `Add notes on Cache poisoning Version 2`
 
 ---
 # Lecture 3: TCP Attacks
 
 
-- ### TCP 
+- ### TCP
 	- Goal is to ensure reliability
 		- Packets are delivered in order and unmodified
 		- If packets are lost they are retransmitted
 
 Started lecture 3 slides
 
-### TCP Sequence numbers
+## TCP Sequence numbers
 
 - Unreliable in terms of security `Dont add much info for this`
 
@@ -422,18 +431,17 @@ Started lecture 3 slides
 	- sending too many SYN packets for the server to handle
 	- Denial of service attack usually through sending SYN via multiple different IP
 	- Prevention
-		- Only create state after ACK is received 
+		- Only create state after ACK is received
 		- SYN Cookies
-			- 
+			-
 	- Issue if spoofed ip is used
 		- Person through which the spoofing is done, might delete their local state
 			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
 
-
 TCP attacks continued
 
-
 ### Injection Attacks
+
 [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---
