@@ -32,7 +32,7 @@ Notes sponsored by chatGPT ;)
 | Week 3      | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)         | Incomplete  | DNS query and weaknesses                                           |
 | Week 4      | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md)       | Incomplete  | DNS Cache poisoning version 2                                      |
 | Week 4      | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md)       | Incomplete  | TCP stuff                                                          |
-| Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)       | Incomplete  |                                                                    |
+| Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)       | Incomplete  | TCP Mitnick Attack + Started CH6                                                             |
 | Week 5      | 21 Sept                                                     | N/A         | pfSense Lab setup DHCP, DNS, Rules                                 |
 | Sessional-1 | [25 Sept](CySec2/Exam%20Prep/CySec2%20Quick%20Notes%201.md) | In progress | Prep material for Sessional 1                                                                   |
 
