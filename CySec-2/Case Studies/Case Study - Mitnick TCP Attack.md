@@ -15,7 +15,7 @@
 
 - Attack Name: TCP Session Hijacking
 - Attack Motive:
-	- Create a TCP Connection between hosts A and B on their behalf and naturally hijack it
+	- Forge a TCP Connection between hosts A and B on their behalf and naturally hijack it
 - Attack Method: 
 	- Step1: Predict Sequence Number by initiating half-open connections and figuring out the pattern
 	- Step2: Take down hostB via a SYN Flood as any attempt to SYN on hostA's behalf would end up sending the SYN-ACK to hostA and not Mitnick's PC therefore sending a RST Packet to terminate the connection
