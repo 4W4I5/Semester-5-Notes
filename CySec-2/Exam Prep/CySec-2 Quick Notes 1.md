@@ -427,9 +427,26 @@ Started lecture 3 slides
 ### TCP Flags
 Small overview on what flag does what
 - SYN
+	- Indicates start of a connection
+	- Sender sends an Inital Service Number (ISN)
+	- Reciever sends their ISN via a SYN-ACK
 - ACK
+	- Send to acknowledge the successful receipt of data
+	- Also contains the next expected sequence number
 - FIN
+	- Signal end of connection from both sides
+	- ACK to acknowledge the packet is recieved
+	- FIN-ACK is sent back to init a conncetion closure from sender side too 
+	- This is also ACK'ed back and the connection is considered closed by both parties
 - RST
+	- Forcefully terminate a connection without the 4-way FIN handshake
+	- Clears the state of the connection immediately
+	- Could also mean an error with the connection
+- Extra Flags (Not covered in the course but good to know)
+	- URG
+		- URGENTLY process the data pointed to by the urg pointer, used for real-time applications
+	- PSH
+		- PuSH to the application layer as soon as possible, used for real-time applications
 ### TCP Attacks
 - Syn flooding
 	- sending too many SYN packets for the server to handle
