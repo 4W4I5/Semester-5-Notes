@@ -415,7 +415,9 @@
 > [!NOTE]
 > Skipped TCP handshake, seq and ack numbers as they're covered in TCP Flags
 ### TCP Flags
+
 Small overview on what flag does what
+
 - Each flag is 6 bits in the TCP Header
 - SYN
 	- Indicates start of a connection
@@ -427,7 +429,7 @@ Small overview on what flag does what
 - FIN
 	- Signal end of connection from both sides
 	- ACK to acknowledge the packet is recieved
-	- FIN-ACK is sent back to init a conncetion closure from sender side too 
+	- FIN-ACK is sent back to init a conncetion closure from sender side too
 	- This is also ACK'ed back and the connection is considered closed by both parties
 - RST
 	- Forcefully terminate a connection without the 4-way FIN handshake
@@ -450,12 +452,12 @@ Small overview on what flag does what
 		- Person through which the spoofing is done, might delete their local state
 			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
 
-## TCP Attacks
-##### SYN Flood
-##### SYN Cookie
-
-##### Session Hijacking (Mitnick Edition)
-Kevin Mitnick was able to predict ISNs and hijack a TCP connection between a trusted server and his target application
-- [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
+## TCP Handshake and ISN Exploit
+- #### TCP Handshake
+	- ##### SYN Flood
+	- ##### SYN Cookie
+- ##### Session Hijacking (Mitnick Edition)
+	- Kevin Mitnick was able to predict ISNs and hijack a TCP connection between a trusted server and his target application
+	- [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---
