@@ -1,8 +1,8 @@
-| Chapter                                                                                | Status                  |
-| -------------------------------------------------------------------------------------- | ----------------------- |
-| [Lecture 1: Introduction To Security](#Lecture-1-Introduction-To-Security)                                | :x: |
-| [Lecture 2: DNS Attacks](#Lecture-2-DNS-Attacks)                                  | :x: |
-| [Lecture 3: TCP Attacks](#Lecture-3-TCP-Attacks) | :x:                     |
+| Chapter                                                                    | Status             |
+| -------------------------------------------------------------------------- | ------------------ |
+| [Lecture 1: Introduction To Security](#Lecture-1-Introduction-To-Security) | :white_check_mark:                |
+| [Lecture 2: DNS Attacks](#Lecture-2-DNS-Attacks)                           | :x:                |
+| [Lecture 3: TCP Attacks](#Lecture-3-TCP-Attacks)                           | :white_check_mark: |
 
 <!--
 :white_check_mark:
