@@ -1,5 +1,5 @@
 > [!WARNING]
-> Keep in mind this is all content that was covered in class **BEFORE ** sessional 1, however the paper will have a more practical oriented approach
+> Keep in mind this is all content that was covered in class with theory in mind, however the paper will have a more practical oriented approach
 
 | Chapter                                                                                | Status                  |
 | -------------------------------------------------------------------------------------- | ----------------------- |
