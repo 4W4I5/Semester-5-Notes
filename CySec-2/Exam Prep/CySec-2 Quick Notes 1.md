@@ -156,14 +156,12 @@
 		- theHarvester - capable of gathering names, subdomain IPs and URL besides email
 		- Hunter.io - email hunting tool
 		- OSINT Framework - collection of OSINT Tools
-
 ### 2. **Weaponization**
 - Attackers create a malicious payload(automated tool) and pair it with a delivery mechanism that disguises it as a legitimate software update or document.
 - **Activities:**
 	- The attacker would create a payload, a malicious code that they would run on the system or use an exploit, a program/code that takes advantage of a vulnerability/flaw in the system
 	- They would also choose C2 (Command & Control techniques)
 	- They would also possibly implant a backdoor, a mechanism to achieve persistence should they lose access
-
 ### 3. **Delivery**
 - Attackers decide on the delivery method. There are plenty of options to choose from.
 - **Activities:**
@@ -171,7 +169,6 @@
 	- Exploiting vulnerabilities
 	- Distributing Infected USB drives,
 	- Watering Hole Attack, an attack designed to compromise a group of users by infecting websites they typically visit and luring them to a malicious site
-
 ### 4. **Exploitation**
 - Attackers leverage vulnerabilities to execute the malicious code on the target system.
 - **Activities:**
@@ -184,17 +181,14 @@
 		- Malicious Code Execution
 		- SQL Injection
 		- Remote Code Execution
-
 ### 5. **Installation**
 - Attackers install persistent mechanisms to maintain control over the compromised system.
 - **Activities:**
 	- Installing backdoors, creating user accounts, establishing command and control channels.
-
 ### 6. **Command and Control (C2)**
 - Attackers establish a communication channel to control the compromised system.
 - **Activities:**
 	- Setting up remote access, using encrypted communication, establishing communication protocols.
-
 ### 7. **Execution**
 - Attackers perform malicious actions on the compromised system.
 - **Activities:**
@@ -230,7 +224,6 @@
 		- Attackers execute their primary objectives, causing damage to the target organization.
 		- **Activities:**
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
-
 # Carbanak APT Case Study
 
 [Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
@@ -440,22 +433,20 @@ Small overview on what flag does what
 		- URGENTLY process the data pointed to by the urg pointer, used for real-time applications
 	- PSH
 		- PuSH to the application layer as soon as possible, used for real-time applications
-## TCP Attacks
-- Syn flooding
-	- sending too many SYN packets for the server to handle
-	- Denial of service attack usually through sending SYN via multiple different IP
-	- Prevention
-		- Only create state after ACK is received
-		- SYN Cookies
-			-
-	- Issue if spoofed ip is used
-		- Person through which the spoofing is done, might delete their local state
-			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
-
 ## TCP Handshake and ISN Exploit
 - #### TCP Handshake
 	- ##### SYN Flood
+		- **Excessive SYN Packets**: In a SYN flood attack, an attacker sends a massive number of SYN packets to the target server, typically from spoofed IP addresses.
+		- **Resource Allocation**: The server, upon receiving each SYN packet, allocates resources and prepares to complete the three-way handshake by sending a SYN-ACK.
+		- **Half-Open Connections**: However, the attacker doesn't respond with ACK packets to complete the handshake. Instead, they leave the connections in a half-open state, with the server waiting for acknowledgments that never arrive.
+		- **Resource Exhaustion**: As the attacker continues to flood the server with SYN packets, it quickly exhausts its resources, including memory, CPU, and network bandwidth, to handle these half-open connections.
+		- **Service Disruption**: Legitimate users attempting to establish connections with the server may experience significant delays or be unable to connect, as the server's resources are tied up dealing with the flood of half-open connections.
 	- ##### SYN Cookie
+		- **Initial SYN**: When a server receives an initial SYN packet from a client during the three-way handshake, it generates a SYN cookie.
+		- **SYN-ACK with Cookie**: Instead of allocating resources and holding open a half-open connection, the server sends a SYN-ACK packet back to the client, but this SYN-ACK contains a SYN cookie.
+		- **Client Acknowledgment**: The client, upon receiving the SYN-ACK with the SYN cookie, sends an ACK packet with the cookie back to the server.
+		- **Cookie Verification**: The server uses the received cookie to verify the connection request. If the cookie is valid and corresponds to a legitimate request, the server establishes the connection without holding open any additional resources.
+		- **Resource Conservation**: If the server determines that the SYN cookie is invalid or expired, it discards the connection attempt. This ensures that the server doesn't waste resources on malicious or incomplete connections.
 - ##### Session Hijacking (Mitnick Edition)
 	- Kevin Mitnick was able to predict ISNs and hijack a TCP connection between a trusted server and his target application
 	- [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
