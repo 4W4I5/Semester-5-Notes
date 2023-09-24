@@ -34,7 +34,7 @@ Notes sponsored by chatGPT ;)
 | Week 4      | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md)       | Incomplete  | TCP stuff                                                          |
 | Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)       | Incomplete  | TCP Mitnick Attack + Started CH6                                                             |
 | Week 5      | 21 Sept                                                     | N/A         | pfSense Lab setup DHCP, DNS, Rules                                 |
-| Sessional-1 | [25 Sept](CySec2/Exam%20Prep/CySec2%20Quick%20Notes%201.md) | In progress | Prep material for Sessional 1                                                                   |
+| Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | In progress | Prep material for Sessional 1                                                                   |
 
 ## DB
 

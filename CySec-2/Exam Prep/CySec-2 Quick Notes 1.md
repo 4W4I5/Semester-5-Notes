@@ -434,8 +434,6 @@ TCP attacks continued
 
 
 ### Injection Attacks
-- AKA Mitnick Attack
-	-  `Fill in Case Study: MITNICK Attack `
-	- Included in exam
+[Case Study - Mitnick TCP Attack](Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---
