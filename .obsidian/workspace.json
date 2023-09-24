@@ -33,7 +33,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -188,9 +188,10 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "c2c5fcfadb04e061",
+  "active": "d085009bbc463321",
   "lastOpenFiles": [
     "README.md",
+    "OS/Exam Prep/OS Quick Notes 1.md",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
     "CySec-2/Case Studies/Case Study - Mitnick TCP Attack.md",
     "CySec-2/Exam Prep",
@@ -204,7 +205,6 @@
     "CySec-2/CySec2 29 August, 2023.md",
     "CySec-2/CySec2 24 August, 2023.md",
     "CySec-2/CySec2 22 August, 2023.md",
-    "OS/Exam Prep/OS Quick Notes 1.md",
     "CySec2/Exam Prep",
     "CySec2",
     "OS/OS 29 August, 2023.md",

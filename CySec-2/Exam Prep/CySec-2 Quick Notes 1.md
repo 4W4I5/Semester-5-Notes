@@ -394,21 +394,17 @@
 
 ---
 # Lecture 3: TCP Attacks
-
-
-- ### TCP
+- ## TCP
 	- Goal is to ensure reliability
 		- Packets are delivered in order and unmodified
 		- If packets are lost they are retransmitted
-
-Started lecture 3 slides
-
-## TCP Sequence numbers
-
-- Unreliable in terms of security `Dont add much info for this`
-
+	- IP's are associated with devices and PORTs are associated with OS processes
+	- Connection Identifier (16-bit for each)
+		- srcIP
+		- srcPORT
+		- dstIP
+		- dstPORT
 ## TCP Bytestream service
-
 - The applications do **NOT** see:
 	- Packet boundaries
 	- Retransmissions
@@ -416,15 +412,8 @@ Started lecture 3 slides
 	- Buffer out of order packets
 	- Wait for retransmitted first packet
 
-### TCP Handshake
-
-- Used for establishing connection
-	- Client sends SYN
-	- Server sends SYN-ACK
-	- Client sends ACK
-### TCP SEQ & ACK numbers
-if you need to study this what are you even doing here
-
+> [!NOTE]
+> Skipped TCP handshake, seq and ack numbers as they're covered in TCP Flags
 ### TCP Flags
 Small overview on what flag does what
 - Each flag is 6 bits in the TCP Header
@@ -449,7 +438,7 @@ Small overview on what flag does what
 		- URGENTLY process the data pointed to by the urg pointer, used for real-time applications
 	- PSH
 		- PuSH to the application layer as soon as possible, used for real-time applications
-### TCP Attacks
+## TCP Attacks
 - Syn flooding
 	- sending too many SYN packets for the server to handle
 	- Denial of service attack usually through sending SYN via multiple different IP
@@ -461,6 +450,12 @@ Small overview on what flag does what
 		- Person through which the spoofing is done, might delete their local state
 			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
 
-[Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
+## TCP Attacks
+##### SYN Flood
+##### SYN Cookie
+
+##### Session Hijacking (Mitnick Edition)
+Kevin Mitnick was able to predict ISNs and hijack a TCP connection between a trusted server and his target application
+- [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---

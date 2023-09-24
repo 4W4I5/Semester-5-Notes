@@ -17,9 +17,12 @@
 - Attack Motive:
 	- Forge a TCP Connection between hosts A and B on their behalf and naturally hijack it
 - Attack Method: 
-	- Step1: Predict Sequence Number by initiating half-open connections and figuring out the pattern
-	- Step2: Take down hostB via a SYN Flood as any attempt to SYN on hostA's behalf would end up sending the SYN-ACK to hostA and not Mitnick's PC therefore sending a RST Packet to terminate the connection
-	- Step3: With the original hostB down, an ACK to the SYN-ACK cannot be sent and so the ACK was also guessed from the spoofing done in step1 and therefore the session was hijacked fully allowing Mitnick to use the connection b/w hostA and hostB to access X-Terminal
+	- Step1: 
+		- Predict Sequence Number by initiating half-open connections and figuring out the pattern of what ISN is used in the SYN-ACK packet
+	- Step2: 
+		- Take down hostB via a SYN Flood as any attempt to SYN on hostA's behalf would end up sending the SYN-ACK to hostA and not Mitnick's PC therefore sending a RST Packet to terminate the connection
+	- Step3: 
+		- With the original hostB down, an ACK to the SYN-ACK cannot be sent and so the ACK was also guessed from the spoofing done in step1 and therefore the session was hijacked fully allowing Mitnick to use the connection b/w hostA and hostB to access X-Terminal
 ## Legacy
 - The Mitnick case remains a landmark in the history of cybersecurity, highlighting the importance of securing computer systems against hackers.
 - It serves as a cautionary tale about the consequences of engaging in illegal hacking activities.
