@@ -11,7 +11,7 @@
 - He progressed to computer hacking, targeting various systems, including IBM and DEC.
 - Mitnick's hacking skills allowed him to gain unauthorized access to sensitive data.
 
-## TCP/IP Spoofing and Attacks:
+## Attack:
 
 - Attack Name: TCP Session Hijacking
 - Attack Motive:
