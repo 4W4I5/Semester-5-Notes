@@ -426,7 +426,7 @@ Started lecture 3 slides
 
 ### TCP Flags
 
-### TCP Attacksp
+### TCP Attacks
 - Syn flooding
 	- sending too many SYN packets for the server to handle
 	- Denial of service attack usually through sending SYN via multiple different IP
@@ -437,8 +437,6 @@ Started lecture 3 slides
 	- Issue if spoofed ip is used
 		- Person through which the spoofing is done, might delete their local state
 			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
-
-TCP attacks continued
 
 ### Injection Attacks
 
