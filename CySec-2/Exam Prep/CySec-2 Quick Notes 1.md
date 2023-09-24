@@ -423,9 +423,11 @@ Started lecture 3 slides
 	- Server sends SYN-ACK
 	- Client sends ACK
 ### TCP SEQ & ACK numbers
+if you need to study this what are you even doing here
 
 ### TCP Flags
 Small overview on what flag does what
+- Each flag is 6 bits in the TCP Header
 - SYN
 	- Indicates start of a connection
 	- Sender sends an Inital Service Number (ISN)
