@@ -438,8 +438,6 @@ Started lecture 3 slides
 		- Person through which the spoofing is done, might delete their local state
 			- A random ACK will trigger the RST flag to be sent in response`Pattern is wrong, check online`
 
-### Injection Attacks
-
 [Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---
