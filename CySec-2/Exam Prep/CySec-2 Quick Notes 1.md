@@ -434,6 +434,6 @@ TCP attacks continued
 
 
 ### Injection Attacks
-[Case Study - Mitnick TCP Attack](Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
+[Case Study - Mitnick TCP Attack](/CySec-2/Case%20Studies/Case%20Study%20-%20Mitnick%20TCP%20Attack.md)
 
 ---
