@@ -115,8 +115,8 @@
 		- Risk mitigation: Address the risks to reduce the severity of the risks
 		- Deterrence: Understanding the attacker and then informing them of the consequences
 		- Transference: Transfer the risk to a 3rd party
-[Case Study - HeartBleed Exploit](Case%20Study%20-%20HeartBleed%20Exploit.md)
-[Case Study - Pegasus Spyware](Case%20Study%20-%20Pegasus%20Spyware.md)
+[Case Study - HeartBleed Exploit](/CySec-2/Case%20Studies/Case%20Study%20-%20HeartBleed%20Exploit.md)
+[Case Study - Pegasus Spyware](/CySec-2/Case%20Studies/Case%20Study%20-%20Pegasus%20Spyware.md)
 
 ## Advanced Persistent Threats (APT) 
 `Note these were made using chatGPT so bear w some inaccuraices for now`
@@ -228,7 +228,7 @@
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
 
 # Carbanak APT Case Study
-[Case Study - Carbanak APT](Case%20Study%20-%20Carbanak%20APT.md)
+[Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
 
 
 ---
