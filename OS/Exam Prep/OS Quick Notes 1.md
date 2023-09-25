@@ -600,19 +600,12 @@
 ## System Data Structures
 
 process tables
-
 memory tables
-
 i/o tables
-
 file tables
-
----
-
 ## UNIX SVR4 Process management 3.6
 
-## Process states
-
+### Process states
 - User Running:
 	- The process is currently executing in user mode.
 - Kernel Running:
@@ -631,7 +624,6 @@ file tables
 	- A terminated process that still has an entry in the process table to allow its parent process to collect exit status.
 
 ### State Transitions
-
 1. **Running (R):**
     - A process is actively executing on the CPU.
     - Can be Kernel Running/User Running
