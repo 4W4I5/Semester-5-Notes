@@ -11,7 +11,6 @@
 ---
 # Lecture 1: Introduction To Security
 ## Information Security
-
 - Task of securing info that is digital.
 	- Such as data that is:
 		- Transferred on a storage device
@@ -20,7 +19,6 @@
 	- Protect data in transit is the aspect covered in this course
 
 ### Difficulties in defending against attacks
-
 - Universally connected devices
 	- Expansion in IoT
 	- Can connect to a network of devices and takeover
