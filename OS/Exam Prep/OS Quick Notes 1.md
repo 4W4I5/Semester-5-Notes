@@ -777,7 +777,7 @@ Output will be 1 1 1 1 1
 # Chapter 9: Uniprocessor Scheduling
 
 ## Example:
-- ![](Pasted%20image%2020230926023241.png)
+- ![](/Pasted%20image%2020230926023241.png)
 - ![](/Pasted%20image%2020230926023256.png)
 
 ## Types of Scheduling
