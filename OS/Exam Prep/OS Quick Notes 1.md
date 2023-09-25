@@ -598,6 +598,8 @@
 		- Request for OS Service
 	- **Trap**
 		- Error or exception generated within the currently running process
+		- OS determines if condition is fatal
+			- Moved to exit state and a process switch occurs
 - #### Mode Switching
 - #### Process Switching
 
