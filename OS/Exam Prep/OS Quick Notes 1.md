@@ -1,12 +1,12 @@
 > [!WARNING]
 > Keep in mind this is all content that was covered in class with theory in mind, however the paper will have a more practical oriented approach
 
-| Chapter                                                                                | Status                  |
-| -------------------------------------------------------------------------------------- | ----------------------- |
-| [Chapter 1 System Overview](#Chapter-1-System-Overview)                                | :white_check_mark: |
-| [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: (Some refactoring left but rest is good) |
-| [Chapter 3 Process Description & Control](#Chapter-3-Process-Description-and-Control) | :x:                     |
-| [Chapter 9 UniProcessor Scheduling](#Chapter-9-Uniprocessor-Scheduling)                | :x:                     |
+| Chapter                                                                               | Status                                                                                |
+| ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
+| [Chapter 1 System Overview](#Chapter-1-System-Overview)                               | :white_check_mark:                                                                    |
+| [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: (Some stuff needs cleanup i.e is duplicated but rest is good) |
+| [Chapter 3 Process Description & Control](#Chapter-3-Process-Description-and-Control) | :white_check_mark:                                                                    | 
+| [Chapter 9 UniProcessor Scheduling](#Chapter-9-Uniprocessor-Scheduling)               | :x:                                                                                   |
 
 # Chapter 1 System Overview
 
@@ -536,9 +536,10 @@
 				- **Exit Status**:
 					- Records the exit status or exit code of the process when it terminates
 - ### Process Creation Events
+	- Allocate a slot in the process table for new processes
 	- Assign a PID
-	- Allocate space
-	- Init PCB
+	- Allocate space except for shared memory
+	- Init PCB, if forked then increment any and all counters for the files owned by the parent and set child process to Ready state
 	- Set appropriate linkages
 	- Create/Expand other data structures
 - #### Reasons for process creation
@@ -639,6 +640,8 @@
 - **File tables:** 
 	- File tables store metadata and control information for files, facilitating file management and access control in the system.
 ## UNIX SVR4 Process management 3.6
+
+![](/Pasted%20image%2020230926021341.png)
 
 ### Process states
 - User Running:
@@ -754,14 +757,17 @@
 		- A pointer to the next process in a linked list.
 	- **Memory Status:**
 		- Information about the system's memory usage and availability.
+## Fork()
+```
+if(fork() || fork()){
+	fork()
+}
+cout << "1"
 
-## Unix U (User) Area. ignore this
-
-## Process Control
-
-## Process Creation
-
-play w fork
+Output will be 1 1 1 1 1
+```
+ Explanation:
+ - ![](/Pasted%20image%2020230926021904.png)
 
 ---
 
@@ -785,14 +791,8 @@ play w fork
 - I/O Scheduling:
 	- It manages the input/output requests from processes.
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
-<!--Use rec-->
-
-# Chapter 9: Uniprocessor Scheduling cont.
-
 ## Short term Scheduling Criteria
-
 Main objective is to allocate processor time to optimize certain aspects of system behaviors
-
 - User Oriented Criteria
     - Performance-Related
         - Turnaround time: The time it takes for a system to process a user's request and provide a response.
@@ -808,9 +808,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
         - Fairness: Ensuring that system resources are allocated fairly among users or processes.
         - Enforcing Priorities: Managing the priority of tasks or processes to ensure critical operations are completed first.
         - Balancing Resources: Distributing system resources effectively to prevent bottlenecks and maximize overall performance.
-
 ## Priorities
-
 - Level assigned to an individual process/task running within a computer system
 	- Determines the order in which processes are run within the system
 - Unix and Windows handle priorities differently
@@ -818,16 +816,16 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 		- 1->N with 1 being the highest priority
 	- Windows
 		- N->1 with N being the highest priority
-
 ### Priority Queues
-
 - Ready queues are now made in order of priority
 	- Dispatcher goes up in order of highest priority to lower queues until all processes from current queue processes are running
 - Limitation
 	- Lower priority processes are starved of processor time as the higher priority processes will take it all up
-
 #### Selection Functions
-
+- Determines next process to execute based on 
+	- w -> time spent waiting
+	- e -> time spent in execution
+	- s -> total service time
 - Two Types
 	- Preemptive
 		- Can be interrupted
@@ -835,12 +833,10 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 			- Time quantum greater than typical interaction
 			- Time quantum less than typical interaction
 	- Non-Preemptive
-		- C `Fill in from slides`
+		- Cannot be interrupted, will continue until it terminates or blocks itself for I/O
 
 ## Alternative Scheduling Policies
-
 **FCFS (First-Come-First-Serve):**
-
 - Selection Function:
 	- Non-Preemptive
 	- FCFS selects processes in the order they arrive in the ready queue. It uses a simple queuing mechanism.
@@ -858,7 +854,6 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- FCFS is susceptible to starvation, where a low-priority process might wait indefinitely behind high-priority processes.
 
 **Round Robin (RR):**
-
 - Selection Function:
 	- Preemptive
 	- Round Robin uses a circular queue and selects processes in a cyclical order, allocating a fixed time quantum to each.
@@ -876,7 +871,6 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	RR minimizes the risk of starvation as each process gets a turn.
 
 **SPN (Shortest Process Next):**
-
 - Selection Function:
 	- Non-Preemptive
 	- SPN selects the process with the shortest expected processing time next.
@@ -897,7 +891,6 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- SPN can lead to starvation for longer processes if many short tasks keep arriving.
 
 **SRT (Shortest Remaining Time):**
-
 - Selection Function: SRT is a preemptive version of SPN, selecting the process with the shortest remaining time to complete.
 	- Calculates on arrival however
 - Decision Mode: It dynamically reevaluates and selects the process with the shortest remaining time whenever a new process arrives or a running process finishes.
@@ -908,8 +901,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: SRT can lead to starvation for longer processes if many short tasks keep arriving frequently.
 
 **HRRN (Highest Response Ratio Next):**
-
-- Selection Function: HRRN calculates the response ratio for each process and selects the one with the highest ratio.
+- Selection Function: HRRN calculates the response ratio for each process and selects the one with the highest ratio. $$Ratio=\frac{timeWaiting+ expectedServiceTime}{expectedServiceTime}$$
 - Decision Mode: It uses a non-preemptive approach based on response ratios.
 - Throughput: HRRN aims for high throughput by considering both waiting time and estimated remaining time.
 - Response Time: Response time is generally good, especially for processes with high response ratios.
@@ -918,7 +910,6 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: HRRN minimizes the risk of starvation by considering waiting times.
 
 **Feedback:**
-
 - Selection Function: Feedback scheduling uses multiple queues with different priorities, and processes are selected based on their current priority level. Lower priority queues are checked before higher priority ones.
 - Decision Mode: It employs a dynamic priority scheme where processes can move between different priority queues based on their behavior and execution history. Processes that haven't received CPU time for a while are promoted to higher-priority queues.
 - Throughput: Feedback scheduling aims to balance both fairness and responsiveness. It ensures that processes waiting for a long time get a chance to execute, improving overall throughput.
@@ -926,8 +917,14 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Overhead: The overhead in feedback scheduling is moderate due to the management of multiple priority queues and the need to promote or demote processes based on their behavior.
 - Effect on Processes: Feedback scheduling promotes fairness by preventing any single process from monopolizing the CPU. It ensures that long-waiting processes eventually get a turn to execute.
 - Starvation: Feedback scheduling minimizes the risk of starvation for low-priority processes by allowing them to move to higher-priority queues based on their wait time.
-
----
 - Round robin
 	- Configured for quantum >= 1
 	- `Add in process for filling a timing diagram with round robin enabled`
+
+## Performance Comparision
+- Done by a formula $$\frac{T_r}{T_s}=\frac{1}{1-p}$$
+- Where
+	- Tr = Turnaround time
+	- Ts = Service Time(spent in running state)
+	- P = processor utilization
+- ![](/Pasted%20image%2020230926022710.png)
