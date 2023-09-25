@@ -455,6 +455,14 @@
 - **Distributed Processing**: The client/server model enables distributed processing, where tasks can be offloaded to server resources.
 - **Scalability**: It allows for scalability, as additional servers can be added to handle increased client demand.
 - **Examples**: Common examples include web servers (like Apache or Nginx) serving web pages to web browsers (clients) and email servers (like Microsoft Exchange) handling email delivery to email clients.
+- Advantages
+		- Simplifies Executive
+		- Improves reliablity
+		- Provides a uniform means for applications to communicate with the services via RPCs without restricting flexibility
+		- Provides a suitable base for distributed computing
+
+### Threads and Symmetric MultiProcessing
+`Fill this in later, however not sure on how important this was`
 ## Android:
 - Android is based on the Linux kernel, which forms the core of the operating system.
 - Android Runtime (ART) replaced the Dalvik Virtual Machine (DVM) with Android 5.0 (Lollipop).
