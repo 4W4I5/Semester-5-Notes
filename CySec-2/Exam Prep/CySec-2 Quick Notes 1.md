@@ -336,9 +336,12 @@ RWDEIC2E -> Acronym to keep this memorized
 	- ### DNS Attacks
 		- 3 Types
 			- Old School: Record Injection
-				- 
+				- Provide additional info appended with our host IP through our own attacker nameserver
+				- Original NS ends up caching this new evil IP
+				- No longer works due to Bailiwick Checking
+					- Only records related to the requested domain are accepted in responses, DNS servers are less trusting of additional information
 			- Somewhat Old School: Response Spoofing
-			- New: Kaminsky
+			- New: Kaminsky Attack
 
 		- Hijacking DNS
 			- Threat Model and Attacker Goals
