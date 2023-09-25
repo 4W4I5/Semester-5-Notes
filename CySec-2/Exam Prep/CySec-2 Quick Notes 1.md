@@ -354,13 +354,10 @@ RWDEIC2E -> Acronym to keep this memorized
 				- Version 2
 					- Run your own NS
 					- Request for something unlikely in the cache of other NS
-					- 
-
-		- Hijacking DNS
-			- Threat Model and Attacker Goals
-			- Doesnt work now due to Bailiwick Checking, contextual updates only
-		- Kaminisky Exploit
-			- PreReq is that local nameserver must not have the original website cached
+					- Same as V1 but instead of A record replies we give the NS records with glue records with our evilIP
+			- Mitigations
+				- Randomized query ports
+				- Increase the range of the query ports and ID to 2^16
 
 ---
 # Lecture 3: TCP Attacks
