@@ -315,6 +315,13 @@ RWDEIC2E -> Acronym to keep this memorized
 - ## DNS
 	- Mapping a memorable name to a routable IP Address
 		- `Fill in`
+	- ### Resource Record
+		- A
+			- \www.example.com, 8.8.8.8, A, TTL
+		- NS
+			- \www.example.com, ns1.example.com, NS, TTL
+		- CNAME
+			- \www.example.com, cname.example.net, CNAME, TTL
 	- ### Iterated VS Recursive DNS queries
 		- Iterated
 			- Exhaustively Iterates through all the DNS servers horizontally and then goes down a level
