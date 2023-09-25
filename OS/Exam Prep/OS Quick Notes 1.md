@@ -601,13 +601,20 @@
 		- OS determines if condition is fatal
 			- Moved to exit state and a process switch occurs
 - #### Mode Switching
-	- Dependent on Interrupts
+	- OS regains control of the Program Counter. Dependent on Interrupts
 		- If none
 			- Continue
 		- If interrupt pending
 			- Set PC to starting address of ISR
 			- Switch from user to kernel mode to allow for privileged instructions
 - #### Process Switching
+	- OS identifies an event, proceses it and passes control to scheduler which then decides to keep it running, block and/or suspend it
+		- Steps
+			- Save context of the processor
+			- Update PCB state to RUNNING
+			- move PCB to appropriate queue
+			- Select another process and repeat
+			- Restore context after 2nd process is done or is blocked
 
 ## System Data Structures
 
