@@ -937,7 +937,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- Configured for quantum >= 1
 	- `Add in process for filling a timing diagram with round robin enabled`
 
-## Performance Comparision
+## Performance Comparison
 - Done by a formula $$\frac{T_r}{T_s}=\frac{1}{1-p}$$
 - Where
 	- Tr = Turnaround time
