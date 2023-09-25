@@ -142,9 +142,7 @@ for(int i =0; i < n; i++){
 	- Big O (Upper bound)
 	- Theta (Tighter bound)
 	- Omega (Lower bound)
-		- There is also little-o and little omega, same scenes theres no equal sign
-
-
+		- There is also little-o and little omega, same scenes just that theres no equal sign.
 ## Asymptotic Analysis
 - `Fill in from slides`
 
@@ -167,23 +165,13 @@ look at chapter 3 book se
 - 
 
 ---
-
-### Little-O and Little-Omega
-
-# New lecture
-
-
----
-
-
+# Recursion Problems
 ## Divide & Conquer
-
 - Divide the problem into a number of sub problems that smaller instances of the same problem
 - Conquer the subproblems by solving them recursively. if the subproblem size is
 - Combine the subproblem solutions to form a solution to the original problem
 
 ### Recurrences
-
 - Describes a function in terms of its value on smaller arguments (usually)
 	- Mathematical way to divide and conquer
 - If a recurrence is stated without a base case, assume its algorithmic. To check if its recursive check for
@@ -192,7 +180,6 @@ look at chapter 3 book se
 	- Smallest Case
 
 ### Solving recursive recurrences
-
 **Recursive Tree Method**:
 Visualize the recursion as a tree, calculate work at each level, and analyze the tree structure.
 1. Create a recursion tree diagram.
@@ -216,14 +203,13 @@ Use a formula to determine the time complexity based on the recurrence relation'
     - If f(n) is asymptotically smaller, then the solution is T(n) = Θ(n^log_b(a)).
     - If f(n) is asymptotically larger, then the solution is T(n) = Θ(f(n)).
     - If f(n) is the same, then the solution is T(n) = Θ(n^log_b(a) * log^k(n)), where k is determined by comparing f(n) with n^log_b(a).
-3. Determine the complexity based on the comparison from step 2.
+3. Determine the complexity based on the comparison from step 2
 
 **Iteration Method**:
 Use a formula to determine the time complexity based on the recurrence relation's form.
-
-1. **Start with the Recurrence Relation**: You begin with the given recurrence relation. This relation represents the time complexity of an algorithm or function in terms of itself with smaller inputs. It typically looks like this: $$T(n) = aT(n/b) + f(n)$$.
+1. **Start with the Recurrence Relation**: You begin with the given recurrence relation. This relation represents the time complexity of an algorithm or function in terms of itself with smaller inputs. It typically looks like this: $$T(n) = aT(n/b) + f(n)$$
 2. **Expand the Recurrence Iteratively**:
-    - You replace T(n) with its recursive form, $$aT(n/b) + f(n)$$.
+    - You replace T(n) with its recursive form, $$aT(n/b) + f(n)$$
     - Continue to expand T(n) until you reach the base case(s).
 3. **Express T(n) as a Summation**:
     - As you expand the recurrence relation, you'll have terms representing the work done at different levels of recursion. Express T(n) as a summation of these terms.
@@ -232,7 +218,7 @@ Use a formula to determine the time complexity based on the recurrence relation'
     - Often, you'll need to manipulate the summation using mathematical techniques to make it easier to work with.
 5. **Obtain the Final Time Complexity**:
     - After simplifying the summation, you'll have an expression that represents the time complexity of the algorithm in terms of n (the problem size).
-    - This expression is typically in the form of a function of n, such as $$T(n) = O(f(n))$$, where f(n) is the final time complexity.
+    - This expression is typically in the form of a function of n, such as , where f(n) is the final time complexity. $$T(n) = O(f(n))$$
 
 **Example**:
 Let's say you have the recurrence relation T(n) = 2T(n/2) + n. You would expand this iteratively:
