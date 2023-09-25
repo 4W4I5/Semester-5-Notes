@@ -263,7 +263,7 @@
 			- The time limit was a poll of 0.2s
 		- Processor was often left idle if a program was waiting for I/O
 			- This lead to the development of two multiprogram modes
-				- Time Sharing 
+				- Time Sharing
 					- Each program was alloted a certain number of instructions to execute after which the monitor passed control onto the next program
 				- Time Slicing
 					- Each program was alloted a certain slice of the processors time to execute after which control was passed onto the next program
@@ -281,7 +281,6 @@
 	    - Rapid switching between tasks (time slices).
 	    - Supports interactive computing.
 	    - Provides the illusion of dedicated resources for each user/process.
-
 - #### What error can cause the OS to crash?
 	- **Improper Synchronization**:
 	    - This error occurs when multiple processes or threads access shared resources without proper coordination.
@@ -450,7 +449,7 @@
 - **Security**: VMs enhance security by isolating potentially vulnerable applications or OS instances from each other.
 
 ### Windows Architecture:
-- **Kernel**: Windows operating systems have a monolithic kernel at their core 
+- **Kernel**: Windows operating systems have a monolithic kernel at their core
 - **User Mode vs. Kernel Mode**: Windows employs a separation between user mode and kernel mode, with critical OS functions residing in the kernel.
 - **Hardware Abstraction Layer (HAL)**: HAL provides an abstraction layer for hardware, allowing Windows to run on various hardware platforms.
 - **Graphical User Interface (GUI)**: Windows is known for its GUI, which includes the desktop environment, windows, and graphical applications.
@@ -582,11 +581,6 @@
 	    - Security mechanisms or policies may force termination if a process violates security rules or access controls.
 	- **Deadlock Resolution**:
 	    - In multi-process systems, processes might be terminated to resolve deadlocks where processes are waiting for resources indefinitely.
-- #### Process States
-	- Trace
-		- The code of the process
-	- Dispatcher
-		- A process itself responsible for
 - #### Process State Models
 	- 2 State model
 		- ![](/Pasted%20image%2020230912151828.png)
@@ -614,6 +608,7 @@ process tables
 memory tables
 
 i/o tables
+
 file tables
 
 ---
@@ -688,60 +683,54 @@ file tables
         - Running (R) when it regains control of the terminal.
 
 ## UNIX Process Image
-
-### **User-Level Context:**
-
-- **Process Text:**
-	- This refers to the code or program instructions of a running process.
-- **Process Data:**
-	- It includes the data and variables used by a process during its execution.
-- **User Stack:**
-	- The user stack is where a process stores function call information, such as return addresses and local variables.
-- **Shared Memory:**
-	- This is a segment of memory that multiple processes can access and share, allowing them to exchange data.
-
-### **Register Context:**
-
-- **Program Counter:**
-	- It holds the memory address of the next instruction to be executed.
-- **Processor Status Register:**
-	- This register contains various flags and status information about the processor's state.
-- **Stack Pointer:**
-	- It points to the top of the stack, used for managing function calls and local variables.
-- **General-Purpose Registers:**
-	- These registers are used for various purposes, such as holding data and performing arithmetic operations.
-
-### **System-Level Context:**
-
-- **Process Table Entry:**
-	- An entry in the process table that contains information about a specific process.
-- **U (User) Area:**
-	- A section of memory dedicated to storing user-specific data and information. Explained later on in the notes
-- **Per Process Region Table:**
-	- It keeps track of memory regions allocated to each process.
-- **Kernel Stack:**
-	- A separate stack used by the kernel for executing system calls and managing processes.
-- **Process Status:**
-	- Information about the current state of a process (e.g., running, waiting, terminated).
-- **Pointers:**
-	- These are references to various data structures used by the operating system to manage processes.
-- **Process Size:**
-	- The amount of memory allocated to a process.
-- **User Identifiers:**
-	- Unique identifiers associated with each user.
-- **Process Identifiers:**
-	- Unique identifiers assigned to each process.
-- **Event Descriptor:**
-	- Information about events that processes can wait for or signal to each other.
-- **Priority:**
-	- The priority level assigned to a process for scheduling.
-- **Signal:** A mechanism for processes to communicate with each other or with the kernel.
-- **Timers:**
-	- Used for timing and scheduling purposes.
-- **P_Link:**
-	- A pointer to the next process in a linked list.
-- **Memory Status:**
-	- Information about the system's memory usage and availability.
+- ### **User-Level Context:**
+	- **Process Text:**
+		- This refers to the code or program instructions of a running process.
+	- **Process Data:**
+		- It includes the data and variables used by a process during its execution.
+	- **User Stack:**
+		- The user stack is where a process stores function call information, such as return addresses and local variables.
+	- **Shared Memory:**
+		- This is a segment of memory that multiple processes can access and share, allowing them to exchange data.
+- ### **Register Context:**
+	- **Program Counter:**
+		- It holds the memory address of the next instruction to be executed.
+	- **Processor Status Register:**
+		- This register contains various flags and status information about the processor's state.
+	- **Stack Pointer:**
+		- It points to the top of the stack, used for managing function calls and local variables.
+	- **General-Purpose Registers:**
+		- These registers are used for various purposes, such as holding data and performing arithmetic operations.
+- ### **System-Level Context:**
+	- **Process Table Entry:**
+		- An entry in the process table that contains information about a specific process.
+	- **U (User) Area:**
+		- A section of memory dedicated to storing user-specific data and information. Explained later on in the notes
+	- **Per Process Region Table:**
+		- It keeps track of memory regions allocated to each process.
+	- **Kernel Stack:**
+		- A separate stack used by the kernel for executing system calls and managing processes.
+	- **Process Status:**
+		- Information about the current state of a process (e.g., running, waiting, terminated).
+	- **Pointers:**
+		- These are references to various data structures used by the operating system to manage processes.
+	- **Process Size:**
+		- The amount of memory allocated to a process.
+	- **User Identifiers:**
+		- Unique identifiers associated with each user.
+	- **Process Identifiers:**
+		- Unique identifiers assigned to each process.
+	- **Event Descriptor:**
+		- Information about events that processes can wait for or signal to each other.
+	- **Priority:**
+		- The priority level assigned to a process for scheduling.
+	- **Signal:** A mechanism for processes to communicate with each other or with the kernel.
+	- **Timers:**
+		- Used for timing and scheduling purposes.
+	- **P_Link:**
+		- A pointer to the next process in a linked list.
+	- **Memory Status:**
+		- Information about the system's memory usage and availability.
 
 ## Unix U (User) Area. ignore this
 
