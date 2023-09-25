@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
+                "file": "Algo/Exam Prep/Algo Quick Notes 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Algo/Exam Prep/Algo Quick Notes 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Algo/Exam Prep/Algo Quick Notes 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Algo/Exam Prep/Algo Quick Notes 1.md"
               }
             }
           },
@@ -188,11 +188,13 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "d085009bbc463321",
+  "active": "c2c5fcfadb04e061",
   "lastOpenFiles": [
+    "README.md",
+    "Algo/Exam Prep/Algo Quick Notes 1.md",
+    "Algo/Exam Prep",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
     "CySec-2/Case Studies/Case Study - Carbanak APT.md",
-    "README.md",
     "OS/Exam Prep/OS Quick Notes 1.md",
     "CySec-2/Case Studies/Case Study - Mitnick TCP Attack.md",
     "CySec-2/Exam Prep",
@@ -219,14 +221,12 @@
     "OS/OS 24 August, 2023.md",
     "OS/OS 22 August, 2023.md",
     "OS/Exam Prep",
-    "Marketing/Exam Prep/Marketing Quick Notes 1.md",
     "Marketing/Exam Prep",
     "Books/CYSEC Book.pdf",
     "Pasted image 20230912152003.png",
     "Books/OS Book.pdf",
     "Books/DB Book.pdf",
     "Books/William Stallings-Operating Systems 7th Edition.pdf",
-    "Books/Randall J. Boyle-Corporate Computer Security 3rd Edition.pdf",
     "Pasted image 20230912151924.png",
     "Pasted image 20230912151828.png",
     "Algo/Images/Pasted image 20230906093822.png"

@@ -7,18 +7,19 @@
 > [!WARNING]
 > Algo might not have a complete QuickNote1 written for it, theres way too much math to type out :')
 
-| Week # | Date                                             | Status     | Content                           |
-| ------ | ------------------------------------------------ | ---------- |:--------------------------------- |
-| Week 1 | 21 Aug                                           | N/A        | Maam Absent                       |
-| Week 1 | 23 Aug                                           | N/A        | Maam Absent                       |
-| Week 2 | 28 Aug                                           | N/A        | Maam Absent                       |
-| Week 2 | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Complete   | Intro to Algo                     |
-| Week 3 | [4 Sept](Algo/Algo%204%20September,%202023.md)   | Complete   | Analyzing time complexity in code |
-| Week 3 | [6 Sept](Algo/Algo%206%20September,%202023.md)   | Incomplete | Big-O                             |
-| Week 4 | 11 Sept                                          | N/A        | Quiz                              |
-| Week 4 | [13 Sept](Algo/Algo%2013%20September,%202023.md) | Incomplete | Chapter 3 of book                 |
-| Week 5 | [18 Sept](Algo/Algo%2018%20September,%202023.md) | Incomplete |                                   |
-| Week 5 | [20 Sept](Algo/Algo%2020%20September,%202023.md) | Incomplete | Recursion                                  |
+| Week #      | Date                                             | Status     | Content                           |
+| ----------- | ------------------------------------------------ | ---------- |:--------------------------------- |
+| Week 1      | 21 Aug                                           | N/A        | Maam Absent                       |
+| Week 1      | 23 Aug                                           | N/A        | Maam Absent                       |
+| Week 2      | 28 Aug                                           | N/A        | Maam Absent                       |
+| Week 2      | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Complete   | Intro to Algo                     |
+| Week 3      | [4 Sept](Algo/Algo%204%20September,%202023.md)   | Complete   | Analyzing time complexity in code |
+| Week 3      | [6 Sept](Algo/Algo%206%20September,%202023.md)   | Incomplete | Big-O                             |
+| Week 4      | 11 Sept                                          | N/A        | Quiz                              |
+| Week 4      | [13 Sept](Algo/Algo%2013%20September,%202023.md) | Incomplete | Chapter 3 of book                 |
+| Week 5      | [18 Sept](Algo/Algo%2018%20September,%202023.md) | Incomplete |                                   |
+| Week 5      | [20 Sept](Algo/Algo%2020%20September,%202023.md) | Incomplete | Recursion                         |
+| Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md)                                                 |            |                                   |
 
 ## CySec-2
 
