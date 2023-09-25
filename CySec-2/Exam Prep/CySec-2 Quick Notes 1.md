@@ -230,24 +230,25 @@ RWDEIC2E -> Acronym to keep this memorized
 	- Mapping a memorable name to a routable IP Address
 		- Also provides Next-Hop router, DNS ,gateway and host IP addresses
 - ### DHCP
-	- Setting IP address
-	- PORTS USED:
+	- ##### Use?
+		- Setting IP address
+	- ##### PORTS USED:
 		- 67 for server
 		- 68 for client
-	- Working (all are broadcasts)
-		- DHCP discover
+	- ##### DHCP Working (all are broadcasts)
+		- **DHCP discover**
 			- source IP = 0.0.0.0
 			- destination IP = 255.255.255.255
-		- DHCP offer
+		- **DHCP offer**
 			- source IP = 1.1.1.254/24
 			- destination IP = 255.255.255.255 (offer is also broadcast to all)
 			- Server sends available IP addresses and options
-		- DHCP request
+		- **DHCP request**
 			- Requests IP from server after selecting from options
 			- Basically check if the network has that IP already assigned by using the offered IP and ARP broadcasting
-		- DHCP ACK
+		- **DHCP ACK**
 			- DHCP agrees final comms and ack the IP request
-	- VULN
+	- ##### VULN
 		- **Unauthorized Access**:
 			- Attackers can gain unauthorized access to the DHCP server, leading to various security risks and network disruptions.
 		- **IP Configuration Manipulation**:
@@ -264,7 +265,7 @@ RWDEIC2E -> Acronym to keep this memorized
 			 - Failure to secure switches against rogue DHCP servers can allow attackers to deploy unauthorized DHCP services.
 		- **Lease Time Manipulation**:
 			- Attackers can manipulate DHCP lease times to maintain control over IP addresses for extended periods, facilitating persistent attacks.
-	- Best security practices
+	- ##### Best security practices
 		- DHCP Trusted Switches
 		- DHCP Fingerprinting
 		- Network Monitoring
