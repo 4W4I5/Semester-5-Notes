@@ -358,7 +358,7 @@
 		- Enables programmers to customize an OS without disrupting system integrity
 		- Eases the development of distributed tools and full-blown distributed operating systems
 - ## Fault Tolerance
-	- Refers to the ability of a system or component
+	- Refers to the ability of a system or component to `Fill this in`
 	- Fundamental Concepts
 		- Basic measures are
 			- Reliability: R(t)
