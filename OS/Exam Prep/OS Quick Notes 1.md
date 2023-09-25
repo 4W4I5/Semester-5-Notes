@@ -943,4 +943,4 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- Tr = Turnaround time
 	- Ts = Service Time(spent in running state)
 	- P = processor utilization
-- ![](/Pasted%20image%2020230926022710.png)
+	![](/Pasted%20image%2020230926022710.png)
