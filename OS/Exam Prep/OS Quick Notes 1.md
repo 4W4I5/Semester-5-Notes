@@ -589,28 +589,21 @@
 		- A process itself responsible for
 - #### Process State Models
 	- 2 State model
-		- ![](Pasted%20image%2020230912151828.png)
-		-
+		- ![](/Pasted%20image%2020230912151828.png)
 	- 5 State model
-		- ![](Pasted%20image%2020230912151924.png)
-		-
-	- 6 State model
+		- ![](/Pasted%20image%2020230912151924.png)
+	- 6/7 State model
 		- ![](/Pasted%20image%2020230912152003.png)
 
-<!--most of the rec is just revision-->
-
 ## Process - OS Interaction
-
 - At any processor is executing instructions from application/OS
 - CPU knows when to switch
 	- Mode Switch
 		- Switches execution from user mode and kernel mode
 	- Process/Context switch
 		- One process leaves the running state and the other enters the running state
-
-## Mode Switching
-
 ## System Interrupt, Call, Trap
+## Mode Switching
 
 ## Process Switching
 
@@ -621,6 +614,7 @@ process tables
 memory tables
 
 i/o tables
+file tables
 
 ---
 
