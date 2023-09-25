@@ -154,6 +154,8 @@ for(int i =0; i < n; i++){
 
 ### Properties of O notation
 - All logarithms grow at the same rate
+	- Exponentials grow **slower** than powers
+	- Logarithms grow **faster** than powers
 - Sum of the first m-th powers grows as the m+1-th power$$n^m$$ 
 
 ### Big-O
