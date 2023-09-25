@@ -314,7 +314,7 @@ RWDEIC2E -> Acronym to keep this memorized
  -->
 - ## DNS
 	- Mapping a memorable name to a routable IP Address
-		- `Fill in`
+		- UDP Based, port 53
 	- ### Resource Record
 		- A
 			- \www.example.com, 8.8.8.8, A, TTL
@@ -333,8 +333,13 @@ RWDEIC2E -> Acronym to keep this memorized
 			- Local Machine stores a cache on TLD servers and possible Auth servers
 		- Recursive Caching
 			- Local machine forwards queries the local nameserver 
-	- ### DNS Security Issues
-		- DOS/DDOS
+	- ### DNS Attacks
+		- 3 Types
+			- Old School: Record Injection
+				- 
+			- Somewhat Old School: Response Spoofing
+			- New: Kaminsky
+
 		- Hijacking DNS
 			- Threat Model and Attacker Goals
 			- Doesnt work now due to Bailiwick Checking, contextual updates only
