@@ -1,3 +1,6 @@
+>[!ERROR]
+>DO NOT RELY ON THIS, IT IS VERY ROUGH
+
  - Def
 	- Algo is a well-defined, finite and effective sequence of computation steps that takes some value, or a set of values to as input and gives the output either as some value or set of values
 - Algo vs Program
@@ -160,7 +163,6 @@ for(int i =0; i < n; i++){
 
 
 ---
-look at chapter 3 book se
 ## Asymptotic Notation 3.2
 - 
 
