@@ -4,6 +4,8 @@
 > [!NOTE]
 > look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not always have any content that was missed during class
 ## Algo
+> [!WARNING]
+> Algo might not have a QuickNote1 written for it, theres way too much math to type out :')
 
 | Week # | Date                                             | Status     | Content                           |
 | ------ | ------------------------------------------------ | ---------- |:--------------------------------- |
