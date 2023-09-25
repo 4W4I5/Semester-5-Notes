@@ -132,12 +132,11 @@ APT's are built with the following goals in mind
 	- **Financial Gain:** Certain APT groups target financial institutions, critical infrastructure, and businesses to steal sensitive financial information, intellectual property, or engage in cybercrime for monetary gain.
 	- **Hacktivism:** APTs with hacktivist motives target organizations aligned with their beliefs or political objectives, aiming to create social or political disruption.
 
----
-
 ## Cyber APT Kill Chain
 
+> [!NOTE]
 `Look into THM for more indepth info on killchain`
-
+> 
 > [Cyber Kill Chain TryHackMe. Reconnaissance | by Avataris12 | Medium](https://medium.com/@WriteupsTHM_HTB_CTF/cyber-kill-chain-tryhackme-7025c0662696)
 
 RWDEIC2E -> Acronym to keep this memorized
@@ -218,7 +217,7 @@ RWDEIC2E -> Acronym to keep this memorized
 		- Attackers execute their primary objectives, causing damage to the target organization.
 		- **Activities:**
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
-# Carbanak APT Case Study
+#### Carbanak APT Case Study
 - The Carbanak APT is one of the most notorious and impactful cybercrime campaigns in recent history. Active from around 2013 to 2016, the Carbanak group targeted financial institutions, stealing hundreds of millions of dollars worldwide.
 	- [Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
 
