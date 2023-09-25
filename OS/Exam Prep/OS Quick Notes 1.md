@@ -593,7 +593,11 @@
 - #### System Call, Interrupt, Trap
 	- **Interrupt**
 		- External to the execution of the current instruction
-			- Caused by clock, I/O and memory faul
+			- Caused by clock, I/O and memory fault
+	- **System Call**
+		- Request for OS Service
+	- **Trap**
+		- Error or exception generated within the currently running process
 - #### Mode Switching
 - #### Process Switching
 
