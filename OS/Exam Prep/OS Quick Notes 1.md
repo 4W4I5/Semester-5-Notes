@@ -5,8 +5,8 @@
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Chapter 1 System Overview](#Chapter-1-System-Overview)                               | :white_check_mark:                                                                    |
 | [Chapter 2 OS Overview](#Chapter-2-Operating-System)                                  | :white_check_mark: (Some stuff needs cleanup i.e is duplicated but rest is good) |
-| [Chapter 3 Process Description & Control](#Chapter-3-Process-Description-and-Control) | :white_check_mark:                                                                    | 
-| [Chapter 9 UniProcessor Scheduling](#Chapter-9-Uniprocessor-Scheduling)               | :x:                                                                                   |
+| [Chapter 3 Process Description & Control](#Chapter-3-Process-Description-and-Control) | :white_check_mark:                                                                    |
+| [Chapter 9 UniProcessor Scheduling](#Chapter-9-Uniprocessor-Scheduling)               | :white_check_mark:                                                                                   |
 
 # Chapter 1 System Overview
 
@@ -624,7 +624,7 @@
 			- Restore context after 2nd process is done or is blocked
 
 ## System Data Structures
-- **Process tables:** 
+- **Process tables:**
 	- These tables store information about running processes, including their status, identifiers, and resource allocation.
 	- Holds
 		- User Data
@@ -633,11 +633,11 @@
 		- PCB
 		- Heap
 	- AKA process image
-- **Memory tables:** 
+- **Memory tables:**
 	- Memory tables keep track of the allocation and usage of system memory, helping manage and optimize memory resources.
-- **I/O tables:** 
+- **I/O tables:**
 	- I/O tables maintain information about input and output operations, helping manage data transfers between devices and processes.
-- **File tables:** 
+- **File tables:**
 	- File tables store metadata and control information for files, facilitating file management and access control in the system.
 ## UNIX SVR4 Process management 3.6
 
@@ -758,6 +758,7 @@
 	- **Memory Status:**
 		- Information about the system's memory usage and availability.
 ## Fork()
+
 ```
 if(fork() || fork()){
 	fork()
@@ -766,12 +767,18 @@ cout << "1"
 
 Output will be 1 1 1 1 1
 ```
+
  Explanation:
+
  - ![](/Pasted%20image%2020230926021904.png)
 
 ---
 
 # Chapter 9: Uniprocessor Scheduling
+
+## Example:
+- ![](Pasted%20image%2020230926023241.png)
+- ![](/Pasted%20image%2020230926023256.png)
 
 ## Types of Scheduling
 
@@ -792,7 +799,9 @@ Output will be 1 1 1 1 1
 	- It manages the input/output requests from processes.
 	- It decides the order in which I/O requests are serviced, optimizing disk and device utilization.
 ## Short term Scheduling Criteria
+
 Main objective is to allocate processor time to optimize certain aspects of system behaviors
+
 - User Oriented Criteria
     - Performance-Related
         - Turnaround time: The time it takes for a system to process a user's request and provide a response.
@@ -822,7 +831,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Limitation
 	- Lower priority processes are starved of processor time as the higher priority processes will take it all up
 #### Selection Functions
-- Determines next process to execute based on 
+- Determines next process to execute based on
 	- w -> time spent waiting
 	- e -> time spent in execution
 	- s -> total service time
@@ -836,7 +845,9 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 		- Cannot be interrupted, will continue until it terminates or blocks itself for I/O
 
 ## Alternative Scheduling Policies
+
 **FCFS (First-Come-First-Serve):**
+
 - Selection Function:
 	- Non-Preemptive
 	- FCFS selects processes in the order they arrive in the ready queue. It uses a simple queuing mechanism.
@@ -854,6 +865,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- FCFS is susceptible to starvation, where a low-priority process might wait indefinitely behind high-priority processes.
 
 **Round Robin (RR):**
+
 - Selection Function:
 	- Preemptive
 	- Round Robin uses a circular queue and selects processes in a cyclical order, allocating a fixed time quantum to each.
@@ -871,6 +883,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	RR minimizes the risk of starvation as each process gets a turn.
 
 **SPN (Shortest Process Next):**
+
 - Selection Function:
 	- Non-Preemptive
 	- SPN selects the process with the shortest expected processing time next.
@@ -891,6 +904,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 	- SPN can lead to starvation for longer processes if many short tasks keep arriving.
 
 **SRT (Shortest Remaining Time):**
+
 - Selection Function: SRT is a preemptive version of SPN, selecting the process with the shortest remaining time to complete.
 	- Calculates on arrival however
 - Decision Mode: It dynamically reevaluates and selects the process with the shortest remaining time whenever a new process arrives or a running process finishes.
@@ -901,6 +915,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: SRT can lead to starvation for longer processes if many short tasks keep arriving frequently.
 
 **HRRN (Highest Response Ratio Next):**
+
 - Selection Function: HRRN calculates the response ratio for each process and selects the one with the highest ratio. $$Ratio=\frac{timeWaiting+ expectedServiceTime}{expectedServiceTime}$$
 - Decision Mode: It uses a non-preemptive approach based on response ratios.
 - Throughput: HRRN aims for high throughput by considering both waiting time and estimated remaining time.
@@ -910,6 +925,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation: HRRN minimizes the risk of starvation by considering waiting times.
 
 **Feedback:**
+
 - Selection Function: Feedback scheduling uses multiple queues with different priorities, and processes are selected based on their current priority level. Lower priority queues are checked before higher priority ones.
 - Decision Mode: It employs a dynamic priority scheme where processes can move between different priority queues based on their behavior and execution history. Processes that haven't received CPU time for a while are promoted to higher-priority queues.
 - Throughput: Feedback scheduling aims to balance both fairness and responsiveness. It ensures that processes waiting for a long time get a chance to execute, improving overall throughput.
