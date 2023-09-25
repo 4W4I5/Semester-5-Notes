@@ -126,28 +126,23 @@ for(int i =0; i < n; i++){
 ```
 - Array
 	- Loop where a Sum of all elements is calculated
-#### Analyzing Loops
-- Already covered above, however for practice check out Lecture 2 page 12+ slides that maam uploaded
-
 #### Analyzing sequence of statements
 - Generally observe the time complexity of each statement line-by-line and sum it all up. 
 	- The sum is the final answer with the coefficients and low order factors discarded
 - If-Statements
 	- These statements themselves are always o(1)
 	- However, Big-Oh assumes the worst case/Upper limit therefore we pick whatever higher order value for O() we can get
----
-
 ### Why are we not so exact with numbers?
 - Constants/Coefficients do no matter
 - This is due to **Asymptotic Complexity** as N gets large, concentrate on the highest order term
 	- This is due to the fact that time is linear in N
 	- We can approximate the complexity of an algorithm
 		- This is due to the fact that a lot of operations take varying amounts of time and are hardware-dependent
-	- 
 - Time complexity is shown as 
 	- Big O (Upper bound)
 	- Theta (Tighter bound)
 	- Omega (Lower bound)
+		- There is also little-o and little omega, same scenes theres no equal sign
 
 
 ## Asymptotic Analysis
