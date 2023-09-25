@@ -222,8 +222,10 @@
 	- Defines the set of instructions a computer's CPU can execute, enabled program execution on the CPU
 - **Application Binary Interface**
 	- Interface b/w OS and libraries
+		- Defines data structures or routines in machine code
 - **Application Programming Interface**
 	- Interface b/w Application and libraries
+		- Defines data structures or routines in source code
 
 ### Stages/Level of evolution of OS
 - **Serial Processing**
