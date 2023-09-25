@@ -150,8 +150,11 @@ for(int i =0; i < n; i++){
 - Simple way to go about this, use the table function in your calculator to get a list of values
 	- Basically bruteforcing ur way until the equality fails or passes, need to look for the point where it changes and it should give you solid enough proof to use
 - Do not forget to use log **BASE 2** not **BASE 10**
-- 
 
+
+### Properties of O notation
+- All logarithms grow at the same rate
+- Sum of the first m-th powers grows as the m+1-th power$$n^m$$ 
 
 ### Big-O
 - If f(n) is of degree d, then f(n) is O(n^d)
