@@ -601,7 +601,12 @@
 		- OS determines if condition is fatal
 			- Moved to exit state and a process switch occurs
 - #### Mode Switching
-	- 
+	- Dependent on Interrupts
+		- If none
+			- Continue
+		- If interrupt pending
+			- Set PC to starting address of ISR
+			- Switch from user to kernel mode to allow for privileged instructions
 - #### Process Switching
 
 ## System Data Structures
