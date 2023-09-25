@@ -495,12 +495,12 @@
 
 # Chapter 3: Process Description and Control
 
-- Process is an instance of a program or a program in execution
-- Process elements
+- #### Process is an instance of a program or a program in execution
+- #### Process elements
 	- Program code
 	- Process data
 	- Process State Word (PSW)
-- Process control block
+- #### Process control block
 	- Contains the process elements
 		- Created and managed by the OS
 		- Key tool that allowed for support for multiple process
@@ -536,7 +536,7 @@
 					- May include information related to process permissions, access control, and security attributes.
 				- **Exit Status**:
 					- Records the exit status or exit code of the process when it terminates
-- Reasons for process creation
+- #### Reasons for process creation
 	- **New batch job**:
 		- Processes are created to execute a new batch job or task in batch processing systems, where multiple jobs are run sequentially.
 	- **Interactive logon**:
@@ -545,9 +545,7 @@
 		- The operating system creates processes to offer various services like printing, network services, or background tasks (daemons) that serve system-level functions.
 	- **Spawned by the existing process**:
 		- Existing processes can create child processes or spawn new processes to perform parallel or related tasks, enabling multitasking and efficient resource utilization.
-- Process Creation
-	- `Investigate why i left this open like this`
-- Process Termination
+- #### Reasons for Process Termination
 	- **Normal Termination**:
 	    - The process has completed its execution and exits gracefully.
 	    - The program reaches the end of its main function.
@@ -575,12 +573,12 @@
 	    - Security mechanisms or policies may force termination if a process violates security rules or access controls.
 	- **Deadlock Resolution**:
 	    - In multi-process systems, processes might be terminated to resolve deadlocks where processes are waiting for resources indefinitely.
-- Process States
+- #### Process States
 	- Trace
 		- The code of the process
 	- Dispatcher
 		- A process itself responsible for
-- Process State Models
+- #### Process State Models
 	- 2 State model
 		- ![](Pasted%20image%2020230912151828.png)
 		-
