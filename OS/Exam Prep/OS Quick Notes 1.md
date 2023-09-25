@@ -590,16 +590,12 @@
 		- ![](/Pasted%20image%2020230912152003.png)
 
 ## Process - OS Interaction
-- At any processor is executing instructions from application/OS
-- CPU knows when to switch
-	- Mode Switch
-		- Switches execution from user mode and kernel mode
-	- Process/Context switch
-		- One process leaves the running state and the other enters the running state
-## System Interrupt, Call, Trap
-## Mode Switching
-
-## Process Switching
+- #### System Call, Interrupt, Trap
+	- **Interrupt**
+		- External to the execution of the current instruction
+			- Caused by clock, I/O and memory faul
+- #### Mode Switching
+- #### Process Switching
 
 ## System Data Structures
 
