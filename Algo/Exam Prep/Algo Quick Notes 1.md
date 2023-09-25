@@ -147,7 +147,10 @@ for(int i =0; i < n; i++){
 	- Omega (Lower bound)
 		- There is also little-o and little omega, same scenes just that theres no equal sign.
 ## Asymptotic Analysis
-- `Fill in from slides`
+- Simple way to go about this, use the table function in your calculator to get a list of values
+	- Basically bruteforcing ur way until the equality fails or passes, need to look for the point where it changes and it should give you solid enough proof to use
+- Do not forget to use log **BASE 2** not **BASE 10**
+- 
 
 
 ### Big-O
