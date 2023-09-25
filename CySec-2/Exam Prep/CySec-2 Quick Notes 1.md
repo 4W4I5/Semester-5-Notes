@@ -29,7 +29,7 @@
 - Availability and simplicity of attack tools
 	- A lot of the heavy work is handled by the tools themselves therefore aiding the complexity of the attacks
 
-# Next-Gen attacks
+### Next-Gen attacks
 - The first case of a Next-Gen attack was the mirai botnet used to DDOS 
 [Case Study - Mirai Malware](CySec-2/Case%20Studies/Case%20Study%20-%20Mirai%20Malware.md)
 
@@ -226,10 +226,7 @@ RWDEIC2E -> Acronym to keep this memorized
 ## Revising DNS & DHCP
 - IP addresses allow internet connectivity
 	- However tough to remember the IP for each website/server we need
-- ### DNS
-	- Mapping a memorable name to a routable IP Address
-		- `Fill in`
-- ### DHCP
+- ## DHCP
 	- ##### Use?
 		- Provides Next-Hop router, DNS ,gateway and host IP addresses
 	- ##### PORTS USED:
@@ -317,25 +314,25 @@ RWDEIC2E -> Acronym to keep this memorized
 		- **Path**: Identifies the specific resource within the scheme's context.
 - ### **URI vs. URL**:
 	- While URIs are a broader concept that includes both URLs and URNs, URLs are a specific type of URI that provides both identification and location information.
--->
-
-### Iterated VS Recursive DNS queries
-- Iterated
-	- Exhaustively Iterates through all the DNS servers horizontally and then goes down a level
-- Recursive
-	- Server that is queried then takes the responsibility to get a response for the query back to the sender
-### Aliasing & Load Balancing
-
-### DNS Caching
-`Add notes on Cache poisoning Version 2`
-
-### DNS Security Issues
-- DOS/DDOS
-- Hijacking DNS
-	- Threat Model and Attacker Goals
-	- Doesnt work now due to Bailiwick Checking, contextual updates only
-- Kaminisky Exploit
-	- PreReq is that local nameserver must not have the original website cached
+ -->
+- ## DNS
+	- Mapping a memorable name to a routable IP Address
+		- `Fill in`
+	- ### Iterated VS Recursive DNS queries
+		- Iterated
+			- Exhaustively Iterates through all the DNS servers horizontally and then goes down a level
+		- Recursive
+			- Server that is queried then takes the responsibility to get a response for the query back to the sender
+	- ### Aliasing & Load Balancing
+	- ### DNS Caching
+		- `Add notes on Cache poisoning Version 2`
+	- ### DNS Security Issues
+		- DOS/DDOS
+		- Hijacking DNS
+			- Threat Model and Attacker Goals
+			- Doesnt work now due to Bailiwick Checking, contextual updates only
+		- Kaminisky Exploit
+			- PreReq is that local nameserver must not have the original website cached
 
 ---
 # Lecture 3: TCP Attacks
