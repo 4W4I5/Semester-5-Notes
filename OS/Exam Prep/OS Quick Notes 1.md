@@ -450,7 +450,7 @@
 - **Security**: VMs enhance security by isolating potentially vulnerable applications or OS instances from each other.
 
 ### Windows Architecture:
-- **Kernel**: Windows operating systems have a kernel at their core, which manages memory, processes, and hardware interactions.
+- **Kernel**: Windows operating systems have a monolithic kernel at their core 
 - **User Mode vs. Kernel Mode**: Windows employs a separation between user mode and kernel mode, with critical OS functions residing in the kernel.
 - **Hardware Abstraction Layer (HAL)**: HAL provides an abstraction layer for hardware, allowing Windows to run on various hardware platforms.
 - **Graphical User Interface (GUI)**: Windows is known for its GUI, which includes the desktop environment, windows, and graphical applications.
@@ -471,7 +471,10 @@
 		- Provides a suitable base for distributed computing
 
 ### Threads and Symmetric MultiProcessing
-`Fill this in later, however not sure on how important this was`
+- Several processes can run in parallel
+- Multiple processors are transparent to the user
+	- These processors share the same Memory and I/O while performing the same functions
+- OS handles scheduling of threads or processes
 ## Android:
 - Android is based on the Linux kernel, which forms the core of the operating system.
 - Android Runtime (ART) replaced the Dalvik Virtual Machine (DVM) with Android 5.0 (Lollipop).
