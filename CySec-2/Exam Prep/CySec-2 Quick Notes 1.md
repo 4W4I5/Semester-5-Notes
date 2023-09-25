@@ -36,7 +36,7 @@
 ## Defining Information Security
 
 - Types of information protection
-	- **Confidentiality** `How is this dependent on Integrity though`
+	- **Confidentiality** `How is this dependent on Integrity though` <!--For data to be confidental it must be trustworthy, encrypted, be under ACL/IAM and be audited-->
 		- Definition
 			- Protect information from unauthorized access
 		- Breaches
@@ -72,7 +72,6 @@
 			- **Disaster Recovery Planning:** Establishes procedures and resources for restoring operations after a disruption.
 
 ## Protections to secure information
-
 - ##### **Identification**
 	- This involves uniquely recognizing users or entities accessing a system or resource.
 - ##### **Authentication**
@@ -85,11 +84,7 @@
 	- This involves tracking and managing resource usage, often for billing, auditing, or security purposes.
 	- **Non-Repudiation**
 		- Ensure that the suspect of an event/activity cannot deny that the event occurred. It is essential to accounting and made possible through Identification, Authentication, Accountability, Authorization and Auditing
-
-
----
-# Information Security Terminology
-
+### Information Security Terminology
 - Asset
 	- Item of value
 	- Asset Types
@@ -113,30 +108,29 @@
 		- Risk mitigation: Address the risks to reduce the severity of the risks
 		- Deterrence: Understanding the attacker and then informing them of the consequences
 		- Transference: Transfer the risk to a 3rd party
+- ##### SSL Exploit and APT Spyware
 [Case Study - HeartBleed Exploit](/CySec-2/Case%20Studies/Case%20Study%20-%20HeartBleed%20Exploit.md)
 [Case Study - Pegasus Spyware](Case%20Study%20-%20Pegasus%20Spyware.md)
 
 ## Advanced Persistent Threats (APT)
-
-`Note these were made using chatGPT so bear w some inaccuraices for now`
-
-## Sophistication
-- **Advanced Techniques:** APTs utilize cutting-edge attack methods that are beyond typical cybercriminal capabilities. They might employ zero-day exploits, persistence, custom malware, and complex attack chains.
-- **Custom Malware:** Attackers create tailored malware specifically designed to evade detection by traditional security measures. This makes it difficult for antivirus software to identify and mitigate the threat.
-- **Precision Planning:** APTs are meticulously planned and executed. Attackers invest significant time in reconnaissance to gather intelligence about the target, its systems, and its vulnerabilities.
-## Persistence
-- **Continuous Access:** Once inside the target's network, APTs aim to maintain access over an extended period, often measured in months or even years. This allows them to gather valuable information and carry out their objectives over time.
-- **Backdoors and Implants:** APTs create hidden backdoors and implants within the compromised systems. These serve as entry points for the attackers even if the initial point of entry is discovered and closed.
-## Stealth
-- **Anti-Detection Techniques:** APTs employ various techniques to evade detection, such as using encryption to hide their communication, disguising their activities as legitimate traffic, and employing anti-analysis mechanisms to hinder security researchers.
-- **Avoiding Suspicion:** APTs aim to blend in with normal network activity, avoiding actions that might trigger alarms or raise suspicion.
-## Specific Targets
-- **High-Value Targets:** APTs often focus on high-value targets such as government agencies, military institutions, defense contractors, large corporations, and organizations with valuable intellectual property.
-- **Nation-State Involvement:** APTs are sometimes attributed to nation-states, indicating political or espionage motives. However, some APTs also have financial or criminal motivations.
-## Motivation
-- **State-Sponsored:** Some APTs are believed to be backed by nation-states, aiming to gather intelligence, carry out cyber espionage, disrupt adversaries, or support political agendas.
-- **Financial Gain:** Certain APT groups target financial institutions, critical infrastructure, and businesses to steal sensitive financial information, intellectual property, or engage in cybercrime for monetary gain.
-- **Hacktivism:** APTs with hacktivist motives target organizations aligned with their beliefs or political objectives, aiming to create social or political disruption.
+APT's are built with the following goals in mind
+- ##### Sophistication
+	- **Advanced Techniques:** APTs utilize cutting-edge attack methods that are beyond typical cybercriminal capabilities. They might employ zero-day exploits, persistence, custom malware, and complex attack chains.
+	- **Custom Malware:** Attackers create tailored malware specifically designed to evade detection by traditional security measures. This makes it difficult for antivirus software to identify and mitigate the threat.
+	- **Precision Planning:** APTs are meticulously planned and executed. Attackers invest significant time in reconnaissance to gather intelligence about the target, its systems, and its vulnerabilities.
+- ##### Persistence
+	- **Continuous Access:** Once inside the target's network, APTs aim to maintain access over an extended period, often measured in months or even years. This allows them to gather valuable information and carry out their objectives over time.
+	- **Backdoors and Implants:** APTs create hidden backdoors and implants within the compromised systems. These serve as entry points for the attackers even if the initial point of entry is discovered and closed.
+- ##### Stealth
+	- **Anti-Detection Techniques:** APTs employ various techniques to evade detection, such as using encryption to hide their communication, disguising their activities as legitimate traffic, and employing anti-analysis mechanisms to hinder security researchers.
+	- **Avoiding Suspicion:** APTs aim to blend in with normal network activity, avoiding actions that might trigger alarms or raise suspicion.
+- ##### Specific Targets
+	- **High-Value Targets:** APTs often focus on high-value targets such as government agencies, military institutions, defense contractors, large corporations, and organizations with valuable intellectual property.
+	- **Nation-State Involvement:** APTs are sometimes attributed to nation-states, indicating political or espionage motives. However, some APTs also have financial or criminal motivations.
+- ##### Motivation
+	- **State-Sponsored:** Some APTs are believed to be backed by nation-states, aiming to gather intelligence, carry out cyber espionage, disrupt adversaries, or support political agendas.
+	- **Financial Gain:** Certain APT groups target financial institutions, critical infrastructure, and businesses to steal sensitive financial information, intellectual property, or engage in cybercrime for monetary gain.
+	- **Hacktivism:** APTs with hacktivist motives target organizations aligned with their beliefs or political objectives, aiming to create social or political disruption.
 
 ---
 
@@ -145,6 +139,8 @@
 `Look into THM for more indepth info on killchain`
 
 > [Cyber Kill Chain TryHackMe. Reconnaissance | by Avataris12 | Medium](https://medium.com/@WriteupsTHM_HTB_CTF/cyber-kill-chain-tryhackme-7025c0662696)
+
+RWDEIC2E -> Acronym to keep this memorized
 ### 1. **Reconnaissance**
 - Probe for information about the target system: type of hardware or software used, harvest public information, conduct in-depth research, and search for weak points in a company’s network.
 - **Activities:**
@@ -223,12 +219,11 @@
 		- **Activities:**
 			- Destroying data, disrupting services, deploying ransomware, causing financial losses.
 # Carbanak APT Case Study
-
-[Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
+- The Carbanak APT is one of the most notorious and impactful cybercrime campaigns in recent history. Active from around 2013 to 2016, the Carbanak group targeted financial institutions, stealing hundreds of millions of dollars worldwide.
+	- [Case Study - Carbanak APT](/CySec-2/Case%20Studies/Case%20Study%20-%20Carbanak%20APT.md)
 
 ---
 # Lecture 2: DNS Attacks
-
 ## Revising DNS & DHCP
 - IP addresses allow internet connectivity
 	- However tough to remember the IP for each website/server we need
@@ -276,9 +271,6 @@
 		- Network Monitoring
 
 ## URL (Uniform Resource Locator)
-
-`Used ChatGPT for this`
-
  - ### **Definition**:
 	 - A URI (Uniform Resource Identifier) is a string of characters that uniquely identifies a particular resource, either on the internet or in other contexts.
 - ### **Types of URIs**:
@@ -360,8 +352,6 @@
     - If you wish to enable DNS caching on your server, configure cache settings to control how long DNS records are stored in the cache.
 16. **Continual Monitoring**:
     - Continually monitor your DNS server's performance, resolve any issues that arise, and stay informed about security updates and best practices in DNS management.
-
----
 
 ### Iterated VS Recursive DNS queries
 - Iterated
