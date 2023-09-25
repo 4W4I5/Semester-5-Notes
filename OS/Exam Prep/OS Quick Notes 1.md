@@ -361,44 +361,48 @@
 		- Used for adding modular extensions to a small kernel
 		- Enables programmers to customize an OS without disrupting system integrity
 		- Eases the development of distributed tools and full-blown distributed operating systems
-- ## Fault Tolerance
-	- Refers to the ability of a system or component to `Fill this in`
+## Fault Tolerance
+- Refers to the ability of a system or component to continue normal operation despite the presence of hardware or software faults
 	- Fundamental Concepts
 		- Basic measures are
-			- Reliability: R(t)
-				- Probability of its correct operation up to time t given that the system was operating correctly at time=0
-			- Mean time to failure (MTTF)
-				- Time it takes to fail (Uptime)
-			- Mean time to repair (MTTR)
-				- Time it takes to get the system back up and running
-				- The avg time it takes to repair/replace a faulty element
-			- Availability
-				- Classes
-					- Continuous
-						- `Fill in later`
-					- Fault Tolerant
-					- Fault Resilient
-					- High Availability
-					- Normal Availability
-			- Fault Types
-				- Permanent
-				- Temporary
-			- Fault Categories of redundancy
-				- **Physical (Spatial)**:
-					- Physical redundancy involves duplicating hardware components to provide fault tolerance.
+		- Reliability: R(t)
+			- Probability of its correct operation up to time t given that the system was operating correctly at time=0
+		- Mean time to failure (MTTF)
+			- Time it takes to fail (Uptime)
+		- Mean time to repair (MTTR)
+			- Time it takes to get the system back up and running
+			- The avg time it takes to repair/replace a faulty element
+		- Availability Classes
+			- Continuous
+			- Fault Tolerant
+			- Fault Resilient
+			- High Availability
+			- Normal Availability
+		- Fault Types
+			- Permanent
+				- A fault that after occurs, is always present until the faulty component is replaced or repaired
+			- Temporary
+				- Transient -> Occurs only once
+				- Intermittent -> Occurs over and over unpredictably
+
+<!--
+
+		- Fault Categories of redundancy
+			- **Physical (Spatial)**:
+				- Physical redundancy involves duplicating hardware components to provide fault tolerance.
 				- Examples include:
 					- **Redundant Power Supplies**: Multiple power supplies in a server to ensure continued operation if one fails.
 					- **RAID (Redundant Array of Independent Disks)**: Storing data on multiple hard drives to prevent data loss in case of a disk failure.
 					- **Clustering**: Creating clusters of servers with identical configurations, where one can take over if another fails.
 				- Physical redundancy is about having backup hardware components ready to take over in case of failure.
-				- **Temporal**:
-					- Temporal redundancy addresses faults by executing the same task or operation multiple times.
+			- **Temporal**:
+				- Temporal redundancy addresses faults by executing the same task or operation multiple times.
 					- Examples include:
 						- **Error-Correcting Codes**: Encoding data with additional bits to detect and correct errors when it's read.
 						- **Retry Mechanisms**: Reattempting an operation if it fails, often with a timeout.
 					- Temporal redundancy aims to mitigate faults through repetition and error detection/correction.
-				- **Data**:
-					- Data redundancy involves storing the same data in multiple locations or formats.
+			- **Data**:
+				- Data redundancy involves storing the same data in multiple locations or formats.
 					- Examples include:
 						- **Backup Systems**: Regularly backing up data to separate storage to recover from data loss or corruption.
 						- **Mirroring**: Creating identical copies of data on different disks or servers.
@@ -409,7 +413,8 @@
 				- Virtual Machines
 				- Checkpoints and rollbacks
 					- Saved state at a certain point in time to rollback to that state
-`UnGPT-fy this`
+-->
+
 ## Multiprocessor OS Considerations:
 - **Design Issues**:
     - Simultaneous execution of multiple processes or threads on multiple processors requires careful design to ensure efficient resource utilization and avoid conflicts.
