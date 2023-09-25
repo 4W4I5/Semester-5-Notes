@@ -334,7 +334,8 @@
 		- Basic Scheduling
 	- Microkernel vs Monolithic Kernel
 		- Entire OS is in kernel mode
-		- Less 
+		- Easier to add new functionalities, therefore easily extensible
+		- Service crashes do not affect the whole kernel
 	- Allows
 		- Simplifies implementation
 		- Provides flexibility
