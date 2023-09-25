@@ -601,6 +601,7 @@
 		- OS determines if condition is fatal
 			- Moved to exit state and a process switch occurs
 - #### Mode Switching
+	- 
 - #### Process Switching
 
 ## System Data Structures
