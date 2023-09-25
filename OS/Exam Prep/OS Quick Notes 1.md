@@ -617,11 +617,21 @@
 			- Restore context after 2nd process is done or is blocked
 
 ## System Data Structures
-
-process tables
-memory tables
-i/o tables
-file tables
+- **Process tables:** 
+	- These tables store information about running processes, including their status, identifiers, and resource allocation.
+	- Holds
+		- User Data
+		- User Program
+		- Stack
+		- PCB
+		- Heap
+	- AKA process image
+- **Memory tables:** 
+	- Memory tables keep track of the allocation and usage of system memory, helping manage and optimize memory resources.
+- **I/O tables:** 
+	- I/O tables maintain information about input and output operations, helping manage data transfers between devices and processes.
+- **File tables:** 
+	- File tables store metadata and control information for files, facilitating file management and access control in the system.
 ## UNIX SVR4 Process management 3.6
 
 ### Process states
