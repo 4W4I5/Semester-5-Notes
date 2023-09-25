@@ -8,19 +8,19 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 > [!WARNING]
 > Algo might not have a complete QuickNote1 written for it, theres way too much math to type out :')
 
-| Week #      | Date                                             | Status     | Content                           |
-| ----------- | ------------------------------------------------ | ---------- |:--------------------------------- |
-| Week 1      | 21 Aug                                           | N/A        | Maam Absent                       |
-| Week 1      | 23 Aug                                           | N/A        | Maam Absent                       |
-| Week 2      | 28 Aug                                           | N/A        | Maam Absent                       |
-| Week 2      | [30 Aug](Algo/Algo%2030%20August,%202023.md)     | Complete   | Intro to Algo                     |
-| Week 3      | [4 Sept](Algo/Algo%204%20September,%202023.md)   | Complete   | Analyzing time complexity in code |
-| Week 3      | [6 Sept](Algo/Algo%206%20September,%202023.md)   | Incomplete | Big-O                             |
-| Week 4      | 11 Sept                                          | N/A        | Quiz                              |
-| Week 4      | [13 Sept](Algo/Algo%2013%20September,%202023.md) | Incomplete | Chapter 3 of book                 |
-| Week 5      | [18 Sept](Algo/Algo%2018%20September,%202023.md) | Incomplete |                                   |
-| Week 5      | [20 Sept](Algo/Algo%2020%20September,%202023.md) | Incomplete | Recursion                         |
-| Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md)                                                 |            |                                   |
+| Week #      | Date                                                    | Status     | Content                           |
+| ----------- | ------------------------------------------------------- | ---------- |:--------------------------------- |
+| Week 1      | 21 Aug                                                  | N/A        | Maam Absent                       |
+| Week 1      | 23 Aug                                                  | N/A        | Maam Absent                       |
+| Week 2      | 28 Aug                                                  | N/A        | Maam Absent                       |
+| Week 2      | [30 Aug](Algo/Algo%2030%20August,%202023.md)            | Complete   | Intro to Algo                     |
+| Week 3      | [4 Sept](Algo/Algo%204%20September,%202023.md)          | Complete   | Analyzing time complexity in code |
+| Week 3      | [6 Sept](Algo/Algo%206%20September,%202023.md)          | Incomplete | Big-O                             |
+| Week 4      | 11 Sept                                                 | N/A        | Quiz                              |
+| Week 4      | [13 Sept](Algo/Algo%2013%20September,%202023.md)        | Incomplete | Chapter 3 of book                 |
+| Week 5      | [18 Sept](Algo/Algo%2018%20September,%202023.md)        | Incomplete |                                   |
+| Week 5      | [20 Sept](Algo/Algo%2020%20September,%202023.md)        | Incomplete | Recursion                         |
+| Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md) | Incomplete | Prep material for sessional 1                                  |
 
 ## CySec-2
 
@@ -38,7 +38,7 @@ Notes sponsored by chatGPT ;)
 | Week 4      | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md)       | Incomplete  | TCP stuff                                                          |
 | Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)       | Incomplete  | TCP Mitnick Attack + Started CH6                                                             |
 | Week 5      | 21 Sept                                                     | N/A         | pfSense Lab setup DHCP, DNS, Rules                                 |
-| Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | In progress | Prep material for Sessional 1                                                                   |
+| Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete | Prep material for Sessional 1                                                                   |
 
 ## DB
 

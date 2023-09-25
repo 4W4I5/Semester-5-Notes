@@ -210,7 +210,7 @@
 - **Resource Management**
 	- Responsible for Controlling the Use of
 		- CPU
-		- Processor Execution time
+			- Processor Execution time
 		- I/O
 			- Managed by the I/O controller linked to the OS
 		- Main Memory
@@ -282,7 +282,6 @@
 	    - Supports interactive computing.
 	    - Provides the illusion of dedicated resources for each user/process.
 
----
 - #### What error can cause the OS to crash?
 	- **Improper Synchronization**:
 	    - This error occurs when multiple processes or threads access shared resources without proper coordination.
