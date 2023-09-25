@@ -150,7 +150,13 @@ for(int i =0; i < n; i++){
 - Simple way to go about this, use the table function in your calculator to get a list of values
 	- Basically bruteforcing ur way until the equality fails or passes, need to look for the point where it changes and it should give you solid enough proof to use
 - Do not forget to use log **BASE 2** not **BASE 10**
-
+- Highly likely the first change in growth wont be the only one, check for others if you find one point of intersection
+- Equality Signs
+	- Omega >=
+	- Theta ==
+	- Big-O <=
+	- Little-O <
+	- Little-Omega >
 
 ### Properties of O notation
 - Fastest growing term dominates
@@ -167,10 +173,7 @@ for(int i =0; i < n; i++){
 	- This means
 		- Drop lower-order terms
 		- Drop constant factors
-- Use the smallest possible class of functions
-	- 
-- Use the simplest expression of the class
-`Fill in from slides`
+- 
 
 
 
