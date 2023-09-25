@@ -205,7 +205,6 @@
 ---
 
 # Chapter 2: Operating System
-
 ## Operating Systems
 - Interface b/w application & hardware
 - **Resource Management**
@@ -480,7 +479,7 @@
 
 ### Power Management:
 - Power management in Android is vital for optimizing battery life on mobile devices.
-- **Alarms** 
+- **Alarms**
 	- Allow applications to schedule tasks at specific times or intervals, even when the device is in a low-power state, helping conserve power.
 - **Wakelocks**
 	- Mechanisms that prevent the device from entering deep sleep when certain tasks need to be executed, such as maintaining a network connection or playing music.
