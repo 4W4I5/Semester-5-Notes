@@ -167,21 +167,6 @@ for(int i =0; i < n; i++){
 	- Exponentials grow **slower** than powers
 	- Logarithms grow **faster** than powers
 - Sum of the first m-th powers grows as the m+1-th power$$n^m$$ 
-
-### Big-O
-- If f(n) is of degree d, then f(n) is O(n^d)
-	- This means
-		- Drop lower-order terms
-		- Drop constant factors
-- 
-
-
-
----
-## Asymptotic Notation 3.2
-- 
-
----
 # Recursion Problems
 ## Divide & Conquer
 - Divide the problem into a number of sub problems that smaller instances of the same problem
@@ -209,19 +194,6 @@ Visualize the recursion as a tree, calculate work at each level, and analyze the
 4. Analyze the tree's structure:
     - If the tree is balanced, it typically has a height of log(n).
     - If the tree is unbalanced, it might have a height of n.
-
-**Master Method**:
-Use a formula to determine the time complexity based on the recurrence relation's form.
-1. Determine the form of the recurrence relation: T(n) = aT(n/b) + f(n).
-    - a is the number of subproblems.
-    - b is the factor by which the problem size is reduced.
-    - f(n) is the work done outside the recursive calls.
-2. Compare f(n) with n^log_b(a):
-    - If f(n) is asymptotically smaller, then the solution is T(n) = Θ(n^log_b(a)).
-    - If f(n) is asymptotically larger, then the solution is T(n) = Θ(f(n)).
-    - If f(n) is the same, then the solution is T(n) = Θ(n^log_b(a) * log^k(n)), where k is determined by comparing f(n) with n^log_b(a).
-3. Determine the complexity based on the comparison from step 2
-
 **Iteration Method**:
 Use a formula to determine the time complexity based on the recurrence relation's form.
 1. **Start with the Recurrence Relation**: You begin with the given recurrence relation. This relation represents the time complexity of an algorithm or function in terms of itself with smaller inputs. It typically looks like this: $$T(n) = aT(n/b) + f(n)$$
