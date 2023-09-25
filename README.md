@@ -1,6 +1,7 @@
 # Notes Status
 
-`These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
+These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
+
 > [!NOTE]
 > look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not always have any content that was missed during class
 ## Algo
