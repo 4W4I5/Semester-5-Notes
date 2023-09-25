@@ -327,13 +327,14 @@ RWDEIC2E -> Acronym to keep this memorized
 			- Exhaustively Iterates through all the DNS servers horizontally and then goes down a level
 		- Recursive
 			- Server that is queried then takes the responsibility to get a response for the query back to the sender
-	- ### Aliasing & Load Balancing
+		
 	- ### DNS Caching
 		- Iterative Caching
 			- Local Machine stores a cache on TLD servers and possible Auth servers
 		- Recursive Caching
 			- Local machine forwards queries the local nameserver 
 	- ### DNS Attacks
+	- #### Note that the resolver will accept any query received on the same port, IP and same queryID  
 		- 3 Types
 			- **Old School: Record Injection**
 				- Provide additional info appended with our host IP through our own attacker nameserver
@@ -343,9 +344,9 @@ RWDEIC2E -> Acronym to keep this memorized
 			- **Somewhat Old School: Response Spoofing**
 			- **New: Kaminsky Attack**
 				- AKA DNS Cache Poisoning
-				- PreReq for this attack is to know the queryID
+				- We do not know the queryID however so we bruteforce the hell out of the server for it
 					- Assuming we dont have a connection to the nameserver directly we can send a high volume of DNS queries to a DNS resolver
-					- If it is timed well with a legitimate DNS query 
+					- If it is timed well with and reaches before a legitimate DNS query is recived by the server our poisioned record is added to the DNS server
 
 		- Hijacking DNS
 			- Threat Model and Attacker Goals
