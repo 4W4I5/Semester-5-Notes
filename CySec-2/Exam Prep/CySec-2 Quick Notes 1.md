@@ -346,7 +346,10 @@ RWDEIC2E -> Acronym to keep this memorized
 				- AKA DNS Cache Poisoning
 				- We do not know the queryID however so we bruteforce the hell out of the server for it
 					- Assuming we dont have a connection to the nameserver directly we can send a high volume of DNS queries to a DNS resolver
-					- If it is timed well with and reaches before a legitimate DNS query is recived by the server our poisioned record is added to the DNS server
+					- If it is timed well with and reaches before a legitimate DNS query is received by the server our poisoned record is added to the DNS server
+				- Kaminsky's Version of DNS Poisoning
+					- Send a query to the NS with the hostname to hijack
+					- Flood the network with DNS reply packets
 
 		- Hijacking DNS
 			- Threat Model and Attacker Goals
