@@ -153,6 +153,10 @@ for(int i =0; i < n; i++){
 
 
 ### Properties of O notation
+- Fastest growing term dominates
+	- for example, n^2 at some point can and will grow faster than n^3
+- Transitive
+	- Product of upper bounds is the upper bound for the entire thing
 - All logarithms grow at the same rate
 	- Exponentials grow **slower** than powers
 	- Logarithms grow **faster** than powers
