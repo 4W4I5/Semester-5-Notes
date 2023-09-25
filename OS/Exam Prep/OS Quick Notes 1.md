@@ -263,11 +263,11 @@
 			- The time limit was a poll of 0.2s
 		- Processor was often left idle if a program was waiting for I/O
 			- This lead to the development of two multiprogram modes
-				- Time Sharing aka MultiProgrammed systems
+				- Time Sharing 
 					- Each program was alloted a certain number of instructions to execute after which the monitor passed control onto the next program
 				- Time Slicing
 					- Each program was alloted a certain slice of the processors time to execute after which control was passed onto the next program
-- **Multi-programmed Systems**
+- **Batch Multi-programmed Systems**
 	- **Definition:**
 		- A system that can manage and execute multiple programs concurrently.
 	- **Characteristics:**
@@ -285,16 +285,16 @@
 - #### What error can cause the OS to crash?
 	- **Improper Synchronization**:
 	    - This error occurs when multiple processes or threads access shared resources without proper coordination.
-	    - It can lead to race conditions and data corruption, potentially causing the OS to crash.
+		    - It can lead to race conditions and data corruption, potentially causing the OS to crash.
 	- **Failed Mutual Exclusion**:
 	    - Mutual exclusion is a key synchronization mechanism to ensure that only one process accesses a resource at a time.
-	    - If mutual exclusion fails, multiple processes might access a resource concurrently, leading to data inconsistency or system instability.
+		    - If mutual exclusion fails, multiple processes might access a resource concurrently, leading to data inconsistency or system instability.
 	- **Nondeterminate Program Operation**:
 	    - Nondeterminate behavior happens when the outcome of a program becomes unpredictable.
-	    - It can occur due to bugs, unexpected inputs, or unhandled exceptions, which can eventually crash the OS if not properly managed.
+		    - It can occur due to bugs, unexpected inputs, or unhandled exceptions, which can eventually crash the OS if not properly managed.
 	- **Deadlocks**:
 	    - Deadlocks happen when two or more processes are unable to proceed because each is waiting for a resource held by another.
-	    - If not resolved, deadlocks can lead to system resource depletion and system crashes.
+		    - If not resolved, deadlocks can lead to system resource depletion and system crashes.
 - Process consists of:
 	- Executable
 	- Associated data
