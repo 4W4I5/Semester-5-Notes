@@ -480,18 +480,16 @@
 - Android Runtime (ART) replaced the Dalvik Virtual Machine (DVM) with Android 5.0 (Lollipop).
 - ART uses Ahead-of-Time (AOT) compilation, while DVM used Just-in-Time (JIT) compilation.
 - Android app code is compiled into bytecode (.dex files) and executed by ART.
-
-### System Libraries:
-- Android's system libraries are crucial components of the Android system.
-- These libraries are primarily written in C/C++ to provide low-level system functionality.
-- They are called by the Android application framework and applications through Application Programming Interfaces (APIs).
-
-### Power Management:
-- Power management in Android is vital for optimizing battery life on mobile devices.
-- **Alarms**
-	- Allow applications to schedule tasks at specific times or intervals, even when the device is in a low-power state, helping conserve power.
-- **Wakelocks**
-	- Mechanisms that prevent the device from entering deep sleep when certain tasks need to be executed, such as maintaining a network connection or playing music.
+- ### System Libraries:
+	- Android's system libraries are crucial components of the Android system.
+	- These libraries are primarily written in C/C++ to provide low-level system functionality.
+	- They are called by the Android application framework and applications through Application Programming Interfaces (APIs).
+- ### Power Management:
+	- Power management in Android is vital for optimizing battery life on mobile devices.
+	- **Alarms**
+		- Allow applications to schedule tasks at specific times or intervals, even when the device is in a low-power state, helping conserve power.
+	- **Wakelocks**
+		- Mechanisms that prevent the device from entering deep sleep when certain tasks need to be executed, such as maintaining a network connection or playing music.
 
 ---
 
