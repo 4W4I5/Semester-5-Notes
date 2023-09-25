@@ -595,7 +595,7 @@
 		- ![](Pasted%20image%2020230912151924.png)
 		-
 	- 6 State model
-		- ![](Pasted%20image%2020230912152003.png)
+		- ![](/Pasted%20image%2020230912152003.png)
 
 <!--most of the rec is just revision-->
 
