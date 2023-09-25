@@ -323,7 +323,9 @@ RWDEIC2E -> Acronym to keep this memorized
 	- ### Aliasing & Load Balancing
 	- ### DNS Caching
 		- Iterative Caching
-			- Local Machine caches the 
+			- Local Machine stores a cache on TLD servers and possible Auth servers
+		- Recursive Caching
+			- Local machine forwards queries the local nameserver 
 	- ### DNS Security Issues
 		- DOS/DDOS
 		- Hijacking DNS
