@@ -17,9 +17,7 @@
 	- Performance often draws the line b/w what is feasible and what is impossible
 		- It is also the currency of computing
 	- Algo maths = language for talking about a program's behavior
----
 ### Algo characteristics
-
 - Definiteness
 	- Steps must be precisely define
 - Effectiveness
@@ -37,9 +35,7 @@
 		- Works for many possible inputs
 	- Efficiency
 		- Takes less time & memory to run
-
 ## Complexity Analysis
-
 - **Platform Independence**
 	- Ideal Algo
 		- Each elementary operation takes 1 step of time
@@ -47,7 +43,7 @@
 
 #### Analyzing an Algo statements
 - Order of O's
-	- Goes in order of Best to Worst
+	- Goes in order of **Best** to **Worst**
 		- O(1)
 		- O(log(N))
 		- O(N)
@@ -70,20 +66,33 @@
 		- i < n. This is a condition thats checked at the end of every iteration
 		- i++.  
 ```
-//Here even if the loop increments by N it will still be N times and therefore the complexity is O(n)
+//Here even if the loop increments by 
+N it will still be N times and therefore 
+the complexity is O(n)
+
 	for(int i =0; i < n; i++){
 		s      //Statement that does stuff
 	}
 
-//However for factors i.e the iterator being multiplied or divided the time complexity is O(log(n))
+
+//However for factors i.e the iterator being 
+multiplied or divided the 
+time complexity is O(log(n))
+
 	for(int i =0; i < n; i*n){
 		s      //Statement that does stuff
 	}
 
-//For the iterator going up in order of power i.e from i^2 to i^3 or from i^2 to sqrt(i) the complexity is O(log(log(n)))
+
+//For the iterator going up in order of
+power i.e from i^2 to i^3 or from 
+i^2 to sqrt(i) the complexity is O(log(log(n)))
+
 	for(int i =0; i < n; i=pow(i,c)){
 		s      //Statement that does stuff
 	}
+
+
 
 > 2^(c^i) = n      //Take log of base 2 on both sides
 > log2(2^(c^i)) = log2(n)
@@ -114,8 +123,6 @@ for(int i =0; i < n; i++){
 		s      //Statement that does stuff
 	}
 }
-
-
 ```
 - Array
 	- Loop where a Sum of all elements is calculated
@@ -157,33 +164,6 @@ for(int i =0; i < n; i++){
 - Use the simplest expression of the class
 `Fill in from slides`
 
-
-
-## Home task working
-`This was just for my sanity, believe its supposed to be o(sqrt(1/2))`
-> p = 0
-> for(i=0; p<n; i++){
->    p = p+i
-> }
-
-- Dry runs
-	- i =0
-		- p = 0
-	- i = 1
-		- p = 0 + 1 = 1
-	- i = 2
-		- p = 1 + 2 = 3
-	- i = 3
-		- p = 3 + 3 = 6
-	- i = 4 
-		- p = 6 + 4 = 10
-- Equiv equation can be $$\frac{p(p+1)}{2}$$ 
-- this should be greater or equal to N for the loop to stop therefore $$\frac{p(p+1)}{2}>=n $$
-- $$p^{2}+ p >= 2n$$
-- $$p^{2}+ p - 2n >= 0$$
-- $$p = \frac{-1+\sqrt{(1^{2}- 4(1)(-2n)))}}{2}$$
-- $$p = \frac{-1+\sqrt{(1+8n)}}{2}$$
-- nvm gradient is constant so its O(n)![](/Algo/Images/Pasted%20image%2020230906093822.png)
 
 
 ---
