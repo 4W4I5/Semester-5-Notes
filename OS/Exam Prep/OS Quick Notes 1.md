@@ -290,10 +290,10 @@
 	    - Mutual exclusion is a key synchronization mechanism to ensure that only one process accesses a resource at a time.
 		    - If mutual exclusion fails, multiple processes might access a resource concurrently, leading to data inconsistency or system instability.
 	- **Nondeterminate Program Operation**:
-	    - Nondeterminate behavior happens when the outcome of a program becomes unpredictable.
-		    - It can occur due to bugs, unexpected inputs, or unhandled exceptions, which can eventually crash the OS if not properly managed.
+	    - Program execution is interleaved by the processor when memory is shared
+		    - The order of program schedule might affect their outcome
 	- **Deadlocks**:
-	    - Deadlocks happen when two or more processes are unable to proceed because each is waiting for a resource held by another.
+	    - Occurs when two or more processes are unable to proceed because each is waiting for a resource held by another.
 		    - If not resolved, deadlocks can lead to system resource depletion and system crashes.
 - Process consists of:
 	- Executable
@@ -303,7 +303,7 @@
 		- OS Process control data (pid is stored here, if halted)
 		- Priority
 		- I/O Status
-- Process implementation (Not complete)
+- Process implementation (Not complete, ignore this agar mood ha)
 	- Some defs
 		- Process registers
 			- PC
@@ -322,19 +322,23 @@
 	- Allows programs to work with virtual addresses that refer to the real addresses
 		- Allows OS to just manage addresses logically and delegate the real placement of the pages up to the ram
 	- All pages are maintained on disk
-# Differential Architecture
+- Paging
+	- Processes comprise of a number of fixed-size blocks
+		- Referenced via Virtual addresses i.e has a page number and the required offset
+		- Can be located anywhere in the main memory
+# Different Architectural Approaches
 - ## Microkernel Architecture
 	- A kernel usually has a few essential functions
 		- Address Spaces
 		- Inter Process communication
 		- Basic Scheduling
 	- Microkernel vs Monolithic Kernel
+		- Entire OS is in kernel mode
+		- Less 
 	- Allows
 		- Simplifies implementation
 		- Provides flexibility
 		- Well suited to a distributed environment
-	- `NOTE:: Filesystem types are deployed within the kernel`
-	- `Add in differences from monolilthic kernel`
 - ## Multithreading
 	- A process is which executes an application is divided into threads that can run concurrently
 	- Most beneficial to an SMP (Symmetric Multiprocessor)
