@@ -535,6 +535,12 @@
 					- May include information related to process permissions, access control, and security attributes.
 				- **Exit Status**:
 					- Records the exit status or exit code of the process when it terminates
+- ### Process Creation Events
+	- Assign a PID
+	- Allocate space
+	- Init PCB
+	- Set appropriate linkages
+	- Create/Expand other data structures
 - #### Reasons for process creation
 	- **New batch job**:
 		- Processes are created to execute a new batch job or task in batch processing systems, where multiple jobs are run sequentially.
