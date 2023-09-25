@@ -322,7 +322,8 @@ RWDEIC2E -> Acronym to keep this memorized
 			- Server that is queried then takes the responsibility to get a response for the query back to the sender
 	- ### Aliasing & Load Balancing
 	- ### DNS Caching
-		- `Add notes on Cache poisoning Version 2`
+		- Iterative Caching
+			- Local Machine caches the 
 	- ### DNS Security Issues
 		- DOS/DDOS
 		- Hijacking DNS
