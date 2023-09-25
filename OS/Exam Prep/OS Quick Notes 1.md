@@ -545,6 +545,11 @@
 		- The operating system creates processes to offer various services like printing, network services, or background tasks (daemons) that serve system-level functions.
 	- **Spawned by the existing process**:
 		- Existing processes can create child processes or spawn new processes to perform parallel or related tasks, enabling multitasking and efficient resource utilization.
+- #### Reasons for Process Suspended
+	- **Swapping**
+		- Moving part/all of process from main memory to disk
+	- **Parent Process**
+		- The parent process can request the child process to be stopped
 - #### Reasons for Process Termination
 	- **Normal Termination**:
 	    - The process has completed its execution and exits gracefully.
