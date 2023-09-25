@@ -550,6 +550,10 @@
 		- Moving part/all of process from main memory to disk
 	- **Parent Process**
 		- The parent process can request the child process to be stopped
+	- **Interactive User Request**
+		- User suspends the execution of a program i.e for debugging
+	- **Timing**
+		- Process may only execute periodically
 - #### Reasons for Process Termination
 	- **Normal Termination**:
 	    - The process has completed its execution and exits gracefully.
