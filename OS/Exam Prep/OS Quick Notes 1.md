@@ -774,7 +774,6 @@ Output will be 1 1 1 1 1
 #### Some simple stuff to remember
 - IF(Fork()) -> Refers to the parent process. Can be the parent in a child process as well
 - IF(!Fork()) -> Refers to a child of the current parent process. Same as IF(Fork() == 0)
-- A && B -> B will only run if A is true
 - A || B -> B will run if A is false
 ---
 
