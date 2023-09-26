@@ -884,7 +884,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Effect on Processes:
 	- RR is fair to all processes and prevents any process from monopolizing the CPU.
 - Starvation:
-	RR minimizes the risk of starvation as each process gets a turn.
+	- RR minimizes the risk of starvation as each process gets a turn.
 
 **SPN (Shortest Process Next):**
 
