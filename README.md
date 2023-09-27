@@ -20,7 +20,8 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 | Week 4      | [13 Sept](Algo/Algo%2013%20September,%202023.md)        | Incomplete | Chapter 3 of book                 |
 | Week 5      | [18 Sept](Algo/Algo%2018%20September,%202023.md)        | Incomplete |                                   |
 | Week 5      | [20 Sept](Algo/Algo%2020%20September,%202023.md)        | Incomplete | Recursion                         |
-| Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md) | Incomplete | Prep material for sessional 1                                  |
+| Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md) | Incomplete | Prep material for sessional 1     |
+| Week 6      | [27 Sept](Algo/Algo%2027%20September,%202023.md) | Incomplete | Master Method Recurrences         |
 
 ## CySec-2
 
