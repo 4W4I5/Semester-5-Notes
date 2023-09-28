@@ -20,6 +20,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "5f1f4990d4648d53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b7068ff2a30d583",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
