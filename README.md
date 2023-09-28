@@ -50,19 +50,26 @@ Notes sponsored by chatGPT ;)
 
 ## DB
 
-| Week # | Date                                         | Status                        | Content                            |
-| ------ | -------------------------------------------- | ----------------------------- | ---------------------------------- |
-| Week 1       | [22 Aug](DB/DB%2022%20August,%202023.md)     | Complete                      | Introduction & Evolution of a DMBS |
-| Week 1       | [24 Aug](DB/DB%2024%20August,%202023.md)     | Refactor (Need to use Slides) | Data Modelling                     |
-| Week 2       | [29 Aug](DB/DB%2029%20August,%202023.md)     | Incomplete                    | Data Modelling PT2                 |
-| Week 2       | 31 Aug                                       | N/A                           | Class Cancelled                    |
-| Week 3       | [5 Sept](DB/DB%205%20September,%202023.md)   | Incomplete                    | Some more DB stuff                 |
-| Week 3       | [7 Sept](DB/DB%207%20September,%202023.md)   | Incomplete                    | idk man                            |
-| Week 4       | [12 Sept](DB/DB%2012%20September,%202023.md) | Complete                      | idk man pt2                        |
-| Week 4       | [14 Sept](DB/DB%2014%20September,%202023.md) | Incomplete                    | Relations in notation form         |
-| Week 5       | [19 Sept](DB/DB%2019%20September,%202023.md) | Incomplete                    |                                    |
-| Week 5      | [21 Sept](DB/DB%2021%20September,%202023.md) |                               |                                    |
-
+| Week #      | Date                                                | Status                        | Content                            |
+| ----------- | --------------------------------------------------- | ----------------------------- | ---------------------------------- |
+| Week 1      | [22 Aug](DB/DB%2022%20August,%202023.md)            | Complete                      | Introduction & Evolution of a DMBS |
+| Week 1      | [24 Aug](DB/DB%2024%20August,%202023.md)            | Refactor (Need to use Slides) | Data Modelling                     |
+| Week 2      | [29 Aug](DB/DB%2029%20August,%202023.md)            | Incomplete                    | Data Modelling PT2                 |
+| Week 2      | 31 Aug                                              | N/A                           | Class Cancelled                    |
+| Week 3      | [5 Sept](DB/DB%205%20September,%202023.md)          | Incomplete                    | Some more DB stuff                 |
+| Week 3      | [7 Sept](DB/DB%207%20September,%202023.md)          | Incomplete                    | idk man                            |
+| Week 4      | [12 Sept](DB/DB%2012%20September,%202023.md)        | Complete                      | idk man pt2                        |
+| Week 4      | [14 Sept](DB/DB%2014%20September,%202023.md)        | Incomplete                    | Relations in notation form         |
+| Week 5      | [19 Sept](DB/DB%2019%20September,%202023.md)        | Incomplete                    |                                    |
+| Week 5      | [21 Sept](DB/DB%2021%20September,%202023.md)        |                               |                                    |
+| Sessional-1 | [25 Sept](DB/Exam%20Prep/DB%20Quick%20Notes%201.md) | N/A                           | Prep material for sessional 1      |
+| Week 6      | [28 Sept](DB/DB%2028%20September,%202023.md)        | Incomplete                    | SQL                                   |
+| Week 7      | [3rd Oct](DB/DB%203%20October,%202023.md)           |                               |                                    |
+| Week 7      | [5th Oct](DB/DB%205%20October,%202023.md)           |                               |                                    |
+| Week 8      | [10th Oct](DB/DB%2010%20October,%202023.md)         |                               |                                    |
+| Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)         |                               |                                    |
+| Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)         |                               |                                    |
+| Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
 ## Marketing
 
 | Week #      | Date                                                              | Status   | Content                          |
