@@ -47,7 +47,7 @@ Notes sponsored by chatGPT ;)
 | Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
 | Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
 | Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          |            |                |
-3
+
 ## DB
 
 | Week # | Date                                         | Status                        | Content                            |
