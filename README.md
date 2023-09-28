@@ -27,19 +27,26 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 
 Notes sponsored by chatGPT ;)
 
-| Week #      | Date                                                        | Status      | Content                                                            |
-| ----------- | ----------------------------------------------------------- | ----------- | ------------------------------------------------------------------ |
-| Week 1      | [22 Aug](CySec-2/CySec2%2022%20August,%202023.md)           | Complete    | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
-| Week 1      | [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)           | Refactor    | IS Terminology, 2 Case Studies & APT Overview                      |
-| Week 2      | [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)           | Complete    | APT Cyber Killchain and Carbanak Case Study                        |
-| Week 2      | [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)           | Complete    | Revising DNS & DHCP & URL                                          |
-| Week 3      | [5 Sept](CySec-2/CySec2%205%20September,%202023.md)         | Complete    | Wireshark DNS Lab                                                  |
-| Week 3      | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)         | Incomplete  | DNS query and weaknesses                                           |
-| Week 4      | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md)       | Incomplete  | DNS Cache poisoning version 2                                      |
-| Week 4      | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md)       | Incomplete  | TCP stuff                                                          |
-| Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)       | Incomplete  | TCP Mitnick Attack + Started CH6                                                             |
-| Week 5      | 21 Sept                                                     | N/A         | pfSense Lab setup DHCP, DNS, Rules                                 |
-| Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete | Prep material for Sessional 1                                                                   |
+| Week #      | Date                                                          | Status     | Content                                                            |
+| ----------- | ------------------------------------------------------------- | ---------- | ------------------------------------------------------------------ |
+| Week 1      | [22 Aug](CySec-2/CySec2%2022%20August,%202023.md)             | Complete   | Introduction / Authenticate, Authorize / Audit  + Mirai Case Study |
+| Week 1      | [24 Aug](CySec-2/CySec2%2024%20August,%202023.md)             | Refactor   | IS Terminology, 2 Case Studies & APT Overview                      |
+| Week 2      | [29 Aug](CySec-2/CySec2%2029%20August,%202023.md)             | Complete   | APT Cyber Killchain and Carbanak Case Study                        |
+| Week 2      | [31 Aug](CySec-2/CySec2%2031%20August,%202023.md)             | Complete   | Revising DNS & DHCP & URL                                          |
+| Week 3      | [5 Sept](CySec-2/CySec2%205%20September,%202023.md)           | Complete   | Wireshark DNS Lab                                                  |
+| Week 3      | [7 Sept](CySec-2/CySec2%207%20September,%202023.md)           | Incomplete | DNS query and weaknesses                                           |
+| Week 4      | [12 Sept](CySec-2/CySec2%2012%20September,%202023.md)         | Incomplete | DNS Cache poisoning version 2                                      |
+| Week 4      | [14 Sept](CySec-2/CySec2%2014%20September,%202023.md)         | Incomplete | TCP stuff                                                          |
+| Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)         | Incomplete | TCP Mitnick Attack + Started CH6                                   |
+| Week 5      | 21 Sept                                                       | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 |
+| Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete   | Prep material for Sessional 1                                      |
+| Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         |            |                                                                    |
+| Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            |            |                                                                    |
+| Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |            |                                                                    |
+| Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |
+| Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)                                                              |            |                                                                    |
 
 ## DB
 
