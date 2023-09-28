@@ -40,7 +40,7 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)         | Incomplete | TCP Mitnick Attack + Started CH6                                   |
 | Week 5      | 21 Sept                                                       | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 |
 | Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete   | Prep material for Sessional 1                                      |
-| Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         | Incomplete           |  6.1 and 6.2 from Slides                                                              |
+| Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         | Incomplete           |  Stateful Packet inspection                                                           |
 | Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            |            |                                                                    |
 | Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |            |                                                                    |
 | Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |

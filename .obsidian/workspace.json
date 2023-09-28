@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "CySec-2/CySec2 28 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "CySec-2/CySec2 28 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "CySec-2/CySec2 28 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "CySec-2/CySec2 28 September, 2023.md"
               }
             }
           },
@@ -170,8 +170,9 @@
   },
   "active": "d085009bbc463321",
   "lastOpenFiles": [
-    "Algo/Algo 27 September, 2023.md",
     "README.md",
+    "CySec-2/CySec2 28 September, 2023.md",
+    "Algo/Algo 27 September, 2023.md",
     "Algo/Exam Prep/Algo Quick Notes 1.md",
     "OS/Exam Prep/OS Quick Notes 1.md",
     "Untitled.md",
@@ -204,7 +205,6 @@
     "CySec2/Exam Prep",
     "CySec2",
     "OS/OS 29 August, 2023.md",
-    "OS/OS 21 September, 2023.md",
     "OS/Exam Prep",
     "Marketing/Exam Prep",
     "Books/CYSEC Book.pdf",
