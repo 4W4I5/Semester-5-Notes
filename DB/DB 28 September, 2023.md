@@ -8,3 +8,12 @@
 	- Insert
 	- Update
 	- Delete
+
+
+### Select Statement
+- Select definition
+- Selectings rows/cols
+- Sortign
+- aggreating
+- grouping
+- + other stuff `fill in later`
