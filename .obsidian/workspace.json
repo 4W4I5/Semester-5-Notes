@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "88785a91042242bb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.14"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "d085009bbc463321",
+  "active": "88785a91042242bb",
   "lastOpenFiles": [
     "README.md",
     "CySec-2/CySec2 28 September, 2023.md",
