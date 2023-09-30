@@ -87,8 +87,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -186,7 +185,7 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "d085009bbc463321",
   "lastOpenFiles": [
     "Algo/Algo 18 October, 2023.md",
     "README.md",

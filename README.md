@@ -80,25 +80,35 @@ Notes sponsored by chatGPT ;)
 | Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)         |                               |                                    |
 | Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)         |                               |                                    |
 | Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
+
 ## Marketing
 
-| Week #      | Date                                                              | Status   | Content                          |
-| ----------- | ----------------------------------------------------------------- | -------- | -------------------------------- |
-| Week 1      | 22 Aug                                                            | N/A      | Sir Absent                       |
-| Week 1      | 24 Aug                                                            | N/A      | Sir Absent                       |
-| Week 2      | 29 Aug                                                            | N/A      | Sir Absent                       |
-| Week 2      | [31 Aug](Marketing/Marketing%2031%20August,%202023.md)            | Complete | Introductory |
-| Week 3      | 5 Sept                                                            | N/A      | Maam Absent                      |
-| Week 3      | [7 Sept](Marketing/Marketing%207%20September,%202023.md)          | Complete | Social Media Marketing           |
-| Week 4      | 12 Sept                                                           | N/A      | Presentations                    |
-| Week 4      | [13 Sept](Marketing/Marketing%2013%20September,%202023.md)        | Complete | Content Marketing                |
-| Week 5      | [19 Sept](Marketing/Marketing%2019%20September,%202023.md)        | Complete | Websites                         |
-| Week 5      | [20 Sept](Marketing/Marketing%2021%20September,%202023.md)        | Complete | Blogging                         |
-| Sessional-1 | [23 Sept](Marketing/Exam%20Prep/Marketing%20Quick%20Notes%201.md) | Complete | Prep material for sessional 1                                 |
+| Week #      | Date                                                              | Status   | Content                       |
+| ----------- | ----------------------------------------------------------------- | -------- | ----------------------------- |
+| Week 1      | 22 Aug                                                            | N/A      | Sir Absent                    |
+| Week 1      | 24 Aug                                                            | N/A      | Sir Absent                    |
+| Week 2      | 29 Aug                                                            | N/A      | Sir Absent                    |
+| Week 2      | [31 Aug](Marketing/Marketing%2031%20August,%202023.md)            | Complete | Introductory                  |
+| Week 3      | 5 Sept                                                            | N/A      | Maam Absent                   |
+| Week 3      | [7 Sept](Marketing/Marketing%207%20September,%202023.md)          | Complete | Social Media Marketing        |
+| Week 4      | 12 Sept                                                           | N/A      | Presentations                 |
+| Week 4      | [13 Sept](Marketing/Marketing%2013%20September,%202023.md)        | Complete | Content Marketing             |
+| Week 5      | [19 Sept](Marketing/Marketing%2019%20September,%202023.md)        | Complete | Websites                      |
+| Week 5      | [20 Sept](Marketing/Marketing%2021%20September,%202023.md)        | Complete | Blogging                      |
+| Sessional-1 | [23 Sept](Marketing/Exam%20Prep/Marketing%20Quick%20Notes%201.md) | Complete | Prep material for sessional 1 |
+| Week 6      | [27 Sept](Marketing/Marketing%2027%20September,%202023.md)                                                       | N/A      | Was absent                    |
+| Week 7      | [3 Oct](Marketing/Marketing%203%20October,%202023.md)                                                       |       |                     |
+| Week 7      | [4 Oct](Marketing/Marketing%204%20October,%202023.md)                                                       |       |                     |
+| Week 8      | [10 Oct](Marketing/Marketing%2010%20October,%202023.md)                                                       |       |                     |
+| Week 8      | [11 Oct](Marketing/Marketing%2011%20October,%202023.md)                                                       |       |                     |
+| Week 9      | [17 Oct](Marketing/Marketing%2017%20October,%202023.md)                                                       |       |                     |
+| Week 9      | [18 Oct](Marketing/Marketing%2018%20October,%202023.md)                                                       |       |                     |
+| Week 10      | [24 Oct](Marketing/Marketing%2024%20October,%202023.md)                                                       |       |                     |
+| Week 10      | [25 Oct](Marketing/Marketing%2025%20October,%202023.md)                                                       |       |                     |
+| Week 11      | [31 Oct](Marketing/Marketing%2031%20October,%202023.md)                                                       |       |                     |
+| Week 11      | [1 Nov](Marketing/Marketing%201%20November,%202023.md)                                                       |       |                     |
 
 ## OS
-
-
 
 | Week #      | Date                                                | Status      | Content                                                |
 | ----------- | --------------------------------------------------- | ----------- | ------------------------------------------------------ |
