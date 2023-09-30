@@ -78,16 +78,16 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [21 Sept](DB/DB%2021%20September,%202023.md)        |                               |                                    |
 | Sessional-1 | [25 Sept](DB/Exam%20Prep/DB%20Quick%20Notes%201.md) | N/A                           | Prep material for sessional 1      |
 | Week 6      | [28 Sept](DB/DB%2028%20September,%202023.md)        | Incomplete                    | SQL                                   |
-| Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            |            |                                                                    |
-| Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |            |                                                                    |
-| Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |
-| Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          |            |                |
-| Week 10      | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)          |            |                |
-| Week 10      | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          |            |                |
-| Week 11      | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |            |                |
-| Week 11      | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)          |            |                |
+| Week 7      | [3rd Oct](DB/DB%203%20October,%202023.md)            |            |                                                                    |
+| Week 7      | [5th Oct](DB/DB%205%20October,%202023.md)            |            |                                                                    |
+| Week 8      | [10th Oct](DB/DB%2010%20October,%202023.md)          |            |                                                                    |
+| Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)          |            |                |
+| Week 10      | [24th Oct](DB/DB%20124%20October,%202023.md)          |            |                |
+| Week 10      | [26th Oct](DB/DB%2026%20October,%202023.md)          |            |                |
+| Week 11      | [31th Oct](DB/DB%2031%20October,%202023.md)          |            |                |
+| Week 11      | [1st Nov](DB/DB%201%20November,%202023.md)          |            |                |
 
 ## Marketing
 
@@ -132,13 +132,13 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
 | Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
 | Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)         |            |                                                                    |
-| Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            |            |                                                                    |
-| Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |            |                                                                    |
-| Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |
-| Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          |            |                |
-| Week 10      | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)          |            |                |
-| Week 10      | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          |            |                |
-| Week 11      | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |            |                |
-| Week 11      | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)          |            |                |
+| Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)            |            |                                                                    |
+| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)            |            |                                                                    |
+| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)          |            |                                                                    |
+| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)          |            |                                                                    |
+| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)          |            |                |
+| Week 10      | [24th Oct](OS/OS%20124%20October,%202023.md)          |            |                |
+| Week 10      | [26th Oct](OS/OS%2026%20October,%202023.md)          |            |                |
+| Week 11      | [31th Oct](OS/OS%2031%20October,%202023.md)          |            |                |
+| Week 11      | [1st Nov](OS/OS%201%20November,%202023.md)          |            |                |
