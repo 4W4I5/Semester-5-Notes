@@ -80,6 +80,10 @@ Notes sponsored by chatGPT ;)
 | Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)         |                               |                                    |
 | Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)         |                               |                                    |
 | Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
+| Week 10      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
+| Week 10      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
+| Week 11      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
+| Week 11      | [19th Oct](DB/DB%2019%20October,%202023.md)         |                               |                                    |
 
 ## Marketing
 
