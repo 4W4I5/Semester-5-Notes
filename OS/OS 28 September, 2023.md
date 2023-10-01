@@ -40,4 +40,3 @@
 		- nicej -> user-controlled adjustment factor
 	- Pattern
 		- Found that if the processes have the same base priority and CPU count, the timeline for process A is offset by + 1 of the previous process
-		- 

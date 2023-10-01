@@ -131,7 +131,7 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)        | Incomplete  | Scheduling routines                                    |
 | Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
 | Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
-| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)        | Incomplete  | Fair Share Scheduling & UNIX Scheduler                                                     |
+| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)        | Complete  | Fair Share Scheduling & UNIX Scheduler                                                     |
 | Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)           |             |                                                        |
 | Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)           |             |                                                        |
 | Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)         |             |                                                        |
