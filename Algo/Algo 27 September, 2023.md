@@ -3,7 +3,7 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Structure of Values to note down
 	- A, B, K, P
 - Case 1 $$log_{b}a>k$$
-	- Then $$Θ(n^log_b^a)$$
+	- Then $$Θ(n^{log_{b}^{a}})$$
 - Case 2 $$log_{b}a=k$$
 	- Sub-cases
 		- p > -1
