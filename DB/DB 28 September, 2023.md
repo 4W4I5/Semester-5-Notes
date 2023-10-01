@@ -2,12 +2,12 @@
 - DDL 
 	- **Create:** Create new database objects like tables and/or schemas
 		- **Constraint:** A rule or condition applied to a table column to maintain data integrity.
-			- Not Null
-			- Unique
-			- Primary Key
-			- Foreign Key
-			- Check
-			- Default
+			- **Not Null:** Column cannot contain NULL values, meaning it must always have a value.
+			- **Unique:** All values in a column are unique across all rows in a table, preventing duplicate entries.
+			- **Primary Key:** A combination of the "Unique" and "Not Null" constraints. It uniquely identifies each row in a table and does not allow NULL values.
+			- **Foreign Key:** A constraint that establishes a link between two tables. It ensures that the values in a column of one table match the values in a column of another table, typically referring to a primary key.
+			- **Check:** Imposes a condition or rule on the values that can be inserted or updated in a column, ensuring data consistency.
+			- **Default:** Specifies a default value for a column when no value is provided during an insertion.
 	- **Alter:** Modify the structure of existing database objects.
 	- **Drop:** Delete or remove database objects like tables or indexes.
 - DML
