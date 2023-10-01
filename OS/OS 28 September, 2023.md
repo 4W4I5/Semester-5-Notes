@@ -13,8 +13,11 @@
 		- GCPUj(i) -> Processor util by group k thru interval i (GCPU Count)
 		- Pj(i) -> Current Priority of process j at starting i
 		- Basej -> Base priority of process j
-		- Wk -> Weight assigned to group k, constraint that 0 < Wk <= 1 and 
-- `Fill in stuff about a pattern based on Group allocation for the CPU`
+		- Wk -> Weight assigned to group k, constraint that 0 < Wk <= 1 and sum of all Wk = Total weight which is 1
+- Patterns
+	- Grouping decides the 2^n order of execution
+		- If Group A and Group B have 50% share of the processor then Group A will run for one and Group B will run for the regardless of the processes contained within a group
+			- Processes within a group will take turns executing when given the chance
 
 ### UNIX SVR3 Scheduler 
 - Provide good response time for interactive users and ensure low priority background tasks do not starve
