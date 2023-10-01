@@ -131,14 +131,14 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)        | Incomplete  | Scheduling routines                                    |
 | Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
 | Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
-| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)         |            |                                                                    |
-| Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)            |            |                                                                    |
-| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)            |            |                                                                    |
-| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)          |            |                                                                    |
-| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)          |            |                |
-| Week 10      | [24th Oct](OS/OS%20124%20October,%202023.md)          |            |                |
-| Week 10      | [26th Oct](OS/OS%2026%20October,%202023.md)          |            |                |
-| Week 11      | [31th Oct](OS/OS%2031%20October,%202023.md)          |            |                |
-| Week 11      | [1st Nov](OS/OS%201%20November,%202023.md)          |            |                |
+| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)        | Incomplete  | Fair Share Scheduling & UNIX Scheduler                                                     |
+| Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)           |             |                                                        |
+| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)           |             |                                                        |
+| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)         |             |                                                        |
+| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)         |             |                                                        |
+| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)         |             |                                                        |
+| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)         |             |                                                        |
+| Week 10     | [24th Oct](OS/OS%20124%20October,%202023.md)        |             |                                                        |
+| Week 10     | [26th Oct](OS/OS%2026%20October,%202023.md)         |             |                                                        |
+| Week 11     | [31th Oct](OS/OS%2031%20October,%202023.md)         |             |                                                        |
+| Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)          |             |                                                        |
