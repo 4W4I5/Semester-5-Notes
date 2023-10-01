@@ -4,6 +4,16 @@
 - Ensures each user gets it own fair share of system resources
 	- Weighted Fair Queuing
 	- Round Robin with Quotas
+- Formulas
+	- $$CPU_j(i) = \frac{CPU_j(i-1)}{2}$$
+	- $$GCPU_k(i) = \frac{GCPU_k(i-1)}{2}$$
+	- $$P_j(i)=Base_j+\frac{CPU_j(i)}{2}+\frac{GCPU_k(i)}{4W_k}$$
+	- Where
+		- CPUj(i) -> Processor util by process j thru interval i (CPU Count)
+		- GCPUj(i) -> Processor util by group k thru interval i (GCPU Count)
+		- Pj(i) -> Current Priority of process j at starting i
+		- Basej -> Base priority of process j
+		- Wk -> Weight assigned to group k, constraint that 0 < Wk <= 1 and 
 - `Fill in stuff about a pattern based on Group allocation for the CPU`
 
 ### UNIX SVR3 Scheduler 
@@ -18,7 +28,7 @@
 		- Charecter I/O
 		- User Process
 - Formulas
-	- $$CPU(i) = \frac{CPU_j(i-1)}{2}$$
+	- $$CPU_j(i) = \frac{CPU_j(i-1)}{2}$$
 	- $$P_{j(i)}=Base_{j} + \frac{CPU_j(i)}{2}+nice_j $$
 	- Where 
 		- CPUj(i) -> Processor util by process j thru interval i (CPU Count)
