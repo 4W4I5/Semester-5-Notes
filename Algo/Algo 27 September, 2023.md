@@ -5,7 +5,7 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 
 ## Cases
 - **Case 1** $$log_{b}a>k$$
-	- Then $$Θ(n^{log_{b}^{a}})$$
+	- Then $$Θ(n^{log_{b}{a}})$$
 - **Case 2** $$log_{b}a=k$$
 	- Sub-cases
 		- p > -1
@@ -13,7 +13,12 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 		- p = -1
 			- 
 		- p < -1
-			- 
+- **Case 3** $$log_{ba}< k$$
+	- Sub-cases
+		- p >= 0 == f(n)
+			- $$Θ(n^klog^pn)$$
+		- p < 0 but only n^k
+			- $$Θ(n^k)$$
 
 
 
