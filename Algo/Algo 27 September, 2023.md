@@ -2,12 +2,14 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Note that you're supposed to do a reverse thingy and find powers of K and P yourself
 - Structure of Values to note down
 	- A, B, K, P
-- Case 1 $$log_{b}a>k$$
+
+## Cases
+- **Case 1** $$log_{b}a>k$$
 	- Then $$Θ(n^{log_{b}^{a}})$$
-- Case 2 $$log_{b}a=k$$
+- **Case 2** $$log_{b}a=k$$
 	- Sub-cases
 		- p > -1
-			- $$If$$
+			- $$$$
 		- p = -1
 			- 
 		- p < -1
