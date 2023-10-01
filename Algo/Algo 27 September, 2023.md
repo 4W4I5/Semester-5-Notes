@@ -20,7 +20,4 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 			- $$Θ(n^klog^pn)$$
 		- p < 0 but only n^k
 			- $$Θ(n^k)$$
-
-
-
 ---
