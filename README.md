@@ -21,7 +21,7 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 | Week 5      | [18 Sept](Algo/Algo%2018%20September,%202023.md)        | Incomplete |                                   |
 | Week 5      | [20 Sept](Algo/Algo%2020%20September,%202023.md)        | Incomplete | Recursion                         |
 | Sessional 1 | [25 Sept](Algo/Exam%20Prep/Algo%20Quick%20Notes%201.md) | Incomplete | Prep material for sessional 1     |
-| Week 6      | [27 Sept](Algo/Algo%2027%20September,%202023.md) | Incomplete | Master Method Recurrences         |
+| Week 6      | [27 Sept](Algo/Algo%2027%20September,%202023.md) | Compelete | Master Method Recurrences         |
 | Week 7      | [2 Oct](Algo/Algo%202%20October,%202023.md) |  |  |
 | Week 7      | [4 Oct](Algo/Algo%204%20October,%202023.md) |  |  |
 | Week 8      | [9 Oct](Algo/Algo%209%20October,%202023.md) |  |  |

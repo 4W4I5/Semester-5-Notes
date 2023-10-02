@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md"
+                "file": "README.md"
               }
             }
           },
@@ -186,15 +186,15 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "d085009bbc463321",
+  "active": "0b7068ff2a30d583",
   "lastOpenFiles": [
+    "Algo/Algo 27 September, 2023.md",
     "README.md",
     "CySec-2/CySec2 28 September, 2023.md",
     "OS/OS 28 September, 2023.md",
     "DB/DB 28 September, 2023.md",
     "Algo/Algo 18 October, 2023.md",
     "OS/OS 17 October, 2023.md",
-    "Algo/Algo 27 September, 2023.md",
     "Algo/Exam Prep/Algo Quick Notes 1.md",
     "OS/Exam Prep/OS Quick Notes 1.md",
     "Untitled.md",
