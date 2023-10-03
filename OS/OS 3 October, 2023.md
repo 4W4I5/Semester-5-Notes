@@ -26,6 +26,8 @@ Resource ownership
 	- Less time to termina a thread than a process
 	- `Fill in later`
 
+#### Thread execution states
+
 
 
 - Unit of dispatch aka thread or a lightweight process
