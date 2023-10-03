@@ -1,4 +1,4 @@
 ## SQL Commands
 
-#### Grouping
+#### Group By
 - 
