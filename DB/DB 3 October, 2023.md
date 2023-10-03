@@ -4,4 +4,6 @@
 - Group Restrictions
 
 #### Table Aliasing
-- Useful for JOIN
+- Useful for JOIN 
+
+#### Nested/Sub Queries
