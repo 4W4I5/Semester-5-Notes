@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB/DB 3 October, 2023.md",
+                "file": "OS/OS 3 October, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB/DB 3 October, 2023.md",
+                "file": "OS/OS 3 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB/DB 3 October, 2023.md",
+                "file": "OS/OS 3 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB/DB 3 October, 2023.md"
+                "file": "OS/OS 3 October, 2023.md"
               }
             }
           },
@@ -171,6 +171,7 @@
   "active": "d085009bbc463321",
   "lastOpenFiles": [
     "README.md",
+    "OS/OS 3 October, 2023.md",
     "DB/DB 3 October, 2023.md",
     "Algo/Algo 2 October, 2023.md",
     "Algo/Algo 27 September, 2023.md",
@@ -202,7 +203,6 @@
     "CySec-2/CySec2 19 September, 2023.md",
     "CySec-2/CySec2 14 September, 2023.md",
     "CySec-2/CySec2 12 September, 2023.md",
-    "CySec-2/CySec2 7 September, 2023.md",
     "CySec2/Exam Prep",
     "CySec2",
     "OS/Exam Prep",
