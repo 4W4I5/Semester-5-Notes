@@ -33,9 +33,16 @@ Resource ownership
 
 
 
+
 - Unit of dispatch aka thread or a lightweight process
 - Unit of resource ownership aka process or task
 - Multithreading
 	- Ability of an OS to support multiple, concurrent paths of execution within a single process
 - Thread Functionality
 -  
+
+
+#### Thread Synchronization
+#### Types of threads
+- User level Thread
+- Kernel Level Thread
