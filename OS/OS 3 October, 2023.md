@@ -21,6 +21,10 @@ Resource ownership
 	- some per thread static storage for local variables
 	- access to the memory and resources of its processes, shared with all other threads in that process
 	- Thread control Block
+- Benefits of threads
+	- Takes less time to create a new thread than a process
+	- Less time to termina a thread than a process
+	- `Fill in later`
 
 
 
