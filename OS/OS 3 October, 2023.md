@@ -4,6 +4,26 @@ Resource ownership
 `Fill in from the slides`
 `Process can have multiple lines of execution`
 ## Processes & Threads
+#### Process
+- Main unit of resource allocation and a unit of protection
+- Associated with processes
+	- Virtual address space
+	- Protected access to
+		- Processors
+		- other processes
+		- Files
+		- i/o
+#### Thread
+- Each thread has 
+	- a execution state i.e ready, running, etc
+	- Saved thread context when not running 
+	- execution stack
+	- some per thread static storage for local variables
+	- access to the memory and resources of its processes, shared with all other threads in that process
+	- Thread control Block
+
+
+
 - Unit of dispatch aka thread or a lightweight process
 - Unit of resource ownership aka process or task
 - Multithreading
