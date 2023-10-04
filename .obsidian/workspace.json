@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "47acab157d78779d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CSL Workshop1 Quiz.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 4 October, 2023.md",
+                "file": "CSL Workshop1 Quiz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 4 October, 2023.md",
+                "file": "CSL Workshop1 Quiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 4 October, 2023.md"
+                "file": "CSL Workshop1 Quiz.md"
               }
             }
           },
@@ -168,10 +181,11 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "d085009bbc463321",
+  "active": "47acab157d78779d",
   "lastOpenFiles": [
-    "README.md",
     "Algo/Algo 4 October, 2023.md",
+    "CSL Workshop1 Quiz.md",
+    "README.md",
     "OS/OS 3 October, 2023.md",
     "DB/DB 3 October, 2023.md",
     "Algo/Algo 2 October, 2023.md",
@@ -183,7 +197,6 @@
     "OS/OS 17 October, 2023.md",
     "Algo/Exam Prep/Algo Quick Notes 1.md",
     "OS/Exam Prep/OS Quick Notes 1.md",
-    "Untitled.md",
     "Pasted image 20230926022710.png",
     "Pasted image 20230926023241.png",
     "Pasted image 20230926023256.png",
