@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 3 October, 2023.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "311ade440ba9fd20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "DB Quiz.md",
+                "file": "OS/OS 5 October, 2023.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB Quiz.md",
+                "file": "OS/OS 5 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB Quiz.md",
+                "file": "OS/OS 5 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB Quiz.md"
+                "file": "OS/OS 5 October, 2023.md"
               }
             }
           },
@@ -181,11 +168,12 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "311ade440ba9fd20",
+  "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
-    "CySec-2/CySec2 3 October, 2023.md",
-    "DB Quiz.md",
     "README.md",
+    "OS/OS 5 October, 2023.md",
+    "DB Quiz.md",
+    "CySec-2/CySec2 3 October, 2023.md",
     "CSL Workshop1 Quiz.md",
     "Algo/Algo 4 October, 2023.md",
     "OS/OS 3 October, 2023.md",
@@ -215,7 +203,6 @@
     "CySec-2/Case Studies/Case Study - Carbanak APT.md",
     "CySec-2/Case Studies/Case Study - Mitnick TCP Attack.md",
     "CySec-2/Exam Prep",
-    "CySec2/Exam Prep/CySec2 Quick Notes 1.md",
     "CySec2/Exam Prep",
     "CySec2",
     "OS/Exam Prep",
