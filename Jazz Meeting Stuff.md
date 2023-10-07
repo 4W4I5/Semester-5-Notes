@@ -3,7 +3,12 @@
 ### RedHat IAM
 
 # Microsoft AD
-
+- Used for SSO and Centralized user management
+- Components
+	- Domain Controller
+	- AD DS
+	- AD CS
+	- AD FS
 
 ---
 # IAM Protocols
@@ -28,6 +33,7 @@ IAM itself is a framework to manage identities and controls access to resources
 - Authentication method
 	- SASL (Simple authentication and Security Layer)
 
+### SAML (Security Assertion Markup Language)
 ### OAuth
 
 ### OpenID Connect
