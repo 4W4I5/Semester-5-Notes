@@ -81,7 +81,6 @@ IAM itself is a framework to manage identities and controls access to resources
 - LDAP is often used in conjunction with applications like email servers, web applications, and VPNs for user authentication.
 - It's a critical component in many organizations for managing user accounts, permissions, and other directory-related tasks.
 
-If you need further details or have specific questions
 ### SAML (Security Assertion Markup Language)
 - XML-based protocol for exchanging authentication and authorization data used in web-based SSO.
 - SAML enables a user to log in once and access multiple services without needing to log in separately to each one.
