@@ -151,11 +151,11 @@ IAM itself is a framework to manage identities and controls access to resources
 		- Manages user authentication and authorizes client creds
 
 ### OpenID Connect
-- OpenID Connect (OIDC) is an authentication protocol built on top of OAuth 2.0.
+- OpenID Connect (OIDC) is built on top of OAuth 2.0.
 - It is designed for single sign-on (SSO) and identity verification on the internet.
 - OIDC allows users to authenticate themselves and share identity information with third-party applications without revealing their passwords.
 - It provides a standardized way to verify a user's identity using identity providers (IdPs) like Google, Facebook, or a corporate IdP.
-- OIDC uses JSON Web Tokens (JWTs) to encode identity information, making it easy to transmit and verify user data securely.
+- Uses JSON Web Tokens (JWTs) to encode identity information, making it easy to transmit and verify user data securely.
 - It supports various authentication flows, including authorization code flow, implicit flow, and hybrid flow, to accommodate different use cases.
 - OIDC is widely used in web and mobile applications for user authentication and authorization.
 - It helps improve security by reducing the risk of password-related vulnerabilities and enables seamless user experiences across different applications.
