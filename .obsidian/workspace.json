@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "481c4ffed35bae1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Jazz Meeting Stuff.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/OS 5 October, 2023.md",
+                "file": "Jazz Meeting Stuff.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/OS 5 October, 2023.md",
+                "file": "Jazz Meeting Stuff.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/OS 5 October, 2023.md"
+                "file": "Jazz Meeting Stuff.md"
               }
             }
           },
@@ -168,10 +181,11 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "63f1cb25d02b3c57",
+  "active": "481c4ffed35bae1e",
   "lastOpenFiles": [
-    "README.md",
     "OS/OS 5 October, 2023.md",
+    "Jazz Meeting Stuff.md",
+    "README.md",
     "DB Quiz.md",
     "CySec-2/CySec2 3 October, 2023.md",
     "CSL Workshop1 Quiz.md",
@@ -201,7 +215,6 @@
     "Algo/Algo 30 August, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Case Studies/Case Study - Carbanak APT.md",
-    "CySec-2/Case Studies/Case Study - Mitnick TCP Attack.md",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
     "CySec2",
