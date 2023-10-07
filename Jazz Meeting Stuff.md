@@ -1,3 +1,6 @@
+
+# ForgeRock vs PingIdentity
+
 # FreeIPA (OpenSource)
 
 ### RedHat IAM
@@ -66,7 +69,7 @@ IAM itself is a framework to manage identities and controls access to resources
 	- **Limited User Attribute Exchange:**
 	    - SAML primarily focuses on authentication and may not provide robust mechanisms for exchanging user attributes between IdPs and SPs.
 
-### MFA (MultiFactor Auth)
+### MFA (MultiFactor Auth, also gpt)
 
 ### OAuth
 - Hidden user creds
