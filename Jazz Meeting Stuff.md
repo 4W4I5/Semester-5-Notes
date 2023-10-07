@@ -44,7 +44,27 @@ IAM itself is a framework to manage identities and controls access to resources
 	- Service Provider (SP).
 		- The SP trusts the IdP and relies on SAML assertions to grant access to users.
 - SAML uses various bindings and profiles for different use cases, such as Web Browser SSO and Single Logout.
-
+- **SAML Weaknesses** (GPT se uthaya)
+	- **Complexity:**
+	    - SAML is based on XML, which can be verbose and complex to parse, leading to increased processing overhead.
+	- **Single Point of Failure (IdP):**
+	    - In a SAML-based SSO system, the Identity Provider (IdP) becomes a single point of failure. If the IdP experiences downtime, users may be unable to access services.
+	- **Limited Mobile Support:**
+	    - SAML was designed primarily for web-based SSO, and it may not provide seamless support for mobile applications and devices.
+	- **Cross-Domain Issues:**
+	    - SAML was initially designed for use within a single domain. Extending it to work across multiple domains or organizations can be challenging and may require additional configurations.
+	- **Complex Configuration:**
+	    - Setting up SAML-based SSO can be complex, especially for organizations with numerous applications and services.
+	- **Token Lifetime Challenges:**
+	    - Managing the lifetime of SAML tokens can be challenging. Short-lived tokens enhance security but can lead to more frequent reauthentication.
+	- **Limited Support for Modern Protocols:**
+	    - SAML predates modern authentication protocols like OAuth 2.0 and OpenID Connect, which are more flexible and better suited for certain use cases.
+	- **Resource Intensive:**
+	    - SAML-based authentication can be resource-intensive due to the need for XML parsing and cryptographic operations, impacting system performance.
+	- **Lack of Native Logout Support:**
+	    - SAML lacks built-in support for Single Logout (SLO), making it challenging to implement consistent user logout experiences.
+	- **Limited User Attribute Exchange:**
+	    - SAML primarily focuses on authentication and may not provide robust mechanisms for exchanging user attributes between IdPs and SPs.
 ### OAuth
 
 ### OpenID Connect
