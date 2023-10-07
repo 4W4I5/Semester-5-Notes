@@ -3,12 +3,11 @@
 ### RedHat IAM
 
 # Microsoft AD
-### LDAP (Protocol to use w a Directory service like AD)
-- Authentication method
-	- SASL (Simple authentication and Security Layer)
-		- 
+
 
 ---
+# IAM Protocols
+IAM itself is a framework to manage identities and controls access to resources
 ### Kerberos (SSO)
 - Default Auth method used by Microsoft for AD (Active Directory) & Windows + Broadband providers.
 - Widely used for network authentication.
@@ -25,5 +24,10 @@
     - Golden ticket: Attackers can create a forged Windows domain controller ticket, granting credentials for unlimited access to application services.
     - Kerberoasting attack: This attack targets the encryption of service tickets.
 
----
-### Kerberos vs LDAP vs 
+### LDAP (Protocol to use w a Directory service like AD)
+- Authentication method
+	- SASL (Simple authentication and Security Layer)
+
+### OAuth
+
+### OpenID Connect
