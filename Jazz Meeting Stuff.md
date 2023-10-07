@@ -65,6 +65,9 @@ IAM itself is a framework to manage identities and controls access to resources
 	    - SAML lacks built-in support for Single Logout (SLO), making it challenging to implement consistent user logout experiences.
 	- **Limited User Attribute Exchange:**
 	    - SAML primarily focuses on authentication and may not provide robust mechanisms for exchanging user attributes between IdPs and SPs.
+
+### MFA (MultiFactor Auth)
+
 ### OAuth
 - Hidden user creds
 - Use for allowing 3rd party applications to access user data, social media login and securing API
