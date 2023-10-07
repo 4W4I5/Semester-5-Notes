@@ -34,6 +34,17 @@ IAM itself is a framework to manage identities and controls access to resources
 	- SASL (Simple authentication and Security Layer)
 
 ### SAML (Security Assertion Markup Language)
+- XML-based protocol for exchanging authentication and authorization data used in web-based SSO.
+- SAML enables a user to log in once and access multiple services without needing to log in separately to each one.
+	- It enhances security by reducing the need for multiple passwords and simplifying user management.
+- It consists of two main components: 
+	- Identity Provider (IdP) 
+		- The IdP is responsible for authenticating users and generating SAML assertions.
+		- SAML assertions are digitally signed XML documents containing user identity information.
+	- Service Provider (SP).
+		- The SP trusts the IdP and relies on SAML assertions to grant access to users.
+- SAML uses various bindings and profiles for different use cases, such as Web Browser SSO and Single Logout.
+
 ### OAuth
 
 ### OpenID Connect
