@@ -66,5 +66,12 @@ IAM itself is a framework to manage identities and controls access to resources
 	- **Limited User Attribute Exchange:**
 	    - SAML primarily focuses on authentication and may not provide robust mechanisms for exchanging user attributes between IdPs and SPs.
 ### OAuth
+- Hidden user creds
+- 3 main roles (Similar to kerberos)
+	- Resource Owner
+		- User who owns data/resources
+	- Client
+		- app/service that wants access to the users resources
+	- Auth Server
 
 ### OpenID Connect
