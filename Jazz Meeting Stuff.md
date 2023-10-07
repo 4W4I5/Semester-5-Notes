@@ -70,7 +70,18 @@ IAM itself is a framework to manage identities and controls access to resources
 ### LDAP (Protocol to use w a Directory service like AD)
 - Authentication method
 	- SASL (Simple authentication and Security Layer)
+- LDAP is a protocol used for accessing and managing directory information services, often used for user authentication and directory services.
+- It's lightweight and efficient, making it suitable for querying and modifying directory data.
+- LDAP directories are organized in a hierarchical tree structure, with a root directory and branches called "entries."
+- Each entry in an LDAP directory contains attributes (key-value pairs) that describe an object, such as a user or a device.
+- Common LDAP directory services include Microsoft Active Directory and OpenLDAP.
+- LDAP is commonly used for user authentication, enabling centralized login credentials for multiple systems.
+- It follows a client-server model, where LDAP clients (applications) connect to LDAP servers to query or modify directory data.
+- LDAP supports various authentication mechanisms, including simple bind (username/password) and more secure methods like SASL (Simple Authentication and Security Layer).
+- LDAP is often used in conjunction with applications like email servers, web applications, and VPNs for user authentication.
+- It's a critical component in many organizations for managing user accounts, permissions, and other directory-related tasks.
 
+If you need further details or have specific questions
 ### SAML (Security Assertion Markup Language)
 - XML-based protocol for exchanging authentication and authorization data used in web-based SSO.
 - SAML enables a user to log in once and access multiple services without needing to log in separately to each one.
@@ -105,7 +116,13 @@ IAM itself is a framework to manage identities and controls access to resources
 	    - SAML primarily focuses on authentication and may not provide robust mechanisms for exchanging user attributes between IdPs and SPs.
 
 ### MFA (MultiFactor Auth, also gpt)
-
+- Multi-Factor Authentication (MFA) is a security method that requires users to provide multiple forms of identification before granting access to a system or account.
+- It adds an extra layer of security beyond just a username and password.
+- Common factors used in MFA include something you know (password), something you have (smartphone or hardware token), and something you are (biometric data like fingerprints or facial recognition).
+- MFA enhances security by making it more difficult for unauthorized users to gain access, even if they have your password.
+- It helps protect against various cyber threats, such as password breaches and phishing attacks.
+- MFA can be implemented in various ways, including SMS codes, mobile apps, hardware tokens, and biometric authentication.
+- It's crucial for securing sensitive accounts and systems, especially in cybersecurity.
 ### OAuth
 - Hidden user creds
 - Use for allowing 3rd party applications to access user data, social media login and securing API
@@ -118,3 +135,12 @@ IAM itself is a framework to manage identities and controls access to resources
 		- Manages user authentication and authorizes client creds
 
 ### OpenID Connect
+- OpenID Connect (OIDC) is an authentication protocol built on top of OAuth 2.0.
+- It is designed for single sign-on (SSO) and identity verification on the internet.
+- OIDC allows users to authenticate themselves and share identity information with third-party applications without revealing their passwords.
+- It provides a standardized way to verify a user's identity using identity providers (IdPs) like Google, Facebook, or a corporate IdP.
+- OIDC uses JSON Web Tokens (JWTs) to encode identity information, making it easy to transmit and verify user data securely.
+- It supports various authentication flows, including authorization code flow, implicit flow, and hybrid flow, to accommodate different use cases.
+- OIDC is widely used in web and mobile applications for user authentication and authorization.
+- It helps improve security by reducing the risk of password-related vulnerabilities and enables seamless user experiences across different applications.
+- OIDC is commonly used in conjunction with OAuth 2.0 for securing APIs and resources.
