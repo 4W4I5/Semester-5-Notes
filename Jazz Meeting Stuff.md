@@ -35,10 +35,18 @@
 # Microsoft AD
 - Used for SSO and Centralized user management
 - Components
-	- Domain Controller
-	- AD DS
-	- AD CS
-	- AD FS
+	- **Domain Controller**
+		- A domain controller is a server that manages security authentication requests, enforces security policies, and stores information about objects in a domain.
+		- It plays a central role in AD, authenticating and authorizing all users and computers within a domain.
+	- **Active Directory Domain Services (AD DS):**
+	    - AD DS is the core service of Active Directory that stores directory data and manages communication between users and domains.
+	    - It includes features like user authentication, group policy management, and directory replication.
+	- **Active Directory Certificate Services (AD CS):**
+	    - AD CS is used to create, validate, and revoke public key certificates.
+	    - It is crucial for secure communication within the network and supports features like SSL/TLS for web security.
+	- **Active Directory Federation Services (AD FS):**
+	    - AD FS enables single sign-on (SSO) and identity federation across different organizations or systems.
+	    - It allows users to access resources in a trusted manner without needing separate login credentials
 
 ---
 # IAM Protocols
