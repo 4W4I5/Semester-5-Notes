@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "481c4ffed35bae1e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Jazz Meeting Stuff.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Jazz Meeting Stuff.md",
+                "file": "OS/OS 5 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Jazz Meeting Stuff.md",
+                "file": "OS/OS 5 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Jazz Meeting Stuff.md"
+                "file": "OS/OS 5 October, 2023.md"
               }
             }
           },
@@ -181,10 +168,10 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "481c4ffed35bae1e",
+  "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
-    "OS/OS 5 October, 2023.md",
     "Jazz Meeting Stuff.md",
+    "OS/OS 5 October, 2023.md",
     "README.md",
     "DB Quiz.md",
     "CySec-2/CySec2 3 October, 2023.md",
