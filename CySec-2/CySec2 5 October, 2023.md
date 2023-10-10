@@ -6,3 +6,5 @@
 	- URL Blacklist
 	- Protection against some or all scripts
 	- Disallowing of HTTP response messages with prohibited MIME type that indicate malware
+- ##### Protections against misbehaving clients
+	- Disallowing the HTTP Post method, which can be used to send out sensitive files
