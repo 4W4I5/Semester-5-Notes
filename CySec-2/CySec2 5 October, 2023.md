@@ -21,4 +21,5 @@
 		- Used as a relay 
 		- Can only handle a limited number of client-server pairs
 		- Cannot handle the traffic load as a border server
-	- 
+	- ##### Only a few applications can be proxied
+		- Most only support HTTP/SMTP
