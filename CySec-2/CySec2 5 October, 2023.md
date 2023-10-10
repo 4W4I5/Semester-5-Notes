@@ -14,3 +14,11 @@
 		- Data link, internet and transport headers are discarded along with any attacks they may have contained
 	- Protocol fidelity
 		- Communication with the firewall is broken if the protocol indicated port number is not followed
+
+
+- ## Limitations of APF
+	- ##### Processing intensive operations
+		- Used as a relay 
+		- Can only handle a limited number of client-server pairs
+		- Cannot handle the traffic load as a border server
+	- 
