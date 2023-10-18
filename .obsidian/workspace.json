@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "2acd43dc6ef7206f",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.4.16"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "63f1cb25d02b3c57",
+  "active": "2acd43dc6ef7206f",
   "lastOpenFiles": [
     "README.md",
     "DB/DB 17 October, 2023.md",
