@@ -13,24 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DB/DB 17 October, 2023.md",
+                "file": "Algo/Algo 27 September, 2023.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "2acd43dc6ef7206f",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.16"
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -80,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DB/DB 17 October, 2023.md",
+                "file": "Algo/Algo 27 September, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DB/DB 17 October, 2023.md",
+                "file": "Algo/Algo 27 September, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DB/DB 17 October, 2023.md"
+                "file": "Algo/Algo 27 September, 2023.md"
               }
             }
           },
@@ -179,9 +167,10 @@
       "obisidian-note-linker:Note Linker": false
     }
   },
-  "active": "2acd43dc6ef7206f",
+  "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
     "README.md",
+    "Pasted image 20230912152003.png",
     "DB/DB 17 October, 2023.md",
     "CySec-2/CySec2 5 October, 2023.md",
     "Jazz Meeting Stuff.md",
@@ -211,7 +200,6 @@
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 13 September, 2023.md",
     "Algo/Algo 6 September, 2023.md",
-    "Algo/Algo 4 September, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
@@ -219,7 +207,6 @@
     "OS/Exam Prep",
     "Marketing/Exam Prep",
     "Books/CYSEC Book.pdf",
-    "Pasted image 20230912152003.png",
     "Books/OS Book.pdf",
     "Books/DB Book.pdf",
     "Books/William Stallings-Operating Systems 7th Edition.pdf",
