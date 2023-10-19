@@ -56,7 +56,7 @@ Notes sponsored by chatGPT ;)
 | Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |
 | Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
 | Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          | Incomplete | Firewall Architecture                                                                   |
+| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          | Incomplete | Firewall Architecture, Management                                                              |
 | Week 10     | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)         |            |                                                                    |
 | Week 10     | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          |            |                                                                    |
 | Week 11     | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |            |                                                                    |
