@@ -13,7 +13,25 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md",
+                "file": "CySec-2/CySec2 19 October, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "d32b034ea2024781",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55891c263ab3d7a1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md",
+                "file": "CySec-2/CySec2 19 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md",
+                "file": "CySec-2/CySec2 19 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Algo/Algo 27 September, 2023.md"
+                "file": "CySec-2/CySec2 19 October, 2023.md"
               }
             }
           },
@@ -170,6 +189,8 @@
   "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
     "README.md",
+    "CySec-2/CySec2 19 October, 2023.md",
+    "Algo/Algo 27 September, 2023.md",
     "Pasted image 20230912152003.png",
     "DB/DB 17 October, 2023.md",
     "CySec-2/CySec2 5 October, 2023.md",
@@ -182,7 +203,6 @@
     "OS/OS 3 October, 2023.md",
     "DB/DB 3 October, 2023.md",
     "Algo/Algo 2 October, 2023.md",
-    "Algo/Algo 27 September, 2023.md",
     "CySec-2/CySec2 28 September, 2023.md",
     "OS/OS 28 September, 2023.md",
     "DB/DB 28 September, 2023.md",

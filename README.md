@@ -50,17 +50,17 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](CySec-2/CySec2%2019%20September,%202023.md)         | Incomplete | TCP Mitnick Attack + Started CH6                                   |
 | Week 5      | 21 Sept                                                       | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 |
 | Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete   | Prep material for Sessional 1                                      |
-| Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         | Incomplete           |  Stateful Packet inspection                                                           |
+| Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         | Incomplete | Stateful Packet inspection                                         |
 | Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            |            |                                                                    |
 | Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |            |                                                                    |
 | Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |            |                                                                    |
 | Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |            |                                                                    |
 | Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |            |                                                                    |
-| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          |            |                |
-| Week 10      | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)          |            |                |
-| Week 10      | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          |            |                |
-| Week 11      | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |            |                |
-| Week 11      | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)          |            |                |
+| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          | Incomplete | Firewall Architecture                                                                   |
+| Week 10     | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)         |            |                                                                    |
+| Week 10     | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          |            |                                                                    |
+| Week 11     | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |            |                                                                    |
+| Week 11     | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)           |            |                                                                    |
 
 ## DB
 
