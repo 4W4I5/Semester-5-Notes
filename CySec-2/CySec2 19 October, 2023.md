@@ -12,4 +12,9 @@
 	- Multiple ways of implementation, Defining policies allows more freedom in implementation
 - ### Implementation
 	- Firewall Hardening
-	- 
+	- Firewall policy database
+	- Vulnerability testing after configuration
+	- Change authorization and management
+	- Reading firewall logs
+
+`Fill in slides and also add in 6.10`
