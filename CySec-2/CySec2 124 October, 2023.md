@@ -10,3 +10,4 @@ Cyber Threat Intelligence (CTI)
 
 IOC vs IOA
 - IOA is IOC for the attack in progress
+ 
