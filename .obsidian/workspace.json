@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 124 October, 2023.md",
+                "file": "OS/OS 24 October, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 124 October, 2023.md",
+                "file": "OS/OS 24 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 124 October, 2023.md",
+                "file": "OS/OS 24 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 124 October, 2023.md"
+                "file": "OS/OS 24 October, 2023.md"
               }
             }
           },
@@ -189,6 +189,8 @@
   "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
     "README.md",
+    "OS/OS 24 October, 2023.md",
+    "OS/OS 124 October, 2023.md",
     "CySec-2/CySec2 124 October, 2023.md",
     "Jazz Meeting Stuff.md",
     "CySec-2/CySec2 19 October, 2023.md",
@@ -218,8 +220,6 @@
     "Pasted image 20230926021341.png",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
     "Algo/Algo 20 September, 2023.md",
-    "Algo/Algo 18 September, 2023.md",
-    "Algo/Algo 13 September, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
