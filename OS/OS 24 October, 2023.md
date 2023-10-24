@@ -12,3 +12,7 @@
 - Difficult for the OS to manage the allocation of resources optimally
 - Difficult to locate programming errors as results are not determinsitic and reproducible
 
+### Race Condition
+- When multiple processes or threads read and write data items
+- The final result depends on the order of the execution
+	- Loser of the race updates last and will determine the final value of the variable
