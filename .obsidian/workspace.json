@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CySec-2/CySec2 19 October, 2023.md",
+                "file": "CySec-2/CySec2 124 October, 2023.md",
                 "mode": "source",
                 "source": false
               }
@@ -87,7 +87,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 19 October, 2023.md",
+                "file": "CySec-2/CySec2 124 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 19 October, 2023.md",
+                "file": "CySec-2/CySec2 124 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 19 October, 2023.md"
+                "file": "CySec-2/CySec2 124 October, 2023.md"
               }
             }
           },
@@ -188,12 +189,13 @@
   "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
     "README.md",
+    "CySec-2/CySec2 124 October, 2023.md",
+    "Jazz Meeting Stuff.md",
     "CySec-2/CySec2 19 October, 2023.md",
     "Algo/Algo 27 September, 2023.md",
     "Pasted image 20230912152003.png",
     "DB/DB 17 October, 2023.md",
     "CySec-2/CySec2 5 October, 2023.md",
-    "Jazz Meeting Stuff.md",
     "OS/OS 5 October, 2023.md",
     "DB Quiz.md",
     "CySec-2/CySec2 3 October, 2023.md",
@@ -218,7 +220,6 @@
     "Algo/Algo 20 September, 2023.md",
     "Algo/Algo 18 September, 2023.md",
     "Algo/Algo 13 September, 2023.md",
-    "Algo/Algo 6 September, 2023.md",
     "Algo/Exam Prep",
     "CySec-2/Exam Prep",
     "CySec2/Exam Prep",
