@@ -6,3 +6,9 @@
 	- depends on the activites of the other processes
 	- the way OS handles interrupts
 	- Scheduling policies of the OS
+
+### Difficulty of concurrency 
+- Sharing of global resources
+- Difficult for the OS to manage the allocation of resources optimally
+- Difficult to locate programming errors as results are not determinsitic and reproducible
+
