@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "OS/OS 24 October, 2023.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "OS/OS 24 October, 2023.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -144,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "OS/OS 24 October, 2023.md"
               }
             }
           },
@@ -183,13 +183,14 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obisidian-note-linker:Note Linker": false
+      "obisidian-note-linker:Note Linker": false,
+      "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "55891c263ab3d7a1",
+  "active": "63f1cb25d02b3c57",
   "lastOpenFiles": [
-    "OS/OS 24 October, 2023.md",
     "README.md",
+    "OS/OS 24 October, 2023.md",
     "OS/OS 124 October, 2023.md",
     "CySec-2/CySec2 124 October, 2023.md",
     "Jazz Meeting Stuff.md",

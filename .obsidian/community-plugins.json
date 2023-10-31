@@ -8,5 +8,6 @@
   "obsidian-autocomplete-plugin",
   "obsidian-regex-replace",
   "obisidian-note-linker",
-  "quick-latex"
+  "quick-latex",
+  "obsidian-trim-whitespace"
 ]

@@ -51,16 +51,16 @@ Notes sponsored by chatGPT ;)
 | Week 5      | 21 Sept                                                       | N/A        | pfSense Lab setup DHCP, DNS, Rules                                 |
 | Sessional-1 | [25 Sept](CySec-2/Exam%20Prep/CySec-2%20Quick%20Notes%201.md) | Complete   | Prep material for Sessional 1                                      |
 | Week 6      | [28 Sept](CySec-2/CySec2%2028%20September,%202023.md)         | Incomplete | Stateful Packet inspection                                         |
-| Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            | N/A           |                                                                    |
-| Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            |   N/A         |                                                                    |
-| Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          |      N/A      |                                                                    |
-| Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          |        N/A    |                                                                    |
-| Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          |          N/A  |                                                                    |
-| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          | Incomplete | Firewall Architecture, Management                                                              |
-| Week 10     | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)         |Incomplete            |                                                                    |
-| Week 10     | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          | N/A           |                                                                    |
-| Week 11     | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          |   N/A         |                                                                    |
-| Week 11     | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)           |     N/A       |                                                                    |
+| Week 7      | [3rd Oct](CySec-2/CySec2%203%20October,%202023.md)            | N/A        |                                                                    |
+| Week 7      | [5th Oct](CySec-2/CySec2%205%20October,%202023.md)            | N/A        |                                                                    |
+| Week 8      | [10th Oct](CySec-2/CySec2%2010%20October,%202023.md)          | N/A        |                                                                    |
+| Week 8      | [12th Oct](CySec-2/CySec2%2012%20October,%202023.md)          | N/A        |                                                                    |
+| Week 9      | [17th Oct](CySec-2/CySec2%2017%20October,%202023.md)          | N/A        |                                                                    |
+| Week 9      | [19th Oct](CySec-2/CySec2%2019%20October,%202023.md)          | Incomplete | Firewall Architecture, Management                                  |
+| Week 10     | [24th Oct](CySec-2/CySec2%20124%20October,%202023.md)         | Incomplete |                                                                    |
+| Week 10     | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          | N/A        |                                                                    |
+| Week 11     | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          | N/A        |                                                                    |
+| Week 11     | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)           | N/A        |                                                                    |
 
 ## DB
 
@@ -77,17 +77,17 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](DB/DB%2019%20September,%202023.md)        | Incomplete                    |                                    |
 | Week 5      | [21 Sept](DB/DB%2021%20September,%202023.md)        |                               |                                    |
 | Sessional-1 | [25 Sept](DB/Exam%20Prep/DB%20Quick%20Notes%201.md) | N/A                           | Prep material for sessional 1      |
-| Week 6      | [28 Sept](DB/DB%2028%20September,%202023.md)        | Incomplete                    | SQL                                   |
-| Week 7      | [3rd Oct](DB/DB%203%20October,%202023.md)            | Incomplete           |                                                                    |
-| Week 7      | [5th Oct](DB/DB%205%20October,%202023.md)            | N/A           |                                                                    |
-| Week 8      | [10th Oct](DB/DB%2010%20October,%202023.md)          |N/A            |                                                                    |
-| Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)          | N/A           |                                                                    |
-| Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)          | Incomplete           |                                                                    |
-| Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)          | N/A           |                |
-| Week 10      | [24th Oct](DB/DB%20124%20October,%202023.md)          | N/A           |                |
-| Week 10      | [26th Oct](DB/DB%2026%20October,%202023.md)          | N/A           |                |
-| Week 11      | [31th Oct](DB/DB%2031%20October,%202023.md)          | N/A           |                |
-| Week 11      | [1st Nov](DB/DB%201%20November,%202023.md)          |  N/A          |                |
+| Week 6      | [28 Sept](DB/DB%2028%20September,%202023.md)        | Incomplete                    | SQL                                |
+| Week 7      | [3rd Oct](DB/DB%203%20October,%202023.md)           | Incomplete                    |                                    |
+| Week 7      | [5th Oct](DB/DB%205%20October,%202023.md)           | N/A                           |                                    |
+| Week 8      | [10th Oct](DB/DB%2010%20October,%202023.md)         | N/A                           |                                    |
+| Week 8      | [12th Oct](DB/DB%2012%20October,%202023.md)         | N/A                           |                                    |
+| Week 9      | [17th Oct](DB/DB%2017%20October,%202023.md)         | Incomplete                    |                                    |
+| Week 9      | [19th Oct](DB/DB%2019%20October,%202023.md)         | N/A                           |                                    |
+| Week 10     | [24th Oct](DB/DB%20124%20October,%202023.md)        | N/A                           |                                    |
+| Week 10     | [26th Oct](DB/DB%2026%20October,%202023.md)         | N/A                           |                                    |
+| Week 11     | [31th Oct](DB/DB%2031%20October,%202023.md)         | N/A                           |                                    |
+| Week 11     | [1st Nov](DB/DB%201%20November,%202023.md)          | N/A                           |                                    |
 
 ## Marketing
 
@@ -104,17 +104,17 @@ Notes sponsored by chatGPT ;)
 | Week 5      | [19 Sept](Marketing/Marketing%2019%20September,%202023.md)        | Complete | Websites                      |
 | Week 5      | [20 Sept](Marketing/Marketing%2021%20September,%202023.md)        | Complete | Blogging                      |
 | Sessional-1 | [23 Sept](Marketing/Exam%20Prep/Marketing%20Quick%20Notes%201.md) | Complete | Prep material for sessional 1 |
-| Week 6      | [27 Sept](Marketing/Marketing%2027%20September,%202023.md)                                                       | N/A      | Was absent                    |
-| Week 7      | [3 Oct](Marketing/Marketing%203%20October,%202023.md)                                                       | N/A      |                     |
-| Week 7      | [4 Oct](Marketing/Marketing%204%20October,%202023.md)                                                       | N/A      |                     |
-| Week 8      | [10 Oct](Marketing/Marketing%2010%20October,%202023.md)                                                       | N/A      |                     |
-| Week 8      | [11 Oct](Marketing/Marketing%2011%20October,%202023.md)                                                       | N/A      |                     |
-| Week 9      | [17 Oct](Marketing/Marketing%2017%20October,%202023.md)                                                       | N/A      |                     |
-| Week 9      | [18 Oct](Marketing/Marketing%2018%20October,%202023.md)                                                       | N/A      |                     |
-| Week 10      | [24 Oct](Marketing/Marketing%2024%20October,%202023.md)                                                       | N/A      |                     |
-| Week 10      | [25 Oct](Marketing/Marketing%2025%20October,%202023.md)                                                       | N/A      |                     |
-| Week 11      | [31 Oct](Marketing/Marketing%2031%20October,%202023.md)                                                       | N/A      |                     |
-| Week 11      | [1 Nov](Marketing/Marketing%201%20November,%202023.md)                                                       | N/A      |                     |
+| Week 6      | [27 Sept](Marketing/Marketing%2027%20September,%202023.md)        | N/A      | Was absent                    |
+| Week 7      | [3 Oct](Marketing/Marketing%203%20October,%202023.md)             | N/A      |                               |
+| Week 7      | [4 Oct](Marketing/Marketing%204%20October,%202023.md)             | N/A      |                               |
+| Week 8      | [10 Oct](Marketing/Marketing%2010%20October,%202023.md)           | N/A      |                               |
+| Week 8      | [11 Oct](Marketing/Marketing%2011%20October,%202023.md)           | N/A      |                               |
+| Week 9      | [17 Oct](Marketing/Marketing%2017%20October,%202023.md)           | N/A      |                               |
+| Week 9      | [18 Oct](Marketing/Marketing%2018%20October,%202023.md)           | N/A      |                               |
+| Week 10     | [24 Oct](Marketing/Marketing%2024%20October,%202023.md)           | N/A      |                               |
+| Week 10     | [25 Oct](Marketing/Marketing%2025%20October,%202023.md)           | N/A      |                               |
+| Week 11     | [31 Oct](Marketing/Marketing%2031%20October,%202023.md)           | N/A      |                               |
+| Week 11     | [1 Nov](Marketing/Marketing%201%20November,%202023.md)            | N/A      |                               |
 
 ## OS
 
@@ -133,12 +133,12 @@ Notes sponsored by chatGPT ;)
 | Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
 | Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)        | Complete    | Fair Share Scheduling & UNIX Scheduler                 |
 | Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)           | Incomplete  | Chapter 4 Threads                                      |
-| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)           | Incomplete  | ULT and KLT                                                       |
-| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)         |  N/A           |                                                        |
-| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)         |  N/A           |                                                        |
-| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)         |  N/A           |                                                        |
-| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)         |  N/A           |                                                        |
-| Week 10     | [24th Oct](OS/OS%2024%20October,%202023.md)        |  Incomplete           |                                                        |
-| Week 10     | [26th Oct](OS/OS%2026%20October,%202023.md)         | N/A            |                                                        |
-| Week 11     | [31th Oct](OS/OS%2031%20October,%202023.md)         | N/A            |                                                        |
-| Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)          |  N/A           |                                                        |
+| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)           | Incomplete  | ULT and KLT                                            |
+| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)         | N/A         |                                                        |
+| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)         | N/A         |                                                        |
+| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)         | N/A         |                                                        |
+| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)         | N/A         |                                                        |
+| Week 10     | [24th Oct](OS/OS%2024%20October,%202023.md)         | Incomplete  |                                                        |
+| Week 10     | [26th Oct](OS/OS%2026%20October,%202023.md)         | N/A         |                                                        |
+| Week 11     | [31th Oct](OS/OS%2031%20October,%202023.md)         | N/A         |                                                        |
+| Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)          | N/A         |                                                        |
