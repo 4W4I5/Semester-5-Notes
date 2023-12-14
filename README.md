@@ -3,8 +3,9 @@
 These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
 
 > [!NOTE]
-> look @ Quick Notes 1 for sessional 1 prep, the notes themselves will not always have any content that was missed during class
+> Notes were not well maintained in this semester, ive commented out the links. View them in the raw view to view the links. Only links for the final prep content is shared.
 ## Algo
+<!--
 > [!WARNING]
 > Algo might not have a complete QuickNote1 written for it, theres way too much math to type out :')
 
@@ -32,9 +33,10 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 | Week 10     | [25 Oct](Algo/Algo%2025%20October,%202023.md)           | N/A           |                                   |
 | Week 11     | [30 Oct](Algo/Algo%2030%20October,%202023.md)           | N/A           |                                   |
 | Week 11     | [1 Nov](Algo/Algo%201%20November,%202023.md)            | N/A           |                                   |
+-->
 
 ## CySec-2
-
+<!--
 Notes sponsored by chatGPT ;)
 
 | Week #      | Date                                                          | Status     | Content                                                            |
@@ -61,9 +63,13 @@ Notes sponsored by chatGPT ;)
 | Week 10     | [26th Oct](CySec-2/CySec2%2026%20October,%202023.md)          | N/A        |                                                                    |
 | Week 11     | [31th Oct](CySec-2/CySec2%2031%20October,%202023.md)          | N/A        |                                                                    |
 | Week 11     | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)           | N/A        |                                                                    |
-
+|             | [14th Nov](CySec-2/CySec2%2014%20November,%202023.md)                                                              |            |                                                                    |
+-->
+| Notes                                                     | Status                     | Content |
+| --------------------------------------------------------- | -------------------------- | ------- |
+| [CySec-2 Finals Prep](CySec-2/Exam%20Prep/CySec-2%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
 ## DB
-
+<!--
 | Week #      | Date                                                | Status                        | Content                            |
 | ----------- | --------------------------------------------------- | ----------------------------- | ---------------------------------- |
 | Week 1      | [22 Aug](DB/DB%2022%20August,%202023.md)            | Complete                      | Introduction & Evolution of a DMBS |
@@ -88,8 +94,9 @@ Notes sponsored by chatGPT ;)
 | Week 10     | [26th Oct](DB/DB%2026%20October,%202023.md)         | N/A                           |                                    |
 | Week 11     | [31th Oct](DB/DB%2031%20October,%202023.md)         | N/A                           |                                    |
 | Week 11     | [1st Nov](DB/DB%201%20November,%202023.md)          | N/A                           |                                    |
-
+-->
 ## Marketing
+<!--
 
 | Week #      | Date                                                              | Status   | Content                       |
 | ----------- | ----------------------------------------------------------------- | -------- | ----------------------------- |
@@ -115,30 +122,32 @@ Notes sponsored by chatGPT ;)
 | Week 10     | [25 Oct](Marketing/Marketing%2025%20October,%202023.md)           | N/A      |                               |
 | Week 11     | [31 Oct](Marketing/Marketing%2031%20October,%202023.md)           | N/A      |                               |
 | Week 11     | [1 Nov](Marketing/Marketing%201%20November,%202023.md)            | N/A      |                               |
-
+-->
 ## OS
-
-| Week #      | Date                                                | Status      | Content                                                |
-| ----------- | --------------------------------------------------- | ----------- | ------------------------------------------------------ |
-| Week 1      | [22 Aug](OS/OS%2022%20August,%202023.md)            | Complete    | Intro, FDE Cycle, OpCodes/OpRands, Interrupts          |
-| Week 1      | [24 Aug](OS/OS%2024%20August,%202023.md)            | Complete    | Review Questions Chapter #1                            |
-| Week 2      | [29 Aug](OS/OS%2029%20August,%202023.md)            | Complete    | I/O technique, SMP + MCC, Chapter 2: Operating System  |
-| Week 2      | [31 Aug](OS/OS%2031%20August,%202023.md)            | Refactor    | Chapter 2 completed till 2.3                           |
-| Week 3      | [5 Sept](OS/OS%205%20September,%202023.md)          | Incomplete  | Continuing Chapter 2 + A whole lot of stuff to fill in |
-| Week 3      | [7 Sept](OS/OS%207%20September,%202023.md)          | Incomplete  | Wrapping up Chapter 2 + Did till chapter 3.2           |
-| Week 4      | [12 Sept](OS/OS%2012%20September,%202023.md)        | Incomplete  | 3.3 and onwards                                        |
-| Week 4      | [14 Sept](OS/OS%2014%20September,%202023.md)        | Incomplete  | UNIX SVR4                                              |
-| Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)        | Incomplete  | Scheduling routines                                    |
-| Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)        | Incomplete  | Last lec cont. + Feedback                              |
-| Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md) | In progress | Prep material for sessional 1                          |
-| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)        | Complete    | Fair Share Scheduling & UNIX Scheduler                 |
-| Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)           | Incomplete  | Chapter 4 Threads                                      |
-| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)           | Incomplete  | ULT and KLT                                            |
-| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)         | N/A         |                                                        |
-| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)         | N/A         |                                                        |
-| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)         | N/A         |                                                        |
-| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)         | N/A         |                                                        |
-| Week 10     | [24th Oct](OS/OS%2024%20October,%202023.md)         | Incomplete  |                                                        |
-| Week 10     | [26th Oct](OS/OS%2026%20October,%202023.md)         | N/A         |                                                        |
-| Week 11     | [31th Oct](OS/OS%2031%20October,%202023.md)         | N/A         |                                                        |
-| Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)          | N/A         |                                                        |
+<!--
+| Week #      | Date                                                   | Status      | Content                                                |
+| ----------- | ------------------------------------------------------ | ----------- | ------------------------------------------------------ |
+| Week 1      | [22 Aug](OS/OS%2022%20August,%202023.md)               | Complete    | Intro, FDE Cycle, OpCodes/OpRands, Interrupts          |
+| Week 1      | [24 Aug](OS/OS%2024%20August,%202023.md)               | Complete    | Review Questions Chapter #1                            |
+| Week 2      | [29 Aug](OS/OS%2029%20August,%202023.md)               | Complete    | I/O technique, SMP + MCC, Chapter 2: Operating System  |
+| Week 2      | [31 Aug](OS/OS%2031%20August,%202023.md)               | Refactor    | Chapter 2 completed till 2.3                           |
+| Week 3      | [5 Sept](OS/OS%205%20September,%202023.md)             | Incomplete  | Continuing Chapter 2 + A whole lot of stuff to fill in |
+| Week 3      | [7 Sept](OS/OS%207%20September,%202023.md)             | Incomplete  | Wrapping up Chapter 2 + Did till chapter 3.2           |
+| Week 4      | [12 Sept](OS/OS%2012%20September,%202023.md)           | Incomplete  | 3.3 and onwards                                        |
+| Week 4      | [14 Sept](OS/OS%2014%20September,%202023.md)           | Incomplete  | UNIX SVR4                                              |
+| Week 5      | [19 Sept](OS/OS%2019%20September,%202023.md)           | Incomplete  | Scheduling routines                                    |
+| Week 5      | [21 Sept](OS/OS%2021%20September,%202023.md)           | Incomplete  | Last lec cont. + Feedback                              |
+| Sessional-1 | [25 Sept](OS/Exam%20Prep/OS%20Quick%20Notes%201.md)    | In progress | Prep material for sessional 1                          |
+| Week 6      | [28 Sept](OS/OS%2028%20September,%202023.md)           | Complete    | Fair Share Scheduling & UNIX Scheduler                 |
+| Week 7      | [3rd Oct](OS/OS%203%20October,%202023.md)              | Incomplete  | Chapter 4 Threads                                      |
+| Week 7      | [5th Oct](OS/OS%205%20October,%202023.md)              | Incomplete  | ULT and KLT                                            |
+| Week 8      | [10th Oct](OS/OS%2010%20October,%202023.md)            | N/A         |                                                        |
+| Week 8      | [12th Oct](OS/OS%2012%20October,%202023.md)            | N/A         |                                                        |
+| Week 9      | [17th Oct](OS/OS%2017%20October,%202023.md)            | N/A         |                                                        |
+| Week 9      | [19th Oct](OS/OS%2019%20October,%202023.md)            | N/A         |                                                        |
+| Week 10     | [24th Oct](OS/OS%2024%20October,%202023.md)            | Incomplete  |                                                        |
+| Week 10     | [26th Oct](OS/OS%2026%20October,%202023.md)            | N/A         |                                                        |
+| Week 11     | [31th Oct](OS/OS%2031%20October,%202023.md)            | N/A         |                                                        |
+| Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)             | N/A         |                                                        |
+| Sessional-2 | [OS-QuickNotes2](OS/OS%20Quick%20Notes%202,%202023.md)      |             |                                                        |
+-->
