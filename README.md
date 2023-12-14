@@ -3,7 +3,7 @@
 These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
 
 > [!NOTE]
-> Notes were not well maintained in this semester, ive commented out the links. View them in the raw view to view the links. Only links for the final prep content have been shared.
+> Notes were not well maintained in this semester, ive commented out the links. View day-by-day notes by viewing this readme.md file in the raw view to get the links or just explore the repo. Only links for the final prep content have been shared.
 ## Algo
 <!--
 > [!WARNING]
