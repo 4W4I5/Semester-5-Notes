@@ -3,7 +3,7 @@
 These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel free to request changes or add your own notes here just let me know and ill add them (figuring out a way to allow everyone to make changes soon)
 
 > [!NOTE]
-> Notes were not well maintained in this semester, ive commented out the links. View them in the raw view to view the links. Only links for the final prep content is shared.
+> Notes were not well maintained in this semester, ive commented out the links. View them in the raw view to view the links. Only links for the final prep content have been shared.
 ## Algo
 <!--
 > [!WARNING]
@@ -65,9 +65,11 @@ Notes sponsored by chatGPT ;)
 | Week 11     | [1st Nov](CySec-2/CySec2%201%20November,%202023.md)           | N/A        |                                                                    |
 |             | [14th Nov](CySec-2/CySec2%2014%20November,%202023.md)                                                              |            |                                                                    |
 -->
+
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
 | [CySec-2 Finals Prep](CySec-2/Exam%20Prep/CySec-2%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+
 ## DB
 <!--
 | Week #      | Date                                                | Status                        | Content                            |
