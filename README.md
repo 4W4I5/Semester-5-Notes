@@ -35,6 +35,10 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 | Week 11     | [1 Nov](Algo/Algo%201%20November,%202023.md)            | N/A           |                                   |
 -->
 
+| Notes                                                     | Status                     | Content |
+| --------------------------------------------------------- | -------------------------- | ------- |
+| [Algo Finals Prep](Algo/Exam%20Prep/Algo%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+
 ## CySec-2
 <!--
 Notes sponsored by chatGPT ;)
@@ -97,6 +101,11 @@ Notes sponsored by chatGPT ;)
 | Week 11     | [31th Oct](DB/DB%2031%20October,%202023.md)         | N/A                           |                                    |
 | Week 11     | [1st Nov](DB/DB%201%20November,%202023.md)          | N/A                           |                                    |
 -->
+
+| Notes                                                     | Status                     | Content |
+| --------------------------------------------------------- | -------------------------- | ------- |
+| [DB Finals Prep](DB/Exam%20Prep/DB%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+
 ## Marketing
 <!--
 
@@ -125,6 +134,11 @@ Notes sponsored by chatGPT ;)
 | Week 11     | [31 Oct](Marketing/Marketing%2031%20October,%202023.md)           | N/A      |                               |
 | Week 11     | [1 Nov](Marketing/Marketing%201%20November,%202023.md)            | N/A      |                               |
 -->
+
+| Notes                                                     | Status                     | Content |
+| --------------------------------------------------------- | -------------------------- | ------- |
+| [Marketing Finals Prep](Marketing/Exam%20Prep/Marketing%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+
 ## OS
 <!--
 | Week #      | Date                                                   | Status      | Content                                                |
@@ -153,3 +167,7 @@ Notes sponsored by chatGPT ;)
 | Week 11     | [1st Nov](OS/OS%201%20November,%202023.md)             | N/A         |                                                        |
 | Sessional-2 | [OS-QuickNotes2](OS/OS%20Quick%20Notes%202,%202023.md)      |             |                                                        |
 -->
+
+| Notes                                                     | Status                     | Content |
+| --------------------------------------------------------- | -------------------------- | ------- |
+| [OS Finals Prep](OS/Exam%20Prep/OS%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
