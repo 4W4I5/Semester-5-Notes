@@ -14,7 +14,25 @@
               "type": "markdown",
               "state": {
                 "file": "README.md",
-                "mode": "preview",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c00cd3a112d135db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d0b4f7ace758eb4a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -171,14 +189,14 @@
   },
   "active": "55891c263ab3d7a1",
   "lastOpenFiles": [
+    "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
+    "README.md",
     "OS/OS 24 October, 2023.md",
     "Untitled.md",
     "Untitled 1.md",
     "Jazz Meeting Stuff.md",
     "OS/OS Quick Notes 2, 2023.md",
-    "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
     "CySec-2/CySec2 14 November, 2023.md",
-    "README.md",
     "OS/OS 124 October, 2023.md",
     "CySec-2/CySec2 124 October, 2023.md",
     "CySec-2/CySec2 19 October, 2023.md",
