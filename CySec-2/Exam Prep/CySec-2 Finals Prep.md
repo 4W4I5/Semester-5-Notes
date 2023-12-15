@@ -5,11 +5,11 @@
 | Chapter                         | Status |
 | ------------------------------- | ------ |
 | [CH3.9: VPN](#CH3.9-VPN)                      | :x:    |
-| CH3.10: SSL/TLS                 | :x:    |
-| CH3.11: IPSEC                   | :x:    |
-| CH4: Secure Networks            | :x:    |
-| CH6: Firewalls                  | :x:    |
-| Extra CH10.3: IDS               | :x:    |
+| [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)                 | :x:    |
+| [CH3.11: IPSEC](#CH3.11-IPSEC)                   | :x:    |
+| [CH4: Secure Networks](#CH4-Secure-Networks)            | :x:    |
+| [CH6: Firewalls](#CH6-Firewalls)                  | :x:    |
+| [Extra CH10.3: IDS](#Extra-CH10.3-IDS)               | :x:    |
 | CH_UNKNOWN: Threat Intelligence | :x:       |
 
 <!--
