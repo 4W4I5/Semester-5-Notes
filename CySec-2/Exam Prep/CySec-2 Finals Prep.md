@@ -4,7 +4,7 @@
 
 | Chapter                         | Status |
 | ------------------------------- | ------ |
-| CH3.9: VPN                      | :x:    |
+| [CH3.9: VPN](#CH3.9-VPN)                      | :x:    |
 | CH3.10: SSL/TLS                 | :x:    |
 | CH3.11: IPSEC                   | :x:    |
 | CH4: Secure Networks            | :x:    |
@@ -16,3 +16,7 @@
 :white_check_mark:
 :x:
 -->
+
+
+
+# CH3.9: VPN
