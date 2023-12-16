@@ -120,13 +120,18 @@ N/A ATM. Cant understand this diagram
 	- Some classify it as its own layer known as the socket layer. Others see it as merely working in a sublayer of the transport layer which is where it gets the name of TLS. But essentially the data from Applications is sent to a Socket which is opened using the Transport layer is what i've used to understand its locality relative to other layers
 - SSL itself has two layers to note
 	- **Handshake layer**: Contains the handshake, change cipherspec and alert.
-		- This layer does not intiate 
+		- This layer does not intiate
 	- **Record layer**: Contains Records which is encrypted + hashed application layer data split into manageable blocks
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
-aka HTTP over SSL
-
-## Transport Layer Security
+HTTP over SSL
+- Known when in use if the URL starts with HTTPS:// instead of HTTP://
+- Following elements are encrypted
+	- URL of the requested document
+	- Contents of the document
+	- Contents of browser forms
+	- Cookies sent to and from the server and browser
+	- Contents of HTTP header
 
 ### Test your understanding questions from the book
 
