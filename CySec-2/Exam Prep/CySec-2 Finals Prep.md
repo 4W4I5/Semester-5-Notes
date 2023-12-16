@@ -130,6 +130,9 @@ N/A ATM. Cant understand this diagram
 SSL itself has 2 sublayers to consider
 
 - ###### Handshake Layer
+	- **Terminology:**
+		- **Connection:** A live communication channel
+		- **Session:** A set of cryptography parameters, can be reused in another connection or renewed without interrupting connection. Session state is defined by the record layer
 	- **Functionality:**
 		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
 		- Establishes a secure communication channel before data exchange begins.
