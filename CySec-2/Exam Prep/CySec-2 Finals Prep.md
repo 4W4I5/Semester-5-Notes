@@ -133,6 +133,13 @@ SSL itself has 2 sublayers to consider
 	- **Terminology:**
 		- **Connection:** A live communication channel
 		- **Session:** A set of cryptography parameters, can be reused in another connection or renewed without interrupting connection. Session state is defined by the record layer
+			- Session state holds
+					    - Session identifier, a random number
+					    - Peer certificate, x509.v3 cert. can be null
+					    - Compression method, algo used
+					    - Cipher Spec, bulk data encryption and hashing algo used
+					    - Master Secret, 48byte shared b/w client and server
+					    - IsResumeable, flag that indicates whether session can be used to initiate new connections
 	- **Functionality:**
 		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
 		- Establishes a secure communication channel before data exchange begins.
@@ -163,13 +170,7 @@ SSL itself has 2 sublayers to consider
 	    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
 	- **Header Format:**
 	    - Includes information like content type, version, length, and a MAC (Message Authentication Code) for integrity.
-	    - Session state that holds
-		    - Session identifier
-		    - Peer certificate
-		    - Compression method
-		    - Cipher Spec
-		    - Master Secret
-		    - IsResumeable
+
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
 
