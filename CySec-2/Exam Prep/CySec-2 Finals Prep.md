@@ -1,6 +1,9 @@
 >!NOTE
+
 >Following topics are mostly covered from the book first and then the slides
+
 >Status: 3.10 is wip
+
 >
 
 | Chapter                                      | Status             |
@@ -110,21 +113,55 @@ g. **Which types of VPNs use VPN gateways?**
 # Ch3.10: SSL/TLS (aka HTTPS from slides)
 
 ## Web Security Considerations
+
 N/A ATM. Cant understand this diagram
+
 ![](Pasted%20image%2020231216180329.png)
+
 ## SSL (Secure Socket Layer)
 - Most widely used security service.
 	- AKA TLS which is SSL's successor
 	- Defines how 2 entities i.e. a client and a server communicate with each other securely.
 - The layer it works at is a bit of a grey area as it is below the application layer but above the transport layer.
 	- Some classify it as its own layer known as the socket layer. Others see it as merely working in a sublayer of the transport layer which is where it gets the name of TLS. But essentially the data from Applications is sent to a Socket which is opened using the Transport layer is what i've used to understand its locality relative to other layers
-- SSL itself has two layers to note
-	- **Handshake layer**: Contains the handshake, change cipherspec and alert.
-		- This layer does not intiate
-	- **Record layer**: Contains Records which is encrypted + hashed application layer data split into manageable blocks
+
+### SSL Layers
+
+SSL itself has 2 sublayers to consider
+
+- ###### Handshake Layer
+	- **Functionality:**
+		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
+		- Establishes a secure communication channel before data exchange begins.
+	- **Steps in the Handshake:**
+		- **Name resolution:** Client will resolve the hostname to an IP using DNS
+	       - **Hello Messages:** Client and server exchange messages to agree on the SSL version and supported cryptographic algorithms.
+	       - **Key Exchange:** Negotiation of key exchange method (asymmetric or pre-shared keys) and generation of session keys.
+	       - **Authentication:** Server presents its digital certificate for authentication, and the client may authenticate itself as well.
+	       - **Finish:** Finalizes the negotiation, confirming that both parties are ready to start secure data exchange.
+	- **Key Material Generation:**
+		- Generates key material for subsequent data encryption using negotiated algorithms.
+	- **Secure Session Establishment:**
+		- Completes with the establishment of a secure session, allowing encrypted data exchange.
+- ###### Record Layer
+	- **Functionality:**
+	    - Responsible for the fragmentation, compression (optional), and encryption of data.
+	    - Operates at the transport layer of the OSI model.
+	    - Divides the data into manageable blocks, adds headers, and then encrypts the resulting SSL record.
+	- **Encryption:**
+	    - Utilizes symmetric key cryptography (e.g., using the negotiated session key) for data encryption.
+	    - Ensures confidentiality and integrity of the transmitted data.
+	- **Fragmentation:**
+	    - Splits larger messages into smaller fragments to fit within the constraints of the underlying transport layer protocol (e.g., TCP).
+	- **Compression (Optional):**
+	    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
+	- **Header Format:**
+	    - Includes information like content type, version, length, and a MAC (Message Authentication Code) for integrity.
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
+
 HTTP over SSL
+
 - Known when in use if the URL starts with HTTPS:// instead of HTTP://
 - Following elements are encrypted
 	- URL of the requested document
@@ -136,7 +173,7 @@ HTTP over SSL
 	- An unannounced TLS Closure will signify some sort of attack prompting the https client to issue a security warning
 	- TLS Implementations must init an exchange of closure alerts before closing a connection
 		- An incomplete close can work as well where after sending the alerts, the connection is immediately closed
-	- Closure requires the HTTPS 
+	- Closure of an HTTPS connection requires TLS to first close the connection with the peer's TLS entity. This involves closing the underlying TCP connection i.e starting the 4 way FIN handshake
 
 ### Test your understanding questions from the book
 
@@ -157,6 +194,7 @@ HTTP over SSL
 - SSL/TLS is popular due to its ability to provide **secure communication over the Internet** by encrypting data and ensuring the integrity of transmitted information.
 
 **e. Distinguish b/w SSL/TLS**
+
 1. **SSL (Secure Sockets Layer):**
 
     - SSL was the original cryptographic protocol developed by Netscape to secure communication over the internet.
@@ -173,9 +211,11 @@ HTTP over SSL
 - TLS is backward-compatible with SSL, but it's recommended to use the latest versions for security reasons.
 
 **f. For what type of VPN was SSL/TLS developed?**
+
 - SSL/TLS was initially developed to provide secure communication over the internet for web browsers and servers. It was designed to secure HTTP connections, leading to the "https://" protocol widely used for secure browsing.
 
 **g. For what type of VPN is SSL/TLS being increasingly used?**
+
 - SSL/TLS is increasingly being used in SSL VPNs (Secure Sockets Layer Virtual Private Networks).
 - SSL VPNs provide a secure way for users to connect to a private network over the internet using a web browser. They often operate at the application layer and allow secure access to specific applications, services, or resources.
 - SSL/TLS, being the underlying protocol for secure web communication, is well-suited for SSL VPNs. This approach provides a user-friendly and versatile way for remote users to access corporate resources securely without the need for specialized client software.
