@@ -32,4 +32,6 @@
 - Virtual Private Network is created using a cryptographic system to secure comms over an untrusted network (internet, wlan, etc)
 - WANs are expensive to setup so just establish an encrypted tunnel over the untrusted internet to save costs. Also grants mobility through wireless hotspots although it becomes a question of security at that point
 ### Types of VPN
-- 
+NOTE:: assume a Client-Server model.
+- **Host to Host VPNs**: Just a single host to a single client over an untrusted network
+	- 
