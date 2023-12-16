@@ -21,10 +21,15 @@
 - Combines cryptographic protections which specialize in Confidentiality, Integrity and Availability.
 	- Essentially its a standard/protocol that eliminiates the need for users to understand a specific cryptography.
 - Establishing a Cryptographic system
-	- Select a Cyrptographic standard i.e SSL/TLS or IPSec
+	- Select a Cryptographic standard i.e. SSL/TLS or IPsec
 	- Handshaking
 		- Stage 1: Negotiation of security methods and options
-		- Stage 2: Mutual Authentication
+		- Stage 2: Mutual Authentication (Doesn't have to be)
+		- Stage 3: Keying, Secure delivering of keys + secrets
+	- Communication stage
 # CH3.9: VPN
 
 - Virtual Private Network is created using a cryptographic system to secure comms over an untrusted network (internet, wlan, etc)
+- WANs are expensive to setup so just establish an encrypted tunnel over the untrusted internet to save costs. Also grants mobility through wireless hotspots although it becomes a question of security at that point
+### Types of VPN
+- 
