@@ -79,6 +79,7 @@ NOTE:: assume a Client-Server model.
 ### Test your understanding questions from the book
 
 a. **What is a VPN?**
+
    A Virtual Private Network (VPN) is a technology enabling secure and private communication over a public network, such as the internet.
 
 b. **Why do companies transmit over the Internet?**
@@ -107,8 +108,26 @@ g. **Which types of VPNs use VPN gateways?**
 
    Both remote access VPNs and site-to-site VPNs use VPN gateways. Remote access VPNs use a gateway for individual user connections, while site-to-site VPNs use gateways at each participating site for network-to-network connections.
 
-
 # Ch3.10: SSL/TLS (aka HTTPS from slides)
+
+
+## Test your understanding questions from the book
+
+**a. At what layer does SSL/TLS operate?**
+
+- SSL/TLS operates at the **Transport Layer**.
+
+**b. What types of applications can SSL/TLS protect?**
+
+- SSL/TLS can protect various applications, including web browsers, email clients, and other **network-based applications**.
+
+**c. What are the two commonly used SSL/TLS-aware applications?**
+
+- Two commonly used SSL/TLS-aware applications are **web browsers and email clients**.
+
+**d. Why is SSL/TLS popular?**
+
+- SSL/TLS is popular due to its ability to provide **secure communication over the Internet** by encrypting data and ensuring the integrity of transmitted information.
 # Ch3.11: IPSEC
 # Ch4: Secure Networks
 # Ch6: Firewalls

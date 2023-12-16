@@ -20,24 +20,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "2dae7af25c4d5769",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "e4d36b33e1144bcf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
       }
     ],
     "direction": "vertical"
@@ -187,7 +169,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "e4d36b33e1144bcf",
+  "active": "d0b4f7ace758eb4a",
   "lastOpenFiles": [
     "README.md",
     "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
