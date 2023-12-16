@@ -18,5 +18,6 @@
 -->
 
 
-
 # CH3.9: VPN
+
+- Virtual Private Network is created using a cryptographic system to secure comms over an untrusted network (internet, wlan, etc)
