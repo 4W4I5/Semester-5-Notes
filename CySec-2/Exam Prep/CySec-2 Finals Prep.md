@@ -143,6 +143,10 @@ SSL itself has 2 sublayers to consider
 	- **Functionality:**
 		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
 		- Establishes a secure communication channel before data exchange begins.
+	- **Protocols used: **
+		- Handshake protocol
+		- Change cipher spec
+		- Alert
 	- **Steps in the Handshake:**
 		1. **Name Resolution:** The client resolves the domain name of the server to obtain its IP address.
 		2. **Initiating a TCP Connection (1st Step of 3-Way Handshake):** The client initiates a TCP connection with the server by sending a TCP SYN (synchronize) packet.
