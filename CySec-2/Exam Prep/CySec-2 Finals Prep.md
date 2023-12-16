@@ -163,6 +163,13 @@ SSL itself has 2 sublayers to consider
 	    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
 	- **Header Format:**
 	    - Includes information like content type, version, length, and a MAC (Message Authentication Code) for integrity.
+	    - Session state that holds
+		    - Session identifier
+		    - Peer certificate
+		    - Compression method
+		    - Cipher Spec
+		    - Master Secret
+		    - IsResumeable
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
 
