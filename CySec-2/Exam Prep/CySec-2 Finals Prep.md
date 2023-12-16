@@ -4,15 +4,15 @@
 
 >Status:
 
-| Chapter                         | Status |
-| ------------------------------- | ------ |
-| [CH3.9: VPN](#CH3-9-VPN)                      | :x:    |
-| [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)                 | :x:    |
-| [CH3.11: IPSEC](#CH3.11-IPSEC)                   | :x:    |
-| [CH4: Secure Networks](#CH4-Secure-Networks)            | :x:    |
-| [CH6: Firewalls](#CH6-Firewalls)                  | :x:    |
-| [Extra CH10.3: IDS](#Extra-CH10.3-IDS)               | :x:    |
-| CH_UNKNOWN: Threat Intelligence | :x:       |
+| Chapter                                      | Status             |
+| -------------------------------------------- | ------------------ |
+| [CH3.9: VPN](#CH3-9-VPN)                     | :white_check_mark: |
+| [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)           | :x:                |
+| [CH3.11: IPSEC](#CH3.11-IPSEC)               | :x:                |
+| [CH4: Secure Networks](#CH4-Secure-Networks) | :x:                |
+| [CH6: Firewalls](#CH6-Firewalls)             | :x:                |
+| [Extra CH10.3: IDS](#Extra-CH10.3-IDS)       | :x:                |
+| CH_UNKNOWN: Threat Intelligence              | :x:                |
 
 <!--
 :white_check_mark:
@@ -57,6 +57,7 @@
 - Acts as a scrambler that scrambles all data sent through this VPN 'tunnel'
 
 **Connection Steps**:
+
 - VPN Client initiates a connection to the VPN Server via the internet
 - VPN Server requests an authentication. Can be done using tokens, username/passwords, etc
 - Upon successful authentication. A VPN Protocol such as OpenVPN, PPTP, L2TP or IPSec is used to setup an encrypted tunnel from VPN CLIENT to VPN SERVER. (NOTE:: NOT THE USER TO THE SERVER THEY ARE TRYING TO ACCESS.)
@@ -72,4 +73,44 @@
 NOTE:: assume a Client-Server model.
 
 - **Host to Host VPNs**: Just a single host to a single client over an untrusted network
-	- 
+- **Remote-Access VPN**: Connects a single host to a site network over an untrusted network
+- **Site-To-Site VPN**: Protects traffic flowing to and fro a site to site over an untrusted network
+
+### Test your understanding questions from the book
+
+a. **What is a VPN?**
+   A Virtual Private Network (VPN) is a technology enabling secure and private communication over a public network, such as the internet.
+
+b. **Why do companies transmit over the Internet?**
+
+   Companies transmit over the internet for cost efficiency, accessibility, and scalability, allowing global communication and data transfer.
+
+c. **Why transmit over untrusted wireless networks?**
+
+   Transmitting over untrusted wireless networks provides mobility, but it introduces security risks. Using a VPN encrypts data and enhances security in such scenarios.
+
+d. **Distinguish between three types of VPNs.**
+
+   - **Remote Access VPNs:** Enable individual users to securely connect to a private network remotely.
+   - **Site-to-Site VPNs:** Establish secure connections between different offices or sites of an organization.
+   - **Extranet VPNs:** Extend a private network to trusted partners or suppliers.
+
+e. **What does a VPN gateway do for Remote Access VPN?**
+
+   A VPN gateway for remote access VPNs authenticates and authorizes users, providing secure access to the corporate network from external locations.
+
+f. **What does a VPN gateway do for Site-to-Site VPN?**
+
+   In a site-to-site VPN, a VPN gateway at each site establishes and maintains a secure connection, facilitating the transfer of data between interconnected networks.
+
+g. **Which types of VPNs use VPN gateways?**
+
+   Both remote access VPNs and site-to-site VPNs use VPN gateways. Remote access VPNs use a gateway for individual user connections, while site-to-site VPNs use gateways at each participating site for network-to-network connections.
+
+
+# Ch3.10: SSL/TLS (aka HTTPS from slides)
+# Ch3.11: IPSEC
+# Ch4: Secure Networks
+# Ch6: Firewalls
+# Ch10.3: IDS
+# Unknown: Threat Intelligence
