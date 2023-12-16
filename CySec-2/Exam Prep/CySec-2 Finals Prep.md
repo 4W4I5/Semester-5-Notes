@@ -41,7 +41,7 @@
 	- Slower speed as traffic is routed over a longer route and bandwidth is dependent on the hardware seen on those routes.
 	- QoS Challenges, there are no set standards for VPNs to gauge and report the performance of a service/network. As there is nothing of value to analyze you just have to trust the VPN provider to see what might be reliable
 	- Most companies/private networks are beginning to block VPN IP addresses. However the VPN hosts also just change their IPs so its an ongoing battle at the moment
-	- No cookie protection as there are two ssl sessions. One for the user to the vpn client and the other from the 
+	- No cookie protection as 
 ## How does it work?
 
 **Basic Terminology**:
