@@ -132,6 +132,11 @@ HTTP over SSL
 	- Contents of browser forms
 	- Cookies sent to and from the server and browser
 	- Contents of HTTP header
+- Connection Closure
+	- An unannounced TLS Closure will signify some sort of attack prompting the https client to issue a security warning
+	- TLS Implementations must init an exchange of closure alerts before closing a connection
+		- An incomplete close can work as well where after sending the alerts, the connection is immediately closed
+	- Closure requires the HTTPS 
 
 ### Test your understanding questions from the book
 
