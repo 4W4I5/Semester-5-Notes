@@ -110,7 +110,13 @@ g. **Which types of VPNs use VPN gateways?**
 # Ch3.10: SSL/TLS (aka HTTPS from slides)
 
 ## Web Security Considerations
+N/A ATM. Cant understand this diagram
+![](Pasted%20image%2020231216180329.png)
 ## SSL (Secure Socket Layer)
+- Most widely used security service.
+	- AKA TLS which is SSL's successor
+	- Defines how 2 entites i.e a client and a server communicate with each other securely.
+- 
 
 ## HTTPS (HyperText Transfer Protocol Secure)
 aka HTTP over SSL
