@@ -1,5 +1,7 @@
 >!NOTE
+
 >Following topics are mostly covered from the book first and then the slides
+
 >Status:
 
 | Chapter                         | Status |
@@ -17,7 +19,7 @@
 :x:
 -->
 
-#### Cryptographic systems. Ch3.9 to Ch3.11
+# Cryptographic systems. Ch3.9 to Ch3.11
 - Combines cryptographic protections which specialize in Confidentiality, Integrity and Availability.
 	- Essentially its a standard/protocol that eliminiates the need for users to understand a specific cryptography.
 - Establishing a Cryptographic system
@@ -31,7 +33,31 @@
 
 - Virtual Private Network is created using a cryptographic system to secure comms over an untrusted network (internet, wlan, etc)
 - WANs are expensive to setup so just establish an encrypted tunnel over the untrusted internet to save costs. Also grants mobility through wireless hotspots although it becomes a question of security at that point
-### Types of VPN
+	- Also provides secure access to your private network. The goal is to provide access to internal network from the outside i.e from internet to intranet
+	- Secure browsing on public networks as your client is connected to a tunnel from within the local net
+	- Spoofs regional content restrictions + Disguises your whereabouts
+## How does it work?
+
+**Basic Terminology**:
+
+- Client: The user
+- Server: The resource user is attempting to access
+- VPN Client: The user side of a VPN Tunnel
+- VPN Server/Host: The server side of a VPN Tunnel
+
+**Inner Workings**:
+
+- Hides the client IP address by letting the network redirect it thru a specially configured remote VPN server run by the VPN HOST. All comms from this point on are now seen as coming from the VPN Server only as it relays your data onwards with its own assigned IP
+- Acts as a scrambler that scrambles all data sent through this VPN 'tunnel'
+
+**Connection Steps**:
+- VPN Client initiates a connection to the VPN Server via the internet
+- VPN Server requests an authentication. Can be done using tokens, username/passwords, etc
+- Upon successful authentication. A VPN Protocol such as OpenVPN, PPTP, L2TP or IPSec is used to setup an encrypted tunnel from VPN CLIENT to VPN SERVER. (NOTE:: NOT THE USER TO THE SERVER THEY ARE TRYING TO ACCESS.)
+	- Tunnel: All data sent in the tunnel by either party is decrypted by the receiving party and then forwarded to its intended destination
+## Types of VPN
+
 NOTE:: assume a Client-Server model.
+
 - **Host to Host VPNs**: Just a single host to a single client over an untrusted network
-	- 
+	-
