@@ -18,7 +18,13 @@
 -->
 
 #### Cryptographic systems. Ch3.9 to Ch3.11
-- A standard used for 
+- Combines cryptographic protections which specialize in Confidentiality, Integrity and Availability.
+	- Essentially its a standard/protocol that eliminiates the need for users to understand a specific cryptography.
+- Establishing a Cryptographic system
+	- Select a Cyrptographic standard i.e SSL/TLS or IPSec
+	- Handshaking
+		- Stage 1: Negotiation of security methods and options
+		- Stage 2: Mutual Authentication
 # CH3.9: VPN
 
 - Virtual Private Network is created using a cryptographic system to secure comms over an untrusted network (internet, wlan, etc)
