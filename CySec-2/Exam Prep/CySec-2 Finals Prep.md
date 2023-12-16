@@ -1,8 +1,7 @@
 >!NOTE
-
 >Following topics are mostly covered from the book first and then the slides
-
->Status:
+>Status: 3.10 is wip
+>
 
 | Chapter                                      | Status             |
 | -------------------------------------------- | ------------------ |
@@ -110,8 +109,14 @@ g. **Which types of VPNs use VPN gateways?**
 
 # Ch3.10: SSL/TLS (aka HTTPS from slides)
 
+## Web Security Considerations
+## SSL (Secure Socket Layer)
 
-## Test your understanding questions from the book
+## HTTPS (HyperText Transfer Protocol Secure)
+
+## Transport Layer Security
+
+### Test your understanding questions from the book
 
 **a. At what layer does SSL/TLS operate?**
 
@@ -128,7 +133,33 @@ g. **Which types of VPNs use VPN gateways?**
 **d. Why is SSL/TLS popular?**
 
 - SSL/TLS is popular due to its ability to provide **secure communication over the Internet** by encrypting data and ensuring the integrity of transmitted information.
+
+**e. Distinguish b/w SSL/TLS**
+1. **SSL (Secure Sockets Layer):**
+
+    - SSL was the original cryptographic protocol developed by Netscape to secure communication over the internet.
+    - SSL versions include SSL 1.0, SSL 2.0, and SSL 3.0 (which had vulnerabilities leading to discontinuation).
+2. **TLS (Transport Layer Security):**
+
+    - TLS is the successor to SSL and was introduced to address the vulnerabilities found in SSL 3.0.
+    - TLS versions include TLS 1.0, TLS 1.1, TLS 1.2, TLS 1.3 (latest version as of my last knowledge update).
+
+**Key distinctions:**
+
+- TLS is considered the more secure and modern version.
+- While SSL and TLS share similarities, they are not directly interoperable due to differences in their cryptographic algorithms and protocols.
+- TLS is backward-compatible with SSL, but it's recommended to use the latest versions for security reasons.
+
+**f. For what type of VPN was SSL/TLS developed?**
+- SSL/TLS was initially developed to provide secure communication over the internet for web browsers and servers. It was designed to secure HTTP connections, leading to the "https://" protocol widely used for secure browsing.
+
+**g. For what type of VPN is SSL/TLS being increasingly used?**
+- SSL/TLS is increasingly being used in SSL VPNs (Secure Sockets Layer Virtual Private Networks).
+- SSL VPNs provide a secure way for users to connect to a private network over the internet using a web browser. They often operate at the application layer and allow secure access to specific applications, services, or resources.
+- SSL/TLS, being the underlying protocol for secure web communication, is well-suited for SSL VPNs. This approach provides a user-friendly and versatile way for remote users to access corporate resources securely without the need for specialized client software.
+
 # Ch3.11: IPSEC
+
 # Ch4: Secure Networks
 # Ch6: Firewalls
 # Ch10.3: IDS
