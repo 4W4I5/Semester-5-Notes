@@ -113,6 +113,7 @@ g. **Which types of VPNs use VPN gateways?**
 ## SSL (Secure Socket Layer)
 
 ## HTTPS (HyperText Transfer Protocol Secure)
+aka HTTP over SSL
 
 ## Transport Layer Security
 
