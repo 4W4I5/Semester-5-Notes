@@ -137,15 +137,18 @@ SSL itself has 2 sublayers to consider
 		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
 		- Establishes a secure communication channel before data exchange begins.
 	- **Steps in the Handshake:**
-		- **Name resolution:** Client will resolve the hostname to an IP using DNS
-	       - **Hello Messages:** Client and server exchange messages to agree on the SSL version and supported cryptographic algorithms.
-	       - **Key Exchange:** Negotiation of key exchange method (asymmetric or pre-shared keys) and generation of session keys.
-	       - **Authentication:** Server presents its digital certificate for authentication, and the client may authenticate itself as well.
-	       - **Finish:** Finalizes the negotiation, confirming that both parties are ready to start secure data exchange.
-	- **Key Material Generation:**
-		- Generates key material for subsequent data encryption using negotiated algorithms.
-	- **Secure Session Establishment:**
-		- Completes with the establishment of a secure session, allowing encrypted data exchange.
+		1. **Name Resolution:** The client resolves the domain name of the server to obtain its IP address.
+		2. **Initiating a TCP Connection (1st Step of 3-Way Handshake):** The client initiates a TCP connection with the server by sending a TCP SYN (synchronize) packet.
+		3. **Server Response (2nd Step of 3-Way Handshake):** The server responds to the client's SYN with a SYN-ACK (synchronize-acknowledge) packet, indicating its willingness to establish a connection.
+		4. **Client Acknowledgment (3rd Step of 3-Way Handshake):** The client acknowledges the server's response by sending an ACK (acknowledge) packet, completing the three-way handshake. At this point, a TCP connection is established between the client and the server.
+		5. **ClientHello Message:** The client sends a "ClientHello" message to the server, indicating the start of the SSL handshake process. This message includes information about the SSL/TLS versions supported by the client, a random value, and a list of supported cryptographic algorithms.
+		6. **ServerHello Message:** The server responds with a "ServerHello" message, selecting the highest SSL/TLS version that both the client and server support. The server also sends its own random value and chooses the cryptographic algorithms for the session.
+		7. **Server Certificate (if required):** If the server requests client authentication or if the client requires the server's identity, the server sends its digital certificate to the client. The certificate includes the server's public key.
+		8. **Key Exchange:**  The server and client exchange key information, typically using asymmetric key exchange mechanisms like RSA or Diffie-Hellman.  The key information exchanged will be used to derive the symmetric session key for data encryption.
+		9. **Finished Messages:** Both the client and server send "Finished" messages to confirm that the handshake process is complete. The messages are encrypted using the negotiated parameters, providing assurance that the handshake was not tampered with during transmission.
+		10. **Establishment of Encrypted Session:** The SSL/TLS connection is established, and subsequent data exchanged between the client and server is encrypted using the derived session key.
+			- **Key Material Generation:**  Generates key material for subsequent data encryption using negotiated algorithms.
+			- **Secure Session Establishment:** Completes with the establishment of a secure session, allowing encrypted data exchange.
 - ###### Record Layer
 	- **Functionality:**
 	    - Responsible for the fragmentation, compression (optional), and encryption of data.
