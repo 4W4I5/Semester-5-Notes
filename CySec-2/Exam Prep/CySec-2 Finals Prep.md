@@ -115,10 +115,14 @@ N/A ATM. Cant understand this diagram
 ## SSL (Secure Socket Layer)
 - Most widely used security service.
 	- AKA TLS which is SSL's successor
-	- Defines how 2 entites i.e a client and a server communicate with each other securely.
-- 
+	- Defines how 2 entities i.e. a client and a server communicate with each other securely.
+- The layer it works at is a bit of a grey area as it is below the application layer but above the transport layer.
+	- Some classify it as its own layer known as the socket layer. Others see it as merely working in a sublayer of the transport layer which is where it gets the name of TLS. But essentially the data from Applications is sent to a Socket which is opened using the Transport layer is what i've used to understand its locality relative to other layers
+- SSL itself has two layers to note
+	- **Handshake layer**: Contains the handshake, change cipherspec and alert. 
+	- **Record layer**: Contains Records which is encrypted + hashed application layer data split into manageable blocks
 
-## HTTPS (HyperText Transfer Protocol Secure)
+## HTTPS (Hypertext Transfer Protocol Secure)
 aka HTTP over SSL
 
 ## Transport Layer Security
