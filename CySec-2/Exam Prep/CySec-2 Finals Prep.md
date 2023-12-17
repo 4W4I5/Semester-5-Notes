@@ -442,5 +442,22 @@ Goals of creating secure networks
 - MITRE came up w this
 	- **Tactic:**  Adversary's tactical goal i.e. the reason for performing the attack
 	- **Technique**: These are specific methods or actions used by Threat Actors(TA) to achieve the objectives defined under each tactic i.e. the name of the attack
-	- **Procedure**: Detailed procedures/Instructions to execute the technique
-		- Example: 
+	- **Procedure**: Detailed procedures/Instructions to execute the technique. Carrier method used to execute the payload
+		- Example: Phishing someone would entail a Tactic to gain initial access to a network to perform the Phishing Technique using a procedure of Sending an email
+#### CTI VS SIEM
+###### Understanding observables:
+- Observables are measurable raw data that can point to be an IOA or an IOC upon further analysis
+- Indicators of Compromise (IOC): They are known observables left behind after an attack. These can be signs of ports/Network addresses being enumerated
+	- These help to detect and respond to security incidents by identifying known malicious indicators
+	- Some more examples can be the following:
+		- Unusual traffic to and from the network
+		- Unknown files, applications, processes in the system
+		- IP addresses and domains that are flagged as botnet or malware C2 servers within the network
+		- Significant number of accesses to one file
+		- Data transfer over rarely used ports
+		- Attack signature or file hash that belongs to a known piece of hardware
+- Indicators of Attack (IOA): They are known observables that are picked up during the attack. This can be files downloaded that have a hash value that is not saved in the CTI database or one that has a malicious match with a stored hash
+	- These focus more on the methods and tactics employed by attackers rather than specific IOC's
+
+###### Cyber Threat Intelligence
+- 
