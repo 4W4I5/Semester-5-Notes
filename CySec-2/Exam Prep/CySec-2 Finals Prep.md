@@ -341,6 +341,12 @@ SSL/TLS can support remote access VPNs.
 | Operates at application(OPENVPN), network(IPSEC) or data link layer(MPLS)   | Operates at the network layer and is transparent                                                                                  |
 
 
+#### Modes of operation
+- ###### Transport Mode
+	- Simply encrypt the payload but not the headers
+- ###### Tunnel Mode
+	- Encrypt the payload and the headers
+
 # Ch4: Secure Networks
 # Ch6: Firewalls
 # Ch10.3: IDS
