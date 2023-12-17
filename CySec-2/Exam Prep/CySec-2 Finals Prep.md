@@ -115,6 +115,7 @@ g. **Which types of VPNs use VPN gateways?**
 ## Web Security Considerations
 
 Basic stuff on why to use https and not http anymore
+
 ![](Pasted%20image%2020231216180329.png)
 
 ## SSL (Secure Socket Layer)
@@ -126,7 +127,7 @@ Basic stuff on why to use https and not http anymore
 - **Advantages:**
 	- As it works at the transport layer it can protect application layer messages via encapsulation however it only does so with applications that are SSL/TLS aware as this method of protection is not transparent
 	- Inexpensive as all browsers now incorporate SSL/TLS
-	- 
+	-
 
 ### SSL Layers
 
@@ -281,6 +282,52 @@ HTTP over SSL
 - SSL/TLS is increasingly being used in SSL VPNs (Secure Sockets Layer Virtual Private Networks).
 - SSL VPNs provide a secure way for users to connect to a private network over the internet using a web browser. They often operate at the application layer and allow secure access to specific applications, services, or resources.
 - SSL/TLS, being the underlying protocol for secure web communication, is well-suited for SSL VPNs. This approach provides a user-friendly and versatile way for remote users to access corporate resources securely without the need for specialized client software.
+---
+#### More questions
+
+**a. SSL/TLS was created for host-to-host (browser–webserver) communication. What device can turn SSL/TLS into a remote access VPN?**
+
+SSL/TLS can be turned into a remote access VPN through the use of SSL/TLS VPN concentrators or gateways.
+
+**b. In SSL/TLS remote access VPNs, to what device does the client authenticate itself?**
+
+In SSL/TLS remote access VPNs, the client authenticates itself to the SSL/TLS VPN gateway.
+
+**c. When a remote client transmits in an SSL/TLS VPN, how far does confidential transmission definitely extend?**
+
+Confidential transmission in an SSL/TLS VPN definitely extends up to the SSL/TLS VPN gateway.
+
+**d. What three services do SSL/TLS gateways commonly provide?**
+
+SSL/TLS gateways commonly provide encryption, authentication, and integrity services.
+
+**e. What is webification?**
+
+Webification refers to the process of adapting applications or services to be accessible and usable through a web interface.
+
+**f. What software does the client need for basic SSL/TLS VPN operation?**
+
+For basic SSL/TLS VPN operation, the client needs a web browser.
+
+**g. For what purposes may the client need additional downloaded software?**
+
+The client may need additional downloaded software for purposes such as enhanced security features, client customization, or additional functionality beyond basic SSL/TLS VPN capabilities.
+
+**h. Why installing the additional downloaded software on the browser may be problematic?**
+
+Installing additional downloaded software on the browser may be problematic due to compatibility issues, security concerns, and potential conflicts with existing browser extensions or settings.
+
+**i. Why is SSL/TLS attractive as a remote access VPN technology?**
+
+SSL/TLS is attractive as a remote access VPN technology due to its widespread support, ease of use, and the ability to establish secure connections without requiring specialized client software.
+
+**j. What problems do companies face if they use it as a remote access VPN technology?**
+
+Companies using SSL/TLS as a remote access VPN technology may face challenges related to limited control over endpoint security, potential vulnerabilities in the SSL/TLS protocol, and the need for continuous monitoring of evolving security threats.
+
+**k. Which of the three types of VPNs can SSL/TLS support?**
+
+SSL/TLS can support remote access VPNs.
 
 # Ch3.11: IPSEC
 
