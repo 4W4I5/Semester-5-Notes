@@ -514,8 +514,55 @@ Goals of creating secure networks
   - Yes, SPI filtering for packets that are part of ongoing communications is generally simple and inexpensive. Once a connection is established, the firewall has already inspected and permitted the initial connection-opening packets. Subsequent packets in the ongoing communication are typically allowed based on the established state, making the process more straightforward and resource-efficient.
 - **UDP is connectionless. How is it possible for an SPI firewall to handle UDP connections?**
   - While UDP is connectionless, stateful packet inspection (SPI) firewalls can handle UDP connections by tracking the state of active UDP sessions. The firewall monitors the UDP packets to identify those associated with existing connections based on source and destination IP addresses and port numbers. Although UDP doesn't have a formal connection establishment process, SPI firewalls maintain a table of active UDP sessions to allow for the inspection and filtering of UDP traffic based on established states.
+  - - **For stateful packet inspection firewalls, what do ingress ACLs permit in general?**
+  - In general, ingress ACLs in stateful packet inspection firewalls permit incoming packets that are part of established and allowed connections.
+- **What do egress ACLs disallow in general in SPI firewalls?**
+  - Egress ACLs in stateful packet inspection firewalls generally disallow outgoing packets that do not match any established connection state or violate security policies.
+- **What do well-known port numbers designate?**
+  - Well-known port numbers designate standardized port numbers for commonly used services. They are reserved and assigned to specific services to ensure consistency in communication.
+- **Is Figure 6-10 an ACL for ingress filtering or egress filtering?**
+  - Figure 6-10 appears to be an ACL for ingress filtering because it outlines rules for permitting or denying incoming connection-opening attempts.
+- **Why is Rule 2 in Figure 6-10 safer than Rule 1?**
+  - Rule 2 in Figure 6-10 is safer than Rule 1 because it explicitly allows only incoming connection-opening attempts for established connections. Rule 1, on the other hand, appears to permit all incoming connection-opening attempts, which may pose a security risk.
+- **Which rule in the ACL in Figure 6-10 represents the default behavior of SPI firewalls for ingress connection-opening attempts?**
+  - Rule 4 in the ACL in Figure 6-10 represents the default behavior of SPI firewalls for ingress connection-opening attempts. It denies incoming connection-opening attempts by default.
+- **Given the ACL in Figure 6-10, what would the firewall do with an incoming ICMP echo message?**
+  - Based on the ACL in Figure 6-10, the firewall would permit the incoming ICMP echo message. ICMP messages, including echo messages, are typically allowed by default for network troubleshooting and diagnostics.
+- **Redo the ACL in Figure 6-10 to add rules for the following conditions. After Rule 1, create a rule that permits all connections to internal DNS servers. After the original Rule 2, create rules that permit connections to all Trivial File Transfer Protocol (TFTP) servers and that permit access to FTP Server 60.33.17.1. (Hint: Only allow an FTP supervisory connection; the SPI firewall will later open data connections automatically as needed.)**
+
+
+  ```
+  1. Permit all connections to internal DNS servers.
+  2. Permit connections to all TFTP servers.
+  3. Permit access to FTP Server 60.33.17.1 on FTP supervisory connection.
+  4. Deny all other incoming connection-opening attempts.
+  ```
+
+
+
+- **In ingress and egress filtering, does an SPI firewall always consider its ACL rules when a new packet arrives that attempts to open a connection?**
+  - Yes, in both ingress and egress filtering, an SPI firewall always considers its ACL rules when a new packet arrives that attempts to open a connection. The firewall evaluates the packet against its state table and ACL rules to determine whether to permit or deny the connection.
+- **In ingress and egress filtering, does an SPI firewall always consider its ACL rules when a new packet arrives that does not attempt to open a connection? (The answer is not explicitly given in this section.)**
+  - The information is not explicitly provided in this section. However, it is generally expected that an SPI firewall would consider its ACL rules for all incoming and outgoing packets, whether or not they attempt to open a connection.
+- **Why are stateful packet inspection firewalls inexpensive?**
+  - Stateful packet inspection firewalls are considered inexpensive because they operate efficiently by tracking the state of active connections, allowing them to make filtering decisions based on the context of the communication. This efficiency makes them cost-effective in terms of resource utilization.
+- **In practice, are they fairly safe?**
+  - In practice, stateful packet inspection firewalls are considered fairly safe when configured properly. They provide effective protection against many common threats by monitoring the state of connections and enforcing security policies. However, like any security measure, their effectiveness depends on proper configuration, regular updates, and adherence to security best practices.
+- **Are SPI firewalls limited to SPI filtering?**
+  - No, SPI firewalls are not limited to SPI filtering alone. While stateful packet inspection is a key feature, modern SPI firewalls often incorporate additional filtering mechanisms, such as application-layer filtering, intrusion detection/prevention, and content filtering, to enhance overall security.
+- **What firewall inspection mechanism do nearly all main border firewalls today use?**
+  - Nearly all main border firewalls today use deep packet inspection (DPI) as a firewall inspection mechanism. DPI involves analyzing the content of packets at a deep level, allowing for more detailed examination of network traffic and improved threat detection.
 ## 6.4 Network Address Translation
 ### Book Questions
+- **When NAT is used, why can sniffers not learn anything about the internal IP addresses of internal hosts?**
+  - When NAT (Network Address Translation) is used, sniffers cannot learn anything about the internal IP addresses of internal hosts because NAT modifies the source IP addresses of outgoing packets to the external IP address of the NAT device. Internal hosts are hidden behind the NAT device, and their actual IP addresses are not exposed in the packets that traverse the network.
+- **Why does NAT stop scanning probes?**
+  - NAT stops scanning probes because it changes the source IP addresses of outgoing packets. When scanning probes are sent from an external network, the NAT device modifies the source IP addresses, making it difficult for attackers to determine the real IP addresses of internal hosts. This obscures the internal network structure and adds a layer of security against scanning and reconnaissance attempts.
+- **Why is NAT traversal necessary?**
+  - NAT traversal is necessary because NAT introduces a challenge for certain communication scenarios, especially in peer-to-peer applications or when establishing connections from external networks to internal devices. NAT traversal techniques are required to facilitate communication when hosts are located behind NAT devices.
+- **Is a NAT traversal method easy to select?**
+  - The ease of selecting a NAT traversal method depends on the specific use case and the network environment. In some scenarios, selecting a NAT traversal method can be relatively straightforward, while in others, it may require careful consideration of factors such as the type of NAT deployed, the applications involved, and security requirements. The complexity can vary, and the choice of a suitable method may involve evaluating different options based on the specific network architecture and communication needs.
+
 ## 6.5 Application Proxy Firewalls
 ### Book Questions
 ## 6.6 Intrusion Detection Systems
