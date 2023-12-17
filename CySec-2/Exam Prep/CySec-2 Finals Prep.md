@@ -127,8 +127,8 @@ Basic stuff on why to use https and not http anymore
 - **Advantages:**
 	- As it works at the transport layer it can protect application layer messages via encapsulation however it only does so with applications that are SSL/TLS aware as this method of protection is not transparent
 	- Inexpensive as all browsers now incorporate SSL/TLS
-	-
-
+	- A Remote access vpn is configured by using a host-host approach using SSL/TLS Gateways
+		- This allows all site traffic to be routed through a single SSL Endpoint effectively using the host-host vpn to provide remote access
 ### SSL Layers
 
 SSL itself has 2 sublayers to consider
