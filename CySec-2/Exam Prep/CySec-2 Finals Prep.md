@@ -2,7 +2,7 @@
 
 >Following topics are mostly covered from the book first and then the slides
 
->Status: 3.10 is wip
+>Status: Ch4 is wip
 
 >
 
@@ -10,7 +10,7 @@
 | -------------------------------------------- | ------------------ |
 | [CH3.9: VPN](#CH3-9-VPN)                     | :white_check_mark: |
 | [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)           | :white_check_mark:                |
-| [CH3.11: IPSEC](#CH3.11-IPSEC)               | :x:                |
+| [CH3.11: IPSEC](#CH3.11-IPSEC)               | :white_check_mark:                |
 | [CH4: Secure Networks](#CH4-Secure-Networks) | :x:                |
 | [CH6: Firewalls](#CH6-Firewalls)             | :x:                |
 | [Extra CH10.3: IDS](#Extra-CH10.3-IDS)       | :x:                |
@@ -351,6 +351,14 @@ SSL/TLS can support remote access VPNs.
 	- Encrypt the payload and the headers
 	- Provides protection for the entire IP packet. Additional headers known as the IPSEC Header and the new IP Header is attached alongside the encrypted contents
 
+#### Protocols used
+Both have different behaviors when used in Transport/Tunnel Modes
+- ###### Authentication Header (AH)
+	- **Transport Mode:** Will authenticate IP, TCP, IP Payload and AH Header
+	- **Tunnel Mode**: Will authenticate IP, TCP, IP Payload, AH Header and the new IP header
+- ###### Encapsulating Security Payload (ESP)
+	- **Transport Mode:** Encrypts TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). IP header is not encrypted
+	- **Tunnel Mode**: Encrypts IP, TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). 
 # Ch4: Secure Networks
 # Ch6: Firewalls
 # Ch10.3: IDS
