@@ -129,7 +129,7 @@ N/A ATM. Cant understand this diagram
 
 SSL itself has 2 sublayers to consider
 
-- ###### Handshake Layer
+- ###### Handshake Layer(Protocol)
 	- **Terminology:**
 		- **Connection:** A live communication channel
 		- **Session:** A set of cryptography parameters, can be reused in another connection or renewed without interrupting connection. Session state is defined by the record layer
@@ -144,9 +144,9 @@ SSL itself has 2 sublayers to consider
 		- Manages the authentication, key exchange, and negotiation of cryptographic parameters between the client and server.
 		- Establishes a secure communication channel before data exchange begins.
 	- **Protocols used: **
-		- Handshake protocol
-		- Change cipher spec
-		- Alert
+		- Handshake protocol, 1 byte for type, 3 bytes for length and content is optional
+		- Change cipher spec, 1 byte for type
+		- Alert, 1 byte for level, 1 byte for alert
 	- **Steps in the Handshake:**
 		1. **Name Resolution:** The client resolves the domain name of the server to obtain its IP address.
 		2. **Initiating a TCP Connection (1st Step of 3-Way Handshake):** The client initiates a TCP connection with the server by sending a TCP SYN (synchronize) packet.
@@ -160,25 +160,48 @@ SSL itself has 2 sublayers to consider
 		10. **Establishment of Encrypted Session:** The SSL/TLS connection is established, and subsequent data exchanged between the client and server is encrypted using the derived session key.
 			- **Key Material Generation:**  Generates key material for subsequent data encryption using negotiated algorithms.
 			- **Secure Session Establishment:** Completes with the establishment of a secure session, allowing encrypted data exchange.
-- ###### Record Layer
-	- **Functionality:**
-	    - Responsible for the fragmentation, compression (optional), and encryption of data.
-		    - Provides Confidentiality and Message Integrity
-			    - Confidentiality by defined a shared secret key that is used for conventional encryption of SSL payloads
-			    - Integrity is done through the handshake protocol that also defines a shared key that is used to form a message authentication code (MAC)
-	    - Operates at the transport layer of the OSI model.
-	    - Divides the data into manageable blocks, adds headers, and then encrypts the resulting SSL record.
-	- **Encryption:**
-	    - Utilizes symmetric key cryptography (e.g., using the negotiated session key) for data encryption.
-	    - Ensures confidentiality and integrity of the transmitted data.
-	- **Fragmentation:**
-	    - Splits larger messages into smaller fragments to fit within the constraints of the underlying transport layer protocol (e.g., TCP).
-	- 
-	- **Compression (Optional):**
-	    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
-	- **Header Format:**
-	    - Includes information like content type, version, length, and a MAC (Message Authentication Code) for integrity.
-
+- ###### Record Layer(Protocol)
+	- **Terminology:**
+		- **Functionality:**
+		    - Responsible for the fragmentation, compression (optional), and encryption of data.
+			    - Provides Confidentiality and Message Integrity
+				    - Confidentiality by defined a shared secret key that is used for conventional encryption of SSL payloads
+				    - Integrity is done through the handshake protocol that also defines a shared key that is used to form a message authentication code (MAC)
+		    - Operates at the transport layer of the OSI model.
+		    - Divides the data into manageable blocks, adds headers, and then encrypts the resulting SSL record.
+		- **Encryption:**
+		    - Utilizes symmetric key cryptography (e.g., using the negotiated session key) for data encryption.
+		    - Ensures confidentiality and integrity of the transmitted data.
+		- **Fragmentation:**
+		    - Splits larger messages into smaller fragments to fit within the constraints of the underlying transport layer protocol (e.g., TCP).
+		    - Usually into fragments smaller than 16kb
+		- **Compression (Optional):**
+		    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
+		    - Not used in SSLv3.0
+		- **Hashing:**
+		    - Calculate a MAC by using a hashfunction with the secret key, primary data, padding, sequence number as args
+		    - Can be calculated by either client/server
+		    - Integrity is checked here as a hash mismatch would mean that the message has been modified
+		    - Hash functions used
+			    - NULL. Message is not authenticated/verified for integrity
+			    - MD5. 125 bit
+			    - SHA1. 160 bit
+		- **Header Format:**
+		    - Includes information like content type, version, length, and a MAC (Message Authentication Code) for integrity.
+		    - MAC can be 0, 16 or 20 bytes
+	- **Operation:**
+		- Payload from upper protocol i.e. application layer
+		- Fragment the payload
+		- Compress (Optional)
+		- Hashing with a constant value + authkey is used to generate a MAC (Message Authentication Code)
+		- Encryption using the encryption key
+		- Encrypted fragment generated from encryption is the SSL payload that is sent after being attached with the SSL Header
+- ###### Change Cipher Spec Protocol
+	- Consists of a single message in the SSL Header that the peer wants to renew the session
+- ###### Alert Protocol
+	- Used to notify a change of status or an error condition to the peer(sender)
+	- Most common types are:
+		- 0, 
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
 
