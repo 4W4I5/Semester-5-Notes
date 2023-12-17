@@ -779,12 +779,14 @@ Goals of creating secure networks
 
 
 
+
   ```
   1. Permit all connections to internal DNS servers.
   2. Permit connections to all TFTP servers.
   3. Permit access to FTP Server 60.33.17.1 on FTP supervisory connection.
   4. Deny all other incoming connection-opening attempts.
   ```
+
 
 
 
@@ -1045,7 +1047,33 @@ Goals of creating secure networks
 - **What type of firewall does both traditional firewall filtering and antivirus filtering?**
   - A Unified Threat Management (UTM) firewall incorporates both traditional firewall filtering and antivirus filtering capabilities. It serves as an all-in-one security solution that integrates multiple security features, including firewall rules, intrusion detection and prevention, and antivirus filtering, into a single platform.
 ## 6.8 Firewall Architectures
+### Technical Details:
+1. **Single Perimeter Architecture:**
+    - **Overview:** In a Single Perimeter Architecture, a single firewall is positioned at the network perimeter, controlling traffic between the internal network and the external internet.
+    - **Use Cases:** Commonly used in small to medium-sized networks where simplicity is a priority.
+    - **DMZ Application:** A DMZ is not explicitly featured in this architecture.
+2. **Dual Perimeter (Demilitarized Zone - DMZ) Architecture:**
+    - **Overview:** Dual Perimeter Architecture employs two firewalls, with a DMZ in between. External-facing servers are placed in the DMZ, enhancing security.
+    - **Use Cases:** Suitable for organizations hosting public services like web servers.
+    - **DMZ Functionality:** The DMZ provides a buffer zone between the external and internal networks.
+3. **Back-to-Back (Distributed) Architecture:**
+    - **Overview:** Back-to-Back Architecture features two firewalls - one between the internal network and DMZ, and another between DMZ and the external network.
+    - **Advantages:** Offers increased segmentation and control, providing a robust defense against various attacks.
+    - **DMZ Role:** The DMZ serves as an intermediary zone for handling external and internal traffic.
+4. **Screened Subnet Architecture (Three Perimeter):**
+    - **Overview:** Three firewalls are deployed in a Screened Subnet Architecture, creating multiple security zones. Traffic must traverse two firewalls to reach the internal network.
+    - **Advantages:** Highest level of segmentation and security, implementing effective defense in depth.
+    - **DMZ Integration:** The DMZ plays a critical role in this architecture, acting as an additional layer of defense.
+5. **Virtual LAN (VLAN) Architecture:**
+    - **Overview:** VLAN Architecture utilizes VLANs for network segmentation, and firewall rules are applied to control traffic between VLANs.
+    - **Advantages:** Provides segmentation without the need for physical deployment of multiple firewalls.
+    - **Consideration:** While VLANs can replace physical DMZs, the concept of DMZ functionality remains relevant.
 
+### DMZ in Firewall Architectures:
+
+- **Importance of DMZ:** The DMZ is a crucial component in firewall architectures, serving as a segregated zone for hosting public-facing servers and adding an extra layer of security.
+- **DMZ Hosts:** DMZ hosts include public-facing servers, application proxy firewalls, and external DNS servers.
+- **DMZ Hardening:** All hosts in the DMZ must undergo stringent hardening due to their direct exposure to the internet, minimizing attack surfaces, and enhancing resilience.
 ### Book Questions
 - **Why are screening routers used in a firewall architecture?**
   - Screening routers are used in a firewall architecture to provide an additional layer of defense by filtering and controlling incoming and outgoing traffic. They act as the first line of defense, preventing certain types of traffic from reaching the internal network.
