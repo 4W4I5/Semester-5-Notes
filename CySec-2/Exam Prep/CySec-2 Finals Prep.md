@@ -330,7 +330,8 @@ Companies using SSL/TLS as a remote access VPN technology may face challenges re
 SSL/TLS can support remote access VPNs.
 
 # Ch3.11: IPSEC
-### VPN vs IPSEC
+## VPN vs IPSEC
+
 | VPN                                                                         | IPSEC                                                                                                           |
 | --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
 | Create a private network over a public network                              | Provide Security for IP traffic using a suite of protocols that manage authentication, encrypiton and integrity |
@@ -340,8 +341,7 @@ SSL/TLS can support remote access VPNs.
 | Can be site-site, host-host or remote access                                | Can be used in transport/tunnel mode                                                                            |
 | Operates at application(OPENVPN), network(IPSEC) or data link layer(MPLS)   | Operates at the network layer and is transparent                                                                                  |
 
-
-#### Modes of operation
+### Modes of operation
 - ###### Transport Mode
 	- Simply encrypt the payload but not the headers
 	- Provides protection for upper layer protocols
@@ -358,8 +358,10 @@ SSL/TLS can support remote access VPNs.
 	- Higher IP overhead as a new IP header is added
 	- Number of hosts behind firewalls can use secure comms without implementing IPSec?
 
-#### Protocols used
+### Protocols used
+
 Both have different behaviors when used in Transport/Tunnel Modes
+
 - ###### Authentication Header (AH)
 	- **Transport Mode:** Will authenticate IP, TCP, IP Payload and AH Header
 	- **Tunnel Mode**: Will authenticate IP, TCP, IP Payload, AH Header and the new IP header
@@ -367,8 +369,8 @@ Both have different behaviors when used in Transport/Tunnel Modes
 	- **Transport Mode:** Encrypts TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). IP header is not encrypted
 	- **Tunnel Mode**: Encrypts IP, TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional).
 
-##### Practice questions
-###### a. Distinguishing between Transport and Tunnel Modes in IPsec for Packet Protection:
+#### Practice questions
+##### a. Distinguishing between Transport and Tunnel Modes in IPsec for Packet Protection:
 
 **Transport Mode:**
 
@@ -386,7 +388,7 @@ Both have different behaviors when used in Transport/Tunnel Modes
 - **Address Translation:** Source and/or destination IP addresses may be changed.
 - **Encapsulation:** Both the original IP packet and payload are encapsulated and encrypted.
 
-###### b. Attractions of Each Mode:
+##### b. Attractions of Each Mode:
 
 **Transport Mode:**
 
@@ -400,7 +402,7 @@ Both have different behaviors when used in Transport/Tunnel Modes
 - Comprehensive protection by encrypting the entire original IP packet.
 - Allows for address translation, facilitating secure communication between networks with different address spaces.
 
-###### c. Problematic Issues of Each Mode:
+##### c. Problematic Issues of Each Mode:
 
 **Transport Mode:**
 
@@ -413,39 +415,42 @@ Both have different behaviors when used in Transport/Tunnel Modes
 - Address translation complexities, especially when dealing with different addressing schemes between connected networks.
 
 # Ch4: Secure Networks
+
 Cryptography provides C.I.A.
+
 - Modern networks have additional vulns
 - Delivering messages can be slowed/stopped/altered
 - Route the messages take can be altered i.e be redirected to false recipients
 - Attackers could gain access to comms channels that were previously considered closed and confidential
 
 Goals of creating secure networks
+
 - Ensuring availability means that authorized users have access to info, services and resources. DOS attack is most common against this
 - Ensuring confidentiality means preventing unauthorized users from gaining information about the networks' structure, the data flowing in and out of the network etcetc
 - Ensuring functionality
-### 4.1 Network Models
+## 4.1 Network Models
 
 - **Castle**
 - **City**
-### 4.2 DOS Attacks
-### 4.3 ARP Poisoning
-### 4.4 Access Control for Networks
-### 4.5 Ethernet Security
-### 4.6 Wireless Security
+## 4.2 DOS Attacks
+## 4.3 ARP Poisoning
+## 4.4 Access Control for Networks
+## 4.5 Ethernet Security
+## 4.6 Wireless Security
 # Ch6: Firewalls
 # Ch10.3: IDS
 # Unknown: Threat Intelligence
 - Any data that helps us better understand threats and adversaries
 - A TIP is a platform that gathers, aggregates and organizes threat intelligence data from multiple sources and formats
 
-#### TTP (Tactics, Techniques and Procedures)
+## TTP (Tactics, Techniques and Procedures)
 - MITRE came up w this
 	- **Tactic:**  Adversary's tactical goal i.e. the reason for performing the attack
 	- **Technique**: These are specific methods or actions used by Threat Actors(TA) to achieve the objectives defined under each tactic i.e. the name of the attack
 	- **Procedure**: Detailed procedures/Instructions to execute the technique. Carrier method used to execute the payload
 		- Example: Phishing someone would entail a Tactic to gain initial access to a network to perform the Phishing Technique using a procedure of Sending an email
-#### CTI VS SIEM
-###### Understanding observables:
+## CTI VS SIEM
+### Understanding observables:
 - Observables are measurable raw data that can point to be an IOA or an IOC upon further analysis
 - Indicators of Compromise (IOC): They are known observables left behind after an attack. These can be signs of ports/Network addresses being enumerated
 	- These help to detect and respond to security incidents by identifying known malicious indicators
@@ -459,5 +464,30 @@ Goals of creating secure networks
 - Indicators of Attack (IOA): They are known observables that are picked up during the attack. This can be files downloaded that have a hash value that is not saved in the CTI database or one that has a malicious match with a stored hash
 	- These focus more on the methods and tactics employed by attackers rather than specific IOC's
 
-###### Cyber Threat Intelligence
-- 
+
+# CTI VS SIEM
+
+|Feature|Cyber Threat Intelligence (CTI)|Security Information and Event Management (SIEM)|
+|---|---|---|
+|**Primary Function**|Provides in-depth insights into cyber threats, including the motives, methods, and indicators of malicious activities.|Centralizes the collection, analysis, and correlation of security events and log data from various sources.|
+|**Focus**|Emphasizes understanding and proactively addressing threats through intelligence gathering and analysis.|Focuses on real-time monitoring, detection, and response to security events and incidents.|
+|**Data Sources**|Gathers data from various external and internal sources, including open-source intelligence, threat feeds, and incident reports.|Collects and analyzes data from logs, network traffic, and other security-related events generated by systems and applications.|
+|**Contextual Analysis**|Provides context around threats, including attribution, tactics, techniques, and procedures (TTPs) used by threat actors.|Correlates data from diverse sources to identify patterns and anomalies, offering a broader view of the security landscape.|
+|**Use Cases**|Helps organizations understand potential threats, vulnerabilities, and risks to enhance overall cybersecurity posture.|Enables real-time monitoring, incident detection, investigation, and response to security incidents.|
+|**Integration with Tools**|Integrates with various security tools and platforms to consume, analyze, and disseminate threat intelligence effectively.|Integrates with a wide range of security technologies, including firewalls, antivirus solutions, and endpoint protection tools.|
+|**Proactive vs Reactive**|Primarily proactive, aiding in the anticipation and prevention of cyber threats based on intelligence and analysis.|Reactive, focusing on detecting and responding to security incidents as they occur.|
+|**Time Horizon**|Involves strategic planning and long-term analysis to anticipate future threats and trends.|Emphasizes real-time or near-real-time analysis for immediate threat detection and response.|
+|**Operational Impact**|Influences strategic decision-making and enhances overall security posture.|Provides real-time visibility into security events, aiding in the rapid response to incidents and minimizing impact.|
+|**Maturity Level**|Typically associated with advanced cybersecurity programs, requiring a mature security infrastructure.|Integral to security operations, applicable to organizations of varying maturity levels.|
+|**Continuous Improvement**|Requires ongoing updates and adjustments based on evolving threat landscapes and intelligence sources.|Involves continuous refinement of correlation rules, incident response processes, and log sources for optimal performance.|
+
+## Threat data sources at a glance
+
+|Feature|MISP (Malware Information Sharing Platform & Threat Sharing)|MITRE ATT&CK|AlienVault OTX|Social Media|Third-Party Premium Feeds|Threat Sharing Groups|Open Source Analysis Platforms|Community Knowledge Bases|
+|---|---|---|---|---|---|---|---|---|
+|**Type**|Threat intelligence platform for sharing structured threat information.|Knowledge base of adversary tactics, techniques, and procedures.|Open Threat Intelligence platform for sharing threat data.|Information shared on social media platforms.|Commercial feeds providing premium threat intelligence.|Platforms facilitating the sharing of threat information among organizations.|Platforms for analyzing and visualizing threat data.|Collaborative databases created and maintained by the security community.|
+|**Data Shared**|Structured threat information, including indicators of compromise (IOCs), attributes, and relationships.|Adversary techniques, tactics, and procedures (TTPs) mapped to the cybersecurity kill chain.|Indicators of compromise (IOCs) shared by the community.|Unstructured information, discussions, and indicators shared by users.|Premium, curated threat intelligence feeds often with indicators, signatures, and contextual information.|IOCs, TTPs, and contextual information shared among trusted groups.|Tools for analyzing and visualizing threat data, facilitating investigations.|Collective knowledge, including insights into threats, vulnerabilities, and mitigation strategies.|
+|**Focus**|Collaborative sharing and analysis of structured threat data.|Understanding and mapping adversary behavior for defense strategies.|Crowdsourced threat intelligence sharing platform.|Informal discussions, trends, and potential threats on social platforms.|High-quality, curated intelligence often covering a broad range of threats.|Collaborative sharing of threat information among trusted peers.|Analyzing and visualizing threat data to extract insights.|Collective expertise to improve overall cybersecurity awareness.|
+|**Use Cases**|Enhancing threat intelligence capabilities through collaborative analysis.|Informing defense strategies based on known adversary tactics and techniques.|Accessing and contributing threat data in a collaborative environment.|Monitoring informal discussions and identifying potential threats.|Augmenting security defenses with high-quality, timely intelligence.|Leveraging shared threat data for improved situational awareness.|Analyzing and visualizing data for investigations and decision-making.|Gaining insights into threats and vulnerabilities from a diverse community.|
+|**Integration with Tools**|Integrates with various security tools and platforms for automated information sharing.|Provides a framework for mapping and integrating with security tools and platforms.|Integrates with security solutions through APIs and direct integrations.|Requires manual monitoring or integration with social media monitoring tools.|Integrated into security solutions such as SIEMs and threat intelligence platforms.|May integrate with security tools for automated sharing and analysis.|Offers APIs and integrations with security tools for data analysis.|Integration with security tools and platforms for improved defense.|
+|**Community Involvement**|Global community involvement in sharing and analyzing threat data.|Active engagement from the cybersecurity community in contributing and using the framework.|Community-driven contributions to threat data with a global user base.|Varied participation levels, including security professionals, researchers, and enthusiasts.|Typically subscription-based services with contributions from security experts.|Participation from organizations and individuals in sharing threat information.|Collaboration among security professionals and analysts in analyzing threat data.|Open collaboration with contributions from security experts worldwide.|
