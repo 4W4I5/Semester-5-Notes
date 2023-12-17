@@ -338,7 +338,7 @@ SSL/TLS can support remote access VPNs.
 | Provide remote access to a network / Connect multiple networks together     | Secure individual network connections i.e. b/w two routers or a router to a remote user                         |
 | Uses IPSEC, SSL/TLS, or PPTP etc                                            | Used for IP, TCP/UDP and ICMP                                                                                   |
 | Can be site-site, host-host or remote access                                | Can be used in transport/tunnel mode                                                                            |
-| Operates at application(OPENVPN), network(IPSEC) or data link layer(MPLS)   | Operates at the network layer                                                                                   |
+| Operates at application(OPENVPN), network(IPSEC) or data link layer(MPLS)   | Operates at the network layer and is transparent                                                                                  |
 
 
 # Ch4: Secure Networks
