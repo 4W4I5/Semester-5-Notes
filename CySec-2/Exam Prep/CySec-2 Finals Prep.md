@@ -347,9 +347,16 @@ SSL/TLS can support remote access VPNs.
 	- Provides protection for upper layer protocols
 	- Used for end to end communication b/w two hosts
 	- IP Header remains untouched, just a IPSec header is attached alongside it
+	- Preserves Original Src/Dest IP addresses
+	- Used for host to host or host to gateway scenarios
+	- Lower overhead as original IP header is modified
 - ###### Tunnel Mode
 	- Encrypt the payload and the headers
 	- Provides protection for the entire IP packet. Additional headers known as the IPSEC Header and the new IP Header is attached alongside the encrypted contents
+	- Used for site to site comms, securing comms b/w gateways
+	- Src/Dest IP addresses maybe changed using this mode
+	- Higher IP overhead as a new IP header is added
+	- Number of hosts behind firewalls can use secure comms without implementing IPSec?
 
 #### Protocols used
 Both have different behaviors when used in Transport/Tunnel Modes
@@ -358,7 +365,7 @@ Both have different behaviors when used in Transport/Tunnel Modes
 	- **Tunnel Mode**: Will authenticate IP, TCP, IP Payload, AH Header and the new IP header
 - ###### Encapsulating Security Payload (ESP)
 	- **Transport Mode:** Encrypts TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). IP header is not encrypted
-	- **Tunnel Mode**: Encrypts IP, TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). 
+	- **Tunnel Mode**: Encrypts IP, TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional).
 # Ch4: Secure Networks
 # Ch6: Firewalls
 # Ch10.3: IDS
