@@ -418,6 +418,11 @@ Cryptography provides C.I.A.
 - Delivering messages can be slowed/stopped/altered
 - Route the messages take can be altered i.e be redirected to false recipients
 - Attackers could gain access to comms channels that were previously considered closed and confidential
+
+Goals of creating secure networks
+- Ensuring availability means that authorized users have access to info, services and resources. DOS attack is most common against this
+- Ensuring confidentiality means preventing unauthorized users from gaining information about the networks' structure, the data flowing in and out of the network etcetc
+- Ensuring functionality
 ### 4.1 Network Models
 
 - **Castle**
