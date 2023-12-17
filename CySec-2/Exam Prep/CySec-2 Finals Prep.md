@@ -438,7 +438,8 @@ Goals of creating secure networks
 ## 4.5 Ethernet Security
 ## 4.6 Wireless Security
 # Ch6: Firewalls
-# Ch10.3: IDS
+
+---
 # Unknown: Threat Intelligence
 - Any data that helps us better understand threats and adversaries
 - A TIP is a platform that gathers, aggregates and organizes threat intelligence data from multiple sources and formats
@@ -449,7 +450,56 @@ Goals of creating secure networks
 	- **Technique**: These are specific methods or actions used by Threat Actors(TA) to achieve the objectives defined under each tactic i.e. the name of the attack
 	- **Procedure**: Detailed procedures/Instructions to execute the technique. Carrier method used to execute the payload
 		- Example: Phishing someone would entail a Tactic to gain initial access to a network to perform the Phishing Technique using a procedure of Sending an email
-## CTI VS SIEM
+## Threat intelligence platforms
+### Establishing a Threat Intelligence Platform (TIP):
+
+1. **Define Objectives:**
+
+    - Clearly define the objectives of your Threat Intelligence Platform. Understand the specific needs of your organization, such as the types of threats you want to monitor and the level of integration with existing security infrastructure.
+2. **Select Appropriate Technology:**
+
+    - Choose a TIP solution that aligns with your organization's goals. Consider factors such as scalability, ease of integration, support for standard threat intelligence formats (STIX/TAXI), and the ability to aggregate, correlate, and analyze threat data.
+3. **Data Sources Integration:**
+
+    - Integrate various data sources into the TIP. This can include open-source feeds, commercial threat intelligence feeds, information from government agencies, and internal sources. Ensure that the TIP can handle both structured and unstructured threat data.
+4. **Automated Data Ingestion:**
+
+    - Implement mechanisms for automated data ingestion. A well-designed TIP should be able to ingest data in real-time or near real-time, allowing for timely analysis and response to emerging threats.
+5. **Normalization and Enrichment:**
+
+    - Normalize and enrich incoming threat data to ensure consistency and completeness. This involves standardizing data formats and enhancing information with additional context, such as geolocation, threat actor details, or historical data.
+6. **Data Analysis and Correlation:**
+
+    - Implement analytics and correlation capabilities to identify patterns, trends, and potential threats. This involves analyzing relationships between different indicators of compromise (IOCs) and understanding the tactics, techniques, and procedures (TTPs) of threat actors.
+7. **Integration with Security Infrastructure:**
+
+    - Integrate the TIP with existing security infrastructure, including Security Information and Event Management (SIEM) systems, firewalls, endpoint protection, and incident response tools. This facilitates automated responses to detected threats.
+8. **User Interface and Reporting:**
+
+    - Develop a user-friendly interface for security analysts to interact with the TIP. Provide reporting and visualization tools to help analysts understand and communicate threat intelligence effectively.
+9. **Training and Documentation:**
+
+    - Train security personnel on using the TIP effectively. Provide comprehensive documentation to ensure proper usage, maintenance, and troubleshooting.
+10. **Continuous Improvement:**
+
+    - Establish processes for continuous improvement. Regularly update the TIP with the latest threat intelligence feeds, refine correlation rules, and adapt to evolving threat landscapes.
+### What to look for in Threat intelligence platforms
+-
+### Differences from Other Security Solutions:
+
+- **Focus on Threat Intelligence:**
+    - TIPs are specifically designed to aggregate, analyze, and disseminate threat intelligence. They focus on understanding the tactics, techniques, and procedures (TTPs) of adversaries.
+- **Aggregation of External Data:**
+    - TIPs heavily rely on external threat data sources, including open-source feeds, commercial feeds, and information shared by the global security community.
+	    - Sources include open source, 3rd party paid, government, Trusted Sharing Communities ISACs and Internal sources
+- **Integration with Security Infrastructure:**
+    - TIPs integrate with existing security infrastructure to enhance detection and response capabilities. They provide actionable intelligence to other security solutions.
+- **Analytical Capabilities:**
+    - TIPs offer advanced analytics and correlation features to identify patterns and relationships within threat data. They go beyond basic event correlation provided by typical SIEM solutions.
+- **Community Collaboration:**
+    - TIPs often support collaboration with external threat intelligence communities, allowing organizations to share and receive intelligence with trusted partners.
+- **Standardization and Sharing:**
+    - TIPs adhere to standard threat intelligence formats (STIX/TAXI) to facilitate interoperability and sharing of threat data across organizations.
 ### Understanding observables:
 - Observables are measurable raw data that can point to be an IOA or an IOC upon further analysis
 - Indicators of Compromise (IOC): They are known observables left behind after an attack. These can be signs of ports/Network addresses being enumerated
