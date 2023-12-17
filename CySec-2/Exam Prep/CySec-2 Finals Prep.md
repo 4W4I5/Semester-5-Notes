@@ -411,8 +411,15 @@ Both have different behaviors when used in Transport/Tunnel Modes
 
 - Higher overhead due to the addition of a new IP header, which can impact performance in certain situations.
 - Address translation complexities, especially when dealing with different addressing schemes between connected networks.
+
 # Ch4: Secure Networks
+Cryptography provides C.I.A.
+- Modern networks have additional vulns
+- Delivering messages can be slowed/stopped/altered
+- Route the messages take can be altered i.e be redirected to false recipients
+- Attackers could gain access to comms channels that were previously considered closed and confidential
 ### 4.1 Network Models
+
 - **Castle**
 - **City**
 ### 4.2 DOS Attacks
