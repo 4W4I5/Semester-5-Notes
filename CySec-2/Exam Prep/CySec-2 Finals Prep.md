@@ -1,5 +1,7 @@
 >!NOTE
+
 >Following topics are mostly covered from the book first and then the slides
+
 >Status: Ch4 and Ch6 is wip
 
 | Chapter                                      | Status             |
@@ -436,16 +438,96 @@ Goals of creating secure networks
 # Ch6: Firewalls
 ## 6.1 Introduction
 - Function of a firewall is to stop provable attack packets
-## 6.2 Static Packet Filtering
-## 6.3 Stateful Packet Inspection
-## 6.4 Network Address Translation
-## 6.5 Application Proxy Firewalls
-## 6.6 Intrusion Detection Systems
-## 6.7 Antivirus Filtering and Unified Threat Management
-## 6.8 Firewall Architectures
-## 6.9 Firewall Management
-## 6.10 Firewall Filtering Problems
 
+### Book Questions
+- **What is a pass/deny decision?**
+	- A pass/deny decision refers to the firewall's determination of whether to allow or deny a packet based on its defined security rules. If the packet matches an allowed rule, it is passed; otherwise, it is denied.
+- **What type of packet does a firewall drop and log?**
+	- Firewalls typically drop and log packets that violate security policies, such as those originating from suspicious sources, containing malicious content, or attempting to exploit vulnerabilities.
+- **What does the firewall do about packets that it suspects (but cannot prove) are attack packets?**
+	- In cases where the firewall suspects but cannot conclusively prove that a packet is part of an attack, it may take predefined actions, such as dropping the packet, logging the event, or triggering additional security measures.
+- **Why does the firewall log information about dropped packets?**
+	- Logging information about dropped packets is crucial for cybersecurity analysis and incident response. It provides insights into potential threats, helps in identifying attack patterns, and aids in the investigation of security incidents.
+- **Distinguish between border firewalls and internal firewalls.**
+	- Border firewalls are positioned at the network perimeter, controlling traffic entering or leaving the organization. Internal firewalls, on the other hand, are deployed within the internal network to segregate and control traffic between different segments.
+- **Distinguish between ingress and egress filtering.**
+	- Ingress filtering involves examining and controlling incoming traffic entering a network, while egress filtering focuses on outgoing traffic leaving the network. Both are crucial for enforcing security policies and preventing unauthorized access or data exfiltration.
+	- - **What does a firewall do if it cannot keep up with the traffic volume?**
+	- If a firewall cannot keep up with the traffic volume, it may resort to actions such as dropping packets or slowing down the inspection process to manage the load.
+- **Why is this action good?**
+	- Slowing down the inspection process or dropping packets in the face of overwhelming traffic can prevent the firewall from becoming a bottleneck, ensuring that some level of network functionality is maintained during high-volume periods.
+- **Why is this action bad?**
+	- The downside of slowing down or dropping packets is that it may result in reduced security, as the firewall might miss or inadequately analyze certain packets, potentially allowing malicious content or attacks to pass through.
+- **Why can a firewall keep up with traffic in general but fail to do so during a major attack?**
+	- During a major attack, the volume of incoming traffic significantly increases, overwhelming the firewall's processing capabilities. The firewall may struggle to analyze each packet thoroughly, leading to potential performance degradation or failure.
+- **As processing power increases in the future, what will this mean for firewall filtering?**
+	- With increased processing power in the future, firewalls will likely be able to handle higher volumes of traffic more efficiently. This can lead to improved filtering capabilities, enhanced threat detection, and better overall network security.
+- **What is unified threat management (UTM)?**
+	- Unified Threat Management (UTM) refers to a comprehensive security solution that integrates multiple security features into a single platform. It typically includes functions such as firewall, antivirus, intrusion detection and prevention, VPN, content filtering, and more.
+- **What does it mean that a firewall should operate at wire speed?**
+	- Operating at wire speed means that the firewall can process and analyze network traffic at the same rate as the maximum data transfer speed of the network. This ensures minimal impact on network performance and allows the firewall to keep up with the data flow without introducing delays.
+- **Is there only one firewall filtering mechanism; state the other methods?**
+	- No, there are multiple firewall filtering mechanisms. Apart from stateful packet inspection (SPI), other methods include proxy-based filtering, application-layer filtering, packet filtering, and deep packet inspection (DPI).
+- **What filtering mechanisms do almost all main border firewalls use?**
+	- Almost all main border firewalls use a combination of filtering mechanisms to enhance security. This typically includes stateful packet inspection (SPI), packet filtering, and application-layer filtering. The specific combination may vary based on the firewall implementation and its capabilities.
+- **Do SPI firewalls only do stateful packet inspection?**
+	- No, while stateful packet inspection (SPI) is a fundamental feature of SPI firewalls, they may also incorporate additional filtering mechanisms. SPI firewalls often combine stateful inspection with other techniques to provide more robust protection, such as application-layer filtering and intrusion detection/prevention.
+## 6.2 Static Packet Filtering
+### Book Questions
+- **What are the two limitations of static packet filtering? Explain why each limitation is bad.**
+	- **Limitation 1: Lack of State Awareness**
+	  - *Explanation:* Static packet filtering lacks the ability to maintain awareness of the state of active connections. It evaluates each packet in isolation without considering the context of the entire communication session.
+	  - *Why it's bad:* This limitation can lead to security vulnerabilities as it may allow packets that, when considered individually, seem harmless but are part of a malicious sequence or attack.
+	- **Limitation 2: Limited Application-Layer Filtering**
+	  - *Explanation:* Static packet filtering primarily operates at the network layer and lacks the ability to inspect and filter based on the content or characteristics of specific applications.
+	  - *Why it's bad:* Modern threats often exploit application-layer vulnerabilities. The inability to inspect and filter at the application layer limits the firewall's effectiveness in detecting and preventing certain types of attacks.
+- **For what two reasons do companies not use static packet filtering as the main filtering mechanism in border firewalls today?**
+	- **Reason 1: Lack of Granularity**
+	  - *Explanation:* Static packet filtering lacks the granularity needed for effective security. It relies on simple rules based on source and destination addresses, ports, and protocols, making it less capable of dealing with complex threats.
+	  - *Reason:* Companies avoid relying solely on static packet filtering because of its inability to provide the granular control necessary to combat sophisticated and targeted attacks.
+	- **Reason 2: Inadequate Protection Against Evolving Threats**
+	  - *Explanation:* Static packet filtering struggles to keep up with the dynamic and evolving nature of modern cybersecurity threats. It may not adequately address advanced threats that use complex tactics.
+	  - *Reason:* Given the constantly changing threat landscape, organizations prefer more advanced filtering mechanisms that can adapt to new attack methods and provide better protection.
+- **In what two secondary ways do corporations sometimes use static packet filtering?**
+	- **Secondary Use 1: Complementary Layer of Security**
+	  - *Explanation:* Corporations may use static packet filtering as a complementary layer of security alongside more advanced filtering mechanisms. It can serve as an additional barrier to basic threats.
+	  - *Use:* While not the primary filtering mechanism, static packet filtering can add an extra layer of protection, especially for known and straightforward threats.
+	- **Secondary Use 2: Resource-Efficient Filtering for Certain Scenarios**
+	  - *Explanation:* In situations where resource efficiency is critical, corporations may employ static packet filtering for its simplicity and minimal impact on performance.
+	  - *Use:* In specific scenarios, such as resource-constrained environments or specific network segments, static packet filtering may be used for basic filtering without the overhead associated with more complex methods.
+
+## 6.3 Stateful Packet Inspection
+### Book Questions
+- **What is a state?**
+  - A state refers to the current condition or stage in the ongoing process of communication between devices. In the context of stateful packet inspection, it involves the tracking of the state of active connections to understand the context of network traffic.
+- **Are most packets part of the connection-opening state or the ongoing communication state?**
+  - Most packets are part of the ongoing communication state. Once a connection is established, the majority of packets exchanged between devices are part of the ongoing communication, rather than the connection-opening state.
+- **Why is the answer to Question 5b important for stateful packet inspection’s efficiency?**
+  - The answer to Question 5b is crucial for stateful packet inspection's efficiency because it helps the firewall focus its resources on monitoring and analyzing the ongoing communication state. By recognizing that most packets belong to the ongoing state, the firewall can optimize its processes for established connections, enhancing overall efficiency.
+- **What is a connection?**
+  - A connection refers to the established and maintained communication link between two network devices. It involves the exchange of data between these devices through a specific set of protocols and rules.
+- **How is a connection between two programs on different computers represented?**
+  - A connection between two programs on different computers is typically represented by a combination of source and destination IP addresses, port numbers, and the transport layer protocol (TCP or UDP). This combination forms a unique identifier for the connection, allowing devices to track and manage ongoing communication.
+  - - **Give the simple stateful packet inspection firewall rule for packets that do not attempt to open connections.**
+  - Simple stateful packet inspection firewall rule: Allow packets that are part of established connections and deny packets that do not match any established connection state.
+- **Is SPI filtering for packets that are part of ongoing communications usually simple and inexpensive? Explain.**
+  - Yes, SPI filtering for packets that are part of ongoing communications is generally simple and inexpensive. Once a connection is established, the firewall has already inspected and permitted the initial connection-opening packets. Subsequent packets in the ongoing communication are typically allowed based on the established state, making the process more straightforward and resource-efficient.
+- **UDP is connectionless. How is it possible for an SPI firewall to handle UDP connections?**
+  - While UDP is connectionless, stateful packet inspection (SPI) firewalls can handle UDP connections by tracking the state of active UDP sessions. The firewall monitors the UDP packets to identify those associated with existing connections based on source and destination IP addresses and port numbers. Although UDP doesn't have a formal connection establishment process, SPI firewalls maintain a table of active UDP sessions to allow for the inspection and filtering of UDP traffic based on established states.
+## 6.4 Network Address Translation
+### Book Questions
+## 6.5 Application Proxy Firewalls
+### Book Questions
+## 6.6 Intrusion Detection Systems
+### Book Questions
+## 6.7 Antivirus Filtering and Unified Threat Management
+### Book Questions
+## 6.8 Firewall Architectures
+### Book Questions
+## 6.9 Firewall Management
+### Book Questions
+## 6.10 Firewall Filtering Problems
+### Book Questions
 ---
 # Unknown: Threat Intelligence
 - Any data that helps us better understand threats and adversaries
