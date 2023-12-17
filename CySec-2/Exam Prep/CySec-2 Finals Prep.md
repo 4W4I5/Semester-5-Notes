@@ -9,7 +9,7 @@
 | Chapter                                      | Status             |
 | -------------------------------------------- | ------------------ |
 | [CH3.9: VPN](#CH3-9-VPN)                     | :white_check_mark: |
-| [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)           | :x:                |
+| [CH3.10: SSL/TLS](#CH3.10-SSL-TLS)           | :white_check_mark:                |
 | [CH3.11: IPSEC](#CH3.11-IPSEC)               | :x:                |
 | [CH4: Secure Networks](#CH4-Secure-Networks) | :x:                |
 | [CH6: Firewalls](#CH6-Firewalls)             | :x:                |
@@ -201,7 +201,21 @@ SSL itself has 2 sublayers to consider
 - ###### Alert Protocol
 	- Used to notify a change of status or an error condition to the peer(sender)
 	- Most common types are:
-		- 0, 
+
+| Value | Description            | Meaning                                 |
+| ----- | ---------------------- | --------------------------------------- |
+| 0     | CloseNotify            | Sender will not send any more messages  |
+| 10    | UnexpectedMessage      | Inappropiate message recived            |
+| 20    | BadRecordMAC           | Incorrect MAC recieved                  |
+| 30    | DecompressionFailure   | Unable to decompress appropiately       |
+| 40    | HandshakeFailure       | Sender Unable to finalize the handshake |
+| 41    | NoCertificate          | Client has no cert to send              |
+| 42    | BadCertificate         | Recieved Certificate was corrupted      |
+| 43    | UnsupportedCertificate | Type of recieved cert is not supported  |
+| 44    | CertificateRevoked     | Singer has revoked the cert             |
+| 45    | CertificateExpired     | Cert has expired                        |
+| 46    | CertificateUnknown     | Unknown cert was recieved               |
+| 47    | IllegalParameter       | Out of range or inconsistent field                                        |
 
 ## HTTPS (Hypertext Transfer Protocol Secure)
 
