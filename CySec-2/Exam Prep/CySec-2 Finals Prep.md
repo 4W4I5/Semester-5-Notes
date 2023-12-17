@@ -163,6 +163,9 @@ SSL itself has 2 sublayers to consider
 - ###### Record Layer
 	- **Functionality:**
 	    - Responsible for the fragmentation, compression (optional), and encryption of data.
+		    - Provides Confidentiality and Message Integrity
+			    - Confidentiality by defined a shared secret key that is used for conventional encryption of SSL payloads
+			    - Integrity is done through the handshake protocol that also defines a shared key that is used to form a message authentication code (MAC)
 	    - Operates at the transport layer of the OSI model.
 	    - Divides the data into manageable blocks, adds headers, and then encrypts the resulting SSL record.
 	- **Encryption:**
@@ -170,6 +173,7 @@ SSL itself has 2 sublayers to consider
 	    - Ensures confidentiality and integrity of the transmitted data.
 	- **Fragmentation:**
 	    - Splits larger messages into smaller fragments to fit within the constraints of the underlying transport layer protocol (e.g., TCP).
+	- 
 	- **Compression (Optional):**
 	    - SSL allows for optional data compression to optimize bandwidth usage, though this is not always used due to vulnerabilities associated with certain compression methods.
 	- **Header Format:**
