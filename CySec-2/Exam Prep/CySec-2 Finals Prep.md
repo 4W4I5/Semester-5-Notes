@@ -435,6 +435,7 @@ Goals of creating secure networks
 ---
 # Ch6: Firewalls
 ## 6.1 Introduction
+- Function of a firewall is to stop provable attack packets
 ## 6.2 Static Packet Filtering
 ## 6.3 Stateful Packet Inspection
 ## 6.4 Network Address Translation
