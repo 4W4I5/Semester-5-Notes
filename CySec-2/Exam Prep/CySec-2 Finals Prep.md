@@ -114,8 +114,7 @@ g. **Which types of VPNs use VPN gateways?**
 
 ## Web Security Considerations
 
-N/A ATM. Cant understand this diagram
-
+Basic stuff on why to use https and not http anymore
 ![](Pasted%20image%2020231216180329.png)
 
 ## SSL (Secure Socket Layer)
@@ -124,6 +123,10 @@ N/A ATM. Cant understand this diagram
 	- Defines how 2 entities i.e. a client and a server communicate with each other securely.
 - The layer it works at is a bit of a grey area as it is below the application layer but above the transport layer.
 	- Some classify it as its own layer known as the socket layer. Others see it as merely working in a sublayer of the transport layer which is where it gets the name of TLS. But essentially the data from Applications is sent to a Socket which is opened using the Transport layer is what i've used to understand its locality relative to other layers
+- **Advantages:**
+	- As it works at the transport layer it can protect application layer messages via encapsulation however it only does so with applications that are SSL/TLS aware as this method of protection is not transparent
+	- Inexpensive as all browsers now incorporate SSL/TLS
+	- 
 
 ### SSL Layers
 
