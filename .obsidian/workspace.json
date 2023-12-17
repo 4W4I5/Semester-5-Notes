@@ -60,9 +60,57 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "32c968a1c2815b73",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/CySec2 19 October, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f61939bdc15e27e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/CySec2 19 September, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0975b4f5820ca9b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/CySec2 124 October, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "5521b240f7121175",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CySec-2/CySec2 124 October, 2023.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -112,7 +160,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -128,7 +177,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/CySec2 28 September, 2023.md",
+                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -145,7 +194,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/CySec2 28 September, 2023.md",
+                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -168,7 +217,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/CySec2 28 September, 2023.md"
+                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md"
               }
             }
           },
@@ -211,8 +260,16 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "75290f45d1e127b7",
+  "active": "d0b4f7ace758eb4a",
   "lastOpenFiles": [
+    "CySec-2/CySec2 124 October, 2023.md",
+    "CySec-2/CySec2 14 November, 2023.md",
+    "CySec-2/CySec2 12 September, 2023.md",
+    "CySec-2/CySec2 14 September, 2023.md",
+    "CySec-2/CySec2 19 September, 2023.md",
+    "CySec-2/CySec2 19 October, 2023.md",
+    "CySec-2/CySec2 22 August, 2023.md",
+    "CySec-2/CySec2 28 September, 2023.md",
     "CySec-2/CySec2 24 August, 2023.md",
     "CySec-2/CySec2 29 August, 2023.md",
     "CySec-2/CySec2 3 October, 2023.md",
@@ -221,15 +278,7 @@
     "CySec-2/CySec2 7 September, 2023.md",
     "CySec-2/CySec2 5 September, 2023.md",
     "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
-    "CySec-2/CySec2 14 September, 2023.md",
-    "CySec-2/CySec2 124 October, 2023.md",
-    "CySec-2/CySec2 19 September, 2023.md",
-    "CySec-2/CySec2 19 October, 2023.md",
-    "CySec-2/CySec2 22 August, 2023.md",
-    "CySec-2/CySec2 28 September, 2023.md",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
-    "CySec-2/CySec2 14 November, 2023.md",
-    "CySec-2/CySec2 12 September, 2023.md",
     "Pasted image 20231216180329.png",
     "README.md",
     "OS/OS 24 October, 2023.md",

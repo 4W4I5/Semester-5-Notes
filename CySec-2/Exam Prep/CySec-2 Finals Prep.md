@@ -366,6 +366,51 @@ Both have different behaviors when used in Transport/Tunnel Modes
 - ###### Encapsulating Security Payload (ESP)
 	- **Transport Mode:** Encrypts TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional). IP header is not encrypted
 	- **Tunnel Mode**: Encrypts IP, TCP, IP Payload, ESP Trailer + Authenticates ESP Header + Appends ESP Auth (Optional).
+
+##### Practice questions
+###### a. Distinguishing between Transport and Tunnel Modes in IPsec for Packet Protection:
+
+**Transport Mode:**
+
+- **Scope:** Protects communication between individual hosts.
+- **Header Modification:** Only the payload is encrypted and/or authenticated.
+- **Header Overhead:** Lower overhead as only the original IP header is modified.
+- **Address Translation:** Source and destination IP addresses are preserved.
+- **Encapsulation:** Only the payload is encapsulated and encrypted.
+
+**Tunnel Mode:**
+
+- **Scope:** Designed for securing communication between networks or subnets.
+- **Header Modification:** Both the entire original IP packet (including header) and payload are encrypted and/or authenticated.
+- **Header Overhead:** Higher overhead as a new IP header is added.
+- **Address Translation:** Source and/or destination IP addresses may be changed.
+- **Encapsulation:** Both the original IP packet and payload are encapsulated and encrypted.
+
+###### b. Attractions of Each Mode:
+
+**Transport Mode:**
+
+- Efficient for securing communication between individual devices.
+- Lower overhead, making it suitable for scenarios where minimizing packet size is crucial.
+- Preserves original source and destination IP addresses.
+
+**Tunnel Mode:**
+
+- Ideal for creating secure connections between entire networks or subnets.
+- Comprehensive protection by encrypting the entire original IP packet.
+- Allows for address translation, facilitating secure communication between networks with different address spaces.
+
+###### c. Problematic Issues of Each Mode:
+
+**Transport Mode:**
+
+- Limited to securing communication between hosts, may not be suitable for network-level protection.
+- May face challenges when dealing with address translation requirements for network scenarios.
+
+**Tunnel Mode:**
+
+- Higher overhead due to the addition of a new IP header, which can impact performance in certain situations.
+- Address translation complexities, especially when dealing with different addressing schemes between connected networks.
 # Ch4: Secure Networks
 # Ch6: Firewalls
 # Ch10.3: IDS
