@@ -435,3 +435,12 @@ Goals of creating secure networks
 # Ch6: Firewalls
 # Ch10.3: IDS
 # Unknown: Threat Intelligence
+- Any data that helps us better understand threats and adversaries
+- A TIP is a platform that gathers, aggregates and organizes threat intelligence data from multiple sources and formats
+
+#### TTP (Tactics, Techniques and Procedures)
+- MITRE came up w this
+	- **Tactic:**  Adversary's tactical goal i.e. the reason for performing the attack
+	- **Technique**: These are specific methods or actions used by Threat Actors(TA) to achieve the objectives defined under each tactic i.e. the name of the attack
+	- **Procedure**: Detailed procedures/Instructions to execute the technique
+		- Example: 
