@@ -412,6 +412,14 @@ Both have different behaviors when used in Transport/Tunnel Modes
 - Higher overhead due to the addition of a new IP header, which can impact performance in certain situations.
 - Address translation complexities, especially when dealing with different addressing schemes between connected networks.
 # Ch4: Secure Networks
+### 4.1 Network Models
+- **Castle**
+- **City**
+### 4.2 DOS Attacks
+### 4.3 ARP Poisoning
+### 4.4 Access Control for Networks
+### 4.5 Ethernet Security
+### 4.6 Wireless Security
 # Ch6: Firewalls
 # Ch10.3: IDS
 # Unknown: Threat Intelligence
