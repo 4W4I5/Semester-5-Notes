@@ -330,6 +330,16 @@ Companies using SSL/TLS as a remote access VPN technology may face challenges re
 SSL/TLS can support remote access VPNs.
 
 # Ch3.11: IPSEC
+### VPN vs IPSEC
+| VPN                                                                         | IPSEC                                                                                                           |
+| --------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| Create a private network over a public network                              | Provide Security for IP traffic using a suite of protocols that manage authentication, encrypiton and integrity |
+| Uses Encryption + Tunneling to create a secure connection b/w two endpoints |                                                                                                                 |
+| Provide remote access to a network / Connect multiple networks together     | Secure individual network connections i.e. b/w two routers or a router to a remote user                         |
+| Uses IPSEC, SSL/TLS, or PPTP etc                                            | Used for IP, TCP/UDP and ICMP                                                                                   |
+| Can be site-site, host-host or remote access                                |                                                                                                                 |
+| Operates at application(OPENVPN), network(IPSEC) or data link layer(MPLS)   | Operates at the network layer                                                                                   |
+
 
 # Ch4: Secure Networks
 # Ch6: Firewalls
