@@ -344,8 +344,12 @@ SSL/TLS can support remote access VPNs.
 #### Modes of operation
 - ###### Transport Mode
 	- Simply encrypt the payload but not the headers
+	- Provides protection for upper layer protocols
+	- Used for end to end communication b/w two hosts
+	- IP Header remains untouched, just a IPSec header is attached alongside it
 - ###### Tunnel Mode
 	- Encrypt the payload and the headers
+	- Provides protection for the entire IP packet. Additional headers known as the IPSEC Header and the new IP Header is attached alongside the encrypted contents
 
 # Ch4: Secure Networks
 # Ch6: Firewalls
