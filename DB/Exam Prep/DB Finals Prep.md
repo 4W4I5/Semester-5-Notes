@@ -30,6 +30,10 @@
 
 ---
 # NOSQL
+To understand NOSQL or NRDBMS we need to understand RDBMS
+### RDBMS (Relational Database Management System)
+- Manages and stores databases i.e multiple databases
+- 
 # SQL Injection
 # Transaction Processing
 # CAP Theorem
