@@ -31,6 +31,8 @@
 ---
 # NOSQL
 # SQL Injection
+# Transaction Processing
+# CAP Theorem
 ---
 # Data Modeling
 # ERD/EERD
@@ -50,5 +52,3 @@
 # S2 Past Paper
 # A3, A4, A5
 ---
-# Transaction Processing
-# CAP Theorem
