@@ -13,6 +13,18 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "DB/Exam Prep/DB Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "54b5323bd4f43939",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
                 "mode": "source",
                 "source": false
@@ -86,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
+                "file": "DB/Exam Prep/DB Finals Prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
+                "file": "DB/Exam Prep/DB Finals Prep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "CySec-2/Exam Prep/CySec-2 Finals Prep.md"
+                "file": "DB/Exam Prep/DB Finals Prep.md"
               }
             }
           },
@@ -153,8 +165,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,6 +182,10 @@
   },
   "active": "d0b4f7ace758eb4a",
   "lastOpenFiles": [
+    "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
+    "DB/Exam Prep/DB Finals Prep.md",
+    "README.md",
+    "DB/Exam Prep",
     "CySec-2/CySec2 124 October, 2023.md",
     "CySec-2/CySec2 14 November, 2023.md",
     "CySec-2/CySec2 12 September, 2023.md",
@@ -186,10 +201,8 @@
     "CySec-2/CySec2 5 October, 2023.md",
     "CySec-2/CySec2 7 September, 2023.md",
     "CySec-2/CySec2 5 September, 2023.md",
-    "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
     "Pasted image 20231216180329.png",
-    "README.md",
     "OS/OS 24 October, 2023.md",
     "Untitled.md",
     "Untitled 1.md",
@@ -198,7 +211,6 @@
     "OS/OS 124 October, 2023.md",
     "Algo/Algo 27 September, 2023.md",
     "Pasted image 20230912152003.png",
-    "DB/DB 17 October, 2023.md",
     "Pasted image 20230926022710.png",
     "Pasted image 20230926023241.png",
     "Pasted image 20230926023256.png",
@@ -213,7 +225,6 @@
     "Books/CYSEC Book.pdf",
     "Books/OS Book.pdf",
     "Books/DB Book.pdf",
-    "Books/William Stallings-Operating Systems 7th Edition.pdf",
     "Pasted image 20230912151924.png",
     "Pasted image 20230912151828.png",
     "Algo/Images/Pasted image 20230906093822.png"
