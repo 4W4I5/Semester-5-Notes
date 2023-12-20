@@ -40,14 +40,7 @@ A standard project with a database system involves:
 	- Metadata for the tables created
 	- Enduser data i.e. the tables we create
 
-NOSQL stands for:
-- NOT relational
-- NOT RDBMS
-- NOT Only SQL (IK i didnt get this either)
-- Any database/datastore that isnt an RDBMS can be classified as NOSQL if it follows these rules:
-	- Collection of several varied but related concepts on data storage and manipulation
-	- Often related to big data
-	- Class of products i.e mongoDB has atlas, and a whole lot of stuff
+
 
 NOSQL was tailored for big data
 **Data is considered Big Data**:
@@ -58,7 +51,7 @@ NOSQL was tailored for big data
 	- Arrives in growing velocity
 - An example is social media, S3 solutions, need of dynamically-typed data with frequent schema changes
 	- Data from the internet is massive and sparse, generally unstructured or semi-structured at best
-### RDBMS (Relational Database Management System)
+#### RDBMS (Relational Database Management System)
 - Manages and stores databases i.e multiple databases
 - Consists of
 	- Data utilities
@@ -96,8 +89,21 @@ NOSQL was tailored for big data
 				- Each shard operates independently as each shard has its own 'genre' of the data so that reads and writes only affect that specific shard
 				- More relevant for NoSQL based servers
 
-#### Origins of NOSQL
--
+#### NOSQL
+NOSQL stands for:
+- NOT relational
+- NOT RDBMS
+- NOT Only SQL (IK i didnt get this either)
+- Any database/datastore that isnt an RDBMS can be classified as NOSQL if it follows these rules:
+	- Collection of several varied but related concepts on data storage and manipulation
+	- Often related to big data
+	- Class of products i.e mongoDB has atlas, and a whole lot of stuff
+- Characteristics
+	- BASE used instead of ACID
+		- 
+	- Consistency is traded in favor of Availability
+	- High horizontal scalability
+	- Massive Parallel Processing
 
 ### CAP Theorem
 
