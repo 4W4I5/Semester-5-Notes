@@ -205,7 +205,8 @@ This breaks out into the following properties being prioritized
   DynamoDB, a key-value and document-oriented database, uses tables to store and organize data. Data modeling involves defining primary keys, secondary indexes, and specifying throughput capacity for tables.
 
 
-# SQL Injection
+# SQL Injection (SQLi)
+Commoon
 # Transaction Processing
 
 ---
