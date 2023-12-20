@@ -6,7 +6,7 @@
 | Final topics                     | Did these first as i missed classes |
 | NoSQL                            | :white_check_mark:                  |
 | CAP Theorem                      | :white_check_mark:                                 |
-| SQL Injection                    | :x:                                 |
+| SQL Injection                    | :white_check_mark:                                 |
 | Transaction Processing           | :x:                                 |
 | Starting from the first lectures | ThanosMemeBalancedAsItShouldBe.jpg  |
 | Data Modeling                    | :x:                                 |
@@ -251,7 +251,22 @@ SQLi Countermeasures
 
 
 Why SQLi Works
-- Bad SQL generally combines code and data
+- **Concatenation of SQL Queries:**
+	- Many applications dynamically construct SQL queries by concatenating strings with user-provided input. If the input is not properly validated or sanitized, an attacker can inject malicious SQL code into the query.
+- **Lack of Parameterization:**
+	- Failure to use parameterized queries or prepared statements can expose applications to SQL injection. Parameterized queries separate user input from SQL code, making it difficult for attackers to inject malicious content.
+- **Insufficient Input Validation:**
+	- If an application does not validate user input rigorously, it becomes susceptible to SQL injection. Inadequate validation allows attackers to provide unexpected input, including specially crafted SQL statements.
+- **Inadequate Sanitization:**
+	- Improperly sanitized input allows malicious characters to be included in SQL queries. Sanitization processes should neutralize or escape special characters to ensure they are treated as literal values, not executable code.
+- **Trust in User Input:**
+	- Trusting user input without verification is a fundamental flaw. Applications should treat all user-provided data as untrusted and apply appropriate validation and sanitization measures.
+- **Failure to Apply Principle of Least Privilege:**
+	- If database accounts used by applications have excessive privileges, an attacker exploiting a SQL injection vulnerability gains more control over the database. The principle of least privilege recommends using accounts with minimal necessary permissions.
+- **Lack of Security Controls
+	- Absence or inadequacy of security controls, such as web application firewalls (WAFs) or intrusion detection systems, can result in missed opportunities to detect and prevent SQL injection attacks.
+- **Incomplete Error Handling:**
+	- Revealing detailed error messages to users can provide attackers with valuable information about the database structure. Applications should handle errors gracefully without disclosing sensitive details.
 
 # Transaction Processing
 
