@@ -114,9 +114,30 @@ NOSQL stands for:
 	- Massive Parallel Processing
 - Architectures
 	- Column family
+		- _Data Model:_ Organized in columns and rows.
+			- Stored in column oriented way in column families
+			- No space consumed for storing nulls
+			- Row-Key are used to identify a unit of data
+		- _Use Case:_ Suited for large-scale, read-heavy applications with sparse data.
+		- _Examples:_ Google BigTable, Hbase
 	- Key value
+		- _Data Model:_ Simple, pairs of keys and associated values.
+			- Schema-less
+			- Hashmaps, associative arrays
+			- Very efficient
+		- _Use Case:_ Ideal for high-speed, simple data retrieval and storage.
+		- _Examples:_ Redis, DynamoDB.
 	- Document
-	- Graph 
+		- _Data Model:_ Stores data as flexible, self-contained documents (e.g., JSON, BSON).
+		- _Use Case:_ Well-suited for content management, cataloging, and applications with dynamic schemas.
+		- _Examples:_ MongoDB, CouchDB.
+	- Graph
+		- _Data Model:_ Represents data as nodes, edges, and properties.
+		- _Use Case:_ Best for applications involving complex relationships, such as social networks and network analysis.
+		- _Examples:_ Neo4j, Amazon Neptune.
+- NOSQL VS SQL
+	- SQL still used, NOSQL is used for complex constantly changing datasets. Think of an incomplete schema that is not perfect yet will do the job for the time being
+	- NOSQL is a subset of SQL. SQL queries are still more powerful 
 
 # CAP Theorem
 
