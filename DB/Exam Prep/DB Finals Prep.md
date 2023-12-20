@@ -206,7 +206,14 @@ This breaks out into the following properties being prioritized
 
 
 # SQL Injection (SQLi)
-Commoon
+When boundary b/w code and data blurs is when SQLi is most common.
+
+Common injection techniques include;
+- Premature string termination
+- Piggybacking
+- EOL Comments
+
+
 # Transaction Processing
 
 ---
