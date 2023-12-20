@@ -214,21 +214,44 @@ Common injection techniques include;
 	- SQLi query: Select fname FROM student WHERE id=';DROP Table student; --';
 		- The ; at the start of the string terminated string processing and whatever follows next is parsed as a SQL command. The extra backtick is commented out
 - Piggybacking
-	- 
+	- Same as premature but you chain commands with a semicolon
 - EOL Comments
+	- Same as premature but you bypass any other required fields
 	- Normal Query: Select * FROM users WHERE username = 'username'
 	- SQLi Query: Select * FROM users WHERE username = ' 'OR '1'='1' ;-- '
 		- First backtick closes the string
 		- 'OR '1'='1'' always evals to true therefore bypasses any checks
 		- -- Comments out the rest of the line, ignoring the rest of the variables
 		- This fully bypasses any password requirements and the TA can auth into any user
+- Displaying database schema
+	- Inject the following
+		- '; UNION SELECT * FROM information_schema.tables; --
+		- INFORMATION_SCHEMA provides access to db metadata this particular example is for MySQL
+		- Other terms are DATA_DICTIONARY and SYSTEM_CATALOG
+- Blind Injections
+	- Conditional Responses
+	- SQL Errors
+	- Time Delays
+- Second Order SQLi
+
 
 Finding a target that is vulnerable to SQLi
+- Insert a single ' to the end of a string. If a syntax error is returned that means SQLi is possible
 - Can be done via google dorking
 	- search for 'index.php?id='
 		- append a 1 and a '. If an error is returned then the site is vulnerable to SQLi
 
+SQLi Countermeasures
+- Blacklisting
+- Escape Charecters
+- Whitelisting
+- HexEncoding
+- Limit Privileges
+- Encrypt Sensitive Data
 
+
+Why SQLi Works
+- Bad SQL generally combines code and data
 
 # Transaction Processing
 
