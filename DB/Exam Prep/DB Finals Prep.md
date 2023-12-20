@@ -100,7 +100,9 @@ NOSQL stands for:
 	- Class of products i.e mongoDB has atlas, and a whole lot of stuff
 - Characteristics
 	- BASE used instead of ACID
-		- 
+		- Basically Available - Always Available
+		- SoftState - State of the system changes over time
+		- Eventual Consistency - Eventually the system becomes consistent i.e. all replicas eventually have the same data in the absence of new data
 	- Consistency is traded in favor of Availability
 	- High horizontal scalability
 	- Massive Parallel Processing
