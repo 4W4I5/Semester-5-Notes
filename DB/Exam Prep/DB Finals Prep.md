@@ -213,6 +213,10 @@ Common injection techniques include;
 - Piggybacking
 - EOL Comments
 
+Finding a target that is vulnerable to SQLi
+- Can be done via google dorking
+- 
+
 
 # Transaction Processing
 
