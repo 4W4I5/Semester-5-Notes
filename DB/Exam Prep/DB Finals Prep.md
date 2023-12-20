@@ -214,9 +214,14 @@ Common injection techniques include;
 	- SQLi query: Select fname FROM student WHERE id=';DROP Table student; --';
 		- The ; at the start of the string terminated string processing and whatever follows next is parsed as a SQL command. The extra backtick is commented out
 - Piggybacking
-	-
-- EOL Comments
 	- 
+- EOL Comments
+	- Normal Query: Select * FROM users WHERE username = 'username'
+	- SQLi Query: Select * FROM users WHERE username = ' 'OR '1'='1' ;-- '
+		- First backtick closes the string
+		- 'OR '1'='1'' always evals to true therefore bypasses any checks
+		- -- Comments out the rest of the line, ignoring the rest of the variables
+		- This fully bypasses any password requirements and the TA can auth into any user
 
 Finding a target that is vulnerable to SQLi
 - Can be done via google dorking
