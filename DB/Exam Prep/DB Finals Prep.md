@@ -242,12 +242,18 @@ Finding a target that is vulnerable to SQLi
 		- append a 1 and a '. If an error is returned then the site is vulnerable to SQLi
 
 SQLi Countermeasures
-- Blacklisting
-- Escape Charecters
-- Whitelisting
-- HexEncoding
-- Limit Privileges
-- Encrypt Sensitive Data
+- **Blacklisting:**
+    - Utilizes a list of known malicious SQL injection patterns to block or sanitize input matching these patterns, preventing unauthorized SQL code execution.
+- **Escape Characters:**
+    - Involves using escape characters (e.g., `\` in MySQL) to treat special characters within user input as literal characters, preventing them from being interpreted as SQL code.
+- **Whitelisting:**
+    - Defines an allowed set of characters or patterns, permitting only input that matches the predefined whitelist and rejecting any input that deviates from it.
+- **HexEncoding:**
+    - Encodes special characters in hexadecimal format before including them in SQL queries, making it more challenging for attackers to inject malicious code.
+- **Limit Privileges:**
+    - Ensures that database accounts used by applications have the least privilege necessary to perform their tasks, minimizing the potential impact of a successful SQL injection attack.
+- **Encrypt Sensitive Data:**
+    - Implements encryption for sensitive data at rest and in transit, safeguarding it from unauthorized access, even if a SQL injection vulnerability is exploited. Encryption adds an additional layer of security to protect data confidentiality.
 
 
 Why SQLi Works
@@ -323,6 +329,10 @@ Why SQLi Works
 		- Keep database systems and application frameworks up-to-date to patch known vulnerabilities.
 
 # Transaction Processing
+
+#### Parsing
+#### Query Optimization
+#### Execution: Transaction Initiation
 
 ---
 # Data Modeling
