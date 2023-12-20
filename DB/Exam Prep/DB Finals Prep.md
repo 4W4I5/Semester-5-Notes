@@ -210,12 +210,19 @@ When boundary b/w code and data blurs is when SQLi is most common.
 
 Common injection techniques include;
 - Premature string termination
+	- Normal query: Select fname FROM student WHERE id='i212874';
+	- SQLi query: Select fname FROM student WHERE id=';DROP Table student; --';
+		- The ; at the start of the string terminated string processing and whatever follows next is parsed as a SQL command. The extra backtick is commented out
 - Piggybacking
+	-
 - EOL Comments
+	- 
 
 Finding a target that is vulnerable to SQLi
 - Can be done via google dorking
-- 
+	- search for 'index.php?id='
+		- append a 1 and a '. If an error is returned then the site is vulnerable to SQLi
+
 
 
 # Transaction Processing
