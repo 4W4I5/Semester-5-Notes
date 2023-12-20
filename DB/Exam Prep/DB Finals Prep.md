@@ -92,7 +92,14 @@ NOSQL was tailored for big data
 				- Critical reads i.e. reads performed in real-time might be incorrect as it takes a while to propagate any recent writes
 				- Large data sets take time to replicate
 			- Sharding
-				- stuff
+				- A giant db is split into smaller db that each handles a subset of the original data. kind of like normalization but more abstract
+				- Each shard operates independently as each shard has its own 'genre' of the data so that reads and writes only affect that specific shard
+				- More relevant for NoSQL based servers
+
+#### Origins of NOSQL
+- 
+
+
 # SQL Injection
 # Transaction Processing
 # CAP Theorem
