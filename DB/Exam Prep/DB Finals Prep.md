@@ -97,12 +97,46 @@ NOSQL was tailored for big data
 				- More relevant for NoSQL based servers
 
 #### Origins of NOSQL
-- 
+-
+
+### CAP Theorem
+
+## Book Questions
+
+- **For which types of applications were NoSQL systems developed?**
+  NoSQL systems were developed for applications that require flexible data models, scalability, and the ability to handle large volumes of unstructured or semi-structured data. Common applications include web applications, real-time big data processing, and scenarios with dynamic and evolving data structures.
+
+- **What are the main categories of NoSQL systems? List a few of the NoSQL systems in each category.**
+  - **Document-oriented:** MongoDB, CouchDB
+  - **Key-Value Stores:** Redis, DynamoDB
+  - **Column-family Stores:** Apache Cassandra, HBase
+  - **Graph Databases:** Neo4j, Amazon Neptune
+
+- **What are the main characteristics of NoSQL systems in the areas related to data models and query languages?**
+  NoSQL systems often have flexible or schema-less data models, allowing for variations in the structure of each record. They support different data models, including document-oriented, key-value pairs, column-family stores, and graph databases. Query languages are tailored to the specific data model used.
+
+- **What are the main characteristics of NoSQL systems in the areas related to distributed systems and distributed databases?**
+  NoSQL systems are designed for horizontal scalability, allowing them to handle large amounts of data by distributing it across multiple servers. They often prioritize performance and availability over strong consistency, making trade-offs based on the CAP theorem.
+
+- **What is the CAP theorem? Which of the three properties (consistency, availability, partition tolerance) are most important in NoSQL systems?**
+  The CAP theorem states that in a distributed system, it's impossible to simultaneously provide all three guarantees (consistency, availability, partition tolerance). NoSQL systems often prioritize availability and partition tolerance over strict consistency.
+
+- **What are the similarities and differences between using consistency in CAP versus using consistency in ACID?**
+  In CAP, consistency is a trade-off with availability, meaning that strict consistency might be sacrificed for availability in distributed systems. In ACID, consistency ensures that a transaction brings the database from one valid state to another, with no intermediate states.
+
+- **What are the data modeling concepts used in MongoDB? What are the main CRUD operations of MongoDB?**
+  MongoDB uses a document-oriented data model. The main CRUD operations are Create, Read, Update, and Delete, corresponding to the insertion, retrieval, modification, and removal of documents in a MongoDB collection.
+
+- **Discuss how replication and sharding are done in MongoDB.**
+  Replication in MongoDB involves maintaining multiple copies of data across multiple servers to ensure availability and fault tolerance. Sharding involves horizontally partitioning data across multiple servers to improve scalability.
+
+- **Discuss the data modeling concepts in DynamoDB.**
+  DynamoDB, a key-value and document-oriented database, uses tables to store and organize data. Data modeling involves defining primary keys, secondary indexes, and specifying throughput capacity for tables.
 
 
 # SQL Injection
 # Transaction Processing
-# CAP Theorem
+
 ---
 # Data Modeling
 # ERD/EERD
