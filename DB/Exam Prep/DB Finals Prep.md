@@ -30,7 +30,7 @@
 
 ---
 # NOSQL
-To understand NOSQL or NRDBMS we need to understand RDBMS i.e. the database management software we are used to (MS SQL Server or SSMS)
+To understand NOSQL we need to understand RDBMS i.e. the database management software we are used to (MS SQL Server or SSMS)
 
 A standard project with a database system involves:
 - Endusers that can
@@ -40,9 +40,24 @@ A standard project with a database system involves:
 	- Metadata for the tables created
 	- Enduser data i.e. the tables we create
 
+NOSQL stands for:
+- NOT relational
+- NOT RDBMS
+- NOT Only SQL (IK i didnt get this either)
+- Any database/datastore that isnt an RDBMS can be classified as NOSQL if it follows these rules:
+	- Collection of several varied but related concepts on data storage and manipulation
+	- Often related to big data
+	- Class of products i.e mongoDB has atlas, and a whole lot of stuff
+
 NOSQL was tailored for big data
 **Data is considered Big Data**:
-- When
+- When capacity is >= 1TB
+- Has the following charecteristics
+	- Greater Variety, less structure
+	- Arrives in growing volumes
+	- Arrives in growing velocity
+- An example is social media, S3 solutions, need of dynamically-typed data with frequent schema changes
+	- Data from the internet is massive and sparse, generally unstructured or semi-structured at best
 ### RDBMS (Relational Database Management System)
 - Manages and stores databases i.e multiple databases
 - Consists of
@@ -68,6 +83,16 @@ NOSQL was tailored for big data
 			- Structured - Relational Data, tabulated
 			- Semi-Structured - Loosely structured as in has a head and a body like html, xml, json, yaml, etc
 			- Unstructured - Not completely unstructured but its just text explaining what the data is and/or images/audio
+		- Scaling
+			- RDBMS cant be distributed globally.
+				- They were best designed to run on a single machine i.e. upgrades involve a lot of vertical scaling
+			- Master-Slave Situation
+				- All writes are written to the master
+				- All reads are performed against the replicated slaves
+				- Critical reads i.e. reads performed in real-time might be incorrect as it takes a while to propagate any recent writes
+				- Large data sets take time to replicate
+			- Sharding
+				- stuff
 # SQL Injection
 # Transaction Processing
 # CAP Theorem
