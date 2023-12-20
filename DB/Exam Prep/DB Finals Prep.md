@@ -4,8 +4,10 @@
 | Topic                            | Status                              |
 | -------------------------------- | ----------------------------------- |
 | Final topics                     | Did these first as i missed classes |
-| NoSQL                            | :x:                                 |
+| NoSQL                            | :white_check_mark:                  |
+| CAP Theorem                      | :white_check_mark:                                 |
 | SQL Injection                    | :x:                                 |
+| Transaction Processing           | :x:                                 |
 | Starting from the first lectures | ThanosMemeBalancedAsItShouldBe.jpg  |
 | Data Modeling                    | :x:                                 |
 | ERD/EERD                         | :x:                                 |
@@ -20,8 +22,7 @@
 | Query Optimization               | :x:                                 |
 | Sessional 2 Past Paper           | :x:                                 |
 | Assignment3,4,5                  | :x:                                 |
-| Transaction Processing           | :x:                                 |
-| CAP Theorem                      | :x:                                    |
+
 
 <!--
 :white_check_mark:
@@ -135,9 +136,18 @@ NOSQL stands for:
 		- _Data Model:_ Represents data as nodes, edges, and properties.
 		- _Use Case:_ Best for applications involving complex relationships, such as social networks and network analysis.
 		- _Examples:_ Neo4j, Amazon Neptune.
-- NOSQL VS SQL
-	- SQL still used, NOSQL is used for complex constantly changing datasets. Think of an incomplete schema that is not perfect yet will do the job for the time being
-	- NOSQL is a subset of SQL. SQL queries are still more powerful 
+
+### NOSQL vs SQL
+
+| Feature                | SQL                                       | NoSQL                                            |
+|------------------------|-------------------------------------------|--------------------------------------------------|
+| **Data Model**         | Structured, typically relational tables with predefined schema | Flexible, supports various data models (document, key-value, column-family, graph) allowing dynamic schema adaptation. |
+| **Schema**             | Fixed schema, requires a defined structure for tables | Dynamic schema allows for changes in data structure without affecting the entire database. Ideal for evolving data requirements. |
+| **Scalability**        | Vertical scaling (adding more resources to a single server) | Horizontal scaling, achieved by adding more servers, making it more adaptable to growing data and traffic demands. |
+| **Query Language**     | SQL (Structured Query Language) for standardized queries | Varied query languages specific to each NoSQL database, tailored to the respective data model. Examples include MongoDB Query Language, Cassandra Query Language (CQL). |
+| **Transactions**       | ACID properties (Atomicity, Consistency, Isolation, Durability) ensure data integrity and consistency | Eventual consistency is common, providing high availability and partition tolerance, sacrificing strict consistency for performance gains. |
+| **Use Cases**          | Suitable for applications with complex queries, transactions, and well-defined relationships | Ideal for scenarios with large volumes of unstructured or semi-structured data, high read and write throughput, and where flexibility in data modeling is crucial. Common in web applications, real-time analytics. |
+| **Examples**           | MySQL, PostgreSQL, Oracle                  | MongoDB (document), Cassandra (column-family), Redis (key-value), Neo4j (graph), each tailored to specific use cases and data models. |
 
 # CAP Theorem
 
