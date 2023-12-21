@@ -485,7 +485,6 @@ DB ROLLBACK
       - Assumes that a transaction can write a data item without having to read it first.
     - **Realism:**
       - More flexible but may lead to potential conflicts.
-
 - **Define the violations caused by each of the following: dirty read, non-repeatable read, and phantoms.**
   - _Dirty Read:_
     - **Violation:**
@@ -500,7 +499,7 @@ DB ROLLBACK
    
 ---
 # Data Modeling
-#### Basic stuff
+## Basic stuff
 - Data = Raw Facts
 	- Volume, Velocity and Variety
 	- Used to filter and extract valuable information
@@ -605,9 +604,72 @@ DB ROLLBACK
 		- Participation
 			- Shown by double line for full participation i.e. at least one of the object must exist or single line for partial where the object can exist independently of each other
 
+
 # ERD/EERD
 
 (NOTE:: Do Lab tasks as well yaad se)
+
+## Book Questions for both ERD and Datamodelling
+- **Discuss the role of a high-level data model in the database design process.**
+  - A high-level data model provides an abstraction of the database, focusing on essential concepts and relationships. It helps in understanding and representing the organization's data requirements before diving into specific technical details. It aids communication between stakeholders, guides the design process, and serves as a blueprint for creating a detailed database schema.
+- **List the various cases where use of a NULL value would be appropriate.**
+  - - **Unknown Information:**
+    - When the actual value is unknown or undefined.
+  - **Not Applicable:**
+    - When a value is not applicable in a certain context.
+  - **Optional Information:**
+    - For attributes that are optional or may not have a value.
+- **Define the following terms: entity, attribute, attribute value, relationship instance, composite attribute, multivalued attribute, derived attribute, complex attribute, key attribute, and value set (domain).**
+  - _(Definitions not provided due to the volume of terms.)_
+- **What is an entity type? What is an entity set? Explain the differences among an entity, an entity type, and an entity set.**
+  - - **Entity Type:**
+    - A collection of entities that share common characteristics or properties.
+  - **Entity Set:**
+    - The actual set of entities belonging to an entity type.
+  - **Entity:**
+    - A unique instance of an entity type.
+- **Explain the difference between an attribute and a value set.**
+  - - **Attribute:**
+    - A property or characteristic of an entity type.
+  - **Value Set:**
+    - The set of values that an attribute can take.
+- **What is a relationship type? Explain the differences among a relationship instance, a relationship type, and a relationship set.**
+  - - **Relationship Type:**
+    - A collection of relationship instances sharing common characteristics.
+  - **Relationship Instance:**
+    - A specific occurrence of a relationship between entities.
+  - **Relationship Set:**
+    - The actual set of relationship instances belonging to a relationship type.
+- **What is a participation role? When is it necessary to use role names in the description of relationship types?**
+  - - **Participation Role:**
+    - Describes the role that an entity plays in a relationship.
+  - **Necessity of Role Names:**
+    - Necessary when an entity participates more than once in a relationship type to distinguish roles.
+- **Describe the two alternatives for specifying structural constraints on relationship types. What are the advantages and disadvantages of each?**
+  - _(Descriptions not provided due to the volume of information.)_
+- **Under what conditions can an attribute of a binary relationship type be migrated to become an attribute of one of the participating entity types?**
+  - When the attribute is specific to one entity in the relationship and not shared by both.
+- **When we think of relationships as attributes, what are the value sets of these attributes? What class of data models is based on this concept?**
+  - - **Value Sets:**
+    - The value sets are sets of relationship instances.
+  - **Data Model:**
+    - Based on the concept of relationships as attributes, this falls under the class of Semantic Data Models.
+- **What is meant by a recursive relationship type? Give some examples of recursive relationship types.**
+  - - **Recursive Relationship Type:**
+    - A relationship type where an entity is related to itself.
+  - **Example:**
+    - Employee manages other employees within the same organization.
+- **When is the concept of a weak entity used in data modeling? Define the terms owner entity type, weak entity type, identifying relationship type, and partial key.**
+  - _(Definitions not provided due to the volume of information.)_
+- **Can an identifying relationship of a weak entity type be of a degree greater than two? Give examples to illustrate your answer.**
+  - - **Identifying Relationship Degree:**
+    - No, it cannot be greater than two.
+  - **Examples:**
+    - Illustrations not provided due to the volume of information.
+- **Discuss the conventions for displaying an ER schema as an ER diagram.**
+  - _(Discussion not provided due to the volume of information.)_
+- **Discuss the naming conventions used for ER schema diagrams.**
+  - _(Discussion not provided due to the volume of information.)_
 
 # Relational Models
 # SQL
