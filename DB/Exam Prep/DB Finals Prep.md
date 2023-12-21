@@ -674,6 +674,18 @@ DB ROLLBACK
   - _(Discussion not provided due to the volume of information.)_
 
 # Relational Models
+Mappings
+- Regular entity with simple attributes
+- Regular entity with composite attributes
+- Regular entity with multi-valued attributes
+- Regular entity with derived attributes
+- Weak Entity
+- Unary Relationships
+- Binary 1:m Relationship
+- Binary M:M Relationship
+- Binary 1:1 Relationship with partial participation on both sides
+- Binary 1:1 Relationship with total participation on both sides
+- N-ary number of relations
 # SQL
 ## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
