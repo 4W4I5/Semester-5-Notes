@@ -331,6 +331,7 @@ Why SQLi Works
 		- Keep database systems and application frameworks up-to-date to patch known vulnerabilities.
 
 # Transaction Processing
+Transaction 
 
 #### Parsing
 #### Query Optimization
@@ -344,7 +345,7 @@ Why SQLi Works
 
 # Relational Models
 # SQL
-###### Graded Class Activity (SQL Practice) | Mark as done here 
+###### Graded Class Activity (SQL Practice) | Mark as done here
 # A1
 # S1 Past Paper
 ---
