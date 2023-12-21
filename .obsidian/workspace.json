@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6666a26a96429451",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "DB/Exam Prep/DB Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -181,7 +194,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "d0b4f7ace758eb4a",
+  "active": "6666a26a96429451",
   "lastOpenFiles": [
     "Untitled 2.md",
     "DB/Exam Prep/DB Finals Prep.md",

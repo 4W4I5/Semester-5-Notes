@@ -334,7 +334,8 @@ Why SQLi Works
 Transaction is an atomic unit of work that consists of a series of DB operations. Due to its atomicity Transactions adhere to the ACID properties
 - Atomicity - Each transaction is treated as a single, indivisible unit of work. All of the changes in the transaction are committed or not at all
 - Consistency - Each transaction brings the database from one valid state to another. Must satisfy set of integrity constraints before and after a transaction.
-- Isolation - 
+- Isolation - Each transaction is not aware of other transactions until commit. Ensures the result is such that of if the transactions had be executed serially instead of in parallel
+- Durability - 
 Example:
 - User sends a query that transfers 400,000 from checking to savings
 - Database sees it like this:
