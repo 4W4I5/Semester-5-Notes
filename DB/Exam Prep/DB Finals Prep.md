@@ -509,7 +509,7 @@ DB ROLLBACK
 - Base = Center of operations
 - Disadvantages of using files as a data management system
 	- Lack of data integrity, consistency, no maintenance or recovery/backup, scalability and access issues, limited querying and response time
-	- Data inconsistency (in admin of A and B block its laiba but admin of C has laiba stored as layba), happens because manual updating and hard to access
+	- Data inconsistency which happens due to manual updating and hard to access
 	- Data redundancy (storing same info repeatedly), happens because copying files and saving files with slight differences
 	- Data isolation (scattered data, no data relationships between data points)
 	- Atomicity problem: lack of transactional mechanisms and centralized control
