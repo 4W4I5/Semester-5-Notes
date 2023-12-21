@@ -7,7 +7,7 @@
 | NoSQL                            | :white_check_mark:                  |
 | CAP Theorem                      | :white_check_mark:                                 |
 | SQL Injection                    | :white_check_mark:                                 |
-| Transaction Processing           | :x:                                 |
+| Transaction Processing           | :white_check_mark:                                 |
 | Starting from the first lectures | ThanosMemeBalancedAsItShouldBe.jpg  |
 | Data Modeling                    | :x:                                 |
 | ERD/EERD                         | :x:                                 |
@@ -387,13 +387,18 @@ DB ROLLBACK
 - Contains each list of transactions with each step performed. Restores DB to last point of consistency
 	- Checkpoints are used to declare a point where dbms was consistent i.e. clear before performing a transaction in order to save log space in case of failure
 	- Schedule is arranged to execute transactions in order. A schedule contains multiple transactions with the operations interleaved into one
-		- T1: read(x), write(x), read(y), write(y), c1
-		- T2: read(x), write(x), c2
-		- Schedule S where t1 & t2 are interleaved: read(x), read(x), write()
+		- Transaction T1: r1(X); w1(X); r1(Y); w1(Y); c1
+		- Transaction T2: r2(X); w2(X); c2
+		- A schedule S: r1(X); r2(X); w1(X); r1(Y); w2(X); w1(Y); c1; c2
+- Two operations conflict if they satisfy ALL three conditions:
+	- they belong to different transactions AND
+	- they access the same item AND
+	- at least one is a write_item()operation
+	- Example:
+		- S: r1(X); r2(X); w1(X); r1(Y); w2(X); w1(Y);
 
 
-
-
+   
 ---
 # Data Modeling
 # ERD/EERD
