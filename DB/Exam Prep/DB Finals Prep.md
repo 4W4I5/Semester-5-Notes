@@ -332,6 +332,10 @@ Why SQLi Works
 
 # Transaction Processing
 Transaction is an atomic unit of work that consists of a series of DB operations. Due to its atomicity Transactions adhere to the ACID properties
+Example:
+- User enters
+	- UPDATE Amount FROM Checking_Account
+
 
 Transaction states:
 - Active: Inital state where operations are performed
