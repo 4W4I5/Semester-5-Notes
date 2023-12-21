@@ -331,7 +331,13 @@ Why SQLi Works
 		- Keep database systems and application frameworks up-to-date to patch known vulnerabilities.
 
 # Transaction Processing
-Transaction 
+Transaction is an atomic unit of work that consists of a series of DB operations. Due to its atomicity Transactions adhere to the ACID properties
+
+Transaction states:
+- Active: Inital state where operations are performed
+- Partially Committed: Transaction is executed successfully, and changes are temporarily recorded but not yet made permanent
+- Committed: Transaction has ben successfully completed, changes are permanently saved
+- Aborted/Rolled Back : Transaction stopped due to an error, changes undone
 
 #### Parsing
 #### Query Optimization
