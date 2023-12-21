@@ -150,7 +150,7 @@ NOSQL stands for:
 | **Examples**           | MySQL, PostgreSQL, Oracle                  | MongoDB (document), Cassandra (column-family), Redis (key-value), Neo4j (graph), each tailored to specific use cases and data models. |
 
 # CAP Theorem
-
+###### Class Task: What is the CAP Theorem and how does it relate to databases
 CAP triangle out which only three can be picked out at a time
 
 - **Consistency**
@@ -172,6 +172,8 @@ This breaks out into the following properties being prioritized
 - **AP (Availability and Partition Tolerance):**
     - Prioritizes Availability over Consistency during network partitions.
     - Continues to respond to read and write requests, even if it means providing slightly outdated or inconsistent data.
+
+
 
 # Book Questions
 
