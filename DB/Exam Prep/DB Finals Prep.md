@@ -534,12 +534,16 @@ DB ROLLBACK
 	            - A single, indivisible value that cannot be further divided. For example, the "Name" attribute of a customer entity.
 	        - Composite Attribute:
 	            - An attribute composed of multiple sub-attributes with independent meanings. For instance, the "Address" attribute might have sub-attributes like "Street," "City," "State," and "Zip Code."
+	            - Shown as an attribute that branches out in diagrams
 	        - Derived Attribute:
 	            - An attribute that can be derived or calculated from other attributes in the database. For example, the "Age" attribute can be derived from the "Date of Birth" attribute.
+	            - Has a dashed line in diagrams
 	        - Key Attribute:
 	            - An attribute that is part of the primary key of an entity, used to uniquely identify records within the entity.
+	            - Underlined label in diagram
 	        - Multi-valued Attribute:
 	            - An attribute that can hold multiple values for a single entity. For example, the "Phone Numbers" attribute of a person entity could hold multiple phone numbers.
+	            - Secondary edge in diagram
 	        - Null Attribute:
 	            - An attribute that can have a null or missing value, indicating that the data is not applicable or unknown for that entity.
 	        - Complex Attribute:
