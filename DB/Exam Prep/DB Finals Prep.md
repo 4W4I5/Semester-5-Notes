@@ -23,7 +23,6 @@
 | Sessional 2 Past Paper           | :x:                                 |
 | Assignment3,4,5                  | :x:                                 |
 
-
 <!--
 :white_check_mark:
 :x:
@@ -150,7 +149,8 @@ NOSQL stands for:
 | **Examples**           | MySQL, PostgreSQL, Oracle                  | MongoDB (document), Cassandra (column-family), Redis (key-value), Neo4j (graph), each tailored to specific use cases and data models. |
 
 # CAP Theorem
-###### Class Task: What is the CAP Theorem and how does it relate to databases
+## Class Task: What is the CAP Theorem and how does it relate to databases
+
 CAP triangle out which only three can be picked out at a time
 
 - **Consistency**
@@ -208,9 +208,11 @@ This breaks out into the following properties being prioritized
 
 
 # SQL Injection (SQLi)
+
 When boundary b/w code and data blurs is when SQLi is most common.
 
 Common injection techniques include;
+
 - Premature string termination
 	- Normal query: Select fname FROM student WHERE id='i212874';
 	- SQLi query: Select fname FROM student WHERE id=';DROP Table student; --';
@@ -236,14 +238,15 @@ Common injection techniques include;
 	- Time Delays
 - Second Order SQLi
 
-
 Finding a target that is vulnerable to SQLi
+
 - Insert a single ' to the end of a string. If a syntax error is returned that means SQLi is possible
 - Can be done via google dorking
 	- search for 'index.php?id='
 		- append a 1 and a '. If an error is returned then the site is vulnerable to SQLi
 
 SQLi Countermeasures
+
 - **Blacklisting:**
     - Utilizes a list of known malicious SQL injection patterns to block or sanitize input matching these patterns, preventing unauthorized SQL code execution.
 - **Escape Characters:**
@@ -257,8 +260,8 @@ SQLi Countermeasures
 - **Encrypt Sensitive Data:**
     - Implements encryption for sensitive data at rest and in transit, safeguarding it from unauthorized access, even if a SQL injection vulnerability is exploited. Encryption adds an additional layer of security to protect data confidentiality.
 
-
 Why SQLi Works
+
 - **Concatenation of SQL Queries:**
 	- Many applications dynamically construct SQL queries by concatenating strings with user-provided input. If the input is not properly validated or sanitized, an attacker can inject malicious SQL code into the query.
 - **Lack of Parameterization:**
@@ -277,7 +280,7 @@ Why SQLi Works
 	- Revealing detailed error messages to users can provide attackers with valuable information about the database structure. Applications should handle errors gracefully without disclosing sensitive details.
 
 
-#### Book Questions
+## Book Questions
 - **What are the different types of SQL injection attacks?**
 	- **Classic SQL Injection:**
 		- Injecting malicious SQL code directly into user input fields.
@@ -331,13 +334,16 @@ Why SQLi Works
 		- Keep database systems and application frameworks up-to-date to patch known vulnerabilities.
 
 # Transaction Processing
+
 Transaction is an atomic unit of work that consists of a series of DB operations. Due to its atomicity Transactions adhere to the ACID properties
+
 - Atomicity - Each transaction is treated as a single, indivisible unit of work. All of the changes in the transaction are committed or not at all
 - Consistency - Each transaction brings the database from one valid state to another. Must satisfy set of integrity constraints before and after a transaction.
 - Isolation - Each transaction is not aware of other transactions until commit. Ensures the result is such that of if the transactions had be executed serially instead of in parallel
 - Durability - Once a transaction is committed its effects are permanent. Changes are stored to disk once committed
 
 Transaction states:
+
 - BEGIN_TRANSACTION: Start of transaction
 - READ/WRITE: Two possible operations on data. Abort will trigger rollback
 	- READ: reads value from db. It is a safe operation
@@ -381,8 +387,8 @@ Example:
 	- END_TRANSACTION
 	- COMMIT_TRANSACTION if successful, else ROLLBACK
 
-
 DB ROLLBACK
+
 - Logs are used to rollback in event of failure.
 - Contains each list of transactions with each step performed. Restores DB to last point of consistency
 	- Checkpoints are used to declare a point where dbms was consistent i.e. clear before performing a transaction in order to save log space in case of failure
@@ -397,6 +403,99 @@ DB ROLLBACK
 	- Example:
 		- S: r1(X); r2(X); w1(X); r1(Y); w2(X); w1(Y);
 
+## Book questions
+- **What is meant by the concurrent execution of database transactions in a multiuser system? Discuss why concurrency control is needed, and give informal examples.**
+  - _Concurrency in Database Transactions:_
+    - Concurrent execution refers to multiple transactions being executed simultaneously in a multiuser database system.
+    - _Why Concurrency Control is Needed:_
+      - To ensure data consistency and avoid conflicts that can arise when multiple transactions access and modify the same data concurrently.
+    - _Informal Examples:_
+      - Example 1: Transaction A reads a value, and Transaction B updates the same value concurrently.
+      - Example 2: Multiple users transferring money between accounts simultaneously.
+- **Discuss the different types of failures. What is meant by catastrophic failure?**
+  - _Types of Failures:_
+    - **Transaction Failures:**
+      - Occur when a transaction cannot be completed due to errors.
+    - **System Failures:**
+      - Result from faults in the hardware or software infrastructure.
+    - **Media Failures:**
+      - Data loss due to disk or storage failures.
+  - _Catastrophic Failure:_
+    - **Definition:**
+      - A severe, system-wide failure that leads to a complete shutdown or loss of significant functionality.
+    - **Example:**
+      - A major hardware failure that disables an entire data center.
+- **Discuss the actions taken by the read_item and write_item operations on a database.**
+  - _read_item Operation:_
+    - Retrieves the value of an item from the database without modifying it.
+  - _write_item Operation:_
+    - Modifies the value of an item in the database.
+- **Draw a state diagram and discuss the typical states that a transaction goes through during execution.**
+  - _State Diagram:_
+    - _Typical States:_
+      - **Active:** Transaction is actively executing.
+      - **Partially Committed:** Transaction has completed its operations and awaits final commitment.
+      - **Committed:** Changes made by the transaction are permanently saved.
+      - **Aborted/Rolled Back:** Transaction is canceled, and any changes made are undone.
+- **What is the system log used for? What are the typical kinds of records in a system log? What are transaction commit points, and why are they important?**
+  - _System Log Purpose:_
+    - Records transactions and system events to facilitate recovery and maintain database integrity.
+  - _Typical Records:_
+    - **Start Transaction, Write, Commit, Abort, Checkpoint, End Transaction.**
+  - _Transaction Commit Points:_
+    - **Definition:**
+      - Points in a transaction where all changes made so far are guaranteed to be permanent.
+    - **Importance:**
+      - Critical for recovery; transactions can be reliably committed or rolled back from commit points.
+- **Discuss the atomicity, durability, isolation, and consistency preservation properties of a database transaction.**
+  - _Atomicity:_
+    - Ensures that a transaction is treated as a single, indivisible unit of work.
+  - _Durability:_
+    - Guarantees that once a transaction is committed, its changes are permanent and survive system failures.
+  - _Isolation:_
+    - Ensures that each transaction appears to execute in isolation from others, preventing interference.
+  - _Consistency Preservation:_
+    - Maintains the consistency of the database, ensuring it transitions from one valid state to another.
+- **What is a schedule (history)? Define the concepts of recoverable, cascadeless, and strict schedules, and compare them in terms of their recoverability.**
+  - _Schedule (History):_
+    - A chronological sequence of operations from multiple transactions.
+  - _Recoverable Schedule:_
+    - **Definition:**
+      - Allows for the recovery of the database to a consistent state after a transaction failure.
+    - **Property:**
+      - The commit of a transaction is recorded in the log before any subsequent transactions read or write the same data.
+  - _Cascadeless Schedule:_
+    - **Definition:**
+      - Ensures that a transaction cannot read data that has been written by a transaction that was later aborted.
+    - **Property:**
+      - Aborting a transaction does not affect other transactions.
+  - _Strict Schedule:_
+    - **Definition:**
+      - Ensures that transactions cannot read or write data until the previous transaction's changes are committed.
+    - **Property:**
+      - Guarantees a high level of isolation but may limit concurrency.
+- **What is the difference between the constrained write and the unconstrained write assumptions? Which is more realistic?**
+  - _Constrained Write:_
+    - **Definition:**
+      - Assumes that a transaction can write a data item only if it has previously read the item.
+    - **Realism:**
+      - May be overly restrictive for certain scenarios.
+  - _Unconstrained Write:_
+    - **Definition:**
+      - Assumes that a transaction can write a data item without having to read it first.
+    - **Realism:**
+      - More flexible but may lead to potential conflicts.
+
+- **Define the violations caused by each of the following: dirty read, non-repeatable read, and phantoms.**
+  - _Dirty Read:_
+    - **Violation:**
+      - Occurs when one transaction reads uncommitted changes made by another transaction.
+  - _Non-repeatable Read:_
+    - **Violation:**
+      - Occurs when a transaction reads a data item multiple times, and the values differ due to concurrent updates by other transactions.
+  - _Phantoms:_
+    - **Violation:**
+      - Occurs when a transaction reads a set of data items multiple times, and the set of items changes between reads due to other transactions.
 
    
 ---
@@ -407,7 +506,7 @@ DB ROLLBACK
 
 # Relational Models
 # SQL
-###### Graded Class Activity (SQL Practice) | Mark as done here
+## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
 # S1 Past Paper
 ---
