@@ -500,6 +500,29 @@ DB ROLLBACK
    
 ---
 # Data Modeling
+#### Basic stuff
+- Data = Raw Facts
+	- Volume, Velocity and Variety
+	- Used to filter and extract valuable information
+- Information = Precise Data
+- Knowledge = Derived from information using intelligence
+- Base = Center of operations
+- Disadvantages of using files as a data management system
+	- Lack of data integrity, consistency, no maintenance or recovery/backup, scalability and access issues, limited querying and response time
+	- Data inconsistency (in admin of A and B block its laiba but admin of C has laiba stored as layba), happens because manual updating and hard to access
+	- Data redundancy (storing same info repeatedly), happens because copying files and saving files with slight differences
+	- Data isolation (scattered data, no data relationships between data points)
+	- Atomicity problem: lack of transactional mechanisms and centralized control
+- Stages of designing a database
+	- Design - Define structure and type of data
+	- Construct - Create structures and fill with data
+	- Manipulation - Create, Write, Read, Update & Delete
+	- Query - Request Data for manipulation
+	- Create Reports - Presentation of data that conveys info
+- Modelling data
+	- 
+
+
 # ERD/EERD
 
 (NOTE:: Do Lab tasks as well yaad se)
