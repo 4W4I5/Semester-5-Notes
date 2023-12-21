@@ -528,6 +528,14 @@ DB ROLLBACK
 		            - Tangible: Person, Place & Object
 		            - Intangible: Event(Verbs) & Concept(Account, Course, Patient's Health History, Budget)
 		        - Represented by a rectangle
+		        - Types
+			        - Strong
+				        - Key attribute, can be uniquely identified
+			        - Weak
+				        - Cannot be uniquely identified from its own attributes
+				        - Contains partial keys
+				        - Represented with double rectangles
+				        - Can be changed to a strong entity through an identifying relationship i.e. 1-1 or 1-M relation with full participation of the weak entity
 	- Attributes
 	    - Types of attributes
 	        - Simple Attribute:
@@ -574,9 +582,18 @@ DB ROLLBACK
 	    - Entity Integrity Constraint:
 	        - Requires that a primary key value is not null, ensuring the uniqueness and identification of records.
 	- Relationships
+		- Degrees
+			- Unary
+				- Recursive
+				- Used for specialized entities from generic i.e. a manager is still an employee but they manage other employees
+			- Binary
+				- One entity works with another
+			- Ternary
+				- When two relationships are related they can be combined into one
+					- Doctor prescribes medicine
+					- Medicine is prescribed to the patient
+					- This can be shown by Doctor prescribes medicine to the patient
 		- Cardinality
-		- Participation
-		- Types
 			- One-to-One Relationship:
 				- One record in the first table is related to at most one record in the second table, and vice versa.
 			- One-to-Many Relationship:
@@ -585,6 +602,8 @@ DB ROLLBACK
 				- Multiple records in the first table are related to multiple records in the second table. This type of relationship requires a junction table.
 			- Self-Referential Relationship:
 				- A relationship where entities in the same table are related to each other. For example, an employee may have a manager who is also an employee.
+		- Participation
+			- Shown by double line for full participation i.e. at least one of the object must exist or single line for partial where the object can exist independently of each other
 
 # ERD/EERD
 
