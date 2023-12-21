@@ -332,6 +332,9 @@ Why SQLi Works
 
 # Transaction Processing
 Transaction is an atomic unit of work that consists of a series of DB operations. Due to its atomicity Transactions adhere to the ACID properties
+- Atomicity - Each transaction is treated as a single, indivisible unit of work. All of the changes in the transaction are committed or not at all
+- Consistency - Each transaction brings the database from one valid state to another. Must satisfy set of integrity constraints before and after a transaction.
+- Isolation - 
 Example:
 - User sends a query that transfers 400,000 from checking to savings
 - Database sees it like this:
@@ -343,14 +346,13 @@ Example:
 	- write(Savings)
 
 Transaction states:
-- Active: Inital state where operations are performed
-- Partially Committed: Transaction is executed successfully, and changes are temporarily recorded but not yet made permanent
-- Committed: Transaction has ben successfully completed, changes are permanently saved
-- Aborted/Rolled Back : Transaction stopped due to an error, changes undone
+- BEGIN_TRANSACTION: Start of transaction
+- READ/WRITE: Two possible operations on data
+- END_TRANSACTION: End of read/write operations. Verify data is modified as expected
+- COMMIT_TRANSACTION: Successful end of transaction
+- ROLLBACK: Unsuccessful end of transaction. Revert changes
 
-#### Parsing
-#### Query Optimization
-#### Execution: Transaction Initiation
+
 
 ---
 # Data Modeling
