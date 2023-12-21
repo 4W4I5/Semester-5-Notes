@@ -344,6 +344,7 @@ Why SQLi Works
 
 # Relational Models
 # SQL
+###### Graded Class Activity (SQL Practice) | Mark as done here 
 # A1
 # S1 Past Paper
 ---
