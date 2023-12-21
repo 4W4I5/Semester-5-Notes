@@ -9,8 +9,8 @@
 | SQL Injection                    | :white_check_mark:                                 |
 | Transaction Processing           | :white_check_mark:                                 |
 | Starting from the first lectures | ThanosMemeBalancedAsItShouldBe.jpg  |
-| Data Modeling                    | :x:                                 |
-| ERD/EERD                         | :x:                                 |
+| Data Modeling                    | :white_check_mark:                                 |
+| ERD/EERD                         | :white_check_mark:                                 |
 | Relational Models                | :x:                                 |
 | SQL                              | :x:                                 |
 | Assignment1                      | :x:                                 |
