@@ -694,7 +694,7 @@ Mappings
 # A2
 # Functional Dependencies
 # Normalization
-# Relational Alegbra
+# Relational Algebra
 # Query Optimization
 # S2 Past Paper
 # A3, A4, A5
