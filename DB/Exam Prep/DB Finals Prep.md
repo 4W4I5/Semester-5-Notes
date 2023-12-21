@@ -335,23 +335,34 @@ Transaction is an atomic unit of work that consists of a series of DB operations
 - Atomicity - Each transaction is treated as a single, indivisible unit of work. All of the changes in the transaction are committed or not at all
 - Consistency - Each transaction brings the database from one valid state to another. Must satisfy set of integrity constraints before and after a transaction.
 - Isolation - Each transaction is not aware of other transactions until commit. Ensures the result is such that of if the transactions had be executed serially instead of in parallel
-- Durability - 
-Example:
-- User sends a query that transfers 400,000 from checking to savings
-- Database sees it like this:
-	- read(Checking)
-	- read(Savings)
-	- sub 400,000 from Checking
-	- add 400,000 to Saving
-	- write(Checking)
-	- write(Savings)
+- Durability - Once a transaction is committed its effects are permanent. Changes are stored to disk once committed
 
 Transaction states:
 - BEGIN_TRANSACTION: Start of transaction
-- READ/WRITE: Two possible operations on data
-- END_TRANSACTION: End of read/write operations. Verify data is modified as expected
+- READ/WRITE: Two possible operations on data. Abort will trigger rollback
+	- READ: reads value from db. It is a safe operation
+	- WRITE: write to db. Potentially vulnerable operation as db is modified
+		- Read-Write Conflict: 3 Problems due to multiple users using the DB at the same time
+			- Lost Updates:
+			- Dirty Read (Temporary Update):
+			- Incorrect Summary: 
+- END_TRANSACTION: End of read/write operations. Verify data is modified as expected. Transactions are considered partially committed at this stage. Abort will trigger rollback
 - COMMIT_TRANSACTION: Successful end of transaction
 - ROLLBACK: Unsuccessful end of transaction. Revert changes
+Example:
+- User sends a query that transfers 400,000 from checking to savings
+- Database sees it like this:
+	- BEGIN_TRANSACTION
+	- READ(Checking)
+	- READ(Savings)
+	- sub 400,000 from Checking
+	- add 400,000 to Saving
+	- WRITE(Checking)
+	- WRITE(Savings)
+	- END_TRANSACTION
+	- COMMIT_TRANSACTION if successful, else ROLLBACK
+
+
 
 
 
