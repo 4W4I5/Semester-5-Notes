@@ -498,7 +498,7 @@ DB ROLLBACK
 
    
 ---
-# Data Modeling
+# Data Modeling + ERD/EERD
 ## Basic stuff
 - Data = Raw Facts
 	- Volume, Velocity and Variety
@@ -605,9 +605,11 @@ DB ROLLBACK
 			- Shown by double line for full participation i.e. at least one of the object must exist or single line for partial where the object can exist independently of each other
 
 
-# ERD/EERD
+## EERD
+- Generalization approach –some attributes can be common or not. Consist of subclasses and superclass.
+	- D -> disjoint i.e. a person cannot be all three entities at the same time
+	- O -> overlapping i.e. a person can be all three entities at the same time. Person has total participation because a parent will at least have a parent (dead/alive)
 
-(NOTE:: Do Lab tasks as well yaad se)
 
 ## Book Questions for both ERD and Datamodelling
 - **Discuss the role of a high-level data model in the database design process.**
