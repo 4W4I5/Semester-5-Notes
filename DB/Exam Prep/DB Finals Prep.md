@@ -343,9 +343,28 @@ Transaction states:
 	- READ: reads value from db. It is a safe operation
 	- WRITE: write to db. Potentially vulnerable operation as db is modified
 		- Read-Write Conflict: 3 Problems due to multiple users using the DB at the same time
-			- Lost Updates:
-			- Dirty Read (Temporary Update):
-			- Incorrect Summary: 
+			- Lost Update:
+				- Scenario:
+					- Transaction A reads a value from a database.
+					- Transaction B reads the same value.
+					- Transaction A updates and writes the value back to the database.
+					- Transaction B updates and writes the same value back to the database, overwriting the changes made by Transaction A.
+				- Result:
+					- The changes made by Transaction A are lost, and the final value in the database reflects only the changes made by Transaction B.
+			- Temporary Inconsistency (Dirty Read):
+				- Scenario:
+					- Transaction A updates a value in the database but has not yet committed the changes.
+					- Transaction B reads the updated value before Transaction A commits.
+					- Transaction A decides to roll back its changes.
+				- Result:
+					- Transaction B has read a value that was temporarily inconsistent and was later rolled back. This can lead to inaccurate information being used by Transaction B.
+			- Inconsistent Retrieval (Non-repeatable Read):
+				- Scenario:
+					- Transaction A reads a value from the database.
+					- Transaction B updates and commits changes to the same value.
+					- Transaction A reads the same value again.
+				- Result:
+					- The value read by Transaction A in the second read is different from the value it read in the first read. The inconsistency arises because the value was updated by Transaction B between the two reads.
 - END_TRANSACTION: End of read/write operations. Verify data is modified as expected. Transactions are considered partially committed at this stage. Abort will trigger rollback
 - COMMIT_TRANSACTION: Successful end of transaction
 - ROLLBACK: Unsuccessful end of transaction. Revert changes
@@ -362,6 +381,15 @@ Example:
 	- END_TRANSACTION
 	- COMMIT_TRANSACTION if successful, else ROLLBACK
 
+
+DB ROLLBACK
+- Logs are used to rollback in event of failure.
+- Contains each list of transactions with each step performed. Restores DB to last point of consistency
+	- Checkpoints are used to declare a point where dbms was consistent i.e. clear before performing a transaction in order to save log space in case of failure
+	- Schedule is arranged to execute transactions in order. A schedule contains multiple transactions with the operations interleaved into one
+		- T1: read(x), write(x), read(y), write(y), c1
+		- T2: read(x), write(x), c2
+		- Schedule S where t1 & t2 are interleaved: read(x), read(x), write()
 
 
 
