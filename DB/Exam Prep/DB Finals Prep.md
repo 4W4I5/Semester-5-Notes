@@ -1,5 +1,6 @@
 > [!NOTE]
 >Well this is a lot
+>Update: Not worth the effort of noting everything down. Yellow triangles mean stuff that i excluded
 
 | Topic                            | Status                              |
 | -------------------------------- | ----------------------------------- |
@@ -16,12 +17,12 @@
 | Assignment1                      | :warning:                                 |
 | Sessional 1 Past Paper           | :warning:                                 |
 | Assignment2                      | :warning:                                 |
-| Functional Dependencies          | :warning:                                 |
+| Functional Dependencies          | :x:                                 |
 | Normalization                    | :x:                                 |
 | Relational Alegbra               | :x:                                 |
 | Query Optimization               | :x:                                 |
-| Sessional 2 Past Paper           | :x:                                 |
-| Assignment3,4,5                  | :x:                                 |
+| Sessional 2 Past Paper           | :warning:                                 |
+| Assignment3,4,5                  | :warning:                                 |
 
 <!--
 :white_check_mark:
