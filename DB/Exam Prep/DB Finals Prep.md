@@ -1100,6 +1100,10 @@ DB ROLLBACK
 These questions cover various aspects of database design, normalization, and the reasons behind certain principles and practices.
 
 # Normalization
+
+
+# Relational Algebra
+
 1. **Selection (σ):**
     - Purpose: Retrieves rows that satisfy a specified condition.
     - Syntax: σ_condition(relation)
@@ -1148,7 +1152,71 @@ These questions cover various aspects of database design, normalization, and the
 
     - A query language is relationally complete if it can express all queries expressible in relational algebra. SQL is an example of a relationally complete language.
 
-# Relational Algebra
+### Converting SQL into relational alegbra
+Certainly! Let's consider an example SQL query involving a triple join:
+
+### 1. **Example SQL Query:**
+```sql
+SELECT A, B, D
+FROM Table1
+JOIN Table2 ON Table1.ID = Table2.ID
+JOIN Table3 ON Table2.ID = Table3.ID
+WHERE C > 10 AND E = 'XYZ';
+```
+
+### 2. **Relational Algebra Operations:**
+```plaintext
+π_{A, B, D} (σ_{C > 10 AND E = 'XYZ'} (Table1 ⨝_{Table1.ID = Table2.ID} Table2 ⨝_{Table2.ID = Table3.ID} Table3))
+```
+
+### 3. **Expression Tree:**
+```plaintext
+                   π_{A, B, D}
+                       |
+                   σ_{C > 10 AND E = 'XYZ'}
+                       |
+            Table1 ⨝_{Table1.ID = Table2.ID} Table2 ⨝_{Table2.ID = Table3.ID} Table3
+```
+
+### 4. **Optimize the Expression Tree:**
+Optimizations can involve rearranging the order of joins, pushing down selections, and combining projections.
+
+**Optimized Tree:**
+```plaintext
+                      Table1
+                        |
+            σ_{C > 10 AND E = 'XYZ'}
+                        |
+ Table2 ⨝_{Table2.ID = Table3.ID} Table3
+                        |
+                   π_{A, B, D}
+```
+
+### 5. **Consider Indexing:**
+If indexes exist on columns involved in WHERE clauses or join conditions, leverage them for optimization.
+
+### 6. **Apply Join Optimizations:**
+Consider join order and algorithms for efficient execution.
+
+### 7. **Evaluate Cost and Selectivity:**
+Evaluate the cost of each operation and the selectivity of conditions to choose an efficient execution plan.
+
+### 8. **Final Optimized Tree:**
+```plaintext
+                   π_{A, B, D}
+                       |
+            σ_{C > 10 AND E = 'XYZ'}
+                        |
+                      Table1
+                        |
+ Table2 ⨝_{Table2.ID = Table3.ID} Table3
+```
+
+### 9. **Translate Back to Relational Algebra:**
+```plaintext
+π_{A, B, D} (σ_{C > 10 AND E = 'XYZ'} (Table1 ⨝_{Table2.ID = Table3.ID} Table2 ⨝_{Table1.ID = Table2.ID} Table3))
+```
+
 ###### Book questions
 **8.1. Operations of Relational Algebra:**
    - **Selection (σ):** Retrieves rows that satisfy a specified condition.
