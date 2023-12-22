@@ -1100,10 +1100,105 @@ DB ROLLBACK
 These questions cover various aspects of database design, normalization, and the reasons behind certain principles and practices.
 
 # Normalization
-###### Book questions
+1. **Selection (σ):**
+    - Purpose: Retrieves rows that satisfy a specified condition.
+    - Syntax: σ_condition(relation)
+2. **Projection (π):**
+    - Purpose: Retrieves specific columns from a relation.
+    - Syntax: π_attribute1, attribute2, ... (relation)
+3. **Union (∪):**
+    - Purpose: Combines tuples from two relations, eliminating duplicates.
+    - Syntax: relation1 ∪ relation2
+4. **Intersection (∩):**
+    - Purpose: Retrieves common tuples from two relations.
+    - Syntax: relation1 ∩ relation2
+5. **Difference (-):**
+    - Purpose: Retrieves tuples from one relation that do not appear in another.
+    - Syntax: relation1 - relation2
+6. **Cartesian Product (×):**
+    - Purpose: Combines all possible pairs of tuples from two relations.
+    - Syntax: relation1 × relation2
+7. **Rename (ρ):**
+    - Purpose: Renames attributes or relations to avoid naming conflicts.
+    - Syntax: ρ_newname(relation)
+8. **Join (⨝):**
+    - Purpose: Combines tuples from two relations based on a specified condition.
+    - Syntax: relation1 ⨝condition relation2
+9. **FUNCTION Operation:**
+    - Purpose: Applies a function to each tuple in a relation, generating a new relation with modified values.
+    - Syntax: FUNCTION(function, relation)
+10. **OUTER JOIN Operations:**
+    - Purpose: Preserves unmatched tuples during join operations.
+    - Types: LEFT OUTER JOIN, RIGHT OUTER JOIN, FULL OUTER JOIN.
+11. **OUTER UNION:**
+    - Purpose: Combines tuples from two relations, including unmatched tuples.
+    - Syntax: relation1 OUTER UNION relation2
+12. **Relational Calculus vs. Relational Algebra:**
+    - Relational Calculus: Declarative language specifying what to retrieve.
+    - Relational Algebra: Procedural language specifying how to retrieve.
+13. **Tuple vs. Domain Relational Calculus:**
+    - Tuple Relational Calculus: Specifies queries in terms of tuples.
+    - Domain Relational Calculus: Specifies queries in terms of domains or attributes.
+14. **Existential (∃) and Universal (∀) Quantifiers:**
+    - ∃ (Existential): Represents "there exists." Used to express conditions where at least one tuple satisfies a condition.
+    - ∀ (Universal): Represents "for all." Used to express conditions where all tuples satisfy a condition.
+15. **Safe Expression in Relational Calculus:**
+    - A safe expression ensures that the result is guaranteed to be a relation, avoiding constructs that could lead to an infinite or non-relational result.
+16. **Relationally Complete Query Language:**
+
+    - A query language is relationally complete if it can express all queries expressible in relational algebra. SQL is an example of a relationally complete language.
 
 # Relational Algebra
 ###### Book questions
+**8.1. Operations of Relational Algebra:**
+   - **Selection (σ):** Retrieves rows that satisfy a specified condition.
+   - **Projection (π):** Retrieves specific columns from a relation.
+   - **Union (∪):** Combines tuples from two relations, eliminating duplicates.
+   - **Intersection (∩):** Retrieves common tuples from two relations.
+   - **Difference (-):** Retrieves tuples from one relation that do not appear in another.
+   - **Cartesian Product (×):** Combines all possible pairs of tuples from two relations.
+   - **Rename (ρ):** Renames attributes or relations to avoid naming conflicts.
+   - **Join (⨝):** Combines tuples from two relations based on a specified condition.
+
+**8.2. Union Compatibility:**
+   - Union compatibility refers to the requirement that relations involved in UNION, INTERSECTION, and DIFFERENCE operations must have the same set of attributes, with corresponding attributes having the same or compatible domains.
+
+**8.3. Renaming Attributes:**
+   - Attribute renaming is necessary when specifying queries to avoid ambiguity, especially in cases where attributes with the same name exist in multiple relations.
+
+**8.4. Inner Join Operations:**
+   - Types include equijoin (natural join), theta join (based on a general condition), and semijoin. Theta join is required for expressing more complex join conditions.
+
+**8.5. Foreign Key in Join Operations:**
+   - Foreign keys play a role in specifying meaningful join operations by establishing relationships between tables. They define the conditions for combining tuples from different relations.
+
+**8.6. FUNCTION Operation:**
+   - The FUNCTION operation applies a function to each tuple in a relation, generating a new relation with modified values.
+
+**8.7. OUTER JOIN and OUTER UNION:**
+   - OUTER JOIN operations include LEFT OUTER JOIN, RIGHT OUTER JOIN, and FULL OUTER JOIN, preserving unmatched tuples. OUTER UNION combines tuples from two relations, including unmatched tuples.
+
+**8.8. Relational Calculus vs. Relational Algebra:**
+   - Relational calculus is a declarative language specifying what to retrieve, while relational algebra is a procedural language specifying how to retrieve. They are similar in that both are used for querying relational databases.
+
+**8.9. Tuple vs. Domain Relational Calculus:**
+   - Tuple relational calculus refers to specifying queries in terms of tuples, while domain relational calculus refers to specifying queries in terms of domains or attributes.
+
+**8.10. Existential and Universal Quantifiers:**
+   - ∃ (Existential Quantifier): Represents "there exists." Used to express conditions where at least one tuple satisfies a condition.
+   - ∀ (Universal Quantifier): Represents "for all." Used to express conditions where all tuples satisfy a condition.
+
+**8.11 and 8.12. Tuple and Domain Calculus Terms:**
+   - Tuple Variable, Range Relation, Atom, Formula, and Expression have similar meanings in both tuple and domain calculus.
+
+**8.13. Safe Expression in Relational Calculus:**
+   - A safe expression in relational calculus is one where the result is guaranteed to be a relation. It avoids constructs that could lead to an infinite or non-relational result.
+
+**8.14. Relationally Complete Query Language:**
+   - A query language is considered relationally complete if it can express all queries expressible in relational algebra. SQL is an example of a relationally complete language.
+
+These responses cover the various aspects of relational algebra and calculus as outlined in the provided questions.
+
 
 # Query Optimization
 ###### Book questions
