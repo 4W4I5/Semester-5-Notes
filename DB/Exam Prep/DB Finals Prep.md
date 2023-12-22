@@ -741,18 +741,163 @@ DB ROLLBACK
                 - Contributes to uniqueness when combined with other attributes.
                 - Can be part of a candidate key to ensure data integrity.
 ## Mappings
-- Regular entity with simple attributes
-- Regular entity with composite attributes
-- Regular entity with multi-valued attributes
-- Regular entity with derived attributes
-- Weak Entity
-- Unary Relationships
-- Binary 1:m Relationship
-- Binary M:M Relationship
-- Binary 1:1 Relationship with partial participation on both sides
-- Binary 1:1 Relationship with total participation on both sides
-- N-ary number of relations
+### Regular Entity with Simple Attributes
+- **Relational Notation:** EntityName(**Attribute1**, Attribute2, Attribute3)
+- **Example Table:**
+  | Attribute1 | Attribute2 | Attribute3 |
+  |------------|------------|------------|
+  | Value1     | Value2     | Value3     |
+- **Note:** Each attribute represents a single, indivisible piece of data.
+
+### Regular Entity with Composite Attributes
+- **Relational Notation:** EntityName(**CompositeAttr1**, CompositeAttr2, Attribute3)
+- **Example Table:**
+  | CompositeAttr1 | CompositeAttr2 | Attribute3 |
+  |----------------|----------------|------------|
+  | (A, B)         | Value2         | Value3     |
+- **Note:** Composite attributes are made up of multiple sub-attributes.
+
+### Regular Entity with Multi-valued Attributes
+- **Relational Notation:** EntityName(**Attribute1**, MultiValuedAttr, Attribute3)
+- **Example Table:**
+  | Attribute1 | MultiValuedAttr | Attribute3 |
+  |------------|-----------------|------------|
+  | Value1     | {A, B, C}       | Value3     |
+- **Note:** Multi-valued attributes can have multiple values for a single entity.
+
+### Regular Entity with Derived Attributes
+- **Relational Notation:** EntityName(**Attribute1**, Attribute2, DerivedAttr)
+- **Example Table:**
+  | Attribute1 | Attribute2 | DerivedAttr |
+  |------------|------------|-------------|
+  | Value1     | Value2     | Calculated  |
+- **Note:** Derived attributes are calculated from other attributes.
+
+### Weak Entity
+- **Relational Notation:** WeakEntity(**PartialKey**, Attribute2, Attribute3)
+- **Example Table:**
+  | PartialKey | Attribute2 | Attribute3 |
+  |------------|------------|------------|
+  | Value1     | Value2     | Value3     |
+- **Note:** Weak entities depend on a strong entity for identification.
+
+### Unary Relationships
+- **Relational Notation:** EntityName(**Attribute1**, ... , **Foreign_Key_To_Self**)
+- **Example Table:**
+  | Attribute1 | ... | Foreign_Key_To_Self |
+  |------------|-----|---------------------|
+  | Value1     | ... | Value1              |
+- **Note:** Unary relationships involve a foreign key referencing the same entity.
+
+### Binary 1:m Relationship
+- **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | Entity2(**Foreign_Key_To_Entity1**, AttributeX)
+- **Example Table:**
+  | Primary_Key | Attribute2 |    | Foreign_Key_To_Entity1 | AttributeX |
+  |-------------|------------|----|-------------------------|------------|
+  | Value1      | Value2     |    | Value1                  | ValueX     |
+  | Value1      | Value2     |    | Value1                  | ValueY     |
+- **Note:** The 1:m relationship involves one entity having multiple related entities.
+
+### Binary M:M Relationship
+- **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | JunctionTable(**Foreign_Key1**, **Foreign_Key2**, AttributeX)
+- **Example Table:**
+  | Primary_Key | Attribute2 |    | Foreign_Key1 | Foreign_Key2 | AttributeX |
+  |-------------|------------|----|--------------|--------------|------------|
+  | Value1      | Value2     |    | Value1       | ValueA       | ValueX     |
+  | Value1      | Value2     |    | Value1       | ValueB       | ValueY     |
+- **Note:** The M:M relationship requires a junction table to manage associations.
+
+### Binary 1:1 Relationship with Partial Participation on Both Sides
+- **Relational Notation:** Entity1(**Primary_Key**, Attribute2, Foreign_Key_To_Entity2) | Entity2(**Primary_Key**, AttributeX, Foreign_Key_To_Entity1)
+- **Example Table:**
+  | Primary_Key | Attribute2 | Foreign_Key_To_Entity2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
+  |-------------|------------|-------------------------|----|-------------|------------|-------------------------|
+  | Value1      | Value2     | ValueX                  |    | ValueX      | ValueA     | Value1                  |
+- **Note:** In a 1:1 relationship, both sides have a foreign key to the other.
+
+### Binary 1:1 Relationship with Total Participation on Both Sides
+- **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | Entity2(**Primary_Key**, AttributeX, Foreign_Key_To_Entity1)
+- **Example Table:**
+  | Primary_Key | Attribute2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
+  |-------------|------------|----|-------------|------------|-------------------------|
+  | Value1      | Value2     |    | ValueX      | ValueA     | Value1                  |
+- **Note:** Total participation means every entity on both sides must be involved in the relationship.
+
+### N-ary Number of Relations
+- **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | Entity2(**Primary_Key**, AttributeX, Foreign_Key_To_Entity1) | ... | EntityN(**Primary_Key**, AttributeN, Foreign_Key_To_Entity1, ... , Foreign_Key_To_EntityN-1)
+- **Example Table:**
+  | Primary_Key | Attribute2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 | ... | Primary_Key | AttributeN | Foreign_Key_To_Entity1 |
+
+ ... | Foreign_Key_To_EntityN-1 |
+  |-------------|------------|----|-------------|------------|-------------------------|---|-------------|------------|-------------------------|---|---------------------------|
+  | Value1      | Value2     |    | ValueX      | ValueA     | Value1                  |   | ValueN      | ValueN-1   | Value1                  |   | ValueN-1                  |
+- **Note:** N-ary relationships involve more than two entities in the relationship.
+
+
+
+
+###### Book questions
+- **Define the following terms as they apply to the relational model of data:**
+  - - **Domain:**
+    - The set of allowable values for an attribute.
+  - **Attribute:**
+    - A property or characteristic of an entity represented in a table.
+  - **N-tuple:**
+    - A row or record in a relation containing ordered values.
+  - **Relation Schema:**
+    - Describes the structure of a relation, including attributes and their domains.
+  - **Relation State:**
+    - The current set of tuples in a relation.
+  - **Degree of a Relation:**
+    - The number of attributes in a relation.
+  - **Relational Database Schema:**
+    - A collection of relation schemas defining the structure of a database.
+  - **Relational Database State:**
+    - The current set of relations in a database.
+
+- **Why are tuples in a relation not ordered?**
+  - Tuples represent unordered sets of values, and the relational model focuses on the existence of relationships rather than the order of elements within a tuple.
+
+- **Why are duplicate tuples not allowed in a relation?**
+  - Duplicate tuples would violate the uniqueness property of a relation, making it challenging to ensure consistency and causing ambiguity in data retrieval.
+
+- **What is the difference between a key and a superkey?**
+  - - **Key:**
+    - A minimal set of attributes that uniquely identifies a tuple.
+  - **Superkey:**
+    - A set of attributes that uniquely identifies a tuple, possibly containing more attributes than necessary.
+
+- **Why do we designate one of the candidate keys of a relation to be the primary key?**
+  - Designating one candidate key as the primary key simplifies data retrieval, enforces uniqueness, and serves as a reference for foreign keys in other relations.
+
+- **Discuss the characteristics of relations that make them different from ordinary tables and files.**
+  - Relations are unordered sets of tuples, have no duplicate tuples, and follow a specific schema, ensuring data consistency and facilitating relational operations.
+
+- **Discuss the various reasons that lead to the occurrence of NULL values in relations.**
+  - NULL values may occur due to unknown or undefined information, optional attributes, or attributes with missing or inapplicable values.
+
+- **Discuss the entity integrity and referential integrity constraints. Why is each considered important?**
+  - - **Entity Integrity:**
+    - Ensures that no primary key attribute in a relation has a NULL value, maintaining uniqueness.
+  - **Referential Integrity:**
+    - Ensures that foreign key values in a relation correspond to existing primary key values in another relation, preserving relationships.
+  - **Importance:**
+    - Both constraints maintain data integrity, preventing inconsistencies and ensuring accurate relationships between entities.
+
+- **Define foreign key. What is this concept used for?**
+  - - **Foreign Key:**
+    - An attribute or set of attributes in one relation that refers to the primary key in another relation.
+  - **Usage:**
+    - Establishes relationships between tables, enforcing referential integrity.
+
+- **What is a transaction? How does it differ from an Update operation?**
+  - - **Transaction:**
+    - A sequence of one or more database operations executed as a single unit.
+  - **Difference:**
+    - An update operation is a single action, while a transaction is a set of operations executed atomically to maintain consistency and integrity in the database.
+
 # SQL
+
 ## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
 # S1 Past Paper
