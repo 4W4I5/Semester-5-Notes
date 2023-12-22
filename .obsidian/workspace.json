@@ -43,8 +43,7 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -194,7 +193,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "6666a26a96429451",
+  "active": "d0b4f7ace758eb4a",
   "lastOpenFiles": [
     "Untitled 2.md",
     "DB/Exam Prep/DB Finals Prep.md",

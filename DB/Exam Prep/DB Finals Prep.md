@@ -1269,6 +1269,19 @@ These responses cover the various aspects of relational algebra and calculus as 
 
 
 # Query Optimization
+Heuristic Optimization:
+- Perform selection(σ) foremost and restrictive joins only
+	- Decreases num of records required in the query
+- Perform projection(Π) asap
+	- Decreases num of cols in the query
+- Relational Algebra transformation
+	- Cascade of selection: σ<sub>p and q and r</sub> (R) = σ<sub>p</sub>(σ<sub>q</sub>(σ<sub>r</sub>(R)))
+		- Conjunctive selection operations can cascade into individual selection operations
+	- Cascade of projection: Π<sub>p</sub>(Π<sub>q</sub>(Π<sub>r</sub>(R))) = Π<sub>p</sub>(R)
+		- Only last in the sequence is required
+	- Commutatively of selection: σ<sub>p</sub>(σ<sub>q</sub>)) = σ<sub>q</sub>(σ<sub>p</sub>))
+		- A sequence of selection operations are commutative
+
 ###### Book questions
 
 ---
