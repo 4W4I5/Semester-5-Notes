@@ -938,7 +938,37 @@ DB ROLLBACK
         - **Insert_Into_Select:** Allows multiple rows to be copied from one or more tables to another
     - **Update:** Modify all existing records (rows) in a table unless WHERE is specified.
     - **Delete:** Remove all records (rows) from a table unless WHERE is specified. if WHERE clause is not specified all records in the table will be deleted
+- Select
+	- Clauses
+		- FROM - Required, Specifies table(s) to be used
+		- WHERE - Filters rows. Condition can have
+			- Comparison operators
+			- Logical operators
+			- Arithmetic operators
+			- SubClauses
+				- LIKE
+				- IN
+				- IS
+		- GROUP BY - Form groups of rows with the same column value
+		- HAVING - Filters groups formed by GROUP BY to some condition
+		- ORDER BY - Specifies order of output to ASC or DESC
+		- DISTINCT - Returns unique rows, removes duplicates. Affected by SUM/AVG but not MIN/MAX
+	- Commands
+		- Computing inline
+			- SELECT empno, empname, sal\*12 FROM emp
+		- Renaming inline after computation
+			- SELECT empno, empname, sal\*12 salary FROM emp
+		- Set Membership search
+			- SELECT empno, empname, job, sal FROM emp WHERE job IN ('CLERK', 'MANAGER')
+	- Pattern matching
+		- Follows regex
+			- % matches any N number of charecters
+			- \_ Any single charecter
+				- Example \%dd\% will match wherever it can find a string containing dd
+			- Use LIKE clause for this
 
+#### Joins
+- 
 ## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
 # S1 Past Paper
