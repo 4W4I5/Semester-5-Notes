@@ -1,6 +1,6 @@
 > [!NOTE]
 >Well this is a lot
->Update: Not worth the effort of noting everything down. Yellow triangles mean stuff that i excluded
+>Update: Not worth the effort of noting everything down. Yellow triangles mean stuff that i excluded or did not put that much effort in (gpt zindabad)
 
 | Topic                            | Status                              |
 | -------------------------------- | ----------------------------------- |
@@ -17,10 +17,10 @@
 | Assignment1                      | :warning:                                 |
 | Sessional 1 Past Paper           | :warning:                                 |
 | Assignment2                      | :warning:                                 |
-| Functional Dependencies          | :x:                                 |
-| Normalization                    | :x:                                 |
-| Relational Alegbra               | :x:                                 |
-| Query Optimization               | :x:                                 |
+| Functional Dependencies          | :warning:                                 |
+| Normalization                    | :warning:                                 |
+| Relational Alegbra               | :warning:                                 |
+| Query Optimization               | :warning:                                 |
 | Sessional 2 Past Paper           | :warning:                                 |
 | Assignment3,4,5                  | :warning:                                 |
 
@@ -1054,15 +1054,58 @@ DB ROLLBACK
   ```
 - **Use Case:** Use when you want to compare rows within the same table, such as in hierarchical structures.
 
-## Graded Class Activity (SQL Practice) | Mark as done here
-# A1
-# S1 Past Paper
 ---
-# A2
 # Functional Dependencies
+###### Book questions
+**14.1. Attribute Semantics:**
+
+- Attribute semantics refer to the meaning or interpretation associated with each attribute in a relation. Informally, a good relation schema should have attributes whose semantics are clear and well-defined, making it easier for users to understand and use the database.
+
+**14.2. Anomalies (Insertion, Deletion, Modification):**
+
+- Anomalies refer to inconsistencies that can occur in a database. For example:
+    - Insertion Anomaly: Adding data may result in incomplete entries if not all attributes are provided.
+    - Deletion Anomaly: Deleting a record may unintentionally remove information about other entities.
+    - Modification Anomaly: Updating data may lead to inconsistencies if not all related records are modified.
+- These anomalies are considered bad as they can lead to data integrity issues and make it difficult to maintain and manipulate the database.
+
+**14.3. NULLs in Relations:**
+
+- NULLs should be avoided to prevent spurious tuples (rows with incomplete information) and maintain data consistency. Spurious tuples can arise when NULLs are incorrectly interpreted or handled, leading to inaccurate query results.
+
+**14.4. Guidelines for Relation Schema Design:**
+
+- Guidelines include avoiding redundancy, ensuring attribute semantics are clear, and designing with minimal NULL values. Violation can lead to data anomalies, increased storage requirements, and complexity in query formulation.
+
+**14.5. Functional Dependency:**
+
+- A functional dependency is a relationship between two sets of attributes in a relation. Information defining functional dependencies can come from the real-world meaning of attributes, business rules, or user requirements.
+
+**14.6. Inferring Functional Dependency:**
+
+- Functional dependencies cannot be automatically inferred from a particular relation state because the state only represents observed data, not necessarily all possible data.
+
+**14.7 to 14.12: Normalization Forms (1NF to BCNF):**
+
+- These questions discuss the evolution of normal forms from 1NF to BCNF, highlighting the progression toward eliminating redundancy and undesirable dependencies in relations.
+
+**14.13 to 14.17: Advanced Normal Forms (4NF to 5NF):**
+
+- These questions cover multivalued dependencies, fourth normal form, join dependency, and fifth normal form (also known as project-join normal form or PJNF).
+
+**14.18. Practical Database Designs and BCNF:**
+
+- Practical designs typically aim for Boyce-Codd Normal Form (BCNF) because it eliminates certain anomalies and is often sufficient for maintaining data integrity. Going beyond BCNF may not provide significant practical benefits in many cases.
+
+These questions cover various aspects of database design, normalization, and the reasons behind certain principles and practices.
+
 # Normalization
+###### Book questions
+
 # Relational Algebra
+###### Book questions
+
 # Query Optimization
-# S2 Past Paper
-# A3, A4, A5
+###### Book questions
+
 ---
