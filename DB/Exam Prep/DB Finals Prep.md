@@ -674,7 +674,7 @@ DB ROLLBACK
   - _(Discussion not provided due to the volume of information.)_
 
 # Relational Models
-### Keys
+## Keys
 - Keys as a Determinant
     - Key is a combination of one or more attributes that is used to identify a record related to an entity
     - based on a concept known as determination, it determines what attributes a (forgot, fill in with slides)
@@ -740,7 +740,7 @@ DB ROLLBACK
             - ADV:
                 - Contributes to uniqueness when combined with other attributes.
                 - Can be part of a candidate key to ensure data integrity.
-### Mappings
+## Mappings
 - Regular entity with simple attributes
 - Regular entity with composite attributes
 - Regular entity with multi-valued attributes
