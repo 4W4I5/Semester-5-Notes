@@ -897,6 +897,30 @@ DB ROLLBACK
     - An update operation is a single action, while a transaction is a set of operations executed atomically to maintain consistency and integrity in the database.
 
 # SQL
+- DDL
+    - **Create:** Create new database objects like tables and/or schemas
+	 - **COMMAND**: CREATE DBNAME CASCADE | RESTRICT
+		 - Restrict, schema must be empty i.e. unique table
+		 - Cascade, dropping one table in schema drops the entire thing
+        - **Constraint:** A rule or condition applied to a table column to maintain data integrity.
+            - **Not Null:** Column cannot contain NULL values, meaning it must always have a value.
+            - **Unique:** All values in a column are unique across all rows in a table, preventing duplicate entries.
+            - **Primary Key:** A combination of the "Unique" and "Not Null" constraints. It uniquely identifies each row in a table and does not allow NULL values.
+            - **Foreign Key:** A constraint that establishes a link between two tables. It ensures that the values in a column of one table match the values in a column of another table, typically referring to a primary key.
+            - **Check:** Imposes a condition or rule on the values that can be inserted or updated in a column, ensuring data consistency.
+            - **Default:** Specifies a default value for a column when no value is provided during an insertion.
+    - **Alter:** Modify the structure of existing database objects.
+	    - Clauses
+		    - Add/Drop, Modify
+		- **COMMAND**: ALTER TABLE ADD/DROP/MODIFY DATA
+    - **Drop:** Delete or remove database objects like tables or indexes.
+- DML
+    - **Insert_Into:** Add new records (rows) into a table.
+        - A DBMS not supporting referential integrity will allow insertion even if the referential integrity constraint is violated.
+            - If a NOT NULL is enforced then an insert command with a null attribute will be rejected
+        - **Insert_Into_Select:** Allows multiple rows to be copied from one or more tables to another
+    - **Update:** Modify all existing records (rows) in a table unless WHERE is specified.
+    - **Delete:** Remove all records (rows) from a table unless WHERE is specified. if WHERE clause is not specified all records in the table will be deleted
 
 ## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
