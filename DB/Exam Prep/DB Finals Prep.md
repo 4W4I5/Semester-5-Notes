@@ -12,11 +12,11 @@
 | Data Modeling                    | :white_check_mark:                                 |
 | ERD/EERD                         | :white_check_mark:                                 |
 | Relational Models                | :white_check_mark:                                 |
-| SQL                              | :warning:                                 |
-| Assignment1                      | :x:                                 |
-| Sessional 1 Past Paper           | :x:                                 |
-| Assignment2                      | :x:                                 |
-| Functional Dependencies          | :x:                                 |
+| SQL                              | :white_check_mark:                                 |
+| Assignment1                      | :warning:                                 |
+| Sessional 1 Past Paper           | :warning:                                 |
+| Assignment2                      | :warning:                                 |
+| Functional Dependencies          | :warning:                                 |
 | Normalization                    | :x:                                 |
 | Relational Alegbra               | :x:                                 |
 | Query Optimization               | :x:                                 |
@@ -967,8 +967,92 @@ DB ROLLBACK
 				- Example \%dd\% will match wherever it can find a string containing dd
 			- Use LIKE clause for this
 
-#### Joins
-- 
+## SQL Joins and Examples
+
+### Inner Join:
+- **Description:** Returns rows where there is a match in both tables based on the specified condition.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+  ```
+- **Example:**
+  ```sql
+  SELECT employees.emp_id, employees.emp_name, departments.dept_name
+  FROM employees
+  INNER JOIN departments ON employees.dept_id = departments.dept_id;
+  ```
+- **Use Case:** Use when you want to retrieve only the rows with matching values in both tables.
+
+### Left Join (or Left Outer Join):
+- **Description:** Returns all rows from the left table and matching rows from the right table. Non-matching rows from the right table contain NULL values.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+  ```
+- **Example:**
+  ```sql
+  SELECT customers.customer_id, customers.customer_name, orders.order_date
+  FROM customers
+  LEFT JOIN orders ON customers.customer_id = orders.customer_id;
+  ```
+- **Use Case:** Use when you want to retrieve all rows from the left table and matching rows from the right table.
+
+### Right Join (or Right Outer Join):
+- **Description:** Returns all rows from the right table and matching rows from the left table. Non-matching rows from the left table contain NULL values.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
+  ```
+- **Example:**
+  ```sql
+  SELECT orders.order_id, orders.order_date, customers.customer_name
+  FROM orders
+  RIGHT JOIN customers ON orders.customer_id = customers.customer_id;
+  ```
+- **Use Case:** Use when you want to retrieve all rows from the right table and matching rows from the left table.
+
+### Full Join (or Full Outer Join):
+- **Description:** Returns all rows when there is a match in either the left or the right table. Non-matching rows contain NULL values.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;
+  ```
+- **Example:**
+  ```sql
+  SELECT employees.emp_id, employees.emp_name, departments.dept_name
+  FROM employees
+  FULL JOIN departments ON employees.dept_id = departments.dept_id;
+  ```
+- **Use Case:** Use when you want to retrieve all rows with or without matches in both tables.
+
+### Cross Join:
+- **Description:** Returns the Cartesian product of rows from both tables. It matches every row from the left table with every row from the right table.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 CROSS JOIN table2;
+  ```
+- **Example:**
+  ```sql
+  SELECT employees.emp_id, employees.emp_name, departments.dept_name
+  FROM employees
+  CROSS JOIN departments;
+  ```
+- **Use Case:** Use when you want to generate all possible combinations of rows from both tables.
+
+### Self Join:
+- **Description:** Joins a table with itself. Useful when working with hierarchical data or comparing rows within the same table.
+- **Syntax:**
+  ```sql
+  SELECT * FROM table1 t1, table1 t2 WHERE t1.column = t2.column;
+  ```
+- **Example:**
+  ```sql
+  SELECT e1.emp_name AS employee, e2.emp_name AS supervisor
+  FROM employees e1
+  INNER JOIN employees e2 ON e1.supervisor_id = e2.emp_id;
+  ```
+- **Use Case:** Use when you want to compare rows within the same table, such as in hierarchical structures.
+
 ## Graded Class Activity (SQL Practice) | Mark as done here
 # A1
 # S1 Past Paper
