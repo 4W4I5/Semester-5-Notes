@@ -1506,6 +1506,11 @@ Heuristic Optimization:
 	- Commutatively of selection: σ<sub>p</sub>(σ<sub>q</sub>)) = σ<sub>q</sub>(σ<sub>p</sub>))
 		- A sequence of selection operations are commutative
 
+Logical Optimization:
+- Push down selections and projections to have them occur eariler
+	- Can fail if selection is very expensive
+	- Projection could be a waste of effort but that is rare
+
 
 
 ---
