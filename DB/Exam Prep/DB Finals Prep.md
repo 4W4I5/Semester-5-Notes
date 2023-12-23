@@ -1270,7 +1270,7 @@ These responses cover the various aspects of relational algebra and calculus as 
 
 # Query Optimization
 Heuristic Optimization:
-- Perform selection(σ) foremost and restrictive joins only
+- Perform selection(σ) foremost and restrictive joins only as early as possible
 	- Decreases num of records required in the query
 - Perform projection(Π) asap
 	- Decreases num of cols in the query
