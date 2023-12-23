@@ -1282,6 +1282,99 @@ Heuristic Optimization:
 	- Commutatively of selection: σ<sub>p</sub>(σ<sub>q</sub>)) = σ<sub>q</sub>(σ<sub>p</sub>))
 		- A sequence of selection operations are commutative
 
+
+
+
+
+Creating a visual representation of a query tree can be complex without a specific query to work with. However, I'll provide a simple illustrative example using a hypothetical query and showcase how the guidelines could be applied in a query tree.
+
+Let's consider a query involving three tables, A, B, and C, with selection and projection operations:
+
+```sql
+SELECT A, B
+FROM A, B, C
+WHERE A.x = B.y AND B.z > 10 AND C.w = 'abc';
+```
+
+#### Initial Query Tree:
+```
+   ×
+  / \
+ A   ×
+    / \
+   B   C
+```
+
+#### Applying the Guidelines Step by Step:
+
+1. **Perform Selection Operations as Early as Possible:**
+   - Move the selection operations closer to the leaf nodes.
+
+   ```
+       ×
+      / \
+  σ_{A.x=B.y}  ×
+             / \
+            B   C
+   ```
+
+2. **Keep Predicates on the Same Relation Together:**
+   - Group together selection conditions on the same relation.
+
+   ```
+       ×
+      / \
+  σ_{A.x=B.y}  ×
+             / \
+    σ_{B.z>10}  C
+               ```
+
+3. **Combine Cartesian Product with Subsequent Selection Whose Predicate Represents Join Condition into a Join Operation:**
+   - Combine the Cartesian product with the subsequent selection into a single join operation.
+
+   ```
+       ⨝_{A.x=B.y} 
+         / \
+        A   ×
+           / \
+    σ_{B.z>10}  C
+   ```
+
+4. **Use Associativity of Binary Operations to Rearrange Leaf Nodes with Most Restrictive Selection Operations First:**
+   - Rearrange operations to place the most restrictive selection closer to the leaf node.
+
+   ```
+       ⨝_{A.x=B.y} 
+         / \
+  σ_{B.z>10}  ×
+             / \
+            A   C
+   ```
+
+5. **Perform Projection as Early as Possible:**
+   - Apply projection operations early in the query plan.
+
+   ```
+       π_{A, B} 
+         |
+       ⨝_{A.x=B.y} 
+         / \
+  σ_{B.z>10}  ×
+             / \
+            A   C
+   ```
+
+6. **Keep Projection Attributes on the Same Relations Together:**
+   - Group together projection operations involving the same relations.  ```
+       π_{A, B} 
+         |
+       ⨝_{A.x=B.y} 
+         / \
+            A 
+   ```
+
+The final query tree reflects the application of the guidelines step by step. Each transformation simplifies the tree and optimizes the order of operations, aligning with the provided guidelines.
+
 ###### Book questions
 
 ---
