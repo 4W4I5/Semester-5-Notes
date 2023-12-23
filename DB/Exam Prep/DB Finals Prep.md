@@ -1100,6 +1100,7 @@ DB ROLLBACK
 
 ---
 # Functional Dependencies
+
 ## Book questions
 
 **14.1. Attribute Semantics:**
