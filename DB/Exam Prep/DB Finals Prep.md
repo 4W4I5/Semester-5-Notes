@@ -1284,7 +1284,4 @@ Heuristic Optimization:
 
 
 
-
-###### Book questions
-
 ---
