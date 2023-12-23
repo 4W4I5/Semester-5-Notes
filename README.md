@@ -72,7 +72,7 @@ Notes sponsored by chatGPT ;)
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [CySec-2 Finals Prep](CySec-2/Exam%20Prep/CySec-2%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+| [CySec-2 Finals Prep](CySec-2/Exam%20Prep/CySec-2%20Finals%20Prep.md) | Mostly Complete | Finals prep content        |
 
 ## DB
 <!--
@@ -104,7 +104,7 @@ Notes sponsored by chatGPT ;)
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [DB Finals Prep](DB/Exam%20Prep/DB%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+| [DB Finals Prep](DB/Exam%20Prep/DB%20Finals%20Prep.md) | Mostly Complete | Finals prep content        |
 
 ## Marketing
 <!--
@@ -137,7 +137,7 @@ Notes sponsored by chatGPT ;)
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [Marketing Finals Prep](Marketing/Exam%20Prep/Marketing%20Finals%20Prep.md) | Check the notes for status | Finals prep content        |
+| [Marketing Finals Prep](Marketing/Exam%20Prep/Marketing%20Finals%20Prep.md) | In progress | Finals prep content        |
 
 ## OS
 <!--
