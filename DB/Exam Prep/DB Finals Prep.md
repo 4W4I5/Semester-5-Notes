@@ -17,10 +17,10 @@
 | Assignment1                      | :warning:                                 |
 | Sessional 1 Past Paper           | :warning:                                 |
 | Assignment2                      | :warning:                                 |
-| Functional Dependencies          | :warning:                                 |
-| Normalization                    | :warning:                                 |
-| Relational Alegbra               | :warning:                                 |
-| Query Optimization               | :warning:                                 |
+| Functional Dependencies          | :white_check_mark:                                 |
+| Normalization                    | :white_check_mark:                                 |
+| Relational Alegbra               | :white_check_mark:                                 |
+| Query Optimization               | :white_check_mark:                                 |
 | Sessional 2 Past Paper           | :warning:                                 |
 | Assignment3,4,5                  | :warning:                                 |
 
