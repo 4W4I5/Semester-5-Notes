@@ -747,9 +747,11 @@ DB ROLLBACK
 - **Relational Notation:** EntityName(**Attribute1**, Attribute2, Attribute3)
 - **Example Table:**
 
+
   | Attribute1 | Attribute2 | Attribute3 |
   |------------|------------|------------|
   | Value1     | Value2     | Value3     |
+
 
 - **Note:** Each attribute represents a single, indivisible piece of data.
 
@@ -757,9 +759,11 @@ DB ROLLBACK
 - **Relational Notation:** EntityName(**CompositeAttr1**, CompositeAttr2, Attribute3)
 - **Example Table:**
 
+
   | CompositeAttr1 | CompositeAttr2 | Attribute3 |
   |----------------|----------------|------------|
   | (A, B)         | Value2         | Value3     |
+
 
 - **Note:** Composite attributes are made up of multiple sub-attributes.
 
@@ -767,9 +771,11 @@ DB ROLLBACK
 - **Relational Notation:** EntityName(**Attribute1**, MultiValuedAttr, Attribute3)
 - **Example Table:**
 
+
   | Attribute1 | MultiValuedAttr | Attribute3 |
   |------------|-----------------|------------|
   | Value1     | {A, B, C}       | Value3     |
+
 
 - **Note:** Multi-valued attributes can have multiple values for a single entity.
 
@@ -777,9 +783,11 @@ DB ROLLBACK
 - **Relational Notation:** EntityName(**Attribute1**, Attribute2, DerivedAttr)
 - **Example Table:**
 
+
   | Attribute1 | Attribute2 | DerivedAttr |
   |------------|------------|-------------|
   | Value1     | Value2     | Calculated  |
+
 
 - **Note:** Derived attributes are calculated from other attributes.
 
@@ -787,9 +795,11 @@ DB ROLLBACK
 - **Relational Notation:** WeakEntity(**PartialKey**, Attribute2, Attribute3)
 - **Example Table:**
 
+
   | PartialKey | Attribute2 | Attribute3 |
   |------------|------------|------------|
   | Value1     | Value2     | Value3     |
+
 
 - **Note:** Weak entities depend on a strong entity for identification.
 
@@ -797,9 +807,11 @@ DB ROLLBACK
 - **Relational Notation:** EntityName(**Attribute1**, ... , **Foreign_Key_To_Self**)
 - **Example Table:**
 
+
   | Attribute1 | ... | Foreign_Key_To_Self |
   |------------|-----|---------------------|
   | Value1     | ... | Value1              |
+
 
 - **Note:** Unary relationships involve a foreign key referencing the same entity.
 
@@ -807,10 +819,12 @@ DB ROLLBACK
 - **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | Entity2(**Foreign_Key_To_Entity1**, AttributeX)
 - **Example Table:**
 
+
   | Primary_Key | Attribute2 |    | Foreign_Key_To_Entity1 | AttributeX |
   |-------------|------------|----|-------------------------|------------|
   | Value1      | Value2     |    | Value1                  | ValueX     |
   | Value1      | Value2     |    | Value1                  | ValueY     |
+
 
 - **Note:** The 1:m relationship involves one entity having multiple related entities.
 
@@ -818,10 +832,12 @@ DB ROLLBACK
 - **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | JunctionTable(**Foreign_Key1**, **Foreign_Key2**, AttributeX)
 - **Example Table:**
 
+
   | Primary_Key | Attribute2 |    | Foreign_Key1 | Foreign_Key2 | AttributeX |
   |-------------|------------|----|--------------|--------------|------------|
   | Value1      | Value2     |    | Value1       | ValueA       | ValueX     |
   | Value1      | Value2     |    | Value1       | ValueB       | ValueY     |
+
 
 - **Note:** The M:M relationship requires a junction table to manage associations.
 
@@ -829,9 +845,11 @@ DB ROLLBACK
 - **Relational Notation:** Entity1(**Primary_Key**, Attribute2, Foreign_Key_To_Entity2) | Entity2(**Primary_Key**, AttributeX, Foreign_Key_To_Entity1)
 - **Example Table:**
 
+
   | Primary_Key | Attribute2 | Foreign_Key_To_Entity2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
   |-------------|------------|-------------------------|----|-------------|------------|-------------------------|
   | Value1      | Value2     | ValueX                  |    | ValueX      | ValueA     | Value1                  |
+
 
 - **Note:** In a 1:1 relationship, both sides have a foreign key to the other.
 
@@ -839,9 +857,11 @@ DB ROLLBACK
 - **Relational Notation:** Entity1(**Primary_Key**, Attribute2) | Entity2(**Primary_Key**, AttributeX, Foreign_Key_To_Entity1)
 - **Example Table:**
 
+
   | Primary_Key | Attribute2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
   |-------------|------------|----|-------------|------------|-------------------------|
   | Value1      | Value2     |    | ValueX      | ValueA     | Value1                  |
+
 
 - **Note:** Total participation means every entity on both sides must be involved in the relationship.
 
@@ -973,90 +993,115 @@ DB ROLLBACK
 ### Inner Join:
 - **Description:** Returns rows where there is a match in both tables based on the specified condition.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
   ```
+
 - **Example:**
+
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
   FROM employees
   INNER JOIN departments ON employees.dept_id = departments.dept_id;
   ```
+
 - **Use Case:** Use when you want to retrieve only the rows with matching values in both tables.
 
 ### Left Join (or Left Outer Join):
 - **Description:** Returns all rows from the left table and matching rows from the right table. Non-matching rows from the right table contain NULL values.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
   ```
+
 - **Example:**
+
   ```sql
   SELECT customers.customer_id, customers.customer_name, orders.order_date
   FROM customers
   LEFT JOIN orders ON customers.customer_id = orders.customer_id;
   ```
+
 - **Use Case:** Use when you want to retrieve all rows from the left table and matching rows from the right table.
 
 ### Right Join (or Right Outer Join):
 - **Description:** Returns all rows from the right table and matching rows from the left table. Non-matching rows from the left table contain NULL values.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
   ```
+
 - **Example:**
+
   ```sql
   SELECT orders.order_id, orders.order_date, customers.customer_name
   FROM orders
   RIGHT JOIN customers ON orders.customer_id = customers.customer_id;
   ```
+
 - **Use Case:** Use when you want to retrieve all rows from the right table and matching rows from the left table.
 
 ### Full Join (or Full Outer Join):
 - **Description:** Returns all rows when there is a match in either the left or the right table. Non-matching rows contain NULL values.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;
   ```
+
 - **Example:**
+
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
   FROM employees
   FULL JOIN departments ON employees.dept_id = departments.dept_id;
   ```
+
 - **Use Case:** Use when you want to retrieve all rows with or without matches in both tables.
 
 ### Cross Join:
 - **Description:** Returns the Cartesian product of rows from both tables. It matches every row from the left table with every row from the right table.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 CROSS JOIN table2;
   ```
+
 - **Example:**
+
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
   FROM employees
   CROSS JOIN departments;
   ```
+
 - **Use Case:** Use when you want to generate all possible combinations of rows from both tables.
 
 ### Self Join:
 - **Description:** Joins a table with itself. Useful when working with hierarchical data or comparing rows within the same table.
 - **Syntax:**
+
   ```sql
   SELECT * FROM table1 t1, table1 t2 WHERE t1.column = t2.column;
   ```
+
 - **Example:**
+
   ```sql
   SELECT e1.emp_name AS employee, e2.emp_name AS supervisor
   FROM employees e1
   INNER JOIN employees e2 ON e1.supervisor_id = e2.emp_id;
   ```
+
 - **Use Case:** Use when you want to compare rows within the same table, such as in hierarchical structures.
 
 ---
 # Functional Dependencies
-###### Book questions
+## Book questions
+
 **14.1. Attribute Semantics:**
 
 - Attribute semantics refer to the meaning or interpretation associated with each attribute in a relation. Informally, a good relation schema should have attributes whose semantics are clear and well-defined, making it easier for users to understand and use the database.
@@ -1101,12 +1146,14 @@ These questions cover various aspects of database design, normalization, and the
 
 # Normalization
 
-### 1. First Normal Form (1NF):
+## 1. First Normal Form (1NF):
 
 **Step: Remove Repeating Groups and Ensure Atomic Values:**
+
 - Ensure that each column contains atomic (indivisible) values, and there are no repeating groups.
 
 **Example:**
+
 ```plaintext
 Table: StudentCourses
 -----------------------------------
@@ -1118,6 +1165,7 @@ Table: StudentCourses
 ```
 
 **Normalized to 1NF:**
+
 ```plaintext
 Table: StudentCourses
 ----------------------------
@@ -1129,12 +1177,14 @@ Table: StudentCourses
 ----------------------------
 ```
 
-### 2. Second Normal Form (2NF):
+## 2. Second Normal Form (2NF):
 
 **Step: Remove Partial Dependencies:**
+
 - Ensure that each non-key attribute is fully functionally dependent on the primary key.
 
 **Example:**
+
 ```plaintext
 Table: StudentCourses
 -------------------------
@@ -1156,6 +1206,7 @@ Table: CourseDetails
 ```
 
 **Normalized to 2NF:**
+
 ```plaintext
 Table: StudentCourses
 -------------------------
@@ -1176,12 +1227,14 @@ Table: Courses
 -------------------------
 ```
 
-### 3. Third Normal Form (3NF):
+## 3. Third Normal Form (3NF):
 
 **Step: Remove Transitive Dependencies:**
+
 - Ensure that there are no transitive dependencies, i.e., no non-prime attribute depends on another non-prime attribute.
 
 **Example:**
+
 ```plaintext
 Table: Courses
 -------------------------
@@ -1194,6 +1247,7 @@ Table: Courses
 ```
 
 **Normalized to 3NF:**
+
 ```plaintext
 Table: Courses
 -------------------------
@@ -1214,12 +1268,14 @@ Table: Departments
 -------------------------
 ```
 
-### 4. Boyce-Codd Normal Form (BCNF):
+## 4. Boyce-Codd Normal Form (BCNF):
 
 **Step: Remove All Trivial and Non-Trivial Dependencies:**
+
 - Ensure that there are no non-trivial functional dependencies of attributes on the primary key.
 
 **Example:**
+
 ```plaintext
 Table: Instructors
 --------------------------
@@ -1232,6 +1288,7 @@ Table: Instructors
 ```
 
 **Normalized to BCNF:**
+
 ```plaintext
 Table: Instructors
 --------------------------
@@ -1241,19 +1298,6 @@ Table: Instructors
 | Physics   | Prof. B     |
 | Chemistry | Prof. C     |
 --------------------------
-```
-
-### Backus-Naur Form (BNF):
-
-**Step: Formalize Data Relationships:**
-- Formalize data relationships using BNF, a meta-syntax notation for representing context-free grammars.
-
-**Example:**
-```bnf
-<Course> ::= "Math" | "Physics" | "Chemistry"
-<Instructor> ::= "Prof. A" | "Prof. B" | "Prof. C"
-<StudentID> ::= <numeric value>
-<CourseID> ::= <numeric value>
 ```
 
 # Relational Algebra
@@ -1306,10 +1350,12 @@ Table: Instructors
 
     - A query language is relationally complete if it can express all queries expressible in relational algebra. SQL is an example of a relationally complete language.
 
-### Converting SQL into relational alegbra
+## Converting SQL into relational alegbra
+
 Certainly! Let's consider an example SQL query involving a triple join:
 
-### 1. **Example SQL Query:**
+## 1. **Example SQL Query:**
+
 ```sql
 SELECT A, B, D
 FROM Table1
@@ -1318,12 +1364,14 @@ JOIN Table3 ON Table2.ID = Table3.ID
 WHERE C > 10 AND E = 'XYZ';
 ```
 
-### 2. **Relational Algebra Operations:**
+## 2. **Relational Algebra Operations:**
+
 ```plaintext
 π_{A, B, D} (σ_{C > 10 AND E = 'XYZ'} (Table1 ⨝_{Table1.ID = Table2.ID} Table2 ⨝_{Table2.ID = Table3.ID} Table3))
 ```
 
-### 3. **Expression Tree:**
+## 3. **Expression Tree:**
+
 ```plaintext
                    π_{A, B, D}
                        |
@@ -1332,10 +1380,12 @@ WHERE C > 10 AND E = 'XYZ';
             Table1 ⨝_{Table1.ID = Table2.ID} Table2 ⨝_{Table2.ID = Table3.ID} Table3
 ```
 
-### 4. **Optimize the Expression Tree:**
+## 4. **Optimize the Expression Tree:**
+
 Optimizations can involve rearranging the order of joins, pushing down selections, and combining projections.
 
 **Optimized Tree:**
+
 ```plaintext
                       Table1
                         |
@@ -1346,16 +1396,20 @@ Optimizations can involve rearranging the order of joins, pushing down selection
                    π_{A, B, D}
 ```
 
-### 5. **Consider Indexing:**
+## 5. **Consider Indexing:**
+
 If indexes exist on columns involved in WHERE clauses or join conditions, leverage them for optimization.
 
-### 6. **Apply Join Optimizations:**
+## 6. **Apply Join Optimizations:**
+
 Consider join order and algorithms for efficient execution.
 
-### 7. **Evaluate Cost and Selectivity:**
+## 7. **Evaluate Cost and Selectivity:**
+
 Evaluate the cost of each operation and the selectivity of conditions to choose an efficient execution plan.
 
-### 8. **Final Optimized Tree:**
+## 8. **Final Optimized Tree:**
+
 ```plaintext
                    π_{A, B, D}
                        |
@@ -1366,13 +1420,16 @@ Evaluate the cost of each operation and the selectivity of conditions to choose 
  Table2 ⨝_{Table2.ID = Table3.ID} Table3
 ```
 
-### 9. **Translate Back to Relational Algebra:**
+## 9. **Translate Back to Relational Algebra:**
+
 ```plaintext
 π_{A, B, D} (σ_{C > 10 AND E = 'XYZ'} (Table1 ⨝_{Table2.ID = Table3.ID} Table2 ⨝_{Table1.ID = Table2.ID} Table3))
 ```
 
-###### Book questions
+### Book questions
+
 **8.1. Operations of Relational Algebra:**
+
    - **Selection (σ):** Retrieves rows that satisfy a specified condition.
    - **Projection (π):** Retrieves specific columns from a relation.
    - **Union (∪):** Combines tuples from two relations, eliminating duplicates.
@@ -1383,47 +1440,60 @@ Evaluate the cost of each operation and the selectivity of conditions to choose 
    - **Join (⨝):** Combines tuples from two relations based on a specified condition.
 
 **8.2. Union Compatibility:**
+
    - Union compatibility refers to the requirement that relations involved in UNION, INTERSECTION, and DIFFERENCE operations must have the same set of attributes, with corresponding attributes having the same or compatible domains.
 
 **8.3. Renaming Attributes:**
+
    - Attribute renaming is necessary when specifying queries to avoid ambiguity, especially in cases where attributes with the same name exist in multiple relations.
 
 **8.4. Inner Join Operations:**
+
    - Types include equijoin (natural join), theta join (based on a general condition), and semijoin. Theta join is required for expressing more complex join conditions.
 
 **8.5. Foreign Key in Join Operations:**
+
    - Foreign keys play a role in specifying meaningful join operations by establishing relationships between tables. They define the conditions for combining tuples from different relations.
 
 **8.6. FUNCTION Operation:**
+
    - The FUNCTION operation applies a function to each tuple in a relation, generating a new relation with modified values.
 
 **8.7. OUTER JOIN and OUTER UNION:**
+
    - OUTER JOIN operations include LEFT OUTER JOIN, RIGHT OUTER JOIN, and FULL OUTER JOIN, preserving unmatched tuples. OUTER UNION combines tuples from two relations, including unmatched tuples.
 
 **8.8. Relational Calculus vs. Relational Algebra:**
+
    - Relational calculus is a declarative language specifying what to retrieve, while relational algebra is a procedural language specifying how to retrieve. They are similar in that both are used for querying relational databases.
 
 **8.9. Tuple vs. Domain Relational Calculus:**
+
    - Tuple relational calculus refers to specifying queries in terms of tuples, while domain relational calculus refers to specifying queries in terms of domains or attributes.
 
 **8.10. Existential and Universal Quantifiers:**
+
    - ∃ (Existential Quantifier): Represents "there exists." Used to express conditions where at least one tuple satisfies a condition.
    - ∀ (Universal Quantifier): Represents "for all." Used to express conditions where all tuples satisfy a condition.
 
 **8.11 and 8.12. Tuple and Domain Calculus Terms:**
+
    - Tuple Variable, Range Relation, Atom, Formula, and Expression have similar meanings in both tuple and domain calculus.
 
 **8.13. Safe Expression in Relational Calculus:**
+
    - A safe expression in relational calculus is one where the result is guaranteed to be a relation. It avoids constructs that could lead to an infinite or non-relational result.
 
 **8.14. Relationally Complete Query Language:**
+
    - A query language is considered relationally complete if it can express all queries expressible in relational algebra. SQL is an example of a relationally complete language.
 
 These responses cover the various aspects of relational algebra and calculus as outlined in the provided questions.
 
-
 # Query Optimization
+
 Heuristic Optimization:
+
 - Perform selection(σ) foremost and restrictive joins only as early as possible
 	- Decreases num of records required in the query
 - Perform projection(Π) asap
