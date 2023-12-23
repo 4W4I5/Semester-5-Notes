@@ -1101,6 +1101,160 @@ These questions cover various aspects of database design, normalization, and the
 
 # Normalization
 
+### 1. First Normal Form (1NF):
+
+**Step: Remove Repeating Groups and Ensure Atomic Values:**
+- Ensure that each column contains atomic (indivisible) values, and there are no repeating groups.
+
+**Example:**
+```plaintext
+Table: StudentCourses
+-----------------------------------
+| StudentID | Courses              |
+|-----------|----------------------|
+| 1         | Math, Physics        |
+| 2         | Chemistry            |
+-----------------------------------
+```
+
+**Normalized to 1NF:**
+```plaintext
+Table: StudentCourses
+----------------------------
+| StudentID | Course          |
+|-----------|-----------------|
+| 1         | Math            |
+| 1         | Physics         |
+| 2         | Chemistry       |
+----------------------------
+```
+
+### 2. Second Normal Form (2NF):
+
+**Step: Remove Partial Dependencies:**
+- Ensure that each non-key attribute is fully functionally dependent on the primary key.
+
+**Example:**
+```plaintext
+Table: StudentCourses
+-------------------------
+| StudentID | Course     |
+|-----------|------------|
+| 1         | Math       |
+| 1         | Physics    |
+| 2         | Chemistry  |
+-------------------------
+
+Table: CourseDetails
+-------------------------
+| Course    | Instructor |
+|-----------|------------|
+| Math      | Prof. A     |
+| Physics   | Prof. B     |
+| Chemistry | Prof. C     |
+-------------------------
+```
+
+**Normalized to 2NF:**
+```plaintext
+Table: StudentCourses
+-------------------------
+| StudentID | Course     |
+|-----------|------------|
+| 1         | Math       |
+| 1         | Physics    |
+| 2         | Chemistry  |
+-------------------------
+
+Table: Courses
+-------------------------
+| Course    | Instructor |
+|-----------|------------|
+| Math      | Prof. A     |
+| Physics   | Prof. B     |
+| Chemistry | Prof. C     |
+-------------------------
+```
+
+### 3. Third Normal Form (3NF):
+
+**Step: Remove Transitive Dependencies:**
+- Ensure that there are no transitive dependencies, i.e., no non-prime attribute depends on another non-prime attribute.
+
+**Example:**
+```plaintext
+Table: Courses
+-------------------------
+| Course    | Instructor | Department |
+|-----------|------------|------------|
+| Math      | Prof. A     | Math       |
+| Physics   | Prof. B     | Physics    |
+| Chemistry | Prof. C     | Chemistry  |
+-------------------------
+```
+
+**Normalized to 3NF:**
+```plaintext
+Table: Courses
+-------------------------
+| Course    | Instructor |
+|-----------|------------|
+| Math      | Prof. A     |
+| Physics   | Prof. B     |
+| Chemistry | Prof. C     |
+-------------------------
+
+Table: Departments
+-------------------------
+| Course    | Department |
+|-----------|------------|
+| Math      | Math       |
+| Physics   | Physics    |
+| Chemistry | Chemistry  |
+-------------------------
+```
+
+### 4. Boyce-Codd Normal Form (BCNF):
+
+**Step: Remove All Trivial and Non-Trivial Dependencies:**
+- Ensure that there are no non-trivial functional dependencies of attributes on the primary key.
+
+**Example:**
+```plaintext
+Table: Instructors
+--------------------------
+| Course    | Instructor |
+|-----------|------------|
+| Math      | Prof. A     |
+| Physics   | Prof. B     |
+| Chemistry | Prof. C     |
+--------------------------
+```
+
+**Normalized to BCNF:**
+```plaintext
+Table: Instructors
+--------------------------
+| Course    | Instructor |
+|-----------|------------|
+| Math      | Prof. A     |
+| Physics   | Prof. B     |
+| Chemistry | Prof. C     |
+--------------------------
+```
+
+### Backus-Naur Form (BNF):
+
+**Step: Formalize Data Relationships:**
+- Formalize data relationships using BNF, a meta-syntax notation for representing context-free grammars.
+
+**Example:**
+```bnf
+<Course> ::= "Math" | "Physics" | "Chemistry"
+<Instructor> ::= "Prof. A" | "Prof. B" | "Prof. C"
+<StudentID> ::= <numeric value>
+<CourseID> ::= <numeric value>
+```
 
 # Relational Algebra
 
