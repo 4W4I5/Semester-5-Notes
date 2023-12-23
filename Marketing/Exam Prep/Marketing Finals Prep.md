@@ -26,34 +26,33 @@
 
 ---
 # Introduction to digital marketing
----
+
 # Social Media
----
+
 # Content Marketing
----
+
 # Websites: Starting Point
----
+
 # Blogging
----
+
 # Mobile Marketing
----
+
 # Market Segmentation
----
+
 # Strategy Formulation vs Implementation
----
+
 # Email Marketing
----
+
 # Digital Campaign Planning
----
+
 # Search Engine Optimization
----
+
 # Creativity in digital media
----
+
 # Laws of branding
----
+
 # Data Privacy & Ethics
----
+
 # Communicating your marketing campaign
----
+
 # Co-Branding
----
