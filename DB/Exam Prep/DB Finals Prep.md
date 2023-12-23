@@ -17,7 +17,7 @@
 | Assignment1                      | :warning:                                 |
 | Sessional 1 Past Paper           | :warning:                                 |
 | Assignment2                      | :warning:                                 |
-| Functional Dependencies          | :white_check_mark:                                 |
+| Functional Dependencies          | :warning:                                 |
 | Normalization                    | :white_check_mark:                                 |
 | Relational Alegbra               | :white_check_mark:                                 |
 | Query Optimization               | :white_check_mark:                                 |
@@ -748,9 +748,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Attribute1 | Attribute2 | Attribute3 |
   |------------|------------|------------|
   | Value1     | Value2     | Value3     |
+
 
 
 - **Note:** Each attribute represents a single, indivisible piece of data.
@@ -760,9 +762,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | CompositeAttr1 | CompositeAttr2 | Attribute3 |
   |----------------|----------------|------------|
   | (A, B)         | Value2         | Value3     |
+
 
 
 - **Note:** Composite attributes are made up of multiple sub-attributes.
@@ -772,9 +776,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Attribute1 | MultiValuedAttr | Attribute3 |
   |------------|-----------------|------------|
   | Value1     | {A, B, C}       | Value3     |
+
 
 
 - **Note:** Multi-valued attributes can have multiple values for a single entity.
@@ -784,9 +790,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Attribute1 | Attribute2 | DerivedAttr |
   |------------|------------|-------------|
   | Value1     | Value2     | Calculated  |
+
 
 
 - **Note:** Derived attributes are calculated from other attributes.
@@ -796,9 +804,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | PartialKey | Attribute2 | Attribute3 |
   |------------|------------|------------|
   | Value1     | Value2     | Value3     |
+
 
 
 - **Note:** Weak entities depend on a strong entity for identification.
@@ -808,9 +818,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Attribute1 | ... | Foreign_Key_To_Self |
   |------------|-----|---------------------|
   | Value1     | ... | Value1              |
+
 
 
 - **Note:** Unary relationships involve a foreign key referencing the same entity.
@@ -820,10 +832,12 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Primary_Key | Attribute2 |    | Foreign_Key_To_Entity1 | AttributeX |
   |-------------|------------|----|-------------------------|------------|
   | Value1      | Value2     |    | Value1                  | ValueX     |
   | Value1      | Value2     |    | Value1                  | ValueY     |
+
 
 
 - **Note:** The 1:m relationship involves one entity having multiple related entities.
@@ -833,10 +847,12 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Primary_Key | Attribute2 |    | Foreign_Key1 | Foreign_Key2 | AttributeX |
   |-------------|------------|----|--------------|--------------|------------|
   | Value1      | Value2     |    | Value1       | ValueA       | ValueX     |
   | Value1      | Value2     |    | Value1       | ValueB       | ValueY     |
+
 
 
 - **Note:** The M:M relationship requires a junction table to manage associations.
@@ -846,9 +862,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Primary_Key | Attribute2 | Foreign_Key_To_Entity2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
   |-------------|------------|-------------------------|----|-------------|------------|-------------------------|
   | Value1      | Value2     | ValueX                  |    | ValueX      | ValueA     | Value1                  |
+
 
 
 - **Note:** In a 1:1 relationship, both sides have a foreign key to the other.
@@ -858,9 +876,11 @@ DB ROLLBACK
 - **Example Table:**
 
 
+
   | Primary_Key | Attribute2 |    | Primary_Key | AttributeX | Foreign_Key_To_Entity1 |
   |-------------|------------|----|-------------|------------|-------------------------|
   | Value1      | Value2     |    | ValueX      | ValueA     | Value1                  |
+
 
 
 - **Note:** Total participation means every entity on both sides must be involved in the relationship.
@@ -994,11 +1014,14 @@ DB ROLLBACK
 - **Description:** Returns rows where there is a match in both tables based on the specified condition.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 INNER JOIN table2 ON table1.column = table2.column;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
@@ -1006,17 +1029,21 @@ DB ROLLBACK
   INNER JOIN departments ON employees.dept_id = departments.dept_id;
   ```
 
+
 - **Use Case:** Use when you want to retrieve only the rows with matching values in both tables.
 
 ### Left Join (or Left Outer Join):
 - **Description:** Returns all rows from the left table and matching rows from the right table. Non-matching rows from the right table contain NULL values.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT customers.customer_id, customers.customer_name, orders.order_date
@@ -1024,17 +1051,21 @@ DB ROLLBACK
   LEFT JOIN orders ON customers.customer_id = orders.customer_id;
   ```
 
+
 - **Use Case:** Use when you want to retrieve all rows from the left table and matching rows from the right table.
 
 ### Right Join (or Right Outer Join):
 - **Description:** Returns all rows from the right table and matching rows from the left table. Non-matching rows from the left table contain NULL values.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT orders.order_id, orders.order_date, customers.customer_name
@@ -1042,17 +1073,21 @@ DB ROLLBACK
   RIGHT JOIN customers ON orders.customer_id = customers.customer_id;
   ```
 
+
 - **Use Case:** Use when you want to retrieve all rows from the right table and matching rows from the left table.
 
 ### Full Join (or Full Outer Join):
 - **Description:** Returns all rows when there is a match in either the left or the right table. Non-matching rows contain NULL values.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 FULL JOIN table2 ON table1.column = table2.column;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
@@ -1060,17 +1095,21 @@ DB ROLLBACK
   FULL JOIN departments ON employees.dept_id = departments.dept_id;
   ```
 
+
 - **Use Case:** Use when you want to retrieve all rows with or without matches in both tables.
 
 ### Cross Join:
 - **Description:** Returns the Cartesian product of rows from both tables. It matches every row from the left table with every row from the right table.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 CROSS JOIN table2;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT employees.emp_id, employees.emp_name, departments.dept_name
@@ -1078,17 +1117,21 @@ DB ROLLBACK
   CROSS JOIN departments;
   ```
 
+
 - **Use Case:** Use when you want to generate all possible combinations of rows from both tables.
 
 ### Self Join:
 - **Description:** Joins a table with itself. Useful when working with hierarchical data or comparing rows within the same table.
 - **Syntax:**
 
+
   ```sql
   SELECT * FROM table1 t1, table1 t2 WHERE t1.column = t2.column;
   ```
 
+
 - **Example:**
+
 
   ```sql
   SELECT e1.emp_name AS employee, e2.emp_name AS supervisor
@@ -1096,11 +1139,65 @@ DB ROLLBACK
   INNER JOIN employees e2 ON e1.supervisor_id = e2.emp_id;
   ```
 
+
 - **Use Case:** Use when you want to compare rows within the same table, such as in hierarchical structures.
 
 ---
 # Functional Dependencies
+## Anomalies Addressed by Reducing Redundancy:
 
+1. **Insertion Anomalies:**
+
+    - **Issue:** Adding new data may lead to incomplete or inconsistent entries if all related information is not provided.
+    - **Solution:** Normalization reduces redundancy, preventing insertion anomalies by organizing data into separate tables.
+2. **Update Anomalies:**
+
+    - **Issue:** Modifying data in one place and forgetting to update related data in another place leads to inconsistencies.
+    - **Solution:** By normalizing the database, updates are made in one location, reducing the risk of inconsistencies.
+3. **Deletion Anomalies:**
+
+    - **Issue:** Deleting data may unintentionally remove other related information, leading to loss of valuable data.
+    - **Solution:** Normalization minimizes deletion anomalies by structuring data to avoid dependencies on non-key attributes.
+
+## Functional Dependencies:
+
+1. **Definition:**
+    - A functional dependency is a relationship between two sets of attributes in a relation, where knowing the value of one set uniquely determines the value of another set.
+2. **Key Dependency:**
+    - In a well-designed relation, attributes should be functionally dependent on the primary key. This ensures that each row can be uniquely identified by the primary key.
+3. **Partial Dependency:**
+    - A partial dependency occurs when an attribute is functionally dependent on only part of a composite primary key. Normalization eliminates partial dependencies.
+4. **Transitive Dependency:**
+    - A transitive dependency occurs when an attribute is functionally dependent on another non-key attribute. Normalization to 3NF or BCNF removes transitive dependencies.
+5. **Normalization and Functional Dependencies:**
+    - The normalization process aims to identify and eliminate various types of functional dependencies to ensure data integrity and minimize redundancy.
+## Functional Dependency Basics:
+
+- In the context of a relational database, a functional dependency is a relationship between two sets of attributes in a relation. It means that the value of one set of attributes uniquely determines the value of another set.
+
+## 1. Trivial Functional Dependency:
+
+- **Definition:** A functional dependency is considered trivial if the independent (determining) set of attributes includes the dependent set of attributes.
+- **Example:**
+    - In a relation where {A, B} → A is a functional dependency, it is trivial because A is part of the determining set {A, B}.
+
+## 2. Non-Trivial Functional Dependency:
+
+- **Definition:** A functional dependency is non-trivial if the dependent set of attributes is not included in the independent set.
+- **Example:**
+    - In a relation where {A, B} → C is a functional dependency, it is non-trivial because C is not part of the determining set {A, B}.
+
+## 3. Completely Non-Trivial Functional Dependency:
+
+- **Definition:** A functional dependency is completely non-trivial if there is no subset of the independent set that determines the dependent set.
+- **Example:**
+    - In a relation where {A, B, C} → D is a completely non-trivial functional dependency because no subset of {A, B, C} determines D.
+
+## Summary:
+
+- **Trivial:** Dependent set is part of the determining set.
+- **Non-Trivial:** Dependent set is not part of the determining set.
+- **Completely Non-Trivial:** No subset of the determining set determines the dependent set.
 ## Book questions
 
 **14.1. Attribute Semantics:**
@@ -1508,6 +1605,7 @@ Heuristic Optimization:
 		- A sequence of selection operations are commutative
 
 Logical Optimization:
+
 - Push down selections and projections to have them occur eariler
 	- Can fail if selection is very expensive
 	- Projection could be a waste of effort but that is rare
