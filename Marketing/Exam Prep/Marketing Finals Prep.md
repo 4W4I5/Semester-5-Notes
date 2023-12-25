@@ -17,7 +17,7 @@
 | 8              | Strategy Formulation vs Implementation | :white_check_mark:                |
 | 9              | Email Marketing                        | :white_check_mark:                |
 | 10             | Digital Campaign Planning              | :white_check_mark:                |
-| 11             | Search Engine Optimization             | :x:                |
+| 11             | Search Engine Optimization             | :white_check_mark:                |
 | 12             | Creativity in digital media            | :x:                |
 | 13             | Laws of branding                       | :x:                |
 | 14             | Data Privacy & Ethics                  | :x:                |
@@ -704,6 +704,34 @@ God-Tier Campaigns
 	- This was risky/bold as the brand had to be at the number one spot when the users searched for the place
 
 # Search Engine Optimization
+Working
+- Content is published
+- Crawlers review the page
+- Search engines index the pages
+- Page meets the required criteria if so, it will show up in the search results
+	- Meeting the criteria
+		- Right media/type of content. The keyword should match what is being searched up i.e. if the keyword is recipe then the first target result should be the recipe page of your website
+		- Content freshness. For news/forums it is best to ensure that the content is updated/posted regularly especially for news based content
+		- Location. Same as time-sensitive content
+Use
+- Focuses on improving website's organic presence in search results
+	- Done by optimizing what shows up in SERPs
+	- Keywords are words/phrases your target audience searches for
+	- Improvements will signal search engines to rank the website higher as it provides the data that was looked for
+- SEM, focuses on improving both organic/paid results. Using this leads to results being shown at both the top/bottom of the search results
+
+
+Involves
+- Keyword research
+- Content creation and optimization
+- Technical optimization
+- Link building
+
+Improvements
+- Navigational: User searches for specific website
+- Informational: User searches for information on a certain topic
+- Commercial Investigation: Researches options for a product/service
+- Transactional: User searches for a specific product or brand
 
 # Creativity in digital media
 
