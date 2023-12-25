@@ -15,8 +15,8 @@
 | 6              | Mobile Marketing                       | :white_check_mark:                |
 | 7              | Market Segmentation                    | :white_check_mark:                |
 | 8              | Strategy Formulation vs Implementation | :white_check_mark:                |
-| 9              | Email Marketing                        | :x:                |
-| 10             | Digital Campaign Planning              | :x:                |
+| 9              | Email Marketing                        | :white_check_mark:                |
+| 10             | Digital Campaign Planning              | :white_check_mark:                |
 | 11             | Search Engine Optimization             | :x:                |
 | 12             | Creativity in digital media            | :x:                |
 | 13             | Laws of branding                       | :x:                |
@@ -666,10 +666,6 @@ Overlap of all these zones is the risky zone
 - Can be done via SMS/Social media as well
 - Aims to engage or nurture leads or prospects, eventually converting them to into customers
 # Digital Campaign Planning
->[!WARNING]
->Not sure about the strats and channels used. if you know then text me
-
-
 - Structure of a marketing plan
 	- Short, medium and long term business goals
 	- Strategies to achieve the goals at the digital level
@@ -680,6 +676,8 @@ Overlap of all these zones is the risky zone
 
 Workflow
 - Situational Analysis
+	- SWOT analysis or any other benchmarking techniques
+		- Strengths, Weaknesses, Opportunities and Threats
 - Establish Digital marketing goals
 	- Smart, Measurable, Attainable, relevant and timely goals
 	- Be more realistic in your goals, i want to achieve xyz is not a goal. I want to achieve 5k clicks over a period of 2 months is one.
@@ -688,11 +686,22 @@ Workflow
 	- Positioning
 	- Content Strategy
 - Digital Strategies and Tactics
-	- `Apparantly yahan it says email marketing campaigns but in strat formulation and implementation it was portofolio, bcg and diversification wth`
 	- Strategies = Define marketing methods to use
 	- Channels = Define subtypes within those marketing channels to implement
 - Measure results & KPIs
 	- Key performance indicator, evaluated at every step in the workflow to observe if a given ROI is returned
+
+God-Tier Campaigns
+- Oreo - You can still dunk in the dark
+	- Oreo tends to have a fun, whimsical tone with cultural relevance
+	- The campaign was simple in essence. A tweet with a hashtag. Perfect example of social media marketing
+- Airbnb - Made possible by hosts
+	- Video film made on slideshow style showcases renters having a great time together at an Airbnb
+	- Content was travel inspired, spread on its social media. Connected to the audience as the short reels were user generated. The campaign was not limited to social media as podcasts, sponsored content, webinars and leadership outreach were also used
+- McDonalds - A place where coke tastes best
+	- An example of SEO
+	- Viewers would google a place where coke tastes best and the top result would be McDonald's
+	- This was risky/bold as the brand had to be at the number one spot when the users searched for the place
 
 # Search Engine Optimization
 
