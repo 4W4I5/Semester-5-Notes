@@ -428,14 +428,22 @@
     - Typically includes clear navigation menus.
 
 # Mobile Marketing
-Main elements
+Trivia
 - Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
 - 55.68% of web traffic comes from mobile devices
+
+Main elements
 - Design and usability
 	- Design (UI) associates with style, colors, images, etc. Anything that attracts the user to the mobile app/site
+		- Some designers make the mistake of applying desktop designs for mobile. This is troublesome as touch screens and mouse cursors interact differently with the content displayed
 	- Usability (UX) deals with how the user interacts with those elements on the screen, how they are placed, sizes of the buttons, even what each button's title should be
 - Content
+	- Desktop websites and mobile websites have tailored content for each due to the change in screen/display sizes
+	- Length of content is kept concise as well as the font size is taken into consideration
+	- Visual elements must be compressed as well to ensure they load smoothly as mobile devices do not always have a reliable connection to the internet
 - Advertising
+	- **Banner ads**: Banners are positions on a given website/app that can take in any ad content managed by the ad provider. e.g google admob/adsense and display it there
+	- **Interstitial ads**: Full screen ads that are displayed in between pages. Triggered whenever a user moves from one page to the other. Think of those ads where you have to tap the stupid 'x' to close it
 
 Mobile Marketing Strategies
 - App-based
@@ -447,6 +455,18 @@ Mobile Marketing Strategies
 
 
 Importance of Mobile Marketing
+- Raising brand awareness amongst the target audience.
+- Retaining customers and increasing their overall customer lifetime value.
+- Post-sales customer servicing and seamless onboarding.
+- Notifying smartphone users of any ongoing promotions.
+- Sharing real-time updates through push notifications on mobile apps.
+- Collecting invaluable feedback.
+- Personalizing through dynamic content.
+- Offering location-based services and offers.
+- Upselling products or services to a targeted audience.
+- Following up with transaction or trigger campaigns in response to a user’s action or inaction.
+- Winning back the customers who are on the brink of churn.
+- Interactive advertising campaigns via influencer marketing
 
 Examples of campaigns that were done right
 
