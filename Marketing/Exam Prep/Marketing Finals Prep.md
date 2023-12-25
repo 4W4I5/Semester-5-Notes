@@ -597,13 +597,28 @@ Overlap of all these zones is the risky zone
 - Emails are not public discussion boards
 - Given direct access to audience, not affected by any sort of algorithm
 **Building an email list and segmentation**
-Use embedded signup forms, deploy welcome popup, promotional popup, timed popup forms
-squeeze page
+Use embedded signup forms
+deploy welcome popup,
+promotional popup, 
+timed popup forms
+create a squeeze page
+use gamification
 **Crafting effective email campaign**
+- Promotional emails
+- Email newsletters
+- Lead nurturing emails
+- Sponsorship emails
+- Transactional emails
+- Re-engagement emails
+- Brand story emails
+- Review Request emails
 **Marketing automation & Drip campaigns**
+Drip Campaign
+- Series of pre-designed, automated messages sent to customers/subscribers over time i.e. they follow a certain schedule which can be set intervals or in response to customer actions/behaviours
+- Can be done via SMS/Social media as well
+- Aims to engage or nurture leads or prospects, eventually converting them to into customers
 **Analyzing email campaign performance**
 
-**Types of email marketing**
 
 # Digital Campaign Planning
 
