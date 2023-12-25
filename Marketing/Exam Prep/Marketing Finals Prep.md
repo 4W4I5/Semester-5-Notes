@@ -542,8 +542,13 @@ Overlap of all these zones is the risky zone
 - if brand lower or higher than currently selected brand. place it accordingly
 
 # Strategy Formulation vs Implementation
+Formulation
+- Portfolio
+- BCG Matrix
+- Diversification
 
-
+Implementation
+- 
 # Email Marketing
 
 # Digital Campaign Planning
