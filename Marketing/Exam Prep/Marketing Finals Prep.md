@@ -9,7 +9,7 @@
 | 3              | Content Marketing                      | :warning:          |
 | 4              | Websites                               | :warning:          |
 | 5              | Blogging                               | :warning:          |
-| 6              | Mobile Marketing                       | :x:                |
+| 6              | Mobile Marketing                       | :white_check_mark:                |
 | 7              | Market Segmentation                    | :x:                |
 | 8              | Strategy Formulation vs Implementation | :x:                |
 | 9              | Email Marketing                        | :x:                |
@@ -432,7 +432,7 @@ Trivia
 - Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
 - 55.68% of web traffic comes from mobile devices
 
-Main elements
+**Main elements**
 - Design and usability
 	- Design (UI) associates with style, colors, images, etc. Anything that attracts the user to the mobile app/site
 		- Some designers make the mistake of applying desktop designs for mobile. This is troublesome as touch screens and mouse cursors interact differently with the content displayed
@@ -445,32 +445,59 @@ Main elements
 	- **Banner ads**: Banners are positions on a given website/app that can take in any ad content managed by the ad provider. e.g google admob/adsense and display it there
 	- **Interstitial ads**: Full screen ads that are displayed in between pages. Triggered whenever a user moves from one page to the other. Think of those ads where you have to tap the stupid 'x' to close it
 
-Mobile Marketing Strategies
-- App-based
-- In-Game
+**Mobile Marketing Strategies**
+- App-based Marketing
+    - Utilize mobile applications to reach and engage with users.
+    - Leverage in-app advertisements and push notifications.
+- In-Game Marketing
+    - Integrate ads or promotions within mobile games.
+    - Offers rewards or bonuses for interacting with ads.
 - QR Codes
-- Location-Based
-- Mobile search
-- Mobile image
-- SMS
+    - Create QR codes linking to promotions or information.
+    - Encourage users to scan for exclusive content or discounts.
+- Location-Based Marketing
+    - Send targeted promotions based on the user's location.
+    - Utilize geofencing for personalized offers near specific locations.
+- Mobile Search
+    - Optimize content for mobile search engines.
+    - Utilize mobile-friendly keywords and SEO strategies.
+- Mobile Image Marketing
+    - Share visually appealing content optimized for mobile devices.
+    - Leverage platforms like Instagram for image-based promotions.
+- SMS Marketing
+    - Send targeted and concise text messages to users.
+    - Ensure compliance with regulations and focus on opt-in strategies.
 
-
-Importance of Mobile Marketing
-- Raising brand awareness amongst the target audience.
-- Retaining customers and increasing their overall customer lifetime value.
-- Post-sales customer servicing and seamless onboarding.
-- Notifying smartphone users of any ongoing promotions.
-- Sharing real-time updates through push notifications on mobile apps.
-- Collecting invaluable feedback.
-- Personalizing through dynamic content.
-- Offering location-based services and offers.
-- Upselling products or services to a targeted audience.
-- Following up with transaction or trigger campaigns in response to a user’s action or inaction.
-- Winning back the customers who are on the brink of churn.
-- Interactive advertising campaigns via influencer marketing
+**Importance of Mobile Marketing**
+- **Brand Awareness and Engagement:**
+	- Raising brand awareness amongst the target audience.
+	- Interactive advertising campaigns via influencer marketing.
+- **Customer Retention and Value:**
+	- Retaining customers and increasing their overall customer lifetime value.
+	- Post-sales customer servicing and seamless onboarding.
+	- Following up with transaction or trigger campaigns in response to a user’s action or inaction.
+	- Winning back the customers who are on the brink of churn.
+- **Promotion and Communication:**
+	- Notifying smartphone users of any ongoing promotions.
+	- Sharing real-time updates through push notifications on mobile apps.
+- **User Interaction and Personalization:**
+	- Collecting invaluable feedback.
+	- Personalizing through dynamic content.
+- **Location-Based Marketing:**
+	- Offering location-based services and offers.
+- **Sales and Upselling:**
+	- Upselling products or services to a targeted audience.
 
 Examples of campaigns that were done right
-
+- Piece of the Pie Rewards – Domino’s
+- Send Us a Text – Ford
+- Burn That Ad – Burger King
+- Mobile Order & Pay – Starbucks
+- IKEA Place: IKEA
+- The Protection Ad: Nivea Sun
+- The Lenz: Gorillaz
+- Hunger Spotter: Spotify and Snickers
+- Check-in Coupons: UNIQLO
 # Market Segmentation
 
 # Strategy Formulation vs Implementation
