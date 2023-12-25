@@ -32,7 +32,7 @@
 # Introduction to digital marketing
 - Described as electronic tech that generates, stores and processes data in terms of 1's & 0's
 	- It can be both online and offline i.e. it can be an audio file that is streamed online and stored on a disc
-	- Not sure about billboards though 
+	- Not sure about billboards though
 ### Marketing
 - "Marketing is a social and managerial process by which individuals and groups obtain what they need and want through creating and exchanging products and value with each other" -Phillip Kotler
 ### Internet Marketing
@@ -51,7 +51,8 @@
 		- Sparks Social Interaction
 		- Aids Productivity
 - **Digital Vs Traditional Marketing**
-	- `GPT zindabad`
+	- **Boost Brand Awareness**: 
+	- `Extra points from GPT`
 	- **Reach:**
 	    - Digital Marketing: Global reach through the internet.
 	    - Traditional Marketing: Limited to local or regional audiences.
