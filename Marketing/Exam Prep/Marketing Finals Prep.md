@@ -504,10 +504,25 @@ Examples of campaigns that were done right
 		- Homogeneity, common needs within a segment
 		- Distinction, uniqueness from other groups
 		- Reaction, similar responses on the market
+	- Benefits
+		- Customized Marketing Messages
+		- Efficient resource allocation
+		- Competitive advantage
+	- Challenges
+		- Data collection and analysis
+		- Over-segmentation
+		- Ever-Changing consumer behavior
 
 Types of market segmentation
-- 
 
+| **Segmentation Type** | **Focus**                                   | **Examples**                                           | **Use Case**                                                                      |
+|-----------------------|---------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------|
+| **Geographic**        | Divides markets based on physical locations. | Countries, regions, cities, climate zones, population density | Useful for businesses adapting products to specific geographic needs or cultural preferences.          |
+| **Demographic**       | Categorizes markets by demographic factors. | Age, gender, income, education, occupation, marital status, family size | Helps target products or services to specific groups with similar demographic characteristics.              |
+| **Psychographic**     | Focuses on attitudes, interests, lifestyles, values of consumers. | Hobbies, values, social class, personality traits       | Enables businesses to tailor offerings to the psychological and sociological aspects of specific consumer groups. |
+| **Behavioral**        | Divides markets based on behaviors, usage patterns, product interactions. | Buying occasion, brand loyalty, product benefits, user status | Useful for understanding and predicting how consumers make purchasing decisions and interact with products.   |
+
+Brand positioning 
 # Strategy Formulation vs Implementation
 
 # Email Marketing
