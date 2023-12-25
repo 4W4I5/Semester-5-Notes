@@ -15,7 +15,7 @@
 | 5              | Blogging                               | :warning:          |
 | 6              | Mobile Marketing                       | :white_check_mark:                |
 | 7              | Market Segmentation                    | :white_check_mark:                |
-| 8              | Strategy Formulation vs Implementation | :x:                |
+| 8              | Strategy Formulation vs Implementation | :white_check_mark:                |
 | 9              | Email Marketing                        | :x:                |
 | 10             | Digital Campaign Planning              | :x:                |
 | 11             | Search Engine Optimization             | :x:                |
@@ -548,7 +548,25 @@ Overlap of all these zones is the risky zone
 	- Assessing overall health/performance by identifying high performing and under-performing components
 	- Optimizes resource allocation/prioritize strategic initiatives
 - BCG Matrix (Boston Consulting Group)
-	- 
+	- Used when a portfolio needs to be assessed further
+	- Visual representation of the product health to potential is required
+	- Helps make decisions in regards to investment, divestment or further development of products
+	- Useful terms
+		- Stars
+			- Rapid growth
+			- High business growth rate, High market share
+		- Cash Cows
+			- Milk to finance question marks & starts
+			- Low business growth rate, High market share
+		- Question Marks
+			- New ventures, some become stars. others get divested eventually
+			- High business growth rate, Low market share
+		- Dogs
+			- Consider divestment, keep if some profit is there.
+			- Low business growth rate, Low market share
+- Diversification Strategy
+	- Portfolio analysis: Done via implementing a broader portfolio strategy especially when a company aims to achieve a balanced and diversified portfolio of products or business units (SBUs)
+	- BCG Matrix: Involves adding in new products into different quadrants of the BCG matrix
 
 | **Aspect**                   | **Strategy Formulation**                        | **Strategy Implementation**                                       |
 |------------------------------|-------------------------------------------------|--------------------------------------------------------------------|
