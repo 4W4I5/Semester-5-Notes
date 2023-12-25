@@ -785,19 +785,17 @@ Use of original concepts, designs and storytelling to effectively communicate a 
     - Went viral, generating discussions and positive sentiment around the brand.
 
 # Laws of branding
+- **The Law of Expansion**: “The power of a brand is inversely proportional to its scope.”
 
-- **The Law of Expansion**: “The power of a brand is inversely proportional to its scope.”
+- **The Law of Contraction**: “A brand becomes stronger when you narrow its focus.”
 
-- **The Law of Contraction**: “A brand becomes stronger when you narrow its focus.”
+- **The Law of Advertising**: “Once born, a brand needs advertising to stay healthy.”
 
-- **The Law of Advertising**: “Once born, a brand needs advertising to stay healthy.”
+- **The Law of the Word**: “A brand should strive to own a word in the mind of the consumer.”
 
-- **The Law of the Word**: “A brand should strive to own a word in the mind of the consumer.”
+- **The Law of Credentials**: “The crucial ingredient in the success of any brand is its claim to authenticity.”
 
-- **The Law of Credentials**: “The crucial ingredient in the success of any brand is its claim to authenticity.”
-
-- **The Law of Quality**: “Quality is important, but brands are not built by quality alone.”
-
+- **The Law of Quality**: “Quality is important, but brands are not built by quality alone.”
 - **The Law of Extensions**: “The easiest way to destroy a brand is to put its name on everything.”
 - **The Law of the Company**: “Brands are brands. Companies are companies. There is a difference.”
 - **The Law of Siblings**: “There is a time and a place to launch a second brand.” 

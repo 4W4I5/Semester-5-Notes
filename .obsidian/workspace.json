@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +182,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "f0e2897abd1a72af",
+  "active": "bc3cb7a62d20218d",
   "lastOpenFiles": [
     "Untitled.md",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
