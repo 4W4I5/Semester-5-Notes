@@ -2,24 +2,24 @@
 > Lectures tagged with :warning: are essentially low-effort notes
 
 
-| Lecture Number | Topic                                  | Status    |
-| -------------- | -------------------------------------- | --------- |
-| 1              | Introduction to digital marketing      | :warning: |
-| 2              | Social Media                           | :warning: |
-| 3              | Content Marketing                      | :warning: |
-| 4              | Websites                               | :warning: |
-| 5              | Blogging                               | :warning: |
-| 6              | Mobile Marketing                       | :x:       |
-| 7              | Market Segmentation                    | :x:       |
-| 8              | Strategy Formulation vs Implementation | :x:       |
-| 9              | Email Marketing                        | :x:       |
-| 10             | Digital Campaign Planning              | :x:       |
-| 11             | Search Engine Optimization             | :x:       |
-| 12             | Creativity in digital media            | :x:       |
-| 13             | Laws of branding                       | :x:       |
-| 14             | Data Privacy & Ethics                  | :x:       |
-| 15             | Communicating your marketing campaign  | :x:       |
-| 16             | Co-Branding                            | :x:       |
+| Lecture Number | Topic                                  | Status             |
+| -------------- | -------------------------------------- | ------------------ |
+| 1              | Introduction to digital marketing      | :white_check_mark: |
+| 2              | Social Media                           | :warning:          |
+| 3              | Content Marketing                      | :warning:          |
+| 4              | Websites                               | :warning:          |
+| 5              | Blogging                               | :warning:          |
+| 6              | Mobile Marketing                       | :x:                |
+| 7              | Market Segmentation                    | :x:                |
+| 8              | Strategy Formulation vs Implementation | :x:                |
+| 9              | Email Marketing                        | :x:                |
+| 10             | Digital Campaign Planning              | :x:                |
+| 11             | Search Engine Optimization             | :x:                |
+| 12             | Creativity in digital media            | :x:                |
+| 13             | Laws of branding                       | :x:                |
+| 14             | Data Privacy & Ethics                  | :x:                |
+| 15             | Communicating your marketing campaign  | :x:                |
+| 16             | Co-Branding                            | :x:                |
 
 <!--
 :white_check_mark:
@@ -53,7 +53,8 @@
 - **Digital Vs Traditional Marketing**
 	- **Boost Brand Awareness**: Internet users make purchase decisions and seek info thru the internet. Branded media allows target audience to be more aware of your digital presence
 	- **Supports Accuracy**: Difficult to change/add information on traditional media, can also be obsolete by the time it reaches the target audience. Digital provides scalability and quick edit responses
-	- **Sparks social interaction**: Optimal way to build/nurture a community around a brand. 
+	- **Sparks social interaction**: Optimal way to build/nurture a community around a brand. Allows brands to connect/build relationships w customers.
+	- **Aids productivity**: Information is easier to access and work with digitally especially on remote locations.
 	- `Extra points from GPT`
 	- **Reach:**
 	    - Digital Marketing: Global reach through the internet.
