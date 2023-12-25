@@ -681,10 +681,18 @@ Overlap of all these zones is the risky zone
 Workflow
 - Situational Analysis
 - Establish Digital marketing goals
+	- Smart, Measurable, Attainable, relevant and timely goals
+	- Be more realistic in your goals, i want to achieve xyz is not a goal. I want to achieve 5k clicks over a period of 2 months is one.
 - Define the marketing strategy
+	- Segment the target audience
+	- Positioning
+	- Content Strategy
 - Digital Strategies and Tactics
 	- `Apparantly yahan it says email marketing campaigns but in strat formulation and implementation it was portofolio, bcg and diversification wth`
-	- 
+	- Strategies = Define marketing methods to use
+	- Channels = Define subtypes within those marketing channels to implement
+- Measure results & KPIs
+	- Key performance indicator, evaluated at every step in the workflow to observe if a given ROI is returned
 
 # Search Engine Optimization
 
