@@ -431,9 +431,20 @@
 Main elements
 - Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
 - 55.68% of web traffic comes from mobile devices
-- 
+- Design and usability
+	- Design (UI) associates with style, colors, images, etc. Anything that attracts the user to the mobile app/site
+	- Usability (UX) deals with how the user interacts with those elements on the screen, how they are placed, sizes of the buttons, even what each button's title should be
+- Content
+- Advertising
 
 Mobile Marketing Strategies
+- App-based
+- In-Game
+- Location-Based
+- Mobile search
+- Mobile image
+- SMS
+
 
 Importance of Mobile Marketing
 
