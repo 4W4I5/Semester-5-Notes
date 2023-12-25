@@ -448,6 +448,7 @@ Main elements
 Mobile Marketing Strategies
 - App-based
 - In-Game
+- QR Codes
 - Location-Based
 - Mobile search
 - Mobile image
