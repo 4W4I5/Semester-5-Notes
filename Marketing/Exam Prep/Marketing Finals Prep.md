@@ -499,6 +499,14 @@ Examples of campaigns that were done right
 - Hunger Spotter: Spotify and Snickers
 - Check-in Coupons: UNIQLO
 # Market Segmentation
+- Aggregating prospective buyers into groups/segments with common needs to respond similarly to a certain marketing action
+	- Determined by
+		- Homogeneity, common needs within a segment
+		- Distinction, uniqueness from other groups
+		- Reaction, similar responses on the market
+
+Types of market segmentation
+- 
 
 # Strategy Formulation vs Implementation
 
