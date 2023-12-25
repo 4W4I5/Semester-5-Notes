@@ -597,9 +597,13 @@ Overlap of all these zones is the risky zone
 - Emails are not public discussion boards
 - Given direct access to audience, not affected by any sort of algorithm
 **Building an email list and segmentation**
+Use embedded signup forms, deploy welcome popup, promotional popup, timed popup forms
+squeeze page
 **Crafting effective email campaign**
 **Marketing automation & Drip campaigns**
 **Analyzing email campaign performance**
+
+**Types of email marketing**
 
 # Digital Campaign Planning
 
