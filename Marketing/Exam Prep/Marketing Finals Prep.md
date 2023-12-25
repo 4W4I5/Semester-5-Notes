@@ -18,7 +18,7 @@
 | 9              | Email Marketing                        | :white_check_mark:                |
 | 10             | Digital Campaign Planning              | :white_check_mark:                |
 | 11             | Search Engine Optimization             | :white_check_mark:                |
-| 12             | Creativity in digital media            | :x:                |
+| 12             | Creativity in digital media            | GPT Content :warning:                |
 | 13             | Laws of branding                       | :x:                |
 | 14             | Data Privacy & Ethics                  | :x:                |
 | 15             | Communicating your marketing campaign  | :x:                |
@@ -675,6 +675,7 @@ Overlap of all these zones is the risky zone
 	- Timing & Roadmap
 
 Workflow
+
 - Situational Analysis
 	- SWOT analysis or any other benchmarking techniques
 		- Strengths, Weaknesses, Opportunities and Threats
@@ -692,6 +693,7 @@ Workflow
 	- Key performance indicator, evaluated at every step in the workflow to observe if a given ROI is returned
 
 God-Tier Campaigns
+
 - Oreo - You can still dunk in the dark
 	- Oreo tends to have a fun, whimsical tone with cultural relevance
 	- The campaign was simple in essence. A tweet with a hashtag. Perfect example of social media marketing
@@ -704,7 +706,9 @@ God-Tier Campaigns
 	- This was risky/bold as the brand had to be at the number one spot when the users searched for the place
 
 # Search Engine Optimization
+
 Working
+
 - Content is published
 - Crawlers review the page
 - Search engines index the pages
@@ -720,20 +724,65 @@ Use
 	- Improvements will signal search engines to rank the website higher as it provides the data that was looked for
 - SEM, focuses on improving both organic/paid results. Using this leads to results being shown at both the top/bottom of the search results
 
-
 Involves
+
 - Keyword research
 - Content creation and optimization
 - Technical optimization
 - Link building
 
 Improvements
+
 - Navigational: User searches for specific website
 - Informational: User searches for information on a certain topic
 - Commercial Investigation: Researches options for a product/service
 - Transactional: User searches for a specific product or brand
 
 # Creativity in digital media
+
+Use of original concepts, designs and storytelling to effectively communicate a message or promote a service/product
+
+**Importance**:
+
+1. **Attention Grabbing:**
+    - Originality in content and design captures the audience's attention amidst the digital noise.
+    - Unique and creative elements stand out in crowded digital spaces, increasing visibility.
+2. **Engages Emotions:**
+    - Creative content has the power to evoke emotions and create a connection with the audience.
+    - Emotional engagement enhances the overall user experience, fostering a memorable interaction.
+3. **Increases Memorability:**
+    - Original concepts and innovative designs leave a lasting impression on the audience.
+    - Memorable content increases brand recall, contributing to long-term brand awareness.
+4. **Generates Buzz:**
+    - Creativity sparks interest and conversations, leading to organic sharing and word-of-mouth marketing.
+    - Viral potential is higher when content stands out, creating a buzz around the brand or message.
+
+**Strategies for Creativity**:
+
+1. **Storytelling:**
+    - Craft narratives that resonate with the audience, making the content more relatable and memorable.
+    - Use storytelling to convey brand values, missions, or the unique selling proposition.
+2. **Visual Appeal:**
+    - Invest in visually striking designs, graphics, and multimedia elements to enhance the overall aesthetic.
+    - Visually appealing content increases engagement and encourages sharing.
+3. **Interactive Content:**
+    - Create interactive experiences that involve the audience, such as quizzes, polls, or interactive videos.
+    - Interactive content enhances user participation and extends the time spent with the brand.
+4. **Surprise and Delight:**
+    - Incorporate unexpected elements or surprises in digital campaigns to capture attention.
+    - Positive surprises create a memorable and enjoyable user experience.
+5. **User-Generated Content:**
+    - Encourage users to contribute to the content creation process.
+    - User-generated content adds authenticity and diversity to digital campaigns.
+
+**Case Studies**:
+
+1. **Old Spice "The Man Your Man Could Smell Like":**
+    - A humorous and unexpected approach to advertising.
+    - Viral success with engaging storytelling, contributing to increased brand visibility.
+2. **Dove "Real Beauty Sketches":**
+    - Used a powerful and emotional message to challenge beauty standards.
+    - Went viral, generating discussions and positive sentiment around the brand.
 
 # Laws of branding
 
