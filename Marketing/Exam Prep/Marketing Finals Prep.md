@@ -5,7 +5,6 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
-
 | Lecture Number | Topic                                  | Status             |
 | -------------- | -------------------------------------- | ------------------ |
 | 1              | Introduction to digital marketing      | :white_check_mark: |
@@ -37,9 +36,9 @@
 - Described as electronic tech that generates, stores and processes data in terms of 1's & 0's
 	- It can be both online and offline i.e. it can be an audio file that is streamed online and stored on a disc
 	- Not sure about billboards though
-### Marketing
+## Marketing
 - "Marketing is a social and managerial process by which individuals and groups obtain what they need and want through creating and exchanging products and value with each other" -Phillip Kotler
-### Internet Marketing
+## Internet Marketing
 - What is internet marketing
 	- Internet Marketing is internet specific only as it appears exclusively on websites
 	- Digital marketing is a more generalized scope involving the internet + social media and mobile apps
@@ -91,7 +90,7 @@
 	    - Digital Marketing: Allows for highly personalized content.
 	    - Traditional Marketing: Offers limited personalization options.
 
-#### Types of Digital Marketing channels
+### Types of Digital Marketing channels
 
 - **Website:**
 	- A website serves as a fundamental marketing channel for most businesses.
@@ -223,12 +222,12 @@
 - Primary goal: Build and nurture a relationship with potential customers
 	- Seeks to educate, entertain or inspire the audience, ultimately leading them to take a desired action such as making a purchase or becoming a loyal customer
 
-### Branded Content
+## Branded Content
 
 - Directly related to your brand and shares your values in a way that evokes an emotional response in your audiences and allows them to understand what you stand for
 	- Can in be in the form of a blog, yt video, news article. can help you build brand awareness, increase loyalty and leave and impression on your audience beyond the products and services you sell
 
-#### Branded content on instagram
+### Branded content on instagram
 
 - Creator/publishers content that features or is influence by a business partner for an exchange of value
 	- If a brand partners it is a sponsored post
@@ -262,7 +261,7 @@
 	- Creating effective branded content can be challenging, as it requires a deep understanding of the target audience and the ability to create content that resonates without being overtly promotional.
 
 # Websites
-### Most common types of website
+## Most common types of website
 
 - #### Ecommerce Website:
 	- **Purpose**: To sell products or services online.
@@ -305,7 +304,7 @@
 	- **Primary Features**: Discussion boards, user profiles, topic categories.
 	- **Examples**: Reddit, Stack Overflow, and other online forums.
 
-### Importance of Website Marketing
+## Importance of Website Marketing
 
 - **Online Presence**: A website serves as your digital storefront, providing a 24/7 online presence where potential customers can find information about your business.
 - **Credibility**: Having a professional website builds credibility and trust with potential customers. It's often the first place people go to research a business.
@@ -320,33 +319,33 @@
 - **Mobile Accessibility**: A responsive website ensures it's accessible on mobile devices, catering to a growing mobile user base.
 - **Cost-Effective**: Compared to traditional marketing channels, maintaining a website is often cost-effective and provides a better return on investment
 
-### Random websites provided at the end of the slides
+## Random websites provided at the end of the slides
 
-#### Bombas ([https://bombas.com/](https://bombas.com/)):
+### Bombas ([https://bombas.com/](https://bombas.com/)):
 
 - **Product**: Bombas is a clothing company known for its comfortable and innovative socks.
 - **Mission**: They are well-known for their commitment to donating a pair of socks to homeless shelters for every pair purchased.
 - **Focus**: The website highlights their sock collections and philanthropic efforts.
 
-#### Cicada ([https://www.cicadasocks.com/](https://www.cicadasocks.com/)):
+### Cicada ([https://www.cicadasocks.com/](https://www.cicadasocks.com/)):
 
 - **Product**: Cicada specializes in producing high-quality, stylish socks.
 - **Unique Feature**: They offer a subscription service where customers receive new socks regularly.
 - **Design**: The website has a clean and modern design, emphasizing their sock collections.
 
-#### London Sock Co ([https://www.londonsockcompany.com/](https://www.londonsockcompany.com/)):
+### London Sock Co ([https://www.londonsockcompany.com/](https://www.londonsockcompany.com/)):
 
 - **Product**: London Sock Co is a luxury sock brand known for its elegant designs and high-quality materials.
 - **British Heritage**: They incorporate British heritage into their sock designs and packaging.
 - **Personalization**: The website offers personalized sock gift options.
 
-#### Boardroom Socks ([https://boardroomsocks.com/](https://boardroomsocks.com/)):
+### Boardroom Socks ([https://boardroomsocks.com/](https://boardroomsocks.com/)):
 
 - **Product**: Boardroom Socks focuses on premium men's dress socks, often used for business attire.
 - **Quality**: They emphasize the quality of their socks, suitable for formal occasions.
 - **Variety**: The website showcases various sock styles and colors.
 
-#### Merge4Socks ([https://merge4.com/](https://merge4.com/)):
+### Merge4Socks ([https://merge4.com/](https://merge4.com/)):
 
 - **Product**: Merge4Socks is known for its unique and artistic sock designs.
 - **Collaborations**: They collaborate with artists and musicians to create one-of-a-kind sock designs.
@@ -432,11 +431,14 @@
     - Typically includes clear navigation menus.
 
 # Mobile Marketing
+
 **Trivia**
+
 - Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
 - 55.68% of web traffic comes from mobile devices
 
 **Main elements**
+
 - Design and usability
 	- Design (UI) associates with style, colors, images, etc. Anything that attracts the user to the mobile app/site
 		- Some designers make the mistake of applying desktop designs for mobile. This is troublesome as touch screens and mouse cursors interact differently with the content displayed
@@ -450,6 +452,7 @@
 	- **Interstitial ads**: Full screen ads that are displayed in between pages. Triggered whenever a user moves from one page to the other. Think of those ads where you have to tap the stupid 'x' to close it
 
 **Mobile Marketing Strategies**
+
 - App-based Marketing
     - Utilize mobile applications to reach and engage with users.
     - Leverage in-app advertisements and push notifications.
@@ -473,6 +476,7 @@
     - Ensure compliance with regulations and focus on opt-in strategies.
 
 **Importance of Mobile Marketing**
+
 - **Brand Awareness and Engagement:**
 	- Raising brand awareness amongst the target audience.
 	- Interactive advertising campaigns via influencer marketing.
@@ -493,6 +497,7 @@
 	- Upselling products or services to a targeted audience.
 
 **Examples of campaigns that were done right**
+
 - Piece of the Pie Rewards – Domino’s
 - Send Us a Text – Ford
 - Burn That Ad – Burger King
@@ -527,6 +532,7 @@
 | **Behavioral**        | Divides markets based on behaviors, usage patterns, product interactions. | Buying occasion, brand loyalty, product benefits, user status | Useful for understanding and predicting how consumers make purchasing decisions and interact with products.   |
 
 **Brand positioning strategy**
+
 - Consumer needs
 	- Overlap with competitor is aka losing zone
 	- Overlap with brand strength is aka winning zone
@@ -536,13 +542,16 @@
 Overlap of all these zones is the risky zone
 
 **Perceptual Mapping**
+
 - Identify 2 key variables such as quality, shelf life, price, features
 - Set either variables as the axes
 - Pick a center point brand to reference off of
 - if brand lower or higher than currently selected brand. place it accordingly
 
 # Strategy Formulation vs Implementation
+
 **Formulation is done via**:
+
 - Portfolio analysis
 	- Used when a company has a diverse range of products, provides a holistic view i.e. a broader view of the company
 	- Assessing overall health/performance by identifying high performing and under-performing components
@@ -592,35 +601,74 @@ Overlap of all these zones is the risky zone
 - Involves sending emails with the goal of promoting products, services or building relationships with customers
 
 **Benefits**
+
 - Personalized to a greater extent
 - low cost alternative to other channels
 - Emails are not public discussion boards
 - Given direct access to audience, not affected by any sort of algorithm
 **Building an email list and segmentation**
-Use embedded signup forms
-deploy welcome popup,
-promotional popup, 
-timed popup forms
-create a squeeze page
-use gamification
+1. **Embedded Signup Forms:**
+    - **Description:** Place signup forms directly within your website's content.
+    - **Benefits:** Seamless integration, encourages spontaneous signups as visitors engage with your content.
+2. **Deploy Welcome Popup:**
+    - **Description:** Display a popup when visitors first land on your site, inviting them to subscribe.
+    - **Benefits:** Grabs immediate attention, sets the tone for user engagement.
+3. **Promotional Popup:**
+    - **Description:** Trigger popups promoting special offers, discounts, or exclusive content in exchange for email signups.
+    - **Benefits:** Incentivizes signups, boosts conversion rates with targeted promotions.
+4. **Timed Popup Forms:**
+    - **Description:** Show popups after a certain amount of time spent on the site, encouraging engagement.
+    - **Benefits:** Balances user experience by not interrupting too soon, targets engaged visitors.
+5. **Create a Squeeze Page:**
+    - **Description:** Develop a dedicated landing page with a compelling offer and a prominent signup form.
+    - **Benefits:** Focuses on a specific promotion or content, optimized for conversions.
+6. **Use Gamification:**
+    - **Description:** Integrate games, quizzes, or contests that require email signups for participation.
+    - **Benefits:** Adds an element of fun and engagement, incentivizes signups through interactive content.
+
+**Segmentation Techniques**:
+
+1. **Demographic Segmentation:**
+    - **How to Implement:** Collect demographic data like age, gender, location through sign-up forms.
+    - **Benefits:** Tailor content based on demographics, improve personalization.
+2. **Behavioral Segmentation:**
+    - **How to Implement:** Track user behavior (clicks, opens, purchases) and categorize accordingly.
+    - **Benefits:** Send targeted emails based on user actions, improve engagement.
+3. **Preferences and Interests:**
+    - **How to Implement:** Use preference centers and surveys to gather information on interests.
+    - **Benefits:** Send content aligned with subscriber interests, enhance relevance.
+4. **Purchase History:**
+    - **How to Implement:** Segment based on past purchases or browsing history.
+    - **Benefits:** Target customers with related products or exclusive offers, increase conversion rates.
+5. **Engagement Levels:**
+    - **How to Implement:** Monitor email opens, clicks, and overall engagement.
+    - **Benefits:** Send re-engagement campaigns to inactive subscribers, maintain a healthy list.
+6. **Customer Journey Stage:**
+    - **How to Implement:** Segment based on where subscribers are in the customer journey.
+    - **Benefits:** Deliver content appropriate to each stage, nurture leads effectively.
+
 **Crafting effective email campaign**
-- Promotional emails
-- Email newsletters
-- Lead nurturing emails
-- Sponsorship emails
-- Transactional emails
-- Re-engagement emails
-- Brand story emails
-- Review Request emails
+
+| **Type of Email Campaign**   | **Purpose**                                              | **Target Audience**                        | **Content Focus**                             | **Timing**                                   | **Call to Action**                                |
+|------------------------------|----------------------------------------------------------|---------------------------------------------|-----------------------------------------------|----------------------------------------------|---------------------------------------------------|
+| **Promotional Emails**       | Drive sales and promote special offers.                  | Current customers or potential buyers.     | Highlight product/service discounts or events. | Aligned with promotions or events.            | Encourage immediate purchase with clear links.     |
+| **Email Newsletters**        | Inform and engage subscribers with regular updates.      | Subscribers and existing customers.        | Share industry news, company updates, and tips. | Consistent schedule (weekly/monthly).        | Encourage reading and sharing of newsletter content. |
+| **Lead Nurturing Emails**    | Nurture leads and guide them through the sales funnel.    | Prospective customers or leads.             | Provide valuable content, such as ebooks or webinars. | Based on lead behavior and interactions.    | Encourage further engagement or product exploration. |
+| **Sponsorship Emails**       | Promote partnerships or collaborations with other brands. | Shared audience with partner brand.         | Highlight joint initiatives or exclusive offers. | Coordinated with partnership activities.    | Direct audience to shared promotions or events.     |
+| **Transactional Emails**     | Confirm transactions and provide order-related information. | Customers who recently made a purchase.    | Order confirmation, shipping details, and receipts. | Sent immediately after a transaction.       | Provide order details and encourage customer feedback. |
+| **Re-engagement Emails**     | Reconnect with inactive or disengaged subscribers.        | Inactive subscribers or lapsed customers.  | Enticing offers, product updates, or surveys. | Triggered after a period of inactivity.    | Encourage a return to the platform or offer incentives. |
+| **Brand Story Emails**       | Build brand awareness and share the brand's narrative.    | Subscribers, potential customers.           | Narratives about the brand's history, values, and mission. | Integrated into brand storytelling campaigns. | Connect emotionally, invite feedback, or share social impact. |
+| **Review Request Emails**    | Encourage customers to leave reviews and feedback.        | Recent customers or those with recent interactions. | Request reviews on products or services purchased. | Sent post-purchase or after specific interactions. | Include direct links to review platforms or feedback forms. |
+
 **Marketing automation & Drip campaigns**
+
 Drip Campaign
-- Series of pre-designed, automated messages sent to customers/subscribers over time i.e. they follow a certain schedule which can be set intervals or in response to customer actions/behaviours
+
+- Series of pre-designed, automated messages sent to customers/subscribers over time i.e. they follow a certain schedule which can be set intervals or in response to customer actions/behavior's
 - Can be done via SMS/Social media as well
 - Aims to engage or nurture leads or prospects, eventually converting them to into customers
-**Analyzing email campaign performance**
-
-
 # Digital Campaign Planning
+
 
 # Search Engine Optimization
 
