@@ -666,7 +666,13 @@ Overlap of all these zones is the risky zone
 - Can be done via SMS/Social media as well
 - Aims to engage or nurture leads or prospects, eventually converting them to into customers
 # Digital Campaign Planning
-
+- Create a doc that outlines a marketing plan
+	- Short, medium and long term business goals
+	- Strategies to achieve the goals at the digital level
+	- Channels used
+	- Action & Development plans
+	- Investment & budget
+	- Timing & Roadmap
 
 # Search Engine Optimization
 
