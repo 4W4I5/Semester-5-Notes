@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "bc3cb7a62d20218d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Marketing/Exam Prep/Marketing Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,7 +182,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "bc3cb7a62d20218d",
   "lastOpenFiles": [
     "Untitled.md",
     "Marketing/Exam Prep/Marketing Finals Prep.md",

@@ -10,7 +10,7 @@
 | 4              | Websites                               | :warning:          |
 | 5              | Blogging                               | :warning:          |
 | 6              | Mobile Marketing                       | :white_check_mark:                |
-| 7              | Market Segmentation                    | :x:                |
+| 7              | Market Segmentation                    | :white_check_mark:                |
 | 8              | Strategy Formulation vs Implementation | :x:                |
 | 9              | Email Marketing                        | :x:                |
 | 10             | Digital Campaign Planning              | :x:                |
@@ -428,7 +428,7 @@
     - Typically includes clear navigation menus.
 
 # Mobile Marketing
-Trivia
+**Trivia**
 - Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
 - 55.68% of web traffic comes from mobile devices
 
@@ -488,7 +488,7 @@ Trivia
 - **Sales and Upselling:**
 	- Upselling products or services to a targeted audience.
 
-Examples of campaigns that were done right
+**Examples of campaigns that were done right**
 - Piece of the Pie Rewards – Domino’s
 - Send Us a Text – Ford
 - Burn That Ad – Burger King
@@ -513,7 +513,7 @@ Examples of campaigns that were done right
 		- Over-segmentation
 		- Ever-Changing consumer behavior
 
-Types of market segmentation
+**Types of market segmentation**
 
 | **Segmentation Type** | **Focus**                                   | **Examples**                                           | **Use Case**                                                                      |
 |-----------------------|---------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------------------------|
@@ -522,7 +522,7 @@ Types of market segmentation
 | **Psychographic**     | Focuses on attitudes, interests, lifestyles, values of consumers. | Hobbies, values, social class, personality traits       | Enables businesses to tailor offerings to the psychological and sociological aspects of specific consumer groups. |
 | **Behavioral**        | Divides markets based on behaviors, usage patterns, product interactions. | Buying occasion, brand loyalty, product benefits, user status | Useful for understanding and predicting how consumers make purchasing decisions and interact with products.   |
 
-Brand positioning strategy
+**Brand positioning strategy**
 - Consumer needs
 	- Overlap with competitor is aka losing zone
 	- Overlap with brand strength is aka winning zone
@@ -531,9 +531,14 @@ Brand positioning strategy
 - Competitor Strengths
 Overlap of all these zones is the risky zone
 
-
+**Perceptual Mapping**
+- Identify 2 key variables such as quality, shelf life, price, features
+- Set either variables as the axes
+- Pick a center point brand to reference off of
+- if brand lower or higher than currently selected brand. place it accordingly
 
 # Strategy Formulation vs Implementation
+
 
 # Email Marketing
 
