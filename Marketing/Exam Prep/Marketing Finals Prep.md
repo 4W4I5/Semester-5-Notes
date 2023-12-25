@@ -542,14 +542,36 @@ Overlap of all these zones is the risky zone
 - if brand lower or higher than currently selected brand. place it accordingly
 
 # Strategy Formulation vs Implementation
-Formulation
-- Portfolio
-- BCG Matrix
-- Diversification
+**Formulation is done via**:
+- Portfolio analysis
+	- Used when a company has a diverse range of products, provides a holistic view i.e. a broader view of the company
+	- Assessing overall health/performance by identifying high performing and under-performing components
+	- Optimizes resource allocation/prioritize strategic initiatives
+- BCG Matrix (Boston Consulting Group)
+	- 
 
-Implementation
-- 
+| **Aspect**                   | **Strategy Formulation**                        | **Strategy Implementation**                                       |
+|------------------------------|-------------------------------------------------|--------------------------------------------------------------------|
+| **Focus**                    | Planning and developing strategic approaches.  | Executing and putting strategic plans into action.                 |
+| **Tools/Models**             | - Portfolio Analysis                           | - Balanced Scorecard                                                |
+|                              | - BCG Matrix                                    | - Project Management                                               |
+|                              | - Diversification                              | - Change Management                                                |
+|                              |                                                | - Key Performance Indicators (KPIs)                                |
+|                              |                                                | - Resource Allocation and Budgeting                                |
+|                              |                                                | - Communication and Alignment                                      |
+| **Purpose**                  | Evaluate and select strategic options.         | Ensure effective execution of chosen strategies.                   |
+| **Outcome**                  | Clear strategic direction and choices.         | Achieving organizational goals and objectives.                    |
+| **Key Activities**           | - Analyzing business units or product lines.   | - Establishing project teams and roles.                            |
+|                              | - Identifying growth opportunities.             | - Allocating resources effectively.                                |
+|                              | - Assessing risk and return.                   | - Monitoring and adjusting tactics.                                |
+| **Challenges**               | - Obtaining accurate data for analysis.        | - Overcoming resistance to change.                                  |
+|                              | - Balancing short-term gains with long-term    | - Aligning day-to-day activities with strategic objectives.        |
+|                              |   sustainability.                              | - Adapting to unforeseen challenges.                               |
+| **Timeframe**                | Medium to long-term                            | Short to medium-term                                               |
+| **Flexibility**              | Requires periodic reassessment and adjustment. | Requires adaptability to changing circumstances and feedback.      |
+
 # Email Marketing
+
 
 # Digital Campaign Planning
 
