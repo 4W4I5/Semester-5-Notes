@@ -53,7 +53,7 @@
 - **Digital Vs Traditional Marketing**
 	- **Boost Brand Awareness**: Internet users make purchase decisions and seek info thru the internet. Branded media allows target audience to be more aware of your digital presence
 	- **Supports Accuracy**: Difficult to change/add information on traditional media, can also be obsolete by the time it reaches the target audience. Digital provides scalability and quick edit responses
-	- ****
+	- **Sparks social interaction**: Optimal way to build/nurture a community around a brand. 
 	- `Extra points from GPT`
 	- **Reach:**
 	    - Digital Marketing: Global reach through the internet.
