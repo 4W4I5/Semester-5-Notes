@@ -662,8 +662,6 @@ Overlap of all these zones is the risky zone
 
 **Marketing automation & Drip campaigns**
 
-Drip Campaign
-
 - Series of pre-designed, automated messages sent to customers/subscribers over time i.e. they follow a certain schedule which can be set intervals or in response to customer actions/behavior's
 - Can be done via SMS/Social media as well
 - Aims to engage or nurture leads or prospects, eventually converting them to into customers
