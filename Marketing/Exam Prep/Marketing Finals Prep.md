@@ -524,8 +524,15 @@ Types of market segmentation
 
 Brand positioning strategy
 - Consumer needs
+	- Overlap with competitor is aka losing zone
+	- Overlap with brand strength is aka winning zone
 - Brand Strengths
+	- Overlap with Competitor is aka dumb zone. Consumer ko farak hi nhi parh raha
 - Competitor Strengths
+Overlap of all these zones is the risky zone
+
+
+
 # Strategy Formulation vs Implementation
 
 # Email Marketing
