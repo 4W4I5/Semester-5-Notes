@@ -666,13 +666,25 @@ Overlap of all these zones is the risky zone
 - Can be done via SMS/Social media as well
 - Aims to engage or nurture leads or prospects, eventually converting them to into customers
 # Digital Campaign Planning
-- Create a doc that outlines a marketing plan
+>[!WARNING]
+>Not sure about the strats and channels used. if you know then text me
+
+
+- Structure of a marketing plan
 	- Short, medium and long term business goals
 	- Strategies to achieve the goals at the digital level
 	- Channels used
 	- Action & Development plans
 	- Investment & budget
 	- Timing & Roadmap
+
+Workflow
+- Situational Analysis
+- Establish Digital marketing goals
+- Define the marketing strategy
+- Digital Strategies and Tactics
+	- `Apparantly yahan it says email marketing campaigns but in strat formulation and implementation it was portofolio, bcg and diversification wth`
+	- 
 
 # Search Engine Optimization
 
