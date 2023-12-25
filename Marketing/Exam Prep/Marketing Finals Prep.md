@@ -1,8 +1,8 @@
 > [!NOTE]
 > Lectures tagged with :warning: are essentially low-effort notes. Did not make them right before finals
 >
-> Lectures tagged with :white_check_mark: were made recently
-> 
+> Lectures tagged with :white_check_mark: were made during finals
+>
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
 
