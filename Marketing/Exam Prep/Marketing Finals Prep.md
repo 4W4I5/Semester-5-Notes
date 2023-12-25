@@ -428,7 +428,16 @@
     - Typically includes clear navigation menus.
 
 # Mobile Marketing
+Main elements
+- Takes advantage of SMS/MMS, Apps such as mobile apps, messaging apps, and mobile browsers
+- 55.68% of web traffic comes from mobile devices
+- 
 
+Mobile Marketing Strategies
+
+Importance of Mobile Marketing
+
+Examples of campaigns that were done right
 
 # Market Segmentation
 
