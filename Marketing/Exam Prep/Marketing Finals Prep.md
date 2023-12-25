@@ -522,7 +522,10 @@ Types of market segmentation
 | **Psychographic**     | Focuses on attitudes, interests, lifestyles, values of consumers. | Hobbies, values, social class, personality traits       | Enables businesses to tailor offerings to the psychological and sociological aspects of specific consumer groups. |
 | **Behavioral**        | Divides markets based on behaviors, usage patterns, product interactions. | Buying occasion, brand loyalty, product benefits, user status | Useful for understanding and predicting how consumers make purchasing decisions and interact with products.   |
 
-Brand positioning 
+Brand positioning strategy
+- Consumer needs
+- Brand Strengths
+- Competitor Strengths
 # Strategy Formulation vs Implementation
 
 # Email Marketing
