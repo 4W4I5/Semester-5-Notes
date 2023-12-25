@@ -589,7 +589,17 @@ Overlap of all these zones is the risky zone
 | **Flexibility**              | Requires periodic reassessment and adjustment. | Requires adaptability to changing circumstances and feedback.      |
 
 # Email Marketing
+- Involves sending emails with the goal of promoting products, services or building relationships with customers
 
+**Benefits**
+- Personalized to a greater extent
+- low cost alternative to other channels
+- Emails are not public discussion boards
+- Given direct access to audience, not affected by any sort of algorithm
+**Building an email list and segmentation**
+**Crafting effective email campaign**
+**Marketing automation & Drip campaigns**
+**Analyzing email campaign performance**
 
 # Digital Campaign Planning
 
