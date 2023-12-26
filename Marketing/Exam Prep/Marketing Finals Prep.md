@@ -908,12 +908,11 @@ Use of original concepts, designs and storytelling to effectively communicate a 
 - **Co-Branding:**
   - Strategic marketing and advertising partnership between two brands.
   - Success of one brand contributes to the success of its partner brand.
+  - Two different brands join forces to create a product or service.
+  - Opportunity for one brand to introduce its offering to the followers of another brand.
 - **Co-Marketing:**
   - Alignment of marketing efforts between two like-minded brands.
   - No hybrid product created, but aims to leverage relationships for greater visibility, reach, and sales.
-- **Co-Branding:**
-  - Two different brands join forces to create a product or service.
-  - Opportunity for one brand to introduce its offering to the followers of another brand.
 - **Louis Vuitton Co-Branding Campaign:**
   - Both brands targeted customers desiring luxury and meticulous craftsmanship.
   - Selling complimentary high-quality products gained attention from loyal customers.
