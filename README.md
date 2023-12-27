@@ -137,7 +137,7 @@ Notes sponsored by chatGPT ;)
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [Marketing Finals Prep](Marketing/Exam%20Prep/Marketing%20Finals%20Prep.md) | In progress | Finals prep content        |
+| [Marketing Finals Prep](Marketing/Exam%20Prep/Marketing%20Finals%20Prep.md) | Complete | Finals prep content        |
 
 ## OS
 <!--

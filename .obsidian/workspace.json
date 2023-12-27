@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Marketing/Exam Prep/Marketing Finals Prep.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Marketing/Exam Prep/Marketing Finals Prep.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Marketing/Exam Prep/Marketing Finals Prep.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Marketing/Exam Prep/Marketing Finals Prep.md"
+                "file": "README.md"
               }
             }
           },
@@ -184,8 +184,9 @@
   },
   "active": "bc3cb7a62d20218d",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Pasted image 20230926023256.png",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
+    "Untitled.md",
     "Untitled 3.md",
     "README.md",
     "DB/Exam Prep/DB Finals Prep.md",
@@ -211,11 +212,9 @@
     "Pasted image 20231216180329.png",
     "OS/OS 24 October, 2023.md",
     "Untitled 1.md",
-    "Jazz Meeting Stuff.md",
     "Pasted image 20230912152003.png",
     "Pasted image 20230926022710.png",
     "Pasted image 20230926023241.png",
-    "Pasted image 20230926023256.png",
     "Pasted image 20230926021904.png",
     "Pasted image 20230926021341.png",
     "Algo/Exam Prep",
