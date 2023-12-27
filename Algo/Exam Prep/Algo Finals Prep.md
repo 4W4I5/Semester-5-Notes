@@ -30,9 +30,9 @@
 | 4.1.1: recursion                          | :x:    |
 | 4.1.2: recursion tree                     | :x:    |
 | 4.2: recurrence relation                  | :x:    |
-| 4.3: master method                        | :x:    |
+| 4.3: master method                        | :warning:    |
 | 3: insertion sort                         | :x:    |
-| 2: complexity analysis                    | :x:    |
+| 2: complexity analysis                    | :warning:    |
 
 
 <!--
