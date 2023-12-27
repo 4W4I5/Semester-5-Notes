@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Algo/Exam Prep/Algo Finals Prep.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Algo/Exam Prep/Algo Finals Prep.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Algo/Exam Prep/Algo Finals Prep.md"
               }
             }
           },
@@ -181,10 +182,10 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "bc3cb7a62d20218d",
+  "active": "a36f60ddc22d296f",
   "lastOpenFiles": [
-    "Algo/Exam Prep/Algo Finals Prep.md",
     "README.md",
+    "Algo/Exam Prep/Algo Finals Prep.md",
     "Pasted image 20230926023256.png",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
     "Untitled.md",
