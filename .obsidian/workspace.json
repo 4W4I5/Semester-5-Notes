@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f0e2897abd1a72af",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Marketing/Exam Prep/Marketing Finals Prep.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "bc3cb7a62d20218d",
             "type": "leaf",
             "state": {
@@ -30,9 +18,20 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a36f60ddc22d296f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algo/Exam Prep/Algo Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -184,11 +183,12 @@
   },
   "active": "bc3cb7a62d20218d",
   "lastOpenFiles": [
+    "Algo/Exam Prep/Algo Finals Prep.md",
+    "README.md",
     "Pasted image 20230926023256.png",
     "Marketing/Exam Prep/Marketing Finals Prep.md",
     "Untitled.md",
     "Untitled 3.md",
-    "README.md",
     "DB/Exam Prep/DB Finals Prep.md",
     "CySec-2/Exam Prep/CySec-2 Finals Prep.md",
     "Untitled 2.md",
