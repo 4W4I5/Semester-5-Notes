@@ -785,26 +785,52 @@ Use of original concepts, designs and storytelling to effectively communicate a 
     - Went viral, generating discussions and positive sentiment around the brand.
 
 # Laws of branding
-- **The Law of Expansion**: “The power of a brand is inversely proportional to its scope.”
 
-- **The Law of Contraction**: “A brand becomes stronger when you narrow its focus.”
+- **Law of Expansion:** "The power of a brand is inversely proportional to its scope." 
+   - Apple started as a computer company but expanded into various product lines, including smartphones, tablets, and wearables.
 
-- **The Law of Advertising**: “Once born, a brand needs advertising to stay healthy.”
+- **Law of Contraction:** "A brand becomes stronger when you narrow its focus." 
+   - Starbucks originally focused on selling high-quality coffee but strengthened its brand by narrowing its focus on creating a premium coffee experience.
 
-- **The Law of the Word**: “A brand should strive to own a word in the mind of the consumer.”
+- **Law of Advertising:** "Once born, a brand needs advertising to stay healthy." 
+   - Coca-Cola, a well-established brand, continues to invest heavily in advertising to maintain its widespread recognition and consumer appeal.
 
-- **The Law of Credentials**: “The crucial ingredient in the success of any brand is its claim to authenticity.”
+- **Law of the Word:** "A brand should strive to own a word in the mind of the consumer." 
+   - Volvo has successfully owned the word "safety" in the minds of consumers, emphasizing the safety features of their vehicles.
 
-- **The Law of Quality**: “Quality is important, but brands are not built by quality alone.”
-- **The Law of Extensions**: “The easiest way to destroy a brand is to put its name on everything.”
-- **The Law of the Company**: “Brands are brands. Companies are companies. There is a difference.”
-- **The Law of Siblings**: “There is a time and a place to launch a second brand.” 
-- **The Law of Shape**: “A brand’s logotype should be designed to fit the eyes. Both eyes.”
-- **The Law of Color**: “A brand should use a color that is opposite of major competitor’s.”
-- **The Law of Borders**: “There are no barriers to global branding. A brand should know no borders.”
-- **The Law of Mortality**: “No brand will live forever. Euthanasia is often the best solution.”
-- **The Law of Consistency**: “A brand is not built overnight. Success is measured in decades, not years.”
-- **The Law of Singularity**: “The most important aspect of a brand is its single-mindedness.”
+- **Law of Credentials:** "The crucial ingredient in the success of any brand is its claim to authenticity." 
+   - Rolex claims authenticity through its heritage, craftsmanship, and association with luxury, contributing to its success as a brand.
+
+- **Law of Quality:** "Quality is important, but brands are not built by quality alone." 
+   - While Toyota is known for its quality, its brand success is attributed to factors beyond quality, such as reliability and innovation.
+
+- **Law of Extensions:** "The easiest way to destroy a brand is to put its name on everything." 
+   - Harley-Davidson faced challenges when it extended its brand to products like perfume, illustrating the risk of overextension.
+
+- **Law of the Company:** "Brands are brands. Companies are companies. There is a difference." 
+   - Nike is a brand, and its success is not solely dependent on its parent company, which is distinct from the brand itself.
+
+- **Law of Siblings:** "There is a time and a place to launch a second brand."    
+   - Procter & Gamble successfully launched multiple brands, such as Tide and Pampers, recognizing the right time and place for a second brand.
+
+- **Law of Shape:** "A brand’s logotype should be designed to fit the eyes. Both eyes." 
+   - The Nike Swoosh logo is designed to fit the eyes, with a simple and recognizable shape.
+
+- **Law of Color:** "A brand should use a color that is opposite of major competitor’s." 
+   - Pepsi, in contrast to Coca-Cola's red, uses blue as a primary color, setting itself apart from a major competitor.
+
+- **Law of Borders:** "There are no barriers to global branding. A brand should know no borders." 
+   - McDonald's is a global brand that has adapted its offerings to cater to local tastes while maintaining a consistent global image.
+
+- **Law of Mortality:** "No brand will live forever. Euthanasia is often the best solution." 
+   - Kodak faced the challenge of brand decline due to technological changes, emphasizing the impermanence of brands.
+
+- **Law of Consistency:** "A brand is not built overnight. Success is measured in decades, not years." 
+   - IBM's success is attributed to decades of consistent branding, evolving with the times while maintaining core values.
+
+- **Law of Singularity:** "The most important aspect of a brand is its single-mindedness." 
+   - Google's focus on simplicity and efficiency in search has contributed to its success by being single-minded in its approach.
+
 # Data Privacy & Ethics
 - Data ethics involves moral obligations related to gathering, protecting, and using personally identifiable information, questioning if actions are morally right and exploring ways to improve.
 - Principles of Data Ethics for Business Professionals:
@@ -908,12 +934,11 @@ Use of original concepts, designs and storytelling to effectively communicate a 
 - **Co-Branding:**
   - Strategic marketing and advertising partnership between two brands.
   - Success of one brand contributes to the success of its partner brand.
+  - Two different brands join forces to create a product or service.
+  - Opportunity for one brand to introduce its offering to the followers of another brand.
 - **Co-Marketing:**
   - Alignment of marketing efforts between two like-minded brands.
   - No hybrid product created, but aims to leverage relationships for greater visibility, reach, and sales.
-- **Co-Branding:**
-  - Two different brands join forces to create a product or service.
-  - Opportunity for one brand to introduce its offering to the followers of another brand.
 - **Louis Vuitton Co-Branding Campaign:**
   - Both brands targeted customers desiring luxury and meticulous craftsmanship.
   - Selling complimentary high-quality products gained attention from loyal customers.
