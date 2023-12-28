@@ -91,6 +91,10 @@ DiGraph => G=(V,E)
     - Continue this process until the stack is empty (or until the recursion unwinds completely). -->
 **BFS Working**
 - Start at src node.
+- if at node that branches out to a higher depth, then discover nodes at depth =1 then at depth =2 and so on
+	- Track both the predecessor of vertices and distance of vertices from the src
+- Imagine like a tree
+**DFS Working**
 -
 **BFS VS DFS**
 
@@ -100,7 +104,7 @@ DiGraph => G=(V,E)
 | **Data Structure**        | Uses a queue                                                                                                                                 | Uses a stack (or recursion)                               |
 | **Memory Usage**          | Typically requires more memory due to the queue                                                                                              | Generally uses less memory                                |
 | **Completeness**          | Always finds the shortest path in an unweighted graph                                                                                        | May not find the shortest path                            |
-| **Backtracking**          | Not suitable                                                                                                                                 | Best for backtracking                                     | 
+| **Backtracking**          | Not suitable                                                                                                                                 | Best for backtracking                                     |
 | **Termination Condition** | Terminates when the queue is empty                                                                                                           | Terminates when the stack is empty (or recursion unwinds) |
 | **Applications**          | Shortest path, minimum spanning tree, network broadcasting, bipartite testing, finding all nodes within one connected component              | Topological sorting, maze solving, cycle detection        |
 | **Implementation**        | Often implemented iteratively with a queue                                                                                                   | Can be implemented recursively or with a stack            |
