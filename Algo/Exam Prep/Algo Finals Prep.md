@@ -90,12 +90,13 @@ DiGraph => G=(V,E)
 3. **Termination:**
     - Continue this process until the stack is empty (or until the recursion unwinds completely). -->
 **BFS Working**
-- Start at src node.
-- if at node that branches out to a higher depth, then discover nodes at depth =1 then at depth =2 and so on
-	- Track both the predecessor of vertices and distance of vertices from the src
-- Imagine like a tree
+- Create 2 arrays (Visited, Queue) and push the src node to both
+- deque first element and enqueue neighbors as they are visited. when visited, add to visited array and do not visit again
 **DFS Working**
--
+- Create 2 arrays (Visited, Stack) and push src node to Visited.
+- Add adjacent nodes to Stack
+- Pop first element and visit. Add to visited
+- Repeat until stack is empty
 **BFS VS DFS**
 
 | Criteria                  | Breadth-First Search (BFS)                                                                                                                                             | Depth-First Search (DFS)                                                      |
@@ -104,7 +105,7 @@ DiGraph => G=(V,E)
 | **Data Structure**        | Uses a FIFO queue                                                                                                                                                      | Uses a stack (or recursion). LIFO                                             |
 | **Memory Usage**          | Typically requires more memory due to the queue                                                                                                                        | Generally uses less memory                                                    |
 | **Completeness**          | Always finds the shortest path in an unweighted graph                                                                                                                  | May not find the shortest path                                                |
-| **Backtracking**          | Not suitable                                                                                                                                                           | Best for backtracking, but can be stuck in an infinite loop                   | 
+| **Backtracking**          | Not suitable                                                                                                                                                           | Best for backtracking, but can be stuck in an infinite loop                   |
 | **Termination Condition** | Terminates when the queue is empty                                                                                                                                     | Terminates when the stack is empty (or recursion unwinds)                     |
 | **Applications**          | Shortest path, minimum spanning tree, network broadcasting, bipartite testing, finding all nodes within one connected component                                        | Topological sorting, maze solving, cycle detection                            |
 | **Implementation**        | Often implemented iteratively with a queue                                                                                                                             | Can be implemented recursively or with a stack                                |
