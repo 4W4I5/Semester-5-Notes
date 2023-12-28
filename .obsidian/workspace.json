@@ -30,8 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "09e27f9fc5ee1dd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +111,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/Exam Prep/OS Finals Prep.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +128,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OS/Exam Prep/OS Finals Prep.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +151,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OS/Exam Prep/OS Finals Prep.md"
+                "file": "README.md"
               }
             }
           },
@@ -181,7 +194,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "9591a28aefdaef60",
+  "active": "09e27f9fc5ee1dd0",
   "lastOpenFiles": [
     "Algo/Exam Prep/Algo Finals Prep.md",
     "OS/Exam Prep/OS Finals Prep.md",
