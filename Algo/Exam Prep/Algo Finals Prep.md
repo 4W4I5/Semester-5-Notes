@@ -49,6 +49,12 @@
 # 20: knapsack
 # 12: graphs
 DiGraph => G=(V,E)
+- Where V is the set of Vertices/Nodes
+- E is set of Edges
+- DiGraph has ordered set, undirected graph has unordered
+- For a connected graph, the number of Edges is at least one less than the number of Nodes
+	- LogBase2(Edges) is approx proportional to Log(Nodes)
+- 
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
