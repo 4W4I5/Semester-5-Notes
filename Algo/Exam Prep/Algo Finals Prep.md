@@ -48,6 +48,7 @@
 # 18: rod cutting
 # 20: knapsack
 # 12: graphs
+DiGraph => G=(V,E)
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
