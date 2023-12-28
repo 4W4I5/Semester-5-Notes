@@ -54,7 +54,12 @@ DiGraph => G=(V,E)
 - DiGraph has ordered set, undirected graph has unordered
 - For a connected graph, the number of Edges is at least one less than the number of Nodes
 	- LogBase2(Edges) is approx proportional to Log(Nodes)
-- 
+
+
+Graph representations
+- Adjacency lists
+	- Consider an array of Nodes Adj[\N]
+	- 
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
