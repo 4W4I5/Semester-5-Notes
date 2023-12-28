@@ -109,6 +109,8 @@ DiGraph => G=(V,E)
 | **Applications**          | Shortest path, minimum spanning tree, network broadcasting, bipartite testing, finding all nodes within one connected component              | Topological sorting, maze solving, cycle detection        |
 | **Implementation**        | Often implemented iteratively with a queue                                                                                                   | Can be implemented recursively or with a stack            |
 | **Algorithm Complexity**  | O(V + E) where V is the number of vertices and E is the number of edges                                                                      | Same as BFS                                               |
+| **Running Time**          | Big-O(V)                                                                                                                                     |                                                           |
+| **Exploring the graph**   | O(E)                                                                                                                                         |                                                           |
 
 # 14:mst, prims,kruskal
 # 15: dijkstra
