@@ -66,6 +66,43 @@ DiGraph => G=(V,E)
 
 
 # 13: graph theory 2
+**Breadth-First Search (BFS):**
+1. **Initialization:**
+    - Start with an initial node and enqueue it into a queue.
+    - Mark the node as visited.
+2. **Exploration:**
+    - While the queue is not empty:
+        - Dequeue a node from the front of the queue.
+        - Explore all unvisited neighbors of the dequeued node.
+        - Enqueue each unvisited neighbor into the queue and mark them as visited.
+3. **Termination:**
+    - Continue this process until the queue is empty, meaning all reachable nodes have been visited.
+
+**Depth-First Search (DFS):**
+1. **Initialization:**
+    - Start with an initial node and push it onto a stack (or use recursion with the initial node as the starting point).
+    - Mark the node as visited.
+2. **Exploration:**
+    - While the stack is not empty (or until the recursion base case is reached):
+        - Pop a node from the stack.
+        - Explore all unvisited neighbors of the popped node.
+        - Push each unvisited neighbor onto the stack (or make a recursive call) and mark them as visited.
+3. **Termination:**
+    - Continue this process until the stack is empty (or until the recursion unwinds completely).
+
+**BFS VS DFS**
+
+| Criteria                     | Breadth-First Search (BFS)                    | Depth-First Search (DFS)                      |
+|------------------------------|----------------------------------------------|-----------------------------------------------|
+| **Order of Exploration**      | Explores level by level, moving outward      | Explores as far as possible along each branch |
+| **Data Structure**           | Uses a queue                                 | Uses a stack (or recursion)                   |
+| **Memory Usage**             | Typically requires more memory due to the queue | Generally uses less memory                   |
+| **Completeness**             | Always finds the shortest path in an unweighted graph | May not find the shortest path              |
+| **Backtracking**             | Not suitable for backtracking                | Well-suited for backtracking problems        |
+| **Termination Condition**    | Terminates when the queue is empty            | Terminates when the stack is empty (or recursion unwinds) |
+| **Applications**             | Shortest path, minimum spanning tree, network broadcasting, bipartite testing, finding all nodes within one connected component | Topological sorting, maze solving, cycle detection |
+| **Implementation**           | Often implemented iteratively with a queue   | Can be implemented recursively or with a stack |
+| **Algorithm Complexity**     | O(V + E) where V is the number of vertices and E is the number of edges | Same as BFS |
 
 # 14:mst, prims,kruskal
 # 15: dijkstra
