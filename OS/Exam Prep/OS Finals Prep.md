@@ -8,15 +8,13 @@
 
 | Chapter | Topic                                           | Status |
 | ------- | ----------------------------------------------- | ------ |
-| 8       | Virtual Memory                                  | :x:    |
-| 7       | Memory Management                               | :x:    |
-| 6       | Concurrency: Deadlock & Starvation              | :x:    |
+| **8**       | Virtual Memory                                  | :x:    |
+| **7**       | Memory Management                               | :x:    |
+| **6**       | Concurrency: Deadlock & Starvation              | :x:    |
 | 5       | Concurrency: Mutual Exclusion & Synchronization | :warning:    |
 | 4       | Threads                                         | :x:    |
 | 9       | Uniprocessor Scheduling                         | :warning:    |
 | 3       | Process Description & Control                   | :warning:    |
-| 2       | OS Overview                                     | :warning:    |
-| 1       | Computer System Overview                        | :warning:       |
 <!--
 :white_check_mark:
 :warning:

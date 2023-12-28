@@ -55,11 +55,12 @@ DiGraph => G=(V,E)
 - For a connected graph, the number of Edges is at least one less than the number of Nodes
 	- LogBase2(Edges) is approx proportional to Log(Nodes)
 
-
-Graph representations
-- Adjacency lists
-	- Consider an array of Nodes Adj[\N]
-	- 
+**Graph representations**
+- Adjacency Matrix
+	- Big-O V^2 Storage dense representation
+	- List of Nodes in i and j that have an Edge with each other
+- Adjacency Lists
+	-
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
