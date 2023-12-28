@@ -6,33 +6,31 @@
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
 
-| Topic                                     | Status |
-| ----------------------------------------- | ------ |
-| 18: Memoization                           | :x:    |
-| 18: Tabulation                            | :x:    |
-| 21: LCS                                   | :x:    |
-| 19: matrix multiplication                 | :x:    |
-| 18: rod cutting                           | :x:    |
-| 20: knapsack                              | :x:    |
-| 12: graphs                                | :x:    |
-| 12: dfs, cycle finding                    | :x:    |
-| 12: bfs                                   | :x:    |
-| 13: topological sorting                   | :x:    |
-| 14:mst, prims,kruskal                     | :x:    |
-| 15: dijkstra                              | :x:    |
-| 16: bellman ford                          | :x:    |
-| 10: kmp string matching                   | :x:    |
-| 9: naive string matching, rabin karp algo | :x:    |
-| 5: merge sort + recurrence relation       | :x:    |
-| 6: quick sort                             | :x:    |
-| 7: heap sort                              | :x:    |
-| 8: linear sorts                           | :x:    |
-| 4.1.1: recursion                          | :x:    |
-| 4.1.2: recursion tree                     | :x:    |
-| 4.2: recurrence relation                  | :x:    |
-| 4.3: master method                        | :warning:    |
-| 3: insertion sort                         | :x:    |
-| 2: complexity analysis                    | :warning:    |
+| Topic                                     | Status    |
+| ----------------------------------------- | --------- |
+| 18: Memoization                           | :x:       |
+| 18: Tabulation                            | :x:       |
+| 21: LCS                                   | :x:       |
+| 19: matrix multiplication                 | :x:       |
+| 18: rod cutting                           | :x:       |
+| 20: knapsack                              | :x:       |
+| 12: graph theory 1                        | :x:       |
+| 13: graph theory 2                        | :x:       |
+| 14:mst, prims,kruskal                     | :x:       |
+| 15: dijkstra                              | :x:       |
+| 16: bellman ford                          | :x:       |
+| 10: kmp string matching                   | :x:       |
+| 9: naive string matching, rabin karp algo | :x:       |
+| 5: merge sort + recurrence relation       | :x:       |
+| 6: quick sort                             | :x:       |
+| 7: heap sort                              | :x:       |
+| 8: linear sorts                           | :x:       |
+| 4.1.1: recursion                          | :x:       |
+| 4.1.2: recursion tree                     | :x:       |
+| 4.2: recurrence relation                  | :x:       |
+| 4.3: master method                        | :warning: |
+| 3: insertion sort                         | :x:       |
+| 2: complexity analysis                    | :warning: |
 
 
 <!--
@@ -47,7 +45,7 @@
 # 19: matrix multiplication
 # 18: rod cutting
 # 20: knapsack
-# 12: graphs
+# 12: graph theory 1
 DiGraph => G=(V,E)
 - Where V is the set of Vertices/Nodes
 - E is set of Edges
@@ -66,9 +64,8 @@ DiGraph => G=(V,E)
 | **Graph Density**            | Better for dense graphs                        | Better for sparse graphs                |
 | **Memory vs. Time Trade-off**| More memory-intensive, faster edge-checking   | More memory-efficient, slower edge-checking in certain cases |
 
-# 12: dfs, cycle finding
-# 12: bfs
-# 13: topological sorting
+
+# 13: graph theory 2
 # 14:mst, prims,kruskal
 # 15: dijkstra
 # 16: bellman ford
