@@ -60,7 +60,8 @@ DiGraph => G=(V,E)
 	- Big-O V^2 Storage dense representation
 	- List of Nodes in i and j that have an Edge with each other
 - Adjacency Lists
-	-
+	- List of vertices adjacent to vertice Adj[\N]
+	- 
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
