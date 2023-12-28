@@ -56,12 +56,16 @@ DiGraph => G=(V,E)
 	- LogBase2(Edges) is approx proportional to Log(Nodes)
 
 **Graph representations**
-- Adjacency Matrix
-	- Big-O V^2 Storage dense representation
-	- List of Nodes in i and j that have an Edge with each other
-- Adjacency Lists
-	- List of vertices adjacent to vertice Adj[\N]
-	- 
+
+| Criteria                     | Adjacency Matrix                               | Adjacency List                           |
+|------------------------------|-----------------------------------------------|-----------------------------------------|
+| **Space Complexity**         | O(V^2)                                        | O(V + E)                                |
+| **Edge Existence Check**     | Efficient (Constant Time)                     | May take O(V) time in the worst case    |
+| **Memory Usage**             | Proportional to V^2 (inefficient for sparse)  | Proportional to V + E (efficient)       |
+| **Adding/Removing Edges**    | Less efficient, especially for dense graphs    | More efficient, especially for sparse graphs |
+| **Graph Density**            | Better for dense graphs                        | Better for sparse graphs                |
+| **Memory vs. Time Trade-off**| More memory-intensive, faster edge-checking   | More memory-efficient, slower edge-checking in certain cases |
+
 # 12: dfs, cycle finding
 # 12: bfs
 # 13: topological sorting
