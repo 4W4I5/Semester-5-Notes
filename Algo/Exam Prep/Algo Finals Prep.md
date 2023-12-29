@@ -130,9 +130,13 @@ DiGraph => G=(V,E)
 	- Suppose an Edge (u,v) is the least-weight connecting to A. Then that edge is also a safe edge in MST
 
 **Prim's MST**
-- Maintain a priority queue Q = V-A where V is Vertices in graph and A is an empty set
-	- Populate Q with all Vertices and their edge 
--
+- Create an empty set for MST to be returned and an empty priority queue(Can be min/max heap)
+- Choose a starting vertex randomly
+	- Enqueue all edges connected to that vertex
+	- Loop until queue is empty
+		- Dequeue the edge with min weight
+		- Extract vertices from edge
+		- If not in MST Set then add only if it does not make a cycle
 **Kruskal's MST**
 -
 **Prim's VS Kruskal's**
