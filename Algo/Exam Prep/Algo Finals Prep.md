@@ -123,11 +123,30 @@ DiGraph => G=(V,E)
 - Acyclic
 - Num of Edges in MST is 1-Num of Vertices
 **Spanning Tree**
-- A subgraph that is acyclic and connected
+- A subgraph that is acyclic and connected. If not connected then it is a Spanning Forest
 - Undirected, if weighted then the least weight is used
+- Greedy approach to keep as many edges as possible from the original graph. "Locally Optimal is Globally Optimal"
+	- Theorem: T is MST(G) where G = (V,E). A is a proper subset of V i.e A is a direct neighbor
+	- Suppose an Edge (u,v) is the least-weight connecting to A. Then that edge is also a safe edge in MST
 
-**Spanning Forest**
-- Subgraphs from a graph that are acyclic and not connected
+**Prim's MST**
+-
+**Kruskal's MST**
+-
+**Prim's VS Kruskal's**
+
+| Criteria                  | Prim's Algorithm                             | Kruskal's Algorithm                          |
+|---------------------------|----------------------------------------------|---------------------------------------------|
+| **Selection Criteria**    | Chooses the smallest edge connected to the growing MST | Sorts all edges and greedily selects the smallest edge that doesn't form a cycle |
+| **Data Structures Used**  | Typically uses a priority queue or a min-heap to efficiently extract the minimum edge | Uses a disjoint-set data structure (Union-Find) to track connected components and detect cycles |
+| **Efficiency**            | Generally more efficient on dense graphs with many edges | Generally more efficient on sparse graphs with fewer edges |
+| **Implementation**        | Involves maintaining a priority queue and updating key values | Involves sorting all edges and using a disjoint-set data structure |
+| **Edge Weights**          | Works well with both positive and negative edge weights | Works well with positive edge weights, not suitable for graphs with negative edge weights without modifications |
+| **Parallelization**       | Challenging to parallelize efficiently due to dependencies | More amenable to parallelization as sorting and disjoint-set operations can be parallelized |
+| **Applications**          | Commonly used in network design, such as routing and clustering | Widely used in various fields including network design, circuit design, and image segmentation |
+| **Termination Condition** | Stops when all vertices are included in the MST | Stops when the MST has (V-1) edges, where V is the number of vertices |
+| **Complexity**            | O((V + E) * log(V))                          | O(E * log(V))                                |
+
 # 15: dijkstra
 # 16: bellman ford
 # 10: kmp string matching
