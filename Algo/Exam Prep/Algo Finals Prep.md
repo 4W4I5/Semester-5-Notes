@@ -275,6 +275,13 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 
 # 10: kmp string matching
 
+| Algo                    | Preprocessing Time | Matching Time   |
+| ----------------------- | ------------------ | --------------- |
+| Naive                   | 0                  | O((n - m + 1)m) |
+| Rabin-Karp              | Big-O(m)           | O((n - m + 1)m) |
+| Finite Automaton        | O(m*(Sigma))       | Big-O(n)        |
+| KMP(Knuth-Norris-Pratt) | Big-O(m)           | Big-O(n)        | 
+
 ---
 
 # 2: complexity analysis
