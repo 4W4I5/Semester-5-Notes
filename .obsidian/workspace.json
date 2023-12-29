@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,7 +182,7 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "a36f60ddc22d296f",
+  "active": "8844992288ed34f3",
   "lastOpenFiles": [
     "OS/Exam Prep/OS Finals Prep.md",
     "Algo/Exam Prep/Algo Finals Prep.md",

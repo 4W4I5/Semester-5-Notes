@@ -17,19 +17,19 @@
 | 13: graph theory 2 (dfs)                  | :white_check_mark:    |
 | 14:mst, prims, kruskal                    | :white_check_mark:    |
 | 15: dijkstra                              | GPT Content :warning: |
-| 16: bellman ford                          | GPT Content :warning:                   |
-| 10: kmp string matching                   | :x:                   |
+| 16: bellman ford                          | GPT Content :warning: |
 | 9: naive string matching, rabin karp algo | :x:                   |
-| 5: merge sort + recurrence relation       | :x:                   |
-| 6: quick sort                             | :x:                   |
-| 7: heap sort                              | :x:                   |
-| 8: linear sorts                           | :x:                   |
+| 10: kmp string matching                   | :x:                   |
+| 2: complexity analysis                    | :warning:             |
 | 4.1.1: recursion                          | :x:                   |
 | 4.1.2: recursion tree                     | :x:                   |
 | 4.2: recurrence relation                  | :x:                   |
 | 4.3: master method                        | :warning:             |
 | 3: insertion sort                         | :x:                   |
-| 2: complexity analysis                    | :warning:             |
+| 5: merge sort + recurrence relation       | :x:                   |
+| 6: quick sort                             | :x:                   |
+| 7: heap sort                              | :x:                   |
+| 8: linear sorts                           | :x:                   |
 
 <!--
 :white_check_mark:
@@ -275,41 +275,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 # 10: kmp string matching
 
 ---
-# 5: merge sort + recurrence relation
-# 6: quick sort
-# 7: heap sort
-# 8: linear sorts
-# 4.1.1: recursion
-# 4.1.2: recursion tree
-# 4.2: recurrence relation
-# 4.3: master method
 
-Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left(\frac{n}{b}\right)+f(n) $$ where $$f(n)=Θ(n^klog^pn)$$
-
-- Note that you're supposed to do a reverse thingy and find powers of K and P yourself
-- Structure of Values to note down
-	- A, B, K, P
-
-**Cases**
-
-- **Case 1** $$log_{b}a>k$$
-	- Then just n^the greater value$$Θ(n^{log_{b}{a}})$$
-- **Case 2** $$log_{b}a=k$$
-	- Sub-cases
-		- p > -1 == f(n) but p+1
-			- $$Θ(n^klog^{p+1}n)$$
-		- p = -1
-			- $$Θ(n^kloglog(n))$$
-		- p < -1
-			- $$Θ(n^k)$$
-- **Case 3** $$log_{ba}< k$$
-	- Sub-cases
-		- p >= 0 == f(n)
-			- $$Θ(n^klog^pn)$$
-		- p < 0 but only n^k
-			- $$Θ(n^k)$$
-
-# 3: insertion sort
 # 2: complexity analysis
 - **Platform Independence**
     - Ideal Algo
@@ -452,3 +418,38 @@ for(int i =0; i < n; i++){
     - Exponentials grow **slower** than powers
     - Logarithms grow **faster** than powers
 - Sum of the first m-th powers grows as the m+1-th power$$n^m$$
+# 4.1.1: recursion
+# 4.1.2: recursion tree
+# 4.2: recurrence relation
+# 4.3: master method
+
+Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left(\frac{n}{b}\right)+f(n) $$ where $$f(n)=Θ(n^klog^pn)$$
+
+- Note that you're supposed to do a reverse thingy and find powers of K and P yourself
+- Structure of Values to note down
+	- A, B, K, P
+
+**Cases**
+
+- **Case 1** $$log_{b}a>k$$
+	- Then just n^the greater value$$Θ(n^{log_{b}{a}})$$
+- **Case 2** $$log_{b}a=k$$
+	- Sub-cases
+		- p > -1 == f(n) but p+1
+			- $$Θ(n^klog^{p+1}n)$$
+		- p = -1
+			- $$Θ(n^kloglog(n))$$
+		- p < -1
+			- $$Θ(n^k)$$
+- **Case 3** $$log_{ba}< k$$
+	- Sub-cases
+		- p >= 0 == f(n)
+			- $$Θ(n^klog^pn)$$
+		- p < 0 but only n^k
+			- $$Θ(n^k)$$
+# 3: insertion sort
+
+# 5: merge sort + recurrence relation
+# 6: quick sort
+# 7: heap sort
+# 8: linear sorts
