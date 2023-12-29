@@ -190,7 +190,7 @@ for (i = 0; i < edgeList.length; i++)
 | **Applications**          | Commonly used in network design, such as routing and clustering | Widely used in various fields including network design, circuit design, and image segmentation |
 | **Termination Condition** | Stops when all vertices are included in the MST | Stops when the MST has (V-1) edges, where V is the number of vertices |
 | **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) with running time of O(V + ElgE + ElgV)=O(ElgE) and E=O(V<sup>2</sup>)=>lgE=O(2lgV)=O(lgV)                       |
-
+ngl this was just as confusing to me as it is to you. improve if you can and shoot me an email <!--or just shoot me that works just as well-->
 # 15: dijkstra
 # 16: bellman ford
 # 10: kmp string matching
