@@ -109,7 +109,7 @@ DiGraph => G=(V,E)
 | **Termination Condition** | Terminates when the queue is empty                                                                                                                                     | Terminates when the stack is empty (or recursion unwinds)                     |
 | **Applications**          | Shortest path, minimum spanning tree, network broadcasting, bipartite testing, finding all nodes within one connected component                                        | Topological sorting, maze solving, cycle detection                            |
 | **Implementation**        | Often implemented iteratively with a queue                                                                                                                             | Can be implemented recursively or with a stack                                |
-| **Algorithm Complexity**  | O(V + E) for adj lists and O(V^^2) for adj matrix                                                                                                                      | Same as BFS                                                                   |
+| **Algorithm Complexity**  | O(V + E) for adj lists and O(V<sup>2</sup>) for adj matrix                                                                                                                      | Same as BFS                                                                   |
 
 **Topological Sort**
 **Cycle Detection**
