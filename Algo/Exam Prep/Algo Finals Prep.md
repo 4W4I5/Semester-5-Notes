@@ -160,17 +160,13 @@ while (!PQ.isEmpty)
 ```
 
 **Kruskal's MST**
-- Creates a forest of trees
-- Initially forest consists of N single nodes with edges sorted by weight, slowly connected with least edges that is not a cycle
-	- Halt when num of edges = num of nodes - 1
-	- All edges have been visited
-
-1. The forest is constructed – with each node in a separate tree
-2. The edges are placed in a priority queue
-3. Until we've added n-1 edges (assumption: connected graph)
-	1. Extract the cheapest edge from the queue
-	2. If it forms a cycle, reject it
-	3. Else add it to the forest. Adding it to the forest will join two trees
+- The forest is constructed – with each node in a separate tree
+- The edges are placed in a priority queue (Essentially sorted the entire thing)
+- Until we've added n-1 edges (assumption: connected graph)
+	- Extract the cheapest edge from the queue
+	- If it forms a cycle, reject it
+	- Else add it to the forest. Adding it to the forest will join two trees
+(Practice example from slides 13 and 14. Using the actual names of the .pptx files not the gcr numbering)
 
 ```python
 Sort E edges by increasing weight
@@ -193,7 +189,7 @@ for (i = 0; i < edgeList.length; i++)
 | **Parallelization**       | Challenging to parallelize efficiently due to dependencies | More amenable to parallelization as sorting and disjoint-set operations can be parallelized |
 | **Applications**          | Commonly used in network design, such as routing and clustering | Widely used in various fields including network design, circuit design, and image segmentation |
 | **Termination Condition** | Stops when all vertices are included in the MST | Stops when the MST has (V-1) edges, where V is the number of vertices |
-| **Complexity**            | O((V + E) * log(V))                          | O(E * log(V))                                |
+| **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) since the running time is O(V + ElgE + ElgV) and E=O(V<sup>2</sup>)=>lgE=O(2lgV)                       |
 
 # 15: dijkstra
 # 16: bellman ford
