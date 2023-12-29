@@ -43,6 +43,7 @@
 # 19: matrix multiplication
 # 18: rod cutting
 # 20: knapsack
+---
 # 12: graph theory 1
 
 DiGraph => G=(V,E)
@@ -192,9 +193,14 @@ for (i = 0; i < edgeList.length; i++)
 | **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) with running time of O(V + ElgE + ElgV)=O(ElgE) and E=O(V<sup>2</sup>)=>lgE=O(2lgV)=O(lgV)                       |
 ngl this was just as confusing to me as it is to you. improve if you can and shoot me an email <!--or just shoot me that works just as well-->
 # 15: dijkstra
+**Shortest Path**
+- Defined as a path U to V with the least weighted edges
+	- infinite if no such path exists or negative-weight cycles exist
+- 
 # 16: bellman ford
 # 10: kmp string matching
 # 9: naive string matching, rabin karp algo
+---
 # 5: merge sort + recurrence relation
 # 6: quick sort
 # 7: heap sort
