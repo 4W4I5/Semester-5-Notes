@@ -144,6 +144,12 @@ DiGraph => G=(V,E)
 		- Extract vertices from edge
 		- If not in MST Set then add only if it does not make a cycle
 
+| Analysis based on memory use | Extract-Min | Decrease-Key | Total            |
+| ---------------------------- | ----------- | ------------ | ---------------- |
+| Array                        | O(V)        | O(1)         | O(V<sup>2</sup>) |
+| Binary Heap                  | O(lg V)     | O(lg V)      | O(E lg V)        |
+| Fibonacci Heap               | O(lg V)     | O(1)         | O(E + V lg V)    |
+
 ```python
 T = {s}
 enqueue edges connected to s in PQ (by inc weight)
@@ -155,8 +161,7 @@ while (!PQ.isEmpty)
 
 **Kruskal's MST**
 
-> [!NOTE]
-> FINISH UP MST
+
 
 ```python
 Sort E edges by increasing weight
