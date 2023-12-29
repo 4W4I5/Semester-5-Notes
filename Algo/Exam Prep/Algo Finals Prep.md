@@ -6,31 +6,31 @@
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
 
-| Topic                                     | Status    |
-| ----------------------------------------- | --------- |
-| 18: Memoization                           | :x:       |
-| 18: Tabulation                            | :x:       |
-| 21: LCS                                   | :x:       |
-| 19: matrix multiplication                 | :x:       |
-| 18: rod cutting                           | :x:       |
-| 20: knapsack                              | :x:       |
-| 12: graph theory 1                        | :x:       |
-| 13: graph theory 2                        | :x:       |
-| 14:mst, prims,kruskal                     | :x:       |
-| 15: dijkstra                              | :x:       |
-| 16: bellman ford                          | :x:       |
-| 10: kmp string matching                   | :x:       |
-| 9: naive string matching, rabin karp algo | :x:       |
-| 5: merge sort + recurrence relation       | :x:       |
-| 6: quick sort                             | :x:       |
-| 7: heap sort                              | :x:       |
-| 8: linear sorts                           | :x:       |
-| 4.1.1: recursion                          | :x:       |
-| 4.1.2: recursion tree                     | :x:       |
-| 4.2: recurrence relation                  | :x:       |
-| 4.3: master method                        | :warning: |
-| 3: insertion sort                         | :x:       |
-| 2: complexity analysis                    | :warning: |
+| Topic                                     | Status             |
+| ----------------------------------------- | ------------------ |
+| 18: Memoization                           | :x:                |
+| 18: Tabulation                            | :x:                |
+| 21: LCS                                   | :x:                |
+| 19: matrix multiplication                 | :x:                |
+| 18: rod cutting                           | :x:                |
+| 20: knapsack                              | :x:                |
+| 12: graph theory 1 (bfs)                  | :white_check_mark: |
+| 13: graph theory 2 (dfs)                  | :white_check_mark: |
+| 14:mst, prims, kruskal                    | :x:                |
+| 15: dijkstra                              | :x:                |
+| 16: bellman ford                          | :x:                |
+| 10: kmp string matching                   | :x:                |
+| 9: naive string matching, rabin karp algo | :x:                |
+| 5: merge sort + recurrence relation       | :x:                |
+| 6: quick sort                             | :x:                |
+| 7: heap sort                              | :x:                |
+| 8: linear sorts                           | :x:                |
+| 4.1.1: recursion                          | :x:                |
+| 4.1.2: recursion tree                     | :x:                |
+| 4.2: recurrence relation                  | :x:                |
+| 4.3: master method                        | :warning:          |
+| 3: insertion sort                         | :x:                |
+| 2: complexity analysis                    | :warning:          |
 
 
 <!--
@@ -111,6 +111,12 @@ DiGraph => G=(V,E)
 | **Implementation**        | Often implemented iteratively with a queue                                                                                                                             | Can be implemented recursively or with a stack                                |
 | **Algorithm Complexity**  | O(V + E) for adj lists and O(V^^2) for adj matrix                                                                                                                      | Same as BFS                                                                   |
 
+**Topological Sort**
+**Cycle Detection**
+- DFS
+	- Traverse the graph as normal. If a node is found that is not a direct parent of the current node then we have a cycle. (We got to the child without going through the parent first)
+- BFS
+	- Traverse the graph as normal. If a node is already visited during scanning then it means we found a new edge to encounter the same node i.e. a cycle
 # 14:mst, prims,kruskal
 # 15: dijkstra
 # 16: bellman ford
