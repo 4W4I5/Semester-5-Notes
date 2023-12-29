@@ -289,6 +289,10 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 	- 0 ≤ s ≤ n-m such that P ╛Ts+m
 
 **Naive String Matching**
+- Takes Big-O((n - m + 1)m) time
+	- If M is 2x that of N then it takes Big-O(N<sup>2</sup>)
+	- N is len of Test string
+	- M is len of Pattern string
 - Take string to match and its len
 - inc and compare with original string till len. if char comp is true then increment
 - otherwise shift once to right and start over from first char in string to match
@@ -298,7 +302,9 @@ Inefficiency
 - Info gained about text for one value of S is ignored considering other values of S i.e. it ignores the fact that X num of characters we just compared did not match and can be skipped
 
 **Rabin-Karp String Matching**
-
+- Adds in step of preprocessing as it is hash based. Convert strings to a hash value
+- Use of number theoretic notation i.e. equiv of two numbers modulo a third number which is known as rolling hash
+-
 # 10: kmp string matching
 
 | Algo                    | Preprocessing Time | Matching Time   |
