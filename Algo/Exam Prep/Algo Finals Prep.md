@@ -5,7 +5,6 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
-
 | Topic                                     | Status             |
 | ----------------------------------------- | ------------------ |
 | 18: Memoization                           | :x:                |
@@ -32,7 +31,6 @@
 | 3: insertion sort                         | :x:                |
 | 2: complexity analysis                    | :warning:          |
 
-
 <!--
 :white_check_mark:
 :warning:
@@ -46,7 +44,9 @@
 # 18: rod cutting
 # 20: knapsack
 # 12: graph theory 1
+
 DiGraph => G=(V,E)
+
 - Where V is the set of Vertices/Nodes
 - E is set of Edges
 - DiGraph has ordered set, undirected graph has unordered
@@ -63,7 +63,6 @@ DiGraph => G=(V,E)
 | **Adding/Removing Edges**    | Less efficient, especially for dense graphs    | More efficient, especially for sparse graphs |
 | **Graph Density**            | Better for dense graphs                        | Better for sparse graphs                |
 | **Memory vs. Time Trade-off**| More memory-intensive, faster edge-checking   | More memory-efficient, slower edge-checking in certain cases |
-
 
 # 13: graph theory 2
 <!--**Breadth-First Search (BFS):**
@@ -89,7 +88,9 @@ DiGraph => G=(V,E)
         - Push each unvisited neighbor onto the stack (or make a recursive call) and mark them as visited.
 3. **Termination:**
     - Continue this process until the stack is empty (or until the recursion unwinds completely). -->
+
 **BFS Working**
+
 - Create 2 arrays (Visited, Queue) and push the src node to both
 - deque first element and enqueue neighbors as they are visited. when visited, add to visited array and do not visit again
 **DFS Working**
@@ -112,13 +113,17 @@ DiGraph => G=(V,E)
 | **Algorithm Complexity**  | O(V + E) for adj lists and O(V<sup>2</sup>) for adj matrix                                                                                                                      | Same as BFS                                                                   |
 
 **Topological Sort**
+
 **Cycle Detection**
+
 - DFS
 	- Traverse the graph as normal. If a node is found that is not a direct parent of the current node then we have a cycle. (We got to the child without going through the parent first)
 - BFS
 	- Traverse the graph as normal. If a node is already visited during scanning then it means we found a new edge to encounter the same node i.e. a cycle
 # 14:mst, prims, kruskal
+
 **MST**
+
 - Not unique, can have multiple versions
 - Acyclic
 - Num of Edges in MST is 1-Num of Vertices
@@ -130,6 +135,7 @@ DiGraph => G=(V,E)
 	- Suppose an Edge (u,v) is the least-weight connecting to A. Then that edge is also a safe edge in MST
 
 **Prim's MST**
+
 - Create an empty set for MST to be returned and an empty priority queue(Can be min/max heap)
 - Choose a starting vertex randomly
 	- Enqueue all edges connected to that vertex
@@ -146,8 +152,12 @@ while (!PQ.isEmpty)
     T = T ∪ {v, e}, enqueue edges connected to v
   else ignore e
 ```
+
 **Kruskal's MST**
--
+
+> [!NOTE]
+> FINISH UP MST
+
 ```python
 Sort E edges by increasing weight
 T = {}
@@ -156,6 +166,7 @@ for (i = 0; i < edgeList.length; i++)
     add e to T
   else ignore e
 ```
+
 **Prim's VS Kruskal's**
 
 | Criteria                  | Prim's Algorithm                             | Kruskal's Algorithm                          |
@@ -182,12 +193,15 @@ for (i = 0; i < edgeList.length; i++)
 # 4.1.2: recursion tree
 # 4.2: recurrence relation
 # 4.3: master method
+
 Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left(\frac{n}{b}\right)+f(n) $$ where $$f(n)=Θ(n^klog^pn)$$
+
 - Note that you're supposed to do a reverse thingy and find powers of K and P yourself
 - Structure of Values to note down
 	- A, B, K, P
 
 **Cases**
+
 - **Case 1** $$log_{b}a>k$$
 	- Then just n^the greater value$$Θ(n^{log_{b}{a}})$$
 - **Case 2** $$log_{b}a=k$$
@@ -305,6 +319,7 @@ for(int i =0; i < n; i++){
     - Loop where a Sum of all elements is calculated
 
 **Analyzing sequence of statements**
+
 - Generally observe the time complexity of each statement line-by-line and sum it all up.
     - The sum is the final answer with the coefficients and low order factors discarded
 - If-Statements
@@ -312,6 +327,7 @@ for(int i =0; i < n; i++){
     - However, Big-Oh assumes the worst case/Upper limit therefore we pick whatever higher order value for O() we can get
 
 **Why are we not so exact with numbers?**
+
 - Constants/Coefficients do no matter
 - This is due to **Asymptotic Complexity** as N gets large, concentrate on the highest order term
     - This is due to the fact that time is linear in N
@@ -324,6 +340,7 @@ for(int i =0; i < n; i++){
         - There is also little-o and little omega, same scenes just that theres no equal sign.
 
 **Asymptotic Analysis**
+
 - Simple way to go about this, use the table function in your calculator to get a list of values
     - Basically bruteforcing ur way until the equality fails or passes, need to look for the point where it changes and it should give you solid enough proof to use
 - Do not forget to use log **BASE 2** not **BASE 10**
@@ -336,6 +353,7 @@ for(int i =0; i < n; i++){
     - Little-Omega >
 
 **Properties of O notation**
+
 - Fastest growing term dominates
     - for example, n^2 at some point can and will grow faster than n^3
 - Transitive
