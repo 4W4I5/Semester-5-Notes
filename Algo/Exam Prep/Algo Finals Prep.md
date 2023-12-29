@@ -196,6 +196,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 **Shortest Path**
 - Defined as a path U to V with the least weighted edges
 	- infinite if no such path exists or negative-weight cycles exist
+- Subpath created from shortest path will be the new shortest path
 - 
 # 16: bellman ford
 # 10: kmp string matching
