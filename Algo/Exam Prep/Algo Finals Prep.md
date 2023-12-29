@@ -272,6 +272,21 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - In some cases, optimized versions of Bellman-Ford can reduce the time complexity to \(O(V^2)\) or even \(O(VE - V + 1)\) by avoiding unnecessary relaxation steps.
 - Bellman-Ford can be used on both directed and undirected graphs.
 # 9: naive string matching, rabin karp algo
+**Terminology**
+- ∑* = set of all finite-length strings from alphabet ∑
+- ε = empty string (zero length string)
+- |x| = length of string x
+- xy = concatenation of strings x and y, length is |x|+|y|
+- w is a prefix of x, w╘ x, if x=wy, where y Є ∑*
+- w is a suffix of x, w ╛x, if x=yw, where y Є ∑*
+- ε is both a suffix and a prefix of every string
+	- ab ╘ abcca
+	- cca ╛abcca
+- We denote k-character prefix P[1..k] of the pattern P[1..m] by Pk.
+- So Po = ε and Pm = P = P[1..m]
+- Similarly, k-character prefix of text T as Tk
+- String matching prob.: find all shifts in the range
+	- 0 ≤ s ≤ n-m such that P ╛Ts+m
 
 # 10: kmp string matching
 
@@ -280,7 +295,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 | Naive                   | 0                  | O((n - m + 1)m) |
 | Rabin-Karp              | Big-O(m)           | O((n - m + 1)m) |
 | Finite Automaton        | O(m*(Sigma))       | Big-O(n)        |
-| KMP(Knuth-Norris-Pratt) | Big-O(m)           | Big-O(n)        | 
+| KMP(Knuth-Norris-Pratt) | Big-O(m)           | Big-O(n)        |
 
 ---
 
