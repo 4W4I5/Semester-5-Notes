@@ -130,7 +130,9 @@ DiGraph => G=(V,E)
 	- Suppose an Edge (u,v) is the least-weight connecting to A. Then that edge is also a safe edge in MST
 
 **Prim's MST**
--
+- Maintain a priority queue Q = V-A where V is Vertices in graph and A is an empty set
+	- Populate Q with all Vertices
+- 
 **Kruskal's MST**
 -
 **Prim's VS Kruskal's**
