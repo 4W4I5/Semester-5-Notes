@@ -197,6 +197,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - Defined as a path U to V with the least weighted edges
 	- infinite if no such path exists or negative-weight cycles exist
 - Subpath created from shortest path will be the new shortest path
+	- Follows the triangle inequality where the length of the new shortest path is less than or equal to the old shortest path
 - 
 # 16: bellman ford
 # 10: kmp string matching
