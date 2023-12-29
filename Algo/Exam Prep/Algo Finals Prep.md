@@ -137,8 +137,25 @@ DiGraph => G=(V,E)
 		- Dequeue the edge with min weight
 		- Extract vertices from edge
 		- If not in MST Set then add only if it does not make a cycle
+
+```python
+T = {s}
+enqueue edges connected to s in PQ (by inc weight)
+while (!PQ.isEmpty)
+  if (vertex v linked with e = PQ.remove ∉ T)
+    T = T ∪ {v, e}, enqueue edges connected to v
+  else ignore e
+```
 **Kruskal's MST**
 -
+```python
+Sort E edges by increasing weight
+T = {}
+for (i = 0; i < edgeList.length; i++)
+  if adding e = edgelist[i] does not form a cycle
+    add e to T
+  else ignore e
+```
 **Prim's VS Kruskal's**
 
 | Criteria                  | Prim's Algorithm                             | Kruskal's Algorithm                          |
