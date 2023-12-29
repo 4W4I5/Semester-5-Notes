@@ -131,8 +131,8 @@ DiGraph => G=(V,E)
 
 **Prim's MST**
 - Maintain a priority queue Q = V-A where V is Vertices in graph and A is an empty set
-	- Populate Q with all Vertices
-- 
+	- Populate Q with all Vertices and their edge 
+-
 **Kruskal's MST**
 -
 **Prim's VS Kruskal's**
