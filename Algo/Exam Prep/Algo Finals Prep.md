@@ -189,7 +189,7 @@ for (i = 0; i < edgeList.length; i++)
 | **Parallelization**       | Challenging to parallelize efficiently due to dependencies | More amenable to parallelization as sorting and disjoint-set operations can be parallelized |
 | **Applications**          | Commonly used in network design, such as routing and clustering | Widely used in various fields including network design, circuit design, and image segmentation |
 | **Termination Condition** | Stops when all vertices are included in the MST | Stops when the MST has (V-1) edges, where V is the number of vertices |
-| **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) since the running time is O(V + ElgE + ElgV)=O(ElgE) and E=O(V<sup>2</sup>)=>lgE=O(2lgV) as                       |
+| **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) with running time of O(V + ElgE + ElgV)=O(ElgE) and E=O(V<sup>2</sup>)=>lgE=O(2lgV)=O(lgV)                       |
 
 # 15: dijkstra
 # 16: bellman ford
