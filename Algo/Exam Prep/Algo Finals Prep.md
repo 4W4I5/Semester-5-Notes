@@ -288,6 +288,17 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - String matching prob.: find all shifts in the range
 	- 0 ≤ s ≤ n-m such that P ╛Ts+m
 
+**Naive String Matching**
+- Take string to match and its len
+- inc and compare with original string till len. if char comp is true then increment
+- otherwise shift once to right and start over from first char in string to match
+
+Inefficiency
+- Tests for each of N-M+1 possible values of S
+- Info gained about text for one value of S is ignored considering other values of S i.e. it ignores the fact that X num of characters we just compared did not match and can be skipped
+
+**Rabin-Karp String Matching**
+
 # 10: kmp string matching
 
 | Algo                    | Preprocessing Time | Matching Time   |
