@@ -160,8 +160,17 @@ while (!PQ.isEmpty)
 ```
 
 **Kruskal's MST**
+- Creates a forest of trees
+- Initially forest consists of N single nodes with edges sorted by weight, slowly connected with least edges that is not a cycle
+	- Halt when num of edges = num of nodes - 1
+	- All edges have been visited
 
-
+1. The forest is constructed – with each node in a separate tree
+2. The edges are placed in a priority queue
+3. Until we've added n-1 edges (assumption: connected graph)
+	1. Extract the cheapest edge from the queue
+	2. If it forms a cycle, reject it
+	3. Else add it to the forest. Adding it to the forest will join two trees
 
 ```python
 Sort E edges by increasing weight
