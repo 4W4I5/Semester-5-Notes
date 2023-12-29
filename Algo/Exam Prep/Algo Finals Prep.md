@@ -5,31 +5,31 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
-| Topic                                     | Status             |
-| ----------------------------------------- | ------------------ |
-| 18: Memoization                           | :x:                |
-| 18: Tabulation                            | :x:                |
-| 21: LCS                                   | :x:                |
-| 19: matrix multiplication                 | :x:                |
-| 18: rod cutting                           | :x:                |
-| 20: knapsack                              | :x:                |
-| 12: graph theory 1 (bfs)                  | :white_check_mark: |
-| 13: graph theory 2 (dfs)                  | :white_check_mark: |
-| 14:mst, prims, kruskal                    | :x:                |
-| 15: dijkstra                              | :x:                |
-| 16: bellman ford                          | :x:                |
-| 10: kmp string matching                   | :x:                |
-| 9: naive string matching, rabin karp algo | :x:                |
-| 5: merge sort + recurrence relation       | :x:                |
-| 6: quick sort                             | :x:                |
-| 7: heap sort                              | :x:                |
-| 8: linear sorts                           | :x:                |
-| 4.1.1: recursion                          | :x:                |
-| 4.1.2: recursion tree                     | :x:                |
-| 4.2: recurrence relation                  | :x:                |
-| 4.3: master method                        | :warning:          |
-| 3: insertion sort                         | :x:                |
-| 2: complexity analysis                    | :warning:          |
+| Topic                                     | Status                |
+| ----------------------------------------- | --------------------- |
+| 18: Memoization                           | :x:                   |
+| 18: Tabulation                            | :x:                   |
+| 21: LCS                                   | :x:                   |
+| 19: matrix multiplication                 | :x:                   |
+| 18: rod cutting                           | :x:                   |
+| 20: knapsack                              | :x:                   |
+| 12: graph theory 1 (bfs)                  | :white_check_mark:    |
+| 13: graph theory 2 (dfs)                  | :white_check_mark:    |
+| 14:mst, prims, kruskal                    | :white_check_mark:    |
+| 15: dijkstra                              | GPT Content :warning: |
+| 16: bellman ford                          | GPT Content :warning:                   |
+| 10: kmp string matching                   | :x:                   |
+| 9: naive string matching, rabin karp algo | :x:                   |
+| 5: merge sort + recurrence relation       | :x:                   |
+| 6: quick sort                             | :x:                   |
+| 7: heap sort                              | :x:                   |
+| 8: linear sorts                           | :x:                   |
+| 4.1.1: recursion                          | :x:                   |
+| 4.1.2: recursion tree                     | :x:                   |
+| 4.2: recurrence relation                  | :x:                   |
+| 4.3: master method                        | :warning:             |
+| 3: insertion sort                         | :x:                   |
+| 2: complexity analysis                    | :warning:             |
 
 <!--
 :white_check_mark:
@@ -161,6 +161,7 @@ while (!PQ.isEmpty)
 ```
 
 **Kruskal's MST**
+
 - The forest is constructed – with each node in a separate tree
 - The edges are placed in a priority queue (Essentially sorted the entire thing)
 - Until we've added n-1 edges (assumption: connected graph)
@@ -192,14 +193,82 @@ for (i = 0; i < edgeList.length; i++)
 | **Termination Condition** | Stops when all vertices are included in the MST | Stops when the MST has (V-1) edges, where V is the number of vertices |
 | **Complexity**            | O((V + E) * log(V))                          | O(E * log(V)) with running time of O(V + ElgE + ElgV)=O(ElgE) and E=O(V<sup>2</sup>)=>lgE=O(2lgV)=O(lgV)                       |
 ngl this was just as confusing to me as it is to you. improve if you can and shoot me an email <!--or just shoot me that works just as well-->
+
 # 15: dijkstra
+
 **Shortest Path**
+
 - Defined as a path U to V with the least weighted edges
 	- infinite if no such path exists or negative-weight cycles exist
 - Subpath created from shortest path will be the new shortest path
 	- Follows the triangle inequality where the length of the new shortest path is less than or equal to the old shortest path
-- 
+## Time Complexity:
+1. **Initialization:**
+   - Initializing the tentative distances for each vertex: \(O(V)\) time.
+2. **Priority Queue Operations:**
+   - Extracting the minimum element from the priority queue (min-heap) is performed \(V\) times.
+   - Inserting and updating elements in the priority queue is performed \(E\) times in total.
+   - If a binary heap is used, each operation takes \(O(\log V)\) time.
+   - If a Fibonacci heap is used, the total time complexity is \(O(E + V \log V)\).
+3. **Relaxation:**
+   - Each edge is relaxed once for each endpoint (vertex), resulting in \(O(E)\) relaxation operations.
+4. **Overall Time Complexity:**
+   - Using a binary heap: \(O((V + E) \log V)\).
+   - Using a Fibonacci heap: \(O(E + V \log V)\).
+
+## Space Complexity:
+1. **Vertex Set and Priority Queue:**
+   - Maintaining a set of unvisited vertices: \(O(V)\) space.
+   - Storing tentative distances and predecessors: \(O(V)\) space.
+   - Using a priority queue (min-heap): \(O(V)\) space.
+2. **Edge List:**
+   - Storing the edges in an adjacency list: \(O(E)\) space.
+3. **Overall Space Complexity:**
+   - \(O(V + E)\).
+## Notes:
+- The use of a priority queue, specifically a min-heap, is a significant factor in the time complexity. Implementations using Fibonacci heaps can be more efficient in practice, but they are more complex to implement.
+- Dijkstra's algorithm is well-suited for sparse graphs where \(E\) is much smaller than \(V^2\).
+- In the presence of negative weights or negative cycles, Dijkstra's algorithm is not applicable, and alternative algorithms like Bellman-Ford should be considered.
+
 # 16: bellman ford
+
+| Feature                              | Dijkstra's Algorithm                        | Bellman-Ford Algorithm                      |
+| ------------------------------------ | --------------------------------------------| --------------------------------------------|
+| **Algorithm Type**                   | Greedy                                     | Dynamic Programming                        |
+| **Edge Weight Requirements**          | Non-negative weights                       | Can handle negative weights                |
+| **Graph Type**                       | Directed or Undirected                     | Directed (can be adapted for undirected)   |
+| **Negative Weight Handling**          | Cannot handle negative weights             | Can handle negative weights, but no cycles |
+| **Cycles**                            | Does not work with negative cycles         | Can detect and handle negative cycles      |
+| **Complexity (Time)**                | \(O((V + E) \log V)\) using a min-heap      | \(O(VE)\) (or \(O(V^2E)\) with optimized versions) |
+| **Complexity (Space)**               | \(O(V + E)\) (with a min-heap)              | \(O(V)\)                                   |
+| **Use Cases**                        | - Shortest paths with non-negative weights | - Shortest paths with or without negative weights |
+| **Performance in Dense Graphs**      | Less efficient due to priority queue       | Potentially more efficient in dense graphs |
+
+## Time Complexity:
+1. **Initialization:**
+   - Initializing the distances for each vertex: \(O(V)\) time.
+2. **Relaxation:**
+   - Relaxing each edge for each vertex: \(O(VE)\) time.
+   - Each edge is relaxed \(V-1\) times in the worst case.
+3. **Negative Cycle Detection:**
+   - An additional pass to detect negative cycles: \(O(E)\) time.
+4. **Overall Time Complexity:**
+   - \(O(VE)\) for the standard implementation.
+## Space Complexity:
+1. **Vertex Set:**
+   - Maintaining a set of vertices: \(O(V)\) space.
+2. **Distances and Predecessors:**
+   - Storing distances and predecessors: \(O(V)\) space.
+3. **Overall Space Complexity:**
+   - \(O(V)\).
+## Notes:
+
+- Bellman-Ford is less efficient than Dijkstra's algorithm for graphs with non-negative weights due to its higher time complexity.
+- The algorithm can handle graphs with negative weights but not graphs with negative cycles.
+- Bellman-Ford is a suitable choice when negative weights are present or when detecting negative cycles is required.
+- In some cases, optimized versions of Bellman-Ford can reduce the time complexity to \(O(V^2)\) or even \(O(VE - V + 1)\) by avoiding unnecessary relaxation steps.
+- Bellman-Ford can be used on both directed and undirected graphs.
+
 # 10: kmp string matching
 # 9: naive string matching, rabin karp algo
 ---
