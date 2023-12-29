@@ -272,6 +272,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - In some cases, optimized versions of Bellman-Ford can reduce the time complexity to \(O(V^2)\) or even \(O(VE - V + 1)\) by avoiding unnecessary relaxation steps.
 - Bellman-Ford can be used on both directed and undirected graphs.
 # 9: naive string matching, rabin karp algo
+
 # 10: kmp string matching
 
 ---
