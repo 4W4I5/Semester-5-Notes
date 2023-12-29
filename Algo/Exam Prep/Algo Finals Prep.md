@@ -117,7 +117,17 @@ DiGraph => G=(V,E)
 	- Traverse the graph as normal. If a node is found that is not a direct parent of the current node then we have a cycle. (We got to the child without going through the parent first)
 - BFS
 	- Traverse the graph as normal. If a node is already visited during scanning then it means we found a new edge to encounter the same node i.e. a cycle
-# 14:mst, prims,kruskal
+# 14:mst, prims, kruskal
+**MST**
+- Not unique, can have multiple versions
+- Acyclic
+- Num of Edges in MST is 1-Num of Vertices
+**Spanning Tree**
+- A subgraph that is acyclic and connected
+- Undirected, if weighted then the least weight is used
+
+**Spanning Forest**
+- Subgraphs from a graph that are acyclic and not connected
 # 15: dijkstra
 # 16: bellman ford
 # 10: kmp string matching
