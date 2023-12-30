@@ -317,13 +317,21 @@ Inefficiency
 ---
 
 # 2: complexity analysis
+- **Necessary features of an algo. (D.E.F.O/E.C.G.I) => Anagram to remember**
+	- **Definiteness**: Steps must be precisely defined
+	- **Effectiveness**: Individual steps are doable
+	- **Finiteness**: No infinite loop for any input in specified domain
+	- **Output**: Info/data that goes out
+	- **Efficiency**: Takes little time/memory to run
+	- **Correctness**: Outputs correctly relate to inputs
+	- **Generality**: Works for many possible inputs
+	- **Input**: Info/data that comes in
 - **Platform Independence**
     - Ideal Algo
         - Each elementary operation takes 1 step of time
         - Each elementary instance occupies 1 unit of memory
 
 **Analyzing an Algo statement**
-
 - Order of O's
     - Goes in order of **Best** to **Worst**
         - O(1)
