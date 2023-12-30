@@ -5,31 +5,31 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
-| Topic                                     | Status                |
-| ----------------------------------------- | --------------------- |
-| 18: Memoization                           | :x:                   |
-| 18: Tabulation                            | :x:                   |
-| 21: LCS                                   | :x:                   |
-| 19: matrix multiplication                 | :x:                   |
-| 18: rod cutting                           | :x:                   |
-| 20: knapsack                              | :x:                   |
-| 12: graph theory 1 (bfs)                  | :white_check_mark:    |
-| 13: graph theory 2 (dfs)                  | :white_check_mark:    |
-| 14:mst, prims, kruskal                    | :white_check_mark:    |
-| 15: dijkstra                              | GPT Content :warning: |
-| 16: bellman ford                          | GPT Content :warning: |
-| 9: naive string matching, rabin karp algo | Incomplete :x:        |
-| 10: kmp string matching                   | Incomplete :x:        |
-| 2: complexity analysis                    | :warning:             |
-| 4.1.1: recursion                          | :x:                   |
-| 4.1.2: recursion tree                     | :x:                   |
-| 4.2: recurrence relation                  | :x:                   |
-| 4.3: master method                        | :warning:             |
-| 3: insertion sort                         | :x:                   |
-| 5: merge sort + recurrence relation       | :x:                   |
-| 6: quick sort                             | :x:                   |
-| 7: heap sort                              | :x:                   |
-| 8: linear sorts                           | :x:                   |
+| Topic                                     | Status                | Prep(Ignore this, its for personal use) |
+| ----------------------------------------- | --------------------- | ------------------------------------- |
+| 18: Memoization                           | :x:                   | revise :white_check_mark:                                   |
+| 18: Tabulation                            | :x:                   | revise :white_check_mark:                                   |
+| 21: LCS                                   | :x:                   | revise :white_check_mark:                                   |
+| 19: matrix multiplication                 | :x:                   | revise :white_check_mark:                                   |
+| 18: rod cutting                           | :x:                   | :x:                                   |
+| 20: knapsack                              | :x:                   | :x:                                   |
+| 12: graph theory 1 (bfs)                  | :white_check_mark:    | :warning:                                   |
+| 13: graph theory 2 (dfs)                  | :white_check_mark:    | :warning:                                   |
+| 14:mst, prims, kruskal                    | :white_check_mark:    | :warning:                                   |
+| 15: dijkstra                              | GPT Content :warning: | :warning:                                   |
+| 16: bellman ford                          | GPT Content :warning: | :warning:                                   |
+| 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                                   |
+| 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                                   |
+| 2: complexity analysis                    | :warning:             | :warning:                                   |
+| 4.1.1: recursion                          | :x:                   | :x:                                   |
+| 4.1.2: recursion tree                     | :x:                   | :x:                                   |
+| 4.2: recurrence relation                  | :x:                   | :x:                                   |
+| 4.3: master method                        | :warning:             | :warning:                                   |
+| 3: insertion sort                         | :x:                   | :x:                                   |
+| 5: merge sort + recurrence relation       | :x:                   | :x:                                   |
+| 6: quick sort                             | :x:                   | :x:                                   |
+| 7: heap sort                              | :x:                   | :x:                                   |
+| 8: linear sorts                           | :x:                   | :x:                                   |
 
 <!--
 :white_check_mark:
@@ -197,6 +197,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 # 15: dijkstra
 
 **Shortest Path**
+
 - Defined as a path U to V with the least weighted edges
 	- infinite if no such path exists or negative-weight cycles exist
 - Subpath created from shortest path will be the new shortest path
@@ -272,7 +273,9 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - In some cases, optimized versions of Bellman-Ford can reduce the time complexity to \(O(V^2)\) or even \(O(VE - V + 1)\) by avoiding unnecessary relaxation steps.
 - Bellman-Ford can be used on both directed and undirected graphs.
 # 9: naive string matching, rabin karp algo
+
 **Terminology**
+
 - ∑* = set of all finite-length strings from alphabet ∑
 - ε = empty string (zero length string)
 - |x| = length of string x
@@ -289,6 +292,7 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 	- 0 ≤ s ≤ n-m such that P ╛Ts+m
 
 **Naive String Matching**
+
 - Takes Big-O((n - m + 1)m) time
 	- If M is 2x that of N then it takes Big-O(N<sup>2</sup>)
 	- N is len of Test string
@@ -298,10 +302,12 @@ ngl this was just as confusing to me as it is to you. improve if you can and sho
 - otherwise shift once to right and start over from first char in string to match
 
 Inefficiency
+
 - Tests for each of N-M+1 possible values of S
 - Info gained about text for one value of S is ignored considering other values of S i.e. it ignores the fact that X num of characters we just compared did not match and can be skipped
 
 **Rabin-Karp String Matching**
+
 - Adds in step of preprocessing as it is hash based. Convert strings to a hash value
 - Use of number theoretic notation i.e. equiv of two numbers modulo a third number which is known as rolling hash
 -
@@ -332,6 +338,7 @@ Inefficiency
         - Each elementary instance occupies 1 unit of memory
 
 **Analyzing an Algo statement**
+
 - Order of O's. C3L-Q-PEF => anagram
     - Goes in order of **Best** to **Worst**
         - **Constant**: O(1)
