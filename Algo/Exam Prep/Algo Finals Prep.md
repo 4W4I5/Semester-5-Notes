@@ -18,8 +18,8 @@
 | 14:mst, prims, kruskal                    | :white_check_mark:    |
 | 15: dijkstra                              | GPT Content :warning: |
 | 16: bellman ford                          | GPT Content :warning: |
-| 9: naive string matching, rabin karp algo | :x:                   |
-| 10: kmp string matching                   | :x:                   |
+| 9: naive string matching, rabin karp algo | Incomplete :x:        |
+| 10: kmp string matching                   | Incomplete :x:        |
 | 2: complexity analysis                    | :warning:             |
 | 4.1.1: recursion                          | :x:                   |
 | 4.1.2: recursion tree                     | :x:                   |
