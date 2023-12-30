@@ -475,6 +475,8 @@ for(int i =0; i < n; i++){
     - Logarithms grow **faster** than powers
 - Sum of the first m-th powers grows as the m+1-th power$$n^m$$
 # 4.1.1: recursion
+- Divide Conquer & Combine
+- 
 # 4.1.2: recursion tree
 # 4.2: recurrence relation
 # 4.3: master method
