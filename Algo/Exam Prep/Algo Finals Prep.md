@@ -332,15 +332,16 @@ Inefficiency
         - Each elementary instance occupies 1 unit of memory
 
 **Analyzing an Algo statement**
-- Order of O's
+- Order of O's. C3L-Q-PEF => anagram
     - Goes in order of **Best** to **Worst**
-        - O(1)
-        - O(log(N))
-        - O(N)
-        - O(n*log(n))
-        - O(n^m), where m is any number > 0
-        - O(2^n)
-        - O(!n)
+        - **Constant**: O(1)
+        - **Logarithmic**: O(log(N))
+        - **Linear**: O(N)
+        - **Linearithmic**: O(n*log(n))
+        - **Quadratic**: O(n<sup>2</sup>)
+        - **Polynomial**: O(n<sup>m</sup>), where m is any number > 2
+        - **Exponential**: O(2<sup>n</sup>)
+        - **Factorial**: O(!n)
 - Simple Statement
     - Order of O(1)
     - Basic step = 1, as long as number of statements are constant
