@@ -6,30 +6,30 @@
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
 | Topic                                     | Status                | Prep(Ignore this, its for personal use) |
-| ----------------------------------------- | --------------------- | ------------------------------------- |
-| 18: Memoization                           | :x:                   | revise :white_check_mark:                                   |
-| 18: Tabulation                            | :x:                   | revise :white_check_mark:                                   |
-| 21: LCS                                   | :x:                   | revise :white_check_mark:                                   |
-| 19: matrix multiplication                 | :x:                   | revise :white_check_mark:                                   |
-| 18: rod cutting                           | :x:                   | :x:                                   |
-| 20: knapsack                              | :x:                   | :x:                                   |
-| 12: graph theory 1 (bfs)                  | :white_check_mark:    | :warning:                                   |
-| 13: graph theory 2 (dfs)                  | :white_check_mark:    | :warning:                                   |
-| 14:mst, prims, kruskal                    | :white_check_mark:    | :warning:                                   |
-| 15: dijkstra                              | GPT Content :warning: | :warning:                                   |
-| 16: bellman ford                          | GPT Content :warning: | :warning:                                   |
-| 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                                   |
-| 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                                   |
-| 2: complexity analysis                    | :warning:             | :warning:                                   |
-| 4.1.1: recursion                          | :x:                   | :x:                                   |
-| 4.1.2: recursion tree                     | :x:                   | :x:                                   |
-| 4.2: recurrence relation                  | :x:                   | :x:                                   |
-| 4.3: master method                        | :warning:             | :warning:                                   |
-| 3: insertion sort                         | :x:                   | :x:                                   |
-| 5: merge sort + recurrence relation       | :x:                   | :x:                                   |
-| 6: quick sort                             | :x:                   | :x:                                   |
-| 7: heap sort                              | :x:                   | :x:                                   |
-| 8: linear sorts                           | :x:                   | :x:                                   |
+| ----------------------------------------- | --------------------- | --------------------------------------- |
+| 18: Memoization                           | :x:                   | revise :white_check_mark:               |
+| 18: Tabulation                            | :x:                   | revise :white_check_mark:               |
+| 21: LCS                                   | :x:                   | revise :white_check_mark:               |
+| 19: matrix multiplication                 | :x:                   | revise :white_check_mark:               |
+| 18: rod cutting                           | :x:                   | :x:                                     |
+| 20: knapsack                              | :x:                   | :x:                                     |
+| 12: graph theory 1 (bfs)                  | :white_check_mark:    | :warning:                               |
+| 13: graph theory 2 (dfs)                  | :white_check_mark:    | :warning:                               |
+| 14:mst, prims, kruskal                    | :white_check_mark:    | :warning:                               |
+| 15: dijkstra                              | GPT Content :warning: | :warning:                               |
+| 16: bellman ford                          | GPT Content :warning: | :warning:                               |
+| 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                    |
+| 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                    |
+| 2: complexity analysis                    | :warning:             | :warning:                               |
+| 4.1.1: recursion                          | :white_check_mark:    | :white_check_mark:                      |
+| 4.1.2: recursion tree                     | :white_check_mark:    | :white_check_mark:                      |
+| 4.2: recurrence relation                  | :x:                   | :x:                                     |
+| 4.3: master method                        | :warning:             | :warning:                               |
+| 3: insertion sort                         | :x:                   | :x:                                     |
+| 5: merge sort + recurrence relation       | :x:                   | :x:                                     |
+| 6: quick sort                             | :x:                   | :x:                                     |
+| 7: heap sort                              | :x:                   | :x:                                     |
+| 8: linear sorts                           | :x:                   | :x:                                     |
 
 <!--
 :white_check_mark:
