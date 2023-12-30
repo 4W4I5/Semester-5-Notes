@@ -476,7 +476,11 @@ for(int i =0; i < n; i++){
 - Sum of the first m-th powers grows as the m+1-th power$$n^m$$
 # 4.1.1: recursion
 - Divide Conquer & Combine
-- 
+- Writing a recursive function requires determining the
+	- Size factor
+	- Base case(s)
+	- General case(s)
+	- integrity of the function via the three-question method
 # 4.1.2: recursion tree
 # 4.2: recurrence relation
 # 4.3: master method
