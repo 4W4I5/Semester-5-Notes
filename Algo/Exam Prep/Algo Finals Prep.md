@@ -370,7 +370,7 @@ N it will still be N times and therefore
 the complexity is O(n)
 
 	for(int i =0; i < n; i++){
-		s      //Statement that does stuff
+		//Statement that does stuff
 	}
 
 
@@ -379,7 +379,7 @@ multiplied or divided the
 time complexity is O(log(n))
 
 	for(int i =0; i < n; i*n){
-		s      //Statement that does stuff
+		//Statement that does stuff
 	}
 
 
@@ -388,7 +388,7 @@ power i.e from i^2 to i^3 or from
 i^2 to sqrt(i) the complexity is O(log(log(n)))
 
 	for(int i =0; i < n; i=pow(i,c)){
-		s      //Statement that does stuff
+		//Statement that does stuff
 	}
 
 
@@ -408,7 +408,7 @@ i^2 to sqrt(i) the complexity is O(log(log(n)))
 ```
 for(int i =0; i < n; i++){
 	for(int j =0; j < n; j++){
-		s      //Statement that does stuff
+		//Statement that does stuff
 	}
 }
 ```
@@ -422,7 +422,7 @@ for(int i =0; i < n; i++){
 ```
 for(int i =0; i < n; i++){
 	for(int j =0; j < i; j++){
-		s      //Statement that does stuff
+		//Statement that does stuff
 	}
 }
 ```
