@@ -130,6 +130,14 @@ NOTE:: Till slide 29 only
 **Associative Mapping**
 **Page Size**
 
+
+**Book questions**
+- What is the difference b/w simple and virtual memory paging
+- Explain thrashing
+- Why is the principal of locality crucial to the use of virtual memory
+- What elements are found in a PTE(Page Table Entry)? Briefly define each element
+- What is the purpose of the translation lookaside buffer
+- Briefly define the alternative page fetch policies
 # 6. Concurrency: Deadlock & Starvation
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
