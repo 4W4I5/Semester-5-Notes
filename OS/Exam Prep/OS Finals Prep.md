@@ -34,10 +34,15 @@ NOTE:: Till slide 29 only
 - Real Address: Address of a storage location in main memory
 
 **Hardware & Control Structure**
-- 
+- All logical addresses (memory used by program) are dynamically translated into physical addresses real time
+- Process can be broken into a number of pieces, these pieces do not have to be sequentially located in memory during execution
 
 **Execution of a process**
-
+- OS loads a portion of the process into memory. Known as Resident set
+	- If a portion is not in memory and accessed an interrupt is generated to fetch that section.
+	- The process is blocked during this stage
+- Example
+	- OS issues
 **Implications**
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
