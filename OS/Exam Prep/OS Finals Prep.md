@@ -22,7 +22,19 @@
 :x:
 -->
 # 8. Virtual Memory
+NOTE:: Till slide 29 only
 # 7. Memory Management
+**Terminology:**
+- Frame
+- Page
+- Segment
+
+**Memory Management Requirements:**
+- Relocation
+- Protection
+- Sharing
+- Logical Organization
+- Physical Organization
 # 6. Concurrency: Deadlock & Starvation
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
