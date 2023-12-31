@@ -533,6 +533,22 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Split array into halves until len of sub array is 1
 - rearrange back up and do so in order
 - tada! sorted array =)
+
+
+**Time Complexity**
+- Best: O(n logn)
+- Average: O(n logn)
+- Worst: O(n logn)
 # 6: quick sort
+
+**Time Complexity**
+- Best: O(n logn)
+- Average: O(n logn) 
+- Worst: O(n<sup>2</sup>) - Poor pivot selection
 # 7: heap sort
+
+**Time Complexity**
+- Best: O(n) - List is already sorted
+- Average: O(n<sup>2</sup>)
+- Worst: O(n<sup>2</sup>) - List is sorted in reverse order
 # 8: linear sorts
