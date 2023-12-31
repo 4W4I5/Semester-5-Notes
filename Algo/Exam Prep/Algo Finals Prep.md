@@ -488,7 +488,9 @@ Recurrences can be solved via
 - Relation
 - Master
 # 4.1.2: recursion tree
+nothing to note as such, practiced from sessionals
 # 4.2: recurrence relation
+\nothing to note as such, practiced from sessionals
 # 4.3: master method
 
 Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left(\frac{n}{b}\right)+f(n) $$ where $$f(n)=Θ(n^klog^pn)$$
