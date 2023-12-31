@@ -118,8 +118,14 @@ NOTE:: Till slide 29 only
 	- Value from adding RootPageNum + RootPageTablePtr is added with UserPageNum to get FrameNum
 
 **Inverted Page Table**
-- PageNum is mapped to a hash value which points to an inverted page table
+- Drawback of page tables is that their size is proportional to that of virtual address space
+- PageNum is mapped to a hash value which points to an inverted page table which contains the PTE. One PTE in the inverted table accounts for a real page frame in memory instead of virtual memory
 	- Inverted cause PTE are indexed by FrameNum instead of VirtualPageNum
+	- Hashed values can overflow and map into the same PTE a chaining technique is used which ensures the values are unique
+- Contains
+	- PageNum, ProcessIdentifier, ControlBits, ChainPointer(Points to next entry in the  chain)
+- Fixed proportion of real memory is required regardless of the num of processes or virtual pages supported
+
 **Translation Lookaside Buffer (TLB)**
 **Associative Mapping**
 **Page Size**
