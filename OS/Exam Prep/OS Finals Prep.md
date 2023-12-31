@@ -25,7 +25,7 @@
 NOTE:: Till slide 29 only
 **Terminology:**
 - Virtual Memory:
-	- Logical addresses assigned in virtualspace.
+	- Logical addresses assigned for memory on disk.
 	- Allows for relative addressing based off of the base pointer.
 	- Size is limited by addressing scheme and amount of secondary storage available, not by actual number of main storage locations
 - Virtual Address: Address in virtual memory
@@ -33,7 +33,7 @@ NOTE:: Till slide 29 only
 - Address Space: Range of memory addresses available to a process
 - Real Address: Address of a storage location in main memory
 
-**Hardware & Control Structure**
+**Hardware & Control Structure Characteristics**
 - All logical addresses (memory used by program) are dynamically translated into physical addresses real time
 - Process can be broken into a number of pieces, these pieces do not have to be sequentially located in memory during execution
 
