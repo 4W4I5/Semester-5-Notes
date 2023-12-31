@@ -7,8 +7,8 @@
 
 | Chapter | Topic                                           | Status    | Prep(Ignore this, its for personal use) |
 | ------- | ----------------------------------------------- | --------- | --------------------------------------- |
-| **8**   | Virtual Memory                                  | :x:       | :x:                                     |
 | **7**   | Memory Management                               | :x:       | :x:                                     |
+| **8**   | Virtual Memory                                  | :x:       | :x:                                     |
 | **6**   | Concurrency: Deadlock & Starvation              | :x:       | :x:                                     |
 | 5       | Concurrency: Mutual Exclusion & Synchronization | :warning: | :x:                                     |
 | 4       | Threads                                         | :x:       | :x:                                     |
@@ -21,8 +21,21 @@
 :warning:
 :x:
 -->
+# 7. Memory Management
+**Terminology:**
+- Frame
+- Page
+- Segment
+
+**Memory Management Requirements:**
+- Relocation
+- Protection
+- Sharing
+- Logical Organization
+- Physical Organization
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
+
 **Terminology:**
 - Virtual Memory:
 	- Logical addresses assigned for memory on disk.
@@ -82,22 +95,13 @@ NOTE:: Till slide 29 only
 	- OS must include software for managing the movement of pages and/or segments to/from main and secondary memory
 
 **Paging**
+- First used on the atlas computer
+- Each process has its own page table where each Page Table Entry(PTE) contains the frame number of the corresponding page in main memory
 **Inverted Page Table**
 **Translation Lookaside Buffer (TLB)**
 **Associative Mapping**
 **Page Size**
-# 7. Memory Management
-**Terminology:**
-- Frame
-- Page
-- Segment
 
-**Memory Management Requirements:**
-- Relocation
-- Protection
-- Sharing
-- Logical Organization
-- Physical Organization
 # 6. Concurrency: Deadlock & Starvation
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
