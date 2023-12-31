@@ -7,20 +7,20 @@
 
 | Topic                                     | Status                | Prep(Ignore this, its for personal use) |
 | ----------------------------------------- | --------------------- | --------------------------------------- |
-| 18: Memoization                           | :x:                   | revise :white_check_mark:               |
-| 18: Tabulation                            | :x:                   | revise :white_check_mark:               |
-| 21: LCS                                   | :x:                   | revise :white_check_mark:               |
-| 19: matrix multiplication                 | :x:                   | revise :white_check_mark:               |
+| 18: Memoization                           | :x:                   | revise :warning:               |
+| 18: Tabulation                            | :x:                   | revise :warning:               |
+| 21: LCS                                   | :x:                   | revise :warning:               |
+| 19: matrix multiplication                 | :x:                   | revise :warning:               |
 | 18: rod cutting                           | :x:                   | :x:                                     |
 | 20: knapsack                              | :x:                   | :x:                                     |
-| 12: graph theory 1 (bfs)                  | :white_check_mark:    | :warning:                               |
-| 13: graph theory 2 (dfs)                  | :white_check_mark:    | :warning:                               |
-| 14:mst, prims, kruskal                    | :white_check_mark:    | :warning:                               |
-| 15: dijkstra                              | GPT Content :warning: | :warning:                               |
-| 16: bellman ford                          | GPT Content :warning: | :warning:                               |
+| 12: graph theory 1 (bfs)                  | :white_check_mark:    | revise :warning:                               |
+| 13: graph theory 2 (dfs)                  | :white_check_mark:    | revise :warning:                               |
+| 14:mst, prims, kruskal                    | :white_check_mark:    | revise :warning:                               |
+| 15: dijkstra                              | GPT Content :warning: | revise :warning:                               |
+| 16: bellman ford                          | GPT Content :warning: | revise :warning:                               |
 | 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                    |
 | 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                    |
-| 2: complexity analysis                    | :warning:             | :warning:                               |
+| 2: complexity analysis                    | :warning:             | <!--need help--> :warning:                               |
 | 4.1.1: recursion                          | :white_check_mark:    | <!--need help--> :warning:              |
 | 4.1.2: recursion tree                     | :white_check_mark:    | <!--need help-->  :warning:             |
 | 4.2: recurrence relation                  | :x:                   | <!--need help--> :x:                    |
