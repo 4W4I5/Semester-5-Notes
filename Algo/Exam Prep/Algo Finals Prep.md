@@ -570,6 +570,12 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 **Decision Tree**
 - Helps model execution of any comparison sort
 - Split tree when algo compares two elements
-	- Must contain greater than N leaves 
+	- Must contain greater than N leaves
+	- Height will be Omega(n lg n)
 - Running time == Length of path taken
 - Worst case == Height of tree
+
+**Linear sorts**
+- Assumes that each element is an integer in the range 0 to k
+- Uses auxiliary storage
+- 
