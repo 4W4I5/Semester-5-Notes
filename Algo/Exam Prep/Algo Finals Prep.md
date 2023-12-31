@@ -543,6 +543,8 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Best, Average, Worst: O(n logn)
 - Beats insertion sort for n >= 3
 # 6: quick sort
+- Better space complexity than merge sort
+**TODO:: Prep questions in slides**
 
 **Time Complexity**
 - Best: O(n logn)
