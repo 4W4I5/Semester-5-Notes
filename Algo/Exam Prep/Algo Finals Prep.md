@@ -21,7 +21,7 @@
 | 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                    |
 | 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                    |
 | 2: complexity analysis                    | :warning:             | :warning:                               |
-| 4.1.1: recursion                          | :white_check_mark:    | :white_check_mark:                      |
+| 4.1.1: recursion                          | :white_check_mark:    | :warning:                      |
 | 4.1.2: recursion tree                     | :white_check_mark:    | :white_check_mark:                      |
 | 4.2: recurrence relation                  | :x:                   | :x:                                     |
 | 4.3: master method                        | :warning:             | :warning:                               |
