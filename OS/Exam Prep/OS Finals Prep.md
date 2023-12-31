@@ -97,6 +97,13 @@ NOTE:: Till slide 29 only
 **Paging**
 - First used on the atlas computer
 - Each process has its own page table where each Page Table Entry(PTE) contains the frame number of the corresponding page in main memory
+
+| **Memory Management formats**      | **Virtual Address**                   | **Page Table Entry(PTE)**                                  | **Segment Table Entry**                                             |
+| ---------------------------------- | ------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------- |
+| **Paging Only**                    | Page Number + Offset                  | PresentBit + ModifiedBit + OtherControlBits + Frame Number | None                                                                |
+| **Segmentation Only**              | Segment Number + Offset               | None                                                       | PresentBit + ModifiedBit + OtherControlBits + Length + Segment Base |
+| **Combined Segmentation & Paging** | Segment Number + Page Number + Offset | PresentBit + ModifiedBit + OtherControlBits + Frame Number | ControlBits + Length + Segment Base                                 |
+
 **Inverted Page Table**
 **Translation Lookaside Buffer (TLB)**
 **Associative Mapping**
