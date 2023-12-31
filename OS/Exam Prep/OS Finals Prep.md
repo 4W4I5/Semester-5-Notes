@@ -58,16 +58,16 @@ NOTE:: Till slide 29 only
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
 
-| **Attributes**               | **Simple/Virtual Memory Paging**                       | **Simple/Virtual Memory Segmentation** |
-| ---------------------------- | ------------------------------------------------------ | -------------------------------------- |
-| **Partitioning**             | Main memory partitioned into frames (fixed size)       | Not Partitioned                        |
-| **Program breakage**         | Broken into pages by compiler/memory management system | Decision made by programmer            |
-| **Internal Fragmentation**   | Within frames                                          |                                        |
-| **External Fragmentation**   |                                                        |                                        |
-| **Table**                    |                                                        |                                        |
-| **What list is maintained**  |                                                        |                                        |
-| **Relative addressing**      |                                                        |                                        |
-| **What should be in memory** |                                                        |                                        |
+| **Attributes**               | **Simple/Virtual Memory Paging**                                             | **Simple/Virtual Memory Segmentation**                                                   |
+| ---------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Partitioning**             | Main memory partitioned into frames (fixed size)                             | Not Partitioned                                                                          |
+| **Program breakage**         | Broken into pages by compiler/memory management system                       | Decision made by programmer                                                              |
+| **Internal Fragmentation**   | Within frames                                                                | None                                                                                     |
+| **External Fragmentation**   | None                                                                         | Yes                                                                                      |
+| **Table**                    | OS Maintains a page table, each process shows which frame each page occupies | OS Maintains a segment table, each process shows load address and length of each segment |
+| **What list is maintained**  | Free frame list maintained                                                   | List of free holes in main memory is maintained                                          |
+| **Real address calculation** | Uses page number & offset                                                    | Uses segment number & offset                                                             |
+| **What should be in memory** |                                                                              |                                                                                          |
 
 **Principle of Locality**
 
