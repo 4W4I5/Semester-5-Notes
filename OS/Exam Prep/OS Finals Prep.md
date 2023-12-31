@@ -37,6 +37,9 @@ NOTE:: Till slide 29 only
 - All logical addresses (memory used by program) are dynamically translated into physical addresses real time
 - Process can be broken into a number of pieces, these pieces do not have to be sequentially located in memory during execution
 
+> [!WARNING]
+> Small part that i dont get here
+
 **Execution of a process**
 - OS loads a portion of the process into memory. Known as Resident set
 	- If a portion is not in memory and accessed an interrupt is generated to fetch that section.
@@ -46,12 +49,14 @@ NOTE:: Till slide 29 only
 	- OS has to issue a disk I/O Read Request
 		- Current process is blocked until read is completed
 		- Another process dispatched to run while the read occurs
-	- 
-**Implications**
+	- TODO:: COMPLETE THIS EXAMPLE THERE IS SOME SORT OF CONFUSION HERE
+- Implications
+	- Can imply that more processes might be maintained in main memory
+	- each only has a portion loaded in with each in ready state
+	- a process can be larger than the main memory capacity
+
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
-
-**Thrashing**
 
 **Principle of Locality**
 
