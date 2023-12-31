@@ -18,16 +18,16 @@
 | 14:mst, prims, kruskal                    | :white_check_mark:                           | revise :warning:                        |
 | 15: dijkstra                              | GPT Content :warning:                        | revise :warning:                        |
 | 16: bellman ford                          | GPT Content :warning:                        | revise :warning:                        |
-| 9: naive string matching, rabin karp algo | Incomplete :x:                               | Incomplete :warning:                    |
-| 10: kmp string matching                   | Incomplete :x:                               | Incomplete :warning:                    |
+| 9: naive string matching, rabin karp algo | Incomplete :x:                               | revise :warning:                        |
+| 10: kmp string matching                   | Incomplete :x:                               | revise :warning:                        |
 | 2: complexity analysis                    | :white_check_mark:                           | <!--need help--> :exclamation:          |
 | 4.1.1: recursion                          | :white_check_mark:                           | <!--need help--> :exclamation:          |
 | 4.1.2: recursion tree                     | :white_check_mark:                           | <!--need help-->  :exclamation:         |
 | 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :exclamation:          |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
-| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | :warning:                               |
-| 6: quick sort                             | :x:                                          | :x:                                     |
+| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:                               |
+| 6: quick sort                             | :x:                                          | Practice working :warning:                                     |
 | 7: heap sort                              | :x:                                          | :x:                                     |
 | 8: linear sorts                           | :x:                                          | :x:                                     |
 
@@ -483,14 +483,19 @@ for(int i =0; i < n; i++){
 	- integrity of the function via the three-question method
 
 Recurrences can be solved via
+
 - Iteration
 - Substitution/Tree
 - Relation
 - Master
 # 4.1.2: recursion tree
+
 nothing to note as such, practiced from sessionals
+
 # 4.2: recurrence relation
+
 \nothing to note as such, practiced from sessionals
+
 # 4.3: master method
 
 Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left(\frac{n}{b}\right)+f(n) $$ where $$f(n)=Θ(n^klog^pn)$$
@@ -521,25 +526,29 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Good for sorting almost sorted lists
 
 **Procedure**
+
 - Compare nth element with n+1th element
 	- Swap if not in order until it is in order. (L.H.S of the array is generally sorted as the algo progresses)
 	- Else shift to n+1th element and repeat
 
 **Time Complexity**
+
 - Best: O(n) - List is already sorted
 - Average: O(n<sup>2</sup>)
 - Worst: O(n<sup>2</sup>) - List is sorted in reverse order
 
 # 5: merge sort
+
 **Procedure**
+
 - Split array into halves until len of sub array is 1
 - rearrange back up and do so in order
 - tada! sorted array =)
 
-
 **TODO:: Recurrence relation stuff here**
 
 **Time Complexity**
+
 - Best, Average, Worst: O(n logn)
 - Beats insertion sort for n >= 3
 # 6: quick sort
@@ -547,12 +556,14 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 **TODO:: Prep questions in slides**
 
 **Time Complexity**
+
 - Best: O(n logn)
 - Average: O(n logn)
 - Worst: O(n<sup>2</sup>) - Poor pivot selection
 # 7: heap sort
 
 **Time Complexity**
+
 - Best, Average, Worst: O(n logn)
 
 # 8: linear sorts
