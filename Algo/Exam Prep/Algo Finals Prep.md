@@ -20,10 +20,10 @@
 | 16: bellman ford                          | GPT Content :warning:                        | revise :warning:                        |
 | 9: naive string matching, rabin karp algo | Incomplete :x:                               | Incomplete :warning:                    |
 | 10: kmp string matching                   | Incomplete :x:                               | Incomplete :warning:                    |
-| 2: complexity analysis                    | :warning:                                    | <!--need help--> :x:                    |
-| 4.1.1: recursion                          | :white_check_mark:                           | <!--need help--> :x:                    |
-| 4.1.2: recursion tree                     | :white_check_mark:                           | <!--need help-->  :x:                   |
-| 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :x:                    |
+| 2: complexity analysis                    | :white_check_mark:                           | <!--need help--> :exclamation:          |
+| 4.1.1: recursion                          | :white_check_mark:                           | <!--need help--> :exclamation:          |
+| 4.1.2: recursion tree                     | :white_check_mark:                           | <!--need help-->  :exclamation:         |
+| 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :exclamation:          |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | :warning:                               |
