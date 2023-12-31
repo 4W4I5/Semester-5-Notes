@@ -5,16 +5,17 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
+| Chapter | Topic                                           | Status    | Prep(Ignore this, its for personal use) |
+| ------- | ----------------------------------------------- | --------- | --------------------------------------- |
+| **8**   | Virtual Memory                                  | :x:       | :x:                                     |
+| **7**   | Memory Management                               | :x:       | :x:                                     |
+| **6**   | Concurrency: Deadlock & Starvation              | :x:       | :x:                                     |
+| 5       | Concurrency: Mutual Exclusion & Synchronization | :warning: | :x:                                     |
+| 4       | Threads                                         | :x:       | :x:                                     |
+| 9       | Uniprocessor Scheduling                         | :warning: | :x:                                     |
+| 3       | Process Description & Control                   | :warning: | :x:                                     |
 
-| Chapter | Topic                                           | Status |
-| ------- | ----------------------------------------------- | ------ |
-| **8**       | Virtual Memory                                  | :x:    |
-| **7**       | Memory Management                               | :x:    |
-| **6**       | Concurrency: Deadlock & Starvation              | :x:    |
-| 5       | Concurrency: Mutual Exclusion & Synchronization | :warning:    |
-| 4       | Threads                                         | :x:    |
-| 9       | Uniprocessor Scheduling                         | :warning:    |
-| 3       | Process Description & Control                   | :warning:    |
+
 <!--
 :white_check_mark:
 :warning:
@@ -104,7 +105,7 @@
 ## Semaphores
 
 
-##### **Mutex (Mutual Exclusion):**
+### **Mutex (Mutual Exclusion):**
 
 - **Definition:**
 	- A mutex, short for "mutual exclusion," is a synchronization primitive used to protect critical sections in multithreaded or multiprocess systems.
@@ -678,7 +679,7 @@ Output will be 1 1 1 1 1
  Explanation:
 
  - ![](/Pasted%20image%2020230926021904.png)
-#### Some simple stuff to remember
+### Some simple stuff to remember
 - IF(Fork()) -> Refers to the parent process. Can be the parent in a child process as well
 - IF(!Fork()) -> Refers to a child of the current parent process. Same as IF(Fork() == 0)
 - A || B -> B will run if A is false
