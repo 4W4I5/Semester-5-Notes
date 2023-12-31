@@ -518,6 +518,10 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 		- p < 0 but only n^k
 			- $$Θ(n^k)$$
 # 3: insertion sort
+**Procedure**
+- Compare nth element with n+1th element
+	- Swap if not in order until it is in order. (L.H.S of the array is generally sorted as the algo progresses)
+	- Else shift to n+1th element and repeat
 
 # 5: merge sort
 # 6: quick sort
