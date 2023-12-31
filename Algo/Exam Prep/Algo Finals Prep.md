@@ -567,3 +567,9 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Best, Average, Worst: O(n logn)
 
 # 8: linear sorts
+**Decision Tree**
+- Helps model execution of any comparison sort
+- Split tree when algo compares two elements
+	- Must contain greater than N leaves 
+- Running time == Length of path taken
+- Worst case == Height of tree
