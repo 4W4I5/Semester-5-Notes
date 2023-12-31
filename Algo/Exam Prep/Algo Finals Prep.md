@@ -536,19 +536,16 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 
 
 **Time Complexity**
-- Best: O(n logn)
-- Average: O(n logn)
-- Worst: O(n logn)
+- Best, Average, Worst: O(n logn)
 # 6: quick sort
 
 **Time Complexity**
 - Best: O(n logn)
-- Average: O(n logn) 
+- Average: O(n logn)
 - Worst: O(n<sup>2</sup>) - Poor pivot selection
 # 7: heap sort
 
 **Time Complexity**
-- Best: O(n) - List is already sorted
-- Average: O(n<sup>2</sup>)
-- Worst: O(n<sup>2</sup>) - List is sorted in reverse order
+- Best, Average, Worst: O(n logn)
+
 # 8: linear sorts
