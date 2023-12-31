@@ -58,6 +58,11 @@ NOTE:: Till slide 29 only
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
 
+| **Attributes**   | **Simple Paging**                              | **Virtual Memory Paging** | **Simple Segmentation** | **Virtual Memory Segmentation** |
+| ---------------- | ---------------------------------------------- | ------------------------- | ----------------------- | ------------------------------- |
+| **Partitioning** | Main memory partioned into frames (fixed size) | Same as simple paging     | Not Partitioned         | Not Partitioned                 |
+|                  |                                                |                           |                         |                                 |
+
 **Principle of Locality**
 
 **Support needed for Virtual Memory**
