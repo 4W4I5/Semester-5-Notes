@@ -154,12 +154,12 @@ NOTE:: Till slide 29 only
 > Add fig 8.9 from slides here
 
 
-
-
 **Page Size**
 - Based on several factors
 	- Internal fragmentation
-	- 
+	- Fault tolerance
+	- Frames allocated
+	- TLB size
 
 
 **Book questions**
