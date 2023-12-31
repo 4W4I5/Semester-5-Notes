@@ -70,9 +70,16 @@ NOTE:: Till slide 29 only
 | **What should be in memory** | Simple paging requires all pages required to be in memory unless overlays are used. Virtual paging reads in pages as needed by writing a page out to disk | Simple segmentation requires all segments required to be in memory. Virtual Segmentation reads in segments as needed by writing a one or more segments out to disk |
 
 **Principle of Locality**
+- Possible to guess which portions of a process are needed in the future
+	- Program/Data references tend to cluster up
+	- Only a few portions are needed in a short time
+- Avoids thrashing
+	- State where system spends most of its time swapping portions rather than executing instructions
 
 **Support needed for Virtual Memory**
-
+- What must be available in a system for virtual memory to be practical and effective
+	- Hardware must support paging & segmentation
+	- OS must include software for managing the movement of pages and/or segments to/from main and secondary memory
 
 **Paging**
 **Inverted Page Table**
