@@ -25,7 +25,7 @@
 | 4.1.2: recursion tree                     | :white_check_mark:    | <!--need help-->  :x:                   |
 | 4.2: recurrence relation                  | :white_check_mark:    | <!--need help--> :x:                    |
 | 4.3: master method                        | :white_check_mark:    | :white_check_mark:                      |
-| 3: insertion sort                         | :x:                   | :x:                                     |
+| 3: insertion sort                         | :white_check_mark:    | :white_check_mark:                      |
 | 5: merge sort                             | :x:                   | :x:                                     |
 | 6: quick sort                             | :x:                   | :x:                                     |
 | 7: heap sort                              | :x:                   | :x:                                     |
@@ -518,6 +518,8 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 		- p < 0 but only n^k
 			- $$Θ(n^k)$$
 # 3: insertion sort
+- Good for sorting almost sorted lists
+
 **Procedure**
 - Compare nth element with n+1th element
 	- Swap if not in order until it is in order. (L.H.S of the array is generally sorted as the algo progresses)
