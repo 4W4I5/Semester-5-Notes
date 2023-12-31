@@ -58,16 +58,16 @@ NOTE:: Till slide 29 only
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
 
-| **Attributes**               | **Simple Paging**                                | **Virtual Memory Paging** | **Simple Segmentation** | **Virtual Memory Segmentation** |
-| ---------------------------- | ------------------------------------------------ | ------------------------- | ----------------------- | ------------------------------- |
-| **Partitioning**             | Main memory partitioned into frames (fixed size) | Same as simple paging     | Not Partitioned         | Not Partitioned                 |
-| **Program breakage**         |                                                  |                           |                         |                                 |
-| **Internal Fragmentation**   |                                                  |                           |                         |                                 |
-| **External Fragmentation**   |                                                  |                           |                         |                                 |
-| **Table**                    |                                                  |                           |                         |                                 |
-| **What list is maintained**  |                                                  |                           |                         |                                 |
-| **Relative addressing**      |                                                  |                           |                         |                                 |
-| **What should be in memory** |                                                  |                           |                         |                                 |
+| **Attributes**               | **Simple/Virtual Memory Paging**                       | **Simple/Virtual Memory Segmentation** |
+| ---------------------------- | ------------------------------------------------------ | -------------------------------------- |
+| **Partitioning**             | Main memory partitioned into frames (fixed size)       | Not Partitioned                        |
+| **Program breakage**         | Broken into pages by compiler/memory management system | Decision made by programmer            |
+| **Internal Fragmentation**   | Within frames                                          |                                        |
+| **External Fragmentation**   |                                                        |                                        |
+| **Table**                    |                                                        |                                        |
+| **What list is maintained**  |                                                        |                                        |
+| **Relative addressing**      |                                                        |                                        |
+| **What should be in memory** |                                                        |                                        |
 
 **Principle of Locality**
 
