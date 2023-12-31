@@ -118,7 +118,8 @@ NOTE:: Till slide 29 only
 	- Value from adding RootPageNum + RootPageTablePtr is added with UserPageNum to get FrameNum
 
 **Inverted Page Table**
-- 
+- PageNum is mapped to a hash value which points to an inverted page table
+	- Inverted cause PTE are indexed by FrameNum instead of VirtualPageNum
 **Translation Lookaside Buffer (TLB)**
 **Associative Mapping**
 **Page Size**
