@@ -104,7 +104,21 @@ NOTE:: Till slide 29 only
 | **Segmentation Only**              | Segment Number + Offset               | None                                                       | PresentBit + ModifiedBit + OtherControlBits + Length + Segment Base |
 | **Combined Segmentation & Paging** | Segment Number + Page Number + Offset | PresentBit + ModifiedBit + OtherControlBits + Frame Number | ControlBits + Length + Segment Base                                 |
 
+**How to translate a Virtual Address to Real Address via Paging**
+- Virtual address: PageNum + Offset
+	- PageNum is added with PageTablePtr to get FrameNum
+	- Offset is the same for both Page and Frame
+- Physical address: FrameNum + Offset
+	- Offset starts from base of page frame in main memory
+
+**How to translate a Virtual Address to Real Address via Two-Level Paging(Hierarchical)**
+- Virtual address now has an extra parameter: RootPageNum + UserPageNum + Offset
+	- Offset is the same as before
+	- Only Root page has a pointer to be added with.
+	- Value from adding RootPageNum + RootPageTablePtr is added with UserPageNum to get FrameNum
+
 **Inverted Page Table**
+- 
 **Translation Lookaside Buffer (TLB)**
 **Associative Mapping**
 **Page Size**
