@@ -42,7 +42,11 @@ NOTE:: Till slide 29 only
 	- If a portion is not in memory and accessed an interrupt is generated to fetch that section.
 	- The process is blocked during this stage
 - Example
-	- OS issues
+	- Portion of process that has the logical address brought into main memory
+	- OS has to issue a disk I/O Read Request
+		- Current process is blocked until read is completed
+		- Another process dispatched to run while the read occurs
+	- 
 **Implications**
 
 **Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
