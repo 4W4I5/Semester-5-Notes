@@ -523,7 +523,16 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 	- Swap if not in order until it is in order. (L.H.S of the array is generally sorted as the algo progresses)
 	- Else shift to n+1th element and repeat
 
+**Time Complexity**
+- Best: O(n) - List is already sorted
+- Average: O(n<sup>2</sup>)
+- Worst: O(n<sup>2</sup>) - List is sorted in reverse order
+
 # 5: merge sort
+**Procedure**
+- Split array into halves until len of sub array is 1
+- rearrange back up and do so in order
+- tada! sorted array =)
 # 6: quick sort
 # 7: heap sort
 # 8: linear sorts
