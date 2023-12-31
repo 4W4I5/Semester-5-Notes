@@ -482,7 +482,8 @@ for(int i =0; i < n; i++){
 	- General case(s)
 	- integrity of the function via the three-question method
 
-Recurrences can be solved via 3 methods
+Recurrences can be solved via
+- Iteration
 - Substitution/Tree
 - Relation
 - Master
