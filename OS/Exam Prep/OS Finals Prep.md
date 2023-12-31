@@ -23,6 +23,33 @@
 -->
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
+**Terminology:**
+- Virtual Memory: 
+- Virtual Address: Logical addresses assigned in virtualspace. Allows for relative addressing based off of the base pointer
+- Virtual Address Space: Virtual storage assigned to a process
+- Address Space: Range of memory addresses available to a process
+- Real Address: Address of a storage location in main memory
+
+**Hardware & Control Structure**
+
+**Execution of a process**
+
+**Implications**
+
+**Table on characteristics of paging and segmentation FIG 8.2 from slides. Slide 8**
+
+**Thrashing**
+
+**Principle of Locality**
+
+**Support needed for Virtual Memory**
+
+
+**Paging**
+**Inverted Page Table**
+**Translation Lookaside Buffer (TLB)**
+**Associative Mapping**
+**Page Size**
 # 7. Memory Management
 **Terminology:**
 - Frame
