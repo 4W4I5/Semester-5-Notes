@@ -20,13 +20,13 @@
 | 16: bellman ford                          | GPT Content :warning: | revise :warning:                        |
 | 9: naive string matching, rabin karp algo | Incomplete :x:        | Incomplete :warning:                    |
 | 10: kmp string matching                   | Incomplete :x:        | Incomplete :warning:                    |
-| 2: complexity analysis                    | :warning:             | <!--need help--> :warning:              |
-| 4.1.1: recursion                          | :white_check_mark:    | <!--need help--> :warning:              |
-| 4.1.2: recursion tree                     | :white_check_mark:    | <!--need help-->  :warning:             |
-| 4.2: recurrence relation                  | :x:                   | <!--need help--> :x:                    |
+| 2: complexity analysis                    | :warning:             | <!--need help--> :x:                    |
+| 4.1.1: recursion                          | :white_check_mark:    | <!--need help--> :x:                    |
+| 4.1.2: recursion tree                     | :white_check_mark:    | <!--need help-->  :x:                   |
+| 4.2: recurrence relation                  | :white_check_mark:    | <!--need help--> :x:                    |
 | 4.3: master method                        | :white_check_mark:    | :white_check_mark:                      |
 | 3: insertion sort                         | :x:                   | :x:                                     |
-| 5: merge sort + recurrence relation       | :x:                   | :x:                                     |
+| 5: merge sort                             | :x:                   | :x:                                     |
 | 6: quick sort                             | :x:                   | :x:                                     |
 | 7: heap sort                              | :x:                   | :x:                                     |
 | 8: linear sorts                           | :x:                   | :x:                                     |
@@ -519,7 +519,7 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 			- $$Θ(n^k)$$
 # 3: insertion sort
 
-# 5: merge sort + recurrence relation
+# 5: merge sort
 # 6: quick sort
 # 7: heap sort
 # 8: linear sorts
