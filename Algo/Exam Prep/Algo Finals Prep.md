@@ -26,8 +26,8 @@
 | 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :exclamation:          |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
-| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:                               |
-| 6: quick sort                             | :x:                                          | Practice working :warning:                                     |
+| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |
+| 6: quick sort                             | :x:                                          | Practice working :warning:              |
 | 7: heap sort                              | :x:                                          | :x:                                     |
 | 8: linear sorts                           | :x:                                          | :x:                                     |
 
@@ -578,4 +578,4 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 **Linear sorts**
 - Assumes that each element is an integer in the range 0 to k
 - Uses auxiliary storage
-- 
+-
