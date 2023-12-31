@@ -26,7 +26,7 @@
 | 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :x:                    |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
-| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | :warning:                                     |
+| 5: merge sort                             | Recurrence Relation + Tree missing :warning: | :warning:                               |
 | 6: quick sort                             | :x:                                          | :x:                                     |
 | 7: heap sort                              | :x:                                          | :x:                                     |
 | 8: linear sorts                           | :x:                                          | :x:                                     |
