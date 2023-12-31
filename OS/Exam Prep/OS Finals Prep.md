@@ -127,8 +127,38 @@ NOTE:: Till slide 29 only
 - Fixed proportion of real memory is required regardless of the num of processes or virtual pages supported
 
 **Translation Lookaside Buffer (TLB)**
-**Associative Mapping**
+- Two memory accesses are caused during a virtual memory address read
+	- Fetching the PTE
+	- Fetching the data referenced by the PTE
+- Doubled memory access time due to this
+	- Avoided by use of a special high speed cache aka Translation Lookaside Buffer(TLB)
+		- Same as usual but a TLB is checked. Operates in the same way a cache does
+- TLB Flow
+	- CPU checks TLB
+	- If Page Table in TLB, Generate Physical address
+		- Otherwise, check Page table
+			- Is Page table in main memory? Update TLB then generate Physical address
+				- Otherwise, we have a Page fault. Handle it and recheck TLB
+	- Page fault Routine
+		- Read page from disk (OS tells CPU)
+			- Disk Read Interrupt generated
+		- Page transferred from disk to memory
+			- If memory full a page is swapped out
+		- Pages updated
+- Indexing the TLB
+	- Done via Associative Mapping
+		- Performs a direct match against the stored PageNum + PTE in buffer instead of just the PageNum against the PTE as done in direct mapping
+
+**TLB & Cache operation diagram**
+> [!NOTE]
+> Add fig 8.9 from slides here
+
+
+
+
 **Page Size**
+- Based on several factors
+	- Intera
 
 
 **Book questions**
