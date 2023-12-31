@@ -158,7 +158,8 @@ NOTE:: Till slide 29 only
 
 **Page Size**
 - Based on several factors
-	- Intera
+	- Internal fragmentation
+	- 
 
 
 **Book questions**
