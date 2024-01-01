@@ -87,12 +87,14 @@
 **Buddy System**
 - A version of Best Fit
 - Comprised of Fixed & Dynamic partitioning schemes
-- Space available is treated as a single block. 
-
-
+- Space available is treated as a single block.
+- Working
+	- Divide according to best fit
+	- Assume a tree structure. Left most nodes divide the structure when allocated
 
 **Book Questions: **
 - **What technical issues can relocation bring about in memory management**
+	- 
 - **What requirements is memory management intended to satisfy?**
 	- Memory management is intended to satisfy the requirements of efficient utilization of memory, protection and isolation of processes, and providing a convenient abstraction for programmers.
 - **What is relocation of a program?**
