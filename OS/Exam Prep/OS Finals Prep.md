@@ -41,7 +41,7 @@
 - Sharing
 	- Flexibility in protection to allow each process to access a portion of the original process memory instead of each having their own copies
 - Logical Organization
-	- 
+	-
 - Physical Organization
 
 **Memory Partitioning**
@@ -53,7 +53,25 @@
 - Virtual Memory Segmentation
 
 **Book Questions: **
-- What technical issues can relocation bring about in memory management
+- **What technical issues can relocation bring about in memory management**
+- **What requirements is memory management intended to satisfy?**
+	- Memory management is intended to satisfy the requirements of efficient utilization of memory, protection and isolation of processes, and providing a convenient abstraction for programmers.
+- **What is relocation of a program?**
+	- Relocation of a program refers to adjusting the addresses used in the program to be executed to reflect the actual location in memory where the program will be loaded.
+- **What are the advantages of organizing programs and data into modules?**
+	- Organizing programs and data into modules promotes modularity, making code more readable, maintainable, and reusable. It also helps in team collaboration as different modules can be developed independently.
+- **What are some reasons to allow two or more processes to all have access to a particular region of memory?**
+	- Processes may need to share memory for inter-process communication, data sharing, or coordination. This allows efficient collaboration between processes.
+- **In a fixed partitioning scheme, what are the advantages of using unequal-size partitions?**
+	- Unequal-size partitions can lead to better memory utilization as they can accommodate varying sizes of programs, reducing internal fragmentation compared to equal-size partitions.
+- **What is the difference between internal and external fragmentation?**
+	- Internal fragmentation occurs when memory is allocated but not fully utilized, leading to wasted space within a partition. External fragmentation occurs when free memory is scattered throughout the system, making it challenging to allocate contiguous blocks of memory.
+- **What is address binding? State the different timings when address binding may occur.**
+	- Address binding is the process of associating a program's symbolic addresses with physical memory addresses. It can occur at three different timings: compile time (static binding), load time (dynamic/static binding), and execution time (dynamic binding).
+- **What is the difference between a page and a frame?**
+	- In the context of memory management, a page is a fixed-length contiguous block in a virtual memory space, while a frame is a fixed-length block in physical memory. Pages and frames are used in paging systems to manage memory.
+- **What is the difference between a page and a segment?**
+	- In the context of memory management, a page is a fixed-size unit used in paging, while a segment is a variable-sized unit used in segmentation. Segmentation allows logical division of a program into different segments with variable sizes.
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
 
