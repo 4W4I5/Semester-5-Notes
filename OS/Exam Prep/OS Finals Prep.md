@@ -81,8 +81,13 @@
 - **Next-Fit**: Next available block that is large enough. Run after First-Fit
 
 **Replacement Algorithms**
+- Dynamic partitions with multiprogramming eventually has all the processes in a blocked state. No more memory left for active processes left.
+- OS chooses a process to swap out for an active one instead of waiting for one to come back to ready state
 
 **Buddy System**
+- A version of Best Fit
+- Comprised of Fixed & Dynamic partitioning schemes
+- Space available is treated as a single block. 
 
 
 
