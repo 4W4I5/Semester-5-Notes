@@ -152,7 +152,7 @@ NOTE:: Till slide 29 only
 **TLB & Cache operation diagram**
 > [!NOTE]
 > Add fig 8.9 from slides here
-
+- 
 
 **Page Size**
 - Based on several factors
