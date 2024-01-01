@@ -29,7 +29,7 @@
 
 **Memory Management Requirements:**
 - Relocation
-	- Cannot know where the program will be placed, need to allow for moving the program about due to swapping.
+	- Cannot know where the program will be placed, need to allow for moving the program about due to swapping. Assign a virtual address to PCB. That virtual address is assigned to a physical address 
 	- Leads to addressing requirements
 		- Structure: PCB. Program, Data & Stack Segments
 		- As OS manages memory, it must also deal with references inside each segment
