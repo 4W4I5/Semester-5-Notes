@@ -29,7 +29,10 @@
 
 **Memory Management Requirements:**
 - Relocation
+	- Active programs have logical addresses as the entire page/segment is managed by the physical memory itself.
+	- Programmers must not expect the program to be in the same memory location as when the program was first loaded
 - Protection
+	-
 - Sharing
 - Logical Organization
 - Physical Organization
@@ -41,6 +44,9 @@
 - Simple Segmentation
 - Virtual Memory Paging
 - Virtual Memory Segmentation
+
+**Book Questions: **
+- What technical issues can relocation bring about in memory management
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
 
