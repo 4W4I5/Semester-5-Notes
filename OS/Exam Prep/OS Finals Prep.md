@@ -23,12 +23,18 @@
 -->
 # 7. Memory Management
 **Terminology:**
-- Frame: Fixed length block of main memory
-- Page: Fixed length block of virtual memory
-- Segment: Variable length block of virtual memory. Entire segment in a frame is known as segmentation while divided segments in a frame is known as combined segmentation and paging
-- Logical Address: reference to memory independent of physical location in memory
-- Relative Address: Address represented by an offset of some point in memory
-- Physical/Absolute Address: Actual location in main memory
+- **Frame**: Fixed length block of main memory
+- **Page**: Fixed length block of virtual memory
+- **Segment**: Variable length block of virtual memory. Entire segment in a frame is known as segmentation while divided segments in a frame is known as combined segmentation and paging
+- **Logical Address**: reference to memory independent of physical location in memory. 16bit in length with 6 bits for PageNum and 10 bits for Offset.
+	- PageNum is number of the process the page is referring to.
+		- This is directly used in tandem with offset during paging
+		- This is translated to a Base from the Process Segment table and OR'ed with the offset when used with segmentation
+- **Relative Address**: Address represented by an offset of some point in memory
+- **Physical/Absolute Address**: Actual location in main memory
+- **Paging**: Divide a process into fixed size chunks, fill frame with various pages. List of free frames is maintained by OS. Shove pages into free frames wherever possible
+- **Page Table**:
+- **Segmentation**:
 
 **Memory Management Requirements:**
 - Relocation
