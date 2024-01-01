@@ -39,8 +39,9 @@
 	- Acquire perm to reference memory location for reading/writing
 	- Goes hand in hand with relocation
 - Sharing
-	- Flexibility in protection to allow each process to access a portion 
+	- Flexibility in protection to allow each process to access a portion of the original process memory instead of each having their own copies
 - Logical Organization
+	- 
 - Physical Organization
 
 **Memory Partitioning**
