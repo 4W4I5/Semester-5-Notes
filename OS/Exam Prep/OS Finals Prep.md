@@ -33,8 +33,8 @@
 - **Relative Address**: Address represented by an offset of some point in memory
 - **Physical/Absolute Address**: Actual location in main memory
 - **Paging**: Divide a process into fixed size chunks, fill frame with various pages. List of free frames is maintained by OS. Shove pages into free frames wherever possible
-- **Page Table**: Maintained for **each** process. Used to produce a physical address. Contains page number and offset 
-- **Segmentation**:
+- **Page Table**: Maintained for **each** process. Used to produce a physical address. Contains page number and offset
+- **Segmentation**: Program division, varied length. Consists of SegmentNum + Offset. Similar to dynamic partitioning
 
 **Memory Management Requirements:**
 - Relocation
@@ -76,6 +76,9 @@
 | **Virtual Memory Segmentation** | Same as Simple Segmentation but only load segments that are part of the resident set                                                                      | Large virtual address space, no internal fragmentation, protection & sharing support | Complex memory management overhead needed                                                                        |
 
 **Memory Placement Algorithms**
+- **Best-Fit**: Closest to requested size
+- **First-Fit**: First block that is large enough from the beginning
+- **Next-Fit**: Next available block that is large enough. Run after First-Fit
 
 **Replacement Algorithms**
 
