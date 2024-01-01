@@ -55,12 +55,16 @@
 		- System should be solely responsible for this
 
 **Memory Partitioning**
-- Fixed Partitioning
-- Dynamic Partitioning
-- Simple Paging
-- Simple Segmentation
-- Virtual Memory Paging
-- Virtual Memory Segmentation
+
+| **Techniques**                  | **Description**                                                                                     | **Strengths**             | **Weaknesses**                                               |
+| ------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------- | ------------------------------------------------------------ |
+| **Fixed Partitioning**          | Divide into equal length chunks                                                                     | Simple and small overhead | Internal fragmentation & Max Num of ActiveProcesses is fixed |
+| **Unequal Size Partitioning**   | Divide into unequal length chunks of varied sizes. Still fixed but better use of fixed partitioning | Same as before            | Same as before                                               |
+| **Dynamic Partitioning**        |                                                                                                     |                           |                                                              |
+| **Simple Paging**               |                                                                                                     |                           |                                                              |
+| **Simple Segmentation**         |                                                                                                     |                           |                                                              |
+| **Virtual Memory Paging**       |                                                                                                     |                           |                                                              |
+| **Virtual Memory Segmentation** |                                                                                                     |                           |                                                              |
 
 **Book Questions: **
 - **What technical issues can relocation bring about in memory management**
