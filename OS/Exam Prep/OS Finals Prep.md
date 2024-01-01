@@ -153,7 +153,7 @@ NOTE:: Till slide 29 only
 > [!NOTE]
 > Add fig 8.9 from slides here
 
-![](Pasted%20image%2020240101124738.png)
+![](https://github.com/4W4I5/Semester-5-Notes/blob/main/Pasted%20image%2020240101124738.png)
 
 **Page Size**
 - Based on several factors
