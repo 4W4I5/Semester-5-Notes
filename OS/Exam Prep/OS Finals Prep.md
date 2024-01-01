@@ -33,6 +33,14 @@
 - Sharing
 - Logical Organization
 - Physical Organization
+
+**Memory Partitioning**
+- Fixed Partitioning
+- Dynamic Partitioning
+- Simple Paging
+- Simple Segmentation
+- Virtual Memory Paging
+- Virtual Memory Segmentation
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
 
@@ -150,9 +158,6 @@ NOTE:: Till slide 29 only
 		- Performs a direct match against the stored PageNum + PTE in buffer instead of just the PageNum against the PTE as done in direct mapping
 
 **TLB & Cache operation diagram**
-> [!NOTE]
-> Add fig 8.9 from slides here
-
 ![](https://github.com/4W4I5/Semester-5-Notes/blob/main/Pasted%20image%2020240101124738.png)
 
 **Page Size**
