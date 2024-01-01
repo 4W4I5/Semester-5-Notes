@@ -33,7 +33,7 @@
 - **Relative Address**: Address represented by an offset of some point in memory
 - **Physical/Absolute Address**: Actual location in main memory
 - **Paging**: Divide a process into fixed size chunks, fill frame with various pages. List of free frames is maintained by OS. Shove pages into free frames wherever possible
-- **Page Table**:
+- **Page Table**: Maintained for **each** process. Used to produce a physical address. Contains page number and offset 
 - **Segmentation**:
 
 **Memory Management Requirements:**
