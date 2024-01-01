@@ -23,9 +23,9 @@
 -->
 # 7. Memory Management
 **Terminology:**
-- Frame
-- Page
-- Segment
+- Frame: Fixed length block of main memory
+- Page: Fixed length block of virtual memory
+- Segment: Variable length block of virtual memory. Entire segment in a frame is known as segmentation while divided segments in a frame is known as combined segmentation and paging
 
 **Memory Management Requirements:**
 - Relocation
