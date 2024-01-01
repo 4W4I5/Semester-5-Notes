@@ -41,6 +41,7 @@
 - Sharing
 	- Flexibility in protection to allow each process to access a portion of the original process memory instead of each having their own copies
 - Logical Organization of memory
+	- Physical memory is linear, one-dimensional
 	- 
 - Physical Organization of memory
 
