@@ -94,6 +94,7 @@
 
 **Book Questions: **
 - **What technical issues can relocation bring about in memory management**
+	- Without compaction relocation is bound to increase fragmentation
 	- 
 - **What requirements is memory management intended to satisfy?**
 	- Memory management is intended to satisfy the requirements of efficient utilization of memory, protection and isolation of processes, and providing a convenient abstraction for programmers.
