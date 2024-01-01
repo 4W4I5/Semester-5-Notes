@@ -26,6 +26,9 @@
 - Frame: Fixed length block of main memory
 - Page: Fixed length block of virtual memory
 - Segment: Variable length block of virtual memory. Entire segment in a frame is known as segmentation while divided segments in a frame is known as combined segmentation and paging
+- Logical Address: reference to memory independent of physical location in memory
+- Relative Address: Address represented by an offset of some point in memory
+- Physical/Absolute Address: Actual location in main memory
 
 **Memory Management Requirements:**
 - Relocation
@@ -60,11 +63,18 @@
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------- |
 | **Fixed Partitioning**          | Divide memory into equal length chunks                                                                                                                    | Simple and small overhead                                                            | Internal fragmentation & Max Num of ActiveProcesses is fixed, Program needs to be designed with overlays in mind |
 | **Unequal Size Partitioning**   | Divide memory into unequal length chunks of varied sizes. Still fixed but better use of fixed partitioning                                                | Same as before                                                                       | Same as before                                                                                                   |
-| **Dynamic Partitioning**        | Create dynamic partitions that adjust to needs                                                                                                            | No internal fragmentation                                                            | Processor time needed to counter external fragmentation                                                          |
+| **Dynamic Partitioning**        | Create dynamic partitions that are of variable length and number                                                                                          | No internal fragmentation                                                            | Processor time needed to counter external fragmentation (Compaction)                                                          |
 | **Simple Paging**               | Divide memory into equal length frames. Each process is divided into equal length pages. Process loaded by loading all pages into random frames of memory | No external fragmentation                                                            | Small internal fragmentation                                                                                     |
 | **Simple Segmentation**         | Divide process into segments. Load process by loading all segments into dynamic partions                                                                  | No internal fragmentation, reduced overhead compared to dynamic partitioning         | External fragmentation                                                                                           |
 | **Virtual Memory Paging**       | Same as Simple Paging but only load pages that are part of the resident set                                                                               | Large virtual address space, no external fragmentation                               | Complex memory management overhead needed                                                                        |
 | **Virtual Memory Segmentation** | Same as Simple Segmentation but only load segments that are part of the resident set                                                                      | Large virtual address space, no internal fragmentation, protection & sharing support | Complex memory management overhead needed                                                                        |
+
+**Memory Placement Algorithms**
+
+**Replacement Algorithms**
+
+**Buddy System**
+
 
 
 **Book Questions: **
