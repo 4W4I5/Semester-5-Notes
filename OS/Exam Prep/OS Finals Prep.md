@@ -34,7 +34,6 @@
 		- Structure: PCB. Program, Data & Stack Segments
 		- As OS manages memory, it must also deal with references inside each segment
 	- Virtual to Physical Address translation required
-	-
 - Protection
 	-
 - Sharing
