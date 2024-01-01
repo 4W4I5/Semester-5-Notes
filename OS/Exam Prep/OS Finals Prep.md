@@ -41,8 +41,12 @@
 - Sharing
 	- Flexibility in protection to allow each process to access a portion of the original process memory instead of each having their own copies
 - Logical Organization of memory
-	- Physical memory is linear, one-dimensional
-	- 
+	- Physical/Logical memory is linear, one-dimensional
+	- Programs however are constructed modularly, can have modifiable/unmodifiable code
+		- Allows easier maintenance of code this way, more programmer friendly
+		- Different protection levels are applied to different modules i.e. read/write access
+		- Sharing modules across processes
+	- Follows the ideology behind segmentation
 - Physical Organization of memory
 
 **Memory Partitioning**
