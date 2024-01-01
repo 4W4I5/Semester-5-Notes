@@ -48,7 +48,11 @@
 		- Sharing modules across processes
 	- Follows the ideology behind segmentation
 - Physical Organization of memory
-	- Physical Memory is volatile, Logical memory is
+	- Physical Memory is volatile & fast, Logical memory is non-volatile & slow. Store active programs and data in memory while long term storage is for Logical memory
+	- Individual Programmer Responsibility
+		- The programmer must not assume the responsibility for managing main memory. This is due to the fact that the power to overlay should not be granted to them. Overlaying is where different modules share the same memory region. Hardware is optimized to handle this better than programmers might be able to in software + it is a security concern
+		- Programmers also do not know how much space/memory will be available therefore it is not logical to let them manage it
+		- System should be solely responsible for this
 
 **Memory Partitioning**
 - Fixed Partitioning
