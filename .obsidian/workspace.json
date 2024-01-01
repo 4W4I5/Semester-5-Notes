@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bbf2447a7eb59639",
@@ -182,8 +180,11 @@
       "obsidian-trim-whitespace:Trim whitespace": false
     }
   },
-  "active": "105a1150aadb1faf",
+  "active": "a36f60ddc22d296f",
   "lastOpenFiles": [
+    "Pasted image 20240101124738.png",
+    "Pasted image 20240101124736.png",
+    "Pasted image 20240101124733.png",
     "Untitled.md",
     "OS/Exam Prep/OS Finals Prep.md",
     "README.md",
@@ -212,7 +213,6 @@
     "CySec-2/CySec2 5 September, 2023.md",
     "CySec-2/Exam Prep/CySec-2 Quick Notes 1.md",
     "Pasted image 20231216180329.png",
-    "OS/OS 24 October, 2023.md",
     "Pasted image 20230912152003.png",
     "Pasted image 20230926022710.png",
     "Pasted image 20230926023241.png",
@@ -227,8 +227,6 @@
     "Books/CYSEC Book.pdf",
     "Books/OS Book.pdf",
     "Books/DB Book.pdf",
-    "Pasted image 20230912151924.png",
-    "Pasted image 20230912151828.png",
-    "Algo/Images/Pasted image 20230906093822.png"
+    "Pasted image 20230912151924.png"
   ]
 }
