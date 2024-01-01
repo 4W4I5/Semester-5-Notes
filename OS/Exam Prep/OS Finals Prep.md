@@ -40,9 +40,9 @@
 	- Goes hand in hand with relocation
 - Sharing
 	- Flexibility in protection to allow each process to access a portion of the original process memory instead of each having their own copies
-- Logical Organization
-	-
-- Physical Organization
+- Logical Organization of memory
+	- 
+- Physical Organization of memory
 
 **Memory Partitioning**
 - Fixed Partitioning
