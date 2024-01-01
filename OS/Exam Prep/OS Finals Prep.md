@@ -37,7 +37,9 @@
 - Protection
 	- Hardware capability to abort instructions that access logical addresses not in range of the program they are running in
 	- Acquire perm to reference memory location for reading/writing
+	- Goes hand in hand with relocation
 - Sharing
+	- Flexibility in protection to allow each process to access a portion 
 - Logical Organization
 - Physical Organization
 
