@@ -29,8 +29,12 @@
 
 **Memory Management Requirements:**
 - Relocation
-	- Active programs have logical addresses as the entire page/segment is managed by the physical memory itself.
-	- Programmers must not expect the program to be in the same memory location as when the program was first loaded
+	- Cannot know where the program will be placed, need to allow for moving the program about due to swapping.
+	- Leads to addressing requirements
+		- Structure: PCB. Program, Data & Stack Segments
+		- As OS manages memory, it must also deal with references inside each segment
+	- Virtual to Physical Address translation required
+	-
 - Protection
 	-
 - Sharing
