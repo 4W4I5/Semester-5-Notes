@@ -35,7 +35,8 @@
 		- As OS manages memory, it must also deal with references inside each segment
 	- Virtual to Physical Address translation required
 - Protection
-	- Hardware capability to abort instructions that 
+	- Hardware capability to abort instructions that access logical addresses not in range of the program they are running in
+	- Acquire perm to reference memory location for reading/writing
 - Sharing
 - Logical Organization
 - Physical Organization
