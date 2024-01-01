@@ -8,7 +8,7 @@
 | Chapter | Topic                                           | Status             | Prep(Ignore this, its for personal use) |
 | ------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
 | **7**   | Memory Management                               | :x:                | :x:                                     |
-| **8**   | Virtual Memory                                  | :white_check_mark: | :white_check_mark:                                     |
+| **8**   | Virtual Memory                                  | :white_check_mark: | :white_check_mark:                      |
 | **6**   | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
 | 5       | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
 | 4       | Threads                                         | :x:                | :x:                                     |
@@ -48,6 +48,7 @@
 		- Sharing modules across processes
 	- Follows the ideology behind segmentation
 - Physical Organization of memory
+	- Physical Memory is volatile, Logical memory is
 
 **Memory Partitioning**
 - Fixed Partitioning
