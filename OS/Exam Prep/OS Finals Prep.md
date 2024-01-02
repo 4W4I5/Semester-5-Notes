@@ -300,6 +300,7 @@ NOTE:: Till slide 29 only
 		- Deadlock Condition Prevention
 	- Deadlock Avoidance
 		- Resource Allocation Denial aka Banker's Algorithm
+			- **Definition**: Do not grant an increment resource request to a process if it might lead to a deadlock
 			- **State** of the system reflects the current allocation of resources to the process
 				- **Safe State**: At least one sequence of resource allocation to process(es) that does not result in a deadlock
 					-
@@ -307,7 +308,7 @@ NOTE:: Till slide 29 only
 			- **Advantageous** as it is less restrictive than deadlock prevention and it is not necessary to preempt and rollback processes as done in deadlock detection
 			- **Restrictive** as Max Resource Requirements must be specified in advance. Processes can not have any sync requirements and be fully independent. Fixed number of resources to allocate. No process can exit while holding resources
 		- Process Initiation Denial
-		- Adv/DisAdvs
+			- **Definition**: Do not start a process if its demands might lead to a deadlock
 
 **Resource Categories**
 - Reusable & Consumable
