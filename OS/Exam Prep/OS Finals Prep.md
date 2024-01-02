@@ -272,7 +272,22 @@ NOTE:: Till slide 29 only
     - The offset is combined with the page frame number to generate the final physical memory address.
 # 6. Concurrency: Deadlock & Starvation
 >[!WARNING]
->Ask sir to explain how to determine a safe state and unsafe state
+>Ask sir to explain how to determine a safe state and unsafe state for avoidance and detection algo
+
+
+**Resource Categories**
+- Reusable & Consumable
+	- Reusable: Safely used by one process at a time. Not depleted after use.
+		- Examples: Hardware resources and data structures such as files, databases and semaphores
+	- Consumable: Created & Destroyed i.e Produced & Consumed.
+		- Examples: Interrupts, signals, messages and information in I/O Buffers
+- Reusable Resources Deadlock
+	- same as the one in the JPD section above
+- Consumable Resources Deadlock
+	- Memory Request: P1{Get80KB, Get60KB} & P2{Get70KB, Get80KB}
+		- After both processes run the first instruction they will be deadlocked if both progress to the next instruction
+	- Receiving message: P1{ReceiveP2, SendP2M1} & P2{ReceiveP1, SendP1M2}
+		- If the receive portion of the code is blocking. Both processes will be deadlocked waiting to receive the message from either process
 
 
 **Deadlock**
@@ -297,7 +312,7 @@ NOTE:: Till slide 29 only
 	- No Deadlock Example
 		- Change P to get and release at the same time
 		- P{GetA, RelA, GetB, RelB}
-- **Dealing with Deadlock**: Approaches for dealing with deadlock
+- **Dealing with Deadlock**: Approaches for dealing with deadlock. ***Read the table below if revising***
 	- Deadlock Prevention Strategy
 		- Indirectly by blocking the first 3 conditions of deadlock. (Hold&Wait, No Preemption, Mutual Exclusion)
 		- Directly by ensuring a circular wait can not happen
@@ -309,28 +324,19 @@ NOTE:: Till slide 29 only
 				- **Safe State**: At least one sequence of resource allocation to process(es) that does not result in a deadlock
 					- How to determine a safe state
 				- **Unsafe State**: Opposite of the above
-					- How to determine an usafe state
+					- How to determine an unsafe state
 			- **Advantageous** as it is less restrictive than deadlock prevention and it is not necessary to preempt and rollback processes as done in deadlock detection
 			- **Restrictive** as Max Resource Requirements must be specified in advance. Processes can not have any sync requirements and be fully independent. Fixed number of resources to allocate. No process can exit while holding resources
 		- Process Initiation Denial
 			- **Definition**: Do not start a process if its demands might lead to a deadlock
+	- Deadlock Detection
+		- **Definition**: Check for deadlock(circular wait) each time a resource is requested depending on how it is likely for a deadlock to occur.
+		- **Detection Algorithm**
+			-
+		- **Advantageous** as it leads to early detection, the algo is pretty simple
+		- **Disadvantageous** as frequent checks can consume processor time
 
-**Resource Categories**
-- Reusable & Consumable
-	- Reusable: Safely used by one process at a time. Not depleted after use.
-		- Examples: Hardware resources and data structures such as files, databases and semaphores
-	- Consumable: Created & Destroyed i.e Produced & Consumed.
-		- Examples: Interrupts, signals, messages and information in I/O Buffers
-- Reusable Resources Deadlock
-	- same as the one in the JPD section above
-- Consumable Resources Deadlock
-	- Memory Request: P1{Get80KB, Get60KB} & P2{Get70KB, Get80KB}
-		- After both processes run the first instruction they will be deadlocked if both progress to the next instruction
-	- Receiving message: P1{ReceiveP2, SendP2M1} & P2{ReceiveP1, SendP1M2}
-		- If the receive portion of the code is blocking. Both processes will be deadlocked waiting to receive the message from either process
-
-
-**Deadlock Detection, Prevention, Avoidance**
+**Deadlock Detection, Prevention, Avoidance Summary**
 
 | **Approach**   | **Resource Allocation Policy**                 | **Different Schemes**                                                     | **Advantages**                                                                                                                                                                                                                                                 | **Disadvantages**                                                                                                                                                                |
 | -------------- | ---------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
