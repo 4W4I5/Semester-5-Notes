@@ -285,7 +285,10 @@ NOTE:: Till slide 29 only
 	- Realized when the circular wait condition is fulfilled besides the other ones.
 - **Joint progress diagram**
 	- Defines sections where resources are required by both processes and the execution path which can provide alternatives to execution to avoid deadlock
+		- General example case is with the following process examples. P{GetA, GetB, RelA, RelB} & Q{GetB, GetA, RelB, RelA}
 	- No Deadlock Example
+		- Change P to get and release at the same time
+		- P{GetA, RelA, GetB, RelB}
 - **Conditions for Deadlock** (Page 15)
 - **Dealing with Deadlock** (Page 16)
 	- Deadlock Prevention Strategy (Page 17)
