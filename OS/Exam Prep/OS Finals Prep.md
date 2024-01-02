@@ -300,7 +300,10 @@ NOTE:: Till slide 29 only
 
 **Resource Categories**
 - Reusable & Consumable
-	- Reuseable: Safely used by one process at a time. Not depleted after use.
+	- Reusable: Safely used by one process at a time. Not depleted after use.
+		- Examples: Hardware resources and data structures such as files, databases and semaphores
+	- Consumable: Created & Destroyed i.e Produced & Consumed.
+		- Examples: Interrupts, signals, messages and information in I/O Buffers
 - Memory Request
 - Consumable Resources Deadlock
 
