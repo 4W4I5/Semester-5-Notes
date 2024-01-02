@@ -274,12 +274,20 @@ NOTE:: Till slide 29 only
     - The offset is combined with the page frame number to generate the final physical memory address.
 # 6. Concurrency: Deadlock & Starvation
 **Deadlock**
-- Potential Deadlock
-- Actual Deadlock
-- Joint progress diagram
+- **Definition**: Permanent condition caused when each processes in a set of processes are awaiting an event that can only by triggered by another blocked process in the set
+- **Potential Deadlock**
+	- System has the necessary conditions for a deadlock but it has not yet occurred
+	- Conditions
+		- Mutual exclusion: One resource or more are held in a non-shareable mode
+		- Hold & Wait: Greedy process that has a resource on hold and is waiting to hold more resources
+		- No Preemption: Resources are only released voluntarily by a process
+		- Circular Wait: A set of processes each in wait of the other.
+- **Actual Deadlock**
+	- 
+- **Joint progress diagram**
 	- No Deadlock Example
-- Conditions for Deadlock (Page 15)
-- Dealing with Deadlock (Page 16)
+- **Conditions for Deadlock** (Page 15)
+- **Dealing with Deadlock** (Page 16)
 	- Deadlock Prevention Strategy (Page 17)
 		- Deadlock Condition Prevention
 	- Deadlock Avoidance
