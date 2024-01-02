@@ -281,7 +281,9 @@ NOTE:: Till slide 29 only
 		- Hold & Wait: Greedy process that has a resource on hold and is waiting to hold more resources
 			- Can indirectly avoid this via ensuring that a process request all of its needed resources and then prevent the process from running until all resources are ready. Think of it as loading a game, cant play until the level loads up
 		- No Preemption: Resources are only released voluntarily by a process
+			- Can indirectly avoid this by forcing a process to release its resources if it cannot acquire the rest of its requested resources. May also preempt the second process, requiring it to release its resources
 		- Circular Wait: A set of processes each in wait of the other.
+			- Can directly avoid this by defining a linear order of resource types i.e give some sort of rank to the resources.
 - **Actual Deadlock**
 	- Realized when the circular wait condition is fulfilled besides the other ones.
 - **Joint progress diagram**
@@ -291,11 +293,19 @@ NOTE:: Till slide 29 only
 	- No Deadlock Example
 		- Change P to get and release at the same time
 		- P{GetA, RelA, GetB, RelB}
-- **Dealing with Deadlock** (Page 16)
-	- Deadlock Prevention Strategy (Page 17)
+- **Dealing with Deadlock**: Approaches for dealing with deadlock
+	- Deadlock Prevention Strategy
+		- Indirectly by blocking the first 3 conditions of deadlock. (Hold&Wait, No Preemption, Mutual Exclusion)
+		- Directly by ensuring a circular wait can not happen
 		- Deadlock Condition Prevention
 	- Deadlock Avoidance
-		- Resource Allocation Denial
+		- Resource Allocation Denial aka Banker's Algorithm
+			- **State** of the system reflects the current allocation of resources to the process
+				- **Safe State**: At least one sequence of resource allocation to process(es) that does not result in a deadlock
+					-
+				- **Unsafe State**: Opposite of the above
+			- **Advantageous** as it is less restrictive than deadlock prevention and it is not necessary to preempt and rollback processes as done in deadlock detection
+			- **Restrictive** as Max Resource Requirements must be specified in advance. Processes can not have any sync requirements and be fully independent. Fixed number of resources to allocate. No process can exit while holding resources
 		- Process Initiation Denial
 		- Adv/DisAdvs
 
