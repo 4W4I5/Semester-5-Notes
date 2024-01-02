@@ -284,6 +284,7 @@ NOTE:: Till slide 29 only
 - **Actual Deadlock**
 	- Realized when the circular wait condition is fulfilled besides the other ones.
 - **Joint progress diagram**
+	- Defines sections where resources are required by both processes and the execution path which can provide alternatives to execution to avoid deadlock
 	- No Deadlock Example
 - **Conditions for Deadlock** (Page 15)
 - **Dealing with Deadlock** (Page 16)
