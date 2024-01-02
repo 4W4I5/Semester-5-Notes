@@ -5,14 +5,14 @@
 >
 > Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
 
-| Chapter | Topic                                           | Status             | Prep(Ignore this, its for personal use) |
-| ------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
-| **7**   | Memory Management                               | :white_check_mark:                | Revise :warning:                                     |
-| **8**   | Virtual Memory                                  | :white_check_mark: | :white_check_mark:                      |
-| **6**   | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
-| 5       | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
-| 4       | Threads                                         | :x:                | :x:                                     |
-| 9       | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
+| **Chapter** | **Topic**                                       | **Status**         | **Prep(Ignore this, its for personal use)** |
+| ----------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
+| <u><b>7</b></u>       | Memory Management                               | :white_check_mark: | Revise :warning:                        |
+| <u><b>8</b></u>      | Virtual Memory                                  | :white_check_mark: | Revise :white_check_mark:               |
+| <u><b>6</b></u>      | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
+| **5**           | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
+| **4**           | Threads                                         | :x:                | :x:                                     |
+| **9**           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
 
 
 <!--
