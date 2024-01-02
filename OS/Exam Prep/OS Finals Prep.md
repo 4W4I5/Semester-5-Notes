@@ -304,10 +304,22 @@ NOTE:: Till slide 29 only
 		- Examples: Hardware resources and data structures such as files, databases and semaphores
 	- Consumable: Created & Destroyed i.e Produced & Consumed.
 		- Examples: Interrupts, signals, messages and information in I/O Buffers
-- Memory Request
+- Reusable Resources Deadlock
+	- same as the one in the JPD section above
 - Consumable Resources Deadlock
+	- Memory Request: P1{Get80KB, Get60KB} & P2{Get70KB, Get80KB}
+		- After both processes run the first instruction they will be deadlocked if both progress to the next instruction
+	- Receiving message: P1{ReceiveP2, SendP2M1} & P2{ReceiveP1, SendP1M2}
+		- If the receive portion of the code is blocking. Both processes will be deadlocked waiting to receive the message from either process
 
-**Deadlock, Detection, Prevention, Avoidance**
+
+**Deadlock Detection, Prevention, Avoidance**
+
+| **Approach**   | **Resource Allocation Policy**                 | **Different Schemes**                                                     | **Advantages**                                                                                                                                                                                                                                                 | **Disadvantages**                                                                                                                                                                |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Detection**  | Very liberal, resources granted where possible | Invoke periodically to test for deadlock                                  | Never Delays Process Initiation, Facilitates online handling                                                                                                                                                                                                   | Inherent Preemption losses                                                                                                                                                       |
+| **Prevention** | Conservative, Undercommits resources           | 1) Requesting all resources at once. 2) Preemption. 3) Resource Ordering. | 1) No preemption necessary as it works well for processes that perform a single burst of activity. 2) Convenient for resources that can have their states saved/restored easily. 3) No run-time computation needed as checked are enforced during compile-time | 1) Future resource requirements must be known by **processes** which delays process initation. 2) Preempts more often than necessary. 3) Disallows incremental resource requests |
+| **Avoidance**  | Midway of both Detection & Prevention          | Manipulate to find at least one safe path                                 | No preemption needed                                                                                                                                                                                                                                           | 1) Future resource requirements must be known by **OS**. Processes might be blocked for long periods.                                                                            |
 
 **Resource Allocation Graphs**
 # 5. Concurrency: Mutual Exclusion & Synchronization
