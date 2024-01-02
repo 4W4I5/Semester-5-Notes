@@ -286,6 +286,7 @@ NOTE:: Till slide 29 only
 - **Joint progress diagram**
 	- Defines sections where resources are required by both processes and the execution path which can provide alternatives to execution to avoid deadlock
 		- General example case is with the following process examples. P{GetA, GetB, RelA, RelB} & Q{GetB, GetA, RelB, RelA}
+		- Overlaps mean a state where one of the two processes are blocked until one is executed
 	- No Deadlock Example
 		- Change P to get and release at the same time
 		- P{GetA, RelA, GetB, RelB}
