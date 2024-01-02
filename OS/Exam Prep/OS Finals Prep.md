@@ -357,7 +357,9 @@ NOTE:: Till slide 29 only
 
 **UNIX Concurrency Mechanisms**
 -
-
+**LINUX Kernel Concurrency Mechanisms**
+**Windows**
+**Android**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
