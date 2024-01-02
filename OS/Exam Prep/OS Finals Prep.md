@@ -276,7 +276,7 @@ NOTE:: Till slide 29 only
 - **Definition**: Permanent condition caused when each processes in a set of processes are awaiting an event that can only by triggered by another blocked process in the set
 - **Potential Deadlock**
 	- System has the necessary conditions for a deadlock but it has not yet occurred
-	- Conditions
+	- **Conditions for Deadlock**
 		- Mutual exclusion: One resource or more are held in a non-shareable mode
 		- Hold & Wait: Greedy process that has a resource on hold and is waiting to hold more resources
 		- No Preemption: Resources are only released voluntarily by a process
@@ -290,7 +290,6 @@ NOTE:: Till slide 29 only
 	- No Deadlock Example
 		- Change P to get and release at the same time
 		- P{GetA, RelA, GetB, RelB}
-- **Conditions for Deadlock** (Page 15)
 - **Dealing with Deadlock** (Page 16)
 	- Deadlock Prevention Strategy (Page 17)
 		- Deadlock Condition Prevention
@@ -300,7 +299,8 @@ NOTE:: Till slide 29 only
 		- Adv/DisAdvs
 
 **Resource Categories**
-- Reusable resources
+- Reusable & Consumable
+	- Reuseable: Safely used by one process at a time. Not depleted after use.
 - Memory Request
 - Consumable Resources Deadlock
 
