@@ -7,12 +7,12 @@
 
 | **Chapter** | **Topic**                                       | **Status**         | **Prep(Ignore this, its for personal use)** |
 | ----------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
-| <u><b>7</b></u>       | Memory Management                               | :white_check_mark: | Revise :warning:                        |
-| <u><b>8</b></u>      | Virtual Memory                                  | :white_check_mark: | Revise :white_check_mark:               |
-| <u><b>6</b></u>      | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
-| **5**           | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
-| **4**           | Threads                                         | :x:                | :x:                                     |
-| **9**           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
+| **7**       | Memory Management                               | :white_check_mark: | Revise :warning:                        |
+| **8**       | Virtual Memory                                  | :white_check_mark: | Revise :white_check_mark:               |
+| **6**       | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
+| 5           | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
+| 4           | Threads                                         | :x:                | :x:                                     |
+| 9           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
 
 
 <!--
