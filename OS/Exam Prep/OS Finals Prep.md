@@ -351,12 +351,12 @@ NOTE:: Till slide 29 only
 **Dining Philosophers Problem**
 - Solutions
 	- Semaphores
-		- First sol
-		- Second sol
+		- First sol: Grab both forks and start eating. Invalid if all 5 of these idiotas sit at the table
+		- Second sol: Make sure only 4 can sit at one time therefore each can pick up 2 forks at the same time 
 	- Monitor
 
 **UNIX Concurrency Mechanisms**
-- 
+-
 
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
