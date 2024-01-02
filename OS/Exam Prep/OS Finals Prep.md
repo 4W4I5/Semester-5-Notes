@@ -271,6 +271,10 @@ NOTE:: Till slide 29 only
     - The page number is used to index the page table, retrieving the corresponding page frame number.
     - The offset is combined with the page frame number to generate the final physical memory address.
 # 6. Concurrency: Deadlock & Starvation
+>[!WARNING]
+>Ask sir to explain how to determine a safe state and unsafe state
+
+
 **Deadlock**
 - **Definition**: Permanent condition caused when each processes in a set of processes are awaiting an event that can only by triggered by another blocked process in the set
 - **Potential Deadlock**
@@ -303,8 +307,9 @@ NOTE:: Till slide 29 only
 			- **Definition**: Do not grant an increment resource request to a process if it might lead to a deadlock
 			- **State** of the system reflects the current allocation of resources to the process
 				- **Safe State**: At least one sequence of resource allocation to process(es) that does not result in a deadlock
-					-
+					- How to determine a safe state
 				- **Unsafe State**: Opposite of the above
+					- How to determine an usafe state
 			- **Advantageous** as it is less restrictive than deadlock prevention and it is not necessary to preempt and rollback processes as done in deadlock detection
 			- **Restrictive** as Max Resource Requirements must be specified in advance. Processes can not have any sync requirements and be fully independent. Fixed number of resources to allocate. No process can exit while holding resources
 		- Process Initiation Denial
