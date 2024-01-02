@@ -281,9 +281,9 @@ NOTE:: Till slide 29 only
 		- Hold & Wait: Greedy process that has a resource on hold and is waiting to hold more resources
 			- Can indirectly avoid this via ensuring that a process request all of its needed resources and then prevent the process from running until all resources are ready. Think of it as loading a game, cant play until the level loads up
 		- No Preemption: Resources are only released voluntarily by a process
-			- Can indirectly avoid this by forcing a process to release its resources if it cannot acquire the rest of its requested resources. May also preempt the second process, requiring it to release its resources
+			- Can indirectly avoid this by forcing a process to release its resources if it cannot acquire the rest of its requested resources. May also preempt the second process, requiring it to release its resources. Only practical for processes that can easily have their states saved
 		- Circular Wait: A set of processes each in wait of the other.
-			- Can directly avoid this by defining a linear order of resource types i.e give some sort of rank to the resources.
+			- Can directly avoid this by defining a linear order of resource types i.e. give some sort of group as in if a resource of type R is used then only resources after type R can be used given a certain ordering.
 - **Actual Deadlock**
 	- Realized when the circular wait condition is fulfilled besides the other ones.
 - **Joint progress diagram**
