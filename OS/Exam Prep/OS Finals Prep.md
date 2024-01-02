@@ -321,7 +321,6 @@ NOTE:: Till slide 29 only
 | **Prevention** | Conservative, Undercommits resources           | 1) Requesting all resources at once. 2) Preemption. 3) Resource Ordering. | 1) No preemption necessary as it works well for processes that perform a single burst of activity. 2) Convenient for resources that can have their states saved/restored easily. 3) No run-time computation needed as checked are enforced during compile-time | 1) Future resource requirements must be known by **processes** which delays process initation. 2) Preempts more often than necessary. 3) Disallows incremental resource requests |
 | **Avoidance**  | Midway of both Detection & Prevention          | Manipulate to find at least one safe path                                 | No preemption needed                                                                                                                                                                                                                                           | 1) Future resource requirements must be known by **OS**. Processes might be blocked for long periods.                                                                            |
 
-**Resource Allocation Graphs**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
