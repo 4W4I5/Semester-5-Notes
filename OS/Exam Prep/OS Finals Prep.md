@@ -7,7 +7,7 @@
 
 | Chapter | Topic                                           | Status             | Prep(Ignore this, its for personal use) |
 | ------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
-| **7**   | Memory Management                               | :x:                | :x:                                     |
+| **7**   | Memory Management                               | :white_check_mark:                | Revise :warning:                                     |
 | **8**   | Virtual Memory                                  | :white_check_mark: | :white_check_mark:                      |
 | **6**   | Concurrency: Deadlock & Starvation              | :x:                | :x:                                     |
 | 5       | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
@@ -95,7 +95,6 @@
 **Book Questions: **
 - **What technical issues can relocation bring about in memory management**
 	- Without compaction relocation is bound to increase fragmentation
-	- 
 - **What requirements is memory management intended to satisfy?**
 	- Memory management is intended to satisfy the requirements of efficient utilization of memory, protection and isolation of processes, and providing a convenient abstraction for programmers.
 - **What is relocation of a program?**
@@ -274,6 +273,28 @@ NOTE:: Till slide 29 only
     - The page number is used to index the page table, retrieving the corresponding page frame number.
     - The offset is combined with the page frame number to generate the final physical memory address.
 # 6. Concurrency: Deadlock & Starvation
+**Deadlock**
+- Potential Deadlock
+- Actual Deadlock
+- Joint progress diagram
+	- No Deadlock Example
+- Conditions for Deadlock (Page 15)
+- Dealing with Deadlock (Page 16)
+	- Deadlock Prevention Strategy (Page 17)
+		- Deadlock Condition Prevention
+	- Deadlock Avoidance
+		- Resource Allocation Denial
+		- Process Initiation Denial
+		- Adv/DisAdvs
+
+**Resource Categories**
+- Reusable resources
+- Memory Request
+- Consumable Resources Deadlock
+
+**Deadlock, Detection, Prevention, Avoidance**
+
+**Resource Allocation Graphs**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
