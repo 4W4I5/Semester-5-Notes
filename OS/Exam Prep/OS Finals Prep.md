@@ -13,7 +13,6 @@
 | 5           | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
 | 4           | Threads                                         | :x:                | :x:                                     |
 | 9           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
-m
 
 <!--
 :white_check_mark:
