@@ -352,7 +352,7 @@ NOTE:: Till slide 29 only
 - Solutions
 	- Semaphores
 		- First sol: Grab both forks and start eating. Invalid if all 5 of these idiotas sit at the table
-		- Second sol: Make sure only 4 can sit at one time therefore each can pick up 2 forks at the same time 
+		- Second sol: Make sure only 4 can sit at one time therefore at least one can have both forks and eat their full. Essentially using two sets of semaphores. One for forks and another for the room. If it is occupied by 4 people then the 5th one waits until they can have a seat
 	- Monitor
 
 **UNIX Concurrency Mechanisms**
