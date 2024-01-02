@@ -283,7 +283,7 @@ NOTE:: Till slide 29 only
 		- No Preemption: Resources are only released voluntarily by a process
 		- Circular Wait: A set of processes each in wait of the other.
 - **Actual Deadlock**
-	- 
+	- Realized when the circular wait condition is fulfilled besides the other ones. 
 - **Joint progress diagram**
 	- No Deadlock Example
 - **Conditions for Deadlock** (Page 15)
