@@ -277,6 +277,7 @@ NOTE:: Till slide 29 only
 	- System has the necessary conditions for a deadlock but it has not yet occurred
 	- **Conditions for Deadlock**
 		- Mutual exclusion: One resource or more are held in a non-shareable mode
+			- Can indirectly avoid this via OS support for mutual exclusion
 		- Hold & Wait: Greedy process that has a resource on hold and is waiting to hold more resources
 		- No Preemption: Resources are only released voluntarily by a process
 		- Circular Wait: A set of processes each in wait of the other.
