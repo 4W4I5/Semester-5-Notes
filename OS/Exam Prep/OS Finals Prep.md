@@ -332,7 +332,11 @@ NOTE:: Till slide 29 only
 	- Deadlock Detection
 		- **Definition**: Check for deadlock(circular wait) each time a resource is requested depending on how it is likely for a deadlock to occur.
 		- **Detection Algorithm**
-			-
+		- **Recovery Strategy**
+			- Abort all deadlocked processes (Preempt)
+			- Backup each deadlocked process to some previously defined checkpoint and restart all processes (RollBack & Restart)
+			- Do strat 1 successively i.e. one by one until deadlock is gone, check for deadlock again
+			- Do start 2 successively i.e. one by one until deadlock is gone, check for deadlock again
 		- **Advantageous** as it leads to early detection, the algo is pretty simple
 		- **Disadvantageous** as frequent checks can consume processor time
 
