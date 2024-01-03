@@ -421,7 +421,10 @@ Adds onto UNIX concurrency
 	- sema_v() => Increment + Unblock
 	- sema_tryp() => Decrement if blocking not required
 - **Multiple readers, single writer locks**
+	- Lock protected objects can be read from simultaneously
+	- Acquire Write Lock to write to object. Spinlock until lock acquired
 - **Condition variables**
+	- Used in conjunction with mutexes, wait until condition is true to execute
 
 | Concurrency Method | Data Structure in octets    |
 | ------------------ | --- |
