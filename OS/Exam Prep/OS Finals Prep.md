@@ -470,8 +470,18 @@ Adds onto UNIX concurrency
 - Thread Functionality
 
 **Types of Threads**
-- User Level Threads(ULT)
-- Kernel Level Threads(KLT)
+
+| Characteristic                | User-Level Threads (ULTs)                           | Kernel-Level Threads (KLTs)                            |
+|-------------------------------|-----------------------------------------------------|--------------------------------------------------------|
+| **Creation and Management**   | Managed entirely by user-level libraries or runtime | Managed by the operating system kernel                   |
+| **Concurrency Model**         | Many-to-One: Multiple user-level threads mapped to a single kernel-level thread | One-to-One: Each user-level thread corresponds to a distinct kernel-level thread |
+| **Overhead**                  | Lower overhead as thread operations are handled at the user level without kernel involvement | Higher overhead due to frequent interaction with the kernel for thread operations |
+| **Scheduling Control**        | Application specific | Greater control over scheduling and execution policies due to kernel involvement |
+| **Portability**               | More portable as they are implemented using user-level libraries, making them independent of the underlying kernel | Less portable, as differences in kernel implementations may affect thread behavior |
+| **Scalability**               | Better scalability on systems with a large number of threads, as the system can optimize user-level threads without kernel intervention | Scalability depends on the efficiency of the kernel's thread management capabilities |
+| **Blocking System Calls**     | A single blocking system call blocks all user-level threads, as they share the same kernel-level thread. Cannot take advantage of multiprocessing | One thread blocking does not affect other threads, as they have their own kernel-level threads |
+| **Example Implementations**   | POSIX threads (pthread) library in user space        | Windows threads (Win32 threads) or pthreads with kernel-level threads |
+| **Context Switching**         | Faster context switching as it involves switching user-level thread contexts without kernel intervention | Slower context switching due to the involvement of the kernel in managing thread contexts |
 
 **Multicore and Multithreading**
 - Performance of software on multicore
