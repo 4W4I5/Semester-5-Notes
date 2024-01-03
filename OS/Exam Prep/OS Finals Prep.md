@@ -484,7 +484,8 @@ Uni of resource ownership is known as process or task
 	- Its own user address space, userstack and kernelstack
 	- Benefits
 		- Less time to create/terminate than a process
-		- 
+		- Less time to switch thread to thread.
+		- Better communication b/w programs
 
 **Types of Threads**
 
