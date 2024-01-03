@@ -404,7 +404,7 @@ Adds onto UNIX concurrency
 	- Used in short wait time situations for threads. Only one at a time. Others keep trying until they get lock.
 	- Built on an integer location in memory that each thread checks before entering a critical section
 	- Locked-out threads continue to execute in busy-waiting mode
-- **Semaphores**
+- **Kernel Semaphores**
 	- Binary, Counting & Reader-Writer kernel Semaphores
 	- Implemented as functions in kernel
 	- Interface provided same as in UNIX SRV4
