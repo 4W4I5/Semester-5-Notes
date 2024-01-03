@@ -466,169 +466,263 @@ Adds onto UNIX concurrency
 | Thread | Executable entity within a process | Thread terminates | Same as above |
 
 # 5. Concurrency: Mutual Exclusion & Synchronization
-## Key terms related to concurrency
-- **Atomic operation**
-	- Function/operation implemented as a sequence of one or more instructions that appears to be indivisible
-	- No other process can see the intermediate state or interrupt the operation
-	- Guaranteed
-		- Execute as a group
-		- Not execute at all
-		- No visible effect on system state
-	- Isolation from concurrent processes
-- **Critical Section**
-	- Section of code that must not be executed while other processes are using the shared resources it has to use
-- **Deadlock**
-	- Two or more processes are unable to proceed as each is waiting on one of the other to do something
-- **Livelock**
-	- Two or more processes continuously change their states in response to each other without doing any useful work
-- **Mutual exclusion**
-	- Requirement, if a process accesses shared resources, no other process can use that shared resource i.e be in a critical section
-- **Race Condition**
-	- Situation, where multiple threads/processes read and write shared resources
-- **Starvation**
-	- Overlooked by scheduler, ready to run but never run
-## Principles of Concurrency
-- Operating System Concerns
-	- Must be able to keep track of various processes
-	- Allocate/Deallocate resources for each active processes
-	- Protect the data and physical resources of each process against interference by other processes
-	- Ensure that the processes and outputs are independent of the processing speed
-## Mutual Exclusion
+1. OS > manages processes and threads
+	1. Multiprogramming
+	2. Multiprocessing
+	3. Distributed processing
+2. Context of concurrency 
+	1. Multiple applications >> allow processing time to be shared among active applications 
+	2. Structured applications >> extension of modular design and structured programming 
+	3. OS structure >> OS implement as set of process/threads 
 
-- **Requirements**
-	- Enforced
-	- Must halt without interfering with other processes
-	- No Deadlock/Starvation
-	- Must not be denied access to critical section when there is no other process using it
-	- No assumptions are made about relative process speeds or number of processes
-	- Remains in critical section for finite time only
+3. Concurrency terms 
+	1. Atomic operation >> function implemented as sequence of one or more instructions. Either all instructions are done or none, guarantees isolation
+	2. Critical section >> code within process that requires access to shared resources and should not be executed if another process is in that section of code 
+	3. Deadlock >>  two or more processes unable to proceed because each is waiting for one of other to do something
+	4. Livelock >> two or more processes continuously change their states in response to change in other process/es without doing any work
+	5. Mutual exclusion >> req. one process in critical section that accesses shared resources, no other process should access those shared resources 
+	6. Race condition >> multiple threads/processes read/write shared data item and final result >> relative timing of execution
+	7. Starvation >> runnable process is overlooked by scheduler, not chosen
+4. Principle of concurrency 
+5. Interleaving and overlapping
+	1. Example of concurrent processing
+	2. Presents same problems
+6. Uniprocessor - relative speed of execution of processes cannot be predicted 
+	1. Depends on activities of other processes
+	2. OS handles interrupt 
+	3. Scheduling policies of OS 
+7. Difficulties of concurrency 
+	1. Sharing of global resource
+	2. Difficult for OS to manage >> allocation of resource
+	3. Difficult to locate errors in programming >> results not deterministic and reproducible 
+8. Race condition 
+	1. Multiple processes or threads read/write data items 
+	2. Final result >> order of execution
+	3. Loser of race >> process that updates last and will determine final value of variable 
+9. OS concerns for design of concurrency// OS MUST
+	1. Keep track of processes
+	2. Allocate and deallocate resources for each active process 
+	3. Protect data and physical resources of each process / no interference 
+	4. Processes and outputs are independent of processing speed 
 
-**Interrupt Disabling**:
 
-- **Interrupts and Mutual Exclusion**:
-  - In a multitasking operating system, various processes or threads run concurrently.
-  - Interrupts are essential mechanisms to handle events such as I/O, timer expiration, or hardware faults.
-  - Achieving mutual exclusion in such an environment is critical to prevent data corruption and maintain the integrity of shared resources.
+![](https://lh7-us.googleusercontent.com/cBOxeIkYItPtjM-e-cDkDMuULQauXQfwiVqXuejeJD4k4-1z02xbhTO--DthetkQsgeIYKdcR1wcG8voH5u2SpBfQEYUwWnjXown6r-o39pUAh8KiLhQUz53Q3VH7zlbNgKR-sJ5MtPQKfXf)
 
-**Interrupt Disabling Approach**:
+8. Resource competition >> concurrent process come in conflict when competing for same resource for example I/O device, memory, processor time, clock etc
+9. Can cause deadlock, starvation, need for mutual exclusion
 
-  - To ensure mutual exclusion, a process can disable interrupts before entering a critical section and re-enable them when leaving the section.
-  - Disabling interrupts blocks the CPU from responding to incoming interrupt requests.
-  - This approach guarantees that no interrupt will occur during the execution of the critical section.
+Mutual Exclusion
 
-**Advantages and Considerations**:
+![](https://lh7-us.googleusercontent.com/Jyc7tVfRhZ9m1LlpP7NRlBNyS0gMbUaOax-ZljJdV_rJreNb2tMJ_uc4pMiSpRm08zsYfM9QEbiSppubI8_0sz_3gsBtMM0Q1EdbgJN5fH7_0eHldFIhc4E6PCaNS29eOcPx8lGfbC_RIhKQ)
 
-  - Interrupt disabling is a straightforward way to implement mutual exclusion.
-  - It is generally efficient and guarantees mutual exclusion as long as all processes adhere to the same protocol.
-  - However, it has some drawbacks:
-    - Disabling interrupts globally may have a significant impact on system responsiveness.
-    - It should be used with caution, especially in real-time systems or systems with strict timing requirements.
+1. Requirements of mutual exclusion 
+	1. Enforced 
+	2. Process that halts must do so w/o interfering w other process
+	3. No deadlock or starvation 
+	4. Process >> no denied access to critical section when no other process is using it 
+	5. No assumptions made about relative process speeds or number of processes 
+	6. Process remains inside critical section for finite time only 
 
-**Special Machine Instructions (Hardware Support)**:
 
-- **Atomic Instructions**:
-	- Some modern CPUs provide atomic instructions that are executed in a single step without interruption.
-		- These instructions are designed for mutual exclusion and work as follows:
-			- **Test-And-Set**: This instruction reads a memory location and sets it to a particular value, all in one atomic step. It returns the previous value of the memory location.
-			- **Swap**: This instruction swaps the content of a memory location with a specified value atomically.
-- **Usage for Mutual Exclusion**:
-	- Processes or threads can use these atomic instructions to protect their critical sections without disabling interrupts.
-	- Here's an example of using "Test-And-Set":
-		1. Process A reads a shared memory location using "Test-And-Set" and gets the previous value.
-		2. If the previous value is 0 (indicating no other process is in the critical section), process A enters the critical section.
-		3. If the previous value is 1, process A knows that another process is in the critical section and must wait.
+1. Interrupt disabling
+	1. Uniprocessor system
+	2. Disabling interrupts guarantees mutual exclusion 
+2. Disadvantages 
+	1. Efficiency of execution could be degraded 
+	2. Will not work for multiprocessor 
+3. Solution types
+	1. Software based solutions
+	2. Hardware based solutions 
+	3. OS based solution 
+4. Hardware support 
+	1. Uniprocessor system >> concurrent process cannot overlap 
+	2. Process execution >> process runs continuously until it invokes OS service or is interrupted 
+	3. Temporary disabling interrupts during critical sections 
+	4. Prevents interference from other processes 
+	5. Special machine instruction >> atomic 
+5. Compare and swap or compare and exchange instruction
+	1. Compare b/w memory value and test value
+	2. If values are same, swap
+	3. Carried out atomically 
 
-- **Advantages and Limitations**:
-	- Using atomic instructions is highly efficient and does not disable interrupts.
-	- It is particularly useful in high-performance systems.
-	- However, it may not be available on all hardware platforms, and its usage should be carefully designed to avoid race conditions.
 
-## Semaphores
+![](https://lh7-us.googleusercontent.com/3QeAaZ8S_r6QgNtA_iRwqujabtrf-tMx0VFVNogYnVJFtTJ2D53Okgtq-gooxwPwng7-p04i8vP34H4fBaTUqAEJP79zOT2_81LKT_FH7rWlCf7h7a1eIHFFOMSQUZHPgvQB5X9l46MmSVek)
 
-### **Mutex (Mutual Exclusion)**:
+![](https://lh7-us.googleusercontent.com/pJdwDS92dmp7A4CNDCbDCGjIo5UfvnNJVLeAGgjTGybdW6SaC1OSEqaSY1zcst4LgVhig5uFvTsVhjQVH8ebmib5yLUuc9jS_P-kHYY4yV6CNV9FcbrYONkr46K_zElrmmSJi6AGsc1RvuqS)
 
-- **Definition**:
-	- A mutex, short for "mutual exclusion," is a synchronization primitive used to protect critical sections in multithreaded or multiprocess systems.
-	- It ensures that only one thread or process can access a shared resource or critical section at a time.
-- **Usage with Semaphores**:
-	  - In the context of the Producer/Consumer problem and many other synchronization scenarios, mutex locks are used to protect access to shared data structures like buffers or queues.
-	  - Mutexes ensure that while one thread or process is working in a critical section, no other thread or process can enter that section.
-- **Implementation**:
-	- Mutex locks typically provide two operations:
-		- **Lock (or Acquire)**: A thread or process attempts to acquire the lock. If the lock is already held by another thread or process, it will block until the lock becomes available.
-		- **Unlock (or Release)**: A thread or process releases the lock, allowing other threads or processes to acquire it.
-- **Example in Producer/Consumer Problem**:
-	- In the code examples I provided for the Producer and Consumer, the `buffer_mutex` is a mutex used to protect access to the shared buffer.
-	- When a thread or process wants to access the buffer (either for adding an item or removing an item), it must first acquire the `buffer_mutex`. This ensures that only one thread can access the buffer at any given time.
+![](https://lh7-us.googleusercontent.com/8q6nLI0N9gMdv5QN6woylgjpJNb1rXhtdYGCcjVjmhXy5qcl2Ho-OYCpifHK3vmEu4VFxM4kErg0YjD00Nz8XBTGDF3-O7P0RGkj3U7JL98KR2FePJqhjqkjuA34I6PF3TBv-vzJl1qIOAMr)
 
-Here's how mutex locks are used in the provided code:
+![](https://lh7-us.googleusercontent.com/pF5-9Yxpf7AqUZsXmioJvq07e4C9lSZPUr_iotxolrdEH5CzPtL0q8OgNg-GZIs2w9wC5v0ukYESlzQl4bNY_zD-ELBOqF8ju5ezdI23Kzip6L-kMHUPFcQOVK3WmplW8oVREd4lKBY7-Oli)
 
-```python
-Producer:
-  while (true) {
-    // ...
-    
-    // Lock the buffer.
-    lock(buffer_mutex);
-    
-    // Add the item to the buffer.
-    add_item_to_buffer(item);
-    
-    // Unlock the buffer.
-    unlock(buffer_mutex);
-    
-    // ...
-  }
-```
+![](https://lh7-us.googleusercontent.com/wgwyK6jaKJnHLJ6MNWuFXWX8bJjwzLrSDiRgn7ryOItWyp92xIjqb2f5_Oz840ep2vZc1achsChnqRnWM9xLamUKp9XXjgOnvDNgXSSFviOi6pbf9-siKF6QngM_wYKimq3ptjQhn3_NJIil)
 
-```python
-Consumer:
-  while (true) {
-    // ...
-    
-    // Lock the buffer.
-    lock(buffer_mutex);
-    
-    // Remove an item from the buffer.
-    item = remove_item_from_buffer();
-    
-    // Unlock the buffer.
-    unlock(buffer_mutex);
-    
-    // ...
-  }
-```
+5. Advantages 
+	1. Applicable to any number of processes on single or multiple processors sharing main memory
+	2. Simple and easy to verify
+	3. Supports multiple critical sections, each is defined by own variable 
+6. Disadvantages
+	1. Busy-waiting is employed, takes processor time even if its waiting to access critical section
+	2. Starvation is possible when process leaves critical section and more than 1 process is waiting
+	3. Deadlock is possible 
 
-### **Semaphores (Duplicate notes)**:
 
-- **Mutual Exclusion**:
-	- Semaphores are a synchronization mechanism that can be used to enforce mutual exclusion.
-	- A semaphore is a non-negative integer variable that can be accessed by two standard operations: "wait" and "signal."
-- **Semaphore Operations**:
-	- **Wait (P) Operation**:
-		- If the semaphore value is greater than 0, it decrements the value and allows the process to continue.
-		- If the semaphore value is 0, it blocks the process until another process signals (increments) the semaphore.
-	- **Signal (V) Operation**:
-		- Increments the semaphore value, possibly waking up a waiting process if the value was 0.
+![](https://lh7-us.googleusercontent.com/qfYa7e-VMIMB3i77AjLasyaEor8qfBnKZTC0WC2u5Dq2zDH-L4NwsMtX0ZOKCpMY1bhfGGljwdoclyau8yjX3IIGnWalpMTEOXECmFmhiYxDivq-523duyBphNi-_7gG5EIrxFpSopx0RIQa)
 
-**The Producer/Consumer Problem**:
+Semaphore 
+1. Variable that has integer value, three operations defined 
+2. Cannot manipulate/inspect semaphores 
 
-- **Scenario**:
-	- The Producer/Consumer problem is a classic synchronization problem involving two types of processes: producers and consumers.
-	- Producers produce items and place them in a shared buffer, while consumers remove items from the buffer.
-	- The challenge is to ensure that producers don't add items to a full buffer and consumers don't remove items from an empty buffer, all while maintaining mutual exclusion.
-- **Using Semaphores**:
-	- Semaphores can be used to solve the Producer/Consumer problem.
-	- Two semaphores, "empty" and "full," are used:
-		- "empty" counts the number of empty slots in the buffer.
-	        - "full" counts the number of filled slots in the buffer.
-	- Additional semaphores or mutex locks are used to protect access to the shared buffer.
-- **Implementation Example**:
-	- Let's assume we have a shared buffer with a maximum size of 10.
-	- We define semaphores:
-		- `empty` initialized to 10 (representing empty slots).
-		- `full` initialized to 0 (initially, no items in the buffer).
-	- We also use mutex locks to protect the buffer.
+1. May be initialized to non negative int value
+	2. Semwait operations decrements value 
+	3. Semsignal operations increments value
+
+3. Consequences 
+	1. No way to know beforehand if process decrements semaphore will it block or no
+	2. No way to know beforehand which process will continue on uniprocessor system when two system are running concurrently 
+	3. Don't know if process is waiting so number of unblocked processes may be zero or one 
+
+
+![](https://lh7-us.googleusercontent.com/p6ulm8ucsFop_XJ1i6rZCClBmayzl3Z1yveE6lSDL7KeUyyVMX5dT5CzxWK1qo_NrcPykdQsC9IfX8BKy4CoQc-AJtI32s6NRzmQegattfjuyvCTkaKNxM-GaMm-eede1ilcJH8EpYr2t2Et)
+
+![](https://lh7-us.googleusercontent.com/yny4Hk1EN3cNXHy00ZWkgoMOhNNMQjBcMa-_dSTvAo3D3zr4lc61unSWFSn6xD5kxQX4YFqcPTGJRFNUXQMP2nv8j9_L9qnkxIBdxYzGUD60N783qbWs51TMjpkfPQy9FKBgM_ax-2FqlAKm)
+
+4. Queue >> holds processes waiting on semaphore 
+5. Strong semaphore >> process that's blocked the longest is released from queue first 
+6. Weak semaphore >> order in which processes are removed from queue not specified 
+
+
+![](https://lh7-us.googleusercontent.com/gFiOXYdJ_g2p5LBtgfH4XAiMH9rEsdvRpdaQ7WriVEqiy16sXjbBG7Tg1sMNIdtx_MhcwggDIL4E9kjkaEFI1-G1b4-dXoQsHs874J46DVPjFqieEnD53djkdVp9OyI3q4ZJ58XXQgw607ar)
+
+![](https://lh7-us.googleusercontent.com/yOiGShLwDwbDYadCtDiFsZolVC4CWSMFDzjVoqXkaV0U-14ZURx-pK-Nykk1-aNgsGq9ZTp63yR2uz0-4IUW4yk2lwKL9KCYZk6P-EOpTa4Fisj1LCGG68aY8ppDmMwV4lG3bqeDjT9LddvA)
+
+
+
+![](https://lh7-us.googleusercontent.com/mOJeAfzud0lH14tcVJK1yDOtmfeenn9VQhpBdFyE2ylMfHlKq88lGm9P3HniYw5ujHlyxx25jqPA6PQ1w-LCmhRQNe_xbB_8orLTFAl8fL28kUUK5GySk1raVM6sPZZPOWNJ_R36OW2rcN1o)
+
+
+
+### 7. Producer/Consumer Problem
+
+1. **General Situation**
+   - One or more producers generate data and place it in a buffer.
+   - A single consumer takes items out of the buffer one at a time.
+   - Only one producer or consumer may access the buffer at any given time.
+
+2. **Problem**
+   - Ensure that the producer cannot add data to a full buffer.
+   - Ensure that the consumer cannot remove data from an empty buffer.
+
+
+
+Incorrect solution 
+
+![](https://lh7-us.googleusercontent.com/NdoVBiAB0LULEjMPMLzmkLbDcQP3B_wE3HGg23qUeN4MEfB6Snk3drNZQNj8vTJHwtry-XQBp6_QkRUQzuIKMtnHuVceKF_-ZHZ8RcMvxb-RL00CAmYRkJ3TwkESBMiTU9G11XkwvFCV_uBD) 
+
+Possible solution
+
+![](https://lh7-us.googleusercontent.com/Zl_VRghqDUO7hkOtSFy1LikqMSfGjOLs4pbUixz9RqkPl83VwGIQACrXV0TBwmMdvkleVfZvikU-OyNDJCoLpPeiatJiP5ntsuezRAQpe0dq5iJE7o7XEQzFgqJx8WzrslakoJ-uGr-R2bGA)
+
+Correct solution
+
+![](https://lh7-us.googleusercontent.com/isWeahLZ_49ETG5PHQAY7j9Xgdt6jtDYkKNxf07q0EHQSxU-WB7sdLH65QOIRSn_kZD07Wbk_-CjRxHEIvHvmvNbBsiEM1ulvvHVopVSUpOtV43VsDsMQRTrFBUbFhRmkUUQFBy8K1bMVmw_)
+
+Solution using semaphore
+
+![](https://lh7-us.googleusercontent.com/pq-8kftTgpFpa6xAtq7_wCRj_NgDer_ajNy2Yi2lqRMOG0LYlMU37v0VnNGBTbc9u3jelKxAXf_BcRJy1b-GjNjyb0a9cQWciqEYQVgNonS4MnZo3l8SdUBDaJbUl6D7SdpDzO6_dn1KCyPG)
+
+![](https://lh7-us.googleusercontent.com/tbe3-KY9Rujx3Rt6QgJhHYh56wd6fAahBOWUTbNJ6RvGYUGznHv0tbyHnGNnS8omJt468__UmfpU2kWuyEHSgZw3hbCKxLS5TeEjxxg7hj5NRluPvjbnN4IQ5gkErg7kP2L2UFb1_qaWw0Iw)
+
+![](https://lh7-us.googleusercontent.com/qOPAGGF_TXUbrBpRZiVe7CtYW2OXpz-jNAP-m46S82FB7_Cs8Gc6IS86QYF-tl3N9WVRVox-pGWBXIrPtHfjB67okXtgckovi_zHyxvPd0tgmb5zffPKDFVYUlITT-dwM-snUgwjbqduFBP0)
+
+### 1. Implementation of Semaphores
+
+1. **Semwait and Semsignal as Atomic Primitives**
+   - Used for implementing semaphores.
+   - These are fundamental operations that must be executed atomically.
+
+2. **Implementation as Hardware or Firmware**
+   - Semaphores can be implemented at the hardware or firmware level.
+   - This involves utilizing low-level mechanisms provided by the underlying system.
+
+3. **Dekker’s or Peterson’s Algorithms**
+   - Common algorithms for achieving mutual exclusion.
+   - These algorithms are designed to prevent multiple processes from entering a critical section simultaneously.
+
+4. **Hardware-Supported Schemes for Mutual Exclusion**
+   - Semaphores often leverage hardware-supported schemes to enhance efficiency.
+   - These schemes contribute to achieving mutual exclusion effectively in a concurrent computing environment.
+
+
+![](https://lh7-us.googleusercontent.com/OnUDg4f4_6zq3wTldWsD2Wwu31CvyOAqVzzf4af6Fro9oGsr6r6uls1bRhe-Vhfv76CpkV2jCpr0-X2gTDcx3bZofpY_dHEn96dfMdGYcOAl999FLO5QNKC17MoEiI8_XnVq-6eyP1jb53l_)
+### 2. Message Passing
+
+1. **Process Interaction Requirements**
+   - Synchronization for mutual exclusion.
+   - Communication for exchanging information.
+
+2. **Approach Providing Both Functions**
+   - Works with distributed systems, shared memory multiprocessors, and uniprocessor systems.
+
+3. **Actual System Implementation**
+   - Provided in the form of a pair of operations:
+     1. `Send(destination, message)`
+     2. `Receive(source, message)`
+
+4. **How It Works**
+   - A process sends information in the form of a message to another process designated by the destination.
+   - A process receives information by executing the receive operation, indicating the source and the message.
+
+
+![](https://lh7-us.googleusercontent.com/0GxXDz-PymvBbah5dy346-ilX2D04qz5p2Pm-MN6hXSI73QxJSz9Bdcs_zVm5O221ObwFTdNa2bzYvqZH61pEnpcL_c1Z8hCw4dod6VdlEa-YZ3j5v5pz7pEIGEeIHH-kV7tmBRFJ4gHtkwm)
+
+
+
+
+### Synchronization
+1. **Communication between two processes = synchronization**
+   - Receiver cannot receive unless it's been sent by another process.
+2. **Upon receive operation, two can happen**
+   - No waiting message: Process is blocked until the message arrives, or process continues to execute, abandoning the attempt to receive.
+   - If the message has previously been sent, the message is received, and execution continues.
+
+### Blocking Send, Blocking Receive
+1. **Sender and receiver blocked**
+   - Message delivered until rendezvous.
+   - Allows tight synchronization between processes.
+
+### Non-blocking Send, Blocking Receive
+1. **Sender continuous, but receiver is blocked until the required message arrives**
+   - Useful combination.
+   - Sends one or more messages to a variety of destinations as soon as possible.
+   - Example: A service process that provides service or resources to other processes.
+
+### Non-blocking Send, Non-blocking Receive
+1. **Neither party will wait**
+
+### Addressing
+1. **Processes in send and receive operations have two types**
+   - **Direct addressing**
+     - Send operation: Identifier of the destination process.
+     - Receive operation: Two ways
+       - Process designates the sending process (concurrent processes).
+       - Implicit addressing: The source parameter of the receive operation has a value returned when the receive operation is called.
+
+   - **Indirect addressing**
+     - Messages are sent to data structures (queues) that temporarily hold messages.
+     - Queues: Mailboxes.
+     - One process sends a message to the mailbox, and another process picks up the message from the mailbox.
+     - Allows greater flexibility in the use of messages.
+
+![](https://lh7-us.googleusercontent.com/P1nbD_PGNqjAN2mhUDEm6WonC4mznT2Akfxc2HK2PNn5pCmwiEcjb1CubXgitX7e3uEbciU_eDUbQFPwYdShCIS07uY0e07Tj83j9EzkL5IVrDkYpdsaVKNbsUIbj4FA9fFsBHp00iNpaIs_)
+
+![](https://lh7-us.googleusercontent.com/yGccmQaXFJCUogKEMunB8Tyk9y8nexZKycL7nREXxPQH3akZ1klibk2hS3nlm-6ATBttey0MSXlPcSilpChCHTuCyq9xQP7iCgiyYJQJSLXl1RQgm5J_W81718YxYkCqehk-KPYJT1J4u5qH)
+
+![](https://lh7-us.googleusercontent.com/ol102LeOdIqw0m1PJDUAEeDn1Cb_CRxY0rDKAIjDedlK0yGpnZgZyPlQLd3Q8cwi5bQH0K8PGxerSWCsFm22y7_2mG9G7f3dBhjjXAfHHlNmrDK8VyRevfrYaXWHDlLTTvfou0_tVPABamEI)
+
+![](https://lh7-us.googleusercontent.com/b00B2ooE6LF-VIzP_v_EllB04CyUbb_Trn0nEzylK0ex1_V_w-mE4594Ozpo3NJBO5mxmJF85jyFp4DHwFkB6Wo8Xga-XVKNP-Y6QWwJ3R92KC1PdJDF9jIHp5D24fyNCAvJ2-d-f1VId_MQ)
+
+
+
 
 # 4. Threads
 **Processes and Threads**
@@ -718,6 +812,495 @@ Uni of resource ownership is known as process or task
 ![](/Pasted%20image%2020240103224938.png)
 
 **MAC OS Grand Central Dispatch**
+
+
+
+---
+# Duplicate Notes for CH4 Threads
+1. Resource ownership >> process has virtual address space to hold process image
+
+
+1. OS has function preventing interference b/w resource and process 
+
+
+2. scheduling /execution 
+
+
+1. Execution path, mixing with other processes 
+
+2. States >> running, ready etc
+
+3. Dispatching priority 
+
+
+3. Unit of dispatching >> thread 
+
+4. Unit of resource ownership >> process or task
+
+5. Multithreading >> OS supports multiple concurrent paths of execution within a single process
+
+6. Single threaded approach 
+
+
+1. Single thread per process for example MS-DOS 
+
+
+7. Multithreaded approach 
+
+
+1. Multiple threads per process for example Java run-time environment 
+
+
+8. Process
+
+
+1. Commonly in multithreaded environment 
+
+2. Unit of resource allocation and protection
+
+3. Has virtual address space >> process image 
+
+4. Protected access to
+
+
+1. Processors
+
+2. processes (inter communication) 
+
+3. Files
+
+4. I/O resources >> devices and channels
+
+
+9. Thread components 
+
+
+1. Each thread has
+
+
+1. Execution state >> ready, running etc
+
+2. Saved thread context (when not running)
+
+3. Execution stack
+
+4. Per-thread static storage for local variables 
+
+5. Access to memory + resources of its process shared with all other threads in that process 
+
+
+![](https://lh7-us.googleusercontent.com/imF8MEO0FwR4AnJxTAeyiV5o4ZXcTjVy0LrYy6ZmGyqbJ7ELzeXEIbmkS7b6cBw04PvTyhPBwZEp9KHAzAg8pjpDlhckKjA2x-Jl4wiy8n90WkyH7vMsm1gQNFJSy_0L7HoFxUKx8rCx0fALp0vJ-Cs)
+
+
+
+10. Benefits of thread
+
+
+1. Less time for thread than process in creation
+
+2. Same with termination ^
+
+3. Same with switching b/w threads
+
+4. Enhance efficiency in communication b/w programs
+
+
+11. Threads use >> single user system 
+
+
+1. Multitasking
+
+2. Faster execution 
+
+3. Modular program structure for better code organization
+
+4. Asynchronous processing >> different tasks operate independently
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12. Thread states
+
+
+1. OS with threads >> scheduling and dispatching 
+
+2. Information of execution >> thread level data structures
+
+
+1. Suspending process >> suspending all of its threads // temporary halt
+
+2. Termination of process >> terminates all of its threads 
+
+
+3. Key states of thread
+
+
+1. Running
+
+2. Ready
+
+3. Blocked 
+
+
+4. Thread operations with change in thread
+
+
+1. Spawn
+
+2. Block
+
+3. Unblock
+
+4. Finish 
+
+
+![](https://lh7-us.googleusercontent.com/YaUwZhFJHWXAt-6ddZjO4ZEWxE8maRZwwm0F6ipQU-mqGqGTX_CK-I_DYFhBx4kSB5b7Ow0eFe-7QiH1WYkVrvIvyA9HHlFYPjOKv_Njxse6ObdmvqVYcfnYQSQZp7N_ifuEDmTy0MazVDis1_6YriU)
+
+![](https://lh7-us.googleusercontent.com/694QPn60nMT8Elv9YysnL0yf5oqQoQ6FUIoZAvLukZZ_QqgAD2mRSLBqpxSZIjJmI6DwqslpMGbptz6aXqrGAXT_8XHX1mr3SnsYH3FhE0gIzChYRVruX2gGeEmimttx39JxpSiJVNfIXk5tcX1Q0zY)
+
+
+
+13.  Thread synchronization
+
+
+1. Synchronize activities in various threads 
+
+2. All threads of process >> same virtual address space and resources
+
+3. Alteration of resource by thread affects other threads 
+
+
+14. Types of threads
+
+
+1. User level thread (ULT)
+
+2. Kernel level Thread (KLT)
+
+
+15. User level thread (ULT)
+
+
+1. Thread management >> application
+
+2. Kernel not aware of existence of threads 
+
+3. Advantages 
+
+
+1. Thread switching != kernel mode privileges
+
+2. Scheduling >> application specific
+
+3. ULTs can run on any OS 
+
+
+4. Disadvantages 
+
+
+1. When ULT executes system call >> all of threads of that process are blocked
+
+
+1. Jacketing >> converts a blocking system call to non blocking system call
+
+
+2. Multithreaded applications can’t benefit from multiprocessing since kernel assigns one process to one processor thus 1 process = 1 thread 
+
+
+1. Application has multiple processes rather than multiple threads but this eliminates main purpose of threads 
+
+
+
+
+![](https://lh7-us.googleusercontent.com/t69QVKtA9yXcbNDIs2zQvt3mMcz9YvORFqX8Ct1bPQI7O7keN-KBvI-GRVgZcMHr-VTcg6TAc87Pqr_mRjxoM0yaxeK7dQ2JwVOVDfn_QeKVldglFfjN9tj46X43q0mkVgixefIkyCtruBpvX61ouAg)
+
+
+
+16.  Kernel level threads (KLT)
+
+
+1. Thread management >> kernel 
+
+2. No thread management code in application 
+
+
+1. Application programming interface (API) to kernel thread facility
+
+
+3. Example: Windows 
+
+4. Advantages 
+
+
+1. Multiple threads >> same process >> multiple processors 
+
+2. If one thread is blocked, kernel can schedule another thread of same process
+
+3. Kernel routine itself can be multithreaded 
+
+
+5. Disadvantages 
+
+
+1. Transfer of control from 1 thread to another requires change of mode in kernel 
+
+
+![](https://lh7-us.googleusercontent.com/Go05eCb82Nc_6hKNobK-D8EdcHxIqp2s2f03pL95s3VvqhJmEjwhOOqjSe9q7wpYUGHPZ_xvrsQI-ECkTnTbWAifbsGT-2gOCbNzjdmh8eEYOC0Y5_BM09SLhXLXx4jhblo6_GpyZRGv_8v-It42ZPQ)
+
+
+
+17. ULT X KLT
+
+
+1. Combined approach 
+
+2. Thread creation + scheduling + synchronization of threads >> user by application 
+
+3. For example: Solaris 
+
+
+![](https://lh7-us.googleusercontent.com/h3Jn_zE5ycxJqDHSjEeK5ExU3PBodbusIT2MQYyOJsgV29LH8ZJgFVW9NURObYJmIW_oN6CUBxObCZPy_DSw8Q1DxB1H3HnT6sruOk3LapSDES2YPqPBomVgnRPrB1F-NyLY0OxzBNGoB13YSVhVWJE)
+
+![](https://lh7-us.googleusercontent.com/r_xwkdPtk7z457sYdIVZdZmbswN-CTux4lqc-9Zqp9fHt3Ccd4nRZRZWCnsP4SryPwo1UvJjpGBs0M7x6_4ie7m86wG_noA0mA5F8tsjf6KrPHrt9tbE2Yl_4VOPMYUatsOXPH_qGieySY664g_AS7k)
+
+18.  Number of processors and relative speedup in terms of speedup with overheads and sequential portions (multicore) >> more parallel, the better 
+
+
+
+
+
+
+19. Applications that benefit
+
+
+1. Multithreaded native application s>> small number of highly threaded processes
+
+2. Multiprocess application >> many single threaded processes 
+
+3. Java applications 
+
+4. Multi-instance applications >> multiple instances of application in parallel 
+
+
+20. Windows process and threat management 
+
+
+1. Application >> one or more processes
+
+2. Each process >> resources 
+
+3. Thread >> entity within process that can be scheduled 
+
+4. Job object >> group fo process to be managed as unit
+
+5. Thread pool >> collection of worker threads that executive asynchronous callbacks on behalf of application, scheduled independently
+
+6. Fiber >> unit of execution, manually scheduled by application 
+
+7. User mode scheduling (UMS) >> lightweight >> applications use to schedule threads 
+
+
+21. Management of background tasks and application lifecycle 
+
+
+1. Windows 8 => windows 10; developers manage state of application
+
+2. Old version >> user full control of lifetime process
+
+3. New metro interface >> process lifecycle of application 
+
+
+1. Limited number of applications can run with main app in metro UI 
+
+2. Only one store application can run at one time
+
+
+4. Live tiles >> appearance that applications constantly are running 
+
+
+1. In reality, notifs are pushed and system’s resources are not used to display content
+
+
+22. Metro interface 
+1. Current active (foreground) application >> access to all processor, network and disk resources 
+	1. Other apps are suspended and no access to resources
+2. When app > suspended > event should be triggered to store the data of user’s info 
+	1. Responsibility of application developer 
+3. Windows may terminate bg app 
+	1. App’s state should be saved to restore if it suspends 
+	2. When app returns > foreground, an event should be triggered to obtain user state from memory 
+4. Windows Process important characteristics 
+	1. Implemented as objects
+	2. Process can be created as new process or copy of existing process
+	3. Executable process may have 1 or more threads
+	4. Both process and thread objects > built in synchronization
+
+
+
+
+Process and thread objects 
+
+1. Windows make use of two types of process related object
+	1. Processes >> entity doing user job or application that has resources
+	2. Threads >> a sequential and interruptible unit of work 
+2. Process object attributes
+	1. Process id 
+	2. Security descriptor >> access control 
+	3. Base priority >> baseline execution priority 
+	4. Default processor affinity >> default processors where process’ threads will run
+	5. Quota limits >> max amount of
+		1. Page and non paged memory
+		2. Paging file space
+		3. Processor time a user’s processes use 
+	6. Execution time >> time where all threads have executed 
+	7. I/O counters >> record number and type of virtual memory 
+	8. Exception/debugging ports >> interprocess communication channels 
+	9. Exit status 
+
+
+![](https://lh7-us.googleusercontent.com/jvW_Y3PpwWetV30oAxGSmecWNQNoc8xPLbIjf9oVeNfFpLwwrkMyXDMK6QLZUZcx7tKhAi4wZU7UeCkRUx_RE67HvG1uYYe67w9S7IPQkIDNnoifT7GwFcozxAGFMMuXZ2JSXr0Oi0BKk4veT47uxdU)
+
+3. Multithreading
+	1. Concurrency without overhead
+	2. Tasks happen simultaneously without overhead of using multiple processes 
+	3. Intra process communication
+	4. Threads with same process > share and access shared resources
+	5. Interprocess communication
+	6. Threads in different processes exchange info thru shared memory 
+
+
+![](https://lh7-us.googleusercontent.com/Pg3gVV8K497oyPt9of48E4kyraUBBdrs_0VZZoPts6iYlpY3kh3lS4OQscvqv0CnbLwRLzYVh9jlarTwMpP1Q85h17EUJhV6YzcuzDgR1uQENmf4DqDullKStCDAyHvGZcocXfttEZNoDtlGjM61zOs)
+
+
+
+Solaris Process 
+1. Four thread related concepts
+1. Process >> user’s address space, stack and PCB 
+2. User level threads >> user created unit of execution within process 
+3. Lightweight processes >> mapping between ULT + kernel threads
+4. Kernel threads >> can be schualed and dispatched to run on one of the system processors 
+
+
+![](https://lh7-us.googleusercontent.com/LtrYxt9aqSo0VBt7tbcOa7CmO1BagRVoblGN99ltIuF4j9AXbV3oymqL_tFQ1Leh3Q9zF-PlEzQVgAy7vE7cUouUjWdAHLam944TBw5f293NyI9ZORlCZ99cbhLYC0-cU1jYI8g79UX03yjh-omsVhk)
+
+![](https://lh7-us.googleusercontent.com/55TK_VAbriFxRvqyasy8eOpftZZQ8wD5AkeFOBZtbDnCPPrJ158PxiGFYhdfgJo8PzxaT1bGYgHjaR3T7esnnuRGenUn_wxfJABNYTZpDWMGu1e_5pHpX3KjfVHowhhDVdZ1hT59OLSo8J4R7PlJ3pw)
+
+2. LWP includes 
+	1. LWP identifier 
+	2. Priority of LWP >> kernel thread supports it
+	3. Signal mask >> tells kernel which signal will be accepted 
+	4. Saved values of user-level registers 
+	5. Kernel stack for LWP >> includes system call arguments, results, error codes for each call level
+	6. Resource usage and profiling data
+	7. Pointer to corresponding kernel thread
+	8. Pointer to process structure 
+
+
+![](https://lh7-us.googleusercontent.com/VlT7oduxDFhrsalVMur_RllGS2NTMiNGxShiWEcfGjBXZtSM9xr34e8kVaX96PCPsm0e4NgGm4TEOS847xgSd_GMrh02ZvCymgVGQxpu9Sg2kpG65M6C1vQ2eHpVvD6nKEoNMNWotD3f8Inhg-_JH18)
+
+
+3. Interrupts as threads 
+1. OS activity >> processes(threads) and interrupts 
+	1. Threads / processes
+2. cooperates w each other
+3. Manages use of shared data by primitive enforcing mutual exclusion and synchronize execution 
+4. Interrupts 
+5. Synchronized 
+6. Prevents handling for period of time
+7. Solaris unifies these two concepts > single model > kernel threads
+8. Threads scheduled +executed >> transforms interrupt to kernel threads 
+9. Solaris solution
+	1. Set of kernel threads > handle interrupt 
+	2. Interrupt bread has own identifier, priority, context and stack
+	3. Kernel controls >> access to data structures and synchronizes int threads using mutual exclusion 
+	4. Int threads given priority than other types of kernel 
+10. Linux tasks
+	1. Process or task in linux >> task_struct 
+	2. Contains info in number of categories 
+
+
+![](https://lh7-us.googleusercontent.com/Ex_SUXcJfLCBfM-0QOGWgExfssf-I_bA6y-cUYddcPiE8IIAHh21wW1K8qFTk-mshvN4eFyvzsdcB_2W-28Rpw8Lpp_XXlw5DNfeHeGN8VOSvD6Pp0gYzSDs5fkaVesbwJlRBOjwjmAOOcIKVZTMZuM)
+
+
+
+
+
+
+Linux threads
+
+1. Properties 
+	1. No difference b/w threads and processes 
+	2. User level >> kernel level processes 
+	3. New process > linux copies attributes from existing process 
+	4. Processes can be cloned, sharing resources 
+	5. clone() >> ensures each process has its own stack space 
+2. Namespaces >> process can see system in different pov than other processes, each having own associated namespace
+	1. Six namespaces 
+		1. Mnt
+		2. Pid
+		3. Net
+		4. Ipc
+		5. Uts
+		6. User 
+3. Android process and thread management 
+	1. Android application >> software implementing an app
+	2. One or more instance of one or more of 4 types of application components 
+		1. Activities
+		2. Services
+		3. Content providers
+		4. Broadcast receivers 
+	3. Each component >> role in application behavior 
+	4. Each component > activated independently within application even by other application 
+
+
+![](https://lh7-us.googleusercontent.com/o_qbDCEfpa15-O8S46Gr3yuSKLOYf0ibZXrR7_PfwcI4v6cc9loohKRpOehK4wt5ZIx3wS7pP6UlocxKKwxrx4TE2458TyvfxVGK-JRFg-0L0F8FbujZ8OCJIEavZWNbk-2NlS7vbPHeBUjQuD45SlM)
+
+4. Activities 
+	1. Provides user interaction screen
+	2. Each activity >> window to draw interface 
+	3. Window fills the screen // can be smaller/ float on top of other windows
+	4. Application can have >> multiple activities 
+	5. When app runs >> one activity in foreground interacting with user 
+	6. Activities >> last in first out stack based on order of opening
+	7. If user switches to 2nd activity, created and pushed on top of stack with 1st one becoming second item in stack 
+
+
+![](https://lh7-us.googleusercontent.com/PJYaUu41K8vB5SWO9rywHz6eezT6Y-T0n9WhGT6lHkzejB7DnYfhyz3rOVmJztZHejij5XRzdW9l77iUUQQh3r0KmdqJAlbFG_AYmW7hbDBLDpjRJAiPEDw1UoM9uVL7s0__KnF1asAcVZDtHVDV5_U)
+
+
+5. Processes and threads
+	1. Presence hierarchy >> which process to kill to reclaim resources 
+	2. Processes killed >> lowest precedence first 
+6. Descending order of precedence are:
+	1. Foreground 
+	2. Visible 
+	3. Service
+	4. Background
+	5. Empty 
+8. Mac OS x Grand Central Dispatch (GCD)
+	1. Pool of available threads
+	2. Designers >> portion of applications >> blocks 
+	3. Run independently 
+	4. Run concurrently >> based on number of cores available and thread capacity of system 
+9. Block 
+	1. Simple extension to a language 
+	2. Defines self contained unit 
+	3. Programmer >> encapsulate complex functions
+	4. Scheduled and dispatched by queues 
+	5. Dispatched >> first in first out basis
+	6. Can be associated with event source like timer, network socket, file descriptor
+
 # 9. Uniprocessor Scheduling
 ## Example:
 - ![](/Pasted%20image%2020230926023241.png)
