@@ -409,7 +409,8 @@ Adds onto UNIX concurrency
 	- Implemented as functions in kernel
 	- Interface provided same as in UNIX SRV4
 - **Barriers**
-	- Enforce the order in which instructions are executed
+	- Enforce the order in which instructions are executed. 
+	- Enforces a group of threads to wait until all have completed their execution
 **Solaris Thread Synchronization Primitives**
 - **Data Structures**
 - **Mutex locks**
