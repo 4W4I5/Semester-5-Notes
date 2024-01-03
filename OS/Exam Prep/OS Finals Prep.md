@@ -540,6 +540,10 @@ Uni of resource ownership is known as process or task
 - Process and threads
 
 **MAC OS Grand Central Dispatch**
+
+**Questions**
+- Explain how thread handling/management is different in Linux than Windows
+	- Linux does not recognize the concept of threads. 
 # 9. Uniprocessor Scheduling
 ## Example:
 - ![](/Pasted%20image%2020230926023241.png)
