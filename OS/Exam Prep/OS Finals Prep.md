@@ -360,9 +360,30 @@ NOTE:: Till slide 29 only
 		- They pick one side first before the other.
 
 **UNIX Concurrency Mechanisms**
-
+- Pipes
+- Messages
+- Shared Memory
+- Semaphores
+- Signals
 **LINUX Kernel Concurrency Mechanisms**
-**Windows**
+Adds onto UNIX concurrency
+- Atomic Operations
+- Spinlocks
+- Semaphores
+- Barriers
+**Solaris Thread Synchronization Primitives**
+- Data Structures
+- Mutex locks
+- Semaphores
+- Multiple readers, single writer locks
+- Condition variables
+**Windows 7 Concurrency Mechanisms**
+- Wait functions
+- Windows Synchronization Objects
+- Critical Sections
+- Slim Read-Writer Locks
+- Condition Variables
+- Lock-Free Synchronization
 **Android**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
