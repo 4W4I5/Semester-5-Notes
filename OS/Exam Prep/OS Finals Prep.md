@@ -360,8 +360,6 @@ NOTE:: Till slide 29 only
 		- They pick one side first before the other.
 
 **UNIX Concurrency Mechanisms**
-| UNIX Concurrency Mechanisms | Definitions
-| --------------------------- |
 
 **LINUX Kernel Concurrency Mechanisms**
 **Windows**
