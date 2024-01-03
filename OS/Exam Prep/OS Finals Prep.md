@@ -10,11 +10,11 @@
 | **Chapter** | **Topic**                                       | **Status**         | **Prep(Ignore this, its for personal use)** |
 | ----------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
 | **7**       | Memory Management                               | :white_check_mark: |  :warning:                        |
-| **8**       | Virtual Memory                                  | :white_check_mark: | :warning:               |
-| **6**       | Concurrency: Deadlock & Starvation              | :white_check_mark:                | :warning:                                     |
+| **8**       | Virtual Memory                                  | :white_check_mark: | :white_check_mark:               |
+| **6**       | Concurrency: Deadlock & Starvation              | :white_check_mark:                | :white_check_mark:                                     |
 | 5           | Concurrency: Mutual Exclusion & Synchronization | Incomplete :warning:          | :warning:                                     |
 | 4           | Threads                                         | Incomplete :warning:                | :warning:                                     |
-| 9           | Uniprocessor Scheduling                         | :warning:          | :warning:                                     |
+| 9           | Uniprocessor Scheduling                         | :warning:          | :white_check_mark:                                     |
 
 <!--
 :white_check_mark:
