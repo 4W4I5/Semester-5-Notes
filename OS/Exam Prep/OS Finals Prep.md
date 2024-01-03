@@ -435,12 +435,37 @@ Adds onto UNIX concurrency
 
 **Windows 7 Concurrency Mechanisms**
 - **Wait functions**
-- 3
-- **Windows Synchronization Objects**
+	- Allow thread to block its own execution
+	- Do not return until the specified criteria has been met
+		- Type of wait function determines the set of criteria used
 - **Critical Sections**
-- **Slim Read-Writer Locks**
+	- For uniprocessors, only threads from a single process can use the CS
+	- For multiprocessors, a spinlock is accquired. If not available a dispatcher is used to block the thread until another thread is dispatched by the kernel (Switching modes i believe)
+- **Slim Read-Writer Locks** (SRW Locks)
+	- Enters kernel to block only after spinlock fails
+	- Only requires allocation of a single pointer
 - **Condition Variables**
+	- Init a CONDITION_VAIRABLE
+	- Used in Critical Sections or SRW locks
+		- Acquire exclusive lock
+		- while(condition is false) run 
 - **Lock-Free Synchronization**
+	- Interlocked operations use hardware to guarantee that memory locations can be read/modified/written in a single atomic operation.
+	- No software lock needed, thread never switched away from processor while holding lock
+
+**Windows Synchronization Objects**
+
+| Object Type | Definition | Set to signaled state when | Effect on Waiting Threads |
+| ---- | ---- | ---- | ---- |
+| **Notification Event** | System event occured | Thread sets event | All released |
+| **Synchronization Event** | Same as above | Same as above | One thread released |
+| **MUTEX** | Provides MUTEX, equiv to a binary semaphore | Owning thread releases mutex | Same as above |
+| **Semaphore** | NumOfThreads counter that can use a resource | Semaphore count drops to 0 | All released |
+| **Waitable Timer** | Time counter | Set time arrives or interval expires | Same as above |
+| File | Instance of opened file/IODevice | I/O completes | Same as above |
+| Process | Program invocation containing the address space + resources need to execute | Last thread terminates | Same as above |
+| Thread | Executable entity within a process | Thread terminates | Same as above |
+
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
