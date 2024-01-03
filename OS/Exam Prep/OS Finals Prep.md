@@ -409,14 +409,17 @@ Adds onto UNIX concurrency
 	- Implemented as functions in kernel
 	- Interface provided same as in UNIX SRV4
 - **Barriers**
-	- Enforce the order in which instructions are executed. 
+	- Enforce the order in which instructions are executed.
 	- Enforces a group of threads to wait until all have completed their execution
 **Solaris Thread Synchronization Primitives**
-- **Data Structures**
 - **Mutex locks**
 - **Counting Semaphores**
 - **Multiple readers, single writer locks**
 - **Condition variables**
+
+|  |  |  |
+| ---- | ---- | ---- |
+
 **Windows 7 Concurrency Mechanisms**
 - **Wait functions**
 - **Windows Synchronization Objects**
