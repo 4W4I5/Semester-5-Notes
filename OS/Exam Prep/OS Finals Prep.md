@@ -359,6 +359,9 @@ NOTE:: Till slide 29 only
 		- If one person cannot get both forks, they have to wait until both are free
 		- They pick one side first before the other.
 
+
+
+
 **UNIX Concurrency Mechanisms**
 - **Pipes**: FIFO Queues, Circular, Named/Unnamed
 - **Messages**: Block of Bytes. MSGSND/MSGRCV syscalls, functions like a mailbox for each process
@@ -401,12 +404,12 @@ Adds onto UNIX concurrency
 	- Used in short wait time situations for threads. Only one at a time
 	- Built on an integer location in memory that each thread checks before entering a critical section
 	- Threads that are locked out continue to execute in busy-waiting mode
-- **Semaphores**
+- **Binary Semaphores**
 - **Barriers**
 **Solaris Thread Synchronization Primitives**
 - **Data Structures**
 - **Mutex locks**
-- **Semaphores**
+- **Counting Semaphores**
 - **Multiple readers, single writer locks**
 - **Condition variables**
 **Windows 7 Concurrency Mechanisms**
