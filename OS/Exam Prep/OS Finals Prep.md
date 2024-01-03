@@ -413,7 +413,13 @@ Adds onto UNIX concurrency
 	- Enforces a group of threads to wait until all have completed their execution
 **Solaris Thread Synchronization Primitives**
 - **Mutex locks**
+	- Thread locks a resource, must be the one to unlock it too
+	- Goes hand in hand with spin locks
+	- Interrupt based mechanisms are optional
 - **Counting Semaphores**
+	- sema_p() => Decrement + Block
+	- sema_v() => Increment + Unblock
+	- sema_tryp() => Decrement if blocking not required
 - **Multiple readers, single writer locks**
 - **Condition variables**
 
