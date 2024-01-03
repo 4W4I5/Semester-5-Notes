@@ -486,6 +486,18 @@ Uni of resource ownership is known as process or task
 		- Less time to create/terminate than a process
 		- Less time to switch thread to thread.
 		- Better communication b/w programs
+	- Use in single user system
+		- Fore/Background work
+		- Async processing
+		- Modular program structure
+	- States
+		- Running
+		- Ready
+		- Blocked
+	- Operations
+		- Spawn
+		- Block/Unblock
+		- Finish
 
 **Types of Threads**
 
