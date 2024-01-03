@@ -1,5 +1,4 @@
 [
-  "table-editor-obsidian",
   "obsidian-linter",
   "obsidian-git",
   "better-word-count",
@@ -9,5 +8,6 @@
   "obsidian-regex-replace",
   "obisidian-note-linker",
   "quick-latex",
-  "obsidian-trim-whitespace"
+  "obsidian-trim-whitespace",
+  "table-editor-obsidian"
 ]

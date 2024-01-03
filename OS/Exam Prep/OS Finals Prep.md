@@ -417,8 +417,12 @@ Adds onto UNIX concurrency
 - **Multiple readers, single writer locks**
 - **Condition variables**
 
-|  |  |  |
-| ---- | ---- | ---- |
+| Concurrency Method | Data Structure in octets    |
+| ------------------ | --- |
+| MUTEX              | Owner(3), Lock(1), Waiters(2), TypeSpecificInfo(4)    |
+| Semaphore          | Type(1), WLock(1), Waiters(2), Count(4)    |
+| Reader/Writer Lock | Type(1), WLock(1), Waiters(2), Union(4), Thread Owner(4)    |
+| Condition Variable | Waiters(2)    |
 
 **Windows 7 Concurrency Mechanisms**
 - **Wait functions**

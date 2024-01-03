@@ -166,9 +166,9 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obisidian-note-linker:Note Linker": false,
-      "obsidian-trim-whitespace:Trim whitespace": false
+      "obsidian-trim-whitespace:Trim whitespace": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
   "active": "a36f60ddc22d296f",
