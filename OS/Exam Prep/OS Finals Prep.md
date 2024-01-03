@@ -20,7 +20,7 @@
 :x:
 -->
 # 7. Memory Management
-**Terminology:**
+**Terminology**:
 - **Frame**: Fixed length block of main memory
 - **Page**: Fixed length block of virtual memory
 - **Segment**: Variable length block of virtual memory. Entire segment in a frame is known as segmentation while divided segments in a frame is known as combined segmentation and paging
@@ -34,7 +34,7 @@
 - **Page Table**: Maintained for **each** process. Used to produce a physical address. Contains page number and offset
 - **Segmentation**: Program division, varied length. Consists of SegmentNum + Offset. Similar to dynamic partitioning
 
-**Memory Management Requirements:**
+**Memory Management Requirements**:
 - Relocation
 	- Cannot know where the program will be placed, need to allow for moving the program about due to swapping. Assign a virtual address to PCB. That virtual address is assigned to a physical address
 	- Leads to addressing requirements
@@ -114,7 +114,7 @@
 # 8. Virtual Memory
 NOTE:: Till slide 29 only
 
-**Terminology:**
+**Terminology**:
 - Virtual Memory:
 	- Logical addresses assigned for memory on disk.
 	- Allows for relative addressing based off of the base pointer.
@@ -249,24 +249,24 @@ NOTE:: Till slide 29 only
 
 
 **Book questions**
-- **Difference between Simple and Virtual Memory Paging:**
-    - **Simple Memory Paging:** In simple memory paging, the entire program is loaded into the main memory at once. It doesn't involve the concept of virtual memory, and the execution occurs directly from the physical memory.
-    - **Virtual Memory Paging:** Virtual memory paging involves the use of a combination of physical and secondary storage (like a hard disk). Only the necessary portions of a program are loaded into the main memory, allowing for efficient use of resources.
-- **Thrashing:**
+- **Difference between Simple and Virtual Memory Paging**:
+    - **Simple Memory Paging**: In simple memory paging, the entire program is loaded into the main memory at once. It doesn't involve the concept of virtual memory, and the execution occurs directly from the physical memory.
+    - **Virtual Memory Paging**: Virtual memory paging involves the use of a combination of physical and secondary storage (like a hard disk). Only the necessary portions of a program are loaded into the main memory, allowing for efficient use of resources.
+- **Thrashing**:
     - Thrashing occurs when a computer's virtual memory system is excessively busy swapping data between the RAM and the disk, instead of executing instructions. It leads to a decrease in overall system performance as valuable CPU time is spent on managing the swapping process rather than actual computation.
-- **Principal of Locality in Virtual Memory:**
+- **Principal of Locality in Virtual Memory**:
     - The principle of locality suggests that programs tend to access a relatively small portion of their address space at any given time. Virtual memory systems leverage this principle by keeping frequently used pages in the faster RAM, while less frequently used pages are stored in slower secondary storage. This optimizes performance by reducing the need for constant disk access.
-- **Elements in a Page Table Entry (PTE):**
-    - **Page Frame Number (PFN):** Represents the physical frame where the corresponding page is stored.
-    - **Valid/Invalid Bit:** Indicates whether the page in the frame is currently in use (valid) or not (invalid).
-    - **Protection Bits:** Control the access rights to the page, specifying whether it's read-only, read-write, etc.
-    - **Dirty Bit:** Indicates whether the page has been modified since it was loaded into memory.
-- **Purpose of Translation Lookaside Buffer (TLB):**
+- **Elements in a Page Table Entry (PTE)**:
+    - **Page Frame Number (PFN)**: Represents the physical frame where the corresponding page is stored.
+    - **Valid/Invalid Bit**: Indicates whether the page in the frame is currently in use (valid) or not (invalid).
+    - **Protection Bits**: Control the access rights to the page, specifying whether it's read-only, read-write, etc.
+    - **Dirty Bit**: Indicates whether the page has been modified since it was loaded into memory.
+- **Purpose of Translation Lookaside Buffer (TLB)**:
     - TLB is a cache of recently used page table entries, speeding up the virtual-to-physical address translation process. It stores mappings of virtual page numbers to physical frame numbers, reducing the need to access the full page table in slower memory.
-- **Alternative Page Fetch Policies:**
-    - **Demand Paging:** Pages are brought into memory only when they are explicitly referenced.
-    - **Prepaging:** Multiple pages are brought into memory at once, anticipating future references.
-- **Virtual Address Translation into Physical Main Memory Address:**
+- **Alternative Page Fetch Policies**:
+    - **Demand Paging**: Pages are brought into memory only when they are explicitly referenced.
+    - **Prepaging**: Multiple pages are brought into memory at once, anticipating future references.
+- **Virtual Address Translation into Physical Main Memory Address**:
     - The CPU generates a virtual address, which consists of a page number and an offset within that page.
     - The page number is used to index the page table, retrieving the corresponding page frame number.
     - The offset is combined with the page frame number to generate the final physical memory address.
@@ -479,20 +479,20 @@ Adds onto UNIX concurrency
 	- No assumptions are made about relative process speeds or number of processes
 	- Remains in critical section for finite time only
 
-**Interrupt Disabling:**
+**Interrupt Disabling**:
 
-- **Interrupts and Mutual Exclusion:**
+- **Interrupts and Mutual Exclusion**:
   - In a multitasking operating system, various processes or threads run concurrently.
   - Interrupts are essential mechanisms to handle events such as I/O, timer expiration, or hardware faults.
   - Achieving mutual exclusion in such an environment is critical to prevent data corruption and maintain the integrity of shared resources.
 
-**Interrupt Disabling Approach:**
+**Interrupt Disabling Approach**:
 
   - To ensure mutual exclusion, a process can disable interrupts before entering a critical section and re-enable them when leaving the section.
   - Disabling interrupts blocks the CPU from responding to incoming interrupt requests.
   - This approach guarantees that no interrupt will occur during the execution of the critical section.
 
-**Advantages and Considerations:**
+**Advantages and Considerations**:
 
   - Interrupt disabling is a straightforward way to implement mutual exclusion.
   - It is generally efficient and guarantees mutual exclusion as long as all processes adhere to the same protocol.
@@ -500,21 +500,21 @@ Adds onto UNIX concurrency
     - Disabling interrupts globally may have a significant impact on system responsiveness.
     - It should be used with caution, especially in real-time systems or systems with strict timing requirements.
 
-**Special Machine Instructions (Hardware Support):**
+**Special Machine Instructions (Hardware Support)**:
 
-- **Atomic Instructions:**
+- **Atomic Instructions**:
 	- Some modern CPUs provide atomic instructions that are executed in a single step without interruption.
 		- These instructions are designed for mutual exclusion and work as follows:
-			- **Test-And-Set:** This instruction reads a memory location and sets it to a particular value, all in one atomic step. It returns the previous value of the memory location.
-			- **Swap:** This instruction swaps the content of a memory location with a specified value atomically.
-- **Usage for Mutual Exclusion:**
+			- **Test-And-Set**: This instruction reads a memory location and sets it to a particular value, all in one atomic step. It returns the previous value of the memory location.
+			- **Swap**: This instruction swaps the content of a memory location with a specified value atomically.
+- **Usage for Mutual Exclusion**:
 	- Processes or threads can use these atomic instructions to protect their critical sections without disabling interrupts.
 	- Here's an example of using "Test-And-Set":
 		1. Process A reads a shared memory location using "Test-And-Set" and gets the previous value.
 		2. If the previous value is 0 (indicating no other process is in the critical section), process A enters the critical section.
 		3. If the previous value is 1, process A knows that another process is in the critical section and must wait.
 
-- **Advantages and Limitations:**
+- **Advantages and Limitations**:
 	- Using atomic instructions is highly efficient and does not disable interrupts.
 	- It is particularly useful in high-performance systems.
 	- However, it may not be available on all hardware platforms, and its usage should be carefully designed to avoid race conditions.
@@ -522,19 +522,19 @@ Adds onto UNIX concurrency
 ## Semaphores
 
 
-### **Mutex (Mutual Exclusion):**
+### **Mutex (Mutual Exclusion)**:
 
-- **Definition:**
+- **Definition**:
 	- A mutex, short for "mutual exclusion," is a synchronization primitive used to protect critical sections in multithreaded or multiprocess systems.
 	- It ensures that only one thread or process can access a shared resource or critical section at a time.
-- **Usage with Semaphores:**
+- **Usage with Semaphores**:
 	  - In the context of the Producer/Consumer problem and many other synchronization scenarios, mutex locks are used to protect access to shared data structures like buffers or queues.
 	  - Mutexes ensure that while one thread or process is working in a critical section, no other thread or process can enter that section.
-- **Implementation:**
+- **Implementation**:
 	- Mutex locks typically provide two operations:
-		- **Lock (or Acquire):** A thread or process attempts to acquire the lock. If the lock is already held by another thread or process, it will block until the lock becomes available.
-		- **Unlock (or Release):** A thread or process releases the lock, allowing other threads or processes to acquire it.
-- **Example in Producer/Consumer Problem:**
+		- **Lock (or Acquire)**: A thread or process attempts to acquire the lock. If the lock is already held by another thread or process, it will block until the lock becomes available.
+		- **Unlock (or Release)**: A thread or process releases the lock, allowing other threads or processes to acquire it.
+- **Example in Producer/Consumer Problem**:
 	- In the code examples I provided for the Producer and Consumer, the `buffer_mutex` is a mutex used to protect access to the shared buffer.
 	- When a thread or process wants to access the buffer (either for adding an item or removing an item), it must first acquire the `buffer_mutex`. This ensures that only one thread can access the buffer at any given time.
 
@@ -576,31 +576,31 @@ Consumer:
   }
 ```
 
-### **Semaphores (Duplicate notes):**
+### **Semaphores (Duplicate notes)**:
 
-- **Mutual Exclusion:**
+- **Mutual Exclusion**:
 	- Semaphores are a synchronization mechanism that can be used to enforce mutual exclusion.
 	- A semaphore is a non-negative integer variable that can be accessed by two standard operations: "wait" and "signal."
-- **Semaphore Operations:**
-	- **Wait (P) Operation:**
+- **Semaphore Operations**:
+	- **Wait (P) Operation**:
 		- If the semaphore value is greater than 0, it decrements the value and allows the process to continue.
 		- If the semaphore value is 0, it blocks the process until another process signals (increments) the semaphore.
-	- **Signal (V) Operation:**
+	- **Signal (V) Operation**:
 		- Increments the semaphore value, possibly waking up a waiting process if the value was 0.
 
-**The Producer/Consumer Problem:**
+**The Producer/Consumer Problem**:
 
-- **Scenario:**
+- **Scenario**:
 	- The Producer/Consumer problem is a classic synchronization problem involving two types of processes: producers and consumers.
 	- Producers produce items and place them in a shared buffer, while consumers remove items from the buffer.
 	- The challenge is to ensure that producers don't add items to a full buffer and consumers don't remove items from an empty buffer, all while maintaining mutual exclusion.
-- **Using Semaphores:**
+- **Using Semaphores**:
 	- Semaphores can be used to solve the Producer/Consumer problem.
 	- Two semaphores, "empty" and "full," are used:
 		- "empty" counts the number of empty slots in the buffer.
 	        - "full" counts the number of filled slots in the buffer.
 	- Additional semaphores or mutex locks are used to protect access to the shared buffer.
-- **Implementation Example:**
+- **Implementation Example**:
 	- Let's assume we have a shared buffer with a maximum size of 10.
 	- We define semaphores:
 		- `empty` initialized to 10 (representing empty slots).
@@ -679,7 +679,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 
 ## Alternative Scheduling Policies
 
-**FCFS (First-Come-First-Serve):**
+**FCFS (First-Come-First-Serve)**:
 
 - Selection Function:
 	- Non-Preemptive
@@ -697,7 +697,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation:
 	- FCFS is susceptible to starvation, where a low-priority process might wait indefinitely behind high-priority processes.
 
-**Round Robin (RR):**
+**Round Robin (RR)**:
 
 - Selection Function:
 	- Preemptive
@@ -715,7 +715,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation:
 	- RR minimizes the risk of starvation as each process gets a turn.
 
-**SPN (Shortest Process Next):**
+**SPN (Shortest Process Next)**:
 
 - Selection Function:
 	- Non-Preemptive
@@ -736,7 +736,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Starvation:
 	- SPN can lead to starvation for longer processes if many short tasks keep arriving.
 
-**SRT (Shortest Remaining Time):**
+**SRT (Shortest Remaining Time)**:
 
 - Selection Function: SRT is a preemptive version of SPN, selecting the process with the shortest remaining time to complete.
 	- Calculates on arrival however
@@ -747,7 +747,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Effect on Processes: Short tasks are favored, and long tasks may experience some waiting but less than SPN.
 - Starvation: SRT can lead to starvation for longer processes if many short tasks keep arriving frequently.
 
-**HRRN (Highest Response Ratio Next):**
+**HRRN (Highest Response Ratio Next)**:
 
 - Selection Function: HRRN calculates the response ratio for each process and selects the one with the highest ratio. $$Ratio=\frac{timeWaiting+ expectedServiceTime}{expectedServiceTime}$$
 - Decision Mode: It uses a non-preemptive approach based on response ratios.
@@ -757,7 +757,7 @@ Main objective is to allocate processor time to optimize certain aspects of syst
 - Effect on Processes: Processes with higher response ratios get preference, balancing between short and long tasks.
 - Starvation: HRRN minimizes the risk of starvation by considering waiting times.
 
-**Feedback:**
+**Feedback**:
 
 - Selection Function: Feedback scheduling uses multiple queues with different priorities, and processes are selected based on their current priority level. Lower priority queues are checked before higher priority ones.
 - Decision Mode: It employs a dynamic priority scheme where processes can move between different priority queues based on their behavior and execution history. Processes that haven't received CPU time for a while are promoted to higher-priority queues.
