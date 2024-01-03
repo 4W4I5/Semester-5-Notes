@@ -363,8 +363,8 @@ NOTE:: Till slide 29 only
 - **Pipes**: FIFO Queues, Circular, Named/Unnamed
 - **Messages**: Block of Bytes. MSGSND/MSGRCV syscalls, functions like a mailbox for each process
 - **Shared** **Memory**: IPC, common block of virtual memory, O_READ or O_RDWR only, Mutex must be provided by the processes using shared memory, not by the OS
-- **Semaphores**
-- **Signals**
+- **Semaphores**: No other process may use the semaphore until all operations have completed. Semaphore{SemID, lastPID, NumOfProcWaiting>CurValue, isNumOfProcWaitingZero}
+- **Signals**: Non-priority software interrupt, delivered by updating field in process table. Process may respond by a default action, executing a handler function or ignoring the signal
 **LINUX Kernel Concurrency Mechanisms**
 Adds onto UNIX concurrency
 - **Atomic Operations**
