@@ -366,7 +366,7 @@ NOTE:: Till slide 29 only
 - **Pipes**: FIFO Queues, Circular, Named/Unnamed
 - **Messages**: Block of Bytes. MSGSND/MSGRCV syscalls, functions like a mailbox for each process
 - **Shared** **Memory**: IPC, common block of virtual memory, O_READ or O_RDWR only, Mutex must be provided by the processes using shared memory, not by the OS
-- **Semaphores**: No other process may use the semaphore until all operations have completed. Semaphore{SemID, lastPID, NumOfProcWaiting>CurValue, isNumOfProcWaitingZero}
+- **Binary Semaphores**: No other process may use the semaphore until all operations have completed. Semaphore{SemID, lastPID, NumOfProcWaiting>CurValue, isNumOfProcWaitingZero}
 - **Signals**: Non-priority software interrupt, delivered by updating field in process table. Process may respond by a default action, executing a handler function or ignoring the signal
 
 | Signal | Name                  | Description                                |
@@ -404,9 +404,12 @@ Adds onto UNIX concurrency
 	- Used in short wait time situations for threads. Only one at a time. Others keep trying until they get lock.
 	- Built on an integer location in memory that each thread checks before entering a critical section
 	- Locked-out threads continue to execute in busy-waiting mode
-- **Binary Semaphores**
-	- 
+- **Semaphores**
+	- Binary, Counting & Reader-Writer kernel Semaphores
+	- Implemented as functions in kernel
+	- Interface provided same as in UNIX SRV4
 - **Barriers**
+	- Enforce the order in which instructions are executed
 **Solaris Thread Synchronization Primitives**
 - **Data Structures**
 - **Mutex locks**
