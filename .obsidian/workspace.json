@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a952fc1812f47392",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OS/Exam Prep/OS Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +184,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a36f60ddc22d296f",
+  "active": "a952fc1812f47392",
   "lastOpenFiles": [
     "Untitled 1.md",
     "OS/Exam Prep/OS Finals Prep.md",
