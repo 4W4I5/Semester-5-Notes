@@ -12,9 +12,9 @@
 | **7**       | Memory Management                               | :white_check_mark: |  :warning:                        |
 | **8**       | Virtual Memory                                  | :white_check_mark: | :warning:               |
 | **6**       | Concurrency: Deadlock & Starvation              | :white_check_mark:                | :warning:                                     |
-| 5           | Concurrency: Mutual Exclusion & Synchronization | Incomplete :warning:          | :x:                                     |
-| 4           | Threads                                         | Incomplete :warning:                | :x:                                     |
-| 9           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
+| 5           | Concurrency: Mutual Exclusion & Synchronization | Incomplete :warning:          | :warning:                                     |
+| 4           | Threads                                         | Incomplete :warning:                | :warning:                                     |
+| 9           | Uniprocessor Scheduling                         | :warning:          | :warning:                                     |
 
 <!--
 :white_check_mark:
