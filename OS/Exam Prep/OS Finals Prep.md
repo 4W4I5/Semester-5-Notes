@@ -435,6 +435,7 @@ Adds onto UNIX concurrency
 
 **Windows 7 Concurrency Mechanisms**
 - **Wait functions**
+- 
 - **Windows Synchronization Objects**
 - **Critical Sections**
 - **Slim Read-Writer Locks**
