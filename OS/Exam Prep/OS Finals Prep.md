@@ -271,10 +271,6 @@ NOTE:: Till slide 29 only
     - The page number is used to index the page table, retrieving the corresponding page frame number.
     - The offset is combined with the page frame number to generate the final physical memory address.
 # 6. Concurrency: Deadlock & Starvation
->[!WARNING]
->Ask sir to explain how to determine a safe state and unsafe state for avoidance and detection algo
-
-
 **Resource Categories**
 - Reusable & Consumable
 	- Reusable: Safely used by one process at a time. Not depleted after use.
@@ -448,7 +444,7 @@ Adds onto UNIX concurrency
 	- Init a CONDITION_VAIRABLE
 	- Used in Critical Sections or SRW locks
 		- Acquire exclusive lock
-		- while(condition is false) run 
+		- while(condition is false) run
 - **Lock-Free Synchronization**
 	- Interlocked operations use hardware to guarantee that memory locations can be read/modified/written in a single atomic operation.
 	- No software lock needed, thread never switched away from processor while holding lock
