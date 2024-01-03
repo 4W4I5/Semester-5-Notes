@@ -360,30 +360,30 @@ NOTE:: Till slide 29 only
 		- They pick one side first before the other.
 
 **UNIX Concurrency Mechanisms**
-- Pipes
-- Messages
-- Shared Memory
-- Semaphores
-- Signals
+- **Pipes**: FIFO Queues, Circular, Named/Unnamed
+- **Messages**: Block of Bytes. MSGSND/MSGRCV syscalls, functions like a mailbox for each process
+- **Shared** **Memory**: IPC, common block of virtual memory, O_READ or O_RDWR only, Mutex must be provided by the processes using shared memory, not by the OS
+- **Semaphores**
+- **Signals**
 **LINUX Kernel Concurrency Mechanisms**
 Adds onto UNIX concurrency
-- Atomic Operations
-- Spinlocks
-- Semaphores
-- Barriers
+- **Atomic Operations**
+- **Spinlocks**
+- **Semaphores**
+- **Barriers**
 **Solaris Thread Synchronization Primitives**
-- Data Structures
-- Mutex locks
-- Semaphores
-- Multiple readers, single writer locks
-- Condition variables
+- **Data Structures**
+- **Mutex locks**
+- **Semaphores**
+- **Multiple readers, single writer locks**
+- **Condition variables**
 **Windows 7 Concurrency Mechanisms**
-- Wait functions
-- Windows Synchronization Objects
-- Critical Sections
-- Slim Read-Writer Locks
-- Condition Variables
-- Lock-Free Synchronization
+- **Wait functions**
+- **Windows Synchronization Objects**
+- **Critical Sections**
+- **Slim Read-Writer Locks**
+- **Condition Variables**
+- **Lock-Free Synchronization**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
