@@ -354,6 +354,9 @@ NOTE:: Till slide 29 only
 		- First sol: Grab both forks and start eating. Invalid if all 5 of these idiotas sit at the table
 		- Second sol: Make sure only 4 can sit at one time therefore at least one can have both forks and eat their full. Essentially using two sets of semaphores. One for forks and another for the room. If it is occupied by 4 people then the 5th one waits until they can have a seat
 	- Monitor
+		- Essentially a waiter who only lets people eat if the forks are available.
+		- If one person cannot get both forks, they have to wait until both are free
+		- They pick one side first before the other. 
 
 **UNIX Concurrency Mechanisms**
 -
