@@ -384,7 +384,6 @@ Adds onto UNIX concurrency
 - Slim Read-Writer Locks
 - Condition Variables
 - Lock-Free Synchronization
-**Android**
 # 5. Concurrency: Mutual Exclusion & Synchronization
 ## Key terms related to concurrency
 - **Atomic operation**
