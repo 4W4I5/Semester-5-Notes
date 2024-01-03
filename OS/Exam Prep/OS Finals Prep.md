@@ -128,9 +128,6 @@ NOTE:: Till slide 29 only
 - All logical addresses (memory used by program) are dynamically translated into physical addresses real time
 - Process can be broken into a number of pieces, these pieces do not have to be sequentially located in memory during execution
 
-> [!WARNING]
-> Small part that i dont get here
-
 **Execution of a process**
 - OS loads a portion of the process into memory. Known as Resident set
 	- If a portion is not in memory and accessed an interrupt is generated to fetch that section.
@@ -318,7 +315,11 @@ NOTE:: Till slide 29 only
 			- **Definition**: Do not grant an increment resource request to a process if it might lead to a deadlock
 			- **State** of the system reflects the current allocation of resources to the process
 				- **Safe State**: At least one sequence of resource allocation to process(es) that does not result in a deadlock
-					- How to determine a safe state
+					- Claim matrix => Resources required
+					- Allocation matrix => Resrouces provided
+					- C-A => Need Matrix => Resources needed to finish execution
+					- Resource vector => total num of available resources in the OS
+					- Available Vector = > Allocation matrix(ColSum[i] - ResourceVector[i])
 				- **Unsafe State**: Opposite of the above
 					- How to determine an unsafe state
 			- **Advantageous** as it is less restrictive than deadlock prevention and it is not necessary to preempt and rollback processes as done in deadlock detection
