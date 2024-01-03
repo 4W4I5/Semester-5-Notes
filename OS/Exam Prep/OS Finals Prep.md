@@ -3,15 +3,17 @@
 >
 > Lectures tagged with :white_check_mark: were made during finals
 >
-> Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
+> Lectures tagged with :x: have not been made yet.
+>
+> Lectures tagged with :exclamation: will not be made.
 
 | **Chapter** | **Topic**                                       | **Status**         | **Prep(Ignore this, its for personal use)** |
 | ----------- | ----------------------------------------------- | ------------------ | --------------------------------------- |
 | **7**       | Memory Management                               | :white_check_mark: |  :warning:                        |
 | **8**       | Virtual Memory                                  | :white_check_mark: | :warning:               |
 | **6**       | Concurrency: Deadlock & Starvation              | :white_check_mark:                | :warning:                                     |
-| 5           | Concurrency: Mutual Exclusion & Synchronization | :x:          | :x:                                     |
-| 4           | Threads                                         | :x:                | :x:                                     |
+| 5           | Concurrency: Mutual Exclusion & Synchronization | :exclamation:          | :x:                                     |
+| 4           | Threads                                         | :exclamation:                | :x:                                     |
 | 9           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
 
 <!--
