@@ -365,6 +365,30 @@ NOTE:: Till slide 29 only
 - **Shared** **Memory**: IPC, common block of virtual memory, O_READ or O_RDWR only, Mutex must be provided by the processes using shared memory, not by the OS
 - **Semaphores**: No other process may use the semaphore until all operations have completed. Semaphore{SemID, lastPID, NumOfProcWaiting>CurValue, isNumOfProcWaitingZero}
 - **Signals**: Non-priority software interrupt, delivered by updating field in process table. Process may respond by a default action, executing a handler function or ignoring the signal
+
+| Signal | Name                  | Description                                |
+|--------|-----------------------|--------------------------------------------|
+|   1    | SIGHUP                | Hang Up - Terminal line hang-up or process group exit |
+|   2    | SIGINT                | Interrupt - Interrupt from keyboard (Ctrl+C)           |
+|   3    | SIGQUIT               | Quit - Quit from keyboard (Ctrl+\)                |
+|   4    | SIGILL                | Illegal Instruction - Illegal instruction detected               |
+|   5    | SIGTRAP               | Trace Trap - Trace/breakpoint trap                      |
+|   6    | SIGIOT               | IOT Instruction                       |
+|   7    | SIGEMT                | EMT Instruction      |
+|   8    | SIGFPE                | Floating-Point Error - Erroneous arithmetic operation             |
+|   9    | SIGKILL               | Kill - Forced termination                         |
+|  10    | SIGBUS               | Bus error                      |
+|  11    | SIGSEGV               | Segmentation Fault - Invalid memory reference                   |
+|  12    | SIGSYS               | Bad arg to syscall                      |
+|  13    | SIGPIPE               | Broken Pipe - Write to a pipe with no readers            |
+|  14    | SIGALRM               | Alarm Clock - Timer expired                              |
+|  15    | SIGTERM               | Termination - Termination request                        |
+|  16    | SIGUSR1               | User defined signal 1       |
+|  17    | SIGUSR2               | User defined signal 2                   |
+|  18    | SIGCHILD               | Death of child                           |
+|  19    | SIGPWR               | Power Failure                |
+
+
 **LINUX Kernel Concurrency Mechanisms**
 Adds onto UNIX concurrency
 - **Atomic Operations**
