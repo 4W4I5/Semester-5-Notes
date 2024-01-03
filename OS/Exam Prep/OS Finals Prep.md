@@ -501,17 +501,17 @@ Uni of resource ownership is known as process or task
 
 **Types of Threads**
 
-| Characteristic | User-Level Threads (ULTs) Linux | Kernel-Level Threads (KLTs) Windows | Combined Approach. Solaris |
-| ---- | ---- | ---- | ---- |
-| **Creation and Management** | Managed entirely by user-level libraries or runtime | Managed by the operating system kernel |  |
-| **Concurrency Model** | Many-to-One: Multiple user-level threads mapped to a single kernel-level thread | One-to-One: Each user-level thread corresponds to a distinct kernel-level thread |  |
-| **Overhead** | Lower overhead as thread operations are handled at the user level without kernel involvement | Higher overhead due to frequent interaction with the kernel for thread operations |  |
-| **Scheduling Control** | Application specific | Greater control over scheduling and execution policies due to kernel involvement |  |
-| **Portability** | More portable as they are implemented using user-level libraries, making them independent of the underlying kernel | Less portable, as differences in kernel implementations may affect thread behavior |  |
-| **Scalability** | Better scalability on systems with a large number of threads, as the system can optimize user-level threads without kernel intervention | Scalability depends on the efficiency of the kernel's thread management capabilities |  |
-| **Blocking System Calls** | A single blocking system call blocks all user-level threads, as they share the same kernel-level thread. Cannot take advantage of multiprocessing | One thread blocking does not affect other threads, as they have their own kernel-level threads |  |
-| **Example Implementations** | POSIX threads (pthread) library in user space | Windows threads (Win32 threads) or pthreads with kernel-level threads |  |
-| **Context Switching** | Faster context switching as it involves switching user-level thread contexts without kernel intervention | Slower context switching due to the involvement of the kernel in managing thread contexts |  |
+| Characteristic                | User-Level Threads (ULTs)                           | Kernel-Level Threads (KLTs)                            |
+|-------------------------------|-----------------------------------------------------|--------------------------------------------------------|
+| **Creation and Management**   | Managed entirely by user-level libraries or runtime | Managed by the operating system kernel                   |
+| **Concurrency Model**         | Many-to-One: Multiple user-level threads mapped to a single kernel-level thread | One-to-One: Each user-level thread corresponds to a distinct kernel-level thread |
+| **Overhead**                  | Lower overhead as thread operations are handled at the user level without kernel involvement | Higher overhead due to frequent interaction with the kernel for thread operations |
+| **Scheduling Control**        | Application specific | Greater control over scheduling and execution policies due to kernel involvement |
+| **Portability**               | More portable as they are implemented using user-level libraries, making them independent of the underlying kernel | Less portable, as differences in kernel implementations may affect thread behavior |
+| **Scalability**               | Better scalability on systems with a large number of threads, as the system can optimize user-level threads without kernel intervention | Scalability depends on the efficiency of the kernel's thread management capabilities |
+| **Blocking System Calls**     | A single blocking system call blocks all user-level threads, as they share the same kernel-level thread. Cannot take advantage of multiprocessing | One thread blocking does not affect other threads, as they have their own kernel-level threads |
+| **Example Implementations**   | POSIX threads (pthread) library in user space        | Windows threads (Win32 threads) or pthreads with kernel-level threads |
+| **Context Switching**         | Faster context switching as it involves switching user-level thread contexts without kernel intervention | Slower context switching due to the involvement of the kernel in managing thread contexts |
 
 **Multicore and Multithreading**
 - Performance of software on multicore
@@ -523,27 +523,27 @@ Uni of resource ownership is known as process or task
 - Multithreading
 - Thread States
 - Support for OS subsystems
-
+![](/Pasted%20image%2020240103224745.png)
+![](/Pasted%20image%2020240103224806.png)
 **Solaris Thread & SMP Management**
 - Multithreaded architecture
 - Motivation
 - Process Structure
 - Thread Execution
 - Interrupts as Threads
-
+![](/Pasted%20image%2020240103224830.png)
+![](/Pasted%20image%2020240103224849.png)
 **Linux process/thread management**
 - Tasks/Threads/Namespaces
-
+![](/Pasted%20image%2020240103224911.png)
 **Android process/thread management**
 - Android applications
 - Activities
 - Process and threads
 
-**MAC OS Grand Central Dispatch**
+![](/Pasted%20image%2020240103224938.png)
 
-**Questions**
-- Explain how thread handling/management is different in Linux than Windows
-	- Linux does not recognize the concept of threads. 
+**MAC OS Grand Central Dispatch**
 # 9. Uniprocessor Scheduling
 ## Example:
 - ![](/Pasted%20image%2020230926023241.png)
