@@ -677,7 +677,7 @@ Uni of resource ownership is known as process or task
 | **Scalability**               | Better scalability on systems with a large number of threads, as the system can optimize user-level threads without kernel intervention | Scalability depends on the efficiency of the kernel's thread management capabilities |
 | **Blocking System Calls**     | A single blocking system call blocks all user-level threads, as they share the same kernel-level thread. Cannot take advantage of multiprocessing | One thread blocking does not affect other threads, as they have their own kernel-level threads |
 | **Example Implementations**   | POSIX threads (pthread) library in user space        | Windows threads (Win32 threads) or pthreads with kernel-level threads |
-| **Context Switching**         | Faster context switching as it involves switching user-level thread contexts without kernel intervention | Slower context switching due to the involvement of the kernel in managing thread contexts |
+| **Context Switching**         | Faster context switching  | Slower context switching  |
 
 **Multicore and Multithreading**
 - Performance of software on multicore
