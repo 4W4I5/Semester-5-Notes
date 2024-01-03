@@ -391,8 +391,13 @@ NOTE:: Till slide 29 only
 
 **LINUX Kernel Concurrency Mechanisms**
 Adds onto UNIX concurrency
-- **Atomic Operations**: Execute without interruptions/interference. Integer/Bitmap Operations. Integers are used for counters, operate on integer variable. Bitmap operate on one sequence of bits indicated by a pointer variable. IntegerFunctions{Read, Set, Add, Sub, Inc, Dec, Sub&Test, AddNeg, Dec&Test, Inc&Test}. BitmapFunctions{Set, Clear, Change, Test&Set, Test&Clear, Test&Change, Test(Get)}
-- **Spinlocks**: 
+- **Atomic Operations**:
+	- Execute without interruptions/interference.
+	- Integer/Bitmap Operations.
+	- Integers are used for counters, operate on integer variable. Bitmap operate on one sequence of bits indicated by a pointer variable.
+	- IntegerFunctions{Read, Set, Add, Sub, Inc, Dec, Sub&Test, AddNeg, Dec&Test, Inc&Test}.
+	- BitmapFunctions{Set, Clear, Change, Test&Set, Test&Clear, Test&Change, Test(Get)}
+- **Spinlocks**:
 - **Semaphores**
 - **Barriers**
 **Solaris Thread Synchronization Primitives**
