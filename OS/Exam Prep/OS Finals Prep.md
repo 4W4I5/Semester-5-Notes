@@ -401,10 +401,11 @@ Adds onto UNIX concurrency
 	- IntegerFunctions{Read, Set, Add, Sub, Inc, Dec, Sub&Test, AddNeg, Dec&Test, Inc&Test}.
 	- BitmapFunctions{Set, Clear, Change, Test&Set, Test&Clear, Test&Change, Test(Get)}
 - **Spinlocks**:
-	- Used in short wait time situations for threads. Only one at a time
+	- Used in short wait time situations for threads. Only one at a time. Others keep trying until they get lock.
 	- Built on an integer location in memory that each thread checks before entering a critical section
-	- Threads that are locked out continue to execute in busy-waiting mode
+	- Locked-out threads continue to execute in busy-waiting mode
 - **Binary Semaphores**
+	- 
 - **Barriers**
 **Solaris Thread Synchronization Primitives**
 - **Data Structures**
