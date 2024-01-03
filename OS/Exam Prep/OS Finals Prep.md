@@ -523,23 +523,31 @@ Uni of resource ownership is known as process or task
 - Multithreading
 - Thread States
 - Support for OS subsystems
+
+
 ![](/Pasted%20image%2020240103224745.png)
 ![](/Pasted%20image%2020240103224806.png)
+
 **Solaris Thread & SMP Management**
 - Multithreaded architecture
 - Motivation
 - Process Structure
 - Thread Execution
 - Interrupts as Threads
+
 ![](/Pasted%20image%2020240103224830.png)
 ![](/Pasted%20image%2020240103224849.png)
+
 **Linux process/thread management**
 - Tasks/Threads/Namespaces
+
 ![](/Pasted%20image%2020240103224911.png)
+
 **Android process/thread management**
 - Android applications
 - Activities
 - Process and threads
+
 
 ![](/Pasted%20image%2020240103224938.png)
 
