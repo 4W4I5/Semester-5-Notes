@@ -355,11 +355,14 @@ NOTE:: Till slide 29 only
 		- Second sol: Make sure only 4 can sit at one time therefore at least one can have both forks and eat their full. Essentially using two sets of semaphores. One for forks and another for the room. If it is occupied by 4 people then the 5th one waits until they can have a seat
 	- Monitor
 		- Essentially a waiter who only lets people eat if the forks are available.
+		- Getting and releasing forks is now done by requesting the waiter. who can say yes or no to their request
 		- If one person cannot get both forks, they have to wait until both are free
-		- They pick one side first before the other. 
+		- They pick one side first before the other.
 
 **UNIX Concurrency Mechanisms**
--
+| UNIX Concurrency Mechanisms | Definitions
+| --------------------------- |
+
 **LINUX Kernel Concurrency Mechanisms**
 **Windows**
 **Android**
