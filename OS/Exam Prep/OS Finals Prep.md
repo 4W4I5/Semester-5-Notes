@@ -10,7 +10,7 @@
 | **7**       | Memory Management                               | :white_check_mark: |  :warning:                        |
 | **8**       | Virtual Memory                                  | :white_check_mark: | :warning:               |
 | **6**       | Concurrency: Deadlock & Starvation              | :white_check_mark:                | :warning:                                     |
-| 5           | Concurrency: Mutual Exclusion & Synchronization | :warning:          | :x:                                     |
+| 5           | Concurrency: Mutual Exclusion & Synchronization | :x:          | :x:                                     |
 | 4           | Threads                                         | :x:                | :x:                                     |
 | 9           | Uniprocessor Scheduling                         | :warning:          | :x:                                     |
 
@@ -466,7 +466,14 @@ Adds onto UNIX concurrency
 # 5. Concurrency: Mutual Exclusion & Synchronization
 # 4. Threads
 **Processes and Threads**
+Process includes a virtual address space to hold process image, follows an execution path that may be interleaved with other processes
+
+Unit of dispatching is known as a thread or lightweight process
+Uni of resource ownership is known as process or task
+
+
 - Multithreading
+	- Ability of the OS to support multiple, concurrent paths of execution within a single process
 - Thread Functionality
 
 **Types of Threads**
