@@ -474,7 +474,17 @@ Uni of resource ownership is known as process or task
 
 - Multithreading
 	- Ability of the OS to support multiple, concurrent paths of execution within a single process
+	- Various forms
+		- Single process Single Thread
+		- Single process Multiple Thread
+		- Multiple process Single Thread
+		- Multiple process Multi Thread
 - Thread Functionality
+	- Has the same PCB as process
+	- Its own user address space, userstack and kernelstack
+	- Benefits
+		- Less time to create/terminate than a process
+		- 
 
 **Types of Threads**
 
