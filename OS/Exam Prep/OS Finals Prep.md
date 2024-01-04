@@ -410,7 +410,7 @@ Adds onto UNIX concurrency
 - **Barriers**
 	- Enforce the order in which instructions are executed.
 	- Enforces a group of threads to wait until all have completed their execution
-**Solaris Thread Synchronization Primitives**
+- **Solaris Thread Synchronization Primitives**
 - **Mutex locks**
 	- Thread locks a resource, must be the one to unlock it too
 	- Goes hand in hand with spin locks
