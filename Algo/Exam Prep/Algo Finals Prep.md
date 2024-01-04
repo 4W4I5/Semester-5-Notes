@@ -3,7 +3,9 @@
 >
 > Lectures tagged with :white_check_mark: were made during finals
 >
-> Lectures tagged with :x: have not been made yet. Probs will not be if you see it the day after the exam =)
+> Lectures tagged with :x: have not been made yet.
+>
+> Lectures tagged with :exclamation: will not be made.
 
 | Topic                                     | Status                                       | Prep(Ignore this, its for personal use) |
 | ----------------------------------------- | -------------------------------------------- | --------------------------------------- |
@@ -20,10 +22,10 @@
 | 16: bellman ford                          | GPT Content :warning:                        | revise :warning:                        |
 | 9: naive string matching, rabin karp algo | Incomplete :x:                               | revise :warning:                        |
 | 10: kmp string matching                   | Incomplete :x:                               | revise :warning:                        |
-| 2: complexity analysis                    | :white_check_mark:                           | <!--need help--> :exclamation:          |
-| 4.1.1: recursion                          | :white_check_mark:                           | <!--need help--> :exclamation:          |
-| 4.1.2: recursion tree                     | :white_check_mark:                           | <!--need help-->  :exclamation:         |
-| 4.2: recurrence relation                  | :white_check_mark:                           | <!--need help--> :exclamation:          |
+| 2: complexity analysis                    | :white_check_mark:                           | :x:          |
+| 4.1.1: recursion                          | :white_check_mark:                           | :x:          |
+| 4.1.2: recursion tree                     | :white_check_mark:                           | :x:         |
+| 4.2: recurrence relation                  | :white_check_mark:                           | :x:          |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |

@@ -170,4 +170,4 @@ Notes sponsored by chatGPT ;)
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [OS Finals Prep](OS/Exam%20Prep/OS%20Finals%20Prep.md) | In progress | Finals prep content        |
+| [OS Finals Prep](OS/Exam%20Prep/OS%20Finals%20Prep.md) | Mostly complete | Finals prep content        |
