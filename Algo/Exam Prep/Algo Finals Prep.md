@@ -97,8 +97,9 @@ Given in Question:
 Init (Tabulation)
 - Create a table; Number of objects N as Rows, Capacity M in integer increments as Columns
 - Write down P\[i\], W\[i\] alongside the row number
+- Go row by row **cumulatively**
 Last row formula:
-- V\[i,w\] = max(V\[i-1,w\], V\[i-1, w-w\[i\]+P\[i\]\])
+- V\[i, w\] = max(V\[i-1, w\], V\[i-1, w-w\[i\]\] + P\[i\])
 	- Where,
 		- i = Row Number
 		- W\[i\] = Weight @ row i
