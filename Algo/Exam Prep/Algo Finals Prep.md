@@ -11,7 +11,7 @@
 | ----------------------------------------- | -------------------------------------------- | --------------------------------------- |
 | 18:  Dynamic Programming: Memoization     | :x:                                          | :warning:                               |
 | 18: Dynamic Programming: Tabulation       | :x:                                          | :warning:                               |
-| 21: LCS                                   | :x:                                          | :warning:                               |
+| 21: LCS                                   | :x:                                          | :white_check_mark:                               |
 | 19: matrix multiplication                 | :x:                                          | :warning:                               |
 | 18: rod cutting                           | :x:                                          | :warning:                                     |
 | 20: knapsack                              | :x:                                          | :white_check_mark:                                     |
