@@ -80,7 +80,13 @@ Tabulation Approach (Bottom-Up)
 - also gives the best cuts as well
 
 # 20: knapsack
----
+
+Last row formula:
+- V\[i,w\] = max(V\[i-1,w\], V\[i-1, w-w\[i\]+P\[i\]\])
+	- Where,
+		- i = Row Number
+		- W\[i\] = Weight @ row i
+		- P\[i\] = Price @ row i
 # 12: graph theory 1
 
 DiGraph => G=(V,E)
