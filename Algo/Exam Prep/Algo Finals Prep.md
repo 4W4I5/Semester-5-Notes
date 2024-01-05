@@ -52,75 +52,21 @@ Algo that bruteforces what cuts need to be made in order to maximize profits
 - Running Time: O(n<sup>2</sup>)
 - space: O(n)
 
-```c++
-#include <iostream>
-using namespace std;
+```Algo
+    MemoizedCutRod(p, n)
+        r: array(0..n) := (0 => 0, others =>MinInt)
+        return MemoizedCutRodAux(p, n, r)
 
-// Global Array for
-// the purpose of memoization.
-int t[9][9];
-
-// A recursive program, using ,
-// memoization, to implement the
-// rod cutting problem(Top-Down).
-int un_kp(int price[], int length[], 
-					int Max_len, int n)
-{
-
-	// The maximum price will be zero,
-	// when either the length of the rod
-	// is zero or price is zero.
-	if (n == 0 || Max_len == 0) 
-	{
-		return 0;
-	}
-
-	// If the length of the rod is less
-	// than the maximum length, Max_lene will
-	// consider it.Now depending 
-	// upon the profit,
-	// either Max_lene we will take 
-	// it or discard it.
-	if (length[n - 1] <= Max_len) 
-	{
-		t[n][Max_len]
-			= max(price[n - 1]
-					+ un_kp(price, length,
-						Max_len - length[n - 1], n),
-				un_kp(price, length, Max_len, n - 1));
-	}
-
-	// If the length of the rod is
-	// greater than the permitted size,
-	// Max_len we will not consider it.
-	else
-	{
-		t[n][Max_len]
-			= un_kp(price, length, 
-							Max_len, n - 1);
-	}
-
-	// Max_lene Max_lenill return the maximum
-	// value obtained, Max_lenhich is present
-	// at the nth roMax_len and Max_length column.
-	return t[n][Max_len];
-}
-
-int main()
-{
-	int price[] = { 1, 5, 8, 9, 10, 17, 17, 20 };
-	int n = sizeof(price) / sizeof(price[0]);
-	int length[n];
-	for (int i = 0; i < n; i++) {
-		length[i] = i + 1;
-	}
-	int Max_len = n;
-
-	// Function Call
-	cout << "Maximum obtained value is "
-		<< un_kp(price, length, n, Max_len) << endl;
-}
-
+    MemoizedCutRodAux(p, n, r)
+        if r(n) = MinInt then     -- calculate a new solution?
+                q: int := MinInt
+                for i in 1 .. n loop
+                    q := max(q, p(i) + MemoizedCutRodAux(p, n-i, r))
+                end loop
+            end if
+            r(n) := q
+        end if
+        return r(n)
 
 ```
 # 20: knapsack
