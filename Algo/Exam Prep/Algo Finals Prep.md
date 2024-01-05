@@ -52,6 +52,7 @@ Algo that bruteforces what cuts need to be made in order to maximize profits
 - Running Time: O(n<sup>2</sup>)
 - space: O(n)
 
+Memoization Approach (Top-Down)
 ```Algo
     MemoizedCutRod(p, n)
         r: array(0..n) := (0 => 0, others =>MinInt)
@@ -69,6 +70,10 @@ Algo that bruteforces what cuts need to be made in order to maximize profits
         return r(n)
 
 ```
+
+Tabulation Approach (Bottom-Up)
+- also gives the best cuts as well
+
 # 20: knapsack
 ---
 # 12: graph theory 1
