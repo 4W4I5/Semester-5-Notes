@@ -53,8 +53,6 @@ Algo that bruteforces what cuts need to be made in order to maximize profits
 - space: O(n)
 
 ```c++
-
-// CPP program for above approach
 #include <iostream>
 using namespace std;
 
@@ -108,8 +106,6 @@ int un_kp(int price[], int length[],
 	return t[n][Max_len];
 }
 
-/* Driver program to
-test above functions */
 int main()
 {
 	int price[] = { 1, 5, 8, 9, 10, 17, 17, 20 };
