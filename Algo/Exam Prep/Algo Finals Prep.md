@@ -661,8 +661,9 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 	- Sub-cases
 		- p > -1 == f(n) but p+1
 			- $$Θ(n^klog^{p+1}n)$$
+			- Θ(n<sup>k</sup>log<sup>p+1</sup>n)
 		- p = -1
-			- $$Θ(n^kloglog(n))$$
+			- Θ(n<sup>k</sup>loglog(n))
 		- p < -1
 			- $$Θ(n^k)$$
 - **Case 3** $$log_{ba}< k$$
