@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0fb413eb9bc94134",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algo/Exam Prep/Algo Finals Prep.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -171,7 +184,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b8b68edca48e5359",
+  "active": "0fb413eb9bc94134",
   "lastOpenFiles": [
     "README.md",
     "Pasted image 20231216180329.png",

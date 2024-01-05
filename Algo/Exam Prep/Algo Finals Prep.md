@@ -9,23 +9,23 @@
 
 | Topic                                     | Status                                       | Prep(Ignore this, its for personal use) |
 | ----------------------------------------- | -------------------------------------------- | --------------------------------------- |
-| 18:  Dynamic Programming: Memoization                           | :x:                                          | revise :warning:                        |
-| 18: Dynamic Programming: Tabulation                            | :x:                                          | revise :warning:                        |
-| 21: LCS                                   | :x:                                          | revise :warning:                        |
-| 19: matrix multiplication                 | :x:                                          | revise :warning:                        |
+| 18:  Dynamic Programming: Memoization     | :x:                                          | :warning:                               |
+| 18: Dynamic Programming: Tabulation       | :x:                                          | :warning:                               |
+| 21: LCS                                   | :x:                                          | :warning:                               |
+| 19: matrix multiplication                 | :x:                                          | :warning:                               |
 | 18: rod cutting                           | :x:                                          | :x:                                     |
 | 20: knapsack                              | :x:                                          | :x:                                     |
-| 12: graph theory 1 (bfs)                  | :white_check_mark:                           | revise :warning:                        |
-| 13: graph theory 2 (dfs)                  | :white_check_mark:                           | revise :warning:                        |
-| 14:mst, prims, kruskal                    | :white_check_mark:                           | revise :warning:                        |
-| 15: dijkstra                              | GPT Content :warning:                        | revise :warning:                        |
-| 16: bellman ford                          | GPT Content :warning:                        | revise :warning:                        |
-| 9: naive string matching, rabin karp algo | Incomplete :x:                               | revise :warning:                        |
-| 10: kmp string matching                   | Incomplete :x:                               | revise :warning:                        |
-| 2: complexity analysis                    | :white_check_mark:                           | :x:          |
-| 4.1.1: recursion                          | :white_check_mark:                           | :x:          |
-| 4.1.2: recursion tree                     | :white_check_mark:                           | :x:         |
-| 4.2: recurrence relation                  | :white_check_mark:                           | :x:          |
+| 12: graph theory 1 (bfs)                  | :white_check_mark:                           | :warning:                               |
+| 13: graph theory 2 (dfs)                  | :white_check_mark:                           | :warning:                               |
+| 14:mst, prims, kruskal                    | :white_check_mark:                           | :warning:                               |
+| 15: dijkstra                              | GPT Content :warning:                        | :warning:                               |
+| 16: bellman ford                          | GPT Content :warning:                        | :warning:                               |
+| 9: naive string matching, rabin karp algo | Incomplete :x:                               | :warning:                               |
+| 10: kmp string matching                   | Incomplete :x:                               | :warning:                               |
+| 2: complexity analysis                    | :white_check_mark:                           | :x:                                     |
+| 4.1.1: recursion                          | :white_check_mark:                           | :x:                                     |
+| 4.1.2: recursion tree                     | :white_check_mark:                           | :x:                                     |
+| 4.2: recurrence relation                  | :white_check_mark:                           | :x:                                     |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |
