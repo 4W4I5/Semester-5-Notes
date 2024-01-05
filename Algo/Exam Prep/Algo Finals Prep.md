@@ -52,6 +52,11 @@ Algo that bruteforces what cuts need to be made in order to maximize profits
 - Running Time: O(n<sup>2</sup>)
 - space: O(n)
 
+General Formula
+- Value(n) = max<sup>n-1</sup><sub>i=0</sub> (Price\[i\] + Value\[n-i-1\])
+
+
+
 Memoization Approach (Top-Down)
 ```Algo
     MemoizedCutRod(p, n)
@@ -397,8 +402,8 @@ Inefficiency
         - i++.
 
 ```
-//Here even if the loop increments by 
-N it will still be N times and therefore 
+//Here even if the loop increments by
+N it will still be N times and therefore
 the complexity is O(n)
 
 	for(int i =0; i < n; i++){
@@ -406,8 +411,8 @@ the complexity is O(n)
 	}
 
 
-//However for factors i.e the iterator being 
-multiplied or divided the 
+//However for factors i.e the iterator being
+multiplied or divided the
 time complexity is O(log(n))
 
 	for(int i =0; i < n; i*n){
@@ -416,7 +421,7 @@ time complexity is O(log(n))
 
 
 //For the iterator going up in order of
-power i.e from i^2 to i^3 or from 
+power i.e from i^2 to i^3 or from
 i^2 to sqrt(i) the complexity is O(log(log(n)))
 
 	for(int i =0; i < n; i=pow(i,c)){
