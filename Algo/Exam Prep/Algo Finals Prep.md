@@ -14,7 +14,7 @@
 | 21: LCS                                   | :x:                                          | :warning:                               |
 | 19: matrix multiplication                 | :x:                                          | :warning:                               |
 | 18: rod cutting                           | :x:                                          | :x:                                     |
-| 20: knapsack                              | :x:                                          | :x:                                     |
+| 20: knapsack                              | :x:                                          | :white_check_mark:                                     |
 | 12: graph theory 1 (bfs)                  | :white_check_mark:                           | :warning:                               |
 | 13: graph theory 2 (dfs)                  | :white_check_mark:                           | :warning:                               |
 | 14:mst, prims, kruskal                    | :white_check_mark:                           | :warning:                               |
