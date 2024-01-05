@@ -80,15 +80,22 @@ Tabulation Approach (Bottom-Up)
 - also gives the best cuts as well
 
 # 20: knapsack
-A 
+A
+
+
+GeeksforGeeks stuff:
+- Case 1 (include the Nth item): Value of the Nth item plus maximum value obtained by remaining N-1 items and remaining weight i.e. (W-weight of the Nth item).
+- Case 2 (exclude the Nth item): Maximum value obtained by N-1 items and W weight.
+- If the weight of the ‘Nth‘ item is greater than ‘W’, then the Nth item cannot be included and **Case 2** is the only possibility.
+
 Given in Question:
 - price array known as P{}
 - weight array known as W{}
-- total capacity as m
-- number of objects as n
+- total capacity as M
+- number of objects as N
 
-Init
-- Create a table; Number of objects as Rows, Capacity in integer increments as Columns
+Init (Tabulation)
+- Create a table; Number of objects N as Rows, Capacity M in integer increments as Columns
 - Write down P\[i\], W\[i\] alongside the row number
 Last row formula:
 - V\[i,w\] = max(V\[i-1,w\], V\[i-1, w-w\[i\]+P\[i\]\])
