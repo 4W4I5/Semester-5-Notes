@@ -59,6 +59,26 @@ Assume X and Y are two strings to search in and Z is the pattern string
 - x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=y<sub>n</sub> implies that Z is LCS of X and Y<sub>n-1</sub>
 	- If not equal and same goes for Z and Y. then Y is the longer string and must contain both Z and X (i guess)
 
+
+**Naive approach (Top Down)**
+Code:
+```C
+int LCS(i, j){
+	if(str1[i]=='\0' || str2[j]=='\0'){
+		return 0;
+	}
+	else if(str1[i]==str2[j]){
+		return 1+LCS(i+1, j+1);
+	}
+	else{
+		return max(LCS(i+1, j), LCS(i, j+1));
+	}
+}
+
+```
+
+
+**Memoization approach (Bottom Up)**
 Code:
 ```python
 def lcs(X, Y, m, n, dp):
@@ -78,11 +98,10 @@ def lcs(X, Y, m, n, dp):
     return dp[m][n]
 ```
 
-Memoization approach (Bottom Up)
 
 Time & Space Efficiency:
-- Bruteforce: O(n\*2<sup>m</sup>)
-- Memoization: Theta(n\*m)
+- Bruteforce: O(n\*2<sup>m</sup>), uses LCS(i+1,j+1) calls
+- Memoization: Theta(n\*m), uses LCS(i-1, j-1) calls
 # 19: matrix multiplication
 # 18: rod cutting
 Algo that bruteforces what cuts need to be made in order to maximize profits
