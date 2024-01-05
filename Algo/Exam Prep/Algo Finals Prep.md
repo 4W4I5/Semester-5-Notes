@@ -80,7 +80,16 @@ Tabulation Approach (Bottom-Up)
 - also gives the best cuts as well
 
 # 20: knapsack
+A 
+Given in Question:
+- price array known as P{}
+- weight array known as W{}
+- total capacity as m
+- number of objects as n
 
+Init
+- Create a table; Number of objects as Rows, Capacity in integer increments as Columns
+- Write down P\[i\], W\[i\] alongside the row number
 Last row formula:
 - V\[i,w\] = max(V\[i-1,w\], V\[i-1, w-w\[i\]+P\[i\]\])
 	- Where,
