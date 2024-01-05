@@ -59,6 +59,10 @@ Assume X and Y are two strings to search in and Z is the pattern string
 - x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=y<sub>n</sub> implies that Z is LCS of X and Y<sub>n-1</sub>
 	- If not equal and same goes for Z and Y. then Y is the longer string and must contain both Z and X (i guess)
 
+
+Can be memoized/tabulated
+- Memoized uses LCS(x, y, i-1, j-1)+1 calls, Tabulated uses LCS(x, y, i, y) in the code
+
 Time & Space Efficiency:
 - Bruteforce: O(n\*2<sup>m</sup>)
 # 19: matrix multiplication
