@@ -13,7 +13,7 @@
 | 18: Dynamic Programming: Tabulation       | :x:                                          | :warning:                               |
 | 21: LCS                                   | :x:                                          | :warning:                               |
 | 19: matrix multiplication                 | :x:                                          | :warning:                               |
-| 18: rod cutting                           | :x:                                          | :x:                                     |
+| 18: rod cutting                           | :x:                                          | :warning:                                     |
 | 20: knapsack                              | :x:                                          | :white_check_mark:                                     |
 | 12: graph theory 1 (bfs)                  | :white_check_mark:                           | :warning:                               |
 | 13: graph theory 2 (dfs)                  | :white_check_mark:                           | :warning:                               |
@@ -45,6 +45,9 @@
 	- Only computations that are required are solved. Lazy method.
 - Table filled on demand. Can be called a form of caching
 # 18: Dynamic Programming: Tabulation
+- Bottom-Up, can also be iterative
+- Knapsack is bottom up as all the calculations are tabulated first.
+- Consider it as greedy?
 # 21: LCS
 # 19: matrix multiplication
 # 18: rod cutting
@@ -80,9 +83,6 @@ Tabulation Approach (Bottom-Up)
 - also gives the best cuts as well
 
 # 20: knapsack
-A
-
-
 GeeksforGeeks stuff:
 - Case 1 (include the Nth item): Value of the Nth item plus maximum value obtained by remaining N-1 items and remaining weight i.e. (W-weight of the Nth item).
 - Case 2 (exclude the Nth item): Maximum value obtained by N-1 items and W weight.
