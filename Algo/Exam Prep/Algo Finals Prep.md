@@ -12,7 +12,7 @@
 | 18:  Dynamic Programming: Memoization     | :x:                                          | :warning:                               |
 | 18: Dynamic Programming: Tabulation       | :x:                                          | :warning:                               |
 | 21: LCS                                   | :x:                                          | :white_check_mark:                               |
-| 19: matrix multiplication                 | :x:                                          | :warning:                               |
+| 19: matrix multiplication                 | :x:                                          | :white_check_mark:                               |
 | 18: rod cutting                           | :x:                                          | :warning:                                     |
 | 20: knapsack                              | :x:                                          | :white_check_mark:                                     |
 | 12: graph theory 1 (bfs)                  | :white_check_mark:                           | :warning:                               |
@@ -49,9 +49,13 @@
 - Knapsack is bottom up as all the calculations are tabulated first.
 - Consider it as greedy?
 # 21: LCS
+
 Find the longest sequence in the message. Has to be **sequential**
+
 Conditions:
+
 Assume X and Y are two strings to search in and Z is the pattern string
+
 - x<sub>m</sub> == y<sub>n</sub> then z<sub>k</sub>=x<sub>m</sub>=y<sub>n</sub> and Z<sub>k-1</sub> is LCS of X<sub>m-1</sub> and Y<sub>n-1</sub>
 	- If both have the same length then find Z in both X and Y (sure of it)
 - x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=x<sub>m</sub> implies that Z is LCS of X<sub>m-1</sub> and Y
@@ -59,9 +63,10 @@ Assume X and Y are two strings to search in and Z is the pattern string
 - x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=y<sub>n</sub> implies that Z is LCS of X and Y<sub>n-1</sub>
 	- If not equal and same goes for Z and Y. then Y is the longer string and must contain both Z and X (i guess)
 
-
 **Naive approach (Top Down)**
+
 Code:
+
 ```C
 int LCS(i, j){
 	if(str1[i]=='\0' || str2[j]=='\0'){
@@ -77,9 +82,10 @@ int LCS(i, j){
 
 ```
 
-
 **Memoization approach (Bottom Up)**
+
 Code:
+
 ```python
 def lcs(i, j, dp):
 	if(str1[i] == str2[j]):
@@ -89,22 +95,40 @@ def lcs(i, j, dp):
 
 ```
 
-
 Time & Space Efficiency:
+
 - Bruteforce: O(n\*2<sup>m</sup>), uses LCS(i+1,j+1) calls
 - Memoization: Theta(n\*m), uses LCS(i-1, j-1) calls
 # 19: matrix multiplication
+
+**Bottom-Up Approach**
+- Two tables
+	- One is called C for cost and the other is the K-table
+- Fill diagonal with 0's.
+- Start calculations using general formula.
+	- Find the K value for which the lowest number of multiplications is found
+- Final answer is in top-right most rowcol of C table
+- Brackets will be found from K table
+	- Use the number on the final answer rolcol to determine range of brackets
+	- Follow the path from there
+
+General formula:
+- c\[i, j\] = <sup>min i ≤ k &lt j</sup> {\[c\[i, k\] + c\[k+1, j\]\] + (d<sub>i-1</sub>\*d<sub>j</sub>\*d<sub>k</sub>)}
+
+
 # 18: rod cutting
+
 Algo that bruteforces what cuts need to be made in order to maximize profits
+
 - Running Time: O(n<sup>2</sup>)
 - space: O(n)
 
 General Formula
+
 - Value(n) = max<sup>n-1</sup><sub>i=0</sub> (Price\[i\] + Value\[n-i-1\])
 
-
-
 Memoization Approach (Top-Down)
+
 ```Algo
     MemoizedCutRod(p, n)
         r: array(0..n) := (0 => 0, others =>MinInt)
@@ -124,26 +148,32 @@ Memoization Approach (Top-Down)
 ```
 
 Tabulation Approach (Bottom-Up)
+
 - also gives the best cuts as well
 
 # 20: knapsack
+
 GeeksforGeeks stuff:
+
 - Case 1 (include the Nth item): Value of the Nth item plus maximum value obtained by remaining N-1 items and remaining weight i.e. (W-weight of the Nth item).
 - Case 2 (exclude the Nth item): Maximum value obtained by N-1 items and W weight.
 - If the weight of the ‘Nth‘ item is greater than ‘W’, then the Nth item cannot be included and **Case 2** is the only possibility.
 
 Given in Question:
+
 - price array known as P{}
 - weight array known as W{}
 - total capacity as M
 - number of objects as N
 
 Init (Tabulation)
+
 - Create a table; Number of objects N as Rows, Capacity M in integer increments as Columns
 - Write down P\[i\], W\[i\] alongside the row number
 - Go row by row **cumulatively
 
 Last row formula:
+
 - V\[i, w\] = max(V\[i-1, w\], V\[i-1, w-w\[i\]\] + P\[i\])
 	- Where,
 		- i = Row Number
@@ -151,12 +181,14 @@ Last row formula:
 		- P\[i\] = Price @ row i
 
 Backtracking:
+
 - Subtract max profit from profit of the row you got max profit from. Assume its called X
 - Look for the row that created X diagonally. Include that row
 - Include rows that have unique values for X including the max profit row
 	- Include => objectArr\[i\] = 1
 
 Time & Space Efficiency:
+
 - Time: Theta(nW)
 - Space: Theta(nW)
 - Optimal solution composition: O(n)
@@ -684,7 +716,9 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Best, Average, Worst: O(n logn)
 
 # 8: linear sorts
+
 **Decision Tree**
+
 - Helps model execution of any comparison sort
 - Split tree when algo compares two elements
 	- Must contain greater than N leaves
@@ -693,6 +727,7 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Worst case == Height of tree
 
 **Linear sorts**
+
 - Assumes that each element is an integer in the range 0 to k
 - Uses auxiliary storage
 -

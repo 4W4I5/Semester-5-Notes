@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,9 +186,9 @@
   },
   "active": "b8b68edca48e5359",
   "lastOpenFiles": [
-    "README.md",
     "Untitled.md",
     "Algo/Exam Prep/Algo Finals Prep.md",
+    "README.md",
     "OS/Exam Prep/OS Finals Prep.md",
     "Pasted image 20231216180329.png",
     "Pasted image 20240103224938.png",
