@@ -97,13 +97,20 @@ Given in Question:
 Init (Tabulation)
 - Create a table; Number of objects N as Rows, Capacity M in integer increments as Columns
 - Write down P\[i\], W\[i\] alongside the row number
-- Go row by row **cumulatively**
+- Go row by row **cumulatively
+
 Last row formula:
 - V\[i, w\] = max(V\[i-1, w\], V\[i-1, w-w\[i\]\] + P\[i\])
 	- Where,
 		- i = Row Number
 		- W\[i\] = Weight @ row i
 		- P\[i\] = Price @ row i
+
+Backtracking:
+- Subtract max profit from profit of the row you got max profit from. Assume its called X
+- Look for the row that created X diagonally. Include that row
+- Include rows that have unique values for X including the max profit row
+	- Include => objectArr\[i\] = 1
 # 12: graph theory 1
 
 DiGraph => G=(V,E)
