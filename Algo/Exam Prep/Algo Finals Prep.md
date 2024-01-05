@@ -9,12 +9,12 @@
 
 | Topic                                     | Status                                       | Prep(Ignore this, its for personal use) |
 | ----------------------------------------- | -------------------------------------------- | --------------------------------------- |
-| 18:  Dynamic Programming: Memoization     | :x:                                          | :warning:                               |
-| 18: Dynamic Programming: Tabulation       | :x:                                          | :warning:                               |
-| 21: LCS                                   | :x:                                          | :white_check_mark:                               |
-| 19: matrix multiplication                 | :x:                                          | :white_check_mark:                               |
-| 18: rod cutting                           | :x:                                          | :warning:                                     |
-| 20: knapsack                              | :x:                                          | :white_check_mark:                                     |
+| 18:  Dynamic Programming: Memoization     | :warning:                                          | :warning:                               |
+| 18: Dynamic Programming: Tabulation       | :warning:                                          | :warning:                               |
+| 21: LCS                                   | :warning:                                          | :white_check_mark:                               |
+| 19: matrix multiplication                 | :warning:                                          | :white_check_mark:                               |
+| 18: rod cutting                           | :warning:                                          | :warning:                                     |
+| 20: knapsack                              | :warning:                                          | :white_check_mark:                                     |
 | 12: graph theory 1 (bfs)                  | :white_check_mark:                           | :warning:                               |
 | 13: graph theory 2 (dfs)                  | :white_check_mark:                           | :warning:                               |
 | 14:mst, prims, kruskal                    | :white_check_mark:                           | :warning:                               |
@@ -22,10 +22,10 @@
 | 16: bellman ford                          | GPT Content :warning:                        | :warning:                               |
 | 9: naive string matching, rabin karp algo | Incomplete :x:                               | :warning:                               |
 | 10: kmp string matching                   | Incomplete :x:                               | :warning:                               |
-| 2: complexity analysis                    | :white_check_mark:                           | :x:                                     |
-| 4.1.1: recursion                          | :white_check_mark:                           | :x:                                     |
-| 4.1.2: recursion tree                     | :white_check_mark:                           | :x:                                     |
-| 4.2: recurrence relation                  | :white_check_mark:                           | :x:                                     |
+| 2: complexity analysis                    | :white_check_mark:                           | :warning:                                     |
+| 4.1.1: recursion                          | :white_check_mark:                           | :warning:                                     |
+| 4.1.2: recursion tree                     | :white_check_mark:                           | :warning:                                     |
+| 4.2: recurrence relation                  | :white_check_mark:                           | :warning:                                     |
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |
@@ -607,9 +607,9 @@ for(int i =0; i < n; i++){
 - Do not forget to use **log<sub>2</sub>** not **log<sub>10</sub>
 - Highly likely the first change in growth wont be the only one, check for others if you find one point of intersection
 - Equality Signs
-    - Omega >=
-    - Theta ==
-    - Big-O <=
+    - Omega >=. Upper Bound
+    - Theta == Tight Bound
+    - Big-O <=. Lower Bound
     - Little-O <
     - Little-Omega >
 
