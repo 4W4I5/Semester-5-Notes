@@ -111,6 +111,12 @@ Backtracking:
 - Look for the row that created X diagonally. Include that row
 - Include rows that have unique values for X including the max profit row
 	- Include => objectArr\[i\] = 1
+
+Time & Space Efficiency:
+- Time: Theta(nW)
+- Space: Theta(nW)
+- Optimal solution composition: O(n)
+
 # 12: graph theory 1
 
 DiGraph => G=(V,E)
