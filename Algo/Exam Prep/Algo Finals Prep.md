@@ -48,8 +48,10 @@
 # 21: LCS
 # 19: matrix multiplication
 # 18: rod cutting
+Algo that bruteforces what cuts need to be made in order to maximize profits
 - Running Time: O(n<sup>2</sup>)
 - space: O(n)
+
 # 20: knapsack
 ---
 # 12: graph theory 1
