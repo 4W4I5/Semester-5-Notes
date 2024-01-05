@@ -49,6 +49,18 @@
 - Knapsack is bottom up as all the calculations are tabulated first.
 - Consider it as greedy?
 # 21: LCS
+Find the longest sequence in the message. Has to be **sequential**
+Conditions:
+Assume X and Y are two strings to search in and Z is the pattern string
+- x<sub>m</sub> == y<sub>n</sub> then z<sub>k</sub>=x<sub>m</sub>=y<sub>n</sub> and Z<sub>k-1</sub> is LCS of X<sub>m-1</sub> and Y<sub>n-1</sub>
+	- If both have the same length then find Z in both X and Y (sure of it)
+- x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=x<sub>m</sub> implies that Z is LCS of X<sub>m-1</sub> and Y
+	- If not equal and same goes for Z and X. then X is the longer string and must contain both Z and Y (i guess)
+- x<sub>m</sub> != y<sub>n</sub> then z<sub>k</sub>!=y<sub>n</sub> implies that Z is LCS of X and Y<sub>n-1</sub>
+	- If not equal and same goes for Z and Y. then Y is the longer string and must contain both Z and X (i guess)
+
+Time & Space Efficiency:
+- Bruteforce: O(n\*2<sup>m</sup>)
 # 19: matrix multiplication
 # 18: rod cutting
 Algo that bruteforces what cuts need to be made in order to maximize profits
