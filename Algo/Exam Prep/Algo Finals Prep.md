@@ -669,9 +669,9 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - **Case 3**: log<sub>b</sub><sup>a</sup> < k
 	- Sub-cases
 		- p >= 0 == f(n)
-			- $$Θ(n^klog^pn)$$
+			- Θ(n<sup>k</sup>log<sup>p</sup>n)
 		- p < 0 but only n^k
-			- $$Θ(n^k)$$
+			- Θ(n<sup>k</sup>)
 # 3: insertion sort
 - Good for sorting almost sorted lists
 
