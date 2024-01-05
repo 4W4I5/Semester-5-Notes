@@ -9,8 +9,8 @@
 
 | Topic                                     | Status                                       | Prep(Ignore this, its for personal use) |
 | ----------------------------------------- | -------------------------------------------- | --------------------------------------- |
-| 18: Memoization                           | :x:                                          | revise :warning:                        |
-| 18: Tabulation                            | :x:                                          | revise :warning:                        |
+| 18:  Dynamic Programming: Memoization                           | :x:                                          | revise :warning:                        |
+| 18: Dynamic Programming: Tabulation                            | :x:                                          | revise :warning:                        |
 | 21: LCS                                   | :x:                                          | revise :warning:                        |
 | 19: matrix multiplication                 | :x:                                          | revise :warning:                        |
 | 18: rod cutting                           | :x:                                          | :x:                                     |
@@ -39,8 +39,12 @@
 :x:
 -->
 
-# 18: Memoization
-# 18: Tabulation
+# 18: Dynamic Programming: Memoization
+- Top Down approach for recursive solutions. Example of divide and conquer in some way
+- Solves recurring subproblems by caching the answer for smaller subproblems
+	- Only computations that are required are solved. Lazy method.
+- Table filled on demand. Can be called a form of caching
+# 18: Dynamic Programming: Tabulation
 # 21: LCS
 # 19: matrix multiplication
 # 18: rod cutting
