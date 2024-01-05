@@ -655,18 +655,18 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 
 **Cases**
 
-- **Case 1** $$log_{b}a>k$$
-	- Then just n^the greater value$$Θ(n^{log_{b}{a}})$$
-- **Case 2** $$log_{b}a=k$$
+- **Case 1** log<sub>b</sub><sup>a</sup> > k
+	- Then just n^the greater value
+		- Θ(n<sup>log<sub>b</sub>a</sup>)
+- **Case 2**: log<sub>b</sub><sup>a</sup> = k
 	- Sub-cases
 		- p > -1 == f(n) but p+1
-			- $$Θ(n^klog^{p+1}n)$$
 			- Θ(n<sup>k</sup>log<sup>p+1</sup>n)
 		- p = -1
 			- Θ(n<sup>k</sup>loglog(n))
 		- p < -1
-			- $$Θ(n^k)$$
-- **Case 3** $$log_{ba}< k$$
+			- Θ(n<sup>k</sup>)
+- **Case 3**: log<sub>b</sub><sup>a</sup> < k
 	- Sub-cases
 		- p >= 0 == f(n)
 			- $$Θ(n^klog^pn)$$
