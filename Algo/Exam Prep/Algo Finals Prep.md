@@ -81,21 +81,12 @@ int LCS(i, j){
 **Memoization approach (Bottom Up)**
 Code:
 ```python
-def lcs(X, Y, m, n, dp):
-    if (m == 0 or n == 0):
-        return 0
- 
-    if (dp[m][n] != -1):
-        return dp[m][n]
- 
-    if X[m - 1] == Y[n - 1]:
-        dp[m][n] = 1 + lcs(X, Y, m - 1, n - 1, dp)
-        return dp[m][n]
- 
-    dp[m][n] = max(lcs(X, Y, m, n - 1, dp), lcs(X, Y, m - 1, n, dp))
+def lcs(i, j, dp):
+	if(str1[i] == str2[j]):
+		LCS[i, j] = 1 + LCS[i-1, j-1]
+	else:
+		LCS[i, j] = max(LCS[i-1, j], LCS[i, j-1])
 
-
-    return dp[m][n]
 ```
 
 
