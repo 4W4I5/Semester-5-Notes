@@ -21,7 +21,7 @@
 | 15: dijkstra                              | GPT Content :warning:                        | :warning:                               |
 | 16: bellman ford                          | GPT Content :warning:                        | :warning:                               |
 | 9: naive string matching, rabin karp algo | Incomplete :x:                               | :warning:                               |
-| 10: kmp string matching                   | Incomplete :x:                               | :warning:                               |
+| 10: kmp string matching                   | Incomplete :x:                               | :white_check_mark:                               |
 | 2: complexity analysis                    | :white_check_mark:                           | :warning:                                     |
 | 4.1.1: recursion                          | :white_check_mark:                           | :warning:                                     |
 | 4.1.2: recursion tree                     | :white_check_mark:                           | :warning:                                     |
@@ -29,7 +29,7 @@
 | 4.3: master method                        | :white_check_mark:                           | :white_check_mark:                      |
 | 3: insertion sort                         | :white_check_mark:                           | :white_check_mark:                      |
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |
-| 6: quick sort                             | :x:                                          | Practice working :warning:              |
+| 6: quick sort                             | :x:                                          | :white_check_mark:              |
 | 7: heap sort                              | :x:                                          | :x:                                     |
 | 8: linear sorts                           | :x:                                          | :x:                                     |
 
