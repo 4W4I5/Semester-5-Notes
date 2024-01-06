@@ -37,7 +37,7 @@ These notes were made for Semester 5 in the BS(CYS) course using Obsidian, feel 
 
 | Notes                                                     | Status                     | Content |
 | --------------------------------------------------------- | -------------------------- | ------- |
-| [Algo Finals Prep](Algo/Exam%20Prep/Algo%20Finals%20Prep.md) | In progress | Finals prep content        |
+| [Algo Finals Prep](Algo/Exam%20Prep/Algo%20Finals%20Prep.md) | Not the best if im honest | Finals prep content        |
 
 ## CySec-2
 <!--

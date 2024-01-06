@@ -1,5 +1,5 @@
 > [!NOTE]
-> Lectures tagged with :warning: are essentially low-effort notes. Did not make them right before finals
+> Lectures tagged with :warning: are essentially low-effort notes. Did not make them right before finals or was burnt-out during writing them
 >
 > Lectures tagged with :white_check_mark: were made during finals
 >
