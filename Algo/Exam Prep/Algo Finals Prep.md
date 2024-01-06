@@ -31,7 +31,7 @@
 | 5: merge sort                             | Recurrence Relation + Tree missing :warning: | Practice recurrence :warning:           |
 | 6: quick sort                             | :exclamation:                                          | :white_check_mark:              |
 | 7: heap sort                              | :exclamation:                                          | :x:                                     |
-| 8: linear sorts                           | :exclamation:                                          | :x:                                     |
+| 8: linear sorts                           | :exclamation:                                          | :white_check_mark:                                     |
 
 <!--
 :white_check_mark:
