@@ -732,3 +732,7 @@ Suppose you are given the following equation where a >=1 and b>1$$T(n) = aT\left
 - Assumes that each element is an integer in the range 0 to k
 - Uses auxiliary storage
 -
+
+
+
+![](/Pasted%20image%2020240106061949.png)
